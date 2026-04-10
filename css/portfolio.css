@@ -268,7 +268,7 @@ strong{
 
 
 .hero-sobremi{
-    background-image: url('/img/timeline.png');
+    background-image: url('./img/timeline.png');
     background-color: #EBA625;
     background-size: cover;
     background-position: center;
@@ -280,7 +280,7 @@ strong{
 }
 
 .hero-materia{
-    background-image: url('/img/materia-2.png');
+    background-image: url('img/materia-2.png');
     background-color: #fefaf6;
     background-size: cover;
     height: 100vh;
