@@ -268,7 +268,7 @@ strong{
 
 
 .hero-sobremi{
-    background-image: url('./img/timeline.png');
+    background-image: url('/img/timeline.png');
     background-color: #EBA625;
     background-size: cover;
     background-position: center;
