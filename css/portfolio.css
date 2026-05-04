@@ -459,7 +459,7 @@ strong{
 
 
 .bg-seccion-2{
-    /* background-image: url('/img/aura3.jpeg'); */
+    /* background-image: url('../img/aura3.jpeg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -540,7 +540,7 @@ strong{
 }
 
 .hero{
-    background: url('/img/hero-final.png');
+    background: url('../img/hero-final.png');
     background-color: #fefaf6;
     background-size: cover;
     background-position: center;
@@ -576,7 +576,7 @@ strong{
 }
 
 .hero-materia{
-    background-image: url('/img/materia-2.png');
+    background-image: url('../img/materia-2.png');
     background-color: #fefaf6;
     background-size: cover;
     height: 100vh;
@@ -588,7 +588,7 @@ strong{
 }
 
 .hero-ada{
-    background-image: url('/img/hero-ada-3.jpg');
+    background-image: url('../img/hero-ada-3.jpg');
     background-color: #fefaf6;
     background-size: cover;
     height: 100vh;
@@ -599,7 +599,7 @@ strong{
 }
 
 .hero-soplo{
-    background-image: url('/img/hero-soplo-2.png');
+    background-image: url('../img/hero-soplo-2.png');
     background-color: #fefaf6;
     background-size: cover;
     height: 100vh;
@@ -648,7 +648,7 @@ header{
 }
 
 footer{
-    /* background-image: url('/img/footer.png'); */
+    /* background-image: url('../img/footer.png'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
