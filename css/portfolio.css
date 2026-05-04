@@ -111,7 +111,7 @@ html { /* rem */
     
     .delay-2::before,
     .delay-2::after{
-        animation-delay: 0.10s;
+        animation-delay: 1s;
     }
 
 
