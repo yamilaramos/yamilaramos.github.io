@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const hamburguesa = document.getElementById("hamburguesa");
   const nav = document.querySelector("nav");
   const links = document.querySelectorAll("nav a");
+  const backToTop = document.getElementById("backToTop");
 
   // Toggle menú
   hamburguesa.addEventListener("click", () => {
@@ -22,19 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Cerrar tocando fondo
-  nav.addEventListener("click", (e) => {
-    if (e.target === nav) {
-      nav.classList.remove("active");
-      hamburguesa.classList.remove("active");
-      document.body.classList.remove("menu-open");
-      document.documentElement.classList.remove("menu-open");
-    }
-  });
-
-});
-
-  /* SCROLL ANIMATIONS */
+  // SCROLL ANIMATIONS
   const elements = document.querySelectorAll(
     '.scroll-fade-down, .scroll-fade-modern'
   );
@@ -50,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   elements.forEach(el => observer.observe(el));
 
-  /* BACK TO TOP */
+  // BACK TO TOP
   window.addEventListener("scroll", () => {
     if (window.scrollY > 400) {
       backToTop.classList.add("show");
@@ -66,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  /* FADE LOAD */
+  // FADE LOAD
   const element = document.querySelector(".fade-modern-load");
   if (element) {
     setTimeout(() => {
