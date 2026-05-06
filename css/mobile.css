@@ -8,6 +8,10 @@
         transform: none !important;
     }
 
+    .display-none{
+        display: inline;
+    }
+
     .fade-modern-load {
     opacity: 1;
     transform: none;
