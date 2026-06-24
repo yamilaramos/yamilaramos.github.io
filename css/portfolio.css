@@ -816,7 +816,7 @@ nav, ul{ list-style: none;}
 .btn-hero-secundario{
     padding: 8px 22px 8px 20px;
     border-radius:50px;
-    border:2px solid rgba(255,255,255,.35);
+    border:2px solid rgba(255,255,255,.50);
     color: white;
     transition:.3s ease;
 
@@ -824,11 +824,6 @@ nav, ul{ list-style: none;}
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.2);
-}
-
-.btn-hero-secundario:hover{
-    background: white;
-    color: transparent;
 }
 
 .btn-seccion {
