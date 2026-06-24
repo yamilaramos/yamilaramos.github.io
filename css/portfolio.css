@@ -869,12 +869,18 @@ nav, ul{ list-style: none;}
         color 0.30s ease;
 }
 
+.btn-hero svg {
+    margin-top: 3.83px;
+    transition: 
+        transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+        filter 0.25s ease;
+}
+
 .btn-seccion svg {
     margin-top: 3.83px;
     transition: 
         transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
         filter 0.25s ease;
-    
 }
 
 .btn-seccion:hover {
