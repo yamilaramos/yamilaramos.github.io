@@ -881,6 +881,11 @@ nav, ul{ list-style: none;}
         filter 0.25s ease;
 }
 
+.btn-hero:hover svg {
+    margin-top: 3.83px;
+    transform: translateX(2.3px);
+}
+
 .btn-seccion svg {
     margin-top: 3.83px;
     transition: 
