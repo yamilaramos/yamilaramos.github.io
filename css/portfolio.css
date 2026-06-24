@@ -785,7 +785,7 @@ nav, ul{ list-style: none;}
 }
 
 .btn-hero {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     background: linear-gradient(131deg,
         rgba(235,166,37,1) 0%,
         rgba(255,178,36,1) 50%,
@@ -803,6 +803,7 @@ nav, ul{ list-style: none;}
         transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
         box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
         color 0.30s ease;
+    margin-left: 8%;
 }
 
 
