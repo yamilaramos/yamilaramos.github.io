@@ -817,7 +817,7 @@ nav, ul{ list-style: none;}
 .btn-hero-secundario{
     padding: 8px 22px 8px 20px;
     border-radius:50px;
-    border:2px solid rgba(255,255,255,.50);
+    border: 1px solid rgb(255 255 255 / 0%);
     color: white;
     transition:.3s ease;
 
