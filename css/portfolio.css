@@ -874,7 +874,6 @@ nav, ul{ list-style: none;}
     margin-top: 3.83px;
     transition: 
         transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
-        filter 0.25s ease;
 }
 
 .btn-seccion svg {
