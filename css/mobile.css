@@ -1,5 +1,9 @@
 @media screen and (max-width:768px){
 
+    .hero-buttons{
+        display: none;
+    }
+
     .fade-in-down{
         animation: none !important;
         transition: none !important;
