@@ -593,7 +593,7 @@ strong{
 .hero-sobremi{
      background: url('../img/hero-sobremi.png');
     background-color: #EBA625;
-    background-size: cover;
+    background-size: 100% auto;
     background-position: center;
     background-repeat: no-repeat;
     height: 51vh;
