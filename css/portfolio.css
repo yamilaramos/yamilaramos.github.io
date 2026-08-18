@@ -592,13 +592,13 @@ strong{
 
 .hero-sobremi {
     background-image: url('../img/hero-sobremi.png');
-    background-size: cover;
+    background-color: #EBA625;
+
+    background-size: 100% auto;
     background-position: center;
     background-repeat: no-repeat;
 
-    aspect-ratio: 1565 / 533;
-    width: 100%;
-
+    height: 51vh;
     border-radius: 40px;
     border: 2px solid black;
 }
