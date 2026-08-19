@@ -64,23 +64,23 @@ html { /* rem */
     
 .categoria-proyecto h4{
     margin: 0;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 500;
     color: #EBA625;
     
     background-color: #fdf0e7;
-    padding: 8px 12px;
+    padding: 7px 18px;
     border-radius: 999px;
 }
 
-    .categoria-proyecto-2 h4{
-        margin: 0;
-        font-size: 17px;
-        font-weight: 500;
-        color: #2c4e33;
+.categoria-proyecto-2 h4{
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #2c4e33;
     
         background-color: #f1f2ec;
-        padding: 8px 12px;
+        padding: 7px 18px;
         border-radius: 999px;
     }
 
@@ -91,7 +91,7 @@ html { /* rem */
         top: 50%;
         transform: translateY(-50%);
     
-        width: 2px;
+        width: 1px;
         height: 60%;
     
         background: #80808099;
@@ -104,7 +104,7 @@ html { /* rem */
         top: 50%;
         transform: translateY(-50%);
     
-        width: 2px;
+        width: 1px;
         height: 60%;
     
         background: #80808099;
