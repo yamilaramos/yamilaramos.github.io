@@ -43,7 +43,7 @@ html { /* rem */
     flex-wrap: wrap;
     
     width: fit-content;
-    padding: 10px 0px;
+    padding: 8px 0px;
     border-radius: 14px;
 }
     
@@ -64,7 +64,7 @@ html { /* rem */
     
 .categoria-proyecto h4{
     margin: 0;
-    font-size: 1.6rem;
+    font-size: 1.55rem;
     font-weight: 500;
     color: #EBA625;
     
@@ -75,7 +75,7 @@ html { /* rem */
 
 .categoria-proyecto-2 h4{
     margin: 0;
-    font-size: 1.6rem;
+    font-size: 1.55rem;
     font-weight: 500;
     color: #2c4e33;
     
