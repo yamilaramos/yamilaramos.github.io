@@ -51,6 +51,62 @@ html { /* rem */
     justify-content: center;
 }
 
+    .categoria-proyecto, .categoria-proyecto-2{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-left: 14px;
+        position: relative;
+    }
+    
+    .categoria-proyecto h4{
+        margin: 0;
+        font-size: 17px;
+        font-weight: 500;
+        color: #EBA625;
+    
+        background-color: #fdf0e7;
+        padding: 8px 12px;
+        border-radius: 999px;
+    }
+
+    .categoria-proyecto-2 h4{
+        margin: 0;
+        font-size: 17px;
+        font-weight: 500;
+        color: #2c4e33;
+    
+        background-color: #f1f2ec;
+        padding: 8px 12px;
+        border-radius: 999px;
+    }
+
+    .categoria-proyecto::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    
+        width: 1px;
+        height: 55%;
+    
+        background: #80808099;
+    }
+
+    .categoria-proyecto-2::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    
+        width: 1px;
+        height: 55%;
+    
+        background: #80808099;
+    }
+
 .salto-mobile{
     display: block; /* inline */
     margin-top: 10px;
