@@ -108,8 +108,8 @@ html { /* rem */
         top: 50%;
         transform: translateY(-50%);
     
-        width: 1px;
-        height: 55%;
+        width: 2px;
+        height: 60%;
     
         background: #80808099;
 }
