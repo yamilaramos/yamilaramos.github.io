@@ -30,6 +30,15 @@ html { /* rem */
     padding: 8px;
 }
 
+.info-proyecto{
+    gap: 15px;
+}
+
+.fecha-proyecto{
+    gap: 5px; 
+    justify-content: center;
+}
+
 .salto-mobile{
     display: block; /* inline */
     margin-top: 10px;
