@@ -26,6 +26,7 @@ html { /* rem */
 .b-calendario{
     background-color: #fdf0e7;
     border-radius: 50%;    
+    margin-bottom: 3px;
 }
 
 .calendario{
