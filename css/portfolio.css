@@ -35,10 +35,6 @@ html { /* rem */
     margin-bottom: 0px;
 }
 
-.categoria-proyecto h4{
-    font-size: 1.8rem;
-}
-
 .info-proyecto{
     gap: 15px;
     display: flex;
@@ -68,7 +64,7 @@ html { /* rem */
     
 .categoria-proyecto h4{
     margin: 0;
-    font-size: 17px;
+    font-size: 1.8rem;
     font-weight: 500;
     color: #EBA625;
     
@@ -95,8 +91,8 @@ html { /* rem */
         top: 50%;
         transform: translateY(-50%);
     
-        width: 1px;
-        height: 55%;
+        width: 2px;
+        height: 60%;
     
         background: #80808099;
     }
@@ -112,19 +108,6 @@ html { /* rem */
         height: 60%;
     
         background: #80808099;
-}
-
-.categoria-proyecto::before
-Specificity: (0,1,1)
- {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 1px;
-    height: 55%;
-    background: #80808099;
 }
 
 .salto-mobile{
