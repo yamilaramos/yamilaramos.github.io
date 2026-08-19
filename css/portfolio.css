@@ -23,6 +23,13 @@ html { /* rem */
     margin-right: 8px;
 }
 
+.calendario{
+    width: 35px;
+    height: 35px;
+    background-color: #fdf0e7;
+    padding: 8px;
+}
+
 .salto-mobile{
     display: block; /* inline */
     margin-top: 10px;
