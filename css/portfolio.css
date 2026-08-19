@@ -23,11 +23,14 @@ html { /* rem */
     margin-right: 8px;
 }
 
+.b-calendario{
+    background-color: #fdf0e7;
+    border-radius: 50%;    
+}
+
 .calendario{
     width: 38px;
     height: 38px;
-    background-color: #fdf0e7;
-    border-radius: 5px;
     padding: 8px;
 }
 
