@@ -35,6 +35,10 @@ html { /* rem */
     margin-bottom: 0px;
 }
 
+.categoria-proyecto h4{
+    font-size: 1.8rem;
+}
+
 .info-proyecto{
     gap: 15px;
     display: flex;
