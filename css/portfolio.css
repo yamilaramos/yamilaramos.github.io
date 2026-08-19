@@ -17,7 +17,7 @@ html { /* rem */
 }
 
 .locacion-logo{
-    margin-bottom: 4px;
+    margin-bottom: 2px;
     height: 30px;
     width: 30px;
     margin-right: 8px;
@@ -33,10 +33,21 @@ html { /* rem */
 
 .info-proyecto{
     gap: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    
+    width: fit-content;
+    padding: 10px 6px;
+    border-radius: 14px;
+    backdrop-filter: blur(8px);
 }
-
+    
 .fecha-proyecto{
-    gap: 5px; 
+    display: flex;
+    align-items: center;
+    gap: 8px;
     justify-content: center;
 }
 
