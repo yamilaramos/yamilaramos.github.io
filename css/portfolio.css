@@ -118,6 +118,8 @@ html { /* rem */
     width: 20px;
     height: 20px;
     fill: currentColor;
+    stroke: currentColor;
+    stroke-width: 0.5;
 }
 
 .salto-mobile{
