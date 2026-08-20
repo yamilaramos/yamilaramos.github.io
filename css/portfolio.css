@@ -114,6 +114,12 @@ html { /* rem */
         background: #80808099;
 }
 
+.btn-cv svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
 .salto-mobile{
     display: block; /* inline */
     margin-top: 10px;
