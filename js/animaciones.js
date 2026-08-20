@@ -22,22 +22,22 @@ document.addEventListener("DOMContentLoaded", () => {
       document.documentElement.classList.remove("menu-open");
     });
   });
+  
+  // SCROLL 
+const elements = document.querySelectorAll(
+  '.scroll-fade-down, .scroll-fade-modern, .scroll-fade-modern-2'
+);
 
-  // SCROLL ANIMATIONS
-  const elements = document.querySelectorAll(
-    '.scroll-fade-down, .scroll-fade-modern'
-  );
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active', 'show');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
 
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active', 'show');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.2 });
-
-  elements.forEach(el => observer.observe(el));
+elements.forEach(el => observer.observe(el));
 
   // BACK TO TOP
   window.addEventListener("scroll", () => {
