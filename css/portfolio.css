@@ -215,7 +215,7 @@ html { /* rem */
     
     .delay-1::before,
     .delay-1::after{
-        animation-delay: 0.6s;
+        animation-delay: 0.4s;
     }
     
     .delay-2::before,
