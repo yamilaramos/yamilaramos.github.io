@@ -265,7 +265,7 @@ iframe { width: 100%;}
 a {
     text-decoration: none;
     color: black;
-    font-size: 1.65rem;
+    font-size: 1.62rem;
     font-weight: 500;
 }
 
@@ -780,7 +780,7 @@ header{
     padding-top: 12px;
     padding-left: 8px;
     padding-right: 8px;
-    height: 5.1rem;
+    height: 5rem;
 
     position: relative;
     z-index: 10;
