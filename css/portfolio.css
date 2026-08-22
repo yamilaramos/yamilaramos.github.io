@@ -262,20 +262,29 @@ iframe{ width: 100%;}
 ul{ list-style: none;}
 iframe { width: 100%;}
 
-a{ text-decoration: none; color: black; font-size: 1.6rem ; font-weight: 500; }
-a:hover{ color: black; transition: ease; }
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.65rem;
+    font-weight: 500;
+}
 
+a:hover {
+    color: black;
+}
 
 .animacion {
-  position: relative;
-  text-decoration: none;
-}
-
-.animacion-activa{
     position: relative;
+    display: inline-block;
+    text-decoration: none;
 }
 
-.animacion-activa::after{
+.animacion-activa {
+    position: relative;
+    display: inline-block;
+}
+
+.animacion-activa::after {
     content: "";
     position: absolute;
     left: 0;
@@ -289,26 +298,23 @@ a:hover{ color: black; transition: ease; }
 }
 
 .animacion::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -2px;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
 
-  width: 100%;
-  height: 2.5px;
-  background-color: #EBA625;
+    width: 100%;
+    height: 2.5px;
+    background-color: #EBA625;
 
-  transform: scaleX(0);
-  transform-origin: left;
-
-  transition: transform 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
 }
 
 .animacion:hover::after {
-  transform: scaleX(1);
-  height: 2px;
+    transform: scaleX(1);
 }
-
 .contenedor{
     border: 2px solid black;
     margin: 15px 15px 5px 15px;
