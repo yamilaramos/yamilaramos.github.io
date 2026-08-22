@@ -693,6 +693,7 @@ strong{
 .hero-sobremi {
     background-image: url('../img/hero-sobremi.png');
     background-color: #EBA625;
+    background-size: 100% auto;
     
     background-position: center;
     background-repeat: no-repeat;
