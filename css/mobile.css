@@ -126,6 +126,12 @@
         color: white;
     }
 
+    .btn-cv-mobile{
+        width: 18px;
+        height: 18px;
+        stroke: white;
+    }
+
     .fondo p{
         font-size: 16px;
     }
