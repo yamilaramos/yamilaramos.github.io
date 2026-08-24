@@ -225,7 +225,7 @@ html { /* rem */
     
     .delay-2::before,
     .delay-2::after{
-        animation-delay: 0.8s;
+        animation-delay: 0.9s;
     }
 
 
