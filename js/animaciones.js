@@ -64,3 +64,52 @@ elements.forEach(el => observer.observe(el));
   }
 
 });
+
+const cursor = document.getElementById("cursor");
+
+if (cursor) {
+
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+
+    window.addEventListener("mousemove", (e) => {
+
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+
+        cursor.style.left = mouseX + "px";
+        cursor.style.top = mouseY + "px";
+
+    });
+
+    const interactiveSelectors = "a, button, [data-cursor-hover]";
+
+    document.addEventListener("mouseover", (e) => {
+
+        if (e.target.tagName === "IMG") return; // las imágenes no disparan el hover
+
+        if (e.target.closest(interactiveSelectors)) {
+            cursor.classList.add("is-hovering");
+        }
+
+    });
+
+    document.addEventListener("mouseout", (e) => {
+
+        if (e.target.tagName === "IMG") return;
+
+        if (e.target.closest(interactiveSelectors)) {
+            cursor.classList.remove("is-hovering");
+        }
+
+    });
+
+    document.addEventListener("mouseleave", () => {
+        cursor.style.opacity = "0";
+    });
+
+    document.addEventListener("mouseenter", () => {
+        cursor.style.opacity = "1";
+    });
+
+}
