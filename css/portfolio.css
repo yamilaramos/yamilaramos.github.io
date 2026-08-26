@@ -19,8 +19,8 @@ a, button, [data-cursor-hover] {
     position: fixed;
     top: 0;
     left: 0;
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     background: #000;
     border-radius: 50%;
     pointer-events: none;
