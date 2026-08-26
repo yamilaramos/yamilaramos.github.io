@@ -31,7 +31,11 @@ a, button, [data-cursor-hover] {
 
 #cursor.is-hovering {
     transform: translate(-50%, -50%) scale(1.4);
-    background: rgba(0, 0, 0, 0.800);
+}
+
+#cursor.is-link {
+    background: #fff;
+    mix-blend-mode: difference;
 }
 
 .logo-mensaje{
