@@ -7,6 +7,33 @@ html { /* rem */
     color: black;
 }
 
+html, body {
+    cursor: none;
+}
+
+a, button, [data-cursor-hover] {
+    cursor: none;
+}
+
+#cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background: #000;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: transform .45s cubic-bezier(.34, 1.56, .64, 1);
+}
+
+#cursor.is-hovering {
+    transform: translate(-50%, -50%) scale(1.4);
+    background: rgba(0, 0, 0, 0.800);
+}
+
 .logo-mensaje{
     height: 22px;
     width: 22px;
