@@ -88,8 +88,14 @@ if (cursor) {
 
         if (e.target.tagName === "IMG") return; // las imágenes no disparan el hover
 
+        // Expansión: en cualquier elemento interactivo
         if (e.target.closest(interactiveSelectors)) {
             cursor.classList.add("is-hovering");
+        }
+
+        // Inversión de color: SOLO en enlaces (a)
+        if (e.target.closest("a")) {
+            cursor.classList.add("is-link");
         }
 
     });
@@ -100,6 +106,10 @@ if (cursor) {
 
         if (e.target.closest(interactiveSelectors)) {
             cursor.classList.remove("is-hovering");
+        }
+
+        if (e.target.closest("a")) {
+            cursor.classList.remove("is-link");
         }
 
     });
