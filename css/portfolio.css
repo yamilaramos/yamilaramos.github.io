@@ -15,34 +15,6 @@ a, button, [data-cursor-hover] {
     cursor: none;
 }
 
-#cursor {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 17px;
-    height: 17px;
-    background: #000;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9999;
-    transform: translate(-50%, -50%);
-    transition: transform .45s cubic-bezier(.34, 1.56, .64, 1);
-
-    will-change: transform;
-    backface-visibility: hidden;
-    isolation: isolate;
-     transform: translate(-50%, -50%) translateZ(0);
-}
-
-#cursor.is-hovering {
-    transform: translate(-50%, -50%) scale(1.6) translateZ(0);
-}
-
-#cursor.is-link {
-    background: #fff;
-    mix-blend-mode: difference;
-}
-
 .logo-mensaje{
     height: 22px;
     width: 22px;
