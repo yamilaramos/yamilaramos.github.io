@@ -7,6 +7,10 @@ html { /* rem */
     color: black;
 }
 
+video .boton-pip {
+    display: none;
+}
+
 .logo-mensaje{
     height: 22px;
     width: 22px;
