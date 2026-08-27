@@ -27,6 +27,10 @@ a, button, [data-cursor-hover] {
     z-index: 9999;
     transform: translate(-50%, -50%);
     transition: transform .45s cubic-bezier(.34, 1.56, .64, 1);
+
+    will-change: transform;
+    backface-visibility: hidden;
+    isolation: isolate;
 }
 
 #cursor.is-hovering {
