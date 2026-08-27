@@ -35,7 +35,7 @@ a, button, [data-cursor-hover] {
 }
 
 #cursor.is-hovering {
-    transform: translate(-50%, -50%) scale(1.5) translateZ(0);
+    transform: translate(-50%, -50%) scale(1.6) translateZ(0);
 }
 
 #cursor.is-link {
