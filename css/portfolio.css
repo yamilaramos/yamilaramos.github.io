@@ -7,14 +7,6 @@ html { /* rem */
     color: black;
 }
 
-html, body {
-    cursor: none;
-}
-
-a, button, [data-cursor-hover] {
-    cursor: none;
-}
-
 .logo-mensaje{
     height: 22px;
     width: 22px;
