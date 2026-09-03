@@ -811,8 +811,6 @@ header .titulo-portafolio img {
     height: auto;
 }
 
-
-/* NAVEGACIÓN */
 header nav {
     width: 100%;
 }
@@ -835,7 +833,7 @@ header nav li {
 }
 
 header nav a {
-    font-size: clamp(1rem, 1.25vw, 1.8rem);
+    font-size: clamp(1rem, 1.4vw, 1.8rem);
     white-space: nowrap;
 }
 
