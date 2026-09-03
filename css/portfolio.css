@@ -119,14 +119,6 @@ html { /* rem */
         background: #80808099;
 }
 
-.btn-cv svg {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
-    stroke: currentColor;
-    stroke-width: 0.5;
-}
-
 .salto-mobile{
     display: block; /* inline */
     margin-top: 10px;
@@ -843,19 +835,20 @@ header .btn-cv {
     padding: clamp(0.4rem, 0.6vw, 0.7rem)
              clamp(1rem, 1.5vw, 1.8rem);
 
-    font-size: clamp(1rem, 1.4vw, 1.8rem);
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
 
     white-space: nowrap;
 
     border-radius: 999px;
 }
 
-
-/* ICONO DEL BOTÓN */
 header .btn-cv svg {
-    width: clamp(1rem, 1.3vw, 1.4rem);
+    width: clamp(1rem, 1.4vw, 1.5rem);
     height: auto;
     flex-shrink: 0;
+    fill: currentColor;
+    stroke: currentColor;
+    stroke-width: 0.5;
 }
 
 footer{
