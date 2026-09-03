@@ -839,7 +839,7 @@ header .btn-cv {
 }
 
 header .btn-cv svg {
-    width: clamp(1rem, 1.6vw, 1.7rem);
+    width: clamp(1rem, 1.5vw, 1.6rem);
     height: auto;
     flex-shrink: 0;
     fill: currentColor;
