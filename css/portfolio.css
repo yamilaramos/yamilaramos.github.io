@@ -845,10 +845,10 @@ header .btn-cv {
 
     gap: 0.5rem;
 
-    padding: clamp(0.6rem, 0.8vw, 0.9rem)
+    padding: clamp(0.4rem, 0.6vw, 0.7rem)
              clamp(1rem, 1.5vw, 1.8rem);
 
-    font-size: clamp(0.9rem, 1vw, 1.1rem);
+    font-size: clamp(1rem, 1.4vw, 1.8rem);
 
     white-space: nowrap;
 
