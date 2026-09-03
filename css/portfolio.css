@@ -774,30 +774,96 @@ strong{
 }
 
 header {
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    border-radius: 20px 20px 0 0;
+
     height: clamp(5rem, 6vw, 6.5rem);
-    padding: 0 clamp(1rem, 3vw, 4rem);
+
+    padding: 0 clamp(1rem, 2vw, 2rem);
+
+    position: relative;
+    z-index: 10;
 }
 
-.header-content {
-    width: 100%;
-    max-width: 1700px;
-    margin: auto;
+
+/* CONTENIDO DEL HEADER */
+header > article {
+    height: 100%;
+    margin: 0 3% !important;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: clamp(1rem, 2vw, 3rem);
 }
 
-header h1 {
-    font-size: clamp(2rem, 3vw, 3.2rem);
+
+/* LOGO */
+header .titulo-portafolio {
+    display: block;
 }
 
+header .titulo-portafolio img {
+    display: block;
+    width: clamp(9rem, 13vw, 14rem);
+    height: auto;
+}
+
+
+/* NAVEGACIÓN */
 header nav {
-    gap: clamp(1.5rem, 3vw, 4rem);
+    width: 100%;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    gap: clamp(1rem, 2.5vw, 4rem);
+
+    list-style: none;
+}
+
+header nav li {
+    white-space: nowrap;
 }
 
 header nav a {
-    font-size: clamp(1rem, 1.3vw, 1.4rem);
+    font-size: clamp(1rem, 1.25vw, 1.4rem);
+    white-space: nowrap;
 }
 
-.btn-cv {
-    font-size: clamp(0.9rem, 1.1vw, 1.2rem);
+
+/* BOTÓN CV */
+header .btn-cv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.5rem;
+
+    padding: clamp(0.6rem, 0.8vw, 0.9rem)
+             clamp(1rem, 1.5vw, 1.8rem);
+
+    font-size: clamp(0.9rem, 1vw, 1.1rem);
+
+    white-space: nowrap;
+
+    border-radius: 999px;
+}
+
+
+/* ICONO DEL BOTÓN */
+header .btn-cv svg {
+    width: clamp(1rem, 1.3vw, 1.4rem);
+    height: auto;
+    flex-shrink: 0;
 }
 
 footer{
