@@ -773,17 +773,31 @@ strong{
     color: #fefaf6;
 }
 
-header{
-    background-color: transparent;
-    border-bottom: 2px solid black;
-    border-radius: 20px 20px 0 0;
-    padding-top: 12px;
-    padding-left: 8px;
-    padding-right: 8px;
-    height: 5rem;
+header {
+    height: clamp(5rem, 6vw, 6.5rem);
+    padding: 0 clamp(1rem, 3vw, 4rem);
+}
 
-    position: relative;
-    z-index: 10;
+.header-content {
+    width: 100%;
+    max-width: 1700px;
+    margin: auto;
+}
+
+header h1 {
+    font-size: clamp(2rem, 3vw, 3.2rem);
+}
+
+header nav {
+    gap: clamp(1.5rem, 3vw, 4rem);
+}
+
+header nav a {
+    font-size: clamp(1rem, 1.3vw, 1.4rem);
+}
+
+.btn-cv {
+    font-size: clamp(0.9rem, 1.1vw, 1.2rem);
 }
 
 footer{
