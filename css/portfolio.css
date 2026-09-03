@@ -790,7 +790,7 @@ header {
 /* CONTENIDO DEL HEADER */
 header > article {
     height: 100%;
-    margin: 0 3% !important;
+    margin: 0 3%;
 
     display: flex;
     align-items: center;
