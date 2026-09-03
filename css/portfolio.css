@@ -253,11 +253,6 @@ img {
     pointer-events: none;
 }
 
-.titulo-portafolio img {
-    max-width: 100%;
-    height: auto;
-}
-
 iframe{ width: 100%;}
 ul{ list-style: none;}
 iframe { width: 100%;}
@@ -806,7 +801,7 @@ header .titulo-portafolio {
 
 header .titulo-portafolio img {
     display: block;
-    width: clamp(9rem, 13vw, 14rem);
+    width: clamp(10rem, 14vw, 15rem);
     height: auto;
 }
 
