@@ -767,8 +767,6 @@ header {
 
     height: clamp(5rem, 6vw, 5.5rem);
 
-    padding: 0 clamp(1rem, 2vw, 2rem);
-
     position: relative;
     z-index: 10;
 }
@@ -777,7 +775,7 @@ header {
 /* CONTENIDO DEL HEADER */
 header > article {
     height: 100%;
-    margin: 0 3%;
+    margin: 0 4%;
 
     display: flex;
     align-items: center;
