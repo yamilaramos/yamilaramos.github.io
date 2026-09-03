@@ -823,8 +823,6 @@ header nav a {
     white-space: nowrap;
 }
 
-
-/* BOTÓN CV */
 header .btn-cv {
     display: flex;
     align-items: center;
@@ -843,7 +841,7 @@ header .btn-cv {
 }
 
 header .btn-cv svg {
-    width: clamp(1rem, 1.4vw, 1.5rem);
+    width: clamp(1rem, 1.6vw, 1.7rem);
     height: auto;
     flex-shrink: 0;
     fill: currentColor;
