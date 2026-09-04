@@ -778,17 +778,12 @@ header {
     z-index: 10;
 }
 
-
-/* CONTENIDO DEL HEADER */
 header > article {
     height: 100%;
-    margin: 0 4%;
+    margin-left: clamp(4%, 4vw, 4%);
+    margin-right: clamp(4%, 4vw, 4%);
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    gap: clamp(1rem, 2vw, 3rem);
+    gap: clamp(14px, 2vw, 38px);
 }
 
 header .titulo-portafolio {
