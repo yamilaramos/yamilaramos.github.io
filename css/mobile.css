@@ -549,6 +549,11 @@
         margin-top: 10%;
     }
 
+    .contenedor-btn-cv-mobile{
+        margin-top: 25px;
+        margin-left: 6px;
+    }
+    
     .btn-cv-mobile{
     display: inline-flex;             
     align-items: center;               /* centra vertical */
