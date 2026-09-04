@@ -7,6 +7,10 @@ html { /* rem */
     color: black;
 }
 
+body{
+    background-color: #fefaf6;
+}
+
 .contenedor{
     border: 2px solid black;
             margin:
@@ -375,9 +379,7 @@ a:hover {
     color: #000000;
 }
 
-body{
-    background-color: #fefaf6;
-}
+
 .presentacion{
     font-size: 1.72rem;
     font-weight: 300;
@@ -623,8 +625,6 @@ strong{
   }
 }
 
-
-/* PROPIEDADES DEL FLEX */
 /* Espaciado horizontal */
 .jcontent-center, .j-content-titulo{justify-content: center;}
 .jcontent-between{justify-content: space-between;}
@@ -636,7 +636,7 @@ strong{
 .align-items-flex-end{align-items: flex-end ;}
 
 .d-flex{ display: flex; }
-.d-none{ display: none;} /* oculta elementos */
+.d-none{ display: none; }
 
 .flex-direction-column{
     flex-direction: column;
@@ -872,7 +872,6 @@ header {
     }
 
 .titulo{
-    margin-left: 9.5%;
     margin-left: 8%;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.652);
     background: rgba(0, 0, 0, 0.08);
@@ -885,10 +884,10 @@ header {
     color: rgba(255, 255, 255, 0.92);
 
     margin-bottom: clamp(9px, 0.8vw, 15px);
-    padding:clamp(8px, 0.65vw, 12px);
-    border-radius:  clamp(20px, 1.6vw, 31px)
-                    clamp(20px, 1.6vw, 31px)
-                    clamp(20px, 1.6vw, 31px)
+    padding:clamp(8px, 0.66vw, 12px);
+    border-radius:  clamp(13px, 1.26vw, 24px)
+                    clamp(13px, 1.26vw, 24px)
+                    clamp(13px, 1.26vw, 24px)
                     0;
 }
 
