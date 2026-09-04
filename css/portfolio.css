@@ -1,3 +1,9 @@
+:root{
+    --yellow: #EBA625;
+    --white: #fefaf6;
+    --gap: 4.5%;
+}
+
 * { padding: 0; margin: 0; scroll-behavior: smooth; box-sizing: border-box;}
 iframe { width: 100%; }
 ul { list-style: none; }
@@ -9,14 +15,15 @@ a:hover { color: black; }
 .d-flex{ display: flex; }
 .d-none{ display: none; }
 .h-100vh { height: 100vh} 
-.c-white { color: #fefaf6; }
+.c-white { color: var(--white); }
 .b-black { border-top: 2px solid black; }
 
-/* Hacer un root con fuentes y colores  */
 html { font-size: 12.5px; }
-body { background-color: #fefaf6; }
-::selection { background-color: #EBA625; color: black; }
+strong { font-weight: 600; }
+body { background-color: var(--white); }
+::selection { background-color: var(--yellow); color: black; }
 .outfit { font-family: "Outfit", sans-serif; font-optical-sizing: auto; font-style: normal; }
+
 
 .gap { gap: 4.5%; }
 .contenedor{
@@ -49,14 +56,13 @@ h4{
 header {
     background-color: transparent;
     border-bottom: 2px solid black;
+    position: relative;
+    z-index: 10;
     
     border-radius: clamp(18px, 1.5vw, 29px)
                    clamp(18px, 1.5vw, 29px)
-                       0 0;
+                    0 0;
     height: clamp(62px, 4.55vw, 87px);
-
-    position: relative;
-    z-index: 10;
 }
 
     header > article {
@@ -432,13 +438,6 @@ header {
         rgba(235,166,37,1) 100%);     
 }
 
-.btn-cv img{
-        width: 20px;
-        height: 20px;
-        padding-bottom: 1px;
-        object-fit: contain;
-}
-
 .btn-cv:hover{
     text-decoration: none;
     color: black;
@@ -528,7 +527,7 @@ header {
     .logo-timeline-2 {
         top: 32%;
         left: 49%;
-        width: clamp(135px, 10.05w, 218px);
+        width: clamp(135px, 10.05vw, 218px);
         height: auto;
     }
     
@@ -609,10 +608,6 @@ header {
     margin-right: 4px;
 }
 
-strong{
-    font-weight: 600;
-}
-
 .division{
     border-top: 2px solid black;
     border-bottom: none;
@@ -643,18 +638,7 @@ strong{
   padding: 8px 0px;
 }
 
-
-.bg-seccion-2{
-    /* background-image: url('../img/aura3.jpeg'); */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100dvh;
-}
-
-.dot {
-  margin: 0 20px;
-}
+.dot { margin: 0 20px; }
 
 @keyframes scroll {
   from {
@@ -839,7 +823,7 @@ footer{
     background-color: #EBA625;
     text-align: center;
     height: 70vh;
-    border-radius: 0 0 clamp(20px, 1.6vw, 31px), clamp(20px, 1.6vw, 31px);
+    border-radius: 0 0 clamp(20px, 1.6vw, 31px) clamp(20px, 1.6vw, 31px);
     font-size: 1.6rem;
     color: #fefaf6;
 }
