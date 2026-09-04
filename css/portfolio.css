@@ -765,6 +765,7 @@ strong{
     color: #fefaf6;
 }
 
+
 header {
     background-color: transparent;
     border-bottom: 2px solid black;
@@ -793,7 +794,7 @@ header .titulo-portafolio {
 
 header .titulo-portafolio img {
     display: block;
-    width: clamp(10rem, 14vw, 15rem);
+    width: clamp(136px, 11.46vw, 240px);
     height: auto;
 }
 
