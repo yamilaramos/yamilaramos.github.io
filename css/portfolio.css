@@ -832,7 +832,7 @@ header .btn-cv {
     padding: clamp(0.4rem, 0.6vw, 0.7rem)
              clamp(1rem, 1.3vw, 1.6rem);
 
-    font-size: clamp(19.25px, calc(7.3px + 0.77vw), 24px);
+    font-size: clamp(17.25px, calc(5.3px + 0.67vw), 22px);
 
     white-space: nowrap;
 
