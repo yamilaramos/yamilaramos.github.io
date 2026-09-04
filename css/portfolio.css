@@ -130,7 +130,7 @@ header {
     }
     
     header nav a {
-        font-size: clamp(21.25px, calc(9.3px + 0.87vw), 26px);
+        font-size: clamp(20.25px, calc(9.3px + 0.87vw), 26px);
         white-space: nowrap;
     }
     
