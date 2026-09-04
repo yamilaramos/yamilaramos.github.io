@@ -150,7 +150,6 @@ html { /* rem */
     margin: 0px 5px;
     padding: 2px 4px;
     text-shadow: 2px 2px 3px rgb(0 0 0 / 55%);
-)
 }
     
 .highlight::before{
@@ -667,11 +666,12 @@ strong{
 .hero{
     background: url('../img/hero-final.png');
     background-color: #fefaf6;
-    background-size: cover;
+
+    background-size: 100% auto;
     background-position: center;
     background-repeat: no-repeat;
-    height: 83.9vh;
-   /*  background-attachment: fixed; */
+
+    height: clamp(640px, 61.4vw, 1180px);
 }
 
 .texto-hero{
