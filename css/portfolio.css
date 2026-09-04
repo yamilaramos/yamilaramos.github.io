@@ -14,7 +14,7 @@ html { /* rem */
             clamp(12px, 1.1vw, 21px)
             clamp(5px, 0.4vw, 8px)
             clamp(12px, 1.1vw, 21px);
-    border-radius: 22px;
+    border-radius: clamp(20px, 1.6vw, 31px);
 }
 
 .logo-mensaje{
