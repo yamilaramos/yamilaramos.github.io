@@ -378,28 +378,6 @@ a:hover {
 body{
     background-color: #fefaf6;
 }
-
-.titulo{
-    margin-left: 9.5%;
-    margin-bottom: 12px;
-    margin-left: 8%;
-    padding: 10px 10px;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.652);
-    border-radius: 24px 24px 24px 0;
-    
-    background: rgba(0, 0, 0, 0.08);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-
-    border: 1px solid rgb(255 255 255 / 0%);
-    box-shadow: 
-            0 8px 32px rgba(0, 0, 0, 0.3),
-            inset 0 1px 1px rgba(255, 255, 255, 0.2);
-
-    color: rgba(255, 255, 255, 0.92);
-
-}
-
 .presentacion{
     font-size: 1.72rem;
     font-weight: 300;
@@ -823,74 +801,95 @@ header {
     z-index: 10;
 }
 
-header > article {
-    height: 100%;
-    margin-left: clamp(4%, 4vw, 4%);
-    margin-right: clamp(4%, 4vw, 4%);
-
-    gap: clamp(14px, 2vw, 38px);
-}
-
-header .titulo-portafolio {
-    display: block;
-    padding-top: 2px;
-}
-
-header .titulo-portafolio img {
-    display: block;
-    width: clamp(138px, 12.6vw, 242px);
-    height: auto;
-}
-
-header nav {
-    width: 100%;
-}
-
-header nav ul {
-    margin: 0;
-    padding: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: clamp(18px, 2.5vw, 48px);
+    header > article {
+        height: 100%;
+        margin-left: clamp(4%, 4vw, 4%);
+        margin-right: clamp(4%, 4vw, 4%);
     
-    list-style: none;
-}
+        gap: clamp(14px, 2vw, 38px);
+    }
+    
+    header .logo-portafolio {
+        display: block;
+        padding-top: 2px;
+    }
+    
+    header .logo-portafolio img {
+        display: block;
+        width: clamp(138px, 12.6vw, 242px);
+        height: auto;
+    }
+    
+    header nav {
+        width: 100%;
+    }
+    
+    header nav ul {
+        margin: 0;
+        padding: 0;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: clamp(18px, 2.5vw, 48px);
+        
+        list-style: none;
+    }
+    
+    header nav li {
+        white-space: nowrap;
+    }
+    
+    header nav a {
+        font-size: clamp(21.25px, calc(9.3px + 0.87vw), 26px);
+        white-space: nowrap;
+    }
+    
+    header .btn-cv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        gap: 0.5rem;
+    
+        padding: clamp(0.4rem, 0.6vw, 0.7rem)
+                 clamp(1rem, 1.3vw, 1.6rem);
+    
+        font-size: clamp(18.25px, calc(6.3px + 0.72vw), 23px);
+    
+        white-space: nowrap;
+    
+        border-radius: 999px;
+    }
+    
+    header .btn-cv svg {
+        width: clamp(18px, 1.35vw, 26px);
+        height: auto;
+        flex-shrink: 0;
+        fill: currentColor;
+        stroke: currentColor;
+        stroke-width: 0.5;
+    }
 
-header nav li {
-    white-space: nowrap;
-}
+.titulo{
+    margin-left: 9.5%;
+    margin-left: 8%;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.652);
+    background: rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgb(255 255 255 / 0%);
+    box-shadow: 
+            0 8px 32px rgba(0, 0, 0, 0.3),
+            inset 0 1px 1px rgba(255, 255, 255, 0.2);
 
-header nav a {
-    font-size: clamp(21.25px, calc(9.3px + 0.87vw), 26px);
-    white-space: nowrap;
-}
+    color: rgba(255, 255, 255, 0.92);
 
-header .btn-cv {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    gap: 0.5rem;
-
-    padding: clamp(0.4rem, 0.6vw, 0.7rem)
-             clamp(1rem, 1.3vw, 1.6rem);
-
-    font-size: clamp(18.25px, calc(6.3px + 0.72vw), 23px);
-
-    white-space: nowrap;
-
-    border-radius: 999px;
-}
-
-header .btn-cv svg {
-    width: clamp(18px, 1.35vw, 26px);
-    height: auto;
-    flex-shrink: 0;
-    fill: currentColor;
-    stroke: currentColor;
-    stroke-width: 0.5;
+    margin-bottom: clamp(9px, 0.8vw, 15px);
+    padding:clamp(8px, 0.65vw, 12px);
+    border-radius:  clamp(20px, 1.6vw, 31px)
+                    clamp(20px, 1.6vw, 31px)
+                    clamp(20px, 1.6vw, 31px)
+                    0;
 }
 
 footer{
