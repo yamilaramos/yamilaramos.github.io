@@ -288,7 +288,8 @@
         transform: rotate(0);
     }
 
-    .btn-cv, .locacion {display:none;}
+    .locacion {display: none;}
+    header .btn-cv {display: none;}
 
     .t-padding{
         padding-top: 2px;
