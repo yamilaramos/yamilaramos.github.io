@@ -329,7 +329,6 @@ a:hover {
     padding: 8px 16px;
     font-weight: 500;
     transition: ease-in-out;
-    font-size: 1.28rem;
     color: #fcf9f7;
     transition: 
         transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
@@ -833,7 +832,7 @@ header .btn-cv {
     padding: clamp(0.4rem, 0.6vw, 0.7rem)
              clamp(1rem, 1.3vw, 1.6rem);
 
-    font-size: clamp(21.25px, calc(9.3px + 0.87vw), 26px);
+    font-size: clamp(19.25px, calc(7.3px + 0.77vw), 24px);
 
     white-space: nowrap;
 
