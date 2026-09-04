@@ -500,7 +500,7 @@ body{
         opacity: 1;
         
         top: clamp(82px, 5.9vw, 113px);
-        height: clamp(2.5px, 0.22vw, 4.3px);
+        height: clamp(2.5px, 0.2vw, 4.3px);
     }
     
     /* Puntos horizontales */
@@ -514,8 +514,8 @@ body{
         top: clamp(82px, 5.9vw, 113px);
         left: clamp(80px, 6.2vw, 134px);
     
-        width: clamp(18px, 1.45vw, 28px);
-        height: clamp(18px, 1.45vw, 28px);
+        width: clamp(18px, 1.31vw, 28px);
+        height: clamp(18px, 1.31vw, 28px);
     
         box-shadow:
             clamp(280px, 23vw, 485px) 0 0 white,
