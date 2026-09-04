@@ -456,11 +456,11 @@ body{
     padding-bottom: 2%;
 }
 
-.timeline img{
-    position: absolute;
-    z-index: 2;
- }
-
+    .timeline img{
+        position: absolute;
+        z-index: 2;
+     }
+    
     .logo-timeline-1 {
         position: absolute;
         top: 32%;
@@ -469,7 +469,7 @@ body{
         height: auto;
         z-index: 2;
     }
-
+    
     .logo-timeline-2 {
         position: absolute;
         top: 32%;
@@ -478,7 +478,7 @@ body{
         height: auto;
         z-index: 2;
     }
-
+    
     .logo-timeline-3 {
         position: absolute;
         top: 32.5%;
@@ -487,34 +487,40 @@ body{
         height: auto;
         z-index: 2;
     }
-
-/* Línea horizontal */
-.timeline::before {
-    content: "";
-    position: absolute;
-    top: 90px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.9) 10%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.9) 70%, rgba(255, 255, 255, 0.55) 90%, rgba(255, 255, 255, 0.3) 100%);
-    border-radius: 10px;
-    box-shadow: 0 0 6px rgba(255, 255, 255, 0.25), 0 0 12px rgba(255, 255, 255, 0.15);
-    opacity: 1;
-}
-
-/* Puntos horizontales */
-.timeline::after {
-    content: "";
-    position: absolute;
-    top: 90px;
-    left: 95px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #ffffff;
-    transform: translateY(-50%);
-    box-shadow: 345px 0 0 white, 690px 0 0 white;
-}
+    
+    /* Línea horizontal */
+    .timeline::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.9) 10%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.9) 70%, rgba(255, 255, 255, 0.55) 90%, rgba(255, 255, 255, 0.3) 100%);
+        border-radius: 10px;
+        box-shadow: 0 0 6px rgba(255, 255, 255, 0.25), 0 0 12px rgba(255, 255, 255, 0.15);
+        opacity: 1;
+        
+        top: clamp(82px, 5.9vw, 113px);
+        height: clamp(2.5px, 0.22vw, 4.3px);
+    }
+    
+    /* Puntos horizontales */
+    .timeline::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        background: #ffffff;
+        transform: translateY(-50%);
+    
+        top: clamp(80px, 6.6vw, 127px);
+        left: clamp(80px, 7vw, 134px);
+    
+        width: clamp(18px, 1.45vw, 28px);
+        height: clamp(18px, 1.45vw, 28px);
+    
+        box-shadow:
+            clamp(280px, 25.25vw, 485px) 0 0 white,
+            clamp(560px, 50.5vw, 970px) 0 0 white;
+    }
 
 .gap{
     gap: 4.5%;
