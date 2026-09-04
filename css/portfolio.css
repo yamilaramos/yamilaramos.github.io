@@ -13,9 +13,8 @@ a:hover { color: black; }
 
 html { font-size: 12.5px; } /* rem */
 strong { font-weight: 600; }
-body { background-color: var(--white); }
+body { background-color: var(--white); font-family: "Outfit", sans-serif; font-optical-sizing: auto; font-style: normal; }
 ::selection { background-color: var(--yellow); color: black; }
-.outfit { font-family: "Outfit", sans-serif; font-optical-sizing: auto; font-style: normal; }
 
 /* No cambia */
 .h-100vh { height: 100vh} 
@@ -47,7 +46,7 @@ body { background-color: var(--white); }
 
 /* TEXTO */
 
-.titulo-sobremi{
+.sobre-mi > div h1{
     font-size: clamp(29px, 2.375vw, 41px);
     margin-bottom: clamp(15px, 1.23vw, 21px);
 }
@@ -514,7 +513,7 @@ header {
     margin-left: 5%;
 }
 
-.texto-sobremi, .texto-sobremi-2{
+.sobre-mi p{
     font-size: 1.55rem;
     line-height: 2.2rem;
     max-width: 100%;
