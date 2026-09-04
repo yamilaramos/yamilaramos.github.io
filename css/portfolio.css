@@ -144,7 +144,7 @@ header {
         padding: clamp(0.4rem, 0.6vw, 0.7rem)
                  clamp(1rem, 1.3vw, 1.6rem);
     
-        font-size: clamp(18.25px, calc(6.3px + 0.72vw), 23px);
+        font-size: clamp(16px, calc(6.3px + 0.72vw), 23px);
     
         white-space: nowrap;
     
