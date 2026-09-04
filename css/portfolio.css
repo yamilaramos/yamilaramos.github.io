@@ -454,6 +454,28 @@ body{
 .timeline {
     position: relative;
     padding-bottom: 2%;
+    margin-top: 1.8%
+}
+
+.timeline img{
+    position: absolute;
+    z-index: 2;
+ }
+
+@media (min-width: 992px){
+
+    .timeline img[style*="width: 160px"]{
+        width: clamp(140px, 11.7vw, 225px) !important;
+    }
+
+    .timeline img[style*="width: 155px"]{
+        width: clamp(135px, 11.3vw, 218px) !important;
+    }
+
+    .timeline img[style*="width: 175px"]{
+        width: clamp(150px, 12.8vw, 246px) !important;
+    }
+
 }
 
 /* Línea horizontal */
