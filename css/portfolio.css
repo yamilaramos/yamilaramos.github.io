@@ -809,9 +809,8 @@ header nav ul {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-
-    gap: clamp(1rem, 2.5vw, 4rem);
-
+    gap: clamp(18px, 2.5vw, 48px);
+    
     list-style: none;
 }
 
@@ -820,7 +819,7 @@ header nav li {
 }
 
 header nav a {
-    font-size: clamp(1rem, 1.4vw, 1.8rem);
+    font-size: clamp(21.25px, calc(9.3px + 0.87vw), 26px);
     white-space: nowrap;
 }
 
@@ -834,7 +833,7 @@ header .btn-cv {
     padding: clamp(0.4rem, 0.6vw, 0.7rem)
              clamp(1rem, 1.3vw, 1.6rem);
 
-    font-size: clamp(1rem, 1.2vw, 1.3rem);
+    font-size: clamp(21.25px, calc(9.3px + 0.87vw), 26px);
 
     white-space: nowrap;
 
@@ -842,7 +841,7 @@ header .btn-cv {
 }
 
 header .btn-cv svg {
-    width: clamp(1rem, 1.5vw, 1.6rem);
+    width: clamp(18px, 1.35vw, 26px);
     height: auto;
     flex-shrink: 0;
     fill: currentColor;
