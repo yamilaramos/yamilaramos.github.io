@@ -11,7 +11,7 @@ img { max-width: 100%; height: auto; display: block; -webkit-user-drag: none; us
 a { text-decoration: none; color: black; font-size: 1.62rem; font-weight: 500;}
 a:hover { color: black; }
 
-html { font-size: 12.5px; }
+html { font-size: 12.5px; } /* rem */
 strong { font-weight: 600; }
 body { background-color: var(--white); }
 ::selection { background-color: var(--yellow); color: black; }
@@ -46,6 +46,11 @@ body { background-color: var(--white); }
 }
 
 /* TEXTO */
+
+.titulo-sobremi{
+    font-size: clamp(29px, 2.375vw, 41px);
+    margin-bottom: clamp(15px, 1.23vw, 21px);
+}
 
 h3{
     font-size: 2.8rem;
@@ -507,11 +512,6 @@ header {
 
 .contenedor-texto{ 
     margin-left: 5%;
-}
-
-.titulo-sobremi{
-    font-size: 2.9rem;
-    margin-bottom: 1.5rem;
 }
 
 .texto-sobremi, .texto-sobremi-2{
