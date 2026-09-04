@@ -511,7 +511,7 @@ body{
         background: #ffffff;
         transform: translateY(-50%);
     
-        top: clamp(80px, 6.6vw, 127px);
+        top: clamp(82px, 5.9vw, 113px);
         left: clamp(80px, 7vw, 134px);
     
         width: clamp(18px, 1.45vw, 28px);
