@@ -512,14 +512,14 @@ body{
         transform: translateY(-50%);
     
         top: clamp(82px, 5.9vw, 113px);
-        left: clamp(80px, 6.2vw, 134px);
+        left: clamp(80px, 6.1vw, 134px);
     
         width: clamp(18px, 1.31vw, 28px);
         height: clamp(18px, 1.31vw, 28px);
     
         box-shadow:
-            clamp(280px, 23vw, 485px) 0 0 white,
-            clamp(560px, 46vw, 970px) 0 0 white;
+            clamp(280px, 22.6vw, 485px) 0 0 white,
+            clamp(560px, 45.3vw, 970px) 0 0 white;
     }
 
 .gap{
