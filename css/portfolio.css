@@ -815,7 +815,7 @@ header .titulo-portafolio {
 
 header .titulo-portafolio img {
     display: block;
-    width: clamp(136px, 11.46vw, 240px);
+    width: clamp(138px, 11.56vw, 242px);
     height: auto;
 }
 
