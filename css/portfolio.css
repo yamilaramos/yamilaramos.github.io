@@ -768,8 +768,10 @@ strong{
 header {
     background-color: transparent;
     border-bottom: 2px solid black;
-    border-radius: 20px 20px 0 0;
     
+    border-radius: clamp(18px, 1.5vw, 29px)
+                   clamp(18px, 1.5vw, 29px)
+                       0 0;
     height: clamp(62px, 4.55vw, 87px);
 
     position: relative;
