@@ -1,25 +1,33 @@
-/* Hacer un root con fuentes y colores  */
-
 html { font-size: 12.5px; }
 * { padding: 0; margin: 0; scroll-behavior: smooth; box-sizing: border-box;}
 iframe { width: 100%; }
 ul { list-style: none; }
-
 img { max-width: 100%; height: auto; display: block; -webkit-user-drag: none; user-select: none; pointer-events: none; }
 a { text-decoration: none; color: black; font-size: 1.62rem; font-weight: 500;}
 a:hover { color: black; }
 
+/* No cambia */
 .d-flex{ display: flex; }
 .d-none{ display: none; }
-
-body { background-color: #fefaf6; }
-::selection { background-color: #EBA625; color: black; }
-
-.outfit { font-family: "Outfit", sans-serif; font-optical-sizing: auto; font-style: normal; }
-.gap { gap: 4.5%; }
 .h-100vh { height: 100vh} 
 .c-white { color: #fefaf6; }
-.b-black{ border-top: 2px solid black; }
+.b-black { border-top: 2px solid black; }
+
+/* Hacer un root con fuentes y colores  */
+body { background-color: #fefaf6; }
+::selection { background-color: #EBA625; color: black; }
+.outfit { font-family: "Outfit", sans-serif; font-optical-sizing: auto; font-style: normal; }
+
+.gap { gap: 4.5%; }
+.contenedor{
+    border: 2px solid black;
+    margin: clamp(12px, 1.1vw, 21px)
+            clamp(12px, 1.1vw, 21px)
+            clamp(5px, 0.4vw, 8px)
+            clamp(12px, 1.1vw, 21px);
+    border-radius: clamp(20px, 1.6vw, 31px);
+}
+
 
 /* TEXTO */
 
@@ -36,15 +44,7 @@ h4{
     margin-bottom: 14px;
 }
 
-.contenedor{
-    border: 2px solid black;
-            margin:
-            clamp(12px, 1.1vw, 21px)
-            clamp(12px, 1.1vw, 21px)
-            clamp(5px, 0.4vw, 8px)
-            clamp(12px, 1.1vw, 21px);
-    border-radius: clamp(20px, 1.6vw, 31px);
-}
+
 
 header {
     background-color: transparent;
