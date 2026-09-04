@@ -671,7 +671,7 @@ strong{
     background-position: center;
     background-repeat: no-repeat;
 
-    height: clamp(640px, 61.4vw, 1180px);
+    height: 83.8vh;
 }
 
 .texto-hero{
