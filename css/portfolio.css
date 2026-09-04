@@ -739,7 +739,7 @@ strong{
     background-repeat: no-repeat;
 
     height: 50vh;
-    border-radius: 40px;
+    border-radius: clamp(29px, 2.62vw, 40px);
     border: 2px solid black;
 }
 
