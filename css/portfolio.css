@@ -454,7 +454,6 @@ body{
 .timeline {
     position: relative;
     padding-bottom: 2%;
-    margin-top: 1.8%
 }
 
 .timeline img{
@@ -788,8 +787,15 @@ strong{
 }
 
 .flecha{
-    height: 28px;
-    width: 26px;
+    width: clamp(24px, 1.45vw, 37px);
+    height: auto;
+}
+
+.flecha-dinamica {
+    stroke: currentColor;
+    width: clamp(24px, 1.45vw, 37px);
+    height: auto;
+    transition: color 0.3s ease;
 }
 
 .dec-none:hover{
@@ -945,13 +951,6 @@ footer{
     background-color: #fefaf6;
     color: #EBA625;
     border-radius: 25px;
-}
-
-.flecha-dinamica {
-    stroke: currentColor;
-    height: 28px;
-    width: 26px;
-    transition: color 0.3s ease;
 }
 
 nav, ul{ list-style: none;}
