@@ -60,6 +60,13 @@ h4{
     margin-bottom: 14px;
 }
 
+/* BOTONES */
+
+.btn-seccion-2 img{
+    width: 27px;
+    margin-left: 10px;
+}
+
 header {
     background-color: transparent;
     border-bottom: 2px solid black;
