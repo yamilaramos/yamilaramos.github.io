@@ -827,6 +827,7 @@
         height: fit-content;
         padding: 2% 0px;
         margin-top: 6%;
+        border-radius: 0px;
     } 
     
     .logo{
