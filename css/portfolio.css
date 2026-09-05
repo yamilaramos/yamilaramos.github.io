@@ -1,6 +1,7 @@
 :root{
     --yellow: #EBA625;
-    --white: #fefaf6;
+    --white: #fcf9f7;
+    --cream: #fefaf6;
     --gap: 4.5%;
 }
 
@@ -13,7 +14,7 @@ a:hover { color: black; }
 
 html { font-size: 12.5px; } /* rem */
 strong { font-weight: 600; }
-body { background-color: var(--white); font-family: "Outfit", sans-serif; font-optical-sizing: auto; font-style: normal; }
+body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-optical-sizing: auto; font-style: normal; }
 ::selection { background-color: var(--yellow); color: black; }
 .jcontent-center { justify-content: center; }
 .jcontent-between { justify-content: space-between; }
@@ -29,12 +30,12 @@ body { background-color: var(--white); font-family: "Outfit", sans-serif; font-o
 .d-flex{ display: flex; }
 .d-none{ display: none; }
 .t-align-center { text-align: center; }
-.c-white { color: var(--white); }
+.c-white { color: var(--cream); }
 
 /* Variables */
 .flex-direction-column{ flex-direction: column; align-items: flex-start;}
 .subrayado { text-decoration: underline dotted var(--yellow); }
-.subrayado-2 { text-decoration: underline dotted var(--white); }
+.subrayado-2 { text-decoration: underline dotted var(--cream); }
 .b-black { border-top: 2px solid black; }
 .border-top-black{ border-top: 2px solid black; } 
 .gap { gap: 4.5%; }
@@ -204,8 +205,6 @@ header {
         font-size: clamp(16px, calc(6.3px + 0.72vw), 23px);
     
         white-space: nowrap;
-    
-        border-radius: 999px;
     }
     
     header .btn-cv svg {
@@ -219,23 +218,18 @@ header {
 
 .btn-cv{
     flex-direction: row-reverse;
-    background: linear-gradient(131deg,rgba(235, 166, 37, 1) 0%, rgba(255, 178, 36, 1) 50%, rgba(235, 166, 37, 1) 100%);
     border: 1px solid var(--yellow);
     border-radius: 28px;
-    padding: 8px 16px;
     font-weight: 500;
-    transition: ease-in-out;
-    color: #fcf9f7;
+    color: var(--white);
     transition: 
         transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
         box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
         color 0.30s ease;
-
     
     display: inline-flex;             
-    align-items: center;  /* centra vertical */
-    justify-content: center;
-    gap: 8px;                          
+    align-items: center;
+    justify-content: center;                         
 
     background: linear-gradient(131deg,
         rgba(235,166,37,1) 0%,
@@ -639,7 +633,7 @@ header {
   }
 
 .mensaje {
-  color: var(--white);
+  color: var(--cream);
   display: flex;
   align-items: center;
   font-size: 1.4rem;
@@ -666,7 +660,7 @@ header {
 
 .hero{
     background: url('../img/hero-final.png');
-    background-color: var(--white);
+    background-color: var(--cream);
 
     background-size: 100% auto;
     background-position: center;
@@ -704,7 +698,7 @@ header {
 
 .hero-materia{
     background-image: url('../img/hero-materia.png');
-    background-color: var(--white);
+    background-color: var(--cream);
     background-size: cover;
     height: 100vh;
     
@@ -716,7 +710,7 @@ header {
 
 .hero-ada{
     background-image: url('../img/hero-ada-3.jpg');
-    background-color: var(--white);
+    background-color: var(--cream);
     background-size: cover;
     height: 100vh;
     
@@ -727,7 +721,7 @@ header {
 
 .hero-soplo{
     background-image: url('../img/hero-soplo-2.png');
-    background-color: var(--white);
+    background-color: var(--cream);
     background-size: cover;
     height: 100vh;
     
@@ -750,7 +744,7 @@ header {
 
 .dec-none:hover{
     text-decoration: none;
-    color: var(--white);
+    color: var(--cream);
 }
 
 footer{
@@ -764,7 +758,7 @@ footer{
     height: 70vh;
     border-radius: 0 0 clamp(20px, 1.6vw, 31px) clamp(20px, 1.6vw, 31px);
     font-size: 1.6rem;
-    color: var(--white);
+    color: var(--cream);
 }
 
     .logo-footer{
@@ -786,22 +780,22 @@ footer{
     }
     
     .t-footer-final{
-        border-top: 2px solid var(--white);
+        border-top: 2px solid var(--cream);
         padding-top: 2%;
-        color: var(--white);
+        color: var(--cream);
         font-weight: 500;
         font-size: 1.45rem;
     }
     
     .t-footer{
-        color: var(--white);
+        color: var(--cream);
         font-weight: 500;
         margin-left: 10px;
     }
     
     .btn-footer{
         padding: 8px 16px;
-        border: 3px solid var(--white);
+        border: 3px solid var(--cream);
         background-color: transparent;
         border-radius: 25px;
         transition: all 0.3s ease;
@@ -811,8 +805,8 @@ footer{
     
     .btn-footer:hover{
         padding: 8px 16px;
-        border: 3px solid var(--white);
-        background-color: var(--white);
+        border: 3px solid var(--cream);
+        background-color: var(--cream);
         color: var(--yellow);
         border-radius: 25px;
     }
@@ -866,7 +860,7 @@ footer{
 .d-btn{
     font-weight: lighter;
     font-size: 16px;
-    color: #fcf9f7;
+    color: var(--white);
     transition: 
         transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
         box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
