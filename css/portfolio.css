@@ -39,8 +39,11 @@ body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-o
 .b-black { border-top: 2px solid black; }
 .border-top-black{ border-top: 2px solid black; } 
 .gap { gap: 4.5%; }
+
+.m-top-logo { margin-top: 10px; }
 .m-top { margin-top: 20px;}
-.m-top-seccion { margin-top: 3%;}
+.m-top-seccion { margin-top: 3%; }
+.contenedor-texto{ margin-left: 5%; }
 
 .contenedor{
     border: 2px solid black;
@@ -49,6 +52,12 @@ body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-o
             clamp(5px, 0.4vw, 8px)
             clamp(12px, 1.1vw, 21px);
     border-radius: clamp(20px, 1.6vw, 31px);
+}
+
+.logo{
+    height: 38px;
+    width: 38px;
+    margin-right: 4px;
 }
 
 /* TEXTO */
@@ -93,7 +102,7 @@ body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-o
                     0;
 }
 
-.presentacion h1::before {
+.presentacion::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -107,18 +116,6 @@ body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-o
 
     opacity: 0.25;
     pointer-events: none;
-}
-
-.sobre-mi > div h1{
-    font-size: clamp(36px, 2.35vw, 45px);
-    margin-bottom: clamp(15px, 1.23vw, 21px);
-}
-
-.sobre-mi p{
-    font-size: clamp(19.4px, 1.27vw, 24.3px);
-    line-height: clamp(27.5px, 1.80vw, 34.4px);
-    max-width: 100%;
-    margin-bottom: 10px;  
 }
 
 h3{
@@ -235,16 +232,6 @@ header {
     color: black;
 }
 
-
-.logo-mensaje{
-    height: 22px;
-    width: 22px;
-    margin-right: 20px;
-}
-
-.m-top-logo{
-    margin-top: 10px;
-}
 
 .locacion-logo{
     margin-bottom: 3px;
@@ -498,25 +485,75 @@ header {
     transform: scaleX(1);
 }
 
-.contenedor-texto{ 
-    margin-left: 5%;
+/* DIVISION */
+
+.division{
+    border-top: 2px solid black;
+    border-bottom: none;
+    height: 38px;
+   
+    background: linear-gradient(131deg,rgba(235, 166, 37, 1) 0%, rgba(255, 178, 36, 1) 50%, rgba(235, 166, 37, 1) 100%);
+ }
+
+.anuncio {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 3rem;
 }
 
+.track {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.mensaje {
+  color: var(--cream);
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+    
+  font-size: clamp(17.5px, 1.14vw, 21.9px);
+  padding: 8px 0px;
+}
+
+.dot { margin: 0 20px; }
+
+.logo-mensaje{ /* no implementado aun */
+    height: 22px;
+    width: 22px;
+    margin-right: 20px;
+}
+
+/* SOBRE MI */
+
+.sobre-mi > div h1{
+    font-size: clamp(36px, 2.35vw, 45px);
+    margin-bottom: clamp(15px, 1.23vw, 21px);
+}
+
+.sobre-mi p{
+    font-size: clamp(19.4px, 1.27vw, 24.3px);
+    line-height: clamp(27.5px, 1.80vw, 34.4px);
+    max-width: 100%;
+    margin-bottom: 10px;  
+}
 
 .timeline {
     position: relative;
     padding-bottom: 2%;
 }
 
-.timeline img{
-    position: absolute;
-    z-index: 2;
-}
+    .timeline img{
+        position: absolute;
+        z-index: 2;
+    }
     
     .logo-timeline-1 {
         top: 32%;
         left: 19.5%;
-        width: clamp(140px, 10.5vw, 225px); /* clamp(75px, 10.5vw, 160px) */
+        width: clamp(140px, 10.5vw, 225px);
         height: auto;
     }
     
@@ -568,73 +605,35 @@ header {
             clamp(560px, 45.3vw, 970px) 0 0 white;
     }
 
-    .card{
-        background: rgba(0, 0, 0, 0.08);
-        backdrop-filter: blur(14px);
-    
-        border: 1px solid rgba(255, 255, 255, 0.073);
-        box-shadow: 
-                0 8px 32px rgba(0, 0, 0, 0.3),
-                inset 0 1px 1px rgba(255, 255, 255, 0.2);
-    
-        color: rgba(255, 255, 255, 0.92);
-        
-        padding: 12px 12px 12px 20px;
-        border-radius: 0px 24px  24px 24px;
-        position: relative;
-    }
-    
-    .card h2{
-        font-size: 1.7rem;
-        font-weight: 500;
-        margin-bottom: 10px;
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.652);
-        /* background-color: rgba(0, 0, 0, 0.285); */
-        width: fit-content;
-    }
-    
-    .card p{
-        font-size: 1.25rem;
-        margin-top: 8px;
-    }
+/* TIMELINE CARDS */
 
-.logo{
-    height: 38px;
-    width: 38px;
-    margin-right: 4px;
+.card{
+    background: rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(14px);
+    
+    border: 1px solid rgba(255, 255, 255, 0.073);
+    box-shadow: 
+            0 8px 32px rgba(0, 0, 0, 0.3),
+            inset 0 1px 1px rgba(255, 255, 255, 0.2);
+    
+     color: rgba(255, 255, 255, 0.92);
+     position: relative;
+     padding: 12px 12px 12px 20px;
+     border-radius: 0px 24px  24px 24px;
 }
-
-.division{
-    border-top: 2px solid black;
-    border-bottom: none;
-    height: 38px;
-   
-    background: linear-gradient(131deg,rgba(235, 166, 37, 1) 0%, rgba(255, 178, 36, 1) 50%, rgba(235, 166, 37, 1) 100%);
- }
-
-.anuncio {
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  height: 3rem;
+    
+.card h2{
+     font-size: clamp(21.25px, 1.39vw, 26.6px);
+     font-weight: 500;
+     margin-bottom: 10px;
+     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.652);
+     width: fit-content;
 }
-
-.track {
-  display: flex;
-  width: max-content;
-  animation: scroll 30s linear infinite;
-  }
-
-.mensaje {
-  color: var(--cream);
-  display: flex;
-  align-items: center;
-  font-size: 1.4rem;
-  font-weight: 400;
-  padding: 8px 0px;
+    
+.card p{
+      font-size: clamp(15.625px, 1.02vw, 19.5px);
+      margin-top: 8px;
 }
-
-.dot { margin: 0 20px; }
 
 @keyframes scroll {
   from {
@@ -874,14 +873,15 @@ footer{
 }
 
     .btn-hero {
-        font-size: 1.5rem;
+        font-size: clamp(18.75px, 1.22vw, 23.4px);
+        border-radius: 25px;
+        padding: 6px 22px 7px 20px;
+        
         background: linear-gradient(131deg,
             rgba(235,166,37,1) 0%,
             rgba(255,178,36,1) 50%,
             rgba(235,166,37,1) 100%);
             
-        border-radius: 25px;
-        padding: 6px 22px 7px 20px;
         font-weight: 500;
         color: white;
         
@@ -900,9 +900,10 @@ footer{
     }
     
     .btn-hero-secundario{
-        font-size: 1.6rem;
+        font-size: clamp(20px, 1.30vw, 25px);
         padding: 8px 22px 8px 20px;
         border-radius:50px;
+        
         border: 1px solid rgb(255 255 255 / 30%);
         color: white;
         transition:.3s ease;
