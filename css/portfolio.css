@@ -232,14 +232,6 @@ header {
     color: black;
 }
 
-
-.locacion-logo{
-    margin-bottom: 3px;
-    height: 30px;
-    width: 30px;
-    margin-right: 8px;
-}
-
 .b-calendario{
     background-color: #fdf0e7;
     border-radius: 50%;    
@@ -739,77 +731,7 @@ header {
     color: var(--cream);
 }
 
-footer{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    border-top: 2px solid black;
-    background-color: var(--yellow);
-    text-align: center;
-    height: 70vh;
-    border-radius: 0 0 clamp(20px, 1.6vw, 31px) clamp(20px, 1.6vw, 31px);
-    font-size: 1.6rem;
-    color: var(--cream);
-}
-
-    .logo-footer{
-        height: 66px;
-        width: 66px;
-        margin-bottom: 30%;
-    }
-    
-    .nombre{
-        width: 50%;
-    }
-    
-    .m-right{
-        margin-right: 2px;
-    }
-    
-    .m-top-footer{
-        margin-top: 10px;
-    }
-    
-    .t-footer-final{
-        border-top: 2px solid var(--cream);
-        padding-top: 2%;
-        color: var(--cream);
-        font-weight: 500;
-        font-size: 1.45rem;
-    }
-    
-    .t-footer{
-        color: var(--cream);
-        font-weight: 500;
-        margin-left: 10px;
-    }
-    
-    .btn-footer{
-        padding: 8px 16px;
-        border: 3px solid var(--cream);
-        background-color: transparent;
-        border-radius: 25px;
-        transition: all 0.3s ease;
-        font-size: 1.55rem;
-        margin-bottom: 10%;
-    }
-    
-    .btn-footer:hover{
-        padding: 8px 16px;
-        border: 3px solid var(--cream);
-        background-color: var(--cream);
-        color: var(--yellow);
-        border-radius: 25px;
-    }
-    
-    .mapa{
-        border: 8px solid rgba(255, 255, 255, 0.909);
-        border-radius: 50%;
-        margin: auto;
-        height: 280px;
-        width: 290px;
-    }
+/* PROYECTOS */
 
 .contenedor-light{
   position: relative;
@@ -861,7 +783,7 @@ footer{
 
 .d-btn:hover{
     text-decoration: none;
-    color: #000000;
+    color: black;
 }
 
 .botones-hero{
@@ -1135,6 +1057,87 @@ footer{
     filter: blur(0);
 }
 
+/* FOOTER */
+
+footer{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-top: 2px solid black;
+    background-color: var(--yellow);
+    text-align: center;
+    height: 70vh;
+    border-radius: 0 0 clamp(20px, 1.6vw, 31px) clamp(20px, 1.6vw, 31px);
+    font-size: 1.6rem;
+    color: var(--cream);
+}
+
+    .logo-footer{
+        height: 66px;
+        width: 66px;
+        margin-bottom: 30%;
+    }
+    
+    .nombre{
+        width: 50%;
+    }
+    
+    .m-right{
+        margin-right: 2px;
+    }
+    
+    .m-top-footer{
+        margin-top: 10px;
+    }
+    
+    .t-footer-final{
+        border-top: 2px solid var(--cream);
+        padding-top: 2%;
+        color: var(--cream);
+        font-weight: 500;
+        font-size: 1.45rem;
+    }
+    
+    .t-footer{
+        color: var(--cream);
+        font-weight: 500;
+        margin-left: 10px;
+    }
+    
+    .btn-footer{
+        padding: 8px 16px;
+        border: 3px solid var(--cream);
+        background-color: transparent;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+        font-size: 1.55rem;
+        margin-bottom: 10%;
+    }
+    
+    .btn-footer:hover{
+        padding: 8px 16px;
+        border: 3px solid var(--cream);
+        background-color: var(--cream);
+        color: var(--yellow);
+        border-radius: 25px;
+    }
+    
+    .mapa{
+        border: 8px solid rgba(255, 255, 255, 0.909);
+        border-radius: 50%;
+        margin: auto;
+        height: 280px;
+        width: 290px;
+    }
+
+.locacion-logo{
+    margin-bottom: 3px;
+    height: 30px;
+    width: 30px;
+    margin-right: 8px;
+}
+
 .w-100 {width: 100%;}
 .w-95 { width: 95%;}
 .w-90 { width: 90%;}
@@ -1161,4 +1164,3 @@ footer{
 .w-15 { width: 15%;}
 .w-12 { width: 13.5%;}
 .w-10 { width: 10%;}
-
