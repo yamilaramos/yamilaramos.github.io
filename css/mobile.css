@@ -329,8 +329,8 @@
         justify-content: flex-start;
         position: relative;
         z-index: 1;
-         background-size: cover;
-         background-position: top left;
+        background-position: center center;
+        background-repeat: no-repeat;
     }
 
     .hero > div{
