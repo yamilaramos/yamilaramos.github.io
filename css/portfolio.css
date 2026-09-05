@@ -36,8 +36,8 @@ body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-o
 .flex-direction-column{ flex-direction: column; align-items: flex-start;}
 .subrayado { text-decoration: underline dotted var(--yellow); }
 .subrayado-2 { text-decoration: underline dotted var(--cream); }
-.b-black { border-top: 2px solid black; }
-.border-top-black{ border-top: 2px solid black; } 
+.b-black { border-top: clamp(2px, 0.18vw, 2.5px) solid black; }
+.border-top-black{ border-top: clamp(2px, 0.18vw, 2.5px) solid black; } 
 .gap { gap: 4.5%; }
 
 .m-top-logo { margin-top: 10px; }
@@ -135,7 +135,7 @@ h4{
 
 header {
     background-color: transparent;
-    border-bottom: 2px solid black;
+    border-bottom: clamp(2px, 0.18vw, 2.5px) solid black;
     position: relative;
     z-index: 10;
     
@@ -196,8 +196,8 @@ header {
     
         gap: 0.5rem;
         font-size: clamp(16px, 1.05vw, 20px);
-        padding: clamp(8px, calc(4.05px + 0.2888vw), 9.6px)
-                 clamp(16px, calc(8.11px + 0.5776vw), 19.2px);
+        padding: clamp(7px, 0.55vw, 8.75px)
+                 clamp(16px, 1.30vw, 20px);
         white-space: nowrap;
     }
     
@@ -480,7 +480,7 @@ header {
 /* DIVISION */
 
 .division{
-    border-top: 2px solid black;
+    border-top: clamp(2px, 0.18vw, 2.5px) solid black;
     border-bottom: none;
     height: 38px;
    
@@ -677,7 +677,7 @@ header {
 
     height: 50vh;
     border-radius: clamp(29px, 2.62vw, 40px);
-    border: 2px solid black;
+    border: clamp(2px, 0.18vw, 2.5px) solid black;
 }
 
 .hero-materia{
@@ -688,7 +688,7 @@ header {
     
     background-position: center;
     background-repeat: no-repeat;
-    border-right: 2px solid black;
+    border-right: clamp(2px, 0.18vw, 2.5px) solid black;
 
 }
 
@@ -700,7 +700,7 @@ header {
     
     background-position: center;
     background-repeat: no-repeat;
-    border-right: 2px solid black;
+    border-right: clamp(2px, 0.18vw, 2.5px) solid black;
 }
 
 .hero-soplo{
@@ -711,7 +711,7 @@ header {
     
     background-position: center;
     background-repeat: no-repeat;
-    border-left: 2px solid black;
+    border-left: clamp(2px, 0.18vw, 2.5px) solid black;
 }
 
 .flecha{
@@ -740,7 +740,7 @@ header {
 .video-light {
   width: 100%;
   display: block;
-  border: 2px solid;
+  border: clamp(2px, 0.18vw, 2.5px) solid;
   border-radius: 40px 15px 40px 15px;
 }
 
@@ -753,7 +753,7 @@ header {
 }
 
 .video{
-    border: 2px solid;
+    border: clamp(2px, 0.18vw, 2.5px) solid;
     background-color: #3b2a19;
     border-radius: 40px 15px 40px 15px;
     display: block;
@@ -832,7 +832,7 @@ header {
         rgba(255,178,36,1) 50%,
         rgba(235,166,37,1) 100%);
         
-    border: 2px solid black;
+    border: clamp(2px, 0.18vw, 2.5px) solid black;
     border-radius: 25px;
     padding: 8px 22px 8px 20px;
     font-weight: 500;
@@ -861,7 +861,7 @@ header {
         rgba(255,178,36,1) 50%,
         rgba(235,166,37,1) 100%);
         
-    border: 2px solid black;
+    border: clamp(2px, 0.18vw, 2.5px) solid black;
     border-radius: 20px;
     padding: 8px 23px 10px 20px;
     font-weight: 500;
@@ -876,10 +876,10 @@ header {
         color 0.30s ease;
 }
 
-    .btn-seccion-2 img{
-        width: 27px;
-        margin-left: 10px;
-    }
+.btn-seccion-2 img{
+    width: 27px;
+    margin-left: 10px;
+}
 
 .btn-hero svg {
     margin-top: 3.83px;
@@ -1049,7 +1049,7 @@ footer{
     background-position: center;
     background-repeat: no-repeat;
 
-    border-top: 2px solid black;
+    border-top: clamp(2px, 0.18vw, 2.5px) solid black;
     background-color: var(--yellow);
     text-align: center;
     height: 70vh;
