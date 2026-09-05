@@ -10,6 +10,7 @@
 
     header .logo-portafolio img{
         width: 100%;
+        padding-top: 2%;
     }
 
     .fade-in-down{
@@ -182,7 +183,11 @@
         width: 95%;
     }
     
-    .w-12, .w-55, .w-80{
+    .w-12{
+        width: max-content;
+    }
+    
+    .w-55, .w-80{
         width: 90%;
     }
 
