@@ -8,7 +8,7 @@
 iframe { width: 100%; }
 nav, ul { list-style: none; }
 img { max-width: 100%; height: auto; display: block; -webkit-user-drag: none; user-select: none; pointer-events: none; }
-a { text-decoration: none; color: black; font-size: 1.62rem; font-weight: 500;}
+a { text-decoration: none; color: black; font-weight: 500;}
 a:hover { color: black; }
 
 html { font-size: 12.5px; } /* rem */
@@ -186,7 +186,7 @@ header {
     }
     
     header nav a {
-        font-size: clamp(20.25px, calc(9.3px + 0.87vw), 26px);
+        font-size: clamp(21.5px, 1.40vw, 26.9px);
         white-space: nowrap;
     }
     
