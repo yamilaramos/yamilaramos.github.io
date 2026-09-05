@@ -60,9 +60,9 @@ body { background-color: var(--white); font-family: "Outfit", sans-serif; font-o
 
     margin-bottom: clamp(9px, 0.8vw, 15px);
     padding: clamp(8px, 0.66vw, 12px);
-    border-radius:  clamp(13px, 1.26vw, 24px)
-                    clamp(13px, 1.26vw, 24px)
-                    clamp(13px, 1.26vw, 24px)
+    border-radius:  clamp(13px, 1.4vw, 24px)
+                    clamp(13px, 1.4vw, 24px)
+                    clamp(13px, 1.4vw, 24px)
                     0;
 }
 
@@ -70,14 +70,20 @@ body { background-color: var(--white); font-family: "Outfit", sans-serif; font-o
     font-size: clamp(21.5px, 1.40vw, 26.9px);
     font-weight: 300;
     margin-left: 8%;
-    padding: 12px 14px 12px 24px;
+    padding: clamp(8px, 0.74vw, 14px)
+             clamp(8px, 0.82vw, 12px)
+             clamp(8px, 0.74vw, 14px)
+             clamp(18px, 1.42vw, 24px);
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.652);
-    border-radius: 24px 24px 24px 0;
     background: rgba(0, 0, 0, 0.08);
     backdrop-filter: blur(14px);
     border: 1px solid rgb(255 255 255 / 0%);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.2);
     color: rgba(255, 255, 255, 0.92);
+    border-radius:  clamp(13px, 1.4vw, 24px)
+                    clamp(13px, 1.4vw, 24px)
+                    clamp(13px, 1.4vw, 24px)
+                    0;
 }
 
 .presentacion h1::before {
