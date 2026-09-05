@@ -1,6 +1,6 @@
 @media screen and (max-width:768px){
 
-    .hero-buttons{
+    .botones-hero{
         display: none;
     }
 
@@ -322,7 +322,7 @@
 
     .hero{
         background-color: #3b2a19;
-         background: 
+        background: 
         linear-gradient(
         to right,
         rgba(0, 0, 0, 0.7) 0%,
@@ -426,7 +426,7 @@
         display: block; 
     }
 
-    .titulo-sobremi{
+    .sobre-mi h1{
         text-align: left;
         margin: 10px 0px;
         font-size: 32px;
@@ -437,7 +437,7 @@
         justify-content: start;
     }
 
-    .texto-sobremi{
+    .sobre-mi p{
         margin: auto;
         font-size: 18px;
         text-align: left;
