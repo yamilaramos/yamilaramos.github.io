@@ -46,7 +46,7 @@ body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-o
 .contenedor-texto{ margin-left: 5%; }
 
 .contenedor{
-    border: 2px solid black;
+    border: clamp(2px, 0.18vw, 2.5px) solid black;
     margin: clamp(12px, 1.1vw, 21px)
             clamp(12px, 1.1vw, 21px)
             clamp(5px, 0.4vw, 8px)
