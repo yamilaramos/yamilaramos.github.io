@@ -527,16 +527,9 @@
     }
 
     .hero-sobremi{
-        background: 
-        linear-gradient(
-        to left,
-        rgba(0, 0, 0, 0.7) 0%,
-        rgba(0, 0, 0, 0.4) 40%,
-        rgba(0, 0, 0, 0.1) 100%
-        ),
-        url('../img/timeline-mobile.png');
+        background: url('../img/timeline-mobile.png');
         background-size: cover;
-        background-position: center;
+        background-position: center right ;
         border-radius: 35px 35px 0px 0px;
         height: 100%;
         border-bottom: #000000 2px solid;
