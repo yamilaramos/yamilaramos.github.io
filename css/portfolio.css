@@ -115,8 +115,8 @@ body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-o
 }
 
 .sobre-mi p{
-    font-size: 1.55rem;
-    line-height: 2.2rem;
+    font-size: clamp(19.4px, 1.27vw, 24.3px);
+    line-height: clamp(27.5px, 1.80vw, 34.4px);
     max-width: 100%;
     margin-bottom: 10px;  
 }
