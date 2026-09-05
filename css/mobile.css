@@ -4,6 +4,10 @@
         display: none;
     }
 
+    header .logo-portafolio img{
+        width: 100%;
+    }
+
     .fade-in-down{
         animation: none !important;
         transition: none !important;
