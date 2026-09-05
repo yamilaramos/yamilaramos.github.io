@@ -4,6 +4,10 @@
         display: none;
     }
 
+    .botones-hero{
+        margin-left: 0px;
+    }
+
     header .logo-portafolio img{
         width: 100%;
     }
@@ -536,11 +540,6 @@
         border-right: none;
         border-left: none;
         margin-top: 10%;
-    }
-
-    .contenedor-btn-cv-mobile{
-        margin-top: 25px;
-        margin-left: 6px;
     }
     
 .btn-cv-mobile{
