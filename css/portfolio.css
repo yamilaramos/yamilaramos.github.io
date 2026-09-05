@@ -956,7 +956,7 @@ header {
   transform: translateY(0);
 }
 
-.scroll-fade-modern {
+/* .scroll-fade-modern {
   opacity: 0;
   transform: translateY(40px) scale(0.98);
   filter: blur(4px);
@@ -970,7 +970,7 @@ header {
   opacity: 1;
   transform: translateY(0) scale(1);
   filter: blur(0);
-}
+} */
 
 .scroll-fade-modern-2 {
   opacity: 0;
