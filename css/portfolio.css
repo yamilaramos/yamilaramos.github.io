@@ -771,21 +771,6 @@ header {
     transition:ease-in-out;
 }
 
-.d-btn{
-    font-weight: lighter;
-    font-size: 16px;
-    color: var(--white);
-    transition: 
-        transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
-        box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
-        color 0.30s ease;
-}
-
-.d-btn:hover{
-    text-decoration: none;
-    color: black;
-}
-
 .botones-hero{
     display:flex;
     gap:15px;
