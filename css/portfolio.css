@@ -42,8 +42,7 @@ body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-o
 
 .m-top-logo { margin-top: 10px; }
 .m-top { margin-top: 20px;}
-.m-top-seccion { margin-top: 3%; }
-.contenedor-texto{ margin-left: 5%; }
+.m-seccion{ margin-left: 5%;}
 
 .contenedor{
     border: clamp(2px, 0.15vw, 2.5px) solid black;
@@ -116,12 +115,6 @@ body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-o
 
     opacity: 0.25;
     pointer-events: none;
-}
-
-h3{
-    font-size: 2.8rem;
-    margin-bottom: 4px;
-    max-width: 80%;
 }
 
 h4{
@@ -232,6 +225,29 @@ header {
     color: black;
 }
 
+/* PROYECTOS */
+
+.contenedor-proyectos{ margin-left: 5%; }
+
+.contenedor-proyectos h3{
+    font-size: 2.8rem;
+    margin-bottom: 4px;
+    max-width: 80%;
+}
+
+.contenedor-proyectos p{
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    margin-bottom: 14px;
+    max-width: 83%;    
+}
+
+.texto-seccion{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
 .b-calendario{
     background-color: #fdf0e7;
     border-radius: 50%;    
@@ -321,19 +337,6 @@ header {
         height: 60%;
     
         background: #80808099;
-}
-
-.texto-seccion{
-    font-size: 1.6rem;
-    line-height: 2.1rem;
-    margin-bottom: 14px;
-    max-width: 83%;    
-}
-
-.texto2-seccion{
-    font-size: 1.6rem;
-    font-weight: 500;
-    margin-bottom: 14px;
 }
 
 /* MOBILE */
@@ -924,10 +927,6 @@ header {
 .outgoing-icon{
     width: 20px;
     height: 20px;
-}
-
-.m-seccion{
-    margin-left: 5%;
 }
 
 /* ANIMACIONES */
