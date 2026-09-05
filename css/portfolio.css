@@ -198,10 +198,9 @@ header {
         justify-content: center;
     
         gap: 0.5rem;
-        padding: clamp(0.4rem, 0.55vw, 0.48rem)
-             clamp(1rem, 1.35vw, 1.2rem);
-
-        font-size: clamp(16px, 1.05vw, 19.2px);
+        font-size: clamp(16px, calc(8.11px + 0.5776vw), 19.2px);
+        padding: clamp(8px, calc(4.05px + 0.2888vw), 9.6px)
+                 clamp(16px, calc(8.11px + 0.5776vw), 19.2px);
         white-space: nowrap;
     }
     
