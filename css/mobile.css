@@ -130,7 +130,7 @@
         color: white;
     }
 
-    .btn-cv-mobile svg{
+    .btn-hero svg{
         width: 18px;
         height: 18px;
         stroke: white;
@@ -543,7 +543,7 @@
         margin-left: 6px;
     }
     
-.btn-cv-mobile{
+.btn-hero{
     flex-direction: row-reverse;
     display: inline-flex;             
     align-items: center;
@@ -563,7 +563,7 @@
     border-radius: 25px;
     }
 
-    .btn-cv-mobile img{
+    .btn-hero img{
         width: 23px;
         height: 23px;
         padding-bottom: 2px;
