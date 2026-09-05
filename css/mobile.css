@@ -547,9 +547,10 @@
         margin-left: 6px;
     }
     
-    .btn-cv-mobile{
+.btn-cv-mobile{
+    flex-direction: row-reverse;
     display: inline-flex;             
-    align-items: center;               /* centra vertical */
+    align-items: center;
     justify-content: center;
     gap: 9px;                          
 
@@ -880,9 +881,9 @@
     border-radius: 10px;
 }
 
-.align-items-center{
+/* .align-items-center{
     align-items: start;
-}
+} */
 
 }
 
