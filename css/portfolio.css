@@ -341,8 +341,8 @@ header {
 
 /* MOBILE */
 
-.salto-mobile{ display: block; margin-top: 10px; }
-.salto-mobile-desactivado { display: inline; }
+.salto-linea{ display: block; margin-top: 10px; }
+.salto-mobile-desactivado, .salto-mobile { display: inline; }
 .punto-mobile { color: var(--yellow); margin-left: 2px; }
 
 .decor-line-2{
