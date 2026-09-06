@@ -40,7 +40,7 @@ body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-o
 .border-top-black{ border-top: clamp(2px, 0.15vw, 2.5px) solid black; } 
 .gap { gap: 4.5%; }
 
-.m-top-logo { margin-top: 10px; }
+.m-top-logo { margin-top: 1.5%; }
 .m-top { margin-top: 20px;}
 .m-seccion{ margin-left: 5%;}
 
@@ -53,10 +53,10 @@ body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-o
     border-radius: clamp(20px, 1.6vw, 31px);
 }
 
-.logo{
-    height: 38px;
-    width: 38px;
-    margin-right: 4px;
+.logo {
+    height: clamp(45px, 2.95vw, 56.25px);
+    width: clamp(45px, 2.95vw, 56.25px);
+    margin-right: clamp(6px, 0.39vw, 7.5px);
 }
 
 /* TEXTO */
