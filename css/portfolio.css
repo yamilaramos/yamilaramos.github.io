@@ -41,8 +41,8 @@ body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-o
 .gap { gap: 4.5%; }
 
 .m-top-logo { margin-top: 1.5%; }
-.m-top { margin-top: 20px;}
-.m-seccion{ margin-left: 5%;}
+.m-top { margin-top: 20px;} 
+.m-seccion { margin-left: 5%;}
 
 .contenedor{
     border: clamp(2px, 0.15vw, 2.5px) solid black;
@@ -729,8 +729,9 @@ header {
 
 .flecha-dinamica {
     stroke: currentColor;
-    width: clamp(24px, 1.45vw, 37px);
-    height: auto;
+    width: clamp(28px, 1.83vw, 35px);
+    height: clamp(30px, 1.96vw, 37.5px);
+    margin-left: clamp(10px, 0.66vw, 12.5px);
     transition: color 0.3s ease;
 }
 
@@ -1100,6 +1101,8 @@ footer {
     font-size: clamp(20px, 1.31vw, 25px);
     color: var(--cream);
 }
+
+.footer-contenido{ margin: 3%; }
 
 .logo-footer {
     height: clamp(66px, 4.33vw, 82.5px);
