@@ -54,9 +54,9 @@ body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-o
 }
 
 .logo {
-    height: clamp(45px, 2.95vw, 56.25px);
-    width: clamp(45px, 2.95vw, 56.25px);
-    margin-right: clamp(6px, 0.39vw, 7.5px);
+    height: clamp(36px, 2.36vw, 45px);
+    width: clamp(36px, 2.36vw, 45px);
+    margin-right: clamp(4px, 0.26vw, 5px);
 }
 
 /* TEXTO */
