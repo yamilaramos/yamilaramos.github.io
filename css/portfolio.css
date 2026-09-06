@@ -193,15 +193,40 @@ header {
     }
     
     header .btn-cv {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-        gap: 0.5rem;
-        font-size: clamp(16px, 1.05vw, 20px);
-        padding: clamp(7px, 0.55vw, 8.75px)
-                 clamp(16px, 1.30vw, 20px);
-        white-space: nowrap;
+    flex-direction: row-reverse;
+
+    background: linear-gradient(131deg,
+        rgba(235,166,37,1) 0%,
+        rgba(255,178,36,1) 50%,
+        rgba(235,166,37,1) 100%);
+
+    border: clamp(1px, 0.07vw, 1.25px) solid var(--yellow);
+    border-radius: clamp(28px, 1.84vw, 35px);
+
+    padding:
+        clamp(8px, 0.52vw, 10px)
+        clamp(16px, 1.05vw, 20px);
+
+    font-weight: 500;
+    font-size: clamp(16px, 1.05vw, 20px);
+
+    color: var(--white);
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: clamp(8px, 0.52vw, 10px);
+
+    transition:
+        transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+        color 0.30s ease;
+    }
+
+    .btn-cv:hover{
+        text-decoration: none;
+        color: black;
     }
     
     header .btn-cv svg {
@@ -212,28 +237,6 @@ header {
         stroke: currentColor;
         stroke-width: 0.5;
     }
-
-.btn-cv{
-    flex-direction: row-reverse;
-    border: 1px solid var(--yellow);
-    border-radius: 28px;
-    font-weight: 500;
-    color: var(--white);
-    transition: 
-        transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
-        box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
-        color 0.30s ease;                     
-
-    background: linear-gradient(131deg,
-        rgba(235,166,37,1) 0%,
-        rgba(255,178,36,1) 50%,
-        rgba(235,166,37,1) 100%);     
-}
-
-.btn-cv:hover{
-    text-decoration: none;
-    color: black;
-}
 
 /* PROYECTOS */
 
@@ -808,14 +811,21 @@ header {
 
 .botones-hero {
     display: flex;
+
     gap: clamp(15px, 0.98vw, 18.75px);
     margin-top: clamp(20px, 1.31vw, 25px);
+
     align-items: center;
     margin-left: 8%;
 }
 
 .btn-hero {
     font-size: clamp(18.75px, 1.22vw, 23.4px);
+
+    background: linear-gradient(131deg,
+        rgba(235,166,37,1) 0%,
+        rgba(255,178,36,1) 50%,
+        rgba(235,166,37,1) 100%);
 
     border-radius: clamp(25px, 1.64vw, 31.25px);
 
@@ -825,16 +835,11 @@ header {
         clamp(7px, 0.46vw, 8.75px)
         clamp(20px, 1.31vw, 25px);
 
-    background: linear-gradient(131deg,
-        rgba(235,166,37,1) 0%,
-        rgba(255,178,36,1) 50%,
-        rgba(235,166,37,1) 100%);
-
     font-weight: 500;
     color: white;
 
     align-items: center;
-    gap: 0px;
+    gap: 0;
 
     transition:
         transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
