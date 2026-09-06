@@ -204,7 +204,7 @@ header {
     border-radius: clamp(28px, 1.84vw, 35px);
 
     padding:
-        clamp(8px, 0.52vw, 10px)
+        clamp(8px, 0.54vw, 10px)
         clamp(16px, 1.05vw, 20px);
 
     font-weight: 500;
@@ -777,6 +777,7 @@ header {
     display: block;
     margin: 0 auto;
 }
+
 .outgoing-link{
     display: inline-flex;
     align-items: center;
@@ -822,6 +823,7 @@ header {
 .btn-hero {
     font-size: clamp(18.75px, 1.22vw, 23.4px);
 
+    border: clamp(1px, 0.07vw, 1.25px) solid rgb(255 255 255 / 30%);
     background: linear-gradient(131deg,
         rgba(235,166,37,1) 0%,
         rgba(255,178,36,1) 50%,
@@ -830,9 +832,9 @@ header {
     border-radius: clamp(25px, 1.64vw, 31.25px);
 
     padding:
-        clamp(6px, 0.39vw, 7.5px)
+        clamp(6px, 0.4vw, 7.5px)
         clamp(22px, 1.44vw, 27.5px)
-        clamp(7px, 0.46vw, 8.75px)
+        clamp(7px, 0.4vw, 8.75px)
         clamp(20px, 1.31vw, 25px);
 
     font-weight: 500;
