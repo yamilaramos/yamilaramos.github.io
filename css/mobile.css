@@ -1,5 +1,9 @@
 @media screen and (max-width:768px){
 
+    .contenedor-inicio{
+        margin-top: 6%;
+    }
+    
     .btn-hero-secundario{
         display: none;
     }
@@ -544,7 +548,7 @@
         border-top: none;
         border-right: none;
         border-left: none;
-        margin-top: 10%;
+        margin-top: 6%;
     }
     
 .btn-cv-mobile{
