@@ -112,7 +112,8 @@
     }
     
     header{
-        height: 60px;
+        height: 7vh;
+        border-bottom: 2.3px solid; 
         z-index: 10;
     }
 
@@ -551,7 +552,7 @@
         rgba(235,166,37,1) 100%);
         
     border: 1px solid #EBA625;
-    padding: 8px 10px;
+    padding: 8px 9px;
 
     color: #fcf9f7;
     border-radius: 50%;
