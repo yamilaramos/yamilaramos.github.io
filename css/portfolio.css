@@ -1041,7 +1041,7 @@ header {
 
 /* FOOTER */
 
-footer{
+footer {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1049,75 +1049,95 @@ footer{
     border-top: clamp(2px, 0.15vw, 2.5px) solid black;
     background-color: var(--yellow);
     text-align: center;
+
     height: 70vh;
-    border-radius: 0 0 clamp(20px, 1.6vw, 31px) clamp(20px, 1.6vw, 31px);
-    font-size: 1.6rem;
+
+    border-radius:
+        0 0
+        clamp(20px, 1.31vw, 25px)
+        clamp(20px, 1.31vw, 25px);
+
+    font-size: clamp(20px, 1.31vw, 25px);
     color: var(--cream);
 }
 
-    .logo-footer{
-        height: 66px;
-        width: 66px;
-        margin-bottom: 30%;
-    }
-    
-    .nombre{
-        width: 50%;
-    }
-    
-    .m-right{
-        margin-right: 2px;
-    }
-    
-    .m-top-footer{
-        margin-top: 10px;
-    }
-    
-    .t-footer-final{
-        border-top: 2px solid var(--cream);
-        padding-top: 2%;
-        color: var(--cream);
-        font-weight: 500;
-        font-size: 1.45rem;
-    }
-    
-    .t-footer{
-        color: var(--cream);
-        font-weight: 500;
-        margin-left: 10px;
-    }
-    
-    .btn-footer{
-        padding: 8px 16px;
-        border: 3px solid var(--cream);
-        background-color: transparent;
-        border-radius: 25px;
-        transition: all 0.3s ease;
-        font-size: 1.55rem;
-        margin-bottom: 10%;
-    }
-    
-    .btn-footer:hover{
-        padding: 8px 16px;
-        border: 3px solid var(--cream);
-        background-color: var(--cream);
-        color: var(--yellow);
-        border-radius: 25px;
-    }
-    
-    .mapa{
-        border: 8px solid rgba(255, 255, 255, 0.909);
-        border-radius: 50%;
-        margin: auto;
-        height: 280px;
-        width: 290px;
-    }
+.logo-footer {
+    height: clamp(66px, 4.33vw, 82.5px);
+    width: clamp(66px, 4.33vw, 82.5px);
+    margin-bottom: 30%;
+}
 
-.locacion-logo{
-    margin-bottom: 3px;
-    height: 30px;
-    width: 30px;
-    margin-right: 8px;
+.nombre {
+    width: 50%;
+}
+
+.m-right {
+    margin-right: 2px;
+}
+
+.m-top-footer {
+    margin-top: 10px;
+}
+
+.t-footer-final {
+    border-top: clamp(2px, 0.13vw, 2.5px) solid var(--cream);
+    padding-top: 2%;
+    color: var(--cream);
+    font-weight: 500;
+    font-size: clamp(18.125px, 1.19vw, 22.7px);
+}
+
+.t-footer {
+    color: var(--cream);
+    font-weight: 500;
+    margin-left: clamp(10px, 0.66vw, 12.5px);
+}
+
+.btn-footer {
+    padding:
+        clamp(8px, 0.52vw, 10px)
+        clamp(16px, 1.05vw, 20px);
+
+    border: clamp(3px, 0.20vw, 3.75px) solid var(--cream);
+    background-color: transparent;
+
+    border-radius: clamp(25px, 1.64vw, 31.25px);
+
+    transition: all 0.3s ease;
+
+    font-size: clamp(19.375px, 1.27vw, 24.2px);
+
+    margin-bottom: 10%;
+}
+
+.btn-footer:hover {
+    padding:
+        clamp(8px, 0.52vw, 10px)
+        clamp(16px, 1.05vw, 20px);
+
+    border: clamp(3px, 0.20vw, 3.75px) solid var(--cream);
+    background-color: var(--cream);
+    color: var(--yellow);
+
+    border-radius: clamp(25px, 1.64vw, 31.25px);
+}
+
+.mapa {
+    border: clamp(8px, 0.52vw, 10px) solid rgba(255, 255, 255, 0.909);
+    border-radius: 50%;
+    margin: auto;
+
+    height: clamp(280px, 18.37vw, 350px);
+    width: clamp(290px, 19.03vw, 362.5px);
+}
+
+.locacion-logo {
+    margin-bottom: clamp(3px, 0.20vw, 3.75px);
+
+    height: clamp(30px, 1.97vw, 37.5px);
+    width: clamp(30px, 1.97vw, 37.5px);
+
+    margin-right: clamp(8px, 0.52vw, 10px);
 }
 
 .w-100 {width: 100%;}
