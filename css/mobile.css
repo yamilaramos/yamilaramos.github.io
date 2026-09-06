@@ -514,7 +514,8 @@
     .footer-contenido {
         flex-direction: row;
         gap: 10%;
-        align-items: flex-start;
+        margin-top: 10%;
+        align-items: flex-start;        
     }
 
     .light-studio, .soplo-de-vida{
