@@ -118,7 +118,7 @@ body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-o
 }
 
 h4{
-    font-size: 1.8rem;
+    font-size: clamp(22.5px, 1.47vw, 28.125px);
     color: grey;
     font-weight: 300;
     margin-bottom: 14px;
@@ -230,14 +230,14 @@ header {
 .contenedor-proyectos{ margin-left: 5%; }
 
 .contenedor-proyectos h3{
-    font-size: 2.8rem;
+    font-size: clamp(35px, 2.28vw, 43.75px);
     margin-bottom: 4px;
     max-width: 80%;
 }
 
 .contenedor-proyectos p{
-    font-size: 1.6rem;
-    line-height: 2.1rem;
+    font-size: clamp(20px, 1.30vw, 25px);
+    line-height: clamp(26.25px, 1.71vw, 32.8125px);
     margin-bottom: 14px;
     max-width: 83%;    
 }
