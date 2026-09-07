@@ -3,6 +3,8 @@
     .contenedor-inicio{
         margin-top: 6%;
     }
+
+    .contacto > div { margin-bottom: 3%; }
     
     .btn-hero-secundario{
         display: none;
