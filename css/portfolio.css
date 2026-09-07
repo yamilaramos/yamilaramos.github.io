@@ -42,10 +42,9 @@ body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-o
 .gap { gap: 4.5%; }
 
 .m-top-logo { margin-top: 1.5%; }
-.m-seccion { margin-left: 5%;}
 
+/* Eliminar */
 .m-right { margin-right: 2px; }
-
 .b-radius { border-radius: 18px; }
 .t-padding{ padding-top: 2px; }
 
@@ -1124,7 +1123,7 @@ footer p{
    margin-top: 5%;
 }
 
-.locacion p { font-weight: 300; }
+.locacion p { font-weight: 400; }
 
 .logo-footer {
     height: clamp(66px, 4.33vw, 82.5px);
@@ -1133,8 +1132,8 @@ footer p{
 }
 
 .nombre { width: 50%; }
-.contacto > div { margin-bottom: 3%; }
 
+.contacto > div { margin-bottom: 3.5%; }
 .contacto img {     
     margin-bottom: 8px; 
     margin-right: 6px;
