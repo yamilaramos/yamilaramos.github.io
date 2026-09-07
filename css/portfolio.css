@@ -142,6 +142,37 @@ h4{
 
 .cursor{ margin-top: -5px; }
 
+html, body {
+    cursor: none;
+}
+
+a, button, [data-cursor-hover] {
+    cursor: none;
+}
+
+#cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background: #000;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: transform .45s cubic-bezier(.34, 1.56, .64, 1);
+}
+
+#cursor.is-hovering {
+    transform: translate(-50%, -50%) scale(1.4);
+}
+
+#cursor.is-link {
+    background: #fff;
+    mix-blend-mode: difference;
+}
+
 header {
     background-color: transparent;
     border-bottom: clamp(2px, 0.15vw, 2.5px) solid black;
