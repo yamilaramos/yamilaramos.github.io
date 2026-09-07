@@ -1050,8 +1050,8 @@ header {
     bottom: clamp(24px, 1.83vw, 30px);
     right: clamp(32px, 2.44vw, 40px);
 
-    width: clamp(42px, 3.85vw, 52.5px);
-    height: clamp(40px, 3.65vw, 50px);
+    width: clamp(42px, 3.3vw, 52.5px);
+    height: clamp(40px, 3.15vw, 50px);
 
     border: none;
     border-radius: 10%;
@@ -1074,7 +1074,7 @@ header {
 }
 
 .back-to-top img {
-    width: clamp(34px, 3.13vw, 42.5px);
+    width: clamp(34px, 2.5vw, 42.5px);
     margin: auto;
 }
 
