@@ -1120,8 +1120,8 @@ footer p{
     margin-left: clamp(10px, 0.66vw, 12.5px);
 }
 
-locacion > div{
-    margin-top: clamp(10px, 0.66vw, 12.5px);
+.locacion > div{
+   margin-top: 5%;
 }
 
 .locacion p { font-weight: 300; }
@@ -1148,6 +1148,7 @@ locacion > div{
     color: var(--cream);
     font-weight: 500;
     font-size: clamp(18.125px, 1.19vw, 22.7px);
+    margin-left: 0px;
 }
 
 .btn-footer {
