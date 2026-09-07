@@ -162,8 +162,7 @@ a, button, [data-cursor-hover] {
     pointer-events: none;
     z-index: 9999;
     transform: translate(-50%, -50%);
-    transition: transform .45s cubic-bezier(.34, 1.56, .64, 1),
-                background .25s ease;
+    transition: transform .45s cubic-bezier(.34, 1.56, .64, 1);
 }
 
 #cursor.is-hovering {
