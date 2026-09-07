@@ -156,8 +156,8 @@ a, button, [data-cursor-hover] {
     left: 0;
     width: 16px;
     height: 16px;
-    background: rgba(0, 0, 0, 0.35);
-    border: 1px solid black;
+    background: #00000090;
+    border: 3px solid #00000025;
     border-radius: 50%;
     pointer-events: none;
     z-index: 9999;
@@ -172,13 +172,13 @@ a, button, [data-cursor-hover] {
 
 /* Enlaces fuera del header */
 #cursor.is-link {
-    background: rgba(0, 0, 0, 0.35);
-    border: 1px solid black;
+    background: #00000090;
+    border: 3px solid #00000025;
 }
 
 #cursor.in-header {
-    background: rgba(0, 0, 0, 0.35);
-    border: 1px solid black;
+    background: #00000090;
+    border: 3px solid #00000025;
 }
 
 /* Link dentro del header, prioriza inversión sobre el negro */
