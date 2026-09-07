@@ -1104,8 +1104,8 @@ footer {
 
     border-radius:
         0 0
-        clamp(20px, 1.31vw, 25px)
-        clamp(20px, 1.31vw, 25px);
+        clamp(24px, 1.25vw, 30px)
+        clamp(24px, 1.25vw, 30px);
 
     font-size: clamp(20px, 1.31vw, 25px);
     color: var(--cream);
@@ -1131,9 +1131,10 @@ footer p{
     margin-bottom: 30%;
 }
 
+.contacto > div { margin-bottom: 3.5%; }
+
 .nombre { width: 50%; }
 
-.contacto > div { margin-bottom: 3.5%; }
 .contacto img {     
     margin-bottom: 8px; 
     margin-right: 6px;
@@ -1144,8 +1145,7 @@ footer p{
 .t-footer-final {
     border-top: clamp(2px, 0.13vw, 2.5px) solid var(--cream);
     padding: 2% 0 4% 0;
-    color: var(--cream);
-    font-weight: 500;
+    font-weight: 400;
     font-size: clamp(18.125px, 1.19vw, 22.7px);
     margin-left: 0px;
 }
