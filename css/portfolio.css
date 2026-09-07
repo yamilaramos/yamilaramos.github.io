@@ -30,6 +30,7 @@ body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-o
 .d-flex{ display: flex; }
 .d-none{ display: none; }
 .t-align-center { text-align: center; }
+.t-align-left { text-align: left; }
 .c-white { color: var(--cream); }
 
 /* Variables */
@@ -41,9 +42,9 @@ body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-o
 .gap { gap: 4.5%; }
 
 .m-top-logo { margin-top: 1.5%; }
-.m-top { margin-top: 20px;} 
 .m-seccion { margin-left: 5%;}
 
+.m-right { margin-right: 2px; }
 
 .b-radius { border-radius: 18px; }
 .t-padding{ padding-top: 2px; }
@@ -86,9 +87,13 @@ body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-o
 }
 
 .b-left{
-    border-left: 3px solid var(--yellow);
-    border-radius: 2px 4px 4px 2px;
-    padding-left: 10px;
+    border-left: clamp(3px, 0.20vw, 3.75px) solid var(--yellow);
+    border-radius: 
+        clamp(2px, 0.13vw, 2.5px)
+        clamp(4px, 0.26vw, 5px)
+        clamp(4px, 0.26vw, 5px)
+        clamp(2px, 0.13vw, 2.5px);
+    padding-left: clamp(10px, 0.66vw, 12.5px);
 }
 
 .presentacion{
@@ -1098,8 +1103,6 @@ footer {
     background-color: var(--yellow);
     text-align: center;
 
-    height: 70vh;
-
     border-radius:
         0 0
         clamp(20px, 1.31vw, 25px)
@@ -1111,36 +1114,40 @@ footer {
 
 .footer-contenido{ margin: 3%; }
 
+footer p{
+    color: var(--cream);
+    font-weight: 500;
+    margin-left: clamp(10px, 0.66vw, 12.5px);
+}
+
+locacion > div{
+    margin-top: clamp(10px, 0.66vw, 12.5px);
+}
+
+locacion p { font-weight: 300; }
+
 .logo-footer {
     height: clamp(66px, 4.33vw, 82.5px);
     width: clamp(66px, 4.33vw, 82.5px);
     margin-bottom: 30%;
 }
 
-.nombre {
-    width: 50%;
-}
+.nombre { width: 50%; }
+.contacto > div { margin-bottom: 3%; }
 
-.m-right {
-    margin-right: 2px;
-}
-
-.m-top-footer {
-    margin-top: 10px;
+.contacto img {     
+    margin-bottom: 8px; 
+    margin-right: 6px;
+    width: 34px;
+    height: 34px;
 }
 
 .t-footer-final {
     border-top: clamp(2px, 0.13vw, 2.5px) solid var(--cream);
-    padding-top: 2%;
+    padding: 2% 0;
     color: var(--cream);
     font-weight: 500;
     font-size: clamp(18.125px, 1.19vw, 22.7px);
-}
-
-.t-footer {
-    color: var(--cream);
-    font-weight: 500;
-    margin-left: clamp(10px, 0.66vw, 12.5px);
 }
 
 .btn-footer {
