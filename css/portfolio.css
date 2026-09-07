@@ -1144,7 +1144,7 @@ locacion p { font-weight: 300; }
 
 .t-footer-final {
     border-top: clamp(2px, 0.13vw, 2.5px) solid var(--cream);
-    padding: 2% 0;
+    padding: 2% 0 4% 0;
     color: var(--cream);
     font-weight: 500;
     font-size: clamp(18.125px, 1.19vw, 22.7px);
@@ -1193,8 +1193,6 @@ locacion p { font-weight: 300; }
 
     height: clamp(30px, 1.97vw, 37.5px);
     width: clamp(30px, 1.97vw, 37.5px);
-
-    margin-right: clamp(8px, 0.52vw, 10px);
 }
 
 .w-100 {width: 100%;}
