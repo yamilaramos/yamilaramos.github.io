@@ -554,7 +554,7 @@ header {
     font-size: clamp(19.4px, 1.27vw, 24.3px);
     line-height: clamp(27.5px, 1.80vw, 34.4px);
     max-width: 100%;
-    margin-bottom: 10px;  
+    /* margin-bottom: 10px;  */ 
 }
 
 .timeline {
@@ -691,7 +691,7 @@ header {
     height: 50vh;
     border-radius: clamp(29px, 2.62vw, 40px);
     border: clamp(2px, 0.15vw, 2.5px) solid black;
-    margin-top: 2%;
+    /* margin-top: 2%; */
 }
 
 .hero-materia{
