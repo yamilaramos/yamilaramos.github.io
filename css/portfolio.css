@@ -1145,7 +1145,6 @@ footer p{
 .t-footer-final {
     border-top: clamp(2px, 0.13vw, 2.5px) solid var(--cream);
     padding: 2% 0 4% 0;
-    font-weight: 400;
     font-size: clamp(18.125px, 1.19vw, 22.7px);
     margin-left: 0px;
 }
