@@ -154,14 +154,18 @@ a, button, [data-cursor-hover] {
     position: fixed;
     top: 0;
     left: 0;
-    width: 16px;
-    height: 16px;
+
+    width: clamp(16px, calc(3.78px + 0.895vw), 20px);
+    height: clamp(16px, calc(3.78px + 0.895vw), 20px);
+
     background: #00000090;
-    border: 3px solid #00000025;
+    border: clamp(3px, calc(0.71px + 0.163vw), 3.75px) solid #00000025;
     border-radius: 50%;
     pointer-events: none;
     z-index: 9999;
+
     transform: translate(-50%, -50%);
+
     transition: transform .45s cubic-bezier(.34, 1.56, .64, 1);
 }
 
@@ -172,12 +176,12 @@ a, button, [data-cursor-hover] {
 /* Enlaces fuera del header */
 #cursor.is-link {
     background: #00000090;
-    border: 3px solid #00000025;
+    border: clamp(3px, calc(0.71px + 0.163vw), 3.75px) solid #00000025;
 }
 
 #cursor.in-header {
     background: #00000090;
-    border: 3px solid #00000025;
+    border: clamp(3px, calc(0.71px + 0.163vw), 3.75px) solid #00000025;
 }
 
 /* Link dentro del header */
@@ -1094,34 +1098,37 @@ header {
 
 .back-to-top {
     position: fixed;
-    bottom: clamp(24px, 1.83vw, 30px);
-    right: clamp(32px, 2.44vw, 40px);
 
-    width: clamp(42px, 3.3vw, 52.5px);
-    height: clamp(40px, 3.15vw, 50px);
+    bottom: clamp(38px, calc(16.11px + 1.895vw), 47.5px);
+    right: clamp(38px, calc(16.11px + 1.895vw), 47.5px);
+
+    width: clamp(50px, calc(16.11px + 2.494vw), 62.5px);
+    height: clamp(48px, calc(20.28px + 1.444vw), 60px);
 
     border: none;
     border-radius: 10%;
 
-    background-color: var(--yellow);
+    background-color: #EBA625;
     color: white;
-    font-size: clamp(20px, 1.83vw, 25px);
-    cursor: pointer;
+    font-size: clamp(20px, calc(16.11px + 1.024vw), 25px);
 
     opacity: 0;
-    transform: translateY(clamp(20px, 1.83vw, 25px));
+    transform: translateY(clamp(20px, calc(8.05px + 0.949vw), 25px));
+
     pointer-events: none;
 
     transition: all 0.4s ease;
 
     box-shadow:
-        0 clamp(10px, 0.65vw, 12.5px)
-        clamp(25px, 1.63vw, 31.25px)
+        0
+        clamp(10px, calc(4.03px + 0.474vw), 12.5px)
+        clamp(25px, calc(10.07px + 1.186vw), 31.25px)
         rgba(0, 0, 0, 0.15);
 }
 
 .back-to-top img {
-    width: clamp(34px, 2.5vw, 42.5px);
+    width: clamp(38px, calc(12.25px + 1.875vw), 47.5px);
+    padding-top: clamp(3px, calc(0.97px + 0.148vw), 3.75px);
     margin: auto;
 }
 
