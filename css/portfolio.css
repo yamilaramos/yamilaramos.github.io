@@ -558,7 +558,7 @@ header {
 
 .m-bottom { margin-bottom: 1.5%; }
 
-.centro { padding: clamp(3.5%, 4vw, 5%) 0; } 
+.centro { padding: clamp(3.3%, 4.7vw, 6%) 0; } 
 
 .hero-sobremi {
     background-image: url('../img/hero-sobremi.png');
