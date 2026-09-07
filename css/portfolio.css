@@ -1124,7 +1124,7 @@ locacion > div{
     margin-top: clamp(10px, 0.66vw, 12.5px);
 }
 
-locacion p { font-weight: 300; }
+.locacion p { font-weight: 300; }
 
 .logo-footer {
     height: clamp(66px, 4.33vw, 82.5px);
