@@ -1099,36 +1099,33 @@ header {
 .back-to-top {
     position: fixed;
 
-    bottom: clamp(38px, calc(16.11px + 1.895vw), 47.5px);
-    right: clamp(38px, calc(16.11px + 1.895vw), 47.5px);
+    bottom: clamp(24px, 1.76vw, 30px);
+    right: clamp(32px, 2.34vw, 40px);
 
-    width: clamp(50px, calc(16.11px + 2.494vw), 62.5px);
-    height: clamp(48px, calc(20.28px + 1.444vw), 60px);
+    width: clamp(42px, 3.07vw, 52.5px);
+    height: clamp(40px, 2.93vw, 50px);
 
     border: none;
     border-radius: 10%;
 
-    background-color: #EBA625;
+    background-color: var(--yellow);
     color: white;
-    font-size: clamp(20px, calc(16.11px + 1.024vw), 25px);
+    font-size: clamp(20px, 1.46vw, 25px);
 
     opacity: 0;
-    transform: translateY(clamp(20px, calc(8.05px + 0.949vw), 25px));
-
+    transform: translateY(clamp(20px, 1.46vw, 25px));
     pointer-events: none;
 
     transition: all 0.4s ease;
 
     box-shadow:
-        0
-        clamp(10px, calc(4.03px + 0.474vw), 12.5px)
-        clamp(25px, calc(10.07px + 1.186vw), 31.25px)
+        0 clamp(10px, 0.73vw, 12.5px)
+        clamp(25px, 1.83vw, 31.25px)
         rgba(0, 0, 0, 0.15);
 }
 
 .back-to-top img {
-    width: clamp(38px, calc(12.25px + 1.875vw), 47.5px);
-    padding-top: clamp(3px, calc(0.97px + 0.148vw), 3.75px);
+    width: clamp(34px, 2.49vw, 42.5px);
     margin: auto;
 }
 
