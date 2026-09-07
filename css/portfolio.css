@@ -172,12 +172,13 @@ a, button, [data-cursor-hover] {
 
 /* Enlaces fuera del header */
 #cursor.is-link {
-    background: #fff;
-    mix-blend-mode: difference;
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid black;
 }
 
 #cursor.in-header {
-    background: #000;
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid black;
 }
 
 /* Link dentro del header, prioriza inversión sobre el negro */
