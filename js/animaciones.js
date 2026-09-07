@@ -98,6 +98,11 @@ if (cursor) {
             cursor.classList.add("is-link");
         }
 
+        // Estilo del header: SOLO dentro de <header>
+        if (e.target.closest("header")) {
+            cursor.classList.add("in-header");
+        }
+
     });
 
     document.addEventListener("mouseout", (e) => {
@@ -110,6 +115,10 @@ if (cursor) {
 
         if (e.target.closest("a")) {
             cursor.classList.remove("is-link");
+        }
+
+        if (e.target.closest("header")) {
+            cursor.classList.remove("in-header");
         }
 
     });
