@@ -554,7 +554,24 @@ header {
     font-size: clamp(19.4px, 1.27vw, 24.3px);
     line-height: clamp(27.5px, 1.80vw, 34.4px);
     max-width: 100%;
-    /* margin-bottom: 10px;  */ 
+}
+
+.m-bottom { margin-bottom: 1%; }
+
+#sobremi { padding: 3%; } 
+
+.hero-sobremi {
+    background-image: url('../img/hero-sobremi.png');
+    background-color: var(--yellow);
+    background-size: 100% auto;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 50vh;
+    border-radius: clamp(29px, 2.62vw, 40px);
+    border: clamp(2px, 0.15vw, 2.5px) solid black;
+    margin-top: 2%;
 }
 
 .timeline {
@@ -678,20 +695,6 @@ header {
     background-repeat: no-repeat;
 
     height: 83vh;
-}
-
-.hero-sobremi {
-    background-image: url('../img/hero-sobremi.png');
-    background-color: var(--yellow);
-    background-size: 100% auto;
-    
-    background-position: center;
-    background-repeat: no-repeat;
-
-    height: 50vh;
-    border-radius: clamp(29px, 2.62vw, 40px);
-    border: clamp(2px, 0.15vw, 2.5px) solid black;
-    /* margin-top: 2%; */
 }
 
 .hero-materia{
