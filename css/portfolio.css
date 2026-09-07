@@ -180,10 +180,11 @@ a, button, [data-cursor-hover] {
     border: 3px solid #00000025;
 }
 
-/* Link dentro del header, prioriza inversión sobre el negro */
+/* Link dentro del header */
 #cursor.in-header.is-link {
     background: #fff;
     mix-blend-mode: difference;
+    border: none;
 }
 
 header {
