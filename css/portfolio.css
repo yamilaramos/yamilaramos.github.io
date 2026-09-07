@@ -571,7 +571,7 @@ header {
     height: 50vh;
     border-radius: clamp(29px, 2.62vw, 40px);
     border: clamp(2px, 0.15vw, 2.5px) solid black;
-    margin-top: 2%;
+    margin-top: 2.5%;
 }
 
 .timeline {
