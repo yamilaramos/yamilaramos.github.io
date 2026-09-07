@@ -157,6 +157,7 @@ a, button, [data-cursor-hover] {
     width: 16px;
     height: 16px;
     background: rgba(0, 0, 0, 0.35);
+    border: 1px solid black;
     border-radius: 50%;
     pointer-events: none;
     z-index: 9999;
@@ -165,23 +166,21 @@ a, button, [data-cursor-hover] {
                 background .25s ease;
 }
 
-/* Expansión: en cualquier elemento interactivo */
 #cursor.is-hovering {
-    transform: translate(-50%, -50%) scale(1.4);
+    transform: translate(-50%, -50%) scale(1.5);
 }
 
-/* Efecto de inversión de color: SOLO sobre enlaces (a) fuera del header */
+/* Enlaces fuera del header */
 #cursor.is-link {
     background: #fff;
     mix-blend-mode: difference;
 }
 
-/* --- Estilo DENTRO del header: el que ya tenías, negro sólido --- */
 #cursor.in-header {
     background: #000;
 }
 
-/* Si hay un link dentro del header, prioriza la inversión sobre el negro */
+/* Link dentro del header, prioriza inversión sobre el negro */
 #cursor.in-header.is-link {
     background: #fff;
     mix-blend-mode: difference;
