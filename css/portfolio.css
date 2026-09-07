@@ -140,6 +140,8 @@ h4{
 
 /* HEADER */
 
+.cursor{ margin-top: -5px; }
+
 header {
     background-color: transparent;
     border-bottom: clamp(2px, 0.15vw, 2.5px) solid black;
