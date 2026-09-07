@@ -14,9 +14,15 @@
         margin-left: 0px;
     }
 
+    header{
+        height: 8vh;
+        border-bottom: 2px solid; 
+        z-index: 10;
+        padding: 1% 0;
+    }
+
     header .logo-portafolio img{
         width: 100%;
-        padding: 1% 0;
     }
 
     .fade-in-down{
@@ -111,12 +117,6 @@
     .delay-2::before,
     .delay-2::after{
         animation-delay: 0.6s;
-    }
-    
-    header{
-        height: 8vh;
-        border-bottom: 2px solid; 
-        z-index: 10;
     }
 
     .contenedor-hydrangea{
