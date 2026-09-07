@@ -558,7 +558,15 @@ header {
 
 .m-bottom { margin-bottom: 1.5%; }
 
-#sobremi { padding: 3% 0; } 
+#sobremi { padding: 3.5% 0; } 
+
+@media (min-width: 1440px) {
+    #sobremi { padding: 4% 0; 
+}
+
+@media (min-width: 1920px) {
+    #sobremi { padding: 5% 0; } 
+}
 
 .hero-sobremi {
     background-image: url('../img/hero-sobremi.png');
