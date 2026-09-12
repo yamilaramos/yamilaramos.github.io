@@ -19,13 +19,13 @@
     border-right: 2px solid black ;
 }
 
-.pasos{
+.contenedor-proceso{
     padding: 2% 0 3% 4%;
 }
 
 .proceso { height: 22vh; }
 
-.pasos h1 { 
+.contenedor-proceso h1 { 
     font-size: clamp(36px, 2.35vw, 45px);
     margin: 5% 0;   
 } 
