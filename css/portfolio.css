@@ -12,7 +12,7 @@
 }
 
 .hero-pasos{
-    background-image: url(/img/timeline-mobile.png);
+    background-image: url(/img/hero-sobremi2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -32,19 +32,19 @@
     font-size: 1.8rem;
 }
 
-.tiempo{
+.proceso{
     height: 22vh;
 }
 
-.tiempo > div{
+.proceso > div{
     padding: 1.5% 0 1.5% 3%;
 }
 
-.tiempo h1, .tiempo h2{
+.proceso h1, .proceso h2{
     padding-top: 1%;
 }
 
-.tiempo::before{  
+.proceso::before{  
     content: "";
     position: absolute;
     width: 50%;
