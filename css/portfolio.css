@@ -5,6 +5,56 @@
     --gap: 4.5%;
 }
 
+/* Proceso creativo */
+
+.texto{
+    padding: 30px;
+}
+
+.hero-pasos{
+    background-image: url(/img/timeline-mobile.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-right: 2px solid black ;
+}
+
+.pasos{
+    padding: 2% 0 3% 4%;
+}
+
+.titulo-pasos{
+    margin: 6% 0;   
+    font-size: 2.9rem; /* 2.8 rem */
+}
+
+.pasos h2{
+    font-size: 1.8rem;
+}
+
+.tiempo{
+    height: 22vh;
+}
+
+.tiempo > div{
+    padding: 1.5% 0 1.5% 3%;
+}
+
+.tiempo h1, .tiempo h2{
+    padding-top: 1%;
+}
+
+.tiempo::before{  
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 0px 6px, rgba(255, 255, 255, 0.15) 0px 0px 12px;
+    opacity: 1;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.45) 10%, rgb(0, 0, 0, 0.8) 30%, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0.9) 70%, rgba(0, 0, 0, 0.55) 90%, rgba(0, 0, 0, 0.3) 100%);
+    border-radius: 10px;
+}
+
 * { padding: 0; margin: 0; scroll-behavior: smooth; box-sizing: border-box;}
 iframe { width: 100%; }
 nav, ul { list-style: none; }
