@@ -9,6 +9,10 @@
         max-width: 90%;
     }
 
+    .contenedor-proyectos p{
+        margin-left: 4px;
+    }
+
 
     .contenedor-inicio{
         margin-top: 3%;
