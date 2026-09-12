@@ -1,7 +1,7 @@
 @media screen and (max-width:768px){
 
-    .contenedor-proyecto{
-        margin-top: 8%;
+    .contenedor-proyectos{
+        margin: 8% 0;
         margin-left: 15%;
     }
 
@@ -646,7 +646,7 @@
     
     .fecha-proyecto h4{
         margin: 0;
-        font-size: 17px;
+        font-size: clamp(20px, 1.30vw, 25px);
         font-weight: 450;
         color: #5c5c5c;
     }
