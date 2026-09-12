@@ -1,5 +1,9 @@
 @media screen and (max-width:768px){
 
+    .align-items-flex-start{
+        align-items: flex-start;
+    }
+
     .contenedor-proyectos{
         margin: 8% 0;
         margin-left: 13%;
