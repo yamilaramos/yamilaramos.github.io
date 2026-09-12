@@ -611,7 +611,6 @@
     h3{
         font-size: 28px;
         max-width: 95%;
-        margin: 2%;
     }
 
     h4{
@@ -708,17 +707,9 @@
     }
 
     .texto-seccion{
-        font-size: 18px;
         text-align: left;
-        line-height: 25px;
         hyphens: auto;
-        overflow-wrap: break-word;
-        max-width: 90%;
-       /*  max-width: 25ch;  */
-
-        margin-left: 2%;
-        margin-bottom: 16px;
-        
+        overflow-wrap: break-word;        
     }
     
     .texto2-seccion{
