@@ -28,20 +28,21 @@
     font-size: 2.9rem; /* 2.8 rem */
 }
 
-.pasos h2{
-    font-size: 1.8rem;
-}
+.proceso { height: 22vh; }
 
-.proceso{
-    height: 22vh;
+.proceso h1 { font-size: clamp(36px, 2.35vw, 45px);} 
+
+.proceso p{
+    font-size: clamp(19.4px, 1.27vw, 24.3px);
 }
 
 .proceso > div{
     padding: 1.5% 0 1.5% 3%;
 }
 
-.proceso h1, .proceso h2{
-    padding-top: 1%;
+.proceso h2{
+    font-size: 1.8rem;
+    padding: 1% 0px;
 }
 
 .proceso::before{  
