@@ -630,6 +630,7 @@
         width: fit-content;
         border-radius: 14px;
         backdrop-filter: blur(8px);
+        margin-bottom: 1.5%;
     }
     
     .fecha-proyecto {
@@ -641,7 +642,7 @@
     .fecha-proyecto img{
         width: 32px;
         height: 32px;
-        padding: 4px;
+        padding: 5px;
         border-radius: 8px;
         background-color: #fdf0e7;
     }
