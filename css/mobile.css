@@ -637,7 +637,7 @@
     .fecha-proyecto img{
         width: 32px;
         height: 32px;
-        padding: 6px;
+        padding: 4px;
         border-radius: 8px;
         background-color: #fdf0e7;
     }
@@ -664,7 +664,7 @@
         color: #EBA625;
     
         background-color: #fdf0e7;
-        padding: 8px 12px;
+        padding: 6px 12px;
         border-radius: 999px;
     }
 
@@ -806,7 +806,7 @@
         gap: 0px;
         font-size: 17px;
        
-        margin-bottom: 15%;
+        margin-bottom: 18%;
     }
 
     .btn-seccion, .btn-seccion-2, .contacto p{
