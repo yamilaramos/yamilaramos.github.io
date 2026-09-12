@@ -537,7 +537,7 @@
         align-items: flex-start;        
     }
 
-    .light-studio, .soplo-de-vida{
+    .light-studio, .soplo-de-vida, .hydrangea{
         flex-direction: column-reverse;
     }
 
