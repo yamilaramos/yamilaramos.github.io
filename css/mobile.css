@@ -600,11 +600,7 @@
     }
     
     .m-left{
-        margin-left: 8px;
-    }
-
-    .m-left-btn{
-        margin: auto;
+        margin-left: 2px;
     }
 
     .btn-seccion, .btn-seccion-2{
