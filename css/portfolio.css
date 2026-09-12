@@ -30,21 +30,22 @@
 
 .proceso { height: 22vh; }
 
-.proceso h1 { font-size: clamp(36px, 2.35vw, 45px);} 
+.pasos h1 { font-size: clamp(36px, 2.35vw, 45px);} 
 
-.proceso p{
-    font-size: clamp(19.4px, 1.27vw, 24.3px);
-}
+
 
 .proceso > div{
     padding: 1.5% 0 1.5% 3%;
 }
 
 .proceso h2{
-    font-size: 1.8rem;
+    font-size: clamp(19.4px, 1.27vw, 24.3px);
     padding: 1% 0px;
 }
 
+.proceso p{
+    font-size: clamp(19.4px, 1.27vw, 24.3px);
+}
 .proceso::before{  
     content: "";
     position: absolute;
