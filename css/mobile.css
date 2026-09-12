@@ -629,7 +629,7 @@
         backdrop-filter: blur(8px);
     }
     
-    .fecha-proyecto{
+    .fecha-proyecto {
         display: flex;
         align-items: center;
         gap: 8px;
@@ -643,10 +643,10 @@
         background-color: #fdf0e7;
     }
     
-    .fecha-proyecto h4{
+    .fecha-proyecto h4 {
         margin: 0;
         font-size: clamp(20px, 1.30vw, 25px);
-        font-weight: 450;
+        font-weight: 350;
         color: #5c5c5c;
     }
     
