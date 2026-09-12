@@ -5,6 +5,11 @@
         margin-left: 15%;
     }
 
+    .contenedor-proyectos h3{
+        max-width: 90%;
+    }
+
+
     .contenedor-inicio{
         margin-top: 3%;
     }
@@ -638,7 +643,7 @@
     .fecha-proyecto img{
         width: 32px;
         height: 32px;
-        padding: 7px;
+        padding: 6px;
         border-radius: 8px;
         background-color: #fdf0e7;
     }
@@ -660,7 +665,7 @@
     
     .categoria-proyecto h4{
         margin: 0;
-        font-size: 17px;
+        font-size: 18px;
         font-weight: 500;
         color: #EBA625;
     
