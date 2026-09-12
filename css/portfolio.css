@@ -24,7 +24,7 @@
 }
 
 .proceso { height: 22vh; }
-.proceso h1 { margin-top: 1%; }
+.numero { margin-top: 1%; }
 
 .contenedor-proceso h1 { 
     font-size: clamp(36px, 2.35vw, 45px);
