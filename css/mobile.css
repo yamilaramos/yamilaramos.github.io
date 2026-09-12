@@ -1,5 +1,10 @@
 @media screen and (max-width:768px){
 
+    .contenedor-proyecto{
+        margin-top: 8%;
+        margin-left: 15%;
+    }
+
     .contenedor-inicio{
         margin-top: 3%;
     }
@@ -621,7 +626,6 @@
         flex-wrap: wrap;
     
         width: fit-content;
-        padding: 10px 6px;
         border-radius: 14px;
         backdrop-filter: blur(8px);
     }
