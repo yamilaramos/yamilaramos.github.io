@@ -205,11 +205,6 @@ h4 {
     right: clamp(32px, 2.34vw, 40px);
 }
 
-.social a {
-    width: 30px;
-    height: 30px;
-}
-
 .social-btn {
     fill: white;
     stroke: currentColor;
