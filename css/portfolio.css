@@ -188,7 +188,7 @@ h4 {
     gap: 15px;
     position: absolute;
     bottom: 80px;
-    right: clamp(32px, 2.34vw, 40px);
+    right: 3%;
 }
 
 .social-btn {
@@ -1351,6 +1351,7 @@ footer p{
 }
 
 .w-100 {width: 100%;}
+.w-98 {width: 98%;}
 .w-95 { width: 95%;}
 .w-90 { width: 90%;}
 .w-85 { width: 85%;}
