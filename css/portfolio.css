@@ -7,20 +7,6 @@
 
 /* Proceso creativo */
 
-.social{
-    border-radius: 50%;
-
-    border: clamp(1px, 0.07vw, 1.25px) solid rgb(255 255 255 / 30%);
-
-    color: white;
-    background: rgba(0, 0, 0, 0.08);
-    backdrop-filter: blur(14px);
-
-    box-shadow:
-        0 8px 32px rgba(0, 0, 0, 0.3),
-        inset 0 1px 1px rgba(255, 255, 255, 0.2);
-}
-
 .texto{
     padding: 30px;
 }
@@ -201,7 +187,7 @@ h4 {
 .social-gap {
     gap: 15px;
     position: absolute;
-    bottom: 110px;
+    bottom: 80px;
     right: clamp(32px, 2.34vw, 40px);
 }
 
@@ -209,8 +195,8 @@ h4 {
     fill: white;
     stroke: currentColor;
     transition: fill 0.3s ease;
-    width: 55px;
-    height: 55px;
+    width: 47px;
+    height: 47px;
     padding: 10px;
     border-radius: 50%;
 
