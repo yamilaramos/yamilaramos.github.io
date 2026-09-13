@@ -184,6 +184,11 @@ h4 {
     margin-bottom: 14px;
 }
 
+.contenedor-mockup{
+    margin-bottom: 8px;
+    margin-right: 8px;
+}
+
 .social-gap {
     gap: 12px;
     position: absolute;
