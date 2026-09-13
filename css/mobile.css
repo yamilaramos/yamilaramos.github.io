@@ -26,7 +26,7 @@
 
     .contacto > div { margin-bottom: 3%; }
     
-    .btn-hero-secundario{
+    .btn-hero-secundario, .social-gap{
         display: none;
     }
 
