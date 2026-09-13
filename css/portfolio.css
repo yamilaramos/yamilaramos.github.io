@@ -282,8 +282,6 @@ header {
         height: 100%;
         margin-left: clamp(4%, 4vw, 4%);
         margin-right: clamp(4%, 4vw, 4%);
-    
-        gap: clamp(14px, 2vw, 38px);
     }
     
     header .logo-portafolio {
