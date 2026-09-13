@@ -185,19 +185,20 @@ h4 {
 }
 
 .social-gap {
-    gap: 15px;
+    gap: 12px;
     position: absolute;
     bottom: 80px;
-    right: 3%;
+    right: 2.5%;
 }
 
 .social-btn {
+    color: white;
     fill: white;
     stroke: currentColor;
     transition: fill 0.3s ease;
     width: 47px;
     height: 47px;
-    padding: 10px;
+    padding: 9px;
     border-radius: 50%;
 
     border: clamp(1px, 0.07vw, 1.25px) solid rgb(255 255 255 / 30%);
@@ -1357,7 +1358,7 @@ footer p{
 .w-85 { width: 85%;}
 .w-80 { width: 80%;}
 .w-75 { width: 75%;}
-.w-73 { width: 73%;}
+.w-74 { width: 74%;}
 .w-70 { width: 70%;}
 .w-67 { width: 67%;}
 .w-65 { width: 65%;}
