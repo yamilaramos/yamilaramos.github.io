@@ -1182,7 +1182,7 @@ header {
 .back-to-top {
     position: fixed;
 
-    bottom: clamp(24px, 1.76vw, 30px);
+    bottom: 18px;
     right: clamp(32px, 2.34vw, 40px);
 
     width: 50px;
