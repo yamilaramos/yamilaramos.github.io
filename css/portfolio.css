@@ -28,7 +28,7 @@
     margin: 5% 0;   
 } 
 
-.proceso { height: 22vh; }
+.proceso { height: auto; }
 .proceso > div { 
     padding: 1.5% 0;
     gap: 3%;
@@ -39,7 +39,7 @@
 
 .proceso h2 { 
     font-size: clamp(22.5px, 1.47vw, 28.125px);
-    margin: 0.8% 0;
+    margin: 0.8% 0 1.8% 0;
 }
 
 .proceso p { font-size: clamp(19.4px, 1.27vw, 24.3px); }
