@@ -86,21 +86,19 @@ if (cursor) {
 
     document.addEventListener("mouseover", (e) => {
 
-        if (e.target.tagName === "IMG") return; // las imágenes no disparan el hover
-
-        // Expansión: en cualquier elemento interactivo
+        if (e.target.tagName === "IMG") return; // imágenes no disparan el hover
+      
         if (e.target.closest(interactiveSelectors)) {
             cursor.classList.add("is-hovering");
         }
 
-        // Inversión de color: SOLO en enlaces (a)
+        // Inversión de color SOLO en enlaces (a)
         if (e.target.closest("a")) {
             cursor.classList.add("is-link");
         }
 
-        // Estilo del header: SOLO dentro de <header>
-        if (e.target.closest("header")) {
-            cursor.classList.add("in-header");
+        if (e.target.closest("header nav a")) {
+            cursor.classList.remove("in-header");
         }
 
     });
