@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.documentElement.classList.remove("menu-open");
     });
   });
-  
+
   // SCROLL 
 const elements = document.querySelectorAll(
   '.scroll-fade-down, .scroll-fade-modern, .scroll-fade-modern-2'
@@ -86,19 +86,21 @@ if (cursor) {
 
     document.addEventListener("mouseover", (e) => {
 
-        if (e.target.tagName === "IMG") return; // imágenes no disparan el hover
-      
+        if (e.target.tagName === "IMG") return; // las imágenes no disparan el hover
+
+        // Expansión: en cualquier elemento interactivo
         if (e.target.closest(interactiveSelectors)) {
             cursor.classList.add("is-hovering");
         }
 
-        // Inversión de color SOLO en enlaces (a)
+        // Inversión de color: SOLO en enlaces (a)
         if (e.target.closest("a")) {
             cursor.classList.add("is-link");
         }
 
+        // Estilo del header: SOLO dentro de <header>
         if (e.target.closest("header")) {
-            cursor.classList.remove("in-header");
+            cursor.classList.add("in-header");
         }
 
     });
@@ -130,4 +132,3 @@ if (cursor) {
     });
 
 }
-
