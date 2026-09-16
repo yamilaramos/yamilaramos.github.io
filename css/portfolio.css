@@ -47,7 +47,7 @@
 .proceso::before{  
     content: "";
     position: absolute;
-    width: 50%;
+    width: 46%;
     height: 2px;
     box-shadow: rgba(255, 255, 255, 0.25) 0px 0px 6px, rgba(255, 255, 255, 0.15) 0px 0px 12px;
     opacity: 1;
