@@ -93,11 +93,11 @@ if (cursor) {
         }
 
         // Inversión de color SOLO en enlaces (a)
-        if (e.target.closest("a")) {
+        if (e.target.closest("header nav a")) {
             cursor.classList.add("is-link");
         }
 
-        if (e.target.closest("header nav a")) {
+        if (e.target.closest("a")) {
             cursor.classList.remove("in-header");
         }
 
@@ -111,11 +111,11 @@ if (cursor) {
             cursor.classList.remove("is-hovering");
         }
 
-        if (e.target.closest("a")) {
+        if (e.target.closest("header nav a")) {
             cursor.classList.remove("is-link");
         }
 
-        if (e.target.closest("header nav a")) {
+        if (e.target.closest("a")) {
             cursor.classList.remove("in-header");
         }
 
