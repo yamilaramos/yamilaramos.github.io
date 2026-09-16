@@ -115,7 +115,7 @@ if (cursor) {
             cursor.classList.remove("is-link");
         }
 
-        if (e.target.closest("header")) {
+        if (e.target.closest("header nav a")) {
             cursor.classList.remove("in-header");
         }
 
