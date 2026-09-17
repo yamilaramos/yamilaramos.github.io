@@ -204,9 +204,9 @@ h4 {
     fill: white;
     stroke: currentColor;
     transition: fill 0.3s ease;
-    width: 47px;
-    height: 47px;
-    padding: 8.5px;
+    width: 48px;
+    height: 48px;
+    padding: 9px;
     border-radius: 50%;
 
     border: clamp(1px, 0.07vw, 1.25px) solid rgb(255 255 255 / 30%);
