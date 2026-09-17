@@ -150,7 +150,7 @@ body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-o
     font-weight: 300;
     margin-left: 8%;
     padding: clamp(8px, 0.74vw, 14px)
-             clamp(8px, 0.82vw, 12px)
+             16px
              clamp(8px, 0.74vw, 14px)
              clamp(18px, 1.42vw, 24px);
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.652);
