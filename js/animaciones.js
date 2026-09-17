@@ -99,7 +99,7 @@ if (cursor) {
         }
 
         // Estilo del header: SOLO dentro de <header>
-        if (e.target.closest("header")) {
+        if (e.target.closest("header nav")) {
             cursor.classList.add("in-header");
         }
 
@@ -117,7 +117,7 @@ if (cursor) {
             cursor.classList.remove("is-link");
         }
 
-        if (e.target.closest("header")) {
+        if (e.target.closest("header nav")) {
             cursor.classList.remove("in-header");
         }
 
