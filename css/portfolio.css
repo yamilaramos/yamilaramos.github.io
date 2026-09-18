@@ -44,6 +44,8 @@
 
 .proceso p { font-size: clamp(19.4px, 1.27vw, 24.3px); }
 
+.proceso::after{height: 2px;}
+
 .proceso::before{  
     content: "";
     position: absolute;
