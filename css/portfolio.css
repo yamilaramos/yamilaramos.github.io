@@ -39,7 +39,7 @@
 
 .proceso h2 { 
     font-size: clamp(22.5px, 1.47vw, 28.125px);
-    margin: 1.8% 0 0.8% 0;
+    margin: 1.8% 0 0.9% 0;
 }
 
 .proceso p { font-size: clamp(19.4px, 1.27vw, 24.3px); }
