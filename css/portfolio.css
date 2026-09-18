@@ -66,6 +66,7 @@ a:hover { color: black; }
 
 html { font-size: 12.5px; } /* rem */
 strong { font-weight: 600; }
+i { font-weight: 400; }
 body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-optical-sizing: auto; font-style: normal; }
 ::selection { background-color: var(--yellow); color: black; }
 .jcontent-center { justify-content: center; }
