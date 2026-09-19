@@ -1195,8 +1195,8 @@ header {
     bottom: 18px;
     right: clamp(32px, 2.34vw, 40px);
 
-    width: 48px;
-    height: 48px;
+    width: 46px;
+    height: 46px;
 
     border: none;
     border-radius: 50%;
@@ -1218,7 +1218,7 @@ header {
 }
 
 .back-to-top img {
-    width: 34px;
+    width: 32px;
     margin: auto;
     padding-bottom: 2px;
 }
