@@ -1357,19 +1357,19 @@ footer p{
 }
 
 .proceso-delay-2 {
-    transition-delay: 0.20s;
+    transition-delay: 0.15s;
 }
 
 .proceso-delay-3 {
-    transition-delay: 0.40s;
+    transition-delay: 0.35s;
 }
 
 .proceso-delay-4 {
-    transition-delay: 0.60s;
+    transition-delay: 0.55s;
 }
 
 .proceso-delay-5 {
-    transition-delay: 0.80s;
+    transition-delay: 0.75s;
 }
 
 .w-100 {width: 100%;}
