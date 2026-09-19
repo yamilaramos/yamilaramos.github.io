@@ -205,7 +205,7 @@ h4 {
 }
 
 .social-gap {
-    gap: clamp(15px, 0.98vw, 18.75px);
+    gap: 12px;
     position: absolute;
     bottom: 80px;
     right: 5%;
