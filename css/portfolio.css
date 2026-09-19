@@ -205,10 +205,10 @@ h4 {
 }
 
 .social-gap {
-    gap: 12px;
+    gap: clamp(15px, 0.98vw, 18.75px);
     position: absolute;
     bottom: 80px;
-    right: 2.5%;
+    right: 5%;
 }
 
 .social-btn {
@@ -398,7 +398,8 @@ header {
 }
 
 .contenedor-proyectos p{
-    font-size: clamp(20px, 1.30vw, 25px);
+    font-size: clamp(19.4px, 1.27vw, 24.3px);
+/*     font-size: clamp(20px, 1.30vw, 25px); */
     line-height: clamp(26.25px, 1.71vw, 32.8125px);
     margin-bottom: 14px;
     max-width: 83%;    
