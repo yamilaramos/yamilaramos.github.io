@@ -1,5 +1,6 @@
 :root{
     --yellow: #EBA625;
+    --bg-yellow: #fdf0e7;
     --white: #fcf9f7;
     --cream: #fefaf6;
     --gap: 4.5%;
@@ -410,7 +411,7 @@ header {
 }
 
 .b-calendario {
-    background-color: #fdf0e7;
+    background-color: var(--bg-yellow);
     border-radius: 50%;
     margin-bottom: clamp(2px, 0.13vw, 2.5px);
 }
@@ -465,7 +466,7 @@ header {
     font-weight: 500;
     color: var(--yellow);
 
-    background-color: #fdf0e7;
+    background-color: var(--bg-yellow);
 
     padding:
         clamp(6px, 0.39vw, 7.5px)
