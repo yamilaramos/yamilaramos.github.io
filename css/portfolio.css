@@ -419,7 +419,7 @@ header {
 .calendario {
     width: clamp(38px, 2.49vw, 47.5px);
     height: clamp(38px, 2.49vw, 47.5px);
-    padding: clamp(8px, 0.52vw, 10px);
+    padding: clamp(8px, 0.535vw, 10px);
 }
 
 .fecha-proyecto h4 {
