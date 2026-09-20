@@ -204,6 +204,9 @@ h4 {
     margin-bottom: 8px;
 }
 
+.contenedor-mockup img{
+    margin-left: 9%;
+}
 .social-gap {
     gap: 12px;
     position: absolute;
@@ -1374,6 +1377,7 @@ footer p{
 }
 
 .w-100 {width: 100%;}
+.w-99 {width: 99%;}
 .w-98 {width: 98%;}
 .w-95 { width: 95%;}
 .w-90 { width: 90%;}
