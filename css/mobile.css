@@ -344,7 +344,7 @@
         border: none;
     }
 
-    .contenedor-mockup img
+    .contenedor-mockup img{
        position: absolute;
        left: 9%;
        width: 82%;
