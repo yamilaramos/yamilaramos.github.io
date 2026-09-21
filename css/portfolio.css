@@ -1066,6 +1066,10 @@ header {
         color 0.30s ease;
 }
 
+.btn-hero-secundario:hover {
+    color: black;
+}
+
 .btn-seccion svg {
     margin-top: clamp(3.83px, 0.25vw, 4.8px);
 
