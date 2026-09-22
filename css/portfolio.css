@@ -1071,7 +1071,7 @@ header {
 }
 
 .btn-hero-secundario:hover {
-    color: black;
+    color: var(--yellow);
 }
 
 .btn-seccion svg {
