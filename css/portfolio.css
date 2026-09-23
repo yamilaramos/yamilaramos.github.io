@@ -8,63 +8,74 @@
 
 /* Proceso creativo */
 
-.texto{
-    padding: clamp(30px, calc(11.51px + 1.35vw), 37.5px);
+/* Proceso creativo */
+
+.texto {
+    padding: clamp(30px, 1.95vw, 37.5px);
 }
 
-.hero-pasos{
+.hero-pasos {
     background-image: url(/img/fondo-1.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-right: clamp(2px, calc(0.77px + 0.09vw), 2.5px) solid black ;
+    border-right: clamp(2px, 0.13vw, 2.5px) solid black;
 }
 
-.contenedor-proceso{
+.contenedor-proceso {
     padding: 2% 0 0 6%;
 }
 
-.titulo-proceso{ 
+.titulo-proceso { 
     font-size: clamp(36px, 2.35vw, 45px);
     margin: 5% 0;   
 } 
 
-.proceso { height: auto; }
+.proceso {
+    height: auto;
+}
+
 .proceso > div { 
     padding: 1.5% 0 3% 0;
     gap: 3%;
 }
 
 .proceso h1 { 
-    font-size: clamp(36px, 2.35vw, 45px); }
+    font-size: clamp(36px, 2.35vw, 45px);
+}
 
 .proceso h2 { 
     font-size: clamp(22.5px, 1.47vw, 28.125px);
     margin: 1.8% 0 0.9% 0;
 }
 
-.proceso p { font-size: clamp(19.4px, 1.27vw, 24.3px); }
+.proceso p {
+    font-size: clamp(19.4px, 1.27vw, 24.3px);
+}
 
-.proceso::after{height: clamp(2px, calc(0.77px + 0.09vw), 2.5px);}
+.proceso::after {
+    height: clamp(2px, 0.13vw, 2.5px);
+}
 
-.proceso::before{  
+.proceso::before {  
     content: "";
     position: absolute;
     width: 88%;
-    height: clamp(2px, calc(0.77px + 0.09vw), 2.5px);
-    box-shadow: rgba(255, 255, 255, 0.25) 0px 0px clamp(6px, calc(2.3px + 0.27vw), 7.5px), rgba(255, 255, 255, 0.15) 0px 0px clamp(12px, calc(4.6px + 0.54vw), 15px);
+    height: clamp(2px, 0.13vw, 2.5px);
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 0px 6px,
+                rgba(255, 255, 255, 0.15) 0px 0px 12px;
     opacity: 1;
     background: linear-gradient(
-    to right,
-    transparent 0%,
-    rgba(0, 0, 0, 0.20) 10%,
-    rgba(0, 0, 0, 0.38) 25%,
-    rgba(0, 0, 0, 0.48) 50%,
-    rgba(0, 0, 0, 0.38) 75%,
-    rgba(0, 0, 0, 0.20) 90%,
-    transparent 100%
+        to right,
+        transparent 0%,
+        rgba(0, 0, 0, 0.20) 10%,
+        rgba(0, 0, 0, 0.38) 25%,
+        rgba(0, 0, 0, 0.48) 50%,
+        rgba(0, 0, 0, 0.38) 75%,
+        rgba(0, 0, 0, 0.20) 90%,
+        transparent 100%
     );
-    border-radius: clamp(10px, calc(3.84px + 0.45vw), 12.5px);
+    border-radius: clamp(10px, 0.65vw, 12.5px);
 }
 
 * { padding: 0; margin: 0; scroll-behavior: smooth; box-sizing: border-box;}
@@ -107,7 +118,7 @@ body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-o
 
 /* Eliminar */
 .m-right { margin-right: clamp(2px, calc(0.77px + 0.09vw), 2.5px); }
-.b-radius { border-radius: clamp(18px, calc(6.9px + 0.81vw), 22.5px); }
+.b-radius { border-radius: 5px; }
 .t-padding{ padding-top: clamp(2px, calc(0.77px + 0.09vw), 2.5px); }
 
 .contenedor{
