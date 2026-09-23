@@ -113,6 +113,7 @@ body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-o
 .gap { gap: 4.5%; }
 
 .m-top-logo { margin-top: 1.5%; }
+.logos-proyecto img{border-radius: 5px;}
 
 /* Eliminar */
 .m-right { margin-right: clamp(2px, calc(0.77px + 0.09vw), 2.5px); }
