@@ -91,29 +91,29 @@ button:hover { color: black; transition: ease;}
     display: flex;
     align-items: center;
     justify-content: center;
-    height: clamp(280px, 34vw, 420px);
+    height: clamp(230px, 28vw, 350px);
 }
 
 .slide {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: clamp(220px, 24vw, 340px);
-  height: 100%;
-  border-radius: 25px;
-  border: solid clamp(2px, 0.15vw, 2.5px) black;
-  overflow: hidden;
-  cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: clamp(180px, 20vw, 280px);
+    height: 100%;
+    border-radius: 25px;
+    border: solid clamp(2px, 0.15vw, 2.5px) black;
+    overflow: hidden;
+    cursor: pointer;
 
-  transition:
-    transform 0.55s cubic-bezier(0.22,1,0.36,1),
-    filter 0.55s ease,
-    opacity 0.55s ease,
-    z-index 0s 0.1s;
+    transition:
+        transform 0.55s cubic-bezier(0.22,1,0.36,1),
+        filter 0.55s ease,
+        opacity 0.55s ease,
+        z-index 0s 0.1s;
 }
 
 .slide.activo {
-    width: 645px;
+    width: 520px;
 
     transform:
         translate(-50%, -50%)
@@ -133,35 +133,17 @@ button:hover { color: black; transition: ease;}
 .slide.prev-1 {
     transform:
         translate(-50%, -50%)
-        translateX(-245px)
+        translateX(-200px)
         scale(0.88)
         rotateY(10deg);
-
-    filter:
-        blur(5px)
-        saturate(1)
-        brightness(1);
-
-    opacity: 0.9;
-    z-index: 4;
-    pointer-events: none;
 }
 
 .slide.next-1 {
     transform:
         translate(-50%, -50%)
-        translateX(245px)
+        translateX(200px)
         scale(0.88)
         rotateY(-10deg);
-
-    filter:
-        blur(5px)
-        saturate(1)
-        brightness(1);
-
-    opacity: 0.9;
-    z-index: 4;
-    pointer-events: none;
 }
 
 .slide.oculto {
