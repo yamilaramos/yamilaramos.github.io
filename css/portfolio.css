@@ -27,8 +27,8 @@ button:hover { color: black; transition: ease;}
 }
 
 .btn-cert {
-  height: 53px;
-  width: 55px;
+  height: 48px;
+  width: 50px;
   border-radius: 50%;
   background: linear-gradient(
     131deg,
