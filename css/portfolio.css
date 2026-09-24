@@ -46,7 +46,7 @@ button:hover { color: black; transition: ease;}
 }
 
 .btn-cert svg {
-  margin-left: 2px;
+  margin: auto;
   width: 25px;
   height: 25px;
   display: block;
