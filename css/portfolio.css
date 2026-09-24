@@ -198,7 +198,7 @@ button:hover { color: black; transition: ease;}
     margin: auto;
 }
 
-.texto-certificaciones{
+.texto-cert{
   padding-right: 4%;
 }
 
@@ -911,12 +911,12 @@ header {
 
 /* SOBRE MI */
 
-.sobre-mi > div h1, .t-certificaciones h1{
+.sobre-mi > div h1, .t-cert h1{
     font-size: clamp(36px, 2.35vw, 45px);
     margin-bottom: clamp(15px, 1.23vw, 21px);
 }
 
-.sobre-mi p, .t-certificaciones p{
+.sobre-mi p, .t-cert p{
     font-size: clamp(19.4px, 1.27vw, 24.3px);
     line-height: clamp(27.5px, 1.80vw, 34.4px);
     max-width: 100%;
