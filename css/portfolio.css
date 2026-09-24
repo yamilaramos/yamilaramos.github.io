@@ -91,34 +91,44 @@ button:hover { color: black; transition: ease;}
     display: flex;
     align-items: center;
     justify-content: center;
-    height: clamp(230px, 28vw, 350px);
+
+    height: clamp(360px, 52vh, 520px);
 }
+
+
+/* SLIDES */
 
 .slide {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: clamp(180px, 20vw, 280px);
+
+    width: clamp(260px, 24vw, 380px);
     height: 100%;
+
     border-radius: 25px;
     border: solid clamp(2px, 0.15vw, 2.5px) black;
     overflow: hidden;
     cursor: pointer;
 
     transition:
-        transform 0.55s cubic-bezier(0.22,1,0.36,1),
+        transform 0.55s cubic-bezier(0.22, 1, 0.36, 1),
         filter 0.55s ease,
         opacity 0.55s ease,
         z-index 0s 0.1s;
 }
 
+
+/* SLIDE CENTRAL */
+
 .slide.activo {
-    width: 520px;
+    width: clamp(580px, 42vw, 760px);
 
     transform:
         translate(-50%, -50%)
         scale(1);
 
+    /* SIN FILTRO */
     filter:
         blur(0)
         brightness(1)
@@ -126,24 +136,49 @@ button:hover { color: black; transition: ease;}
 
     opacity: 1;
     z-index: 5;
+
     background-color: white;
     pointer-events: none;
 }
 
+
+/* SLIDE IZQUIERDO */
+
 .slide.prev-1 {
     transform:
         translate(-50%, -50%)
-        translateX(-200px)
+        translateX(-280px)
         scale(0.88)
         rotateY(10deg);
+
+    /* FILTROS RESTAURADOS */
+    filter:
+        blur(5px)
+        saturate(1)
+        brightness(1);
+
+    opacity: 0.9;
+    z-index: 4;
+    pointer-events: none;
 }
+
+
+/* SLIDE DERECHO */
 
 .slide.next-1 {
     transform:
         translate(-50%, -50%)
-        translateX(200px)
+        translateX(280px)
         scale(0.88)
         rotateY(-10deg);
+    filter:
+        blur(5px)
+        saturate(1)
+        brightness(1);
+
+    opacity: 0.9;
+    z-index: 4;
+    pointer-events: none;
 }
 
 .slide.oculto {
