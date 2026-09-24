@@ -98,97 +98,128 @@ button:hover { color: black; transition: ease;}
 
 /* SLIDES */
 
-.slide {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    width: clamp(260px, 24vw, 380px);
-    height: 100%;
-
-    border-radius: 25px;
-    border: solid clamp(2px, 0.15vw, 2.5px) black;
-    overflow: hidden;
-    cursor: pointer;
-
-    transition:
-        transform 0.55s cubic-bezier(0.22, 1, 0.36, 1),
-        filter 0.55s ease,
-        opacity 0.55s ease,
-        z-index 0s 0.1s;
+.slide img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
 }
 
+#certDescripcion,
+#certLogos {
+transition:
+opacity 0.35s cubic-bezier(0.19, 1, 0.22, 1),
+transform 0.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
 
-/* SLIDE CENTRAL */
+#certDescripcion {
+height: auto;
+margin-bottom: 0;
+}
+
+.cert-fade {
+opacity: 0;
+transform: translateY(8px);
+}
+
+.align-items-flex-start{align-items: flex-start;}
+
+.carrusel {
+position: relative;
+flex-direction: column;
+align-items: center;
+}
+
+.pista {
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+height: clamp(280px, 34vw, 420px);
+}
+
+.slide {
+position: absolute;
+top: 50%;
+left: 50%;
+width: clamp(220px, 24vw, 340px);
+height: 100%;
+border-radius: 25px;
+border: solid clamp(2px, 0.15vw, 2.5px) black;
+overflow: hidden;
+cursor: pointer;
+
+transition:
+transform 0.55s cubic-bezier(0.22,1,0.36,1),
+filter 0.55s ease,
+opacity 0.55s ease,
+z-index 0s 0.1s;
+}
 
 .slide.activo {
-    width: clamp(580px, 42vw, 760px);
+width: 645px;
 
-    transform:
-        translate(-50%, -50%)
-        scale(1);
+transform:
+    translate(-50%, -50%)
+    scale(1);
 
-    /* SIN FILTRO */
-    filter:
-        blur(0)
-        brightness(1)
-        saturate(1);
+filter:
+    blur(0)
+    brightness(1)
+    saturate(1);
 
-    opacity: 1;
-    z-index: 5;
+opacity: 1;
+z-index: 5;
+background-color: white;
+pointer-events: none;
 
-    background-color: white;
-    pointer-events: none;
 }
-
-
-/* SLIDE IZQUIERDO */
 
 .slide.prev-1 {
-    transform:
-        translate(-50%, -50%)
-        translateX(-280px)
-        scale(0.88)
-        rotateY(10deg);
+transform:
+translate(-50%, -50%)
+translateX(-245px)
+scale(0.88)
+rotateY(10deg);
 
-    /* FILTROS RESTAURADOS */
-    filter:
-        blur(5px)
-        saturate(1)
-        brightness(1);
+filter:
+    blur(5px)
+    saturate(1)
+    brightness(1);
 
-    opacity: 0.9;
-    z-index: 4;
-    pointer-events: none;
+opacity: 0.9;
+z-index: 4;
+pointer-events: none;
+
 }
 
-
-/* SLIDE DERECHO */
-
 .slide.next-1 {
-    transform:
-        translate(-50%, -50%)
-        translateX(280px)
-        scale(0.88)
-        rotateY(-10deg);
-    filter:
-        blur(5px)
-        saturate(1)
-        brightness(1);
+transform:
+translate(-50%, -50%)
+translateX(245px)
+scale(0.88)
+rotateY(-10deg);
 
-    opacity: 0.9;
-    z-index: 4;
-    pointer-events: none;
+filter:
+    blur(5px)
+    saturate(1)
+    brightness(1);
+
+opacity: 0.9;
+z-index: 4;
+pointer-events: none;
+
 }
 
 .slide.oculto {
-    transform:
-        translate(-50%, -50%)
-        scale(0.6);
+transform:
+translate(-50%, -50%)
+scale(0.6);
 
-    opacity: 0;
-    z-index: 1;
-    pointer-events: none;
+opacity: 0;
+z-index: 1;
+pointer-events: none;
+
 }
 
 .certificaciones > article {
