@@ -269,12 +269,53 @@
                     </div>
                 </div>
             </article>
-
         </section>
 
-            <!-- PROYECTOS -->
+        <!-- CERTIFICACIONES -->
 
-            
+        <section class="certificaciones h-100vh d-flex">
+
+            <article class="d-flex outfit align-items-flex-start">     
+
+                <div class="t-certificaciones w-50 d-flex flex-direction-column m-auto c-black">
+                    <h1 id="certTitulo">Certificaciones<span class="punto-mobile">.</span></h1>
+                    <p id="certDescripcion">Estas son algunas de las cuentas para las que trabaje creando contenido audiovisual para la promoción utilizando <b>Capcut</b>, <b>Lightroom</b> y <b>Adobe Premiere</b>.</p>
+
+                    <div class="d-flex logos-certificaciones" id="certLogos"></div>
+
+                    <div class="flechas d-flex">
+                        <button class="btn-video" id="btnPrev" aria-label="Anterior">
+                         <svg class="flecha-dinamica" style="margin-top: 2px; rotate: calc(180deg);"
+                               xmlns="http://www.w3.org/2000/svg"
+                               viewBox="0 0 32 32"
+                               aria-hidden="true">
+                                <path d="M22 9a1 1 0 0 0 0 1.42l4.6 4.6H3.06a1 1 0 1 0 0 2h23.52L22 21.59A1 1 0 0 0 22 23a1 1 0 0 0 1.41 0l6.36-6.36a.88.88 0 0 0 0-1.27L23.42 9A1 1 0 0 0 22 9Z" fill="currentColor"/>
+                          </svg>
+                                </button>
+
+                                <button class="btn-video" id="btnNext" aria-label="Siguiente">
+                                <svg class="flecha-dinamica" style="margin-top: 2px;"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 32 32"
+                                     aria-hidden="true">
+                                    <path d="M22 9a1 1 0 0 0 0 1.42l4.6 4.6H3.06a1 1 0 1 0 0 2h23.52L22 21.59A1 1 0 0 0 22 23a1 1 0 0 0 1.41 0l6.36-6.36a.88.88 0 0 0 0-1.27L23.42 9A1 1 0 0 0 22 9Z" fill="currentColor"/>
+                                    </svg>
+                                </button> 
+                            </div>
+                        </div>
+
+
+                        <div class="carrusel w-50 d-flex jcontent-center" >
+                            <div class="pista" id="pista"></div>                           
+                            <p class="caption" id="caption"></p>
+                        </div>
+
+                </article>
+            </section>
+
+
+        <!-- DIVISION -->
+
             <div class="division anuncio">
                 <div class="track">
                     <p class="  mensaje">
@@ -305,6 +346,8 @@
                     </p>
                 </div>
             </div>
+
+            <!-- PROYECTOS -->
 
             <section style="border-top: none;" id="proyectos" class="light-studio h-100vh b-black d-flex jcontent-center align-items-center align-items-flex-start">
 
@@ -620,7 +663,6 @@
                             <p class="d-flex align-items-center">Gmail</p>
                         </a>
                     </div>
-
 <!--                     <div>
                         <a class="d-flex align-items-center" target="_blank" href="https://www.behance.net/yamilaramos1"><img src="../img/behance.png" alt="Behance">
                             <p>Behance</p>
@@ -648,6 +690,7 @@
     </button>
 
 <script src="./js/animaciones.js"></script>
+<script src="/js/certficaciones.js" defer></script>
 
 </body>
 
