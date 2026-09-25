@@ -13,7 +13,7 @@ const items = [
   {
     src: "/img/certificado-pescar.png",
     caption: "Desarrollo Web Full-stack — Educación IT",
-    descripcion: "Puse en práctica conocimientos de HTML, CSS y JavaScript en proyectos personales, trabajando en la estructura, diseño, interactividad y la adaptación a distintos dispositivos. También aprendí a publicar mediante GitHub, comprendiendo el proceso para llevar un desarrollo a una página web online.", 
+    descripcion: "Puse en práctica conocimientos de HTML, CSS y JavaScript en proyectos trabajando en la estructura, diseño, interactividad, la adaptación a distintos dispositivos y el proceso de publicación mediante GitHub para llevar el desarrollo a una página web online.", 
     logos: [
       { src: "/img/html.png" },
       { src: "/img/css.png" },
