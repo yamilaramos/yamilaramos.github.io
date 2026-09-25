@@ -16,7 +16,7 @@ const items = [
     src: "/img/certificado-pescar.png",
     caption: "Desarrollo Web Full-stack — Educación IT",
     alt: "Certificado de Desarrollo Web Full-stack de Educación IT",
-    descripcion: 'Puse en práctica conocimientos de <strong class="subrayado">HTML</strong>, <strong class="subrayado">CSS</strong>, <strong class="subrayado">JavaScript</strong> y <strong class="subrayado">React</strong> en proyectos trabajando en su estructura, diseño, interactividad, adaptación a distintos dispositivos y el proceso de publicación mediante <strong>GitHub</strong> para llevarlo a una página web online.',
+    descripcion: 'Puse en práctica conocimientos de <strong class="subrayado">HTML</strong>, <strong class="subrayado">CSS</strong>, <strong class="subrayado">JavaScript</strong> y <strong class="subrayado">React</strong> en proyectos trabajando en su estructura, diseño, interactividad, adaptación a distintos dispositivos y el proceso de publicación mediante <strong>GitHub</strong> para llevarlo a una web online.',
     logos: [
       { src: "/img/html.png", alt: "Logo de HTML" },
       { src: "/img/css.png", alt: "Logo de CSS" },
