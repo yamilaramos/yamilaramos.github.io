@@ -24,7 +24,7 @@ const items = [
   {
     src: "/img/certificado-adobe.jpeg",
     caption: "Diseño Gráfico — Adobe",
-    descripcion: "Profundicé en distintas herramientas de Adobe para la creación y edición de contenido visual. Utilicé Photoshop para la creación de mockups, Illustrator para el desarrollo de recursos gráficos y Acrobat para la edición y gestión de documentos PDF y presentaciones. Además, incorporé Adobe Express para producir y adaptar contenido visual de manera ágil según diferentes formatos y necesidades.",
+    descripcion: "Profundicé en herramientas de Adobe para el diseño y la comunicación visual. Desarrollé mockups y recursos gráficos con Photoshop e Illustrator, gestioné documentos PDF y presentaciones con Acrobat, y utilicé Adobe Express para crear contenido adaptable a distintos formatos.", 
     logos: [
       { src: "/img/photoshop.png", class: "b-radius" },
       { src: "/img/illustrator.png", class: "b-radius b-logos" },
