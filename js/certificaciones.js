@@ -13,7 +13,7 @@ const items = [
   {
     src: "/img/certificado-pescar.png",
     caption: "Desarrollo Web Full-stack — Educación IT",
-    descripcion: "Puse en práctica conocimientos de HTML, CSS y JavaScript en proyectos trabajando en la estructura, diseño, interactividad, la adaptación a distintos dispositivos y el proceso de publicación mediante GitHub para llevar el desarrollo a una página web online.", 
+    descripcion: "Puse en práctica conocimientos de HTML, CSS y JavaScript en proyectos trabajando en su estructura, diseño, interactividad, adaptación a distintos dispositivos y el proceso de publicación mediante GitHub para llevarlo a una página web online.", 
     logos: [
       { src: "/img/html.png" },
       { src: "/img/css.png" },
@@ -24,7 +24,7 @@ const items = [
   {
     src: "/img/certificado-adobe.jpeg",
     caption: "Diseño Gráfico — Adobe",
-    descripcion: "Profundicé en herramientas de Adobe para el diseño y la comunicación visual. Desarrollé mockups y recursos gráficos con Photoshop e Illustrator, gestioné documentos PDF y presentaciones con Acrobat, y utilicé Adobe Express para crear contenido adaptable a distintos formatos.", 
+    descripcion: "Profundicé en herramientas de Adobe para el diseño y la comunicación visual. Desarrollé mockups y recursos gráficos con Photoshop e Illustrator, gestioné documentación con Acrobat y utilicé Adobe Express para crear contenido adaptable a distintos formatos.", 
     logos: [
       { src: "/img/photoshop.png", class: "b-radius" },
       { src: "/img/illustrator.png", class: "b-radius b-logos" },
