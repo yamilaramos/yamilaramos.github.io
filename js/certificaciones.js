@@ -35,7 +35,7 @@ const items = [
   {
     src: "/img/certificado-ai.jpeg",
     caption: "Esenciales de IA — Google",
-    descripcion: "Adquirí una base teórica sobre IA generativa y técnicas de prompting para formular instrucciones más precisas y obtener mejores resultados. Estos conocimientos me permitieron experimentar con herramientas como Codex, Claude y Adobe Firefly para la generación de código e imágenes, incorporando la IA como herramienta de apoyo para la resolución de problemas, la optimización de procesos creativos y mayor autonomía al desarrollar.",
+    descripcion: "Adquirí conocimientos en IA generativa y prompting para formular instrucciones precisas. Experimenté con Codex, Claude y Adobe Firefly para generar código e imágenes, incorporando estas herramientas como apoyo en la resolución de problemas, procesos creativos y desarrollo.", 
     logos: [
       { src: "/img/claude.png", class: "logos-ai b-radius" },
       { src: "/img/chat-gpt.png", class: "logos-ai b-radius" },
@@ -46,7 +46,7 @@ const items = [
   {
     src: "/img/certificado-ibm.jpeg",
     caption: "Análisis de Datos — IBM",
-    descripcion: "Desarrollé una buena base en Python y C++, aplicándolos en proyectos universitarios y complementándolos con SQL durante mi formación en análisis de datos. Esta experiencia me permitió fortalecer la lógica de programación y el manejo de datos, además de familiarizarme con distintas herramientas y lenguajes para resolver problemas de forma estructurada. También incorporé un nivel intermedio de Excel, trabajando con funciones lógicas y de búsqueda, formato condicional, actualización de información y creación de gráficos.",
+    descripcion: "Desarrollé conocimientos en Python y SQL aplicándolos a proyectos universitarios. Fortalecí la lógica de programación y la capacidad para resolver problemas de forma estructurada. Además del manejo de Excel, trabajando con funciones lógicas y de búsqueda, formato condicional y gráficos.",
     logos: [
       { src: "/img/excel.png", class: "logos-ai b-radius" },
       { src: "/img/python.png", class: "logos-ai b-radius" },
