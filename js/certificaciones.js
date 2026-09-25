@@ -1,8 +1,9 @@
+
 const items = [
   {
     src: "/img/certificado.png",
     caption: "Desarrollo de Sitios Web — Escuela Da Vinci",
-    descripcion: "Aprendí a incorporar plugins a sitios en WordPress, maquetar páginas con Elementor y configurar tiendas online mediante WooCommerce. Además, administré contenidos desde el panel de gestión, adquiriendo una base práctica para el mantenimiento de sitios web.",
+    descripcion: "Aprendí a incorporar plugins a sitios en <strong>WordPress</strong>, maquetar páginas con <strong>Elementor</strong> y configurar tiendas online mediante <strong>WooCommerce</strong>. Además, administré contenidos desde el panel de gestión, adquiriendo una base práctica para el mantenimiento de sitios web.",
     logos: [
       { src: "/img/wordpress.png", class: "b-logos b-radius" },
       { src: "/img/elementor.png", class: "b-logos b-radius" },
@@ -13,7 +14,7 @@ const items = [
   {
     src: "/img/certificado-pescar.png",
     caption: "Desarrollo Web Full-stack — Educación IT",
-    descripcion: "Puse en práctica conocimientos de HTML, CSS y JavaScript en proyectos trabajando en su estructura, diseño, interactividad, adaptación a distintos dispositivos y el proceso de publicación mediante GitHub para llevarlo a una página web online.", 
+    descripcion: "Puse en práctica conocimientos de <strong>HTML</strong>, <strong>CSS</strong> y <strong>JavaScript</strong> en proyectos trabajando en su estructura, diseño, interactividad, adaptación a distintos dispositivos y el proceso de publicación mediante <strong>GitHub</strong> para llevarlo a una página web online.",
     logos: [
       { src: "/img/html.png" },
       { src: "/img/css.png" },
@@ -24,7 +25,7 @@ const items = [
   {
     src: "/img/certificado-adobe.jpeg",
     caption: "Diseño Gráfico — Adobe",
-    descripcion: "Profundicé en herramientas de Adobe para el diseño y la comunicación visual. Desarrollé mockups y recursos gráficos con Photoshop e Illustrator, gestioné documentación con Acrobat y utilicé Adobe Express para crear contenido adaptable a distintos formatos.", 
+    descripcion: "Profundicé en herramientas de <strong>Adobe</strong> para el diseño y la comunicación visual. Desarrollé mockups y recursos gráficos con <strong>Photoshop</strong> e <strong>Illustrator</strong>, gestioné documentación con <strong>Acrobat</strong> y utilicé <strong>Adobe Express</strong> para crear contenido adaptable a distintos formatos.",
     logos: [
       { src: "/img/photoshop.png", class: "b-radius" },
       { src: "/img/illustrator.png", class: "b-radius b-logos" },
@@ -35,7 +36,7 @@ const items = [
   {
     src: "/img/certificado-ai.jpeg",
     caption: "Esenciales de IA — Google",
-    descripcion: "Adquirí conocimientos en IA generativa y prompting para formular instrucciones precisas. Experimenté con Codex, Claude y Adobe Firefly para generar código e imágenes, incorporando estas herramientas como apoyo en la resolución de problemas, procesos creativos y desarrollo.", 
+    descripcion: "Adquirí conocimientos en <strong>IA generativa</strong> y <strong>prompting</strong> para formular instrucciones precisas. Experimenté con <strong>Claude</strong>, <strong>Codex</strong> y <strong>Adobe Firefly</strong> para generar código e imágenes, incorporando estas herramientas en la resolución de problemas y en mi proceso creativo.",
     logos: [
       { src: "/img/claude.png", class: "logos-ai b-radius" },
       { src: "/img/chat-gpt.png", class: "logos-ai b-radius" },
@@ -46,7 +47,7 @@ const items = [
   {
     src: "/img/certificado-ibm.jpeg",
     caption: "Análisis de Datos — IBM",
-    descripcion: "Desarrollé conocimientos en Python y SQL aplicándolos a proyectos universitarios. Fortalecí la lógica de programación y la capacidad para resolver problemas de forma estructurada. Además del manejo de Excel, trabajando con funciones lógicas y de búsqueda, formato condicional y gráficos.",
+    descripcion: "Desarrollé conocimientos en <strong>Python</strong> y <strong>SQL</strong> aplicándolos a proyectos de universidad. Fortalecí la lógica de programación y mi capacidad para resolver problemas de forma estructurada. Además, aprendí a trabajar con funciones, formato condicional y gráficos en <strong>Excel</strong>.",
     logos: [
       { src: "/img/excel.png", class: "logos-ai b-radius" },
       { src: "/img/python.png", class: "logos-ai b-radius" },
@@ -105,21 +106,15 @@ function render() {
     slide.className = "slide";
 
     if (diff === 0) {
-
       slide.classList.add("activo");
-
     }
 
     else if (diff === -1) {
-
       slide.classList.add("prev-1");
-
     }
 
     else if (diff === 1) {
-
       slide.classList.add("next-1");
-
     }
 
     /* LOS OTROS DOS QUEDAN OCULTOS */
@@ -148,7 +143,8 @@ function render() {
 
   setTimeout(() => {
 
-    certDescripcion.textContent = actual.descripcion;
+    // innerHTML permite interpretar las etiquetas <strong>
+    certDescripcion.innerHTML = actual.descripcion;
 
     certLogos.innerHTML = actual.logos
       .map(logo => `
@@ -166,6 +162,7 @@ function render() {
   }, 180);
 }
 
+
 document.getElementById("btnPrev").addEventListener("click", () => {
 
   activo = (activo - 1 + items.length) % items.length;
@@ -173,6 +170,7 @@ document.getElementById("btnPrev").addEventListener("click", () => {
   render();
 
 });
+
 
 document.getElementById("btnNext").addEventListener("click", () => {
 
