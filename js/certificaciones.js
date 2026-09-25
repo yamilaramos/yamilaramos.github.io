@@ -2,7 +2,7 @@ const items = [
   {
     src: "/img/certificado.png",
     caption: "Desarrollo de Sitios Web — Escuela Da Vinci",
-    descripcion: "Como parte de mi formación en desarrollo web, incorporé plugins a sitios en WordPress, realicé el maquetado de páginas con Elementor y configuré una tienda online mediante WooCommerce. Además, aprendí a administrar contenidos y configuraciones desde el panel de gestión, adquiriendo una base práctica para comprender el desarrollo y mantenimiento de sitios web.",
+    descripcion: "Como parte de mi formación en desarrollo web, incorporé plugins a sitios en WordPress, realicé el maquetado de páginas con Elementor y configuré una tienda online mediante WooCommerce. Además, aprendí a administrar contenidos desde el panel de gestión, adquiriendo una base práctica para el mantenimiento de sitios web.",
     logos: [
       { src: "/img/wordpress.png", class: "b-logos b-radius" },
       { src: "/img/elementor.png", class: "b-logos b-radius" },
