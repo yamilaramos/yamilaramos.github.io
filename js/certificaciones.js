@@ -21,7 +21,7 @@ const items = [
       { src: "/img/html.png", alt: "Logo de HTML" },
       { src: "/img/css.png", alt: "Logo de CSS" },
       { src: "/img/js.png", alt: "Logo de JavaScript", class: "b-radius" },
-      { src: "/img/react.png", alt: "Logo de React", class: "b-logos b-radius p-logos" }
+      { src: "/img/react.png", alt: "Logo de React", class: "b-logos b-radius p-react" }
     ]
   },
 
