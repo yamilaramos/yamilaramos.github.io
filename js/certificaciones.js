@@ -21,7 +21,7 @@ const items = [
       { src: "/img/html.png", alt: "Logo de HTML" },
       { src: "/img/css.png", alt: "Logo de CSS" },
       { src: "/img/js.png", alt: "Logo de JavaScript", class: "b-radius" },
-      { src: "/img/react.png", alt: "Logo de React", class: "b-radius" }
+      { src: "/img/react.png", alt: "Logo de React", class: "b-logos b-radius" }
     ]
   },
 
@@ -34,7 +34,7 @@ const items = [
       { src: "/img/photoshop.png", alt: "Logo de Adobe Photoshop", class: "b-radius" },
       { src: "/img/illustrator.png", alt: "Logo de Adobe Illustrator", class: "b-radius b-logos" },
       { src: "/img/acrobat.png", alt: "Logo de Adobe Acrobat", class: "b-radius b-logos p-logos" },
-      { src: "/img/adobe-express.png", alt: "Logo de Adobe Express", class: "b-radius b-logos p-logos" }
+      { src: "/img/adobe-express.png", alt: "Logo de Adobe Express", class: "b-radius b-logos" }
     ]
   },
 
