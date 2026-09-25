@@ -14,29 +14,31 @@ const items = [
   {
     src: "/img/certificado-pescar.png",
     caption: "Desarrollo Web Full-stack — Educación IT",
-    descripcion: "Puse en práctica conocimientos de <strong>HTML</strong>, <strong>CSS</strong> y <strong>JavaScript</strong> en proyectos trabajando en su estructura, diseño, interactividad, adaptación a distintos dispositivos y el proceso de publicación mediante <strong>GitHub</strong> para llevarlo a una página web online.",
+    descripcion: 'Puse en práctica conocimientos de <strong class="subrayado">HTML</strong>, <strong class="subrayado">CSS</strong>, <strong class="subrayado">JavaScript</strong> y <strong class="subrayado">React</strong> en proyectos trabajando en su estructura, diseño, interactividad, adaptación a distintos dispositivos y el proceso de publicación mediante <strong>GitHub</strong> para llevarlo a una página web online.',
     logos: [
       { src: "/img/html.png" },
       { src: "/img/css.png" },
-      { src: "/img/js.png", class: "b-radius" }
+      { src: "/img/js.png", class: "b-radius" },
+      { src: "/img/react.png", class: "b-radius" }
     ]
   },
 
   {
     src: "/img/certificado-adobe.jpeg",
     caption: "Diseño Gráfico — Adobe",
-    descripcion: "Profundicé en herramientas de <strong>Adobe</strong> para el diseño y la comunicación visual. Desarrollé mockups y recursos gráficos con <strong>Photoshop</strong> e <strong>Illustrator</strong>, gestioné documentación con <strong>Acrobat</strong> y utilicé <strong>Adobe Express</strong> para crear contenido adaptable a distintos formatos.",
+    descripcion: 'Profundicé en herramientas de <strong>Adobe</strong> para el diseño y la comunicación visual. Desarrollé mockups y recursos gráficos con <strong class="subrayado">Photoshop</strong> e <strong class="subrayado">Illustrator</strong>, gestioné documentación con <strong class="subrayado">Acrobat</strong> y utilicé <strong class="subrayado">Adobe Express</strong> para crear contenido adaptable a distintos formatos.",
     logos: [
       { src: "/img/photoshop.png", class: "b-radius" },
       { src: "/img/illustrator.png", class: "b-radius b-logos" },
-      { src: "/img/acrobat.png", class: "b-radius b-logos p-logos" }
+      { src: "/img/acrobat.png", class: "b-radius b-logos p-logos" },
+      { src: "/img/adobe-express.png", class: "b-radius b-logos p-logos" }
     ]
   },
 
   {
     src: "/img/certificado-ai.jpeg",
     caption: "Esenciales de IA — Google",
-    descripcion: "Adquirí conocimientos en <strong>IA generativa</strong> y <strong>prompting</strong> para formular instrucciones precisas. Experimenté con <strong>Claude</strong>, <strong>Codex</strong> y <strong>Adobe Firefly</strong> para generar código e imágenes, incorporando estas herramientas en la resolución de problemas y en mi proceso creativo.",
+    descripcion: 'Adquirí conocimientos en <strong>IA generativa</strong> y <strong>prompting</strong> para formular instrucciones precisas. Experimenté con <strong class="subrayado">Claude</strong>, <strong class="subrayado">Codex</strong> y <strong class="subrayado">Adobe Firefly</strong> para generar código e imágenes, incorporando estas herramientas en la resolución de problemas y en mi proceso creativo.',
     logos: [
       { src: "/img/claude.png", class: "logos-ai b-radius" },
       { src: "/img/chat-gpt.png", class: "logos-ai b-radius" },
@@ -47,7 +49,7 @@ const items = [
   {
     src: "/img/certificado-ibm.jpeg",
     caption: "Análisis de Datos — IBM",
-    descripcion: "Desarrollé conocimientos en <strong>Python</strong> y <strong>SQL</strong> aplicándolos a proyectos de universidad. Fortalecí la lógica de programación y mi capacidad para resolver problemas de forma estructurada. Además, aprendí a trabajar con funciones, formato condicional y gráficos en <strong>Excel</strong>.",
+    descripcion: 'Desarrollé conocimientos en <strong class="subrayado">Python</strong> y <strong class="subrayado">SQL</strong> aplicándolos a proyectos de universidad. Fortalecí la lógica de programación y mi capacidad para resolver problemas de forma estructurada. Además, aprendí a trabajar con funciones, formato condicional y gráficos en <strong class="subrayado">Excel</strong>.',
     logos: [
       { src: "/img/python.png", class: "logos-ai b-radius" },
       { src: "/img/sql.png", class: "b-radius" },
