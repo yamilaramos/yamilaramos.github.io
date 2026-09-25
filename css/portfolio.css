@@ -73,6 +73,10 @@ button:hover { color: black; transition: ease;}
     margin-bottom: 0;
 }
 
+#certDescripcion strong {
+    font-weight: 600;
+}
+
 .cert-fade {
   opacity: 0;
   transform: translateY(8px);
