@@ -216,7 +216,7 @@ pointer-events: none;
   color: black;
   text-align: center;
   margin-top: clamp(18px, 2vw, 30px);
-  font-size: clamp(19.4px, 1.27vw, 24.3px);
+  font-size: clamp(19.4px, 1.35vw, 24.3px);
   font-weight: 600;
   min-height: 2.8em;
 }
