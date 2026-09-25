@@ -256,6 +256,7 @@ pointer-events: none;
 .proceso .numero-proceso {
     display: inline-block;
     font-size: clamp(36px, 2.35vw, 45px);
+    font-weight: 700;
 }
 
 .proceso h3 { 
