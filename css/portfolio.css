@@ -20,8 +20,8 @@
 
 /* Certificaciones */
 
-.logos-cert{gap:10px}
-.logos-cert img{
+.certLogos{gap:10px}
+.certLogos img{
     height: clamp(36px, 2.36vw, 45px);
     width: clamp(36px, 2.36vw, 45px);
 }
