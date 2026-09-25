@@ -3,7 +3,7 @@ const items = [
   {
     src: "/img/certificado.png",
     caption: "Desarrollo de Sitios Web — Escuela Da Vinci",
-    descripcion: "Aprendí a incorporar plugins a sitios en <strong>WordPress</strong>, maquetar páginas con <strong>Elementor</strong> y configurar tiendas online mediante <strong>WooCommerce</strong>. Además, administré contenidos desde el panel de gestión, adquiriendo una base práctica para el mantenimiento de sitios web.",
+    descripcion: 'Aprendí a incorporar plugins a sitios en <strong class="subrayado">WordPress</strong>, maquetar páginas con <strong class="subrayado">Elementor</strong> y configurar tiendas online mediante <strong class="subrayado">WooCommerce</strong>. Además, administré contenidos desde el panel de gestión, adquiriendo una base práctica para el mantenimiento de sitios web.',
     logos: [
       { src: "/img/wordpress.png", class: "b-logos b-radius" },
       { src: "/img/elementor.png", class: "b-logos b-radius" },
@@ -49,9 +49,9 @@ const items = [
     caption: "Análisis de Datos — IBM",
     descripcion: "Desarrollé conocimientos en <strong>Python</strong> y <strong>SQL</strong> aplicándolos a proyectos de universidad. Fortalecí la lógica de programación y mi capacidad para resolver problemas de forma estructurada. Además, aprendí a trabajar con funciones, formato condicional y gráficos en <strong>Excel</strong>.",
     logos: [
-      { src: "/img/excel.png", class: "logos-ai b-radius" },
       { src: "/img/python.png", class: "logos-ai b-radius" },
-      { src: "/img/sql.png", class: "b-radius" }
+      { src: "/img/sql.png", class: "b-radius" },
+      { src: "/img/excel.png", class: "logos-ai b-radius" }
     ]
   },
 ];
