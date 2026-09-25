@@ -2,7 +2,7 @@ const items = [
   {
     src: "/img/certificado.png",
     caption: "Desarrollo de Sitios Web — Escuela Da Vinci",
-    descripcion: "Como parte de mi formación, incorporé plugins a sitios en WordPress, realicé el maquetado de páginas con Elementor y configuré una tienda online mediante WooCommerce. Además, aprendí a administrar contenidos desde el panel de gestión, adquiriendo una base práctica para el mantenimiento de sitios web.",
+    descripcion: "Aprendí a incorporar plugins a sitios en WordPress, maquetar páginas con Elementor y configurar tiendas online mediante WooCommerce. Además, administré contenidos desde el panel de gestión, adquiriendo una base práctica para el mantenimiento de sitios web.",
     logos: [
       { src: "/img/wordpress.png", class: "b-logos b-radius" },
       { src: "/img/elementor.png", class: "b-logos b-radius" },
@@ -13,7 +13,7 @@ const items = [
   {
     src: "/img/certificado-pescar.png",
     caption: "Desarrollo Web Full-stack — Educación IT",
-    descripcion: "Durante mi formación en desarrollo web, adquirí conocimientos en HTML, CSS y JavaScript, aplicándolos en la creación y personalización de mi portafolio personal. También aprendí a estructurar interfaces, trabajar con diseño responsive y agregar interactividad a las páginas. Como parte del proceso, incorporé GitHub para gestionar y publicar mis proyectos, familiarizándome con el flujo necesario para llevar un desarrollo desde su creación hasta su publicación online.",
+    descripcion: "Puse en práctica conocimientos de HTML, CSS y JavaScript aplicándolos en la creación de proyectos personales, trabajando en la estructura, diseño, interactividad y adaptación del sitio a distintos dispositivos. También aprendí a publicar y gestionar el proyecto mediante GitHub, comprendiendo el proceso necesario para llevar un desarrollo a una página web disponible online. Esta experiencia me permitió adquirir mayor autonomía para abordar tareas de desarrollo y resolver problemas durante el proceso.",
     logos: [
       { src: "/img/html.png" },
       { src: "/img/css.png" },
@@ -24,7 +24,7 @@ const items = [
   {
     src: "/img/certificado-adobe.jpeg",
     caption: "Diseño Gráfico — Adobe",
-    descripcion: "Durante mi formación en diseño gráfico, profundicé en distintas herramientas de Adobe para la creación y edición de contenido visual. Utilicé Photoshop para la creación de mockups, Illustrator para el desarrollo de recursos gráficos y Acrobat para la edición y gestión de documentos PDF y presentaciones. Además, incorporé Adobe Express para producir y adaptar contenido visual de manera ágil según diferentes formatos y necesidades.",
+    descripcion: "Profundicé en distintas herramientas de Adobe para la creación y edición de contenido visual. Utilicé Photoshop para la creación de mockups, Illustrator para el desarrollo de recursos gráficos y Acrobat para la edición y gestión de documentos PDF y presentaciones. Además, incorporé Adobe Express para producir y adaptar contenido visual de manera ágil según diferentes formatos y necesidades.",
     logos: [
       { src: "/img/photoshop.png", class: "b-radius" },
       { src: "/img/illustrator.png", class: "b-radius b-logos" },
