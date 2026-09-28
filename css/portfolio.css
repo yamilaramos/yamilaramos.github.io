@@ -232,7 +232,7 @@ pointer-events: none;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-left: clamp(2px, 0.13vw, 2.5px) solid black;
+    border-right: clamp(2px, 0.13vw, 2.5px) solid black;
 }
 
 .contenedor-proceso {
