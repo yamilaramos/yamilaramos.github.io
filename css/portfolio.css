@@ -927,10 +927,12 @@ header {
 
 /* SOBRE MI */
 
-.sobre-mi > div h2, .t-cert h2, .destacados h2{
+.sobre-mi > div h2, .t-cert h2{
     font-size: clamp(36px, 2.35vw, 45px);
     margin-bottom: clamp(15px, 1.23vw, 21px);
 }
+
+.destacados h2{font-size: clamp(36px, 2.35vw, 45px);}
 
 .sobre-mi p, .t-cert p{
     font-size: clamp(19.4px, 1.27vw, 24.3px);
