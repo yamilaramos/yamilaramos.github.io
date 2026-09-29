@@ -22,8 +22,8 @@
 
 .logosCert{gap:8px}
 .logosCert img{
-    height: clamp(36px, 2.36vw, 45px);
-    width: clamp(36px, 2.36vw, 45px);
+    height: 38px;
+    width: 38px;
 }
 
 .logos-ai{ background-color: black; padding: 6px; }
