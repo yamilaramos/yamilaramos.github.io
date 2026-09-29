@@ -1148,6 +1148,7 @@ header {
 }
 
 .video-light {
+ background-color: #3b2a19;
   width: 100%;
   display: block;
   border: clamp(2px, 0.15vw, 2.5px) solid;
