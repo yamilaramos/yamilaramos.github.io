@@ -887,6 +887,7 @@ header {
     border-top: clamp(2px, 0.15vw, 2.5px) solid black;
     border-bottom: clamp(2px, 0.15vw, 2.5px) solid black;   
     background: linear-gradient(131deg,rgba(235, 166, 37, 1) 0%, rgba(255, 178, 36, 1) 50%, rgba(235, 166, 37, 1) 100%);
+    color: var(--cream);
  }
 
  .division-2{
@@ -909,7 +910,6 @@ header {
 }
 
 .mensaje {
-  color: var(--cream);
   display: flex;
   align-items: center;
   font-weight: 400;
