@@ -889,6 +889,12 @@ header {
     background: linear-gradient(131deg,rgba(235, 166, 37, 1) 0%, rgba(255, 178, 36, 1) 50%, rgba(235, 166, 37, 1) 100%);
  }
 
+ .division-2{
+    border-bottom: clamp(2px, 0.15vw, 2.5px) solid black;   
+    background: var(--white);
+    color: black;
+ }
+
 .anuncio {
   width: 100%;
   overflow: hidden;
