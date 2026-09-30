@@ -560,11 +560,10 @@ header {
     border-radius: clamp(1.8rem, 1.5vw, 2.9rem)
                    clamp(1.8rem, 1.5vw, 2.9rem)
                     0 0;
-    --header-border-transition-delay: 0.42s;
     --header-border-transition-duration: 0.18s;
     height: clamp(6.2rem, 4.55vw, 8.7rem);
     transition:
-        border-bottom-color var(--header-border-transition-duration) ease-out var(--header-border-transition-delay),
+        border-bottom-color var(--header-border-transition-duration) ease-out,
         max-width 0.6s cubic-bezier(0.16, 1, 0.3, 1),
         top 0.6s cubic-bezier(0.16, 1, 0.3, 1),
         border-radius 0.6s cubic-bezier(0.16, 1, 0.3, 1),
@@ -667,7 +666,6 @@ header {
     }
 
 header.scrolled {
-  --header-border-transition-delay: 0s;
   --header-border-transition-duration: 0s;
   top: 1%;
 
