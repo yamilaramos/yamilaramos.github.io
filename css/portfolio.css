@@ -60,7 +60,6 @@
 .b-logos{ background-color: black;}
 .p-logos{  padding: 2px;}
 .p-react{  padding: 4px;}
-.b-radius{  border-radius: 5px;}
 button:hover { color: black; transition: ease;}
 
 .flechas {
@@ -331,7 +330,10 @@ a { text-decoration: none; color: black; font-weight: 500;}
 a:hover { color: black; }
 
 html { font-size: clamp(12.5px, calc(4.79px + 0.56vw), 15.62px); } 
-html, body { overflow-x: clip; }
+html, body {
+    overflow-x: clip;
+    cursor: none;
+}
 strong { font-weight: 600; }
 body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-optical-sizing: auto; font-style: normal; }
 ::selection { background-color: var(--yellow); color: black; }
@@ -499,9 +501,7 @@ h4 {
 
 .cursor{ margin-top: clamp(-5px, calc(-1.92px + -0.23vw), -6.25px); }
 
-html, body {
-    cursor: none;
-}
+
 
 a, button, [data-cursor-hover] {
     cursor: none;
@@ -552,12 +552,25 @@ header {
     background-color: transparent;
     border-bottom: clamp(2px, 0.15vw, 2.5px) solid black;
 
-    z-index: 10;
     
     border-radius: clamp(18px, 1.5vw, 29px)
                    clamp(18px, 1.5vw, 29px)
                     0 0;
     height: clamp(62px, 4.55vw, 87px);
+transition:
+    max-width 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    top 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    border-radius 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    backdrop-filter 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    
+
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  transform: scale(1);
 }
 
     header > article {
@@ -647,22 +660,7 @@ header {
         stroke: currentColor;
         stroke-width: 0.5;
     }
-header {
-  transition:
-    max-width 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-    top 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-    border-radius 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-    box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-    background-color 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-    backdrop-filter 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-    
-
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  transform: scale(1);
-}
+header 
 
 header.scrolled {
   top: 1%;
