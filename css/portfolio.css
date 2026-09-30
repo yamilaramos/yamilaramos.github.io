@@ -922,6 +922,7 @@ header {
  }
 
  .division-2{
+    border-top: clamp(2px, 0.15vw, 2.5px) solid black;
     border-bottom: clamp(2px, 0.15vw, 2.5px) solid black;   
     background: var(--white);
     color: black;
