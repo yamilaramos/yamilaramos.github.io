@@ -647,16 +647,16 @@ header {
         stroke: currentColor;
         stroke-width: 0.5;
     }
-
 header {
   transition:
     max-width 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-    margin-top 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    top 0.6s cubic-bezier(0.16, 1, 0.3, 1),
     border-radius 0.6s cubic-bezier(0.16, 1, 0.3, 1),
     box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1),
     background-color 0.6s cubic-bezier(0.16, 1, 0.3, 1),
     backdrop-filter 0.6s cubic-bezier(0.16, 1, 0.3, 1),
     transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    /* nota: "border" / "border-color" no está en esta lista a propósito */
 
   position: sticky;
   top: 0;
@@ -665,10 +665,12 @@ header {
 }
 
 header.scrolled {
-  top: 1%; 
+  top: clamp(20px, 2vw, 32px);
+
   max-width: 92%;
-  margin: 0 auto;      
-  background-color: rgb(254 250 246 / 92%);
+  margin: 0 auto;
+
+  background-color: rgba(254, 250, 246, 0.72);
   backdrop-filter: blur(clamp(12px, 1vw, 18px));
   -webkit-backdrop-filter: blur(clamp(12px, 1vw, 18px));
 
@@ -681,7 +683,6 @@ header.scrolled {
   animation: header-pop 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Pequeño "asentamiento" al aparecer, para que se sienta menos brusco */
 @keyframes header-pop {
   from { transform: scale(0.985); }
   to   { transform: scale(1); }
@@ -691,7 +692,6 @@ header.scrolled {
   header { transition: none; animation: none; }
   header.scrolled { animation: none; }
 }
-
 /* PROYECTOS */
 
 .contenedor-proyectos{ margin-left: 5%; }
