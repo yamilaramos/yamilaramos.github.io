@@ -4,6 +4,36 @@
     --white: #fcf9f7;
     --cream: #fefaf6;
     --gap: 4.5%;
+    --angulo-cruz: 8deg;
+}
+
+/* Contenedor que reserva el espacio para que las dos cintas se crucen */
+.anuncios-cruz {
+  position: relative;
+  width: 100%;
+  height: clamp(220px, 20vw, 320px);
+  margin: 5% 0;
+  overflow: visible;
+}
+
+/* Ambas cintas quedan superpuestas, centradas, y giradas en direcciones opuestas */
+.anuncio-diag-1,
+.anuncio-diag-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 130%;              /* más ancho que el contenedor para que la diagonal no deje huecos en las puntas */
+  margin: 0;
+}
+
+.anuncio-diag-1 {
+  transform: translate(-50%, -50%) rotate(calc(var(--angulo-cruz) * -1));
+  z-index: 1;
+}
+
+.anuncio-diag-2 {
+  transform: translate(-50%, -50%) rotate(var(--angulo-cruz));
+  z-index: 2;               /* la de "Proyectos destacados" queda por encima en el cruce */
 }
 
 .visually-hidden {
