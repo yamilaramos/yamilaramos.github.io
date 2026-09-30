@@ -665,7 +665,6 @@ header {
 }
 
 header.scrolled {
-
   top: 1%; 
   max-width: 92%;
   margin: 0 auto;      
@@ -673,7 +672,7 @@ header.scrolled {
   backdrop-filter: blur(clamp(12px, 1vw, 18px));
   -webkit-backdrop-filter: blur(clamp(12px, 1vw, 18px));
 
-  border: clamp(2px, 0.15vw, 2.5px) solid black;
+  border: none;
   border-radius: 999px;
 
   box-shadow:
