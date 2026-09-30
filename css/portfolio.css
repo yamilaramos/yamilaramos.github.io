@@ -672,7 +672,7 @@ header {
 
 header.scrolled {
   --header-border-transition-duration: 0s;
-  top: 1%;
+  top: clamp(1.2rem, 1.1vw, 2.1rem);
   height: calc(clamp(6.2rem, 4.55vw, 8.7rem) - 0.5rem);
 
   max-width: 92%;
