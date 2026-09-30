@@ -573,7 +573,7 @@ header {
         transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 50;
     transform: scale(1);
 }
 
@@ -1514,6 +1514,7 @@ header.scrolled {
 
 .back-to-top {
     position: fixed;
+    z-index: 9;
 
     bottom: clamp(1.8rem, calc(calc(6.9 * var(--rem-unit)) + 0.81vw), calc(22.5 * var(--rem-unit)));
     right: clamp(3.2rem, 2.34vw, 4.0rem);
