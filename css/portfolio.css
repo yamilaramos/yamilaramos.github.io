@@ -10,30 +10,32 @@
 
 .anuncios-cruz {
   position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
   width: 100%;
-  height: clamp(22.0rem, 20vw, 32.0rem);
-  margin: 5% 0;
+  height: auto;
+  margin: 0 0 2.5%;
+  padding: 2% 0;
   overflow: visible;
 }
 
-
 .anuncio-diag-1,
 .anuncio-diag-2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 130%;              
+  grid-area: 1 / 1;
+  justify-self: center;
+  align-self: center;
+  width: 130%;
   margin: 0;
 }
 
 .anuncio-diag-1 {
-  transform: translate(-50%, -50%) rotate(-2deg);
+  transform: rotate(-1.5deg);
   z-index: 1;
 }
 
 .anuncio-diag-2 {
-  transform: translate(-50%, -50%) rotate(1deg);
-  z-index: 2;               
+  transform: rotate(1.5deg);
+  z-index: 2;
 }
 
 .visually-hidden {
