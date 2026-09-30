@@ -566,6 +566,7 @@ header {
         border-bottom-color var(--header-border-transition-duration) ease-out,
         max-width 0.6s cubic-bezier(0.16, 1, 0.3, 1),
         top 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+        height 0.6s cubic-bezier(0.16, 1, 0.3, 1),
         border-radius 0.6s cubic-bezier(0.16, 1, 0.3, 1),
         box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1),
         background-color 0.6s cubic-bezier(0.16, 1, 0.3, 1),
@@ -668,6 +669,7 @@ header {
 header.scrolled {
   --header-border-transition-duration: 0s;
   top: 1%;
+  height: calc(clamp(6.2rem, 4.55vw, 8.7rem) - 0.5rem);
 
   max-width: 92%;
   margin: 0 auto;
