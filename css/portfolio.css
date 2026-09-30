@@ -337,7 +337,12 @@ html, body {
 }
 strong { font-weight: 600; }
 body {
-    font-size: clamp(calc(12.5 * var(--rem-unit)), calc(calc(4.79 * var(--rem-unit)) + 0.56vw), calc(15.62 * var(--rem-unit))); background-color: var(--cream); font-family: "Outfit", sans-serif; font-optical-sizing: auto; font-style: normal; }
+    font-size: clamp(calc(12.5 * var(--rem-unit)), calc(calc(4.79 * var(--rem-unit)) + 0.56vw), calc(15.62 * var(--rem-unit)));
+    background-color: var(--cream);
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
 ::selection { background-color: var(--yellow); color: black; }
 .jcontent-center { justify-content: center; }
 .jcontent-between { justify-content: space-between; }
