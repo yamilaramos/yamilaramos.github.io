@@ -1719,8 +1719,6 @@ footer p{
     box-sizing: border-box;
     width: 100%;
     padding: clamp(4rem, 2.5vw, 4.5rem) 0;
-    border: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid black;
-    border-bottom: 0;
 }
 
 .stack-intro {
@@ -1734,7 +1732,7 @@ footer p{
 }
 
 .stack-intro p {
-    width: min(50%, 90rem);
+    width: min(53%, 90rem);
     margin: 0;
     font-size: clamp(calc(19.4 * var(--rem-unit)), 1.27vw, calc(24.3 * var(--rem-unit)));
     line-height: clamp(calc(27.5 * var(--rem-unit)), 1.80vw, calc(34.4 * var(--rem-unit)));
@@ -1750,10 +1748,6 @@ footer p{
     min-height: 42rem;
     height: clamp(42rem, 60vh, 46rem);
     margin: 0 auto 3%;
-    border-top: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid black;
-    border-bottom: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid black;
-    border-right: 0;
-    border-left: 0;
     border-radius: 0;
     background-color: #5e452a;
     background-image: url("../img/stack-hero.png");
@@ -2201,5 +2195,5 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
 
 #sobremi {
     box-sizing: border-box;
-    border-top: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid black;
+    border-top: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid var(--cream);
 }
