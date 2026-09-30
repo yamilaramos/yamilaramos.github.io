@@ -551,26 +551,22 @@ a, button, [data-cursor-hover] {
 header {
     background-color: transparent;
     border-bottom: clamp(2px, 0.15vw, 2.5px) solid black;
-
-    
     border-radius: clamp(18px, 1.5vw, 29px)
                    clamp(18px, 1.5vw, 29px)
                     0 0;
     height: clamp(62px, 4.55vw, 87px);
-transition:
-    max-width 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-    top 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-    border-radius 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-    box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-    background-color 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-    backdrop-filter 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-    
-
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  transform: scale(1);
+    transition:
+        max-width 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+        top 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+        border-radius 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+        box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+        background-color 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+        backdrop-filter 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    transform: scale(1);
 }
 
     header > article {
@@ -660,7 +656,6 @@ transition:
         stroke: currentColor;
         stroke-width: 0.5;
     }
-header 
 
 header.scrolled {
   top: 1%;
