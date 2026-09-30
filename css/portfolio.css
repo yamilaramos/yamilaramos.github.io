@@ -666,11 +666,10 @@ header {
 
 header.scrolled {
 
- top: clamp(20px, 2vw, 32px); 
+  top: 1%; 
   max-width: 92%;
   margin: 0 auto;      
-
-  background-color: rgba(254, 250, 246, 0.72);  
+  background-color: rgb(254 250 246 / 92%);
   backdrop-filter: blur(clamp(12px, 1vw, 18px));
   -webkit-backdrop-filter: blur(clamp(12px, 1vw, 18px));
 
