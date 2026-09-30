@@ -1745,8 +1745,8 @@ footer p{
     justify-content: space-between;
     box-sizing: border-box;
     width: 100%;
-    min-height: 42rem;
-    height: clamp(42rem, 60vh, 46rem);
+    min-height: 28rem;
+    height: clamp(28rem, 59vh, 46rem);
     margin: 0 auto 3%;
     border-radius: 0;
     background-color: #5e452a;
@@ -2075,7 +2075,7 @@ footer p{
     bottom: 0;
     left: 50%;
     width: 0.2rem;
-    background: var(--yellow);
+    background: var(--cream);
     content: "";
     transform: translateX(-50%);
 }
@@ -2195,5 +2195,5 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
 
 #sobremi {
     box-sizing: border-box;
-    border-top: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid var(--cream);
+    border-top: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid black;
 }
