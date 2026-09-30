@@ -961,6 +961,8 @@ header.scrolled > article {
     border-bottom: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid black;   
     background: var(--white);
     color: black;
+    width: 100%;
+    overflow: hidden;
  }
 
 .anuncio {
