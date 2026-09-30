@@ -444,6 +444,10 @@ h4 {
 .contenedor-mockup img{
     margin-left: 7%;
 }
+
+#inicio .contenedor-mockup > img {
+    visibility: hidden;
+}
 .social-gap {
     gap: clamp(1.2rem, calc(calc(4.6 * var(--rem-unit)) + 0.54vw), 1.5rem);
     position: absolute;
@@ -2026,7 +2030,7 @@ footer p{
     z-index: 1;
     top: 30%;
     right: 3%;
-    width: 40%;
+    width: 37%;
     height: auto;
     margin: 0;
     aspect-ratio: 812 / 827;
@@ -2187,7 +2191,7 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
         top: auto;
         right: auto;
         bottom: auto;
-        width: min(88%, 36rem);
+        width: min(82%, 36rem);
         height: auto;
         margin: 1.5rem auto 0;
         transform: none;
