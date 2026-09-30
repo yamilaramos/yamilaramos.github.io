@@ -672,7 +672,24 @@ header.scrolled {
 }
 
 header.scrolled > article {
+    justify-content: center;
+    margin-left: clamp(2rem, 2.5vw, 3rem);
+    margin-right: clamp(2rem, 2.5vw, 3rem);
     transform: scale(0.95);
+}
+
+@media screen and (max-width: 768px) {
+  header.scrolled > article {
+    justify-content: space-between;
+    margin-left: clamp(1rem, 4vw, 2rem);
+    margin-right: clamp(1rem, 4vw, 2rem);
+  }
+}
+
+header.scrolled .header-brand,
+header.scrolled .header-cv,
+header.scrolled .header-cv-mobile {
+    display: none;
 }
 
 @keyframes header-pop {
