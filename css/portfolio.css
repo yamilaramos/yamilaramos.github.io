@@ -1725,6 +1725,7 @@ footer p{
     box-sizing: border-box;
     width: 100%;
     padding: clamp(4rem, 2.5vw, 4.5rem) 0;
+    border-top: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid black;
 }
 
 .stack-intro {
@@ -2203,5 +2204,4 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
 
 #sobremi {
     box-sizing: border-box;
-    border-top: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid black;
 }
