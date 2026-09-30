@@ -564,6 +564,8 @@ header {
                     0 0;
     --header-border-transition-duration: 0.18s;
     height: clamp(6.2rem, 4.55vw, 8.7rem);
+    max-width: 100%;
+    margin: 0 auto;
     transition:
         border-bottom-color var(--header-border-transition-duration) ease-out,
         max-width 0.6s cubic-bezier(0.16, 1, 0.3, 1),
