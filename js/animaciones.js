@@ -132,3 +132,15 @@ if (cursor) {
     });
 
 }
+
+(() => {
+  const header = document.querySelector('header');
+  const UMBRAL = 40; // px de scroll a partir de los cuales flota
+
+  const onScroll = () => {
+    header.classList.toggle('scrolled', window.scrollY > UMBRAL);
+  };
+
+  onScroll(); // por si la página carga ya scrolleada
+  window.addEventListener('scroll', onScroll, { passive: true });
+})();
