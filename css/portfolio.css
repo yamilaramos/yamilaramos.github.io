@@ -1716,7 +1716,11 @@ footer p{
 
 /* Stack tecnológico: carruseles y comparación del mockup */
 .stack-section {
-    padding: clamp(3.3%, 3.5vw, 6%) 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: clamp(4rem, 2.5vw, 4.5rem) 0;
+    border: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid black;
+    border-bottom: 0;
 }
 
 .stack-intro {
@@ -1744,10 +1748,13 @@ footer p{
     box-sizing: border-box;
     width: 100%;
     min-height: 42rem;
-    height: 50vh;
+    height: clamp(42rem, 60vh, 46rem);
     margin: 0 auto 3%;
-    border: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid black;
-    border-radius: clamp(2.9rem, 2.62vw, 4.0rem);
+    border-top: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid black;
+    border-bottom: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid black;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
     background-color: #5e452a;
     background-image: url("../img/stack-hero.png");
     background-position: center;
@@ -2189,4 +2196,10 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
         margin: 1.5rem auto 0;
         transform: none;
     }
+}
+
+
+#sobremi {
+    box-sizing: border-box;
+    border-top: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid black;
 }
