@@ -561,8 +561,10 @@ header {
     border-radius: clamp(1.8rem, 1.5vw, 2.9rem)
                    clamp(1.8rem, 1.5vw, 2.9rem)
                     0 0;
+    --header-border-transition-delay: 0.6s;
     height: clamp(6.2rem, 4.55vw, 8.7rem);
     transition:
+        border-bottom-color 0s var(--header-border-transition-delay),
         max-width 0.6s cubic-bezier(0.16, 1, 0.3, 1),
         top 0.6s cubic-bezier(0.16, 1, 0.3, 1),
         border-radius 0.6s cubic-bezier(0.16, 1, 0.3, 1),
@@ -665,6 +667,7 @@ header {
     }
 
 header.scrolled {
+  --header-border-transition-delay: 0s;
   top: 1%;
 
   max-width: 92%;
@@ -672,7 +675,8 @@ header.scrolled {
 
   background-color: rgba(254, 250, 246, 90%);
   backdrop-filter: blur(clamp(1.2rem, 1vw, 1.8rem));
-  -webkit-backdrop-filter: blur(clamp(1.2rem, 1vw, 1.8rem));  border-radius: 99.9rem;
+  -webkit-backdrop-filter: blur(clamp(1.2rem, 1vw, 1.8rem));
+  border-bottom-color: transparent;  border-radius: 99.9rem;
 
   box-shadow:
     0 clamp(0.8rem, 0.6vw, 1.4rem) clamp(2.4rem, 2vw, 4.0rem) rgba(0, 0, 0, 0.15);
