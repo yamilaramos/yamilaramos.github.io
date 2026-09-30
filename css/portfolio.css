@@ -7,7 +7,7 @@
     --angulo-cruz: 8deg;
 }
 
-/* Contenedor que reserva el espacio para que las dos cintas se crucen */
+
 .anuncios-cruz {
   position: relative;
   width: 100%;
@@ -16,13 +16,13 @@
   overflow: visible;
 }
 
-/* Ambas cintas quedan superpuestas, centradas, y giradas en direcciones opuestas */
+
 .anuncio-diag-1,
 .anuncio-diag-2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 130%;              /* más ancho que el contenedor para que la diagonal no deje huecos en las puntas */
+  width: 130%;              
   margin: 0;
 }
 
@@ -33,7 +33,7 @@
 
 .anuncio-diag-2 {
   transform: translate(-50%, -50%) rotate(var(--angulo-cruz));
-  z-index: 2;               /* la de "Proyectos destacados" queda por encima en el cruce */
+  z-index: 2;               
 }
 
 .visually-hidden {
@@ -48,7 +48,7 @@
     border: 0;
 }
 
-/* Certificaciones */
+
 
 .logosCert{gap:8px}
 .logosCert img{
@@ -94,7 +94,7 @@ button:hover { color: black; transition: ease;}
   display: block;
 }
 
-/* CARRUSEL */
+
 
 .slide img {
   width: 100%;
@@ -251,7 +251,7 @@ pointer-events: none;
   min-height: 2.8em;
 }
 
-/* Proceso creativo */
+
 
 .texto {
     padding: clamp(30px, 1.95vw, 37.5px);
@@ -330,7 +330,7 @@ img { max-width: 100%; height: auto; display: block; -webkit-user-drag: none; us
 a { text-decoration: none; color: black; font-weight: 500;}
 a:hover { color: black; }
 
-html { font-size: clamp(12.5px, calc(4.79px + 0.56vw), 15.62px); } /* rem */
+html { font-size: clamp(12.5px, calc(4.79px + 0.56vw), 15.62px); } 
 html, body { overflow-x: clip; }
 strong { font-weight: 600; }
 body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-optical-sizing: auto; font-style: normal; }
@@ -342,7 +342,7 @@ body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-o
 .align-items-center { align-items: center; }
 .align-items-flex-end { align-items: flex-end; }
 
-/* No cambiar */
+
 .h-100vh { height: 100vh} 
 .w-fit { width: fit-content; }
 .m-auto { margin: auto;}
@@ -352,7 +352,7 @@ body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-o
 .t-align-left { text-align: left; }
 .c-white { color: var(--cream); }
 
-/* Variables */
+
 .flex-direction-column{ flex-direction: column; align-items: flex-start;}
 .subrayado { text-decoration: underline dotted var(--yellow); }
 .subrayado-2 { text-decoration: underline dotted var(--cream); }
@@ -364,7 +364,7 @@ body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-o
 .proyLogos img{border-radius: 5px;}
 .proyLogos{ margin: 8px 0; gap: 8px;}
 
-/* Eliminar */
+
 .m-right { margin-right: clamp(2px, calc(0.77px + 0.09vw), 2.5px); }
 .b-radius { border-radius: 5px; }
 .t-padding{ padding-top: clamp(2px, calc(0.77px + 0.09vw), 2.5px); }
@@ -383,7 +383,7 @@ body { background-color: var(--cream); font-family: "Outfit", sans-serif; font-o
     width: clamp(36px, 2.36vw, 45px);
 }
 
-/* TEXTO */
+
 
 .titulo{
     margin-left: 8%;
@@ -495,7 +495,7 @@ h4 {
     fill: var(--yellow);
 }
 
-/* HEADER */
+
 
 .cursor{ margin-top: clamp(-5px, calc(-1.92px + -0.23vw), -6.25px); }
 
@@ -530,7 +530,7 @@ a, button, [data-cursor-hover] {
     transform: translate(-50%, -50%) scale(1.5);
 }
 
-/* Enlaces fuera del header */
+
 #cursor.is-link {
     background: #00000090;
     border: clamp(3px, calc(0.71px + 0.163vw), 3.75px) solid #00000025;
@@ -541,7 +541,7 @@ a, button, [data-cursor-hover] {
     border: clamp(3px, calc(0.71px + 0.163vw), 3.75px) solid #00000025;
 }
 
-/* Link dentro del header */
+
 #cursor.in-header.is-link {
     background: #fff;
     mix-blend-mode: difference;
@@ -551,7 +551,7 @@ a, button, [data-cursor-hover] {
 header {
     background-color: transparent;
     border-bottom: clamp(2px, 0.15vw, 2.5px) solid black;
-/*  position: relative; */
+
     z-index: 10;
     
     border-radius: clamp(18px, 1.5vw, 29px)
@@ -656,7 +656,7 @@ header {
     background-color 0.6s cubic-bezier(0.16, 1, 0.3, 1),
     backdrop-filter 0.6s cubic-bezier(0.16, 1, 0.3, 1),
     transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-    /* nota: "border" / "border-color" no está en esta lista a propósito */
+    
 
   position: sticky;
   top: 0;
@@ -692,7 +692,7 @@ header.scrolled {
   header { transition: none; animation: none; }
   header.scrolled { animation: none; }
 }
-/* PROYECTOS */
+
 
 .contenedor-proyectos{ margin-left: 5%; }
 
@@ -704,7 +704,7 @@ header.scrolled {
 
 .contenedor-proyectos p{
     font-size: clamp(19.4px, 1.27vw, 24.3px);
-/*     font-size: clamp(20px, 1.30vw, 25px); */
+
     line-height: clamp(26.25px, 1.71vw, 32.8125px);
     margin-bottom: clamp(14px, calc(5.37px + 0.63vw), 17.5px);
     max-width: 83%;    
@@ -814,7 +814,7 @@ header.scrolled {
     background: #80808099;
 }
 
-/* MOBILE */
+
 
 .salto-linea{ display: block; margin-top: clamp(10px, calc(3.84px + 0.45vw), 12.5px); }
 .salto-mobile-desactivado, .salto-mobile { display: inline; }
@@ -955,7 +955,7 @@ header.scrolled {
     transform: scaleX(1);
 }
 
-/* DIVISION */
+
 
 .division{
     border-top: clamp(2px, 0.15vw, 2.5px) solid black;
@@ -976,7 +976,7 @@ header.scrolled {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-/*   height: 3rem; */
+
 }
 
 .track {
@@ -994,13 +994,13 @@ header.scrolled {
 
 .dot { margin: 0 clamp(20px, calc(7.67px + 0.9vw), 25px); }
 
-.logo-mensaje{ /* no implementado aun */
+.logo-mensaje{ 
     height: clamp(22px, calc(8.44px + 0.99vw), 27.5px);
     width: clamp(22px, calc(8.44px + 0.99vw), 27.5px);
     margin-right: clamp(20px, calc(7.67px + 0.9vw), 25px);
 }
 
-/* SOBRE MI */
+
 
 .sobre-mi > div h2, .t-cert h2{
     font-size: clamp(36px, 2.35vw, 45px);
@@ -1064,7 +1064,7 @@ header.scrolled {
         height: auto;
     }
     
-    /* Línea horizontal */
+    
     .timeline::before {
         content: "";
         position: absolute;
@@ -1079,7 +1079,7 @@ header.scrolled {
         height: clamp(2.5px, 0.2vw, 4.3px);
     }
     
-    /* Puntos horizontales */
+    
     .timeline::after {
         content: "";
         position: absolute;
@@ -1098,7 +1098,7 @@ header.scrolled {
             clamp(560px, 45.3vw, 970px) 0 0 white;
     }
 
-/* TIMELINE CARDS */
+
 
 .card{
     background: rgba(0, 0, 0, 0.08);
@@ -1216,7 +1216,7 @@ header.scrolled {
     color: var(--cream);
 }
 
-/* PROYECTOS */
+
 
 .contenedor-light{
   position: relative;
@@ -1267,7 +1267,7 @@ header.scrolled {
 }
 
 
-/* BOTONES */
+
 
 .btn{
     background: linear-gradient(131deg,rgba(235, 166, 37, 1) 0%, rgba(255, 178, 36, 1) 50%, rgba(235, 166, 37, 1) 100%);
@@ -1453,7 +1453,7 @@ header.scrolled {
     color: var(--cream);
 }
 
-/* ANIMACIONES */
+
 
 .fade-in-down {
   opacity: 0;
@@ -1569,7 +1569,7 @@ header.scrolled {
   filter: blur(0);
 }
 
-/* FOOTER */
+
 
 footer {
     background-size: cover;
@@ -1672,7 +1672,7 @@ footer p{
     width: clamp(30px, 1.97vw, 37.5px);
 }
 
-/* Proceso creativo */
+
 
 .proceso-delay-1 {
     transition-delay: 0s;
