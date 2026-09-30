@@ -1712,3 +1712,481 @@ footer p{
 .w-15 { width: 15%;}
 .w-12 { width: 13.5%;}
 .w-10 { width: 10%;}
+
+
+/* Stack tecnológico: carruseles y comparación del mockup */
+.stack-section {
+    padding: clamp(3.3%, 3.5vw, 6%) 0;
+}
+
+.stack-intro {
+    width: 90%;
+    margin: 0 auto clamp(2.0rem, 2.3vw, 3.0rem);
+}
+
+.stack-intro h2 {
+    margin: 0 0 clamp(1.5rem, 1.23vw, 2.1rem);
+    font-size: clamp(3.6rem, 2.35vw, 4.5rem);
+}
+
+.stack-intro p {
+    width: min(50%, 90rem);
+    margin: 0;
+    font-size: clamp(calc(19.4 * var(--rem-unit)), 1.27vw, calc(24.3 * var(--rem-unit)));
+    line-height: clamp(calc(27.5 * var(--rem-unit)), 1.80vw, calc(34.4 * var(--rem-unit)));
+}
+
+.stack-hero-panel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 42rem;
+    height: 50vh;
+    margin: 0 auto 3%;
+    border: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid black;
+    border-radius: clamp(2.9rem, 2.62vw, 4.0rem);
+    background-color: #5e452a;
+    background-image: url("../img/stack-hero.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.stack-copy {
+    position: relative;
+    z-index: 2;
+    flex: 0 0 55%;
+    width: 55%;
+    margin-left: 5%;
+    color: var(--white);
+}
+
+.stack-copy h3 {
+    margin: 1.5% 0;
+    color: var(--white);
+    font-size: clamp(2.4rem, 1.65vw, 3.0rem);
+    text-shadow: 0.1rem 0.1rem 0.2rem rgb(0 0 0 / 55%);
+}
+
+.skills-marquee {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    overflow-x: clip;
+    overflow-y: visible;
+    padding-block: 3rem;
+    margin-block: -3rem;
+}
+
+.skills-marquee--masked {
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
+}
+
+.skills-track-window {
+    position: relative;
+    width: calc(100% - 6rem);
+    margin-inline: auto;
+    overflow-x: clip;
+    overflow-y: visible;
+}
+
+.skills-marquee--full .skills-track-window {
+    width: 100%;
+}
+
+.skills-track,
+.skills-track-2 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    width: max-content;
+}
+
+.skills-track {
+    animation: skills-scroll-quarter 30s linear infinite reverse;
+}
+
+.skills-track-2 {
+    animation: skills-scroll-quarter 30s linear infinite;
+}
+
+.skills-track[data-repeat]:not(.is-ready),
+.skills-track-2[data-repeat]:not(.is-ready) {
+    animation-play-state: paused;
+}
+
+.skills-marquee:hover .skills-track,
+.skills-marquee:hover .skills-track-2 {
+    z-index: 3;
+    animation-play-state: paused;
+}
+
+@keyframes skills-scroll-quarter {
+    from { transform: translateX(0); }
+    to { transform: translateX(-25%); }
+}
+
+.stack-section .skill-item,
+.stack-section .skill-item-2 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 0.1rem solid rgb(255 255 255 / 30%);
+    border-radius: 0.3rem;
+}
+
+.stack-section .skill-item {
+    margin: 1.2rem 1.5rem;
+    padding: 0.8rem 1.8rem;
+    background: rgb(0 0 0 / 8%);
+    box-shadow: 0 0.5rem 2rem rgb(0 0 0 / 30%), inset 0 0.1rem 0.1rem rgb(255 255 255 / 20%);
+    -webkit-backdrop-filter: blur(0.9rem);
+    backdrop-filter: blur(0.9rem);
+}
+
+.stack-section .skill-item-2 {
+    margin: 1.5rem 3rem 1.5rem 0;
+    padding: 0.8rem 1.8rem;
+    background: var(--bg-yellow);
+}
+
+.stack-section .skill-item img {
+    display: block;
+    width: 2.8rem;
+    height: 2.8rem;
+    object-fit: contain;
+}
+
+.stack-section .skill-item-2 img {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+}
+
+.stack-section [data-tooltip]::after {
+    position: absolute;
+    z-index: 20;
+    bottom: calc(100% + 1rem);
+    left: calc(50% - 2rem);
+    box-sizing: border-box;
+    min-width: 7rem;
+    padding: 0.5rem 1.3rem;
+    border: 0.2rem solid black;
+    border-radius: 1.6rem;
+    background: var(--cream);
+    color: black;
+    content: attr(data-tooltip);
+    font: inherit;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, 0.3rem);
+    transition: opacity 220ms ease-out, transform 220ms cubic-bezier(.22, 1, .36, 1), visibility 0s linear 220ms;
+}
+
+.stack-section [data-tooltip]::before {
+    position: absolute;
+    z-index: 19;
+    bottom: calc(100% + 0.7rem);
+    left: 50%;
+    box-sizing: border-box;
+    width: 0.8rem;
+    height: 0.8rem;
+    border: 0.2rem solid black;
+    border-radius: 0.1rem;
+    background: white;
+    content: "";
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, 0.3rem) rotate(45deg);
+    transition: opacity 220ms ease-out, transform 220ms cubic-bezier(.22, 1, .36, 1), visibility 0s linear 220ms;
+}
+
+.stack-section .skill-item-2[data-tooltip]::after {
+    top: calc(100% + 1rem);
+    right: auto;
+    bottom: auto;
+    left: calc(50% + 2rem);
+    transform: translate(-50%, -0.3rem);
+}
+
+.stack-section .skill-item-2[data-tooltip]::before {
+    top: calc(100% + 0.7rem);
+    bottom: auto;
+    transform: translate(-50%, -0.3rem) rotate(45deg);
+}
+
+.stack-section [data-tooltip]:hover {
+    z-index: 10;
+}
+
+.stack-section [data-tooltip]:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+    transition: opacity 220ms ease-out, transform 220ms cubic-bezier(.22, 1, .36, 1), visibility 0s linear;
+}
+
+.stack-section [data-tooltip]:hover::before {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0) rotate(45deg);
+    transition: opacity 220ms ease-out, transform 220ms cubic-bezier(.22, 1, .36, 1), visibility 0s linear;
+}
+
+.stack-section .skill-item.tooltip-portaled[data-tooltip]::before,
+.stack-section .skill-item.tooltip-portaled[data-tooltip]::after,
+.stack-section .skill-item-2.tooltip-portaled[data-tooltip]::before,
+.stack-section .skill-item-2.tooltip-portaled[data-tooltip]::after {
+    display: none;
+}
+
+.skills-tooltip-portal {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    width: max-content;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, 0.3rem);
+    transition: opacity 220ms ease-out, transform 220ms cubic-bezier(.22, 1, .36, 1), visibility 0s linear 220ms;
+}
+
+.skills-tooltip-portal.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+    transition: opacity 220ms ease-out, transform 220ms cubic-bezier(.22, 1, .36, 1), visibility 0s linear;
+}
+
+.skills-tooltip-bubble {
+    position: relative;
+    z-index: 1;
+    display: block;
+    box-sizing: border-box;
+    width: max-content;
+    min-width: 7rem;
+    padding: 0.5rem 1.3rem;
+    border: 0.2rem solid black;
+    border-radius: 1.6rem;
+    background: var(--cream);
+    color: black;
+    font: inherit;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.skills-tooltip-tail {
+    position: absolute;
+    z-index: 0;
+    left: calc(50% + var(--tail-offset-x, -2rem));
+    width: 0.8rem;
+    height: 0.8rem;
+    box-sizing: border-box;
+    border: 0.2rem solid black;
+    border-radius: 0.1rem;
+    background: white;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.skills-tooltip-portal[data-placement="top"] .skills-tooltip-tail {
+    bottom: -0.4rem;
+}
+
+.skills-tooltip-portal[data-placement="bottom"] .skills-tooltip-tail {
+    top: -0.4rem;
+}
+
+.stack-hero-panel > .mockupStack {
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    right: 3%;
+    width: 40%;
+    height: auto;
+    margin: 0;
+    aspect-ratio: 812 / 827;
+    transform: translateY(-50%);
+}
+
+.mk-compare {
+    --pos: 100%;
+    position: relative;
+    user-select: none;
+}
+
+.mk-compare img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.mk-compare .mk-top {
+    z-index: 2;
+    clip-path: inset(0 calc(100% - var(--pos)) 0 0);
+}
+
+.mk-compare .mk-base {
+    z-index: 1;
+    clip-path: inset(0 0 0 var(--pos));
+}
+
+.mk-divider {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    bottom: 0;
+    left: var(--pos);
+    width: 1.8rem;
+    cursor: grab !important;
+    touch-action: none;
+    transform: translateX(-50%);
+}
+
+.mk-divider::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 0.2rem;
+    background: var(--yellow);
+    content: "";
+    transform: translateX(-50%);
+}
+
+.mk-handle {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: var(--pos);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    width: 2.5rem;
+    height: 3.3rem;
+    padding: 0;
+    border: 0;
+    border-radius: 0.9rem;
+    background: white;
+    box-shadow: 0 0.3rem 0.9rem rgb(0 0 0 / 25%);
+    cursor: grab !important;
+    touch-action: none;
+    transform: translate(-50%, -50%) scale(var(--s, 1));
+    transition: transform 0.3s cubic-bezier(.2, .8, .2, 1), box-shadow 0.3s ease;
+}
+
+.mk-handle span {
+    display: block;
+    flex: 0 0 0.2rem;
+    width: 0.2rem;
+    height: 1rem;
+    border-radius: 0.1rem;
+    background: var(--yellow);
+    transform: scaleX(0.9);
+    transition: height 0.3s ease;
+}
+
+.mk-compare.is-dragging .mk-handle span:nth-child(2) {
+    height: 1.2rem;
+}
+
+.mk-compare.is-dragging,
+.mk-compare.is-dragging * {
+    cursor: grabbing !important;
+}
+
+body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
+    display: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .mk-handle,
+    .mk-divider::before,
+    .skills-tooltip-portal,
+    .stack-section [data-tooltip]::before,
+    .stack-section [data-tooltip]::after {
+        transition: none;
+    }
+
+    .skills-track,
+    .skills-track-2 {
+        animation-play-state: paused !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .stack-section {
+        padding: 3rem 0;
+    }
+
+    .stack-intro {
+        width: 88%;
+    }
+
+    .stack-intro h2 {
+        font-size: clamp(3.0rem, 7vw, 3.8rem);
+    }
+
+    .stack-intro p {
+        width: 100%;
+    }
+
+    .stack-hero-panel {
+        flex-direction: column;
+        align-items: stretch;
+        height: auto;
+        min-height: 0;
+        padding: 1.5rem 0 2rem;
+    }
+
+    .stack-copy {
+        flex: none;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .stack-copy h3 {
+        font-size: clamp(2.1rem, 5.5vw, 2.6rem);
+    }
+
+    .skills-marquee {
+        width: 100%;
+    }
+
+    .stack-hero-panel > .mockupStack {
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        width: min(88%, 36rem);
+        height: auto;
+        margin: 1.5rem auto 0;
+        transform: none;
+    }
+}
