@@ -5,7 +5,6 @@
     --white: #fcf9f7;
     --cream: #fefaf6;
     --gap: 4.5%;
-    --angulo-cruz: 8deg;
 }
 
 
@@ -28,12 +27,12 @@
 }
 
 .anuncio-diag-1 {
-  transform: translate(-50%, -50%) rotate(calc(var(--angulo-cruz) * -1));
+  transform: translate(-50%, -50%) rotate(-2deg);
   z-index: 1;
 }
 
 .anuncio-diag-2 {
-  transform: translate(-50%, -50%) rotate(var(--angulo-cruz));
+  transform: translate(-50%, -50%) rotate(1deg);
   z-index: 2;               
 }
 
@@ -676,7 +675,8 @@ header.scrolled {
   background-color: rgba(254, 250, 246, 90%);
   backdrop-filter: blur(clamp(1.2rem, 1vw, 1.8rem));
   -webkit-backdrop-filter: blur(clamp(1.2rem, 1vw, 1.8rem));
-  border-bottom-color: transparent;  border-radius: 99.9rem;
+  border-bottom-color: transparent;
+  border-radius: 99.9rem;
 
   box-shadow:
     0 clamp(0.8rem, 0.6vw, 1.4rem) clamp(2.4rem, 2vw, 4.0rem) rgba(0, 0, 0, 0.15);
@@ -955,8 +955,6 @@ header.scrolled {
 .animacion:hover::after {
     transform: scaleX(1);
 }
-
-
 
 .division{
     border-top: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid black;
