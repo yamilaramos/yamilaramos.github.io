@@ -687,11 +687,6 @@ header.scrolled {
   to   { transform: scale(1); }
 }
 
-header.scrolled .btn-cv {
-  background: black;
-  border-color: black;
-}
-
 @media (prefers-reduced-motion: reduce) {
   header { transition: none; animation: none; }
   header.scrolled { animation: none; }
