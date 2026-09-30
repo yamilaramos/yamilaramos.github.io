@@ -675,7 +675,7 @@ header.scrolled {
   top: clamp(1.2rem, 1.1vw, 2.1rem);
   height: calc(clamp(6.2rem, 4.55vw, 8.7rem) - 0.5rem);
 
-  max-width: 92%;
+  max-width: calc(100% - clamp(2.4rem, 2.2vw, 4.2rem));
   margin: 0 auto;
 
   background-color: rgba(254, 250, 246, 90%);
@@ -688,6 +688,12 @@ header.scrolled {
     0 clamp(0.8rem, 0.6vw, 1.4rem) clamp(2.4rem, 2vw, 4.0rem) rgba(0, 0, 0, 0.15);
 
   animation: header-pop 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media screen and (max-width: 768px) {
+  header.scrolled {
+    max-width: 100%;
+  }
 }
 
 header.scrolled > article {
