@@ -153,7 +153,7 @@ if (cursor) {
     header.classList.toggle('scrolled', isScrolled);
 
     if (!isScrolled) {
-      header.classList.remove('scroll-hidden');
+      header.classList.remove('scroll-hidden', 'scroll-revealing');
       scrollDirection = 0;
       directionStartY = currentY;
       return;
@@ -172,7 +172,9 @@ if (cursor) {
       return;
     }
 
-    header.classList.toggle('scroll-hidden', scrollDirection > 0);
+    const isScrollingUp = scrollDirection < 0;
+    header.classList.toggle('scroll-hidden', !isScrollingUp);
+    header.classList.toggle('scroll-revealing', isScrollingUp);
     directionStartY = currentY;
   };
 
