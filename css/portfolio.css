@@ -1550,30 +1550,42 @@ header.scrolled .animacion-activa::after {
 
 .timeline.scroll-fade-modern > .card {
   opacity: 0;
-  transform: translateY(1.2rem);
-  filter: blur(0.3rem);
-  transition:
-    opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
-    transform 0.55s cubic-bezier(0.22, 1, 0.36, 1),
-    filter 0.55s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .timeline.scroll-fade-modern.show > .card {
-  opacity: 1;
-  transform: translateY(0);
-  filter: blur(0);
+  animation: timeline-card-wave-in 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .timeline.scroll-fade-modern.show > .card:nth-of-type(1) {
-  transition-delay: 0.95s;
+  animation-delay: 0.95s;
 }
 
 .timeline.scroll-fade-modern.show > .card:nth-of-type(2) {
-  transition-delay: 1.6s;
+  animation-delay: 1.05s;
 }
 
 .timeline.scroll-fade-modern.show > .card:nth-of-type(3) {
-  transition-delay: 2.25s;
+  animation-delay: 1.15s;
+}
+
+@keyframes timeline-card-wave-in {
+  0% {
+    opacity: 0;
+    transform: translateY(1.2rem) scale(0.985);
+    filter: blur(0.3rem);
+  }
+
+  65% {
+    opacity: 1;
+    transform: translateY(-0.2rem) scale(1.005);
+    filter: blur(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1581,7 +1593,7 @@ header.scrolled .animacion-activa::after {
     opacity: 1;
     transform: none;
     filter: none;
-    transition: none;
+    animation: none;
   }
 }
 
