@@ -224,11 +224,11 @@ pointer-events: none;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-right: clamp(0.2rem, 0.13vw, calc(2.5 * var(--rem-unit))) solid black;
+    border-right: 2px solid black;
 }
 
 .contenedor-proceso {
-    padding: 2% 0 0 6%;
+    padding: 2% 0 0 5%;
 }
 
 .titulo-proceso { 
@@ -237,6 +237,7 @@ pointer-events: none;
 } 
 
 .proceso {
+    position: relative;
     height: auto;
 }
 
@@ -260,17 +261,13 @@ pointer-events: none;
     font-size: clamp(calc(19.4 * var(--rem-unit)), 1.27vw, calc(24.3 * var(--rem-unit)));
 }
 
-.proceso::after {
-    height: clamp(0.2rem, 0.13vw, calc(2.5 * var(--rem-unit)));
-}
-
 .proceso::before {  
     content: "";
     position: absolute;
+    left: 0;
+    bottom: 0;
     width: 88%;
-    height: clamp(0.2rem, 0.13vw, calc(2.5 * var(--rem-unit)));
-    box-shadow: rgba(255, 255, 255, 0.25) 0.0rem 0.0rem 0.6rem,
-                rgba(255, 255, 255, 0.15) 0.0rem 0.0rem 1.2rem;
+    height: 2px;
     opacity: 1;
     background: linear-gradient(
         to right,
