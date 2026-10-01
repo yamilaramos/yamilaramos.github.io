@@ -261,25 +261,14 @@ pointer-events: none;
     font-size: clamp(calc(19.4 * var(--rem-unit)), 1.27vw, calc(24.3 * var(--rem-unit)));
 }
 
-.proceso::before {  
+.proceso::before {
     content: "";
     position: absolute;
     left: 0;
     top: 0;
     width: 88%;
     height: 2px;
-    opacity: 1;
-    background: linear-gradient(
-        to right,
-        transparent 0%,
-        rgba(0, 0, 0, 0.20) 10%,
-        rgba(0, 0, 0, 0.38) 25%,
-        rgba(0, 0, 0, 0.48) 50%,
-        rgba(0, 0, 0, 0.38) 75%,
-        rgba(0, 0, 0, 0.20) 90%,
-        transparent 100%
-    );
-    border-radius: clamp(1.0rem, 0.65vw, calc(12.5 * var(--rem-unit)));
+    background-color: rgba(0, 0, 0, 0.32);
 }
 
 * { padding: 0; margin: 0; scroll-behavior: smooth; box-sizing: border-box;}
