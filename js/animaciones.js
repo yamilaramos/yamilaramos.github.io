@@ -138,7 +138,7 @@ if (cursor) {
   if (!header) return;
 
   const UMBRAL = 40;
-  const DURACION_RETORNO = 900;
+  const DURACION_RETORNO = 1250;
   let temporizadorRetorno;
 
   const onScroll = () => {
