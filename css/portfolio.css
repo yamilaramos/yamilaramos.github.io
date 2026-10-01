@@ -540,23 +540,10 @@ header {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    interpolate-size: allow-keywords;
-    transition:
-        max-width 0.45s cubic-bezier(0.4, 0, 0.2, 1),
-        width 0.45s cubic-bezier(0.4, 0, 0.2, 1),
-        padding-inline 0.45s cubic-bezier(0.4, 0, 0.2, 1),
-        top 0.45s cubic-bezier(0.4, 0, 0.2, 1),
-        height 0.45s cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 0.45s cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 0.45s cubic-bezier(0.4, 0, 0.2, 1),
-        backdrop-filter 0.45s cubic-bezier(0.4, 0, 0.2, 1),
-        transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
     position: sticky;
     top: 0;
     z-index: 50;
-    transform: scale(1);
 }
-
     header > article {
         height: 100%;
 
@@ -587,7 +574,15 @@ header {
         align-items: center;
         justify-content: space-evenly;
         gap: clamp(1.8rem, 2.5vw, 4.8rem);
-        transition: gap 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+        border-radius: 99.9rem;
+        background-color: transparent;
+        box-shadow: none;
+        -webkit-backdrop-filter: blur(0);
+        backdrop-filter: blur(0);
+        transition:
+            background-color 0.3s ease-out,
+            box-shadow 0.3s ease-out,
+            backdrop-filter 0.3s ease-out;
         
         list-style: none;
     }
@@ -647,61 +642,10 @@ header {
         stroke-width: 0.5;
     }
 
-header.scrolled {
-  top: clamp(1.2rem, 1.1vw, 2.1rem);
-  height: calc(clamp(6.2rem, 4.55vw, 8.7rem) - 0.5rem);
-
-  max-width: calc(100% - clamp(2.4rem, 2.2vw, 4.2rem));
-  margin: 0 auto;
-
-  background-color: rgba(254, 250, 246, 90%);
-  backdrop-filter: blur(clamp(1.2rem, 1vw, 1.8rem));
-  -webkit-backdrop-filter: blur(clamp(1.2rem, 1vw, 1.8rem));
-  border-bottom-color: transparent;
-  border-radius: 99.9rem;
-
-  box-shadow:
-    0 clamp(0.8rem, 0.6vw, 1.4rem) clamp(2.4rem, 2vw, 4.0rem) rgba(0, 0, 0, 0.15);
-
-}
-
-@media screen and (max-width: 768px) {
-  header.scrolled {
-    max-width: 100%;
-  }
-}
-
-header.scrolled > article {
-    justify-content: center;
-    margin-left: clamp(2rem, 2.5vw, 3rem);
-    margin-right: clamp(2rem, 2.5vw, 3rem);
-}
-
-@media screen and (max-width: 768px) {
-  header.scrolled > article {
-    justify-content: space-between;
-    margin-left: clamp(1rem, 4vw, 2rem);
-    margin-right: clamp(1rem, 4vw, 2rem);
-  }
-}
-
 @media screen and (min-width: 769px) {
-  header.scrolled {
-    width: fit-content;
-    padding-inline: 4%;
-    /* Deja que termine la contracción del ancho antes de redondear la cápsula. */
-    }
-
-  header.scrolled > article {
-    width: fit-content;
-    max-width: 100%;
-    margin-inline: 0;
-  }
-
   header.scrolled > article > .w-50 {
     width: fit-content;
     max-width: 100%;
-    margin: 0;
   }
 
   header.scrolled nav {
@@ -710,25 +654,20 @@ header.scrolled > article {
   }
 
   header.scrolled nav ul {
-    justify-content: space-evenly;
+    justify-content: center;
     gap: clamp(4rem, 7vw, 8rem);
+    padding-inline: clamp(1.8rem, 4vw, 6.4rem);
+    background-color: rgba(254, 250, 246, 0.82);
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.05);
+    -webkit-backdrop-filter: blur(0.6rem);
+    backdrop-filter: blur(0.6rem);
   }
 }
 
-header.scrolled .header-brand,
-header.scrolled .header-cv,
-header.scrolled .header-cv-mobile,
-header.restoring .header-brand,
-header.restoring .header-cv,
-header.restoring .header-cv-mobile {
-    display: none;
-}
-
-
 @media (prefers-reduced-motion: reduce) {
-  header { transition: none; animation: none; }
-  header > article { transition: none; }
-  header nav ul { transition: none; }
+  header nav ul {
+    transition: none;
+  }
 }
 
 
