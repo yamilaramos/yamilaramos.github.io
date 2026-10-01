@@ -288,7 +288,7 @@ pointer-events: none;
     content: "";
     position: absolute;
     left: 0;
-    top: 0;
+    top: var(--proceso-divider-offset, 0px);
     width: 88%;
     height: 2px;
     background-color: rgba(0, 0, 0, 0.32);
