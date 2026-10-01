@@ -135,13 +135,12 @@ if (cursor) {
 
 (() => {
   const header = document.querySelector('header');
-  if (!header) return;
+  const UMBRAL = 40; // px de scroll a partir de los cuales flota
 
-  const UMBRAL = 1;
-  const actualizarNavAlHacerScroll = () => {
+  const onScroll = () => {
     header.classList.toggle('scrolled', window.scrollY > UMBRAL);
   };
 
-  actualizarNavAlHacerScroll();
-  window.addEventListener('scroll', actualizarNavAlHacerScroll, { passive: true });
+  onScroll(); // por si la página carga ya scrolleada
+  window.addEventListener('scroll', onScroll, { passive: true });
 })();
