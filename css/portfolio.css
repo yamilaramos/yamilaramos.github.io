@@ -990,7 +990,7 @@ header.scrolled .header-cv-mobile {
     transform: scaleX(1);
 }
 
-.animacion-activa {
+header.scrolled .animacion-activa {
     padding: clamp(0.6rem, 0.55vw, 0.9rem) clamp(1.2rem, 1vw, 1.6rem);
     border-radius: 99.9rem;
     background-color: var(--yellow);
@@ -998,7 +998,7 @@ header.scrolled .header-cv-mobile {
     text-decoration: none;
 }
 
-.animacion-activa::after {
+header.scrolled .animacion-activa::after {
     content: none;
 }
 
