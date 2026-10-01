@@ -689,7 +689,7 @@ header.scrolled > article {
 @media screen and (min-width: 769px) {
   header.scrolled {
     width: fit-content;
-    padding-inline: clamp(1rem, 1.4vw, 1.6rem);
+    padding-inline: 4%;
   }
 
   header.scrolled > article {
@@ -707,6 +707,11 @@ header.scrolled > article {
   header.scrolled nav {
     width: fit-content;
     max-width: 100%;
+  }
+
+  header.scrolled nav ul {
+    justify-content: space-evenly;
+    gap: clamp(1.8rem, 2.5vw, 4.8rem);
   }
 }
 
