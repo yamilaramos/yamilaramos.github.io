@@ -41,9 +41,6 @@
         padding: 1% 0;
     }
 
-    header.scrolled {
-        height: calc(8vh - 0.5rem);
-    }
 
     header .logo-portafolio img{
         width: 100%;
