@@ -188,3 +188,38 @@ if (cursor) {
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
 })();
+
+(() => {
+  const section = document.querySelector("#proceso");
+  if (!section) return;
+
+  const dividers = [...section.querySelectorAll(".proceso")];
+  if (!dividers.length) return;
+
+  let frame = 0;
+  const alignDividersToPixels = () => {
+    cancelAnimationFrame(frame);
+    frame = requestAnimationFrame(() => {
+      const pixelRatio = window.devicePixelRatio || 1;
+
+      dividers.forEach((divider) => {
+        const documentY = divider.getBoundingClientRect().top + window.scrollY;
+        const snappedY = Math.round(documentY * pixelRatio) / pixelRatio;
+        divider.style.setProperty("--proceso-divider-offset", `${snappedY - documentY}px`);
+      });
+    });
+  };
+
+  alignDividersToPixels();
+  window.addEventListener("resize", alignDividersToPixels, { passive: true });
+
+  if ("ResizeObserver" in window) {
+    const observer = new ResizeObserver(alignDividersToPixels);
+    observer.observe(section);
+    dividers.forEach((divider) => observer.observe(divider));
+  }
+
+  if (document.fonts?.ready) {
+    document.fonts.ready.then(alignDividersToPixels);
+  }
+})();
