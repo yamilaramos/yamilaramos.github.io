@@ -2,7 +2,8 @@
 const items = [
   {
     src: "/img/certificado.png",
-    caption: "Desarrollo de Sitios Web — Escuela Da Vinci",
+    titulo: "Desarrollo de Sitios Web",
+    institucion: "Escuela Da Vinci",
     alt: "Certificado de Desarrollo de Sitios Web de Escuela Da Vinci",
     descripcion: 'Aprendí a incorporar plugins a sitios en <strong class="subrayado">WordPress</strong>, maquetar páginas con <strong class="subrayado">Elementor</strong> y configurar tiendas online mediante <strong class="subrayado">WooCommerce</strong>. Además, administré contenidos desde el panel de gestión, adquiriendo una base práctica para el mantenimiento de sitios web.',
     logos: [
@@ -14,7 +15,8 @@ const items = [
 
   {
     src: "/img/certificado-pescar.png",
-    caption: "Desarrollo Web Full-stack — Educación IT",
+    titulo: "Desarrollo Web Full-stack",
+    institucion: "Educación IT",
     alt: "Certificado de Desarrollo Web Full-stack de Educación IT",
     descripcion: 'Puse en práctica conocimientos de <strong class="subrayado">HTML</strong>, <strong class="subrayado">CSS</strong>, <strong class="subrayado">JavaScript</strong> y <strong class="subrayado">React</strong> en proyectos trabajando en su estructura, diseño, interactividad, adaptación a distintos dispositivos y el proceso de publicación mediante <strong>GitHub</strong> para llevarlo a una web online.',
     logos: [
@@ -27,7 +29,8 @@ const items = [
 
   {
     src: "/img/certificado-adobe.jpeg",
-    caption: "Diseño Gráfico — Adobe",
+    titulo: "Diseño Gráfico",
+    institucion: "Adobe",
     alt: "Certificado de Diseño Gráfico de Adobe",
     descripcion: 'Profundicé en herramientas de <strong>Adobe</strong> para el diseño y la comunicación visual. Desarrollé mockups y recursos gráficos con <strong class="subrayado">Photoshop</strong> e <strong class="subrayado">Illustrator</strong>, gestioné documentación con <strong class="subrayado">Acrobat</strong> y utilicé <strong class="subrayado">Adobe Express</strong> para crear contenido adaptable a distintos formatos.',
     logos: [
@@ -40,7 +43,8 @@ const items = [
 
   {
     src: "/img/certificado-ai.jpeg",
-    caption: "Esenciales de IA — Google",
+    titulo: "Esenciales de IA",
+    institucion: "Google",
     alt: "Certificado de Esenciales de IA de Google",
     descripcion: 'Adquirí conocimientos en <strong>IA generativa</strong> y <strong>prompting</strong> para formular instrucciones precisas. Experimenté con <strong class="subrayado">Claude</strong>, <strong class="subrayado">Codex</strong> y <strong class="subrayado">Adobe Firefly</strong> para generar código e imágenes, incorporando estas herramientas en la resolución de problemas y en mi proceso creativo.',
     logos: [
@@ -52,7 +56,8 @@ const items = [
 
   {
     src: "/img/certificado-ibm.jpeg",
-    caption: "Análisis de Datos — IBM",
+    titulo: "Análisis de Datos",
+    institucion: "IBM",
     alt: "Certificado de Análisis de Datos de IBM",
     descripcion: 'Desarrollé conocimientos en <strong class="subrayado">Python</strong> y <strong class="subrayado">SQL</strong> aplicándolos a proyectos de universidad. Fortalecí la lógica de programación y mi capacidad para resolver problemas de forma estructurada. Además, aprendí a trabajar con funciones, formato condicional y gráficos en <strong class="subrayado">Excel</strong>.',
     logos: [
@@ -148,7 +153,11 @@ function render() {
 
   const actual = items[activo];
 
-  caption.textContent = actual.caption;
+  caption.replaceChildren(document.createTextNode(`${actual.titulo} — `));
+  const institucion = document.createElement("span");
+  institucion.className = "institucion-cert";
+  institucion.textContent = actual.institucion;
+  caption.appendChild(institucion);
 
   certDescripcion.classList.add("cert-fade");
   certLogos.classList.add("cert-fade");
