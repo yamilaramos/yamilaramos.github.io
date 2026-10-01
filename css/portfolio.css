@@ -291,7 +291,42 @@ pointer-events: none;
     top: var(--proceso-divider-offset, 0px);
     width: 88%;
     height: 2px;
-    background-color: rgba(0, 0, 0, 0.32);
+    opacity: 0;
+    background: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(0, 0, 0, 0.20) 10%,
+        rgba(0, 0, 0, 0.38) 25%,
+        rgba(0, 0, 0, 0.48) 50%,
+        rgba(0, 0, 0, 0.38) 75%,
+        rgba(0, 0, 0, 0.20) 90%,
+        transparent 100%
+    );
+    border-radius: clamp(1.0rem, 0.65vw, calc(12.5 * var(--rem-unit)));
+    transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#proceso .proceso.scroll-fade-modern {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+}
+
+#proceso .proceso.show::before {
+    opacity: 1;
+}
+
+#proceso .proceso-delay-2::before { transition-delay: 0.15s; }
+#proceso .proceso-delay-3::before { transition-delay: 0.35s; }
+#proceso .proceso-delay-4::before { transition-delay: 0.55s; }
+#proceso .proceso-delay-5::before { transition-delay: 0.75s; }
+
+@media (prefers-reduced-motion: reduce) {
+    #proceso .proceso::before {
+        opacity: 1;
+        transition: none;
+    }
 }
 
 * { padding: 0; margin: 0; scroll-behavior: smooth; box-sizing: border-box;}
