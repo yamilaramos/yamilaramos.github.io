@@ -2439,5 +2439,6 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
 .destacados.division-2 {
     width: 100%;
     margin-inline: 0;
+    border-top: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid black;
     box-shadow: 0 0.29rem 0 var(--yellow);
 }
