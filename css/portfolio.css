@@ -1026,14 +1026,14 @@ header.scrolled .animacion-activa::after {
 
 }
 
-.anuncio--inverso .track {
-  animation-direction: reverse;
-}
-
 .track {
   display: flex;
   width: max-content;
   animation: scroll 30s linear infinite;
+}
+
+.anuncio--inverso .track {
+  animation-direction: reverse;
 }
 
 .mensaje {
