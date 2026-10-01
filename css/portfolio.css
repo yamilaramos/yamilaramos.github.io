@@ -1065,7 +1065,7 @@ header.scrolled .animacion-activa::after {
 .m-bottom { margin-bottom: 1.5%; }
 
 
-.sobremiSection {padding: 5% 0;} 
+.sectionSobremi {padding: 5% 0;} 
 .hero-sobremi {
     background-image: url('../img/hero-sobremi.png');
     background-color: var(--yellow);
