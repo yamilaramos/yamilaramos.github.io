@@ -680,15 +680,20 @@ header.scrolled {
 header.scrolled.scroll-hidden {
   opacity: 0;
   visibility: hidden;
-  transform: translateY(calc(-100% - clamp(1.2rem, 1.1vw, 2.1rem))) scale(0.9);
+  translate: 0 calc(-100% - clamp(1.2rem, 1.1vw, 2.1rem));
+  transition:
+    translate 0.36s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.24s ease-out,
+    visibility 0s linear 0.36s;
 }
 
 header.scrolled.scroll-revealing {
   visibility: visible;
-  transform: scale(0.9);
+  translate: 0 0;
   transition:
-    transform 0.36s cubic-bezier(0.22, 1, 0.36, 1),
-    opacity 0.24s ease-out;
+    translate 0.36s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.24s ease-out,
+    visibility 0s linear 0s;
 }
 
 
@@ -757,6 +762,7 @@ header.scrolled .header-cv-mobile {
 @media (prefers-reduced-motion: reduce) {
   header,
   header.scrolled { transition: none; animation: none; }
+  header.scrolled.scroll-hidden,
   header.scrolled.scroll-revealing { transition: none; }
   header > article { transition: none; }
   header nav ul,
