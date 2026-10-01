@@ -712,19 +712,6 @@ header.scrolled > article {
     margin-inline: 0;
   }
 
-  header.scrolled > article {
-    gap: clamp(1.2rem, 1.8vw, 2.4rem);
-  }
-
-  header.scrolled > article > .header-brand {
-    width: fit-content;
-    flex: 0 0 auto;
-  }
-
-  header.scrolled > article > .header-cv {
-    flex: 0 0 auto;
-  }
-
   header.scrolled > article > .w-50 {
     width: fit-content;
     max-width: 100%;
@@ -740,6 +727,12 @@ header.scrolled > article {
     justify-content: space-evenly;
     gap: clamp(4rem, 7vw, 8rem);
   }
+}
+
+header.scrolled .header-brand,
+header.scrolled .header-cv,
+header.scrolled .header-cv-mobile {
+    display: none;
 }
 
 @keyframes header-pop {
