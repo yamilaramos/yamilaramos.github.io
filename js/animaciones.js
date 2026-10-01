@@ -135,12 +135,35 @@ if (cursor) {
 
 (() => {
   const header = document.querySelector('header');
-  const UMBRAL = 40; // px de scroll a partir de los cuales flota
+  if (!header) return;
+
+  const UMBRAL = 40;
+  const DURACION_RETORNO = 900;
+  let temporizadorRetorno;
 
   const onScroll = () => {
-    header.classList.toggle('scrolled', window.scrollY > UMBRAL);
+    const scrolled = window.scrollY > UMBRAL;
+
+    if (scrolled) {
+      window.clearTimeout(temporizadorRetorno);
+      header.classList.remove('returning');
+      header.classList.add('scrolled');
+      return;
+    }
+
+    if (!header.classList.contains('scrolled')) return;
+
+    header.classList.remove('scrolled');
+    header.classList.add('returning');
+
+    window.clearTimeout(temporizadorRetorno);
+    temporizadorRetorno = window.setTimeout(() => {
+      if (window.scrollY <= UMBRAL) {
+        header.classList.remove('returning');
+      }
+    }, DURACION_RETORNO);
   };
 
-  onScroll(); // por si la página carga ya scrolleada
+  onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
 })();
