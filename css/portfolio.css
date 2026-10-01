@@ -1205,8 +1205,7 @@ header.scrolled .animacion-activa::after {
     background-position: center;
     background-repeat: no-repeat;
 
-    height: 50vh;
-    height: 50dvh;
+    height: 83vh;
 }
 
 .hero-materia{
@@ -1815,8 +1814,9 @@ footer p{
     width: 100%;
     border-top: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid black;
     border-bottom: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid black;
-    min-height: 28rem;
-    height: clamp(28rem, 59vh, 46rem);
+    min-height: 0;
+    height: 50vh;
+    height: 50dvh;
     border-radius: 0;
     background-color: #5e452a;
     background-image: url("../img/stack-hero.png");
@@ -2230,7 +2230,6 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
     .stack-hero-panel {
         flex-direction: column;
         align-items: stretch;
-        height: auto;
         min-height: 0;
         padding: 1.5rem 0 2rem;
     }
