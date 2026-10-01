@@ -1947,7 +1947,7 @@ footer p{
     position: absolute;
     z-index: 20;
     bottom: calc(100% + 1rem);
-    left: calc(50% - 2rem);
+    left: 50%;
     box-sizing: border-box;
     min-width: 7rem;
     padding: 0.5rem 1.3rem;
@@ -1979,7 +1979,7 @@ footer p{
     height: 0.8rem;
     border: 0.2rem solid black;
     border-radius: 0.1rem;
-    background: white;
+    background: black;
     content: "";
     pointer-events: none;
     opacity: 0;
@@ -2020,6 +2020,17 @@ footer p{
     transition: opacity 220ms ease-out, transform 220ms cubic-bezier(.22, 1, .36, 1), visibility 0s linear;
 }
 
+.sectionStack .skill-item[data-tooltip]::after,
+.sectionStack .skill-item[data-tooltip]:hover::after {
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.sectionStack .skill-item[data-tooltip]::before,
+.sectionStack .skill-item[data-tooltip]:hover::before {
+    transform: translate(-50%, 0) rotate(45deg);
+}
+
 .sectionStack .skill-item.tooltip-portaled[data-tooltip]::before,
 .sectionStack .skill-item.tooltip-portaled[data-tooltip]::after,
 .sectionStack .skill-item-2.tooltip-portaled[data-tooltip]::before,
@@ -2045,6 +2056,16 @@ footer p{
     visibility: visible;
     transform: translate(-50%, 0);
     transition: opacity 220ms ease-out, transform 220ms cubic-bezier(.22, 1, .36, 1), visibility 0s linear;
+}
+
+.skills-tooltip-portal.is-centered {
+    transform: translate(-50%, 0);
+    transition: opacity 220ms ease-out, visibility 0s linear 220ms;
+}
+
+.skills-tooltip-portal.is-centered.is-visible {
+    transform: translate(-50%, 0);
+    transition: opacity 220ms ease-out, visibility 0s linear;
 }
 
 .skills-tooltip-bubble {
@@ -2076,7 +2097,7 @@ footer p{
     box-sizing: border-box;
     border: 0.2rem solid black;
     border-radius: 0.1rem;
-    background: white;
+    background: black;
     transform: translateX(-50%) rotate(45deg);
 }
 
