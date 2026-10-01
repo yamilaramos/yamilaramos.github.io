@@ -530,24 +530,18 @@ header {
     --header-border-transition-duration: 0.18s;
     --header-morph-duration: 0.6s;
     --header-morph-easing: cubic-bezier(0.16, 1, 0.3, 1);
-    height: clamp(6.2rem, 4.55vw, 8.7rem);
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
+    --header-return-duration: 0.3s; 
+
     interpolate-size: allow-keywords;
+
     transition:
-        border-bottom-color var(--header-border-transition-duration) ease-out,
-        max-width var(--header-morph-duration) var(--header-morph-easing),
-        width var(--header-morph-duration) var(--header-morph-easing),
-        padding-inline var(--header-morph-duration) var(--header-morph-easing),
-        top var(--header-morph-duration) var(--header-morph-easing),
-        height var(--header-morph-duration) var(--header-morph-easing),
-        border-radius var(--header-morph-duration) var(--header-morph-easing),
-        box-shadow var(--header-morph-duration) var(--header-morph-easing),
-        background-color var(--header-morph-duration) var(--header-morph-easing),
-        backdrop-filter var(--header-morph-duration) var(--header-morph-easing),
-        transform var(--header-morph-duration) var(--header-morph-easing);
+        background-color var(--header-return-duration) ease-out,
+        box-shadow var(--header-return-duration) ease-out,
+        -webkit-backdrop-filter var(--header-return-duration) ease-out,
+        backdrop-filter var(--header-return-duration) ease-out;
+
     position: sticky;
+}
     top: 0;
     z-index: 50;
     transform: scale(1);
@@ -645,8 +639,14 @@ header {
     }
 
 header.scrolled {
-  --header-border-transition-duration: 0s;
   --header-morph-duration: 0.6s;
+
+  transition-property: max-width, width, padding-inline, top, height,
+                       border-radius, box-shadow, background-color,
+                       backdrop-filter, transform;
+  transition-duration: var(--header-morph-duration);
+  transition-timing-function: var(--header-morph-easing);
+
   transform: scale(0.9);
   top: clamp(1.2rem, 1.1vw, 2.1rem);
   height: calc(clamp(6.2rem, 4.55vw, 8.7rem) - 0.5rem);
@@ -713,7 +713,8 @@ header.scrolled > article {
 
   header.scrolled nav ul {
     justify-content: space-evenly;
-    gap: clamp(4rem, 7vw, 8rem);
+     gap: clamp(4rem, 7vw, 8rem);
+    transition: gap var(--header-morph-duration) var(--header-morph-easing);
   }
 }
 
@@ -729,10 +730,11 @@ header.scrolled .header-cv-mobile {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  header { transition: none; animation: none; }
+  header,
+  header.scrolled { transition: none; animation: none; }
   header > article { transition: none; }
-  header nav ul { transition: none; }
-  header.scrolled { animation: none; }
+  header nav ul,
+  header.scrolled nav ul { transition: none; }
 }
 
 
@@ -1018,7 +1020,7 @@ header.scrolled .animacion-activa::after {
  }
 
  .division-2{
-    border-top: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid black;
+    border-bottom: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid black;
     background: var(--white);
     color: black;
     width: 100%;
