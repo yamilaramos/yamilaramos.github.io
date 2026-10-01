@@ -1895,8 +1895,8 @@ footer p{
     to { transform: translateX(-25%); }
 }
 
-.stack-section .skill-item,
-.stack-section .skill-item-2 {
+.sectionStack .skill-item,
+.sectionStack .skill-item-2 {
     position: relative;
     z-index: 1;
     display: flex;
@@ -1908,7 +1908,7 @@ footer p{
     border-radius: 0.3rem;
 }
 
-.stack-section .skill-item {
+.sectionStack .skill-item {
     margin: 1.2rem 1.5rem;
     padding: 0.8rem 1.8rem;
     background: rgb(0 0 0 / 8%);
@@ -1917,27 +1917,27 @@ footer p{
     backdrop-filter: blur(0.9rem);
 }
 
-.stack-section .skill-item-2 {
+.sectionStack .skill-item-2 {
     margin: 1.5rem 3rem 1.5rem 0;
     padding: 0.8rem 1.8rem;
     background: var(--bg-yellow);
 }
 
-.stack-section .skill-item img {
+.sectionStack .skill-item img {
     display: block;
     width: 2.8rem;
     height: 2.8rem;
     object-fit: contain;
 }
 
-.stack-section .skill-item-2 img {
+.sectionStack .skill-item-2 img {
     display: block;
     width: 2.5rem;
     height: 2.5rem;
     object-fit: contain;
 }
 
-.stack-section [data-tooltip]::after {
+.sectionStack [data-tooltip]::after {
     position: absolute;
     z-index: 20;
     bottom: calc(100% + 1rem);
@@ -1963,7 +1963,7 @@ footer p{
     transition: opacity 220ms ease-out, transform 220ms cubic-bezier(.22, 1, .36, 1), visibility 0s linear 220ms;
 }
 
-.stack-section [data-tooltip]::before {
+.sectionStack [data-tooltip]::before {
     position: absolute;
     z-index: 19;
     bottom: calc(100% + 0.7rem);
@@ -1982,7 +1982,7 @@ footer p{
     transition: opacity 220ms ease-out, transform 220ms cubic-bezier(.22, 1, .36, 1), visibility 0s linear 220ms;
 }
 
-.stack-section .skill-item-2[data-tooltip]::after {
+.sectionStack .skill-item-2[data-tooltip]::after {
     top: calc(100% + 1rem);
     right: auto;
     bottom: auto;
@@ -1990,34 +1990,34 @@ footer p{
     transform: translate(-50%, -0.3rem);
 }
 
-.stack-section .skill-item-2[data-tooltip]::before {
+.sectionStack .skill-item-2[data-tooltip]::before {
     top: calc(100% + 0.7rem);
     bottom: auto;
     transform: translate(-50%, -0.3rem) rotate(45deg);
 }
 
-.stack-section [data-tooltip]:hover {
+.sectionStack [data-tooltip]:hover {
     z-index: 10;
 }
 
-.stack-section [data-tooltip]:hover::after {
+.sectionStack [data-tooltip]:hover::after {
     opacity: 1;
     visibility: visible;
     transform: translate(-50%, 0);
     transition: opacity 220ms ease-out, transform 220ms cubic-bezier(.22, 1, .36, 1), visibility 0s linear;
 }
 
-.stack-section [data-tooltip]:hover::before {
+.sectionStack [data-tooltip]:hover::before {
     opacity: 1;
     visibility: visible;
     transform: translate(-50%, 0) rotate(45deg);
     transition: opacity 220ms ease-out, transform 220ms cubic-bezier(.22, 1, .36, 1), visibility 0s linear;
 }
 
-.stack-section .skill-item.tooltip-portaled[data-tooltip]::before,
-.stack-section .skill-item.tooltip-portaled[data-tooltip]::after,
-.stack-section .skill-item-2.tooltip-portaled[data-tooltip]::before,
-.stack-section .skill-item-2.tooltip-portaled[data-tooltip]::after {
+.sectionStack .skill-item.tooltip-portaled[data-tooltip]::before,
+.sectionStack .skill-item.tooltip-portaled[data-tooltip]::after,
+.sectionStack .skill-item-2.tooltip-portaled[data-tooltip]::before,
+.sectionStack .skill-item-2.tooltip-portaled[data-tooltip]::after {
     display: none;
 }
 
@@ -2193,8 +2193,8 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
     .mk-handle,
     .mk-divider::before,
     .skills-tooltip-portal,
-    .stack-section [data-tooltip]::before,
-    .stack-section [data-tooltip]::after {
+    .sectionStack [data-tooltip]::before,
+    .sectionStack [data-tooltip]::after {
         transition: none;
     }
 
@@ -2205,7 +2205,7 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
 }
 
 @media screen and (max-width: 768px) {
-    .stack-section {
+    .sectionStack {
         padding: 3rem 0;
     }
 
