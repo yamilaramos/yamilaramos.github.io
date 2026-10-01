@@ -153,7 +153,7 @@ if (cursor) {
     header.classList.toggle('scrolled', isScrolled);
 
     if (!isScrolled) {
-      header.classList.remove('scroll-hidden', 'scroll-revealing');
+      header.classList.remove('scroll-hidden', 'scroll-revealing', 'scroll-initial-hidden');
       scrollDirection = 0;
       directionStartY = currentY;
       return;
@@ -172,9 +172,16 @@ if (cursor) {
       return;
     }
 
-    const isScrollingUp = scrollDirection < 0;
-    header.classList.toggle('scroll-hidden', !isScrollingUp);
-    header.classList.toggle('scroll-revealing', isScrollingUp);
+    if (crossedTopWhileScrollingDown) {
+      // No dejes que la pastilla aparezca brevemente al empezar a bajar.
+      header.classList.add('scroll-hidden', 'scroll-initial-hidden');
+      header.classList.remove('scroll-revealing');
+    } else {
+      const isScrollingUp = scrollDirection < 0;
+      header.classList.toggle('scroll-hidden', !isScrollingUp);
+      header.classList.toggle('scroll-revealing', isScrollingUp);
+      header.classList.remove('scroll-initial-hidden');
+    }
     directionStartY = currentY;
   };
 
