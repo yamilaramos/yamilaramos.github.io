@@ -717,7 +717,10 @@ header.scrolled > article {
 
 header.scrolled .header-brand,
 header.scrolled .header-cv,
-header.scrolled .header-cv-mobile {
+header.scrolled .header-cv-mobile,
+header.restoring .header-brand,
+header.restoring .header-cv,
+header.restoring .header-cv-mobile {
     display: none;
 }
 
