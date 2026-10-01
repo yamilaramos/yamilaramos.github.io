@@ -136,9 +136,35 @@ if (cursor) {
 (() => {
   const header = document.querySelector('header');
   const UMBRAL = 1; // conserva el estado flotante hasta llegar casi al inicio
+  const DURACION_RESTAURACION = 450;
+  let temporizadorRestauracion;
 
   const onScroll = () => {
-    header.classList.toggle('scrolled', window.scrollY > UMBRAL);
+    const scrolled = window.scrollY > UMBRAL;
+
+    if (scrolled) {
+      window.clearTimeout(temporizadorRestauracion);
+      header.classList.remove('restoring');
+      header.classList.add('scrolled');
+      return;
+    }
+
+    if (!header.classList.contains('scrolled')) return;
+
+    header.classList.add('restoring');
+    header.classList.remove('scrolled');
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      header.classList.remove('restoring');
+      return;
+    }
+
+    window.clearTimeout(temporizadorRestauracion);
+    temporizadorRestauracion = window.setTimeout(() => {
+      if (window.scrollY <= UMBRAL) {
+        header.classList.remove('restoring');
+      }
+    }, DURACION_RESTAURACION);
   };
 
   onScroll(); // por si la página carga ya scrolleada
