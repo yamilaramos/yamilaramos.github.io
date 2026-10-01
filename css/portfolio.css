@@ -2363,6 +2363,11 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
     zoom: 0.9;
 }
 
+.sectionStack .skill-item,
+.sectionStack .skill-item-2 {
+    zoom: 0.9;
+}
+
 .sectionStack .mk-divider {
     top: 5%;
     bottom: 5%;
@@ -2393,24 +2398,24 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
 }
 
 .skills-tooltip-bubble {
-    min-width: 10.08rem;
-    padding: 0.72rem 1.872rem;
-    border-width: 0.18rem;
-    border-radius: 2.304rem;
-    font-size: 1.728rem;
+    min-width: 9.072rem;
+    padding: 0.648rem 1.6848rem;
+    border-width: 0.162rem;
+    border-radius: 2.0736rem;
+    font-size: 1.5552rem;
 }
 
 .skills-tooltip-tail {
-    width: 1.152rem;
-    height: 1.152rem;
-    border-width: 0.18rem;
-    border-radius: 0.144rem;
+    width: 1.0368rem;
+    height: 1.0368rem;
+    border-width: 0.162rem;
+    border-radius: 0.1296rem;
 }
 
 .skills-tooltip-portal[data-placement="top"] .skills-tooltip-tail {
-    bottom: -0.576rem;
+    bottom: -0.5184rem;
 }
 
 .skills-tooltip-portal[data-placement="bottom"] .skills-tooltip-tail {
-    top: -0.576rem;
+    top: -0.5184rem;
 }
