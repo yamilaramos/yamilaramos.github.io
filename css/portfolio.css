@@ -2438,69 +2438,7 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
 }
 
 
-/* División de Proyectos destacados */
+/* Solo se conserva la franja amarilla debajo de la división */
 .destacados.division-2 {
-    position: relative;
-    width: auto;
-    margin-inline: 0.6rem;
-    padding-bottom: 0.45rem;
-    border: clamp(0.12rem, 0.12vw, 0.18rem) solid black;
-    border-bottom: 0;
-    background: var(--cream);
-    color: black;
-}
-
-.destacados.division-2::after {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 0.45rem;
-    background: linear-gradient(to bottom, black 0 0.16rem, var(--yellow) 0.16rem 100%);
-    content: "";
-    pointer-events: none;
-}
-
-.destacados.division-2 .track {
-    align-items: center;
-}
-
-.destacados.division-2 .mensaje {
-    margin: 0;
-    padding: clamp(0.9rem, 1vw, 1.2rem) 0;
-    color: black;
-    font-size: clamp(2.4rem, 2.35vw, 4.4rem);
-    font-weight: 700;
-    line-height: 1;
-}
-
-.destacados.division-2 .dot.logo {
-    flex: 0 0 auto;
-    width: clamp(2rem, 1.8vw, 2.4rem);
-    height: clamp(2rem, 1.8vw, 2.4rem);
-    margin-inline: clamp(1.2rem, 1.8vw, 2rem);
-    object-fit: contain;
-}
-
-@media screen and (max-width: 768px) {
-    .destacados.division-2 {
-        margin-inline: 0.4rem;
-        padding-bottom: 0.35rem;
-    }
-
-    .destacados.division-2::after {
-        height: 0.35rem;
-        background: linear-gradient(to bottom, black 0 0.12rem, var(--yellow) 0.12rem 100%);
-    }
-
-    .destacados.division-2 .mensaje {
-        padding-block: 0.85rem;
-        font-size: clamp(2rem, 6vw, 2.5rem);
-    }
-
-    .destacados.division-2 .dot.logo {
-        width: clamp(1.7rem, 4.8vw, 2.1rem);
-        height: clamp(1.7rem, 4.8vw, 2.1rem);
-        margin-inline: clamp(0.8rem, 3vw, 1.4rem);
-    }
+    box-shadow: 0 0.29rem 0 var(--yellow);
 }
