@@ -655,6 +655,7 @@ header {
 header.scrolled {
   --header-border-transition-duration: 0s;
   --header-morph-duration: 0.6s;
+  transform: scale(0.9);
   top: clamp(1.2rem, 1.1vw, 2.1rem);
   height: calc(clamp(6.2rem, 4.55vw, 8.7rem) - 0.5rem);
 
@@ -689,7 +690,7 @@ header.scrolled > article {
     justify-content: center;
     margin-left: clamp(2rem, 2.5vw, 3rem);
     margin-right: clamp(2rem, 2.5vw, 3rem);
-    transform: scale(0.95);
+    transform: scale(1);
 }
 
 @media screen and (max-width: 768px) {
@@ -736,8 +737,8 @@ header.scrolled .header-cv-mobile {
 }
 
 @keyframes header-pop {
-  from { transform: scale(0.985); }
-  to   { transform: scale(1); }
+  from { transform: scale(0.885); }
+  to   { transform: scale(0.9); }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -991,10 +992,10 @@ header.scrolled .header-cv-mobile {
 }
 
 header.scrolled .animacion-activa {
-    padding: clamp(0.6rem, 0.55vw, 0.9rem) clamp(1.2rem, 1vw, 1.6rem);
+    padding: clamp(0.3rem, 0.35vw, 0.55rem) clamp(1.2rem, 1vw, 1.6rem);
     border-radius: 99.9rem;
     background-color: var(--yellow);
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
