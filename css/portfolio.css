@@ -536,6 +536,8 @@ header {
                    clamp(1.8rem, 1.5vw, 2.9rem)
                     0 0;
     --header-border-transition-duration: 0.18s;
+    --header-morph-duration: 0.6s;
+    --header-morph-easing: cubic-bezier(0.16, 1, 0.3, 1);
     height: clamp(6.2rem, 4.55vw, 8.7rem);
     width: 100%;
     max-width: 100%;
@@ -543,16 +545,16 @@ header {
     interpolate-size: allow-keywords;
     transition:
         border-bottom-color var(--header-border-transition-duration) ease-out,
-        max-width 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-        width 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-        padding-inline 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-        top 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-        height 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-        border-radius 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-        box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-        background-color 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-        backdrop-filter 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-        transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        max-width var(--header-morph-duration) var(--header-morph-easing),
+        width var(--header-morph-duration) var(--header-morph-easing),
+        padding-inline var(--header-morph-duration) var(--header-morph-easing),
+        top var(--header-morph-duration) var(--header-morph-easing),
+        height var(--header-morph-duration) var(--header-morph-easing),
+        border-radius var(--header-morph-duration) var(--header-morph-easing),
+        box-shadow var(--header-morph-duration) var(--header-morph-easing),
+        background-color var(--header-morph-duration) var(--header-morph-easing),
+        backdrop-filter var(--header-morph-duration) var(--header-morph-easing),
+        transform var(--header-morph-duration) var(--header-morph-easing);
     position: sticky;
     top: 0;
     z-index: 50;
@@ -562,7 +564,7 @@ header {
     header > article {
         height: 100%;
         transform: scale(1);
-        transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        transition: transform var(--header-morph-duration) var(--header-morph-easing);
         margin-left: clamp(4%, 4vw, 4%);
         margin-right: clamp(4%, 4vw, 4%);
     }
@@ -590,7 +592,7 @@ header {
         align-items: center;
         justify-content: space-evenly;
         gap: clamp(1.8rem, 2.5vw, 4.8rem);
-        transition: gap 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        transition: gap var(--header-morph-duration) var(--header-morph-easing);
         
         list-style: none;
     }
@@ -652,6 +654,7 @@ header {
 
 header.scrolled {
   --header-border-transition-duration: 0s;
+  --header-morph-duration: 0.6s;
   top: clamp(1.2rem, 1.1vw, 2.1rem);
   height: calc(clamp(6.2rem, 4.55vw, 8.7rem) - 0.5rem);
 
@@ -668,6 +671,12 @@ header.scrolled {
     0 clamp(0.8rem, 0.6vw, 1.4rem) clamp(2.4rem, 2vw, 4.0rem) rgba(0, 0, 0, 0.15);
 
   animation: header-pop 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+header.returning {
+  --header-border-transition-duration: 0.18s;
+  --header-morph-duration: 0.9s;
+  --header-morph-easing: cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 @media screen and (max-width: 768px) {
@@ -703,6 +712,19 @@ header.scrolled > article {
     margin-inline: 0;
   }
 
+  header.scrolled > article {
+    gap: clamp(1.2rem, 1.8vw, 2.4rem);
+  }
+
+  header.scrolled > article > .header-brand {
+    width: fit-content;
+    flex: 0 0 auto;
+  }
+
+  header.scrolled > article > .header-cv {
+    flex: 0 0 auto;
+  }
+
   header.scrolled > article > .w-50 {
     width: fit-content;
     max-width: 100%;
@@ -718,12 +740,6 @@ header.scrolled > article {
     justify-content: space-evenly;
     gap: clamp(4rem, 7vw, 8rem);
   }
-}
-
-header.scrolled .header-brand,
-header.scrolled .header-cv,
-header.scrolled .header-cv-mobile {
-    display: none;
 }
 
 @keyframes header-pop {
@@ -979,6 +995,18 @@ header.scrolled .header-cv-mobile {
     background-color: var(--yellow);
 
     transform: scaleX(1);
+}
+
+.animacion-activa {
+    padding: clamp(0.6rem, 0.55vw, 0.9rem) clamp(1.2rem, 1vw, 1.6rem);
+    border-radius: 99.9rem;
+    background-color: var(--yellow);
+    color: black;
+    text-decoration: none;
+}
+
+.animacion-activa::after {
+    content: none;
 }
 
 .animacion::after {
