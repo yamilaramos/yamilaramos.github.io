@@ -655,7 +655,8 @@ header.scrolled {
     box-shadow var(--header-morph-duration) var(--header-morph-easing),
     background-color var(--header-morph-duration) var(--header-morph-easing),
     backdrop-filter var(--header-morph-duration) var(--header-morph-easing),
-    transform var(--header-morph-duration) var(--header-morph-easing);
+    transform var(--header-morph-duration) var(--header-morph-easing),
+    opacity 0.24s ease-out;
 
   transform: scale(0.9);
   top: clamp(1.2rem, 1.1vw, 2.1rem);
@@ -677,6 +678,7 @@ header.scrolled {
 }
 
 header.scrolled.scroll-hidden {
+  opacity: 0;
   visibility: hidden;
 }
 
