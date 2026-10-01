@@ -674,7 +674,6 @@ header.scrolled {
   box-shadow:
     0 clamp(0.8rem, 0.6vw, 1.4rem) clamp(2.4rem, 2vw, 4.0rem) rgba(0, 0, 0, 0.15);
 
-  animation: header-pop 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 header.scrolled.scroll-hidden {
@@ -694,6 +693,13 @@ header.scrolled.scroll-revealing {
     translate 0.36s cubic-bezier(0.22, 1, 0.36, 1),
     opacity 0.24s ease-out,
     visibility 0s linear 0s;
+}
+
+header.scrolled.scroll-initial-hidden {
+  opacity: 0;
+  visibility: hidden;
+  translate: 0 calc(-100% - clamp(1.2rem, 1.1vw, 2.1rem));
+  transition: none;
 }
 
 
@@ -752,11 +758,6 @@ header.scrolled .header-brand,
 header.scrolled .header-cv,
 header.scrolled .header-cv-mobile {
     display: none;
-}
-
-@keyframes header-pop {
-  from { transform: scale(0.885); }
-  to   { transform: scale(0.9); }
 }
 
 @media (prefers-reduced-motion: reduce) {
