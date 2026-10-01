@@ -5,6 +5,7 @@
     --white: #fcf9f7;
     --cream: #fefaf6;
     --gap: 4.5%;
+    --ticker-duration: 30s;
 }
 
 .logosCert{gap:0.8rem}
@@ -1029,7 +1030,7 @@ header.scrolled .animacion-activa::after {
 .track {
   display: flex;
   width: max-content;
-  animation: scroll 30s linear infinite;
+  animation: scroll var(--ticker-duration) linear infinite;
 }
 
 .anuncio--inverso .track {
