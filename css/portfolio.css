@@ -686,6 +686,30 @@ header.scrolled > article {
   }
 }
 
+@media screen and (min-width: 769px) {
+  header.scrolled {
+    width: fit-content;
+    padding-inline: clamp(1rem, 1.4vw, 1.6rem);
+  }
+
+  header.scrolled > article {
+    width: fit-content;
+    max-width: 100%;
+    margin-inline: 0;
+  }
+
+  header.scrolled > article > .w-50 {
+    width: fit-content;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  header.scrolled nav {
+    width: fit-content;
+    max-width: 100%;
+  }
+}
+
 header.scrolled .header-brand,
 header.scrolled .header-cv,
 header.scrolled .header-cv-mobile {
