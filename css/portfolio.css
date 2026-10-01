@@ -559,7 +559,7 @@ header {
 
     header > article {
         height: 100%;
-        transition: margin 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+
         margin-left: clamp(4%, 4vw, 4%);
         margin-right: clamp(4%, 4vw, 4%);
     }
