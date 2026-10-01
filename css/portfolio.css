@@ -535,24 +535,22 @@ header {
     border-radius: clamp(1.8rem, 1.5vw, 2.9rem)
                    clamp(1.8rem, 1.5vw, 2.9rem)
                     0 0;
-    --header-border-transition-duration: 0.18s;
+
     height: clamp(6.2rem, 4.55vw, 8.7rem);
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
     interpolate-size: allow-keywords;
     transition:
-        border-bottom-color var(--header-border-transition-duration) ease-out,
-        max-width 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-        width 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-        padding-inline 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-        top 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-        height 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-        border-radius 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-        box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-        background-color 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-        backdrop-filter 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-        transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        max-width 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+        width 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+        padding-inline 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+        top 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+        height 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+        backdrop-filter 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
     position: sticky;
     top: 0;
     z-index: 50;
@@ -562,7 +560,7 @@ header {
     header > article {
         height: 100%;
         transform: scale(1);
-        transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1), margin 0.45s cubic-bezier(0.4, 0, 0.2, 1);
         margin-left: clamp(4%, 4vw, 4%);
         margin-right: clamp(4%, 4vw, 4%);
     }
@@ -590,7 +588,7 @@ header {
         align-items: center;
         justify-content: space-evenly;
         gap: clamp(1.8rem, 2.5vw, 4.8rem);
-        transition: gap 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        transition: gap 0.45s cubic-bezier(0.4, 0, 0.2, 1);
         
         list-style: none;
     }
@@ -651,7 +649,6 @@ header {
     }
 
 header.scrolled {
-  --header-border-transition-duration: 0s;
   top: clamp(1.2rem, 1.1vw, 2.1rem);
   height: calc(clamp(6.2rem, 4.55vw, 8.7rem) - 0.5rem);
 
@@ -667,7 +664,6 @@ header.scrolled {
   box-shadow:
     0 clamp(0.8rem, 0.6vw, 1.4rem) clamp(2.4rem, 2vw, 4.0rem) rgba(0, 0, 0, 0.15);
 
-  animation: header-pop 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @media screen and (max-width: 768px) {
@@ -680,7 +676,7 @@ header.scrolled > article {
     justify-content: center;
     margin-left: clamp(2rem, 2.5vw, 3rem);
     margin-right: clamp(2rem, 2.5vw, 3rem);
-    transform: scale(0.95);
+    transform: scale(0.99);
 }
 
 @media screen and (max-width: 768px) {
@@ -696,8 +692,7 @@ header.scrolled > article {
     width: fit-content;
     padding-inline: 4%;
     /* Deja que termine la contracción del ancho antes de redondear la cápsula. */
-    transition-delay: 0s, 0s, 0s, 0s, 0s, 0s, 0.6s, 0s, 0s, 0s, 0s;
-  }
+    }
 
   header.scrolled > article {
     width: fit-content;
@@ -728,16 +723,11 @@ header.scrolled .header-cv-mobile {
     display: none;
 }
 
-@keyframes header-pop {
-  from { transform: scale(0.985); }
-  to   { transform: scale(1); }
-}
 
 @media (prefers-reduced-motion: reduce) {
   header { transition: none; animation: none; }
   header > article { transition: none; }
   header nav ul { transition: none; }
-  header.scrolled { animation: none; }
 }
 
 
