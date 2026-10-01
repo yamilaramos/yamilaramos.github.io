@@ -249,14 +249,23 @@ pointer-events: none;
 @media screen and (min-width: 769px) {
     .hero-pasos {
         position: relative;
+        overflow: hidden;
     }
 
     .mockup-proceso-wrapper {
         left: 0;
         right: 0;
         bottom: 0;
-        width: 58%;
+        width: 100%;
+        height: 100%;
         margin: 0 auto;
+    }
+
+    .mockup-proceso-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center bottom;
     }
 }
 
