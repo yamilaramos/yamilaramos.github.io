@@ -1789,6 +1789,7 @@ footer p{
 
 
 /* Stack tecnológico: carruseles y comparación del mockup */
+.stack{ padding: 5% 0;}
 .stack-section {
     box-sizing: border-box;
     width: 100%;
