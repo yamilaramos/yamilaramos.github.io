@@ -1205,7 +1205,8 @@ header.scrolled .animacion-activa::after {
     background-position: center;
     background-repeat: no-repeat;
 
-    height: 83vh;
+    height: 50vh;
+    height: 50dvh;
 }
 
 .hero-materia{
