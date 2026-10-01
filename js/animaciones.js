@@ -138,8 +138,42 @@ if (cursor) {
   if (!header) return;
 
   const UMBRAL = 40;
+  const UMBRAL_DIRECCION = 4;
+  let lastScrollY = window.scrollY;
+  let scrollDirection = 0;
+  let directionStartY = lastScrollY;
+
   const onScroll = () => {
-    header.classList.toggle('scrolled', window.scrollY > UMBRAL);
+    const currentY = Math.max(0, window.scrollY);
+    const delta = currentY - lastScrollY;
+    const wasAtTop = lastScrollY <= UMBRAL;
+    lastScrollY = currentY;
+
+    const isScrolled = currentY > UMBRAL;
+    header.classList.toggle('scrolled', isScrolled);
+
+    if (!isScrolled) {
+      header.classList.remove('scroll-hidden');
+      scrollDirection = 0;
+      directionStartY = currentY;
+      return;
+    }
+
+    if (delta === 0) return;
+
+    const nextDirection = Math.sign(delta);
+    if (nextDirection !== scrollDirection) {
+      scrollDirection = nextDirection;
+      directionStartY = wasAtTop ? UMBRAL : currentY - delta;
+    }
+
+    const crossedTopWhileScrollingDown = scrollDirection > 0 && wasAtTop;
+    if (Math.abs(currentY - directionStartY) < UMBRAL_DIRECCION && !crossedTopWhileScrollingDown) {
+      return;
+    }
+
+    header.classList.toggle('scroll-hidden', scrollDirection > 0);
+    directionStartY = currentY;
   };
 
   onScroll();
