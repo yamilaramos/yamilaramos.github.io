@@ -667,6 +667,8 @@ header.scrolled {
   box-shadow:
     0 clamp(0.8rem, 0.6vw, 1.4rem) clamp(2.4rem, 2vw, 4.0rem) rgba(0, 0, 0, 0.15);
 
+  /* Deja que termine la contracción del ancho antes de redondear la cápsula. */
+  transition-delay: 0s, 0s, 0s, 0s, 0s, 0s, 0.6s, 0s, 0s, 0s, 0s;
   animation: header-pop 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
