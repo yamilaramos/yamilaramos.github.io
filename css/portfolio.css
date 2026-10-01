@@ -530,18 +530,29 @@ header {
     --header-border-transition-duration: 0.18s;
     --header-morph-duration: 0.6s;
     --header-morph-easing: cubic-bezier(0.16, 1, 0.3, 1);
-    --header-return-duration: 0.3s; 
+    --header-return-duration: 0.3s;
 
+    height: clamp(6.2rem, 4.55vw, 8.7rem);
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
     interpolate-size: allow-keywords;
 
     transition:
-        background-color var(--header-return-duration) ease-out,
-        box-shadow var(--header-return-duration) ease-out,
-        -webkit-backdrop-filter var(--header-return-duration) ease-out,
-        backdrop-filter var(--header-return-duration) ease-out;
+        border-bottom-color var(--header-border-transition-duration) ease-out,
+        max-width var(--header-return-duration) var(--header-morph-easing),
+        width var(--header-return-duration) var(--header-morph-easing),
+        padding-inline var(--header-return-duration) var(--header-morph-easing),
+        top var(--header-return-duration) var(--header-morph-easing),
+        height var(--header-return-duration) var(--header-morph-easing),
+        border-radius var(--header-return-duration) var(--header-morph-easing),
+        box-shadow var(--header-return-duration) var(--header-morph-easing),
+        background-color var(--header-return-duration) var(--header-morph-easing),
+        -webkit-backdrop-filter var(--header-return-duration) var(--header-morph-easing),
+        backdrop-filter var(--header-return-duration) var(--header-morph-easing),
+        transform var(--header-return-duration) var(--header-morph-easing);
 
     position: sticky;
-}
     top: 0;
     z-index: 50;
     transform: scale(1);
