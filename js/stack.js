@@ -38,8 +38,8 @@ document.querySelectorAll(".skills-track[data-repeat], .skills-track-2[data-repe
     const bubbleHeight = bubble.offsetHeight;
     const horizontalPadding = 8;
     const anchorX = itemRect.left + itemRect.width / 2;
-    const horizontalDirection = activeItem.matches(".skill-item") ? -1 : 1;
-    const desiredX = anchorX + rootFontSize * 2 * horizontalDirection;
+    const isFirstCarousel = activeItem.matches(".skill-item");
+    const desiredX = anchorX + (isFirstCarousel ? 0 : rootFontSize * 2);
     const minX = bubbleWidth / 2 + horizontalPadding;
     const maxX = window.innerWidth - bubbleWidth / 2 - horizontalPadding;
     const bubbleX = maxX < minX ? window.innerWidth / 2 : Math.min(Math.max(desiredX, minX), maxX);
@@ -70,6 +70,7 @@ document.querySelectorAll(".skills-track[data-repeat], .skills-track-2[data-repe
 
     activeItem?.classList.remove("tooltip-portaled");
     activeItem = item;
+    portal.classList.toggle("is-centered", item.matches(".skill-item"));
     item.classList.add("tooltip-portaled");
     bubble.textContent = item.dataset.tooltip;
     positionPortal();
