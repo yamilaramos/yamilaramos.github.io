@@ -266,6 +266,7 @@ pointer-events: none;
         height: 100%;
         object-fit: cover;
         object-position: center center;
+        transform: scale(0.85);
     }
 }
 
