@@ -711,7 +711,7 @@ header.scrolled > article {
 
   header.scrolled nav ul {
     justify-content: space-evenly;
-    gap: clamp(1.8rem, 2.5vw, 4.8rem);
+    gap: clamp(3.5rem, 5vw, 5rem);
   }
 }
 
