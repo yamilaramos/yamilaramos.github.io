@@ -559,8 +559,7 @@ header {
 
     header > article {
         height: 100%;
-        transform: scale(1);
-        transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1), margin 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: margin 0.45s cubic-bezier(0.4, 0, 0.2, 1);
         margin-left: clamp(4%, 4vw, 4%);
         margin-right: clamp(4%, 4vw, 4%);
     }
@@ -676,7 +675,6 @@ header.scrolled > article {
     justify-content: center;
     margin-left: clamp(2rem, 2.5vw, 3rem);
     margin-right: clamp(2rem, 2.5vw, 3rem);
-    transform: scale(0.99);
 }
 
 @media screen and (max-width: 768px) {
