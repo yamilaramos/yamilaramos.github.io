@@ -2437,5 +2437,7 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
 
 /* Solo se conserva la franja amarilla debajo de la división */
 .destacados.division-2 {
+    width: 100%;
+    margin-inline: 0;
     box-shadow: 0 0.29rem 0 var(--yellow);
 }
