@@ -138,30 +138,8 @@ if (cursor) {
   if (!header) return;
 
   const UMBRAL = 40;
-  const DURACION_RETORNO = 1250;
-  let temporizadorRetorno;
-
   const onScroll = () => {
-    const scrolled = window.scrollY > UMBRAL;
-
-    if (scrolled) {
-      window.clearTimeout(temporizadorRetorno);
-      header.classList.remove('returning');
-      header.classList.add('scrolled');
-      return;
-    }
-
-    if (!header.classList.contains('scrolled')) return;
-
-    header.classList.remove('scrolled');
-    header.classList.add('returning');
-
-    window.clearTimeout(temporizadorRetorno);
-    temporizadorRetorno = window.setTimeout(() => {
-      if (window.scrollY <= UMBRAL) {
-        header.classList.remove('returning');
-      }
-    }, DURACION_RETORNO);
+    header.classList.toggle('scrolled', window.scrollY > UMBRAL);
   };
 
   onScroll();
