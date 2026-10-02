@@ -202,3 +202,30 @@ document.getElementById("btnNext").addEventListener("click", () => {
 });
 
 render();
+
+const seccionCertificaciones = document.getElementById("cursos");
+const prefiereMenosMovimiento = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+function revelarCarruselCertificaciones() {
+  seccionCertificaciones.classList.add("cert-revealed");
+
+  if (prefiereMenosMovimiento) return;
+
+  seccionCertificaciones.classList.add("cert-entering");
+  window.setTimeout(() => {
+    seccionCertificaciones.classList.remove("cert-entering");
+  }, 950);
+}
+
+if (prefiereMenosMovimiento || !("IntersectionObserver" in window)) {
+  revelarCarruselCertificaciones();
+} else {
+  const observadorCertificaciones = new IntersectionObserver((entries, observer) => {
+    if (entries.some(entry => entry.isIntersecting)) {
+      revelarCarruselCertificaciones();
+      observer.disconnect();
+    }
+  }, { threshold: 0.2 });
+
+  observadorCertificaciones.observe(seccionCertificaciones);
+}
