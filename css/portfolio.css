@@ -204,8 +204,8 @@ pointer-events: none;
     }
 }
 
-.sectionCert{ background-color: var(--yellow); padding: 2% 0;}
-.sectionCert .contenedorCert { background-color: var(--cream); border: none; }
+.sectionCert{ background-color: var(--yellow); padding: 5% 0;}
+.sectionCert .contenedorCert { background-color: var(--cream); border-top: 2px solid black; border-bottom: 2px solid black; }
 .sectionCert .contenedorCert > article {
     padding: 0 5%;
     width: 100%;
