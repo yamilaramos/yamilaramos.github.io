@@ -261,7 +261,7 @@ pointer-events: none;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-right: 2px solid black;
+    /* border-right: 2px solid black; */
 }
 
 .mockup-proceso-wrapper {
@@ -301,10 +301,6 @@ pointer-events: none;
 .contenedor-proceso {
     padding: 2% 0 0 5%;
 }
-
-#proceso .hero-pasos {
-/*         border-right: 2px solid black; */
-    }
 
 .titulo-proceso { 
     font-size: clamp(3.6rem, 2.35vw, 4.5rem);
