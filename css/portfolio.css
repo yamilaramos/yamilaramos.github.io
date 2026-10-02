@@ -303,11 +303,7 @@ pointer-events: none;
 }
 
 #proceso .hero-pasos {
-        border-right: 2px solid black;
-    }
-
-#proceso .contenedor-proceso {
-        padding-right: 5%;
+/*         border-right: 2px solid black; */
     }
 
 .titulo-proceso { 
@@ -316,7 +312,7 @@ pointer-events: none;
 }
 /* Separa visualmente los subrayados sin decorar el espacio entre palabras */
 .titulo-proceso .subrayado:not(:last-of-type) {
-    margin-right: 0.16em;
+    margin-right: 0.18em;
 } 
 
 .proceso {
