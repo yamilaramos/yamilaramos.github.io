@@ -264,7 +264,7 @@ pointer-events: none;
     .mockup-proceso-wrapper img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
         object-position: left bottom;
         transform: scale(0.95);
         transform-origin: left bottom;
