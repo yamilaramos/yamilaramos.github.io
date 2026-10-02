@@ -2592,3 +2592,14 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
         top: -0.5832rem;
     }
 }
+
+/* Escala botones sociales de GitHub y Behance +25% */
+@media screen and (min-width: 1920px) {
+    #inicio .social-gap {
+        gap: clamp(1.5rem, calc(calc(5.75 * var(--rem-unit)) + 0.675vw), 1.875rem);
+    }
+
+    #inicio .social-btn {
+        zoom: 1.25;
+    }
+}
