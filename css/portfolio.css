@@ -204,6 +204,7 @@ pointer-events: none;
 }
 
 .sectionCert{ background-color: var(--yellow); }
+.sectionCert .contenedor { background-color: var(--cream)}
 .sectionCert > article {
     padding: 0 5%;
     width: 100%;
