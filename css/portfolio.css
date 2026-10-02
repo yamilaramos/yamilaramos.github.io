@@ -206,7 +206,7 @@ pointer-events: none;
 
 .sectionCert{ background-color: var(--yellow); padding: 2% 0;}
 .sectionCert .contenedorCert { background-color: var(--cream); border: none; }
-.sectionCert .contenedor > article {
+.sectionCert .contenedorCert > article {
     padding: 0 5%;
     width: 100%;
     flex-shrink: 0;
