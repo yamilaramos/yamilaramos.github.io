@@ -175,6 +175,29 @@ z-index: 1;
 pointer-events: none;
 
 }
+@media (prefers-reduced-motion: no-preference) {
+    #cursos:not(.cert-revealed) .slide.prev-1,
+    #cursos:not(.cert-revealed) .slide.next-1 {
+        transform:
+            translate(-50%, -50%)
+            translateX(0)
+            scale(0.58)
+            rotateY(0deg);
+        opacity: 0;
+        filter: blur(1rem) saturate(1) brightness(1);
+    }
+
+    #cursos.cert-entering .slide.prev-1,
+    #cursos.cert-entering .slide.next-1 {
+        transition-duration: 0.9s;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #cursos .slide {
+        transition: none;
+    }
+}
 
 .certificaciones > article {
     padding: 0 5%;
