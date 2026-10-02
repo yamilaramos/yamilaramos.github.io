@@ -302,21 +302,13 @@ pointer-events: none;
     padding: 2% 0 0 5%;
 }
 
-@media screen and (min-width: 769px) {
-    #proceso {
-        flex-direction: row-reverse;
+#proceso .hero-pasos {
+        border-right: 2px solid black;
     }
 
-    #proceso .hero-pasos {
-        border-right: 0;
-        border-left: 2px solid black;
+#proceso .contenedor-proceso {
+        padding-right: 5%;
     }
-
-    #proceso .contenedor-proceso {
-        padding-right: 0;
-        padding-left: 5%;
-    }
-}
 
 .titulo-proceso { 
     font-size: clamp(3.6rem, 2.35vw, 4.5rem);
