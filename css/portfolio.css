@@ -2560,3 +2560,35 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
         max-height: 540px;
     }
 }
+
+/* Escala Stack +25% para monitores grandes */
+@media screen and (min-width: 1920px) {
+    /* Los chips crecen dentro del mismo marco de carrusel. */
+    .sectionStack .skill-item,
+    .sectionStack .skill-item-2 {
+        zoom: 1.125;
+    }
+
+    .skills-tooltip-bubble {
+        min-width: 10.206rem;
+        padding: 0.729rem 1.8954rem;
+        border-width: 0.18225rem;
+        border-radius: 2.3328rem;
+        font-size: 1.7496rem;
+    }
+
+    .skills-tooltip-tail {
+        width: 1.1664rem;
+        height: 1.1664rem;
+        border-width: 0.18225rem;
+        border-radius: 0.1458rem;
+    }
+
+    .skills-tooltip-portal[data-placement="top"] .skills-tooltip-tail {
+        bottom: -0.5832rem;
+    }
+
+    .skills-tooltip-portal[data-placement="bottom"] .skills-tooltip-tail {
+        top: -0.5832rem;
+    }
+}
