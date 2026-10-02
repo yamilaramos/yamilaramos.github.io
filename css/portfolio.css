@@ -2563,8 +2563,8 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
     position: absolute;
     left: 50%;
     z-index: 1;
-    width: 0.12em;
-    height: 0.12em;
+    width: 0.2em;
+    height: 0.2em;
     border-radius: 50%;
     background: #eba625;
     box-shadow: 0 0 0 0.035em var(--cream);
@@ -2573,7 +2573,7 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
 }
 
 .signo-pregunta--apertura::after {
-    top: 0.13em;
+    top: 0.5em;
 }
 
 .signo-pregunta--cierre::after {
@@ -2587,5 +2587,5 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
 }
 
 .titulo-proceso .signo-pregunta--cierre::after {
-    bottom: 0.15em;
+    bottom: 0.25em;
 }
