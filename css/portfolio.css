@@ -534,9 +534,6 @@ h4 {
     margin-left: 7%;
 }
 
-#inicio .contenedor-mockup > img {
-    visibility: hidden;
-}
 .social-gap {
     gap: clamp(1.2rem, calc(calc(4.6 * var(--rem-unit)) + 0.54vw), 1.5rem);
     position: absolute;
