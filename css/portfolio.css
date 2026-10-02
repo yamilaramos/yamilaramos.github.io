@@ -1898,6 +1898,17 @@ footer p{
     margin-bottom: 10%;
 }
 
+.btn-footer .flecha-dinamica {
+    transition:
+        color 0.3s ease,
+        transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+        filter 0.25s ease;
+}
+
+.btn-footer:hover .flecha-dinamica {
+    transform: translateX(clamp(calc(2.3 * var(--rem-unit)), 0.15vw, calc(2.9 * var(--rem-unit))));
+}
+
 .btn-footer:hover {
     padding:
         clamp(0.8rem, 0.52vw, 1.0rem)
