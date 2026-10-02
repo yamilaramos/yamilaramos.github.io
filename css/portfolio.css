@@ -68,6 +68,7 @@ button:hover { color: black; transition: ease;}
 }
 
 #certDescripcion {
+    width: 90%;
     height: auto;
     margin-bottom: clamp(1.5rem, 1.23vw, 2.1rem);
 }
@@ -221,10 +222,6 @@ pointer-events: none;
     width: 60%;
     min-width: 60%;
     margin: auto;
-}
-
-.t-cert{
-  padding-right: 4%;
 }
 
 .caption {
