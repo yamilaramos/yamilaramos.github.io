@@ -2561,45 +2561,50 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
     }
 }
 
-/* Escala Stack +25% para monitores grandes */
+/* Escala fluida del Stack y los botones sociales para monitores grandes */
 @media screen and (min-width: 1920px) {
-    /* Los chips crecen dentro del mismo marco de carrusel. */
+    :root {
+        --large-monitor-scale: clamp(1.25, calc(100vw / 1536px), 2.5);
+    }
+
     .sectionStack .skill-item,
     .sectionStack .skill-item-2 {
-        zoom: 1.125;
+        zoom: calc(0.9 * var(--large-monitor-scale));
     }
 
     .skills-tooltip-bubble {
-        min-width: 10.206rem;
-        padding: 0.729rem 1.8954rem;
-        border-width: 0.18225rem;
-        border-radius: 2.3328rem;
-        font-size: 1.7496rem;
+        min-width: calc(8.1648rem * var(--large-monitor-scale));
+        padding:
+            calc(0.5832rem * var(--large-monitor-scale))
+            calc(1.51632rem * var(--large-monitor-scale));
+        border-width: calc(0.1458rem * var(--large-monitor-scale));
+        border-radius: calc(1.86624rem * var(--large-monitor-scale));
+        font-size: calc(1.39968rem * var(--large-monitor-scale));
     }
 
     .skills-tooltip-tail {
-        width: 1.1664rem;
-        height: 1.1664rem;
-        border-width: 0.18225rem;
-        border-radius: 0.1458rem;
+        width: calc(0.93312rem * var(--large-monitor-scale));
+        height: calc(0.93312rem * var(--large-monitor-scale));
+        border-width: calc(0.1458rem * var(--large-monitor-scale));
+        border-radius: calc(0.11664rem * var(--large-monitor-scale));
     }
 
     .skills-tooltip-portal[data-placement="top"] .skills-tooltip-tail {
-        bottom: -0.5832rem;
+        bottom: calc(-0.46656rem * var(--large-monitor-scale));
     }
 
     .skills-tooltip-portal[data-placement="bottom"] .skills-tooltip-tail {
-        top: -0.5832rem;
+        top: calc(-0.46656rem * var(--large-monitor-scale));
     }
-}
 
-/* Escala botones sociales de GitHub y Behance +25% */
-@media screen and (min-width: 1920px) {
     #inicio .social-gap {
-        gap: clamp(1.5rem, calc(calc(5.75 * var(--rem-unit)) + 0.675vw), 1.875rem);
+        gap: calc(
+            clamp(1.2rem, calc(calc(4.6 * var(--rem-unit)) + 0.54vw), 1.5rem)
+            * var(--large-monitor-scale)
+        );
     }
 
     #inicio .social-btn {
-        zoom: 1.25;
+        zoom: var(--large-monitor-scale);
     }
 }
