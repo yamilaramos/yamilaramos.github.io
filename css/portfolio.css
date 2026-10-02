@@ -266,7 +266,7 @@ pointer-events: none;
         height: 100%;
         object-fit: contain;
         object-position: left bottom;
-        transform: scale(1.2);
+        transform: scale(1.1);
         transform-origin: left bottom;
     }
 }
