@@ -2522,3 +2522,30 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
     background: black;
     pointer-events: none;
 }
+
+
+/* Límite de lienzo para monitores grandes */
+@media screen and (min-width: 1920px) {
+    .contenedor {
+        width: calc(100% - 4.2rem);
+        max-width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .h-100vh,
+    .hero-materia,
+    .hero-ada,
+    .hero-soplo {
+        max-height: 1080px;
+    }
+
+    .hero {
+        max-height: 900px;
+    }
+
+    .hero-sobremi,
+    .stack-hero-panel {
+        max-height: 540px;
+    }
+}
