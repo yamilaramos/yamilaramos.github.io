@@ -2549,3 +2549,30 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
         max-height: 540px;
     }
 }
+
+.signo-pregunta {
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    vertical-align: baseline;
+}
+
+.signo-pregunta::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 0.12em;
+    height: 0.12em;
+    border-radius: 50%;
+    background: #eba625;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.signo-pregunta--apertura::after {
+    top: 0.06em;
+}
+
+.signo-pregunta--cierre::after {
+    bottom: 0.02em;
+}
