@@ -2579,3 +2579,13 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
 .signo-pregunta--cierre::after {
     bottom: 0.12em;
 }
+
+
+/* Fine-tune the yellow dots over the closing question marks. */
+#stack-title .signo-pregunta--cierre::after {
+    bottom: 0.09em;
+}
+
+.titulo-proceso .signo-pregunta--cierre::after {
+    bottom: 0.15em;
+}
