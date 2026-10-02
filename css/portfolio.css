@@ -2518,7 +2518,7 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
     left: 0;
     right: 0;
     bottom: calc(-1 * (clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) + 0.4rem));
-    height: 2px;
+    height: 1px;
     background: black;
     pointer-events: none;
 }
