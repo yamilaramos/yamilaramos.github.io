@@ -277,6 +277,10 @@ pointer-events: none;
 .titulo-proceso { 
     font-size: clamp(3.6rem, 2.35vw, 4.5rem);
     margin: 5% 0;   
+}
+/* Separa visualmente los subrayados sin decorar el espacio entre palabras */
+.titulo-proceso .subrayado:not(:last-of-type) {
+    margin-right: 0.16em;
 } 
 
 .proceso {
