@@ -2551,20 +2551,31 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
 }
 
 .signo-pregunta {
+    position: relative;
     display: inline-block;
-    line-height: 1;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-    background-color: #000;
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-repeat: no-repeat;
+    line-height: normal;
+    vertical-align: baseline;
+    color: inherit;
 }
 
-.signo-pregunta--apertura {
-    background-image: radial-gradient(circle 0.09em at 50% 0.13em, #eba625 99%, transparent 100%);
+.signo-pregunta::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    z-index: 1;
+    width: 0.12em;
+    height: 0.12em;
+    border-radius: 50%;
+    background: #eba625;
+    box-shadow: 0 0 0 0.035em var(--cream);
+    transform: translateX(-50%);
+    pointer-events: none;
 }
 
-.signo-pregunta--cierre {
-    background-image: radial-gradient(circle 0.09em at 50% calc(100% - 0.08em), #eba625 99%, transparent 100%);
+.signo-pregunta--apertura::after {
+    top: 0.13em;
+}
+
+.signo-pregunta--cierre::after {
+    bottom: 0.12em;
 }
