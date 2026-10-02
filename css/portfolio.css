@@ -2508,6 +2508,6 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
     border-top: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid black;
     box-shadow:
         0 0.4rem 0 var(--yellow),
-        0 calc(0.4rem + clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit)))) 0 black;
+        0 calc(0.4rem + 2px) 0 black;
     margin-bottom: 1%;
 }
