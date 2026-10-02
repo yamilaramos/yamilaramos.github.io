@@ -203,18 +203,19 @@ pointer-events: none;
     }
 }
 
-.certificaciones > article {
+.sectionCert{ background-color: var(--yellow); }
+.sectionCert > article {
     padding: 0 5%;
     width: 100%;
     flex-shrink: 0;
 }
 
-.certificaciones > article > .w-40 {
+.sectionCert > article > .w-40 {
     flex: 0 0 40%;
     min-width: 40%;
 }
 
-.certificaciones > article > .carrusel {
+.sectionCert > article > .carrusel {
     flex: 0 0 60%;
     width: 60%;
     min-width: 60%;
