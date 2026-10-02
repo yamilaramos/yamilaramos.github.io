@@ -1538,7 +1538,10 @@ header.scrolled .animacion-activa::after {
 }
 
 .btn-hero-secundario:hover {
-    color: var(--yellow);
+    color: linear-gradient(131deg,
+        rgba(235,166,37,1) 0%,
+        rgba(255,178,36,1) 50%,
+        rgba(235,166,37,1) 100%);
 }
 
 .btn-seccion svg {
