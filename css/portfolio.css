@@ -2502,11 +2502,23 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
 }
 
 .destacados.division-2 {
+    position: relative;
+    overflow-x: clip;
+    overflow-y: visible;
     width: 100%;
     margin-inline: 0;
     border-top: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid black;
-    box-shadow:
-        0 0.4rem 0 var(--yellow),
-        0 calc(0.4rem + 2px) 0 black;
+    box-shadow: 0 0.4rem 0 var(--yellow);
     margin-bottom: 1%;
+}
+
+.destacados.division-2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: calc(-1 * (clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) + 0.4rem));
+    height: 2px;
+    background: black;
+    pointer-events: none;
 }
