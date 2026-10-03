@@ -1354,3 +1354,174 @@
 
 
 }
+
+
+/* Certificaciones: la sección ocupa el viewport; el carrusel usa el espacio restante. */
+@media screen and (max-width: 768px) {
+    #cursos.sectionCert {
+        height: 100vh;
+        height: 100dvh;
+        min-height: 0;
+        padding: 5% 0;
+        overflow: hidden;
+    }
+
+    #cursos.sectionCert .contenedorCert {
+        width: 100%;
+        height: 100%;
+        min-height: 0;
+        margin: 0;
+        padding: 1.25rem 0;
+        box-sizing: border-box;
+    }
+
+    #cursos.sectionCert .contenedorCert > article {
+        width: 100%;
+        height: 100%;
+        min-height: 0;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 0.5rem;
+        padding: 0 5%;
+    }
+
+    #cursos.sectionCert .contenedorCert > article > .t-cert {
+        flex: 0 0 auto;
+        width: 100%;
+        min-width: 0;
+        min-height: 0;
+        margin: 0 auto;
+    }
+
+    #cursos.sectionCert #certTitulo {
+        width: 90%;
+        margin: 0 auto 0.35rem;
+        font-size: 3.6rem;
+    }
+
+    #cursos.sectionCert #certDescripcion {
+        width: 90%;
+        margin: 0.35rem auto 0.8rem;
+        font-size: clamp(1.94rem, 1.27vw, 2.43rem);
+        line-height: clamp(2.75rem, 1.8vw, 3.44rem);
+    }
+
+    #cursos.sectionCert #certLogos {
+        width: 90%;
+        min-height: 0;
+        margin: 0.25rem auto 0;
+        gap: 0.8rem;
+    }
+
+    #cursos.sectionCert .logosCert img {
+        width: 3.8rem;
+        height: 3.8rem;
+        object-fit: contain;
+    }
+
+    #cursos.sectionCert .flechas {
+        display: none;
+    }
+
+    #cursos.sectionCert .contenedorCert > article > .carrusel {
+        flex: 1 1 0;
+        width: 100%;
+        min-width: 0;
+        min-height: 0;
+        margin: 0 auto;
+        overflow: visible;
+    }
+
+    #cursos.sectionCert .pista {
+        flex: 1 1 0;
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        overflow: visible;
+        touch-action: pan-y;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    #cursos.sectionCert .slide.prev-1,
+    #cursos.sectionCert .slide.next-1,
+    #cursos.sectionCert .slide.oculto {
+        display: block !important;
+    }
+
+    #cursos.sectionCert .slide.activo {
+        width: 100%;
+        max-width: none;
+        height: 100%;
+        pointer-events: auto;
+        touch-action: pan-y;
+    }
+
+    #cursos.sectionCert .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        pointer-events: none;
+        -webkit-user-drag: none;
+    }
+
+    #cursos.sectionCert .caption {
+        width: 90%;
+        min-height: 2.8em;
+        margin: 0.25rem auto 0;
+        font-size: clamp(1.94rem, 1.35vw, 2.43rem);
+        text-align: center !important;
+    }
+}
+
+@media screen and (max-width: 768px) and (prefers-reduced-motion: no-preference) {
+    .fade-in-down {
+        animation: mobile-fade-in-down 0.7s ease-out forwards !important;
+    }
+
+    .fade-modern-load {
+        opacity: 0;
+        transform: translateY(-4rem) scale(0.98);
+        filter: blur(0.4rem);
+        transition:
+            opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+            transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+            filter 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .timeline-mobile .card.scroll-fade-modern,
+    #proceso .proceso > div.scroll-fade-modern {
+        opacity: 0 !important;
+        transform: translateY(4rem) !important;
+        filter: blur(0.5rem) !important;
+        visibility: visible !important;
+        transition:
+            opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+            transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+            filter 0.9s cubic-bezier(0.22, 1, 0.36, 1) !important;
+    }
+
+    .timeline-mobile .card.scroll-fade-modern.show,
+    #proceso .proceso > div.scroll-fade-modern.show {
+        opacity: 1 !important;
+        transform: translateY(0) scale(1) !important;
+        filter: blur(0) !important;
+    }
+
+    @keyframes mobile-fade-in-down {
+        from { translate: 0 -2rem; filter: blur(0.5rem); }
+        to { translate: 0 0; filter: blur(0); }
+    }
+}
+
+@media screen and (max-width: 768px) and (prefers-reduced-motion: reduce) {
+    .timeline-mobile .card.scroll-fade-modern,
+    #proceso .proceso > div.scroll-fade-modern {
+        opacity: 1 !important;
+        transform: none !important;
+        filter: none !important;
+        visibility: visible !important;
+        transition: none !important;
+    }
+}
