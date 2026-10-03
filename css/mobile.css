@@ -814,7 +814,7 @@
 
 
     .presentacion{
-        margin: auto;
+        margin-left: 0px;
         font-size: 18px;
         /* background: rgba(0, 0, 0, 0.350); */
         background: rgba(0, 0, 0, 0.08);
@@ -830,6 +830,7 @@
         padding: 10px 12px 10px 15px;
         border-radius: 16px 16px 16px 2px;
         line-height: 23px;
+        
     }
 
 
