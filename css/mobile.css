@@ -199,17 +199,13 @@
         text-align: center !important;
     }
 
-
-
-
-    /* Texto móvil: ancho del 90%, bloque centrado y alineación izquierda */
     h1,
     h2:not(.mensaje),
     h3 {
         width: 90% !important;
     }
 
-     p:not(.mensaje){
+     p:not(.mensaje), .stack-intro p{
         max-width: 90vw !important;
         margin-left: auto !important;
         margin-right: auto !important;
