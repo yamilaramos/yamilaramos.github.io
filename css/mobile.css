@@ -1604,3 +1604,14 @@
         border-radius: 1px;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    #stack .stack-intro .stack-text-mobile {
+        display: block;
+    }
+
+    #stack .stack-intro .stack-text-mobile--intro {
+        margin-bottom: 0.8rem;
+    }
+}
