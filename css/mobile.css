@@ -889,6 +889,7 @@
         display: block; 
     }
 
+    .sectionSobremi{ padding: 15% 0 2.5% 0;}
 
     .sobre-mi h1{
         text-align: left;
@@ -898,7 +899,6 @@
 
     .jcontent-titulo{
         justify-content: start;
-        margin-top: 10%;
         width: 90%;
     }
 
