@@ -1,12 +1,4 @@
 @media screen and (max-width:768px){
-    
-    .sectionStack {
-        padding: 3rem 0;
-    }
-
-    .stack-intro {
-        width: 88%;
-    }
 
     .stack-intro h2 {
         font-size: clamp(3.0rem, 7vw, 3.8rem);
@@ -250,7 +242,13 @@
         width: 90% !important;
     }
 
+    
+    .stack-intro {
+        width: 90%;
+    }
+
      p:not(.mensaje), .stack-intro p{
+        width: 90%;
         max-width: 90% !important;
         margin-left: auto !important;
         margin-right: auto !important;
