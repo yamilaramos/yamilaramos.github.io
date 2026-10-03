@@ -2212,7 +2212,7 @@ footer p{
     box-sizing: border-box;
     width: 1.28rem;
     height: 1.28rem;
-    border: 0.2rem solid black;
+    border: 0.25rem solid black;
     border-radius: 0.16rem;
     background: black;
     content: "";
@@ -2311,7 +2311,7 @@ footer p{
     width: max-content;
     min-width: 11.2rem;
     padding: 0.8rem 2.08rem;
-    border: 0.2rem solid black;
+    border: 0.25rem solid black;
     border-radius: 2.56rem;
     background: var(--cream);
     color: black;
@@ -2563,7 +2563,7 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
 .skills-tooltip-bubble {
     min-width: 8.1648rem;
     padding: 0.5832rem 1.51632rem;
-    border-width: 0.1458rem;
+    border: 0.25rem solid black;
     border-radius: 1.86624rem;
     font-size: 1.39968rem;
 }
@@ -2648,7 +2648,7 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
         padding:
             calc(0.5832rem * var(--large-monitor-scale))
             calc(1.51632rem * var(--large-monitor-scale));
-        border-width: calc(0.1458rem * var(--large-monitor-scale));
+        border-width: calc(0.25rem * var(--large-monitor-scale));
         border-radius: calc(1.86624rem * var(--large-monitor-scale));
         font-size: calc(1.39968rem * var(--large-monitor-scale));
     }
