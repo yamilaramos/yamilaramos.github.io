@@ -2461,57 +2461,6 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
     }
 }
 
-@media screen and (max-width: 768px) {
-    .sectionStack {
-        padding: 3rem 0;
-    }
-
-    .stack-intro {
-        width: 88%;
-    }
-
-    .stack-intro h2 {
-        font-size: clamp(3.0rem, 7vw, 3.8rem);
-    }
-
-    .stack-intro p {
-        width: 100%;
-    }
-
-    .stack-hero-panel {
-        flex-direction: column;
-        align-items: stretch;
-        min-height: 0;
-        padding: 1.5rem 0 2rem;
-    }
-
-    .stack-copy {
-        flex: none;
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .stack-copy h3 {
-        font-size: clamp(2.1rem, 5.5vw, 2.6rem);
-    }
-
-    .skills-marquee {
-        width: 100%;
-    }
-
-    .stack-hero-panel > .mockupStack {
-        position: relative;
-        top: auto;
-        right: auto;
-        bottom: auto;
-        width: min(82%, 36rem);
-        height: auto;
-        margin: 1.5rem auto 0;
-        transform: none;
-    }
-}
-
-
 #sobremi {
     box-sizing: border-box;
 }
