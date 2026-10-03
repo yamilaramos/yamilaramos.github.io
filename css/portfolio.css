@@ -796,7 +796,11 @@ header.scrolled {
   max-width: calc(100% - clamp(2.4rem, 2.2vw, 4.2rem));
   margin: 0 auto;
 
-  background-color: rgba(254, 250, 246, 90%);
+/*   background-color: rgba(254, 250, 246, 90%); */
+  background: rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(clamp(1.4rem, calc(calc(5.37 * var(--rem-unit)) + 0.63vw), calc(17.5 * var(--rem-unit))));
+  border: clamp(0.1rem, calc(calc(0.38 * var(--rem-unit)) + 0.05vw), calc(1.25 * var(--rem-unit))) solid rgb(255 255 255 / 0%);
+  box-shadow: 0 clamp(0.8rem, calc(calc(3.07 * var(--rem-unit)) + 0.36vw), 1.0rem) clamp(3.2rem, calc(calc(12.27 * var(--rem-unit)) + 1.44vw), 4.0rem) rgba(0, 0, 0, 0.3), inset 0 clamp(0.1rem, calc(calc(0.38 * var(--rem-unit)) + 0.05vw), calc(1.25 * var(--rem-unit))) clamp(0.1rem, calc(calc(0.38 * var(--rem-unit)) + 0.05vw), calc(1.25 * var(--rem-unit))) rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(clamp(1.2rem, 1vw, 1.8rem));
   -webkit-backdrop-filter: blur(clamp(1.2rem, 1vw, 1.8rem));
   border-bottom-color: transparent;
