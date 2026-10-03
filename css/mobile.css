@@ -750,8 +750,10 @@
 
 
     #stack.sectionStack {
+        padding: 8% 0;
         height: auto;
         border-top: none;
+        border-bottom: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid black;
         height: 100vh;
     }
 
