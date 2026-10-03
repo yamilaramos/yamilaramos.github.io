@@ -2182,7 +2182,7 @@ footer p{
     box-sizing: border-box;
     min-width: 11.2rem;
     padding: 0.8rem 2.08rem;
-    border: 40px solid black;
+    border: 0.2rem solid black;
     border-radius: 2.56rem;
     background: var(--cream);
     color: black;
@@ -2586,7 +2586,7 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
     width: 100%;
     margin-inline: 0;
     border-top: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid black;
-    box-shadow: 0 0.4rem 0 var(--yellow);
+    box-shadow: 0 0.6rem 0 var(--yellow);
     margin-bottom: 1%;
 }
 
@@ -2595,7 +2595,7 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: calc(-1 * (clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) + 0.4rem));
+    bottom: calc(-1 * (clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) + 0.6rem));
     height: 1px;
     background: black;
     pointer-events: none;
