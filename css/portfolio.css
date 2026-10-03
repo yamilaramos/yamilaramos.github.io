@@ -2186,7 +2186,7 @@ footer p{
     box-sizing: border-box;
     min-width: 11.2rem;
     padding: 0.8rem 2.08rem;
-    border: 0.2rem solid black;
+    border:  0.25rem solid black;
     border-radius: 2.56rem;
     background: var(--cream);
     color: black;
@@ -2212,7 +2212,7 @@ footer p{
     box-sizing: border-box;
     width: 1.28rem;
     height: 1.28rem;
-    border: 0.25rem solid black;
+    border: 0.2rem solid black;
     border-radius: 0.16rem;
     background: black;
     content: "";
