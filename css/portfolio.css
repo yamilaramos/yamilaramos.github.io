@@ -788,17 +788,22 @@ header.scrolled {
     backdrop-filter var(--header-morph-duration) var(--header-morph-easing),
     transform var(--header-morph-duration) var(--header-morph-easing),
     opacity 0.24s ease-out;
-
-  transform: scale(0.9);
-  top: clamp(1.2rem, 1.1vw, 2.1rem);
-  height: calc(clamp(6.2rem, 4.55vw, 8.7rem) - 0.5rem);
-
-  max-width: calc(100% - clamp(2.4rem, 2.2vw, 4.2rem));
-  margin: 0 auto;
-  background-color: rgba(254, 250, 246, 90%);
-  box-shadow:
+    
+    transform: scale(0.9);
+    top: clamp(1.2rem, 1.1vw, 2.1rem);
+    height: calc(clamp(6.2rem, 4.55vw, 8.7rem) - 0.5rem);
+    
+    max-width: calc(100% - clamp(2.4rem, 2.2vw, 4.2rem));
+    margin: 0 auto;
+    
+    background-color: rgba(254, 250, 246, 90%);
+    backdrop-filter: blur(clamp(1.2rem, 1vw, 1.8rem));
+    -webkit-backdrop-filter: blur(clamp(1.2rem, 1vw, 1.8rem));
+    border-bottom-color: transparent;
+    border-radius: 99.9rem;
+    
+    box-shadow:
     0 clamp(0.8rem, 0.6vw, 1.4rem) clamp(2.4rem, 2vw, 4.0rem) rgba(0, 0, 0, 0.15);
-
 }
 
 header.scrolled.scroll-hidden {
