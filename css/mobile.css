@@ -417,6 +417,45 @@
         border-radius: 10px;
     }
 
+
+    /* Stack: conservar carruseles y comparador dentro del alto natural */
+    #inicio.hero {
+        background-position: center center;
+    }
+
+    #stack.sectionStack {
+        height: auto;
+    }
+
+    #stack .stack-hero-panel {
+        height: auto;
+        background-position: center center;
+    }
+
+    /* Proceso creativo: mostrar únicamente el contenido textual */
+    #proceso {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #proceso .hero-pasos {
+        display: none;
+    }
+
+    #proceso .contenedor-proceso {
+        width: 100%;
+        padding: 8% 6%;
+    }
+
+    #proceso .proceso > div > .flex-direction-column {
+        flex: 1;
+        min-width: 0;
+    }
+
+    #proceso .proceso p {
+        width: 100%;
+    }
+
     .titulo{
         width: 65%;
         margin: 0;
