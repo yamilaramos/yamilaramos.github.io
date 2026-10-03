@@ -1522,3 +1522,18 @@
         transition: none !important;
     }
 }
+
+
+/* El carrusel de certificaciones conserva la altura original del track en mobile. */
+@media screen and (max-width: 768px) {
+    #cursos.sectionCert .contenedorCert > article > .carrusel {
+        flex: 0 0 auto;
+        height: auto;
+    }
+
+    #cursos.sectionCert .pista {
+        flex: 0 0 auto;
+        height: clamp(26rem, 31vw, 38.5rem);
+        min-height: clamp(26rem, 31vw, 38.5rem);
+    }
+}
