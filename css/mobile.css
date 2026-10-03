@@ -56,6 +56,13 @@
         text-align: left !important;
     }
 
+    .sobre-mi p, .stack-intro p{
+        margin: auto;
+        font-size: 18px;
+        margin-top: 5%;
+        line-height: 25px;
+    }
+
 
     .timeline-mobile .card h3 {
         width: fit-content !important;
@@ -894,20 +901,6 @@
         margin-top: 10%;
         width: 90%;
     }
-
-
-    .sobre-mi p{
-        margin: auto;
-        font-size: 18px;
-        text-align: left;
-        max-width: 82%;
-        margin-top: 5%;
-        line-height: 25px;
-
-
-        margin-left: 8%;
-    }
-
 
     .timeline-mobile{
         position: relative;
