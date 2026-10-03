@@ -54,9 +54,8 @@
     }
 
     .sobre-mi p, .stack-intro p{
-        margin: auto;
         font-size: 18px;
-        margin-top: 5%;
+        margin: 8% 0;
         line-height: 25px;
     }
 
@@ -258,7 +257,6 @@
         margin-left: auto !important;
         margin-right: auto !important;
         text-align: left !important;
-        font-size: 18px;
      }
 
     .destacados.division-2 .track > .mensaje {
@@ -792,13 +790,10 @@
         background-position: center center;
     }
 
-
     #stack.sectionStack {
-        padding: 8% 0;
         height: auto;
         border-top: none;
         border-bottom: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid black;
-        height: 100vh;
     }
 
 
@@ -887,7 +882,8 @@
         display: block; 
     }
 
-    .sectionSobremi, .sectionStack{ padding: 15% 0 2.5% 0;}
+    .sectionSobremi{ padding: 15% 0 2.5% 0;}
+    .sectionStack, .sectionCert, sectionProceso{ padding: 15% 0;}
 
     .sobre-mi h1{
         text-align: left;
