@@ -1537,3 +1537,31 @@
         min-height: clamp(26rem, 31vw, 38.5rem);
     }
 }
+
+
+/* Proceso creativo: número sobre el texto y divisores más finos en mobile. */
+@media screen and (max-width: 768px) {
+    #proceso .proceso > div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.4rem;
+    }
+
+    #proceso .proceso > div > .numero-proceso {
+        display: block;
+        margin: 0;
+        line-height: 1;
+    }
+
+    #proceso .proceso > div > .flex-direction-column {
+        flex: 0 0 auto;
+        width: 100%;
+        min-width: 0;
+    }
+
+    #proceso .proceso::before {
+        height: 1px;
+        border-radius: 1px;
+    }
+}
