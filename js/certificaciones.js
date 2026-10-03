@@ -229,3 +229,34 @@ if (prefiereMenosMovimiento || !("IntersectionObserver" in window)) {
 
   observadorCertificaciones.observe(seccionCertificaciones);
 }
+
+
+let inicioDeslizamientoX = null;
+let inicioDeslizamientoY = null;
+
+pista.addEventListener("pointerdown", (event) => {
+  if (event.pointerType === "mouse") return;
+
+  inicioDeslizamientoX = event.clientX;
+  inicioDeslizamientoY = event.clientY;
+  pista.setPointerCapture(event.pointerId);
+});
+
+pista.addEventListener("pointerup", (event) => {
+  if (inicioDeslizamientoX === null) return;
+
+  const distanciaX = event.clientX - inicioDeslizamientoX;
+  const distanciaY = event.clientY - inicioDeslizamientoY;
+  inicioDeslizamientoX = null;
+  inicioDeslizamientoY = null;
+
+  if (Math.abs(distanciaX) < 45 || Math.abs(distanciaX) <= Math.abs(distanciaY)) return;
+
+  activo = (activo + (distanciaX < 0 ? 1 : -1) + items.length) % items.length;
+  render();
+});
+
+pista.addEventListener("pointercancel", () => {
+  inicioDeslizamientoX = null;
+  inicioDeslizamientoY = null;
+});
