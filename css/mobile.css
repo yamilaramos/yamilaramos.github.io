@@ -203,16 +203,18 @@
 
 
     /* Texto móvil: ancho del 90%, bloque centrado y alineación izquierda */
-    p:not(.mensaje),
     h1,
     h2:not(.mensaje),
     h3 {
         width: 90% !important;
+    }
+
+     p:not(.mensaje){
         max-width: 90vw !important;
         margin-left: auto !important;
         margin-right: auto !important;
         text-align: left !important;
-    }
+     }
 
     /* El ticker del segundo divisor conserva su ancho de contenido */
     .destacados.division-2 .track > .mensaje {
@@ -749,6 +751,8 @@
 
     #stack.sectionStack {
         height: auto;
+        border-top: none;
+        height: 100vh;
     }
 
 
