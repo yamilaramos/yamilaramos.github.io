@@ -900,7 +900,7 @@ header.scrolled .header-cv-mobile {
   header.scrolled nav ul { transition: none; }
 }
 
-
+.sectionProyectos{ padding-top: 1%;}
 .contenedor-proyectos{ margin-left: 5%; }
 
 .contenedor-proyectos h3{
@@ -2588,18 +2588,6 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
     box-shadow: 0 0.6rem 0 var(--yellow);
     margin-bottom: 1%;
 }
-
-.destacados.division-2::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: calc(-1 * (clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) + 0.6rem));
-    height: 2px;
-    background: black;
-    pointer-events: none;
-}
-
 
 /* Límite de lienzo para monitores grandes */
 @media screen and (min-width: 1920px) {
