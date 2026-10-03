@@ -1,4 +1,66 @@
 @media screen and (max-width:768px){
+            /* Restaurar la composición móvil original de Sobre mí y su timeline */
+    .w-58 {
+        width: 90%;
+    }
+
+    #sobremi .sobre-mi > div h2.t-align-center {
+        width: auto !important;
+        max-width: none !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        text-align: center !important;
+    }
+
+    #sobremi .sobre-mi p {
+        width: auto !important;
+        max-width: 82% !important;
+        margin-left: 8% !important;
+        margin-right: auto !important;
+        text-align: left !important;
+    }
+
+    .timeline-mobile .card h3 {
+        width: fit-content !important;
+        max-width: 95% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        text-align: left !important;
+    }
+
+    .timeline-mobile .card p {
+        width: auto !important;
+        max-width: none !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        text-align: left !important;
+    }
+
+    /* Stack: ocultar el comparador y ajustar el hero al alto de sus carruseles */
+    #stack .mockupStack,
+    #stack #mkCompare {
+        display: none !important;
+    }
+
+    #stack .stack-hero-panel {
+        height: auto;
+        min-height: 0;
+        padding: clamp(1.25rem, 4vh, 2rem) 0;
+        background-position: center center;
+    }
+
+    #stack .stack-copy {
+        flex: 0 0 90%;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Contenedor de certificaciones a todo el ancho, sin márgenes laterales */
+    #cursos .contenedorCert {
+        width: 100%;
+    }
+
+
         /* Certificaciones: una pantalla y navegación por gesto táctil */
     #cursos.sectionCert {
         height: 100vh;
