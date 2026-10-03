@@ -182,7 +182,7 @@
     /* Texto móvil: ancho del 90%, bloque centrado y alineación izquierda */
     p:not(.mensaje),
     h1,
-    h2,
+    h2:not(.mensaje),
     h3 {
         width: 90% !important;
         max-width: 90vw !important;
