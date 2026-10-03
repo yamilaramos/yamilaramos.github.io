@@ -10,18 +10,7 @@
 
 /* HERO CARRUSEL */
 
- :root { --header-h: clamp(6.2rem, 4.55vw, 8.7rem); }
- 
-/* Contenedor alto: giro.js le pone la altura (alto del hero + 4 pasos de scroll) */
-.hero-pin { position: relative; }
- 
-/* El hero (texto + giro) se queda fijo mientras giran las fotos */
-@media (min-width: 769px) {
-  .hero-pin > .hero {
-    position: sticky;
-    top: var(--header-h);
-  }
-}
+ html { scrollbar-gutter: stable; }
  
 /* El giro ocupa toda la altura del hero, en la mitad derecha */
 .hero > .giro { position: relative; align-self: stretch; }
@@ -57,7 +46,7 @@
 /* Los botones sociales quedan por encima de las fotos */
 .hero .social-gap { z-index: 5; }
  
-/* Mobile: sin pin, las fotos quedan como mosaico quieto */
+/* Mobile: sin bloqueo, las fotos quedan como mosaico quieto */
 @media (max-width: 768px) {
   .hero > .giro { width: 100%; min-height: 60vh; }
 }
