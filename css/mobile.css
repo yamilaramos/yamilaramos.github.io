@@ -1,9 +1,7 @@
 @media screen and (max-width:768px){
-            /* Restaurar la composición móvil original de Sobre mí y su timeline */
     .w-58 {
         width: 90%;
     }
-
 
     #sobremi .sobre-mi > div h2.t-align-center {
         width: auto !important;
@@ -16,8 +14,7 @@
 
     #sobremi .sobre-mi p {
         width: auto !important;
-        max-width: 82% !important;
-        margin-left: 8% !important;
+        max-width: 90% !important;
         margin-right: auto !important;
         text-align: left !important;
     }
