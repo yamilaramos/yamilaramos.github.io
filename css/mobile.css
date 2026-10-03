@@ -1,4 +1,47 @@
 @media screen and (max-width:768px){
+    /* Texto móvil: ancho del 90%, bloque centrado y alineación izquierda */
+    p:not(.mensaje),
+    h1,
+    h2,
+    h3 {
+        width: 90% !important;
+        max-width: 90vw !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: left !important;
+    }
+
+    /* Certificaciones en una columna */
+    #cursos {
+        height: auto;
+    }
+
+    #cursos .contenedorCert {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #cursos .contenedorCert > article {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    #cursos .contenedorCert > article > .t-cert,
+    #cursos .contenedorCert > article > .carrusel {
+        flex: 0 0 100%;
+        width: 100%;
+        min-width: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #cursos .slide.activo {
+        width: 100%;
+    }
+
 
     .align-items-flex-start{
         align-items: flex-start;
