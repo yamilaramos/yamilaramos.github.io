@@ -1,7 +1,7 @@
 @media screen and (max-width:768px){
 
     .stack-intro h2 {
-        font-size: clamp(3.0rem, 7vw, 3.8rem);
+        font-size: (3.6rem, 2.35vw, 4.5rem);
     }
 
     .stack-hero-panel {
