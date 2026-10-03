@@ -206,13 +206,12 @@
     }
 
      p:not(.mensaje), .stack-intro p{
-        max-width: 90vw !important;
+        max-width: 90% !important;
         margin-left: auto !important;
         margin-right: auto !important;
         text-align: left !important;
      }
 
-    /* El ticker del segundo divisor conserva su ancho de contenido */
     .destacados.division-2 .track > .mensaje {
         width: max-content !important;
         max-width: none !important;
