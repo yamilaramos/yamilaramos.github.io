@@ -192,7 +192,7 @@
     h3, .info-proyecto { 
         width: 95%;
         width: 95% !important;
-        margin: 0 auto;
+        margin: 2.5% auto;
     }
 
     .stack-intro {
@@ -1054,7 +1054,7 @@
         text-align: left;
         hyphens: auto;
         overflow-wrap: break-word;  
-        margin: 5%;
+        margin: 2.5% 5%;
     }
     
     .texto2-seccion{
