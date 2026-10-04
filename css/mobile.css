@@ -127,9 +127,15 @@
     }
 
 
-    #cursos.sectionCert .logosCert img, .logo img {
+    #cursos.sectionCert .logosCert img {
         width: 4.5rem;
         height: 4.5rem;
+        object-fit: contain;
+    }
+
+    .logo{
+        width: 4.25rem;
+        height: 4.25rem;
         object-fit: contain;
     }
 
