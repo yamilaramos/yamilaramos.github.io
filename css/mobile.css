@@ -1600,3 +1600,10 @@
         font-size: clamp(2.1rem, 5.5vw, 2.6rem);
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    #stack .stack-copy > h3.decor-line-2:nth-of-type(2)::before {
+        content: "En constante exploración" !important;
+    }
+}
