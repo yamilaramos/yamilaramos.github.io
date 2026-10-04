@@ -4,14 +4,6 @@
         display: none !important;
     }
 
-    .skill-item[data-tooltip]::before,
-    .skill-item[data-tooltip]::after,
-    .skill-item-2[data-tooltip]::before,
-    .skill-item-2[data-tooltip]::after {
-        display: none !important;
-        content: none !important;
-    }
-
      .skills-track:hover,
      .skills-track-2:hover {
          animation-play-state: running !important;
