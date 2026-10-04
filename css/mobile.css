@@ -80,8 +80,8 @@
 
     #stack .stack-hero-panel {
         min-height: 0;
-        padding: clamp(1.25rem, 4vh, 2rem) 0;
-        margin-top: 8%;
+        padding: 8% 0;
+        margin-top: 15%;
     }
 
     #stack .stack-copy {
