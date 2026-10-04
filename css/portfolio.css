@@ -18,6 +18,7 @@
   position: absolute; left: 0; top: 0;
   overflow: hidden;
   background-size: cover; background-position: center;
+  border-radius: clamp(4.0rem, calc(calc(15.34 * var(--rem-unit)) + 1.81vw), 5.0rem) clamp(1.5rem, calc(calc(5.75 * var(--rem-unit)) + 0.68vw), calc(18.75 * var(--rem-unit))) clamp(4.0rem, calc(calc(15.34 * var(--rem-unit)) + 1.81vw), 5.0rem) clamp(1.5rem, calc(calc(5.75 * var(--rem-unit)) + 0.68vw), calc(18.75 * var(--rem-unit)));
   will-change: transform;
 }
 .foto img {
