@@ -59,7 +59,7 @@
     }
 
     .sobre-mi p, .stack-intro > p > span, #cursos.sectionCert #certDescripcion{
-        font-size: 18px;
+        font-size: 20px;
         line-height: 25px;
         margin: 6% 0;
     }
