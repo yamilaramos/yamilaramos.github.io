@@ -1575,3 +1575,10 @@
         margin-bottom: 0.8rem;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    #stack .stack-copy > h3.decor-line-2::after {
+        width: 5rem;
+    }
+}
