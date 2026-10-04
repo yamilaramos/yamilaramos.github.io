@@ -199,7 +199,7 @@
         width: 90%;
     }
 
-    .contenedor-proyectos p{
+    .contenedor-proyectos p:not(.texto-seccion){
     max-width: 90% !important;
     margin-left: auto !important;
     margin-right: auto !important;
@@ -1054,7 +1054,7 @@
         text-align: left;
         hyphens: auto;
         overflow-wrap: break-word;  
-        margin-left: 6%;
+        margin: 5%;
     }
     
     .texto2-seccion{
