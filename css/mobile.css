@@ -184,9 +184,9 @@
     h2:not(.mensaje){ margin-bottom: 8%; }
 
     h1 { width: 100% !important; }
-    h2:not(.mensaje),
+    h2:not(.mensaje, #certTitulo),
     h3 {
-        width: 95% !important;
+        width: 90% !important;
         margin: 0 auto;
     }
 
@@ -770,11 +770,9 @@
     .presentacion{
         margin-left: 0px;
         font-size: 18px;
-        /* background: rgba(0, 0, 0, 0.350); */
         background: rgba(0, 0, 0, 0.08);
         backdrop-filter: blur(14px);
         -webkit-backdrop-filter: blur(14px);
-
 
         border: 1px solid rgba(255, 255, 255, 0.073);
         box-shadow: 
@@ -784,10 +782,8 @@
         padding: 10px 12px 10px 15px;
         border-radius: 16px 16px 16px 2px;
         line-height: 23px;
-        
     }
-
-
+    
     .salto-mobile, .salto-mobile-desactivado{
         display: block; 
     }
@@ -1057,7 +1053,7 @@
     .back-to-top{
         right: 15px;
         bottom: 15px;
-        weight: 5rem;
+        width: 5rem;
         height: 5rem;
     }
 
