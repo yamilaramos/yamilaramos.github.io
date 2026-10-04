@@ -65,7 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const tieneHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 const cursor = document.getElementById("cursor");
-const cursor = document.getElementById("cursor");
 
 if (cursor && tieneHover) {
     let mouseX = window.innerWidth / 2;
@@ -121,6 +120,7 @@ if (cursor && tieneHover) {
         cursor.style.opacity = "1";
     });
 }
+
 (() => {
   const header = document.querySelector("header");
   if (!header) return;
