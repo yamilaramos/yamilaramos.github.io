@@ -78,11 +78,7 @@
     }
 
 
-    #stack .stack-hero-panel {
-        min-height: 0;
-        padding: 8% 0;
-        margin-top: 15%;
-    }
+
 
     #stack .stack-copy {
         flex: 0 0 90%;
@@ -766,9 +762,12 @@
 
     #stack .stack-hero-panel {
         height: auto;
-        background-position: center center;
+        background-position: center left;
         flex-direction: column;
         align-items: stretch;
+        min-height: 0;
+        padding: 8% 0;
+        margin-top: 15%;
     }
 
 
