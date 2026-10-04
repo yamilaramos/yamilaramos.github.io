@@ -127,7 +127,7 @@
     }
 
 
-    #cursos.sectionCert .logosCert img, .logo {
+    #cursos.sectionCert .logosCert img, .logo img {
         width: 4.5rem;
         height: 4.5rem;
         object-fit: contain;
