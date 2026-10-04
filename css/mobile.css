@@ -1,5 +1,14 @@
 @media screen and (max-width:768px){
 
+     #cursor {
+        display: none !important;
+    }
+
+    .skill-item[data-tooltip]::after,
+    .skill-item-2[data-tooltip]::after {
+        display: none !important;
+    } 
+    
     h4 { font-size: 22px; }
 
     .sectionStack .skill-item-2 img, .sectionStack .skill-item img {
@@ -1242,9 +1251,6 @@
     display: none;
 }
 
-}
-
-@media screen and (max-width: 768px) {
     #cursos.sectionCert .contenedorCert {
         width: 100%;
         height: 100%;
@@ -1516,4 +1522,13 @@
     }
 
     .flecha-dinamica-proyectos { display: none }
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+    .skills-track:hover,
+    .skills-track-2:hover {
+        animation-play-state: paused;
+    }
+
 }
