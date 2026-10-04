@@ -4,6 +4,14 @@
         display: none !important;
     }
 
+     .fecha-desktop {
+        display: none;
+    }
+
+    .fecha-mobile {
+        display: inline;
+    }
+
      .skills-track:hover,
      .skills-track-2:hover {
          animation-play-state: running !important;
