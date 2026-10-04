@@ -194,7 +194,7 @@
         width: 90%;
     }
 
-     p:not(.mensaje, .t-footer-final, .decor-line-2::after), .stack-intro p, #cursos.sectionCert #certDescripcion, .info-proyecto, .contenedor-proyectos p{
+     p:not(.mensaje, .t-footer-final, .decor-line-2), .stack-intro p, #cursos.sectionCert #certDescripcion, .info-proyecto, .contenedor-proyectos p{
         width: 90%;
         max-width: 90% !important;
         margin-left: auto !important;
