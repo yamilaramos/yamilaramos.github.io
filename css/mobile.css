@@ -53,12 +53,11 @@
         text-align: left !important;
     }
 
-    .sobre-mi p, .stack-intro > p > span{
+    .sobre-mi p, .stack-intro > p > span, #cursos.sectionCert #certDescripcion{
         font-size: 18px;
         margin: 6% 0;
         line-height: 25px;
     }
-
 
     .timeline-mobile .card h3 {
         width: fit-content !important;
@@ -1359,13 +1358,6 @@
         min-width: 0;
         min-height: 0;
         margin: 0 auto;
-    }
-
-    #cursos.sectionCert #certDescripcion {
-        width: 90%;
-        margin: 6% auto;
-        font-size: 18px;
-        line-height: clamp(2.75rem, 1.8vw, 3.44rem);
     }
 
     #cursos.sectionCert #certLogos {
