@@ -166,6 +166,7 @@
         pointer-events: auto;
         touch-action: pan-y;
         z-index: 0;
+        border: 3px solid black;
     }
 
 
