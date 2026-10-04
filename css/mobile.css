@@ -485,7 +485,7 @@
         height: 34vh;
         border-radius: 15px;
         margin: auto;
-        width: 90%;
+        width: 100%;
         border: #000000 2px solid;
     }
 
@@ -879,6 +879,10 @@
 
     .light-studio, .soplo-de-vida, .hydrangea{
         flex-direction: column-reverse;
+    }
+
+    
+    .light-studio, .soplo-de-vida, .hydrangea, .ada, .materia{
         padding: 0 5%;
     }
 
