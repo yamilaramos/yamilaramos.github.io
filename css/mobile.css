@@ -174,11 +174,11 @@
 
 
     #cursos.sectionCert .caption {
-        width: 60%;
+        width: 65%;
         min-height: 0;
         margin: 6% auto;
         text-align: center !important;
-        font-size: 20px;
+        font-size: 22px;
     }
 
     h2:not(.mensaje){ margin-bottom: 8%; }
@@ -1235,11 +1235,8 @@
     display: none;
 }
 
-
 }
 
-
-/* Certificaciones: la sección ocupa el viewport; el carrusel usa el espacio restante. */
 @media screen and (max-width: 768px) {
     #cursos.sectionCert .contenedorCert {
         width: 100%;
@@ -1367,7 +1364,6 @@
 }
 
 
-/* El carrusel de certificaciones conserva la altura original del track en mobile. */
 @media screen and (max-width: 768px) {
 
     #cursos.sectionCert .pista {
@@ -1375,11 +1371,7 @@
         height: clamp(26rem, 31vw, 38.5rem);
         min-height: clamp(26rem, 31vw, 38.5rem);
     }
-}
 
-
-/* Proceso creativo: número sobre el texto y divisores más finos en mobile. */
-@media screen and (max-width: 768px) {
     #proceso .proceso > div {
         display: flex;
         flex-direction: column;
@@ -1485,7 +1477,7 @@
         margin: 0 auto;
         position: relative;
         overflow: visible;
-        margin-top: 8%;
+        margin-top: 10%;
     }
 
     #cursos.sectionCert .flechas {
