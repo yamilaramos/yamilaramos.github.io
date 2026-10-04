@@ -229,12 +229,13 @@
         text-align: center !important;
     }
 
-    h2{ margin-bottom: 8%; }
+    h2:not(.mensaje){ margin-bottom: 8%; }
 
     h1,
     h2:not(.mensaje),
     h3 {
         width: 90% !important;
+        margin: 0 auto;
     }
 
     .stack-intro {
@@ -700,13 +701,7 @@
        left: 9%;
        width: 82%;
     }
-
-
-    .mensaje{
-        font-size: 18px;
-    }
-
-
+    
     .anuncio{
        height: 40px;
     }
@@ -772,20 +767,15 @@
         border-radius: 10px;
     }
 
-
-
-
-    /* Stack: conservar carruseles y comparador dentro del alto natural */
     #inicio.hero {
         background-position: center center;
     }
 
     #stack.sectionStack {
-        height: auto;
+        height: 100vh;
         border-top: none;
         border-bottom: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid black;
     }
-
 
     #stack .stack-hero-panel {
         height: auto;
