@@ -65,37 +65,62 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const cursor = document.getElementById("cursor");
 
-if (cursor) {
-  let mouseX = window.innerWidth / 2;
-  let mouseY = window.innerHeight / 2;
+const cursor = document.getElementById("cursor");
 
-  window.addEventListener("mousemove", (event) => {
-    mouseX = event.clientX;
-    mouseY = event.clientY;
-    cursor.style.left = mouseX + "px";
-    cursor.style.top = mouseY + "px";
-  });
+if (cursor && tieneHover) {
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
 
-  const interactiveSelectors = "a, button, [data-cursor-hover]";
+    window.addEventListener("mousemove", (event) => {
+        mouseX = event.clientX;
+        mouseY = event.clientY;
 
-  document.addEventListener("mouseover", (event) => {
-    if (event.target.tagName === "IMG") return;
-    if (event.target.closest(interactiveSelectors)) cursor.classList.add("is-hovering");
-    if (event.target.closest("a")) cursor.classList.add("is-link");
-    if (event.target.closest("header nav")) cursor.classList.add("in-header");
-  });
+        cursor.style.left = mouseX + "px";
+        cursor.style.top = mouseY + "px";
+    });
 
-  document.addEventListener("mouseout", (event) => {
-    if (event.target.tagName === "IMG") return;
-    if (event.target.closest(interactiveSelectors)) cursor.classList.remove("is-hovering");
-    if (event.target.closest("a")) cursor.classList.remove("is-link");
-    if (event.target.closest("header nav")) cursor.classList.remove("in-header");
-  });
+    const interactiveSelectors = "a, button, [data-cursor-hover]";
 
-  document.addEventListener("mouseleave", () => { cursor.style.opacity = "0"; });
-  document.addEventListener("mouseenter", () => { cursor.style.opacity = "1"; });
+    document.addEventListener("mouseover", (event) => {
+        if (event.target.tagName === "IMG") return;
+
+        if (event.target.closest(interactiveSelectors)) {
+            cursor.classList.add("is-hovering");
+        }
+
+        if (event.target.closest("a")) {
+            cursor.classList.add("is-link");
+        }
+
+        if (event.target.closest("header nav")) {
+            cursor.classList.add("in-header");
+        }
+    });
+
+    document.addEventListener("mouseout", (event) => {
+        if (event.target.tagName === "IMG") return;
+
+        if (event.target.closest(interactiveSelectors)) {
+            cursor.classList.remove("is-hovering");
+        }
+
+        if (event.target.closest("a")) {
+            cursor.classList.remove("is-link");
+        }
+
+        if (event.target.closest("header nav")) {
+            cursor.classList.remove("in-header");
+        }
+    });
+
+    document.addEventListener("mouseleave", () => {
+        cursor.style.opacity = "0";
+    });
+
+    document.addEventListener("mouseenter", () => {
+        cursor.style.opacity = "1";
+    });
 }
-
 (() => {
   const header = document.querySelector("header");
   if (!header) return;
