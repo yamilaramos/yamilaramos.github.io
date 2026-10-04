@@ -1052,7 +1052,8 @@
     .texto-seccion{
         text-align: left;
         hyphens: auto;
-        overflow-wrap: break-word;        
+        overflow-wrap: break-word;  
+        margin-left: 6%;
     }
     
     .texto2-seccion{
