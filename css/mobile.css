@@ -1159,7 +1159,7 @@
     }
 
 
-    .btn-seccion, .btn-seccion-2, .contacto p{
+    .btn-seccion, .btn-seccion-2, .contacto p, .btn-seccion-mobile img{
         display: none;
     }
 
