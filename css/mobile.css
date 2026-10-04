@@ -51,14 +51,14 @@
     }
 
 
-    #sobremi .sobre-mi p {
+    #sobremi .sobre-mi p , .contenedor-proyectos p{
         width: auto !important;
         max-width: 90% !important;
         margin-right: auto !important;
         text-align: left !important;
     }
 
-    .sobre-mi p, .stack-intro > p > span, #cursos.sectionCert #certDescripcion{
+    .sobre-mi p, .stack-intro > p > span, #cursos.sectionCert #certDescripcion, .contenedor-proyectos p{
         font-size: 20px;
         line-height: 25px;
         margin: 6% 0;
