@@ -201,7 +201,7 @@
 
 
     #cursos.sectionCert .caption {
-        width: 90%;
+        width: 60%;
         min-height: 0;
         margin: 0.25rem auto 0;
         font-size: clamp(0.78rem, 3.2vw, 0.95rem);
@@ -1419,13 +1419,6 @@
         -webkit-user-drag: none;
     }
 
-    #cursos.sectionCert .caption {
-        width: 90%;
-        min-height: 2.8em;
-        margin: 0.25rem auto 0;
-        font-size: clamp(1.94rem, 1.35vw, 2.43rem);
-        text-align: center !important;
-    }
 }
 
 @media screen and (max-width: 768px) and (prefers-reduced-motion: no-preference) {
