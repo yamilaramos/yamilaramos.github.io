@@ -4,6 +4,14 @@
         display: none !important;
     }
 
+         .skill-item[data-tooltip]::before,
+    .skill-item[data-tooltip]::after,
+    .skill-item-2[data-tooltip]::before,
+    .skill-item-2[data-tooltip]::after {
+        display: none !important;
+        content: none !important;
+    }
+
      .fecha-desktop {
         display: none;
     }
