@@ -8,6 +8,7 @@
 
     .stack-copy h3 {
         font-size: clamp(2.1rem, 5.5vw, 2.6rem);
+        margin: 4%;
     }
 
     .skills-marquee {
@@ -1023,11 +1024,7 @@
         margin-bottom: 25px;
     }
 
-
-
-
     h3{
-        font-size: 28px;
         max-width: 95%;
     }
 
