@@ -1363,7 +1363,7 @@
 
     #cursos.sectionCert #certDescripcion {
         width: 90%;
-        margin: 8% auto;
+        margin: 6% auto;
         font-size: 18px;
         line-height: clamp(2.75rem, 1.8vw, 3.44rem);
     }
