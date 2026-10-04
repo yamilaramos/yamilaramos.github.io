@@ -136,8 +136,8 @@
 
 
     #cursos.sectionCert .logosCert img {
-        width: clamp(1.5rem, 4vh, 2rem);
-        height: clamp(1.5rem, 4vh, 2rem);
+        width: 4.5rem;
+        height: 4.5rem;
         object-fit: contain;
     }
 
@@ -1365,12 +1365,6 @@
         min-height: 0;
         margin: 0.25rem auto 0;
         gap: 0.8rem;
-    }
-
-    #cursos.sectionCert .logosCert img {
-        width: 3.8rem;
-        height: 3.8rem;
-        object-fit: contain;
     }
 
     #cursos.sectionCert .flechas {
