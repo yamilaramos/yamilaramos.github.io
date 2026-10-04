@@ -202,7 +202,7 @@
         width: 90%;
     }
 
-     p:not(.mensaje, .t-footer-final), .stack-intro p, #cursos.sectionCert #certDescripcion, .info-proyecto{
+     p:not(.mensaje, .t-footer-final, .texto-seccion), .stack-intro p, #cursos.sectionCert #certDescripcion, .info-proyecto{
         width: 90%;
         max-width: 90% !important;
         margin-left: auto !important;
@@ -971,11 +971,6 @@
     h3{
         max-width: 95%;
     }
-
-    h4{
-       font-size: 20px;
-       margin: 2%;
-    }
     
     .fecha-proyecto {
         display: flex;
@@ -993,7 +988,6 @@
     
     .fecha-proyecto h4 {
         margin: 0;
-        font-size: clamp(20px, 1.30vw, 25px);
         font-weight: 350;
         color: #5c5c5c;
     }
