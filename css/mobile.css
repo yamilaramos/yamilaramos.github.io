@@ -210,7 +210,7 @@
         width: 90%;
     }
 
-     p:not(.mensaje), .stack-intro p, #cursos.sectionCert #certDescripcion{
+     p:not(.mensaje, .t-footer-final), .stack-intro p, #cursos.sectionCert #certDescripcion{
         width: 90%;
         max-width: 90% !important;
         margin-left: auto !important;
@@ -268,17 +268,12 @@
         width: 100%;
     }
 
-
-
-
     .align-items-flex-start{
         align-items: flex-start;
     }
 
-
     .contenedor-proyectos{
         margin: 8% 0;
-        margin-left: 6%;
     }
 
     .m-left-seccion { margin-left: 6%; }
