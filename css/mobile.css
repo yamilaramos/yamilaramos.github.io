@@ -204,6 +204,9 @@
     margin-left: auto !important;
     margin-right: auto !important;
     text-align: left !important;
+    }
+
+    .contenedor-proyectos p, .texto-seccion{
     font-size: 20px;
     }
     
