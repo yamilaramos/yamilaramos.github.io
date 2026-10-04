@@ -1592,7 +1592,7 @@
     }
 
     #stack .stack-copy > h3.decor-line-2:nth-of-type(2)::before {
-        content: "En constante exploración";
+        content: "En constante exploración:";
         display: inline-block;
         font-size: clamp(2.1rem, 5.5vw, 2.6rem);
     }
