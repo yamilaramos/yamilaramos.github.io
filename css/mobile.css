@@ -92,6 +92,7 @@
         background-position: center center;
     }
 
+    .stack-intro h2 { margin: 0 auto; }
 
     #stack .stack-copy {
         flex: 0 0 90%;
@@ -104,10 +105,6 @@
     #cursos .contenedorCert {
         width: 100%;
     }
-
-
-
-
         /* Certificaciones: una pantalla y navegación por gesto táctil */
     #cursos.sectionCert {
         height: 100vh;
