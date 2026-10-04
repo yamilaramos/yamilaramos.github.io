@@ -50,14 +50,6 @@
         margin-bottom: 8%;
     }
 
-
-    #sobremi .sobre-mi p , .contenedor-proyectos p{
-        width: auto !important;
-        max-width: 90% !important;
-        margin-right: auto !important;
-        text-align: left !important;
-    }
-
     .sobre-mi p, .stack-intro > p > span, #cursos.sectionCert #certDescripcion, .contenedor-proyectos p{
         font-size: 20px;
         line-height: 25px;
@@ -210,7 +202,7 @@
         width: 90%;
     }
 
-     p:not(.mensaje, .t-footer-final), .stack-intro p, #cursos.sectionCert #certDescripcion{
+     p:not(.mensaje, .t-footer-final), .stack-intro p, #cursos.sectionCert #certDescripcion, .info-proyecto{
         width: 90%;
         max-width: 90% !important;
         margin-left: auto !important;
@@ -952,18 +944,15 @@
     color: black;
     }
 
-
     nav.active li{
     transform:translateY(0);
     opacity:1;
     }
 
-
     nav.active li:nth-child(1){transition-delay:0.1s;}
     nav.active li:nth-child(2){transition-delay:0.2s;}
     nav.active li:nth-child(3){transition-delay:0.3s;}
     nav.active li:nth-child(4){transition-delay:0.4s;}
-
 
     .m-seccion{
        margin-top: 8%;
@@ -974,7 +963,6 @@
         margin-left: 2px;
     }
 
-
     .btn-seccion, .btn-seccion-2{
         margin: 2%;
         margin-bottom: 25px;
@@ -984,22 +972,9 @@
         max-width: 95%;
     }
 
-
     h4{
        font-size: 20px;
        margin: 2%;
-    }
-    
-    .info-proyecto{
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        flex-wrap: wrap;
-    
-        width: fit-content;
-        border-radius: 14px;
-        backdrop-filter: blur(8px);
-        margin-bottom: 1.5%;
     }
     
     .fecha-proyecto {
