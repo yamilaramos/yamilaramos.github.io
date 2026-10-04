@@ -221,7 +221,7 @@
         width: 90%;
     }
 
-     p:not(.mensaje), .stack-intro p{
+     p:not(.mensaje), .stack-intro p, #cursos.sectionCert #certDescripcion{
         width: 90%;
         max-width: 90% !important;
         margin-left: auto !important;
