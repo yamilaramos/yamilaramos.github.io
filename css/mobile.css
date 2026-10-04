@@ -774,18 +774,14 @@
         margin-top: 8%;
     }
 
-
-    /* Proceso creativo: mostrar únicamente el contenido textual */
     #proceso {
         flex-direction: column;
         height: auto;
     }
-
-
+    
     #proceso .hero-pasos {
         display: none;
     }
-
 
     #proceso .contenedor-proceso {
         width: 100%;
@@ -855,7 +851,8 @@
     }
 
     .sectionSobremi{ padding: 15% 0 4% 0;}
-    .sectionStack, .sectionProceso{ padding: 15% 0;}
+    .sectionStack{ padding: 15% 0;}
+    .sectionProceso { display: none;}
 
     .sobre-mi h1{
         text-align: left;
@@ -1317,15 +1314,7 @@
     border-radius: 10px;
 }
 
-
-/* .align-items-center{
-    align-items: start;
-} */
-
-
 }
-
-
 
 
 /* Menu Hamburguesa */
@@ -1340,14 +1329,9 @@
     display: none;
 }
 
-
-
-
 .display-none{
     display: none;
 }
-
-
 
 
 }
@@ -1368,7 +1352,7 @@
         height: 100%;
         min-height: 0;
         margin: 0;
-        padding: 1.25rem 0;
+        padding: 15% 0;
         box-sizing: border-box;
     }
 
