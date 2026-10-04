@@ -292,26 +292,15 @@
         margin-left: 6%;
     }
 
-
     .m-left-seccion { margin-left: 6%; }
-
 
     .contenedor-proyectos h3{
         max-width: 90%;
     }
 
-
-    .contenedor-proyectos p{
-        margin-left: 4px;
-    }
-
-
-
-
     .contenedor-inicio{
         margin-top: 3%;
     }
-
 
     .contacto > div { margin-bottom: 3%; }
     
@@ -319,11 +308,9 @@
         display: none;
     }
 
-
     .botones-hero{
         margin-left: 0px;
     }
-
 
     header{
         height: 8vh;
@@ -331,7 +318,6 @@
         z-index: 10; 
         padding: 1% 0;
     }
-
 
     header.scrolled {
         height: calc(8vh - 0.5rem);
@@ -342,7 +328,6 @@
         width: 100%;
     }
 
-
     .fade-in-down{
         animation: none !important;
         transition: none !important;
@@ -352,11 +337,9 @@
         transform: none !important;
     }
 
-
     .display-none{
         display: inline;
     }
-
 
     .fade-modern-load {
     opacity: 1;
