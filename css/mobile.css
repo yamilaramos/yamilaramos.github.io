@@ -1469,6 +1469,8 @@
         touch-action: auto !important;
     }
 
+     .flechas{margin: auto;}
+
     .flecha-dinamica-proyectos { display: none }
 }
 
