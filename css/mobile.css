@@ -14,6 +14,8 @@
         width: 100%;
     }
 
+    .sectionStack .skills-marquee { zoom: 0;}
+
     .stack-hero-panel > .mockupStack {
         position: relative;
         top: auto;
