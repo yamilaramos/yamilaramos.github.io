@@ -1,5 +1,10 @@
 @media screen and (max-width:768px){
 
+    .sectionStack .skill-item-2 img, .sectionStack .skill-item img {
+        width: 4rem;
+        height: 4rem;
+    }
+
     .titulo-proceso .subrayado:not(:last-of-type){
         margin-right: 0.1em;
     }
