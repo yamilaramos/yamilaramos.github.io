@@ -106,8 +106,7 @@
     }
         /* Certificaciones: una pantalla y navegación por gesto táctil */
     #cursos.sectionCert {
-        height: 100vh;
-        height: 100dvh;
+        height: fit-content;
         min-height: 0;
         padding: 0;
         overflow: hidden;
@@ -116,7 +115,7 @@
 
     #cursos.sectionCert .contenedorCert > article {
         width: 100%;
-        height: 100%;
+        height: fit-content;
         min-height: 0;
         flex-direction: column;
         justify-content: space-between;
@@ -1302,14 +1301,6 @@
 
 /* Certificaciones: la sección ocupa el viewport; el carrusel usa el espacio restante. */
 @media screen and (max-width: 768px) {
-    #cursos.sectionCert {
-        height: 100vh;
-        height: 100dvh;
-        min-height: 0;
-        padding: 8% 0;
-        overflow: hidden;
-    }
-
     #cursos.sectionCert .contenedorCert {
         width: 100%;
         height: 100%;
@@ -1554,7 +1545,7 @@
         margin: 0 auto;
         position: relative;
         overflow: visible;
-        margin-top: 6%;
+        margin-top: 8%;
     }
 
     #cursos.sectionCert .flechas {
