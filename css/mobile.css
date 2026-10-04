@@ -1153,13 +1153,13 @@
         
         border: 2px solid black;
         border-radius: 25px;
-        padding: 6px 18px 8px 18px;
+        padding: 8px 18px;
         font-weight: 500;
         color: white;
         
         align-items: center;
         gap: 0px;
-        font-size: 17px;
+        font-size: 18px;
        
         margin-bottom: 18%;
     }
