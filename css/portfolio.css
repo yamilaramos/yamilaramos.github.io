@@ -7,7 +7,7 @@
     --gap: 4.5%;
     --ticker-duration: 45s;
 }
-
+.fecha-mobile { display: none}
 /* HERO CARRUSEL */
 
  html { scrollbar-gutter: stable; }
