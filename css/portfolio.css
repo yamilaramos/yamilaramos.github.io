@@ -11,7 +11,25 @@
 /* HERO CARRUSEL */
 
  html { scrollbar-gutter: stable; }
-.hero > .giro { position: relative; align-self: stretch; }
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero > .giro {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero > .contenedor-inicio,
+.hero > .social-gap {
+    position: relative;
+    z-index: 5;
+}
+
 .escenario { position: absolute; inset: 0; overflow: hidden; } 
  
 .foto {
