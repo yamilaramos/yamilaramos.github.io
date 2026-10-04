@@ -743,10 +743,10 @@
         content: "";
         position: absolute;
         left: 0;
-        bottom: -6px;
+        bottom: -10px;
     
         width: 20%;
-        height: 2px;
+        height: 3px;
     
         background: #EBA625;
     
@@ -1579,7 +1579,7 @@
 
 @media screen and (max-width: 768px) {
     #stack .stack-copy > h3.decor-line-2::after {
-        width: 5rem;
+        width: 3rem;
     }
 }
 
