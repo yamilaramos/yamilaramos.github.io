@@ -1,5 +1,9 @@
 @media screen and (max-width:768px){
 
+    .titulo-proceso .subrayado:not(:last-of-type){
+        margin-right: 0.1em;
+    }
+    
     .stack-copy {
         flex: none;
         width: 90%;
@@ -758,7 +762,6 @@
     }
 
     #stack.sectionStack {
-        height: 100vh;
         border-top: none;
         border-bottom: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid black;
     }
