@@ -60,9 +60,10 @@
 
     .sobre-mi p, .stack-intro > p > span, #cursos.sectionCert #certDescripcion{
         font-size: 18px;
-        margin: 6% 0;
         line-height: 25px;
     }
+
+     .sobre-mi p, .stack-intro > p > span {margin: 6% 0;}
 
     .timeline-mobile .card h3 {
         width: fit-content !important;
