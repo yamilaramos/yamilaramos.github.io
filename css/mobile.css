@@ -897,7 +897,8 @@
 
     
     .light-studio, .soplo-de-vida, .hydrangea, .ada, .materia{
-        padding: 0 5%;
+        padding: 10% 5%;
+        border-bottom: 2px solid black;
     }
 
 
@@ -1125,29 +1126,19 @@
     }
 
 
-
-
     .m-bottom{
         margin-bottom: 25px;
     }
 
-
-    .contenedor-light{
-        margin-top: 15%;
-    }
-
-
     .video-light, .video{
         background-color: #3b2a19;
     }
-
 
     .folleto{
         left: 28px;
         top: 46px;
         width: 46%;
     }
-
 
     .btn-seccion-mobile{
         width: fit-content;
@@ -1172,11 +1163,9 @@
         display: none;
     }
 
-
     footer{
         height: fit-content;
         padding: 2% 0px;
-        margin-top: 6%;
         border-radius: 0px;
     } 
     
@@ -1184,7 +1173,6 @@
         gap: 10px;
         margin-top: -2%;
     }
-
 
     .logos { /* sobremi */
     position: absolute;
