@@ -565,7 +565,7 @@ body {
     pointer-events: none;
 }
 
-.contenedor-inicio h2, .presentacion h1{
+.contenedor-inicio h2, .presentacion{
     font-size: clamp(calc(21.5 * var(--rem-unit)), 1.40vw, calc(26.9 * var(--rem-unit)));
     font-weight: 300;
     margin-left: 8%;
