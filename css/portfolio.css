@@ -526,19 +526,14 @@ body {
 }
 
 .presentacion{
-    font-size: clamp(calc(21.5 * var(--rem-unit)), 1.40vw, calc(26.9 * var(--rem-unit)));
-    font-weight: 300;
-    margin-left: 8%;
     padding: clamp(0.8rem, 0.74vw, 1.4rem)
              clamp(1.6rem, calc(calc(6.14 * var(--rem-unit)) + 0.72vw), 2.0rem)
              clamp(0.8rem, 0.74vw, 1.4rem)
              clamp(1.8rem, 1.42vw, 2.4rem);
-    text-shadow: clamp(0.2rem, calc(calc(0.77 * var(--rem-unit)) + 0.09vw), calc(2.5 * var(--rem-unit))) clamp(0.2rem, calc(calc(0.77 * var(--rem-unit)) + 0.09vw), calc(2.5 * var(--rem-unit))) clamp(0.3rem, calc(calc(1.15 * var(--rem-unit)) + 0.14vw), calc(3.75 * var(--rem-unit))) rgba(0, 0, 0, 0.652);
     background: rgba(0, 0, 0, 0.08);
     backdrop-filter: blur(clamp(1.4rem, calc(calc(5.37 * var(--rem-unit)) + 0.63vw), calc(17.5 * var(--rem-unit))));
     border: clamp(0.1rem, calc(calc(0.38 * var(--rem-unit)) + 0.05vw), calc(1.25 * var(--rem-unit))) solid rgb(255 255 255 / 0%);
     box-shadow: 0 clamp(0.8rem, calc(calc(3.07 * var(--rem-unit)) + 0.36vw), 1.0rem) clamp(3.2rem, calc(calc(12.27 * var(--rem-unit)) + 1.44vw), 4.0rem) rgba(0, 0, 0, 0.3), inset 0 clamp(0.1rem, calc(calc(0.38 * var(--rem-unit)) + 0.05vw), calc(1.25 * var(--rem-unit))) clamp(0.1rem, calc(calc(0.38 * var(--rem-unit)) + 0.05vw), calc(1.25 * var(--rem-unit))) rgba(255, 255, 255, 0.2);
-    color: rgba(255, 255, 255, 0.92);
     border-radius:  clamp(1.3rem, 1.4vw, 2.4rem)
                     clamp(2.5rem, calc(calc(9.59 * var(--rem-unit)) + 1.13vw), calc(31.25 * var(--rem-unit)))
                     clamp(2.5rem, calc(calc(9.59 * var(--rem-unit)) + 1.13vw), calc(31.25 * var(--rem-unit)))
@@ -559,6 +554,14 @@ body {
 
     opacity: 0.25;
     pointer-events: none;
+}
+
+.contenedor-inicio h1, .presentacion h1{
+    font-size: clamp(calc(21.5 * var(--rem-unit)), 1.40vw, calc(26.9 * var(--rem-unit)));
+    font-weight: 300;
+    margin-left: 8%;
+    text-shadow: clamp(0.2rem, calc(calc(0.77 * var(--rem-unit)) + 0.09vw), calc(2.5 * var(--rem-unit))) clamp(0.2rem, calc(calc(0.77 * var(--rem-unit)) + 0.09vw), calc(2.5 * var(--rem-unit))) clamp(0.3rem, calc(calc(1.15 * var(--rem-unit)) + 0.14vw), calc(3.75 * var(--rem-unit))) rgba(0, 0, 0, 0.652);
+    color: rgba(255, 255, 255, 0.92);
 }
 
 h4 {
