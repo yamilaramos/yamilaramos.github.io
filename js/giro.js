@@ -19,10 +19,10 @@
 
   // Las 4 posiciones (espejadas) como fracciones del escenario: cx, cy = centro · w, h = tamaño
   const SLOTS = [
-    { cx:1.07,  cy:0.44,  w:0.40, h:0.20 },  // 0 · pedacito asomando en el margen derecho
-    { cx:0.865, cy:0.245, w:0.40, h:0.47 },  // 1 · arriba, pegada al borde
-    { cx:0.535, cy:0.415, w:0.40, h:0.47 },  // 2 · medio, más a la izquierda
-    { cx:0.805, cy:0.74,  w:0.40, h:0.47 }   // 3 · abajo, grande y pegada al borde
+    { cx:1.07,  cy:0.44, w:0.40, h:0.20 },
+    { cx:0.865, cy:0.50, w:0.40, h:1.00 },
+    { cx:0.535, cy:0.50, w:0.40, h:1.00 },
+    { cx:0.805, cy:0.50, w:0.40, h:1.00 }
   ];
   const OFFSET  = 1;                          // foto 0 arriba, foto 1 medio, foto 2 abajo, foto 3 escondida
   const suave   = f => f * f * (3 - 2 * f);   // easing entre posiciones
