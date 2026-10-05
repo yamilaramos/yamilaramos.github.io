@@ -262,9 +262,11 @@ pointer-events: none;
 }
 .sectionCert .contenedorCert { background-color: var(--cream); border-top: 2px solid var(--black); border-bottom: 2px solid var(--black); }
 .sectionCert .contenedorCert > article {
-    padding: 0 5%;
+    padding-left: 5%;
+    padding-right: 5%;
     width: 100%;
     flex-shrink: 0;
+    overflow: hidden;
 }
 
 .sectionCert > article > .w-40 {
