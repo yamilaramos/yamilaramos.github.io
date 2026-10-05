@@ -1220,7 +1220,7 @@ header.scrolled .animacion-activa::after {
 .division{
     border-top: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid var(--black);
     border-bottom: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid var(--black);
-    background: var(--grad-yellow);
+    background: var(--black);
     color: var(--cream);
     width: 100%;
     overflow: hidden;
@@ -1228,6 +1228,41 @@ header.scrolled .animacion-activa::after {
 
 .division .track {
     animation: scroll var(--ticker-duration) linear infinite;
+}
+
+.division .mensaje {
+    gap: clamp(1.4rem, 1.5vw, 2.8rem);
+    padding: clamp(0.9rem, 0.85vw, 1.5rem) 0;
+    white-space: nowrap;
+}
+
+.division-word {
+    display: inline-block;
+    flex: 0 0 auto;
+    text-transform: uppercase;
+    font-size: clamp(5rem, 5.8vw, 9.6rem);
+    font-weight: 800;
+    line-height: 0.9;
+    letter-spacing: -0.045em;
+}
+
+.division-word--solid {
+    color: var(--cream);
+}
+
+.division-word--outline {
+    color: transparent;
+    -webkit-text-stroke: clamp(0.08rem, 0.08vw, 0.14rem) var(--cream);
+    text-stroke: clamp(0.08rem, 0.08vw, 0.14rem) var(--cream);
+}
+
+.division-star {
+    display: inline-block;
+    flex: 0 0 auto;
+    color: rgb(255 255 255 / 55%);
+    font-size: clamp(3rem, 3vw, 5rem);
+    line-height: 1;
+    transform: translateY(-0.08em);
 }
 
  .division-2{
