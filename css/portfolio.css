@@ -635,14 +635,10 @@ h4 {
 }
 
 .social-btn:hover{
-    fill: var(--yellow);
+    fill: var(--bright-yellow);
 }
 
-
-
 .cursor{ margin-top: clamp(-0.5rem, calc(calc(-1.92 * var(--rem-unit)) + -0.23vw), calc(-6.25 * var(--rem-unit))); }
-
-
 
 a, button, [data-cursor-hover] {
     cursor: none;
