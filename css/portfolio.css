@@ -521,6 +521,11 @@ body {
 
 
 .titulo{
+    text-transform: uppercase;
+    font-size: clamp(5rem, 5.8vw, 9.6rem);
+    font-weight: 800;
+    letter-spacing: -0.045em;
+    
     margin-left: 8%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.652);
     color: var(--white);
@@ -1223,7 +1228,6 @@ header.scrolled .animacion-activa::after {
     text-transform: uppercase;
     font-size: clamp(5rem, 5.8vw, 9.6rem);
     font-weight: 800;
-    line-height: 0.9;
     letter-spacing: -0.045em;
 }
 
