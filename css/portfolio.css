@@ -511,9 +511,12 @@ body {
 }
 
 .subrayado-titulo {
-    text-decoration: underline dotted var(--yellow);
-    text-decoration-thickness: auto;
-    text-underline-offset: 0.08em;
+    text-decoration: none;
+    padding-bottom: 0.12em;
+    background-image: radial-gradient(circle closest-side, var(--yellow) 0 50%, transparent 100%);
+    background-repeat: repeat-x;
+    background-position: left calc(100% - 0.02em);
+    background-size: 0.24em 0.20em;
 }
 
 .subrayado-2 {
