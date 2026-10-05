@@ -2,6 +2,7 @@
     --rem-unit: 0.1rem;
     --yellow: #EBA625;
     --bg-yellow: #fdf0e7;
+    --grad-yellow: linear-gradient(131deg,rgba(235, 166, 37, 1) 0%, rgba(255, 178, 36, 1) 50%, rgba(235, 166, 37, 1) 100%);
     --white: #fcf9f7;
     --black: #000000;
     --cream: #fefaf6;
@@ -9,6 +10,7 @@
     --ticker-duration: 45s;
 }
 .fecha-mobile { display: none}
+
 /* HERO CARRUSEL */
 
  html { scrollbar-gutter: stable; }
@@ -1179,8 +1181,8 @@ header.scrolled .animacion-activa::after {
 .division{
     border-top: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid var(--black);
     border-bottom: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid var(--black);
-    background: var(--white);
-    color: var(--black);
+    background: var(--grad-yellow)
+    color: var(--cream);
     width: 100%;
     overflow: hidden;
 }
@@ -1499,7 +1501,7 @@ header.scrolled .animacion-activa::after {
 
 
 .btn{
-    background: linear-gradient(131deg,rgba(235, 166, 37, 1) 0%, rgba(255, 178, 36, 1) 50%, rgba(235, 166, 37, 1) 100%);
+    background: var(--grad-yellow)
     border: clamp(0.1rem, calc(calc(0.38 * var(--rem-unit)) + 0.05vw), calc(1.25 * var(--rem-unit))) solid var(--yellow);
     border-radius: clamp(2.4rem, calc(calc(9.21 * var(--rem-unit)) + 1.08vw), 3.0rem);
     padding: clamp(1.0rem, calc(calc(3.84 * var(--rem-unit)) + 0.45vw), calc(12.5 * var(--rem-unit))) clamp(2.0rem, calc(calc(7.67 * var(--rem-unit)) + 0.9vw), 2.5rem);
