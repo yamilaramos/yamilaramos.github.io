@@ -1296,9 +1296,16 @@ header.scrolled .animacion-activa::after {
 }
 
 .division-word--outline {
-    color: transparent;
-    -webkit-text-stroke: 0.032em var(--cream);
-    text-stroke: 0.032em var(--cream);
+    color: var(--cream);
+    font-weight: 600;
+}
+
+@supports (-webkit-text-stroke: 1px white) {
+    .division-word--outline {
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 0.04em var(--cream);
+    }
 }
 
 .division-logo {
