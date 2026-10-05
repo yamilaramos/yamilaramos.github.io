@@ -11,6 +11,7 @@
 }
 .fecha-mobile { display: none;}
 .institucion {
+    color: var(--yellow);
     background-image: var(--grad-yellow);
     background-clip: text;
     -webkit-background-clip: text;
