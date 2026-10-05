@@ -586,7 +586,19 @@ body {
     color: rgba(255, 255, 255, 0.92);
 }
 
-.contenedor-inicio h2 { margin: clamp(2.0rem, 1.31vw, 2.5rem) 0 clamp(2.0rem, 1.31vw, 2.5rem) 8%; }
+
+.contenedor-inicio h2 { 
+    margin: clamp(2.0rem, 1.31vw, 2.5rem) 0 clamp(2.0rem, 1.31vw, 2.5rem) 8%; 
+    padding: clamp(0.8rem, 0.74vw, 1.4rem)
+             clamp(1.6rem, calc(calc(6.14 * var(--rem-unit)) + 0.72vw), 2.0rem)
+             clamp(0.8rem, 0.74vw, 1.4rem)
+             clamp(1.8rem, 1.42vw, 2.4rem);
+    background: rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(clamp(1.4rem, calc(calc(5.37 * var(--rem-unit)) + 0.63vw), calc(17.5 * var(--rem-unit))));
+    border: clamp(0.1rem, calc(calc(0.38 * var(--rem-unit)) + 0.05vw), calc(1.25 * var(--rem-unit))) solid rgb(255 255 255 / 0%);
+    box-shadow: 0 clamp(0.8rem, calc(calc(3.07 * var(--rem-unit)) + 0.36vw), 1.0rem) clamp(3.2rem, calc(calc(12.27 * var(--rem-unit)) + 1.44vw), 4.0rem) rgba(0, 0, 0, 0.3), inset 0 clamp(0.1rem, calc(calc(0.38 * var(--rem-unit)) + 0.05vw), calc(1.25 * var(--rem-unit))) clamp(0.1rem, calc(calc(0.38 * var(--rem-unit)) + 0.05vw), calc(1.25 * var(--rem-unit))) rgba(255, 255, 255, 0.2);
+    border-radius:  clamp(1.3rem, 1.4vw, 2.4rem);
+}
 
 
 h4 {
