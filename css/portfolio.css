@@ -1574,7 +1574,7 @@ header.scrolled .animacion-activa::after {
     background-repeat: repeat-x;
     background-position: left calc(100% - 0.02em);
     background-size: 0.24em 0.24em;
-    padding-bottom: 0.10em;
+    padding-bottom: 0.16em;
     font-weight: 600;
     transition: color 0.25s ease, text-decoration-color 0.25s ease;
 }
