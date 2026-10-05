@@ -22,18 +22,18 @@
     background-color: var(--yellow);
     vertical-align: middle;
     opacity: 1;
-    box-shadow: 0 0 0.24em var(--yellow);
-    animation: status-light-pulse 1.2s ease-in-out infinite;
+    box-shadow: 0 0 0.16em var(--yellow);
+    animation: status-light-pulse 1.8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 @keyframes status-light-pulse {
     0%, 100% {
         filter: brightness(1);
-        box-shadow: 0 0 0.24em var(--yellow);
+        box-shadow: 0 0 0.16em var(--yellow);
     }
     50% {
-        filter: brightness(1.25);
-        box-shadow: 0 0 0.65em 0.12em var(--yellow);
+        filter: brightness(1.08);
+        box-shadow: 0 0 0.34em 0.04em var(--yellow);
     }
 }
 
