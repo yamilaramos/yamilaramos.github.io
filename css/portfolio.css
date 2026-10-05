@@ -871,7 +871,8 @@ header.scrolled {
     opacity 0.24s ease-out;
     
     transform: scale(0.9);
-    top: clamp(1.2rem, 1.1vw, 2.1rem);
+    --header-pill-top: clamp(0.6rem, 0.6vw, 1rem);
+    top: var(--header-pill-top);
     height: calc(clamp(6.2rem, 4.55vw, 8.7rem) - 0.5rem);
     
     max-width: calc(100% - clamp(2.4rem, 2.2vw, 4.2rem));
@@ -890,7 +891,7 @@ header.scrolled {
 header.scrolled.scroll-hidden {
   opacity: 0;
   visibility: hidden;
-  translate: 0 calc(-100% - clamp(1.2rem, 1.1vw, 2.1rem));
+  translate: 0 calc(-100% - var(--header-pill-top));
   transition:
     translate 0.36s cubic-bezier(0.22, 1, 0.36, 1),
     opacity 0.24s ease-out,
@@ -909,7 +910,7 @@ header.scrolled.scroll-revealing {
 header.scrolled.scroll-initial-hidden {
   opacity: 0;
   visibility: hidden;
-  translate: 0 calc(-100% - clamp(1.2rem, 1.1vw, 2.1rem));
+  translate: 0 calc(-100% - var(--header-pill-top));
   transition: none;
 }
 
