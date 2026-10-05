@@ -1231,7 +1231,7 @@ header.scrolled .animacion-activa::after {
     margin-bottom: clamp(1.5rem, 1.23vw, 2.1rem);
 }
 
-.destacados h2{font-size: clamp(3.5rem, 2.28vw, calc(43.75 * var(--rem-unit)));}
+.areas h2, .destacados h2{font-size: clamp(3.5rem, 2.28vw, calc(43.75 * var(--rem-unit)));}
 
 .sobre-mi p, .t-cert p{
     font-size: clamp(calc(19.4 * var(--rem-unit)), 1.27vw, calc(24.3 * var(--rem-unit)));
