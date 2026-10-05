@@ -2200,7 +2200,7 @@ footer p{
     box-sizing: border-box;
     min-width: 11.2rem;
     padding: 0.8rem 2.08rem;
-    border: 0.18rem solid var(--black);
+    border: 0.12rem solid var(--black);
     border-radius: 2.56rem;
     background: var(--cream);
     color: var(--black);
