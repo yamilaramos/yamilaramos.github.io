@@ -601,7 +601,7 @@ body {
 
 
 .contenedorInicio h2 { 
-    margin: clamp(2.0rem, 1.31vw, 2.5rem) 0 clamp(2.0rem, 1.31vw, 2.5rem) 8%; 
+    margin: 10px 0 20px 8%;
     padding: clamp(0.8rem, 0.74vw, 1.4rem)
              clamp(1.6rem, calc(calc(6.14 * var(--rem-unit)) + 0.72vw), 2.0rem)
              clamp(0.8rem, 0.74vw, 1.4rem)
