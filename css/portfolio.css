@@ -521,7 +521,6 @@ body {
 
 
 .titulo{
-    text-transform: uppercase;
     font-size: clamp(5rem, 5.8vw, 9.6rem);
     font-weight: 800;
     letter-spacing: -0.045em;
