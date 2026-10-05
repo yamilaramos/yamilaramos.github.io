@@ -498,30 +498,18 @@ body {
 
 
 .flex-direction-column{ flex-direction: column; align-items: flex-start;}
-.subrayado,
-.subrayado-2 {
-    text-decoration: none;
-    padding-bottom: 0.12em;
-    background-repeat: repeat-x;
-    background-position: left calc(100% - 0.02em);
-    background-size: 0.20em 0.20em;
-}
-
 .subrayado {
-    background-image: radial-gradient(circle closest-side, var(--yellow) 0 50%, transparent 100%);
+    text-decoration: underline dotted var(--yellow);
 }
 
 .subrayado-titulo {
-    text-decoration: none;
-    padding-bottom: 0.12em;
-    background-image: radial-gradient(circle closest-side, var(--yellow) 0 50%, transparent 100%);
-    background-repeat: repeat-x;
-    background-position: left calc(100% - 0.02em);
-    background-size: 0.24em 0.20em;
+    text-decoration: underline dotted var(--yellow);
+    text-decoration-thickness: auto;
+    text-underline-offset: 0.08em;
 }
 
 .subrayado-2 {
-    background-image: radial-gradient(circle closest-side, var(--cream) 0 50%, transparent 100%);
+    text-decoration: underline dotted var(--cream);
 }
 .b-black { border-top: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid var(--black); }
 .border-top-black{ border-top: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid var(--black); } 
@@ -1609,19 +1597,15 @@ header.scrolled .animacion-activa::after {
     display: inline-flex;
     align-items: center;
     gap: clamp(0.4rem, calc(calc(1.53 * var(--rem-unit)) + 0.18vw), 0.5rem);
-    text-decoration: none;
-    background-image: radial-gradient(circle closest-side, var(--yellow) 0 50%, transparent 100%);
-    background-repeat: repeat-x;
-    background-position: left calc(100% - 0.02em);
-    background-size: 0.20em 0.20em;
-    padding-bottom: 0.12em;
+    text-decoration: underline dotted var(--yellow);
+    text-underline-offset: 0.08em;
     font-weight: 600;
     transition: color 0.25s ease, text-decoration-color 0.25s ease;
 }
 
 .outgoing-link:hover{
     color: var(--yellow);
-    text-decoration: none;
+    text-decoration: underline dotted var(--yellow);
     font-weight: 600;
 }
 
