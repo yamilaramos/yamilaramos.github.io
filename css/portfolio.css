@@ -1265,8 +1265,8 @@ header.scrolled .animacion-activa::after {
 
 .division-word--outline {
     color: transparent;
-    -webkit-text-stroke: clamp(0.08rem, 0.08vw, 0.14rem) var(--cream);
-    text-stroke: clamp(0.08rem, 0.08vw, 0.14rem) var(--cream);
+    -webkit-text-stroke: 0.032em var(--cream);
+    text-stroke: 0.032em var(--cream);
 }
 
 .division-logo {
