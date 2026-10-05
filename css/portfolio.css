@@ -1271,8 +1271,8 @@ header.scrolled .animacion-activa::after {
 .division-logo {
     display: block;
     flex: 0 0 auto;
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     object-fit: contain;
     opacity: 85%;
     line-height: 1;
