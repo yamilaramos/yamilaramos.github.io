@@ -1311,12 +1311,12 @@ header.scrolled .animacion-activa::after {
 .division-logo {
     display: block;
     flex: 0 0 auto;
+    align-self: center;
     width: 2rem;
     height: 2rem;
     object-fit: contain;
     opacity: 85%;
     line-height: 1;
-    transform: translateY(-0.08em);
 }
 
  .division-2{
