@@ -9,7 +9,8 @@
     --gap: 4.5%;
     --ticker-duration: 45s;
 }
-.fecha-mobile { display: none}
+.fecha-mobile { display: none;}
+.institucion { color: var(--grad-yellow);}
 
 /* HERO CARRUSEL */
 
