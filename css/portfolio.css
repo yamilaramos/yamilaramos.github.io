@@ -1253,12 +1253,16 @@ header.scrolled .animacion-activa::after {
     display: inline-block;
     flex: 0 0 auto;
     text-transform: uppercase;
-    font-size: clamp(5rem, 5.8vw, 9.6rem);
+    font-size: clamp(3.5rem, 2.28vw, calc(43.75 * var(--rem-unit)));
     font-weight: 800;
     letter-spacing: -0.045em;
 }
 
-.division-word img { opacity: 85%;}
+.division-word img {
+    opacity: 85%;
+    height: 3rem;
+    width: 3rem;
+}
 
 .division-word--solid {
     color: var(--cream);
