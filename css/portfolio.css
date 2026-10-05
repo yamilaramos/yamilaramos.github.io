@@ -1227,6 +1227,8 @@ header.scrolled .animacion-activa::after {
     letter-spacing: -0.045em;
 }
 
+.division-word img { opacity: 85%;}
+
 .division-word--solid {
     color: var(--cream);
 }
