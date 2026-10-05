@@ -257,7 +257,7 @@ pointer-events: none;
 
 .sectionCert{
     background-color: var(--yellow);
-    padding: 5%;
+    padding: 5% 0;
 }
 .sectionCert .contenedorCert { background-color: var(--cream); border-top: 2px solid var(--black); border-bottom: 2px solid var(--black); }
 .sectionCert .contenedorCert > article {
