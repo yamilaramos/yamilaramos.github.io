@@ -1246,11 +1246,10 @@ header.scrolled .animacion-activa::after {
     text-stroke: clamp(0.08rem, 0.08vw, 0.14rem) var(--cream);
 }
 
-.division-star {
+.division-logo {
     display: inline-block;
     flex: 0 0 auto;
     color: rgb(255 255 255 / 55%);
-    font-size: clamp(3rem, 3vw, 5rem);
     line-height: 1;
     transform: translateY(-0.08em);
 }
