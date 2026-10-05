@@ -524,11 +524,9 @@ body {
     font-size: clamp(5rem, 5.8vw, 9.6rem);
     font-weight: 800;
     letter-spacing: -0.045em;
-    
     margin-left: 8%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.652);
     color: var(--white);
-    margin-bottom: clamp(0.9rem, 0.8vw, 1.5rem);
     padding: clamp(0.8rem, 0.66vw, 1.2rem);
     border-radius:  clamp(1.3rem, 1.4vw, 2.4rem)
                     clamp(1.3rem, 1.4vw, 2.4rem)
