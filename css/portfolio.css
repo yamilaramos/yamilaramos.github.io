@@ -520,19 +520,10 @@ body {
 }
 
 
-
 .titulo{
     margin-left: 8%;
-    text-shadow: clamp(0.2rem, calc(calc(0.77 * var(--rem-unit)) + 0.09vw), calc(2.5 * var(--rem-unit))) clamp(0.2rem, calc(calc(0.77 * var(--rem-unit)) + 0.09vw), calc(2.5 * var(--rem-unit))) clamp(0.3rem, calc(calc(1.15 * var(--rem-unit)) + 0.14vw), calc(3.75 * var(--rem-unit))) rgba(0, 0, 0, 0.652);
-    background: rgba(0, 0, 0, 0.08);
-    backdrop-filter: blur(clamp(1.4rem, calc(calc(5.37 * var(--rem-unit)) + 0.63vw), calc(17.5 * var(--rem-unit))));
-    border: clamp(0.1rem, calc(calc(0.38 * var(--rem-unit)) + 0.05vw), calc(1.25 * var(--rem-unit))) solid rgb(255 255 255 / 0%);
-    box-shadow: 
-            0 clamp(0.8rem, calc(calc(3.07 * var(--rem-unit)) + 0.36vw), 1.0rem) clamp(3.2rem, calc(calc(12.27 * var(--rem-unit)) + 1.44vw), 4.0rem) rgba(0, 0, 0, 0.3),
-            inset 0 clamp(0.1rem, calc(calc(0.38 * var(--rem-unit)) + 0.05vw), calc(1.25 * var(--rem-unit))) clamp(0.1rem, calc(calc(0.38 * var(--rem-unit)) + 0.05vw), calc(1.25 * var(--rem-unit))) rgba(255, 255, 255, 0.2);
-
-    color: rgba(255, 255, 255, 0.92);
-
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.652);
+    color: var(--white);
     margin-bottom: clamp(0.9rem, 0.8vw, 1.5rem);
     padding: clamp(0.8rem, 0.66vw, 1.2rem);
     border-radius:  clamp(1.3rem, 1.4vw, 2.4rem)
@@ -586,7 +577,7 @@ body {
     font-size: clamp(calc(21.5 * var(--rem-unit)), 1.40vw, calc(26.9 * var(--rem-unit)));
     font-weight: 300;
     margin-left: 8%;
-    text-shadow: clamp(0.2rem, calc(calc(0.77 * var(--rem-unit)) + 0.09vw), calc(2.5 * var(--rem-unit))) clamp(0.2rem, calc(calc(0.77 * var(--rem-unit)) + 0.09vw), calc(2.5 * var(--rem-unit))) clamp(0.3rem, calc(calc(1.15 * var(--rem-unit)) + 0.14vw), calc(3.75 * var(--rem-unit))) rgba(0, 0, 0, 0.652);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.652);
     color: rgba(255, 255, 255, 0.92);
 }
 
@@ -1420,8 +1411,8 @@ header.scrolled .animacion-activa::after {
      font-size: clamp(calc(21.25 * var(--rem-unit)), 1.39vw, calc(26.6 * var(--rem-unit)));
      font-weight: 500;
      margin-bottom: clamp(1.0rem, 0.66vw, calc(12.5 * var(--rem-unit)));;
-     text-shadow: clamp(0.2rem, calc(calc(0.77 * var(--rem-unit)) + 0.09vw), calc(2.5 * var(--rem-unit))) clamp(0.2rem, calc(calc(0.77 * var(--rem-unit)) + 0.09vw), calc(2.5 * var(--rem-unit))) clamp(0.3rem, calc(calc(1.15 * var(--rem-unit)) + 0.14vw), calc(3.75 * var(--rem-unit))) rgba(0, 0, 0, 0.652);
-     width: fit-content;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.652);
+    width: fit-content;
 }
     
 .card p{
