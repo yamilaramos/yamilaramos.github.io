@@ -483,6 +483,12 @@ body {
     background-image: radial-gradient(circle, var(--yellow) 0 42%, transparent 45%);
 }
 
+.subrayado-titulo {
+    text-decoration: underline dotted var(--yellow);
+    text-decoration-thickness: auto;
+    text-underline-offset: 0.08em;
+}
+
 .subrayado-2 {
     background-image: radial-gradient(circle, var(--cream) 0 42%, transparent 45%);
 }
