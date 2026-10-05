@@ -21,18 +21,19 @@
     border-radius: 50%;
     background-color: var(--yellow);
     vertical-align: middle;
-    box-shadow: 0 0 0.42em var(--yellow);
+    opacity: 1;
+    box-shadow: 0 0 0.24em var(--yellow);
     animation: status-light-pulse 1.2s ease-in-out infinite;
 }
 
 @keyframes status-light-pulse {
     0%, 100% {
-        opacity: 1;
-        box-shadow: 0 0 0.42em var(--yellow);
+        filter: brightness(1);
+        box-shadow: 0 0 0.24em var(--yellow);
     }
     50% {
-        opacity: 0.45;
-        box-shadow: 0 0 0.12em var(--yellow);
+        filter: brightness(1.25);
+        box-shadow: 0 0 0.65em 0.12em var(--yellow);
     }
 }
 
