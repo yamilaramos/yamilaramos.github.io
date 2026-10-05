@@ -10,7 +10,13 @@
     --ticker-duration: 45s;
 }
 .fecha-mobile { display: none;}
-.institucion { color: var(--grad-yellow);}
+.institucion {
+    background-image: var(--grad-yellow);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
 
 /* HERO CARRUSEL */
 
