@@ -547,18 +547,34 @@ body {
 }
 
 .presentacion{
-    padding: clamp(0.8rem, 0.74vw, 1.4rem)
-             clamp(1.6rem, calc(calc(6.14 * var(--rem-unit)) + 0.72vw), 2.0rem)
-             clamp(0.8rem, 0.74vw, 1.4rem)
-             clamp(1.8rem, 1.42vw, 2.4rem);
+
+   padding: clamp(12.8px, 0.74vw, 22.4px)
+         clamp(25.6px, calc(9.82px + 0.72vw), 32px)
+         clamp(12.8px, 0.74vw, 22.4px)
+         clamp(28.8px, 1.42vw, 38.4px);
+
     background: rgba(0, 0, 0, 0.08);
-    backdrop-filter: blur(clamp(1.4rem, calc(calc(5.37 * var(--rem-unit)) + 0.63vw), calc(17.5 * var(--rem-unit))));
-    border: clamp(0.1rem, calc(calc(0.38 * var(--rem-unit)) + 0.05vw), calc(1.25 * var(--rem-unit))) solid rgb(255 255 255 / 0%);
-    box-shadow: 0 clamp(0.8rem, calc(calc(3.07 * var(--rem-unit)) + 0.36vw), 1.0rem) clamp(3.2rem, calc(calc(12.27 * var(--rem-unit)) + 1.44vw), 4.0rem) rgba(0, 0, 0, 0.3), inset 0 clamp(0.1rem, calc(calc(0.38 * var(--rem-unit)) + 0.05vw), calc(1.25 * var(--rem-unit))) clamp(0.1rem, calc(calc(0.38 * var(--rem-unit)) + 0.05vw), calc(1.25 * var(--rem-unit))) rgba(255, 255, 255, 0.2);
-    border-radius:  clamp(1.3rem, 1.4vw, 2.4rem)
-                    clamp(2.5rem, calc(calc(9.59 * var(--rem-unit)) + 1.13vw), calc(31.25 * var(--rem-unit)))
-                    clamp(2.5rem, calc(calc(9.59 * var(--rem-unit)) + 1.13vw), calc(31.25 * var(--rem-unit)))
-                    0;
+    
+    backdrop-filter: blur(
+        clamp(22.4px, calc(8.59px + 0.63vw), 28px)
+    );
+    
+    border: clamp(1.6px, calc(0.61px + 0.05vw), 2px)
+            solid rgb(255 255 255 / 0%);
+    
+    box-shadow:
+        0 clamp(12.8px, calc(4.91px + 0.36vw), 16px)
+          clamp(51.2px, calc(19.63px + 1.44vw), 64px)
+          rgba(0, 0, 0, 0.3),
+        inset 0 clamp(1.6px, calc(0.61px + 0.05vw), 2px)
+          clamp(1.6px, calc(0.61px + 0.05vw), 2px)
+          rgba(255, 255, 255, 0.2);
+    
+    border-radius:
+        clamp(20.8px, 1.4vw, 38.4px)
+        clamp(40px, calc(15.34px + 1.13vw), 50px)
+        clamp(40px, calc(15.34px + 1.13vw), 50px)
+        0;
 }
 
 .presentacion::before {
@@ -577,7 +593,7 @@ body {
     pointer-events: none;
 }
 
-.contenedor-inicio h2, .presentacion{
+.contenedorInicio h2, .presentacion{
     font-size: clamp(calc(21.5 * var(--rem-unit)), 1.40vw, calc(26.9 * var(--rem-unit)));
     font-weight: 300;
     margin-left: 8%;
@@ -586,7 +602,7 @@ body {
 }
 
 
-.contenedor-inicio h2 { 
+.contenedorInicio h2 { 
     margin: clamp(2.0rem, 1.31vw, 2.5rem) 0 clamp(2.0rem, 1.31vw, 2.5rem) 8%; 
     padding: clamp(0.8rem, 0.74vw, 1.4rem)
              clamp(1.6rem, calc(calc(6.14 * var(--rem-unit)) + 0.72vw), 2.0rem)
@@ -596,7 +612,7 @@ body {
     backdrop-filter: blur(clamp(1.4rem, calc(calc(5.37 * var(--rem-unit)) + 0.63vw), calc(17.5 * var(--rem-unit))));
     border: clamp(0.1rem, calc(calc(0.38 * var(--rem-unit)) + 0.05vw), calc(1.25 * var(--rem-unit))) solid rgb(255 255 255 / 0%);
     box-shadow: 0 clamp(0.8rem, calc(calc(3.07 * var(--rem-unit)) + 0.36vw), 1.0rem) clamp(3.2rem, calc(calc(12.27 * var(--rem-unit)) + 1.44vw), 4.0rem) rgba(0, 0, 0, 0.3), inset 0 clamp(0.1rem, calc(calc(0.38 * var(--rem-unit)) + 0.05vw), calc(1.25 * var(--rem-unit))) clamp(0.1rem, calc(calc(0.38 * var(--rem-unit)) + 0.05vw), calc(1.25 * var(--rem-unit))) rgba(255, 255, 255, 0.2);
-    border-radius:  clamp(1.3rem, 1.4vw, 2.4rem);
+    border-radius: clamp(40px, calc(15.34px + 1.13vw), 50px);
 }
 
 
