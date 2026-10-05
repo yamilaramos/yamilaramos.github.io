@@ -1178,10 +1178,16 @@ header.scrolled .animacion-activa::after {
 
 .division{
     border-top: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid var(--black);
-    border-bottom: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid var(--black);   
-    background: linear-gradient(131deg,rgba(235, 166, 37, 1) 0%, rgba(255, 178, 36, 1) 50%, rgba(235, 166, 37, 1) 100%);
-    color: var(--cream);
- }
+    border-bottom: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid var(--black);
+    background: var(--white);
+    color: var(--black);
+    width: 100%;
+    overflow: hidden;
+}
+
+.division .track {
+    animation: scroll var(--ticker-duration) linear infinite;
+}
 
  .division-2{
     border-bottom: clamp(0.2rem, 0.15vw, calc(2.5 * var(--rem-unit))) solid var(--black);
