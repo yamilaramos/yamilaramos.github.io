@@ -1242,25 +1242,22 @@ header.scrolled .animacion-activa::after {
 }
 
 .division .mensaje {
-    gap: clamp(1.4rem, 1.5vw, 2.8rem);
+    gap: 0.72em;
     padding: clamp(0.9rem, 0.85vw, 1.5rem) 0;
     white-space: nowrap;
+    font-size: clamp(3.5rem, 2.28vw, calc(43.75 * var(--rem-unit)));
 }
 
 .division-word {
     display: inline-block;
     flex: 0 0 auto;
     text-transform: uppercase;
-    font-size: clamp(3.5rem, 2.28vw, calc(43.75 * var(--rem-unit)));
+    font-size: inherit;
     font-weight: 800;
     letter-spacing: -0.045em;
 }
 
-.division-word img {
-    opacity: 85%;
-    height: 3rem;
-    width: 3rem;
-}
+
 
 .division-word--solid {
     color: var(--cream);
@@ -1273,9 +1270,12 @@ header.scrolled .animacion-activa::after {
 }
 
 .division-logo {
-    display: inline-block;
+    display: block;
     flex: 0 0 auto;
-    color: rgb(255 255 255 / 55%);
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+    opacity: 85%;
     line-height: 1;
     transform: translateY(-0.08em);
 }
