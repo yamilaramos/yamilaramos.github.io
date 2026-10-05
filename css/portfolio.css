@@ -584,7 +584,7 @@ body {
     color: rgba(255, 255, 255, 0.92);
 }
 
-.contenedor-inicio h2 { margin: clamp(2.0rem, 1.31vw, 2.5rem) 0; }
+.contenedor-inicio h2 { margin: clamp(2.0rem, 1.31vw, 2.5rem) 0 margin: clamp(2.0rem, 1.31vw, 2.5rem) 8%; }
 
 
 h4 {
