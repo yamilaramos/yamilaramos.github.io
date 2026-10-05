@@ -1210,8 +1210,7 @@ header.scrolled .animacion-activa::after {
 
 .mensaje {
   display: flex;
-  align-items: center;    
-  font-size: clamp(calc(17.5 * var(--rem-unit)), 1.14vw, calc(21.9 * var(--rem-unit)));
+  align-items: center;   
   padding: clamp(0.6rem, 0.55vw, calc(7.5 * var(--rem-unit))) 0.0rem;
 }
 
