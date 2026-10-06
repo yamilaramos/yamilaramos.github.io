@@ -23,16 +23,20 @@
     vertical-align: middle;
     opacity: 1;
     box-shadow: 0 0 0.12em var(--yellow);
-    animation: status-light-pulse 2.4s ease-in-out infinite;
+    animation: status-light-pulse 2s linear infinite;
 }
 
 @keyframes status-light-pulse {
-    0%, 100% {
-        box-shadow: 0 0 0.12em var(--yellow);
-    }
-    50% {
-        box-shadow: 0 0 0.24em 0.02em var(--yellow);
-    }
+    0%, 100% { box-shadow: 0 0 0.12em var(--yellow); }
+    12.5% { box-shadow: 0 0 0.14em var(--yellow); }
+    25% { box-shadow: 0 0 0.18em var(--yellow); }
+    37.5% { box-shadow: 0 0 0.22em var(--yellow); }
+    45% { box-shadow: 0 0 0.235em var(--yellow); }
+    50% { box-shadow: 0 0 0.24em var(--yellow); }
+    55% { box-shadow: 0 0 0.235em var(--yellow); }
+    62.5% { box-shadow: 0 0 0.22em var(--yellow); }
+    75% { box-shadow: 0 0 0.18em var(--yellow); }
+    87.5% { box-shadow: 0 0 0.14em var(--yellow); }
 }
 
 @media (prefers-reduced-motion: reduce) {
