@@ -1275,21 +1275,8 @@ header.scrolled .animacion-activa::after {
     display: inline-block;
     flex: 0 0 auto;
     font-size: inherit;
-    font-weight: 800;
     letter-spacing: -0.045em;
-}
-
-
-
-.division-word--solid {
     color: var(--cream);
-}
-
-.division-word--outline {
-    color: var(--cream);
-    -webkit-text-fill-color: var(--cream);
-    -webkit-text-stroke: 0;
-    font-weight: 800;
 }
 
 .division-logo {
@@ -1299,7 +1286,7 @@ header.scrolled .animacion-activa::after {
     width: 2rem;
     height: 2rem;
     object-fit: contain;
-    opacity: 85%;
+    opacity: 75%;
     line-height: 1;
 }
 
