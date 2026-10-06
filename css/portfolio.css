@@ -1273,7 +1273,6 @@ header.scrolled .animacion-activa::after {
 .division-word {
     display: inline-block;
     flex: 0 0 auto;
-    text-transform: uppercase;
     font-size: inherit;
     font-weight: 800;
     letter-spacing: -0.045em;
@@ -1287,15 +1286,9 @@ header.scrolled .animacion-activa::after {
 
 .division-word--outline {
     color: var(--cream);
-    font-weight: 600;
-}
-
-@supports (-webkit-text-stroke: 1px white) {
-    .division-word--outline {
-        color: transparent;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: 0.04em var(--cream);
-    }
+    -webkit-text-fill-color: var(--cream);
+    -webkit-text-stroke: 0;
+    font-weight: 800;
 }
 
 .division-logo {
