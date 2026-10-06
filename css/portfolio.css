@@ -2551,6 +2551,10 @@ body:has(.mk-divider:hover, .mk-handle:hover, .mk-compare.is-dragging) #cursor {
     display: none !important;
 }
 
+html:has(.mapa:hover) #cursor {
+    display: none !important;
+}
+
 @media (prefers-reduced-motion: reduce) {
     .mk-handle,
     .mk-divider::before,
