@@ -961,6 +961,7 @@ header.scrolled > article {
   }
 }
 
+header.scrolled .header-brand,
 header.scrolled .header-cv,
 header.scrolled .header-cv-mobile {
     display: none;
