@@ -62,9 +62,9 @@
 }
  
 /* Colores de relleno por si todavía no están las fotos */
-.foto:nth-child(1) { background: linear-gradient(135deg, #c8553d, #f2a65a); }
+.foto:nth-child(1) { background: var(--cream); }
 .foto:nth-child(2) { background: linear-gradient(135deg, #4f6f3a, #a3b86c); }
-.foto:nth-child(3) { background: linear-gradient(135deg, #d98e73, #f0d9b5); }
+.foto:nth-child(3) { background: var(--cream); }
 .foto:nth-child(4) { background: linear-gradient(135deg, #2f4a2a, #7a9a4b); }
  
 /* Grano*/
