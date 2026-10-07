@@ -546,9 +546,8 @@ body {
     margin-left: 8%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.652);
     padding: clamp(8px, 0.66vw, 12px);
-    margin-bottom: 8px;
-
 }
+
 
 .b-left{
     border-left: clamp(3px, 0.20vw, calc(3.75 * var(--px-unit))) solid var(--yellow);
@@ -558,6 +557,11 @@ body {
         clamp(4px, 0.26vw, 5px)
         clamp(2px, 0.13vw, calc(2.5 * var(--px-unit)));
     padding-left: clamp(10px, 0.66vw, calc(12.5 * var(--px-unit)));
+}
+
+.flechaInicio{
+    width: 15px;
+    height: 15px;
 }
 
 .presentacion{
@@ -619,7 +623,6 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.652);
     color: rgba(255, 255, 255, 0.92);
 }
-
 
 .contenedorInicio h2 { 
     font-size: 21px; 
