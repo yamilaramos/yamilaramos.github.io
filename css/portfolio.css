@@ -589,6 +589,7 @@ body {
         clamp(2.5rem, calc(9.59 * var(--rem-unit) + 1.13vw), 3.125rem)
         clamp(2.5rem, calc(9.59 * var(--rem-unit) + 1.13vw), 3.125rem)
         0;
+     margin-left: 8%;
 }
 
 .presentacion::before {
@@ -610,7 +611,6 @@ body {
 .contenedorInicio h2, .presentacion h1{
     font-size: clamp(calc(21.5 * var(--rem-unit)), 1.40vw, calc(26.9 * var(--rem-unit)));
     font-weight: 300;
-    margin-left: 8%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.652);
     color: rgba(255, 255, 255, 0.92);
 }
