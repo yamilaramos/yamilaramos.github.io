@@ -52,7 +52,7 @@
   position: absolute; left: 0; top: 0;
   overflow: hidden;
   background-size: cover; background-position: center;
-  border-radius: clamp(40px, calc(calc(15.34 * 1px) + 1.81vw), 50px) clamp(15px, calc(calc(5.75 * 1px) + 0.68vw), calc(18.75 * 1px)) clamp(40px, calc(calc(15.34 * 1px) + 1.81vw), 50px) clamp(15px, calc(calc(5.75 * 1px) + 0.68vw), calc(18.75 * 1px));
+  border-radius: clamp(40px, calc(15.34px + 1.81vw), 50px) clamp(15px, calc(5.75px + 0.68vw), 18.75px) clamp(40px, calc(15.34px + 1.81vw), 50px) clamp(15px, calc(5.75px + 0.68vw), 18.75px);
   will-change: transform;
 }
 .foto img {
@@ -178,7 +178,7 @@ button:hover { color: var(--black); transition: ease;}
     width: clamp(200px, 22vw, 310px);
     height: 100%;
     border-radius: 25px;
-    border: solid clamp(2px, 0.15vw, calc(2.5 * 1px)) var(--black);
+    border: solid clamp(2px, 0.15vw, 2.5px) var(--black);
     overflow: hidden;
     cursor: pointer;
 
@@ -309,7 +309,7 @@ pointer-events: none;
   color: var(--black);
   text-align: center;
   margin-top: clamp(18px, 2vw, 30px);
-  font-size: clamp(calc(19.4 * 1px), 1.35vw, calc(24.3 * 1px));
+  font-size: clamp(19.4px, 1.35vw, 24.3px);
   font-weight: 600;
   min-height: 2.8em;
 }
@@ -331,7 +331,7 @@ pointer-events: none;
 
 
 .texto {
-    padding: clamp(30px, 1.95vw, calc(37.5 * 1px));
+    padding: clamp(30px, 1.95vw, 37.5px);
 }
 
 .hero-pasos {
@@ -406,12 +406,12 @@ pointer-events: none;
 }
 
 .proceso h3 { 
-    font-size: clamp(calc(22.5 * 1px), 1.47vw, calc(28.125 * 1px));
+    font-size: clamp(22.5px, 1.47vw, 28.125px);
     margin: 1.8% 0 0.9% 0;
 }
 
 .proceso p {
-    font-size: clamp(calc(19.4 * 1px), 1.27vw, calc(24.3 * 1px));
+    font-size: clamp(19.4px, 1.27vw, 24.3px);
 }
 
 .proceso::before {
@@ -432,7 +432,7 @@ pointer-events: none;
         rgba(0, 0, 0, 0.20) 90%,
         transparent 100%
     );
-    border-radius: clamp(10px, 0.65vw, calc(12.5 * 1px));
+    border-radius: clamp(10px, 0.65vw, 12.5px);
     transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -473,7 +473,7 @@ html, body {
 }
 strong { font-weight: 600; }
 body {
-    font-size: clamp(calc(12.5 * 1px), calc(calc(4.79 * 1px) + 0.56vw), calc(15.62 * 1px));
+    font-size: clamp(12.5px, calc(4.79px + 0.56vw), 15.62px);
     background-color: var(--cream);
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
@@ -512,8 +512,8 @@ body {
 .subrayado-2 {
     text-decoration: underline dotted var(--cream);
 }
-.b-black { border-top: clamp(2px, 0.15vw, calc(2.5 * 1px)) solid var(--black); }
-.border-top-black{ border-top: clamp(2px, 0.15vw, calc(2.5 * 1px)) solid var(--black); } 
+.b-black { border-top: clamp(2px, 0.15vw, 2.5px) solid var(--black); }
+.border-top-black{ border-top: clamp(2px, 0.15vw, 2.5px) solid var(--black); } 
 .gap { gap: 4.5%; }
 
 .m-top-logo { margin-top: 1.5%; }
@@ -521,12 +521,12 @@ body {
 .proyLogos{ margin: 8px 0; gap: 8px;}
 
 
-.m-right { margin-right: clamp(2px, calc(calc(0.77 * 1px) + 0.09vw), calc(2.5 * 1px)); }
+.m-right { margin-right: clamp(2px, calc(0.77px + 0.09vw), 2.5px); }
 .b-radius { border-radius: 5px; }
-.t-padding{ padding-top: clamp(2px, calc(calc(0.77 * 1px) + 0.09vw), calc(2.5 * 1px)); }
+.t-padding{ padding-top: clamp(2px, calc(0.77px + 0.09vw), 2.5px); }
 
 .contenedor{
-    border: clamp(2px, 0.15vw, calc(2.5 * 1px)) solid var(--black);
+    border: clamp(2px, 0.15vw, 2.5px) solid var(--black);
     margin: clamp(12px, 1.1vw, 21px)
             clamp(12px, 1.1vw, 21px)
             clamp(5px, 0.4vw, 8px)
@@ -549,13 +549,13 @@ body {
 
 
 .b-left{
-    border-left: clamp(3px, 0.20vw, calc(3.75 * 1px)) solid var(--yellow);
+    border-left: clamp(3px, 0.20vw, 3.75px) solid var(--yellow);
     border-radius: 
-        clamp(2px, 0.13vw, calc(2.5 * 1px))
+        clamp(2px, 0.13vw, 2.5px)
         clamp(4px, 0.26vw, 5px)
         clamp(4px, 0.26vw, 5px)
-        clamp(2px, 0.13vw, calc(2.5 * 1px));
-    padding-left: clamp(10px, 0.66vw, calc(12.5 * 1px));
+        clamp(2px, 0.13vw, 2.5px);
+    padding-left: clamp(10px, 0.66vw, 12.5px);
 }
 
 .flechaInicio{
@@ -617,7 +617,7 @@ body {
 }
 
 .contenedorInicio h2, .presentacion h1{
-    font-size: clamp(calc(21.5 * 1px), 1.40vw, calc(26.9 * 1px));
+    font-size: clamp(21.5px, 1.40vw, 26.9px);
     font-weight: 300;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.652);
     color: rgba(255, 255, 255, 0.92);
@@ -627,26 +627,26 @@ body {
     font-size: 21px; 
     margin: 10px 0 20px 8%;
     padding: clamp(8px, 0.74vw, 14px)
-             clamp(16px, calc(calc(6.14 * 1px) + 0.72vw), 20px)
+             clamp(16px, calc(6.14px + 0.72vw), 20px)
              clamp(8px, 0.74vw, 14px)
              clamp(18px, 1.42vw, 24px);
     background: rgba(0, 0, 0, 0.08);
-    backdrop-filter: blur(clamp(14px, calc(calc(5.37 * 1px) + 0.63vw), calc(17.5 * 1px)));
-    border: clamp(1px, calc(calc(0.38 * 1px) + 0.05vw), calc(1.25 * 1px)) solid rgb(255 255 255 / 0%);
-    box-shadow: 0 clamp(8px, calc(calc(3.07 * 1px) + 0.36vw), 10px) clamp(32px, calc(calc(12.27 * 1px) + 1.44vw), 40px) rgba(0, 0, 0, 0.3), inset 0 clamp(1px, calc(calc(0.38 * 1px) + 0.05vw), calc(1.25 * 1px)) clamp(1px, calc(calc(0.38 * 1px) + 0.05vw), calc(1.25 * 1px)) rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(clamp(14px, calc(5.37px + 0.63vw), 17.5px));
+    border: clamp(1px, calc(0.38px + 0.05vw), 1.25px) solid rgb(255 255 255 / 0%);
+    box-shadow: 0 clamp(8px, calc(3.07px + 0.36vw), 10px) clamp(32px, calc(12.27px + 1.44vw), 40px) rgba(0, 0, 0, 0.3), inset 0 clamp(1px, calc(0.38px + 0.05vw), 1.25px) clamp(1px, calc(0.38px + 0.05vw), 1.25px) rgba(255, 255, 255, 0.2);
     border-radius: clamp(40px, calc(15.34px + 1.13vw), 50px);
 }
 
 
 h4 {
-    font-size: clamp(calc(22.5 * 1px), 1.47vw, calc(28.125 * 1px));
+    font-size: clamp(22.5px, 1.47vw, 28.125px);
     color: grey;
     font-weight: 300;
-    margin-bottom: clamp(14px, calc(calc(5.37 * 1px) + 0.63vw), calc(17.5 * 1px));
+    margin-bottom: clamp(14px, calc(5.37px + 0.63vw), 17.5px);
 }
 
 .contenedor-mockup{
-    margin-bottom: clamp(8px, calc(calc(3.07 * 1px) + 0.36vw), 10px);
+    margin-bottom: clamp(8px, calc(3.07px + 0.36vw), 10px);
 }
 
 .contenedor-mockup img{
@@ -654,9 +654,9 @@ h4 {
 }
 
 .social-gap {
-    gap: clamp(12px, calc(calc(4.6 * 1px) + 0.54vw), 15px);
+    gap: clamp(12px, calc(4.6px + 0.54vw), 15px);
     position: absolute;
-    bottom: clamp(80px, calc(calc(30.69 * 1px) + 3.61vw), 100px);
+    bottom: clamp(80px, calc(30.69px + 3.61vw), 100px);
     right: 5%;
 }
 
@@ -665,25 +665,25 @@ h4 {
     fill: white;
     stroke: currentColor;
     transition: fill 0.3s ease;
-    width: clamp(48px, calc(calc(18.41 * 1px) + 2.17vw), 60px);
-    height: clamp(48px, calc(calc(18.41 * 1px) + 2.17vw), 60px);
-    padding: clamp(9px, calc(calc(3.45 * 1px) + 0.41vw), calc(11.25 * 1px));
+    width: clamp(48px, calc(18.41px + 2.17vw), 60px);
+    height: clamp(48px, calc(18.41px + 2.17vw), 60px);
+    padding: clamp(9px, calc(3.45px + 0.41vw), 11.25px);
     border-radius: 50%;
 
-    border: clamp(1px, 0.07vw, calc(1.25 * 1px)) solid rgb(255 255 255 / 30%);
+    border: clamp(1px, 0.07vw, 1.25px) solid rgb(255 255 255 / 30%);
     background: rgba(0, 0, 0, 0.08);
-    backdrop-filter: blur(clamp(14px, calc(calc(5.37 * 1px) + 0.63vw), calc(17.5 * 1px)));
+    backdrop-filter: blur(clamp(14px, calc(5.37px + 0.63vw), 17.5px));
 
     box-shadow:
-        0 clamp(8px, calc(calc(3.07 * 1px) + 0.36vw), 10px) clamp(32px, calc(calc(12.27 * 1px) + 1.44vw), 40px) rgba(0, 0, 0, 0.3),
-        inset 0 clamp(1px, calc(calc(0.38 * 1px) + 0.05vw), calc(1.25 * 1px)) clamp(1px, calc(calc(0.38 * 1px) + 0.05vw), calc(1.25 * 1px)) rgba(255, 255, 255, 0.2);
+        0 clamp(8px, calc(3.07px + 0.36vw), 10px) clamp(32px, calc(12.27px + 1.44vw), 40px) rgba(0, 0, 0, 0.3),
+        inset 0 clamp(1px, calc(0.38px + 0.05vw), 1.25px) clamp(1px, calc(0.38px + 0.05vw), 1.25px) rgba(255, 255, 255, 0.2);
 }
 
 .social-btn:hover{
     fill: var(--bright-yellow);
 }
 
-.cursor{ margin-top: clamp(-5px, calc(calc(-1.92 * 1px) + -0.23vw), calc(-6.25 * 1px)); }
+.cursor{ margin-top: clamp(-5px, calc(-1.92px + -0.23vw), -6.25px); }
 
 a, button, [data-cursor-hover] {
     cursor: none;
@@ -694,11 +694,11 @@ a, button, [data-cursor-hover] {
     top: 0;
     left: 0;
 
-    width: clamp(16px, calc(calc(3.78 * 1px) + 0.895vw), 20px);
-    height: clamp(16px, calc(calc(3.78 * 1px) + 0.895vw), 20px);
+    width: clamp(16px, calc(3.78px + 0.895vw), 20px);
+    height: clamp(16px, calc(3.78px + 0.895vw), 20px);
 
     background: #00000090;
-    border: clamp(3px, calc(calc(0.71 * 1px) + 0.163vw), calc(3.75 * 1px)) solid #00000025;
+    border: clamp(3px, calc(0.71px + 0.163vw), 3.75px) solid #00000025;
     border-radius: 50%;
     pointer-events: none;
     z-index: 9999;
@@ -715,12 +715,12 @@ a, button, [data-cursor-hover] {
 
 #cursor.is-link {
     background: #00000090;
-    border: clamp(3px, calc(calc(0.71 * 1px) + 0.163vw), calc(3.75 * 1px)) solid #00000025;
+    border: clamp(3px, calc(0.71px + 0.163vw), 3.75px) solid #00000025;
 }
 
 #cursor.in-header {
     background: #00000090;
-    border: clamp(3px, calc(calc(0.71 * 1px) + 0.163vw), calc(3.75 * 1px)) solid #00000025;
+    border: clamp(3px, calc(0.71px + 0.163vw), 3.75px) solid #00000025;
 }
 
 
@@ -732,7 +732,7 @@ a, button, [data-cursor-hover] {
 
 header {
     background-color: var(--cream);
-    border-bottom: clamp(2px, 0.15vw, calc(2.5 * 1px)) solid var(--black);
+    border-bottom: clamp(2px, 0.15vw, 2.5px) solid var(--black);
     border-radius: clamp(18px, 1.5vw, 29px)
                    clamp(18px, 1.5vw, 29px)
                     0 0;
@@ -769,7 +769,7 @@ header {
     
     header .logo-portafolio {
         display: block;
-        padding-top: clamp(2px, calc(calc(0.77 * 1px) + 0.09vw), calc(2.5 * 1px));
+        padding-top: clamp(2px, calc(0.77px + 0.09vw), 2.5px);
     }
     
     header .logo-portafolio img {
@@ -799,7 +799,7 @@ header {
     }
     
     header nav a {
-        font-size: clamp(calc(21.5 * 1px), 1.40vw, calc(26.9 * 1px));
+        font-size: clamp(21.5px, 1.40vw, 26.9px);
         white-space: nowrap;
     }
     
@@ -811,7 +811,7 @@ header {
         rgba(255,178,36,1) 50%,
         rgba(235,166,37,1) 100%);
 
-    border: clamp(1px, 0.07vw, calc(1.25 * 1px)) solid var(--yellow);
+    border: clamp(1px, 0.07vw, 1.25px) solid var(--yellow);
     border-radius: clamp(28px, 1.84vw, 35px);
 
     padding:
@@ -983,34 +983,34 @@ header.scrolled .header-cv-mobile {
 .contenedor-proyectos{ margin-left: 5%; }
 
 .contenedor-proyectos h3{
-    font-size: clamp(35px, 2.28vw, calc(43.75 * 1px));
-    margin-bottom: clamp(4px, calc(calc(1.53 * 1px) + 0.18vw), 5px);
+    font-size: clamp(35px, 2.28vw, 43.75px);
+    margin-bottom: clamp(4px, calc(1.53px + 0.18vw), 5px);
     max-width: 80%;
 }
 
 .contenedor-proyectos p{
-    font-size: clamp(calc(19.4 * 1px), 1.27vw, calc(24.3 * 1px));
+    font-size: clamp(19.4px, 1.27vw, 24.3px);
 
-    line-height: clamp(calc(26.25 * 1px), 1.71vw, calc(32.8125 * 1px));
-    margin-bottom: clamp(14px, calc(calc(5.37 * 1px) + 0.63vw), calc(17.5 * 1px));
+    line-height: clamp(26.25px, 1.71vw, 32.8125px);
+    margin-bottom: clamp(14px, calc(5.37px + 0.63vw), 17.5px);
     max-width: 83%;    
 }
 
 .texto-seccion {
     font-size: clamp(20px, 1.31vw, 25px);
     font-weight: 500;
-    margin-bottom: clamp(14px, 0.92vw, calc(17.5 * 1px));
+    margin-bottom: clamp(14px, 0.92vw, 17.5px);
 }
 
 .b-calendario {
     background-color: var(--bg-yellow);
     border-radius: 50%;
-    margin-bottom: clamp(2px, 0.13vw, calc(2.5 * 1px));
+    margin-bottom: clamp(2px, 0.13vw, 2.5px);
 }
 
 .calendario {
-    width: clamp(38px, 2.49vw, calc(47.5 * 1px));
-    height: clamp(38px, 2.49vw, calc(47.5 * 1px));
+    width: clamp(38px, 2.49vw, 47.5px);
+    height: clamp(38px, 2.49vw, 47.5px);
     padding: clamp(8px, 0.535vw, 10px);
 }
 
@@ -1028,7 +1028,7 @@ header.scrolled .header-cv-mobile {
 
     padding: clamp(12px, 0.79vw, 15px) 0;
 
-    border-radius: clamp(14px, 0.92vw, calc(17.5 * 1px));
+    border-radius: clamp(14px, 0.92vw, 17.5px);
 }
 
 .fecha-proyecto {
@@ -1043,9 +1043,9 @@ header.scrolled .header-cv-mobile {
     display: flex;
     align-items: center;
 
-    gap: clamp(10px, 0.66vw, calc(12.5 * 1px));
+    gap: clamp(10px, 0.66vw, 12.5px);
 
-    padding-left: clamp(14px, 0.92vw, calc(17.5 * 1px));
+    padding-left: clamp(14px, 0.92vw, 17.5px);
 
     position: relative;
 }
@@ -1053,7 +1053,7 @@ header.scrolled .header-cv-mobile {
 .categoria-proyecto h4 {
     margin: 0;
 
-    font-size: clamp(calc(19.375 * 1px), 1.27vw, calc(24.2 * 1px));
+    font-size: clamp(19.375px, 1.27vw, 24.2px);
 
     font-weight: 500;
     color: var(--yellow);
@@ -1061,16 +1061,16 @@ header.scrolled .header-cv-mobile {
     background-color: var(--bg-yellow);
 
     padding:
-        clamp(6px, 0.39vw, calc(7.5 * 1px))
-        clamp(18px, 1.18vw, calc(22.5 * 1px));
+        clamp(6px, 0.39vw, 7.5px)
+        clamp(18px, 1.18vw, 22.5px);
 
-    border-radius: clamp(999px, calc(calc(383.19 * 1px) + 45.08vw), calc(1248.75 * 1px));
+    border-radius: clamp(999px, calc(383.19px + 45.08vw), 1248.75px);
 }
 
 .categoria-proyecto-2 h4 {
     margin: 0;
 
-    font-size: clamp(calc(19.375 * 1px), 1.27vw, calc(24.2 * 1px));
+    font-size: clamp(19.375px, 1.27vw, 24.2px);
 
     font-weight: 500;
     color: #2c4e33;
@@ -1078,10 +1078,10 @@ header.scrolled .header-cv-mobile {
     background-color: #f1f2ec;
 
     padding:
-        clamp(6px, 0.39vw, calc(7.5 * 1px))
-        clamp(18px, 1.18vw, calc(22.5 * 1px));
+        clamp(6px, 0.39vw, 7.5px)
+        clamp(18px, 1.18vw, 22.5px);
 
-    border-radius: clamp(999px, calc(calc(383.19 * 1px) + 45.08vw), calc(1248.75 * 1px));
+    border-radius: clamp(999px, calc(383.19px + 45.08vw), 1248.75px);
 }
 
 .categoria-proyecto::before,
@@ -1094,7 +1094,7 @@ header.scrolled .header-cv-mobile {
 
     transform: translateY(-50%);
 
-    width: clamp(1px, 0.07vw, calc(1.25 * 1px));
+    width: clamp(1px, 0.07vw, 1.25px);
     height: 60%;
 
     background: #80808099;
@@ -1102,9 +1102,9 @@ header.scrolled .header-cv-mobile {
 
 
 
-.salto-linea{ display: block; margin-top: clamp(10px, calc(calc(3.84 * 1px) + 0.45vw), calc(12.5 * 1px)); }
+.salto-linea{ display: block; margin-top: clamp(10px, calc(3.84px + 0.45vw), 12.5px); }
 .salto-mobile-desactivado, .salto-mobile { display: inline; }
-.punto-mobile { color: var(--yellow); margin-left: clamp(2px, calc(calc(0.77 * 1px) + 0.09vw), calc(2.5 * 1px)); }
+.punto-mobile { color: var(--yellow); margin-left: clamp(2px, calc(0.77px + 0.09vw), 2.5px); }
 
 .decor-line-2{
     position: relative;
@@ -1115,41 +1115,41 @@ header.scrolled .header-cv-mobile {
     content: "";
     position: absolute;
     left: 0;
-    bottom: clamp(-8px, calc(calc(-3.07 * 1px) + -0.36vw), -10px);
-    width: clamp(25px, calc(calc(9.59 * 1px) + 1.13vw), calc(31.25 * 1px));
-    height: clamp(3px, calc(calc(1.15 * 1px) + 0.14vw), calc(3.75 * 1px));
+    bottom: clamp(-8px, calc(-3.07px + -0.36vw), -10px);
+    width: clamp(25px, calc(9.59px + 1.13vw), 31.25px);
+    height: clamp(3px, calc(1.15px + 0.14vw), 3.75px);
     background: var(--yellow);
-    border-radius: clamp(10px, calc(calc(3.84 * 1px) + 0.45vw), calc(12.5 * 1px));
+    border-radius: clamp(10px, calc(3.84px + 0.45vw), 12.5px);
 }
 
 .highlight {
     position: relative;
     color: white;
     z-index: 1;
-    margin: 0px clamp(5px, calc(calc(1.92 * 1px) + 0.23vw), calc(6.25 * 1px));
-    padding: clamp(2px, calc(calc(0.77 * 1px) + 0.09vw), calc(2.5 * 1px)) clamp(4px, calc(calc(1.53 * 1px) + 0.18vw), 5px);
-    text-shadow: clamp(2px, calc(calc(0.77 * 1px) + 0.09vw), calc(2.5 * 1px)) clamp(2px, calc(calc(0.77 * 1px) + 0.09vw), calc(2.5 * 1px)) clamp(3px, calc(calc(1.15 * 1px) + 0.14vw), calc(3.75 * 1px)) rgb(0 0 0 / 55%);
+    margin: 0px clamp(5px, calc(1.92px + 0.23vw), 6.25px);
+    padding: clamp(2px, calc(0.77px + 0.09vw), 2.5px) clamp(4px, calc(1.53px + 0.18vw), 5px);
+    text-shadow: clamp(2px, calc(0.77px + 0.09vw), 2.5px) clamp(2px, calc(0.77px + 0.09vw), 2.5px) clamp(3px, calc(1.15px + 0.14vw), 3.75px) rgb(0 0 0 / 55%);
 }
     
 .highlight::before {
     content: "";
     position: absolute;
-    left: clamp(-4px, calc(calc(-1.53 * 1px) + -0.18vw), -5px);
+    left: clamp(-4px, calc(-1.53px + -0.18vw), -5px);
     bottom: 10%;
     
-    width: calc(100% + clamp(8px, calc(calc(3.07 * 1px) + 0.36vw), 10px));
+    width: calc(100% + clamp(8px, calc(3.07px + 0.36vw), 10px));
     height: 80%;
     
     background: var(--yellow);
     
-    border-radius: clamp(4px, calc(calc(1.53 * 1px) + 0.18vw), 5px) clamp(10px, calc(calc(3.84 * 1px) + 0.45vw), calc(12.5 * 1px)) clamp(2px, calc(calc(0.77 * 1px) + 0.09vw), calc(2.5 * 1px)) clamp(8px, calc(calc(3.07 * 1px) + 0.36vw), 10px);
+    border-radius: clamp(4px, calc(1.53px + 0.18vw), 5px) clamp(10px, calc(3.84px + 0.45vw), 12.5px) clamp(2px, calc(0.77px + 0.09vw), 2.5px) clamp(8px, calc(3.07px + 0.36vw), 10px);
     
     z-index: -1;
     
     transform: scaleX(0);
     transform-origin: left;
     
-    filter: blur(clamp(calc(0.3 * 1px), calc(calc(0.12 * 1px) + 0.01vw), calc(0.38 * 1px)));
+    filter: blur(clamp(0.3px, calc(0.12px + 0.01vw), 0.38px));
     
     animation: highlightReveal 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
@@ -1157,18 +1157,18 @@ header.scrolled .header-cv-mobile {
     .highlight::after{
         content: "";
         position: absolute;
-        left: clamp(-4px, calc(calc(-1.53 * 1px) + -0.18vw), -5px);
+        left: clamp(-4px, calc(-1.53px + -0.18vw), -5px);
         bottom: 10%;
     
-        width: calc(100% + clamp(8px, calc(calc(3.07 * 1px) + 0.36vw), 10px));
+        width: calc(100% + clamp(8px, calc(3.07px + 0.36vw), 10px));
         height: 65%;
     
         background: repeating-linear-gradient(
             -45deg,
             rgba(255,255,255,0.05),
-            rgba(255,255,255,0.05) clamp(2px, calc(calc(0.77 * 1px) + 0.09vw), calc(2.5 * 1px)),
-            transparent clamp(2px, calc(calc(0.77 * 1px) + 0.09vw), calc(2.5 * 1px)),
-            transparent clamp(4px, calc(calc(1.53 * 1px) + 0.18vw), 5px)
+            rgba(255,255,255,0.05) clamp(2px, calc(0.77px + 0.09vw), 2.5px),
+            transparent clamp(2px, calc(0.77px + 0.09vw), 2.5px),
+            transparent clamp(4px, calc(1.53px + 0.18vw), 5px)
         );
     
         border-radius: inherit;
@@ -1213,10 +1213,10 @@ header.scrolled .header-cv-mobile {
     content: "";
     position: absolute;
     left: 0;
-    bottom: clamp(-2px, calc(calc(-0.77 * 1px) + -0.09vw), calc(-2.5 * 1px));
+    bottom: clamp(-2px, calc(-0.77px + -0.09vw), -2.5px);
 
     width: 100%;
-    height: clamp(calc(2.5 * 1px), 0.16vw, calc(3.125 * 1px));
+    height: clamp(2.5px, 0.16vw, 3.125px);
     background-color: var(--yellow);
 
     transform: scaleX(1);
@@ -1238,10 +1238,10 @@ header.scrolled .animacion-activa::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: clamp(-2px, calc(calc(-0.77 * 1px) + -0.09vw), calc(-2.5 * 1px));
+    bottom: clamp(-2px, calc(-0.77px + -0.09vw), -2.5px);
 
     width: 100%;
-    height: clamp(calc(2.5 * 1px), 0.16vw, calc(3.125 * 1px));
+    height: clamp(2.5px, 0.16vw, 3.125px);
     background-color: var(--yellow);
 
     transform: scaleX(0);
@@ -1254,8 +1254,8 @@ header.scrolled .animacion-activa::after {
 }
 
 .division{
-    border-top: clamp(2px, 0.15vw, calc(2.5 * 1px)) solid var(--black);
-    border-bottom: clamp(2px, 0.15vw, calc(2.5 * 1px)) solid var(--black);
+    border-top: clamp(2px, 0.15vw, 2.5px) solid var(--black);
+    border-bottom: clamp(2px, 0.15vw, 2.5px) solid var(--black);
     background: var(--grad-yellow);
     color: var(--cream);
     width: 100%;
@@ -1270,7 +1270,7 @@ header.scrolled .animacion-activa::after {
     gap: 0.72em;
     padding: clamp(9px, 0.85vw, 15px) 0;
     white-space: nowrap;
-    font-size: clamp(35px, 2.28vw, calc(43.75 * 1px));
+    font-size: clamp(35px, 2.28vw, 43.75px);
 }
 
 .division-word {
@@ -1293,7 +1293,7 @@ header.scrolled .animacion-activa::after {
 }
 
  .division-2{
-    border-bottom: clamp(2px, 0.15vw, calc(2.5 * 1px)) solid var(--black);
+    border-bottom: clamp(2px, 0.15vw, 2.5px) solid var(--black);
     background: var(--white);
     color: var(--black);
     width: 100%;
@@ -1320,15 +1320,15 @@ header.scrolled .animacion-activa::after {
 .mensaje {
   display: flex;
   align-items: center;   
-  padding: clamp(6px, 0.55vw, calc(7.5 * 1px)) 0px;
+  padding: clamp(6px, 0.55vw, 7.5px) 0px;
 }
 
-.dot { margin: 0 clamp(20px, calc(calc(7.67 * 1px) + 0.9vw), 25px); }
+.dot { margin: 0 clamp(20px, calc(7.67px + 0.9vw), 25px); }
 
 .logo-mensaje{ 
-    height: clamp(22px, calc(calc(8.44 * 1px) + 0.99vw), calc(27.5 * 1px));
-    width: clamp(22px, calc(calc(8.44 * 1px) + 0.99vw), calc(27.5 * 1px));
-    margin-right: clamp(20px, calc(calc(7.67 * 1px) + 0.9vw), 25px);
+    height: clamp(22px, calc(8.44px + 0.99vw), 27.5px);
+    width: clamp(22px, calc(8.44px + 0.99vw), 27.5px);
+    margin-right: clamp(20px, calc(7.67px + 0.9vw), 25px);
 }
 
 
@@ -1338,12 +1338,12 @@ header.scrolled .animacion-activa::after {
     margin-bottom: clamp(15px, 1.23vw, 21px);
 }
 
-.destacados h2{font-size: clamp(35px, 2.28vw, calc(43.75 * 1px));}
+.destacados h2{font-size: clamp(35px, 2.28vw, 43.75px);}
 .areas h2 {font-size: clamp(36px, 2.35vw, 45px);}
 
 .sobre-mi p, .t-cert p{
-    font-size: clamp(calc(19.4 * 1px), 1.27vw, calc(24.3 * 1px));
-    line-height: clamp(calc(27.5 * 1px), 1.80vw, calc(34.4 * 1px));
+    font-size: clamp(19.4px, 1.27vw, 24.3px);
+    line-height: clamp(27.5px, 1.80vw, 34.4px);
     max-width: 100%;
 }
 
@@ -1361,13 +1361,13 @@ header.scrolled .animacion-activa::after {
 
     height: 50vh;
     border-radius: clamp(29px, 2.62vw, 40px);
-    border: clamp(2px, 0.15vw, calc(2.5 * 1px)) solid var(--black);
+    border: clamp(2px, 0.15vw, 2.5px) solid var(--black);
     margin-top: 2%;
 }
 
 .timeline {
     position: relative;
-    padding-bottom: clamp(25px, 1.63vw, calc(31.25 * 1px));
+    padding-bottom: clamp(25px, 1.63vw, 31.25px);
 }
 
     .timeline img{
@@ -1403,12 +1403,12 @@ header.scrolled .animacion-activa::after {
         left: 0;
         width: 100%;
         background: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.9) 10%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.9) 70%, rgba(255, 255, 255, 0.55) 90%, rgba(255, 255, 255, 0.3) 100%);
-        border-radius: clamp(10px, calc(calc(3.84 * 1px) + 0.45vw), calc(12.5 * 1px));
-        box-shadow: 0 0 clamp(6px, calc(calc(2.3 * 1px) + 0.27vw), calc(7.5 * 1px)) rgba(255, 255, 255, 0.25), 0 0 clamp(12px, calc(calc(4.6 * 1px) + 0.54vw), 15px) rgba(255, 255, 255, 0.15);
+        border-radius: clamp(10px, calc(3.84px + 0.45vw), 12.5px);
+        box-shadow: 0 0 clamp(6px, calc(2.3px + 0.27vw), 7.5px) rgba(255, 255, 255, 0.25), 0 0 clamp(12px, calc(4.6px + 0.54vw), 15px) rgba(255, 255, 255, 0.15);
         opacity: 1;
         
         top: clamp(82px, 5.9vw, 113px);
-        height: clamp(calc(2.5 * 1px), 0.2vw, calc(4.3 * 1px));
+        height: clamp(2.5px, 0.2vw, 4.3px);
     }
     
     
@@ -1434,12 +1434,12 @@ header.scrolled .animacion-activa::after {
 
 .card{
     background: rgba(0, 0, 0, 0.08);
-    backdrop-filter: blur(clamp(14px, calc(calc(5.37 * 1px) + 0.63vw), calc(17.5 * 1px)));
+    backdrop-filter: blur(clamp(14px, calc(5.37px + 0.63vw), 17.5px));
     
-    border: clamp(1px, calc(calc(0.38 * 1px) + 0.05vw), calc(1.25 * 1px)) solid rgba(255, 255, 255, 0.073);
+    border: clamp(1px, calc(0.38px + 0.05vw), 1.25px) solid rgba(255, 255, 255, 0.073);
     box-shadow: 
-            0 clamp(8px, calc(calc(3.07 * 1px) + 0.36vw), 10px) clamp(32px, calc(calc(12.27 * 1px) + 1.44vw), 40px) rgba(0, 0, 0, 0.3),
-            inset 0 clamp(1px, calc(calc(0.38 * 1px) + 0.05vw), calc(1.25 * 1px)) clamp(1px, calc(calc(0.38 * 1px) + 0.05vw), calc(1.25 * 1px)) rgba(255, 255, 255, 0.2);
+            0 clamp(8px, calc(3.07px + 0.36vw), 10px) clamp(32px, calc(12.27px + 1.44vw), 40px) rgba(0, 0, 0, 0.3),
+            inset 0 clamp(1px, calc(0.38px + 0.05vw), 1.25px) clamp(1px, calc(0.38px + 0.05vw), 1.25px) rgba(255, 255, 255, 0.2);
     
      color: rgba(255, 255, 255, 0.92);
      position: relative;
@@ -1455,15 +1455,15 @@ header.scrolled .animacion-activa::after {
 }
     
 .card h3{
-     font-size: clamp(calc(21.25 * 1px), 1.39vw, calc(26.6 * 1px));
+     font-size: clamp(21.25px, 1.39vw, 26.6px);
      font-weight: 500;
-     margin-bottom: clamp(10px, 0.66vw, calc(12.5 * 1px));;
+     margin-bottom: clamp(10px, 0.66vw, 12.5px);;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.652);
     width: fit-content;
 }
     
 .card p{
-      font-size: clamp(calc(15.625 * 1px), 1.02vw, calc(19.5 * 1px));
+      font-size: clamp(15.625px, 1.02vw, 19.5px);
       margin-top: clamp(8px, 0.52vw, 10px);
 }
 
@@ -1496,7 +1496,7 @@ header.scrolled .animacion-activa::after {
     
     background-position: center;
     background-repeat: no-repeat;
-    border-right: clamp(2px, 0.15vw, calc(2.5 * 1px)) solid var(--black);
+    border-right: clamp(2px, 0.15vw, 2.5px) solid var(--black);
 
 }
 
@@ -1508,7 +1508,7 @@ header.scrolled .animacion-activa::after {
     
     background-position: center;
     background-repeat: no-repeat;
-    border-right: clamp(2px, 0.15vw, calc(2.5 * 1px)) solid var(--black);
+    border-right: clamp(2px, 0.15vw, 2.5px) solid var(--black);
 }
 
 .hero-soplo{
@@ -1519,7 +1519,7 @@ header.scrolled .animacion-activa::after {
     
     background-position: center;
     background-repeat: no-repeat;
-    border-left: clamp(2px, 0.15vw, calc(2.5 * 1px)) solid var(--black);
+    border-left: clamp(2px, 0.15vw, 2.5px) solid var(--black);
 }
 
 .flecha{
@@ -1530,16 +1530,16 @@ header.scrolled .animacion-activa::after {
 .flecha-dinamica {
     stroke: currentColor;
     width: clamp(28px, 1.83vw, 35px);
-    height: clamp(30px, 1.96vw, calc(37.5 * 1px));
-    margin-left: clamp(10px, 0.66vw, calc(12.5 * 1px));
+    height: clamp(30px, 1.96vw, 37.5px);
+    margin-left: clamp(10px, 0.66vw, 12.5px);
     transition: color 0.3s ease;
 }
 
 .flecha-dinamica-proyectos{
     stroke: currentColor;
-    width: clamp(26px, 1.70vw, calc(32.5 * 1px));
+    width: clamp(26px, 1.70vw, 32.5px);
     height: clamp(28px, 1.83vw, 35px);
-    margin-left: clamp(10px, 0.66vw, calc(12.5 * 1px));
+    margin-left: clamp(10px, 0.66vw, 12.5px);
     transition: color 0.3s ease;
 }
 
@@ -1558,8 +1558,8 @@ header.scrolled .animacion-activa::after {
  background-color: #3b2a19;
   width: 100%;
   display: block;
-  border: clamp(2px, 0.15vw, calc(2.5 * 1px)) solid;
-  border-radius: clamp(40px, calc(calc(15.34 * 1px) + 1.81vw), 50px) clamp(15px, calc(calc(5.75 * 1px) + 0.68vw), calc(18.75 * 1px)) clamp(40px, calc(calc(15.34 * 1px) + 1.81vw), 50px) clamp(15px, calc(calc(5.75 * 1px) + 0.68vw), calc(18.75 * 1px));
+  border: clamp(2px, 0.15vw, 2.5px) solid;
+  border-radius: clamp(40px, calc(15.34px + 1.81vw), 50px) clamp(15px, calc(5.75px + 0.68vw), 18.75px) clamp(40px, calc(15.34px + 1.81vw), 50px) clamp(15px, calc(5.75px + 0.68vw), 18.75px);
 }
 
 .folleto {
@@ -1571,9 +1571,9 @@ header.scrolled .animacion-activa::after {
 }
 
 .video{
-    border: clamp(2px, 0.15vw, calc(2.5 * 1px)) solid;
+    border: clamp(2px, 0.15vw, 2.5px) solid;
     background-color: #3b2a19;
-    border-radius: clamp(40px, calc(calc(15.34 * 1px) + 1.81vw), 50px) clamp(15px, calc(calc(5.75 * 1px) + 0.68vw), calc(18.75 * 1px)) clamp(40px, calc(calc(15.34 * 1px) + 1.81vw), 50px) clamp(15px, calc(calc(5.75 * 1px) + 0.68vw), calc(18.75 * 1px));
+    border-radius: clamp(40px, calc(15.34px + 1.81vw), 50px) clamp(15px, calc(5.75px + 0.68vw), 18.75px) clamp(40px, calc(15.34px + 1.81vw), 50px) clamp(15px, calc(5.75px + 0.68vw), 18.75px);
     display: block;
     margin: 0 auto;
 }
@@ -1581,7 +1581,7 @@ header.scrolled .animacion-activa::after {
 .outgoing-link{
     display: inline-flex;
     align-items: center;
-    gap: clamp(4px, calc(calc(1.53 * 1px) + 0.18vw), 5px);
+    gap: clamp(4px, calc(1.53px + 0.18vw), 5px);
     text-decoration: underline dotted var(--yellow);
     text-underline-offset: 0.08em;
     font-weight: 600;
@@ -1595,8 +1595,8 @@ header.scrolled .animacion-activa::after {
 }
 
 .outgoing-icon{
-    width: clamp(20px, calc(calc(7.67 * 1px) + 0.9vw), 25px);
-    height: clamp(20px, calc(calc(7.67 * 1px) + 0.9vw), 25px);
+    width: clamp(20px, calc(7.67px + 0.9vw), 25px);
+    height: clamp(20px, calc(7.67px + 0.9vw), 25px);
 }
 
 
@@ -1604,34 +1604,34 @@ header.scrolled .animacion-activa::after {
 
 .btn{
     background: var(--grad-yellow);
-    border: clamp(1px, calc(calc(0.38 * 1px) + 0.05vw), calc(1.25 * 1px)) solid var(--yellow);
-    border-radius: clamp(24px, calc(calc(9.21 * 1px) + 1.08vw), 30px);
-    padding: clamp(10px, calc(calc(3.84 * 1px) + 0.45vw), calc(12.5 * 1px)) clamp(20px, calc(calc(7.67 * 1px) + 0.9vw), 25px);
+    border: clamp(1px, calc(0.38px + 0.05vw), 1.25px) solid var(--yellow);
+    border-radius: clamp(24px, calc(9.21px + 1.08vw), 30px);
+    padding: clamp(10px, calc(3.84px + 0.45vw), 12.5px) clamp(20px, calc(7.67px + 0.9vw), 25px);
     font-weight: 600;
     transition:ease-in-out;
 }
 
 .botones-hero {
     display: flex;
-    gap: clamp(15px, 0.98vw, calc(18.75 * 1px));
+    gap: clamp(15px, 0.98vw, 18.75px);
     align-items: center;
     margin-left: 8%;
 }
 
 .btn-hero {
-    font-size: clamp(calc(18.75 * 1px), 1.22vw, calc(23.4 * 1px));
-    border: clamp(1px, 0.07vw, calc(1.25 * 1px)) solid rgb(255 255 255 / 30%);
+    font-size: clamp(18.75px, 1.22vw, 23.4px);
+    border: clamp(1px, 0.07vw, 1.25px) solid rgb(255 255 255 / 30%);
     background: linear-gradient(131deg,
         rgba(235,166,37,1) 0%,
         rgba(255,178,36,1) 50%,
         rgba(235,166,37,1) 100%);
 
-    border-radius: clamp(25px, 1.64vw, calc(31.25 * 1px));
+    border-radius: clamp(25px, 1.64vw, 31.25px);
 
     padding: 
-    clamp(5px, 0.33vw, calc(6.25 * 1px))
-    clamp(22px, 1.44vw, calc(27.5 * 1px))
-    clamp(6px, 0.39vw, calc(7.5 * 1px))
+    clamp(5px, 0.33vw, 6.25px)
+    clamp(22px, 1.44vw, 27.5px)
+    clamp(6px, 0.39vw, 7.5px)
     clamp(20px, 1.31vw, 25px);
     
     font-weight: 500;
@@ -1646,8 +1646,8 @@ header.scrolled .animacion-activa::after {
         color 0.30s ease;
 
     box-shadow:
-        0 clamp(8px, calc(calc(3.07 * 1px) + 0.36vw), 10px) clamp(32px, calc(calc(12.27 * 1px) + 1.44vw), 40px) rgba(0, 0, 0, 0.3),
-        inset 0 clamp(1px, calc(calc(0.38 * 1px) + 0.05vw), calc(1.25 * 1px)) clamp(1px, calc(calc(0.38 * 1px) + 0.05vw), calc(1.25 * 1px)) rgba(255, 255, 255, 0.2);
+        0 clamp(8px, calc(3.07px + 0.36vw), 10px) clamp(32px, calc(12.27px + 1.44vw), 40px) rgba(0, 0, 0, 0.3),
+        inset 0 clamp(1px, calc(0.38px + 0.05vw), 1.25px) clamp(1px, calc(0.38px + 0.05vw), 1.25px) rgba(255, 255, 255, 0.2);
 }
 
 .btn-hero:hover {
@@ -1664,21 +1664,21 @@ header.scrolled .animacion-activa::after {
 
     padding:
         clamp(8px, 0.52vw, 10px)
-        clamp(22px, 1.44vw, calc(27.5 * 1px))
+        clamp(22px, 1.44vw, 27.5px)
         clamp(8px, 0.52vw, 10px)
         clamp(20px, 1.31vw, 25px);
 
-    border-radius: clamp(50px, 3.28vw, calc(62.5 * 1px));
+    border-radius: clamp(50px, 3.28vw, 62.5px);
 
-    border: clamp(1px, 0.07vw, calc(1.25 * 1px)) solid rgb(255 255 255 / 30%);
+    border: clamp(1px, 0.07vw, 1.25px) solid rgb(255 255 255 / 30%);
 
     color: white;
     background: rgba(0, 0, 0, 0.08);
-    backdrop-filter: blur(clamp(14px, calc(calc(5.37 * 1px) + 0.63vw), calc(17.5 * 1px)));
+    backdrop-filter: blur(clamp(14px, calc(5.37px + 0.63vw), 17.5px));
 
     box-shadow:
-        0 clamp(8px, calc(calc(3.07 * 1px) + 0.36vw), 10px) clamp(32px, calc(calc(12.27 * 1px) + 1.44vw), 40px) rgba(0, 0, 0, 0.3),
-        inset 0 clamp(1px, calc(calc(0.38 * 1px) + 0.05vw), calc(1.25 * 1px)) clamp(1px, calc(calc(0.38 * 1px) + 0.05vw), calc(1.25 * 1px)) rgba(255, 255, 255, 0.2);
+        0 clamp(8px, calc(3.07px + 0.36vw), 10px) clamp(32px, calc(12.27px + 1.44vw), 40px) rgba(0, 0, 0, 0.3),
+        inset 0 clamp(1px, calc(0.38px + 0.05vw), 1.25px) clamp(1px, calc(0.38px + 0.05vw), 1.25px) rgba(255, 255, 255, 0.2);
     transition:
         transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
         box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
@@ -1725,7 +1725,7 @@ header.scrolled .animacion-activa::after {
 }
 
 .btn-seccion {
-    font-size: clamp(calc(18.75 * 1px), 1.22vw, calc(23.4 * 1px));
+    font-size: clamp(18.75px, 1.22vw, 23.4px);
     margin-top: clamp(20px, 1.31vw, 25px);
 
     background: linear-gradient(131deg,
@@ -1733,12 +1733,12 @@ header.scrolled .animacion-activa::after {
         rgba(255,178,36,1) 50%,
         rgba(235,166,37,1) 100%);
 
-    border: clamp(2px, 0.15vw, calc(2.5 * 1px)) solid var(--black);
-    border-radius: clamp(25px, 1.64vw, calc(31.25 * 1px));
+    border: clamp(2px, 0.15vw, 2.5px) solid var(--black);
+    border-radius: clamp(25px, 1.64vw, 31.25px);
 
     padding:
         clamp(8px, 0.52vw, 10px)
-        clamp(22px, 1.44vw, calc(27.5 * 1px))
+        clamp(22px, 1.44vw, 27.5px)
         clamp(8px, 0.52vw, 10px)
         clamp(20px, 1.31vw, 25px);
 
@@ -1759,7 +1759,7 @@ header.scrolled .animacion-activa::after {
 }
 
 .btn-seccion svg {
-    margin-top: clamp(calc(3.83 * 1px), 0.25vw, calc(4.8 * 1px));
+    margin-top: clamp(3.83px, 0.25vw, 4.8px);
 
     transition:
         transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
@@ -1767,7 +1767,7 @@ header.scrolled .animacion-activa::after {
 }
 
 .btn-seccion-2 {
-    font-size: clamp(calc(18.75 * 1px), 1.22vw, calc(23.4 * 1px));
+    font-size: clamp(18.75px, 1.22vw, 23.4px);
     margin-top: clamp(20px, 1.31vw, 25px);
 
     background: linear-gradient(131deg,
@@ -1775,12 +1775,12 @@ header.scrolled .animacion-activa::after {
         rgba(255,178,36,1) 50%,
         rgba(235,166,37,1) 100%);
 
-    border: clamp(2px, 0.15vw, calc(2.5 * 1px)) solid var(--black);
-    border-radius: clamp(25px, 1.64vw, calc(31.25 * 1px));
+    border: clamp(2px, 0.15vw, 2.5px) solid var(--black);
+    border-radius: clamp(25px, 1.64vw, 31.25px);
     padding:
         clamp(8px, 0.52vw, 10px)
-        clamp(23px, 1.51vw, calc(28.75 * 1px))
-        clamp(10px, 0.66vw, calc(12.5 * 1px))
+        clamp(23px, 1.51vw, 28.75px)
+        clamp(10px, 0.66vw, 12.5px)
         clamp(20px, 1.31vw, 25px);
 
     font-weight: 500;
@@ -1796,12 +1796,12 @@ header.scrolled .animacion-activa::after {
 }
 
 .btn-seccion-2 img {
-    width: clamp(27px, 1.77vw, calc(33.75 * 1px));
-    margin-left: clamp(10px, 0.66vw, calc(12.5 * 1px));
+    width: clamp(27px, 1.77vw, 33.75px);
+    margin-left: clamp(10px, 0.66vw, 12.5px);
 }
 
 .btn-hero svg {
-    margin-top: clamp(calc(3.83 * 1px), 0.25vw, calc(4.8 * 1px));
+    margin-top: clamp(3.83px, 0.25vw, 4.8px);
 
     transition:
         transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
@@ -1809,13 +1809,13 @@ header.scrolled .animacion-activa::after {
 }
 
 .btn-hero:hover svg {
-    margin-top: clamp(calc(3.83 * 1px), 0.25vw, calc(4.8 * 1px));
-    transform: translateX(clamp(calc(2.3 * 1px), 0.15vw, calc(2.9 * 1px)));
+    margin-top: clamp(3.83px, 0.25vw, 4.8px);
+    transform: translateX(clamp(2.3px, 0.15vw, 2.9px));
 }
 
 .btn-seccion:hover svg {
-    margin-top: clamp(calc(3.83 * 1px), 0.25vw, calc(4.8 * 1px));
-    transform: translateX(clamp(calc(2.3 * 1px), calc(calc(0.88 * 1px) + 0.1vw), calc(2.88 * 1px)));
+    margin-top: clamp(3.83px, 0.25vw, 4.8px);
+    transform: translateX(clamp(2.3px, calc(0.88px + 0.1vw), 2.88px));
 }
 
 .btn-seccion:hover {
@@ -1830,7 +1830,7 @@ header.scrolled .animacion-activa::after {
 
 .fade-in-down {
   opacity: 0;
-  transform: translateY(clamp(-20px, calc(calc(-7.67 * 1px) + -0.9vw), -25px));
+  transform: translateY(clamp(-20px, calc(-7.67px + -0.9vw), -25px));
   animation: fadeInDown 0.7s ease-out forwards;
   animation-delay: 0.4s;
 }
@@ -1844,7 +1844,7 @@ header.scrolled .animacion-activa::after {
 
 .scroll-fade-down {
   opacity: 0;
-  transform: translateY(clamp(-20px, calc(calc(-7.67 * 1px) + -0.9vw), -25px));
+  transform: translateY(clamp(-20px, calc(-7.67px + -0.9vw), -25px));
   transition: opacity 0.7s ease-out, transform 0.7s ease-out;
 }
 
@@ -1855,8 +1855,8 @@ header.scrolled .animacion-activa::after {
 
 .scroll-fade-modern {
   opacity: 0;
-  transform: translateY(clamp(40px, calc(calc(15.34 * 1px) + 1.81vw), 50px));
-  filter: blur(clamp(4px, calc(calc(1.53 * 1px) + 0.18vw), 5px));
+  transform: translateY(clamp(40px, calc(15.34px + 1.81vw), 50px));
+  filter: blur(clamp(4px, calc(1.53px + 0.18vw), 5px));
   transition: 
     opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
     transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
@@ -1874,8 +1874,8 @@ header.scrolled .animacion-activa::after {
 .timeline.scroll-fade-modern > .logo-timeline-2,
 .timeline.scroll-fade-modern > .logo-timeline-3 {
   opacity: 0;
-  transform: translateY(clamp(40px, calc(calc(15.34 * 1px) + 1.81vw), 50px));
-  filter: blur(clamp(4px, calc(calc(1.53 * 1px) + 0.18vw), 5px));
+  transform: translateY(clamp(40px, calc(15.34px + 1.81vw), 50px));
+  filter: blur(clamp(4px, calc(1.53px + 0.18vw), 5px));
   transition:
     opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
     transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
@@ -1920,8 +1920,8 @@ header.scrolled .animacion-activa::after {
 
 .scroll-fade-modern-2 {
   opacity: 0;
-  transform: translateY(clamp(-40px, calc(calc(-15.34 * 1px) + -1.81vw), -50px)) scale(0.98);
-  filter: blur(clamp(4px, calc(calc(1.53 * 1px) + 0.18vw), 5px));
+  transform: translateY(clamp(-40px, calc(-15.34px + -1.81vw), -50px)) scale(0.98);
+  filter: blur(clamp(4px, calc(1.53px + 0.18vw), 5px));
   transition: 
     opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
     transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
@@ -1939,11 +1939,11 @@ header.scrolled .animacion-activa::after {
     position: fixed;
     z-index: 9;
 
-    bottom: clamp(18px, calc(calc(6.9 * 1px) + 0.81vw), calc(22.5 * 1px));
+    bottom: clamp(18px, calc(6.9px + 0.81vw), 22.5px);
     right: clamp(32px, 2.34vw, 40px);
 
-    width: clamp(46px, calc(calc(17.64 * 1px) + 2.08vw), calc(57.5 * 1px));
-    height: clamp(46px, calc(calc(17.64 * 1px) + 2.08vw), calc(57.5 * 1px));
+    width: clamp(46px, calc(17.64px + 2.08vw), 57.5px);
+    height: clamp(46px, calc(17.64px + 2.08vw), 57.5px);
 
     border: none;
     border-radius: 50%;
@@ -1959,15 +1959,15 @@ header.scrolled .animacion-activa::after {
     transition: all 0.4s ease;
 
     box-shadow:
-        0 clamp(10px, 0.73vw, calc(12.5 * 1px))
-        clamp(25px, 1.83vw, calc(31.25 * 1px))
+        0 clamp(10px, 0.73vw, 12.5px)
+        clamp(25px, 1.83vw, 31.25px)
         rgba(0, 0, 0, 0.15);
 }
 
 .back-to-top img {
-    width: clamp(32px, calc(calc(12.27 * 1px) + 1.44vw), 40px);
+    width: clamp(32px, calc(12.27px + 1.44vw), 40px);
     margin: auto;
-    padding-bottom: clamp(2px, calc(calc(0.77 * 1px) + 0.09vw), calc(2.5 * 1px));
+    padding-bottom: clamp(2px, calc(0.77px + 0.09vw), 2.5px);
 }
 
 .back-to-top.show {
@@ -1999,7 +1999,7 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
 
-    border-top: clamp(2px, 0.15vw, calc(2.5 * 1px)) solid var(--black);
+    border-top: clamp(2px, 0.15vw, 2.5px) solid var(--black);
     background-color: var(--yellow);
     text-align: center;
 
@@ -2017,7 +2017,7 @@ footer {
 footer p{
     color: var(--cream);
     font-weight: 500;
-    margin-left: clamp(10px, 0.66vw, calc(12.5 * 1px));
+    margin-left: clamp(10px, 0.66vw, 12.5px);
 }
 
 .locacion > div{
@@ -2027,8 +2027,8 @@ footer p{
 .locacion p { font-weight: 400; }
 
 .logo-footer {
-    height: clamp(66px, 4.33vw, calc(82.5 * 1px));
-    width: clamp(66px, 4.33vw, calc(82.5 * 1px));
+    height: clamp(66px, 4.33vw, 82.5px);
+    width: clamp(66px, 4.33vw, 82.5px);
     margin-bottom: 30%;
 }
 
@@ -2037,16 +2037,16 @@ footer p{
 .nombre { width: 50%; }
 
 .contacto img {
-    margin-bottom: clamp(8px, 0.42vw, calc(7.5 * 1px));
-    margin-right: clamp(6px, 0.31vw, calc(6.25 * 1px));
-    width: clamp(34px, 1.77vw, calc(42.5 * 1px));
-    height: clamp(34px, 1.77vw, calc(42.5 * 1px));
+    margin-bottom: clamp(8px, 0.42vw, 7.5px);
+    margin-right: clamp(6px, 0.31vw, 6.25px);
+    width: clamp(34px, 1.77vw, 42.5px);
+    height: clamp(34px, 1.77vw, 42.5px);
 }
 
 .t-footer-final {
-    border-top: clamp(2px, 0.13vw, calc(2.5 * 1px)) solid var(--cream);
+    border-top: clamp(2px, 0.13vw, 2.5px) solid var(--cream);
     padding: 2% 0 4% 0;
-    font-size: clamp(calc(18.125 * 1px), 1.19vw, calc(22.7 * 1px));
+    font-size: clamp(18.125px, 1.19vw, 22.7px);
     margin-left: 0px;
 }
 
@@ -2055,14 +2055,14 @@ footer p{
         clamp(8px, 0.52vw, 10px)
         clamp(16px, 1.05vw, 20px);
 
-    border: clamp(3px, 0.20vw, calc(3.75 * 1px)) solid var(--cream);
+    border: clamp(3px, 0.20vw, 3.75px) solid var(--cream);
     background-color: transparent;
 
-    border-radius: clamp(25px, 1.64vw, calc(31.25 * 1px));
+    border-radius: clamp(25px, 1.64vw, 31.25px);
 
     transition: all 0.3s ease;
 
-    font-size: clamp(calc(19.375 * 1px), 1.27vw, calc(24.2 * 1px));
+    font-size: clamp(19.375px, 1.27vw, 24.2px);
 
     margin-bottom: 10%;
 }
@@ -2075,7 +2075,7 @@ footer p{
 }
 
 .btn-footer:hover .flecha-dinamica {
-    transform: translateX(clamp(calc(2.3 * 1px), 0.15vw, calc(2.9 * 1px)));
+    transform: translateX(clamp(2.3px, 0.15vw, 2.9px));
 }
 
 .btn-footer:hover {
@@ -2083,11 +2083,11 @@ footer p{
         clamp(8px, 0.52vw, 10px)
         clamp(16px, 1.05vw, 20px);
 
-    border: clamp(3px, 0.20vw, calc(3.75 * 1px)) solid var(--cream);
+    border: clamp(3px, 0.20vw, 3.75px) solid var(--cream);
     background-color: var(--cream);
     color: var(--yellow);
 
-    border-radius: clamp(25px, 1.64vw, calc(31.25 * 1px));
+    border-radius: clamp(25px, 1.64vw, 31.25px);
 }
 
 .mapa {
@@ -2096,14 +2096,14 @@ footer p{
     margin: auto;
 
     height: clamp(280px, 18.37vw, 350px);
-    width: clamp(290px, 19.03vw, calc(362.5 * 1px));
+    width: clamp(290px, 19.03vw, 362.5px);
 }
 
 .locacion-logo {
-    margin-bottom: clamp(6px, 0.39vw, calc(7.5 * 1px));
+    margin-bottom: clamp(6px, 0.39vw, 7.5px);
 
-    height: clamp(30px, 1.97vw, calc(37.5 * 1px));
-    width: clamp(30px, 1.97vw, calc(37.5 * 1px));
+    height: clamp(30px, 1.97vw, 37.5px);
+    width: clamp(30px, 1.97vw, 37.5px);
 }
 
 
@@ -2166,7 +2166,7 @@ footer p{
     box-sizing: border-box;
     width: 100%;
     padding: 5% 0;
-    border-top: clamp(2px, 0.15vw, calc(2.5 * 1px)) solid var(--black);
+    border-top: clamp(2px, 0.15vw, 2.5px) solid var(--black);
 }
 
 .stack-intro {
@@ -2182,8 +2182,8 @@ footer p{
 .stack-intro p {
     width: min(53%, 900px);
     margin: 0;
-    font-size: clamp(calc(19.4 * 1px), 1.27vw, calc(24.3 * 1px));
-    line-height: clamp(calc(27.5 * 1px), 1.80vw, calc(34.4 * 1px));
+    font-size: clamp(19.4px, 1.27vw, 24.3px);
+    line-height: clamp(27.5px, 1.80vw, 34.4px);
 }
 
 .stack-hero-panel {
@@ -2193,8 +2193,8 @@ footer p{
     justify-content: space-between;
     box-sizing: border-box;
     width: 100%;
-    border-top: clamp(2px, 0.15vw, calc(2.5 * 1px)) solid var(--black);
-    border-bottom: clamp(2px, 0.15vw, calc(2.5 * 1px)) solid var(--black);
+    border-top: clamp(2px, 0.15vw, 2.5px) solid var(--black);
+    border-bottom: clamp(2px, 0.15vw, 2.5px) solid var(--black);
     min-height: 0;
     height: 50vh;
     height: 50dvh;
@@ -2688,7 +2688,7 @@ html:has(.mapa:hover) #cursor {
     overflow-y: visible;
     width: 100%;
     margin-inline: 0;
-    border-top: clamp(2px, 0.15vw, calc(2.5 * 1px)) solid var(--black);
+    border-top: clamp(2px, 0.15vw, 2.5px) solid var(--black);
     box-shadow: 0 8px 0 var(--yellow);
     margin-bottom: 8px;
 }
@@ -2757,7 +2757,7 @@ html:has(.mapa:hover) #cursor {
 
     #inicio .social-gap {
         gap: calc(
-            clamp(12px, calc(calc(4.6 * 1px) + 0.54vw), 15px)
+            clamp(12px, calc(4.6px + 0.54vw), 15px)
             * var(--large-monitor-scale)
         );
     }
