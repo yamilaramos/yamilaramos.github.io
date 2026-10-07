@@ -1299,7 +1299,7 @@ header.scrolled .animacion-activa::after {
     width: 20px;
     height: 20px;
     object-fit: contain;
-    opacity: 75%;
+    opacity: 50%;
     line-height: 1;
 }
 
