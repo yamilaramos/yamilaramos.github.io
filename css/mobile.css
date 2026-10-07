@@ -28,8 +28,8 @@
     h4 { font-size: 22px; }
 
     .sectionStack .skill-item-2 img, .sectionStack .skill-item img {
-        width: 4rem;
-        height: 4rem;
+        width: 40px;
+        height: 40px;
     }
 
     .titulo-proceso .subrayado:not(:last-of-type){
@@ -43,7 +43,7 @@
     }
 
     .stack-copy h3 {
-        font-size: clamp(2.1rem, 5.5vw, 2.6rem);
+        font-size: clamp(21px, 5.5vw, 26px);
         margin: 4%;
     }
 
@@ -58,9 +58,9 @@
         top: auto;
         right: auto;
         bottom: auto;
-        width: min(82%, 36rem);
+        width: min(82%, 360px);
         height: auto;
-        margin: 1.5rem auto 0;
+        margin: 15px auto 0;
         transform: none;
     }
     
@@ -132,20 +132,20 @@
     #cursos.sectionCert #certLogos {
         width: 90%;
         min-height: 0;
-        margin: 0.25rem auto 0;
-        gap: 0.5rem;
+        margin: 2.5px auto 0;
+        gap: 5px;
     }
 
 
     #cursos.sectionCert .logosCert img {
-        width: 4.5rem;
-        height: 4.5rem;
+        width: 45px;
+        height: 45px;
         object-fit: contain;
     }
 
     .logo{
-        width: 4.25rem;
-        height: 4.25rem;
+        width: 42.5px;
+        height: 42.5px;
         object-fit: contain;
     }
 
@@ -318,7 +318,7 @@
     }
 
     header.scrolled {
-        height: calc(8vh - 0.5rem);
+        height: calc(8vh - 5px);
     }
 
 
@@ -1085,13 +1085,13 @@
     .back-to-top{
         right: 15px;
         bottom: 15px;
-        width: 5rem;
-        height: 5rem;
+        width: 50px;
+        height: 50px;
     }
 
 
     .back-to-top img{
-        width: 3.5rem;
+        width: 35px;
         margin: auto;
     }
 
@@ -1257,8 +1257,8 @@
 
     .fade-modern-load {
         opacity: 0;
-        transform: translateY(-4rem) scale(0.98);
-        filter: blur(0.4rem);
+        transform: translateY(-40px) scale(0.98);
+        filter: blur(4px);
         transition:
             opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
             transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
@@ -1268,8 +1268,8 @@
     .timeline-mobile .card.scroll-fade-modern,
     #proceso .proceso > div.scroll-fade-modern {
         opacity: 0 !important;
-        transform: translateY(4rem) !important;
-        filter: blur(0.5rem) !important;
+        transform: translateY(40px) !important;
+        filter: blur(5px) !important;
         visibility: visible !important;
         transition:
             opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
@@ -1285,7 +1285,7 @@
     }
 
     @keyframes mobile-fade-in-down {
-        from { translate: 0 -2rem; filter: blur(0.5rem); }
+        from { translate: 0 -20px; filter: blur(5px); }
         to { translate: 0 0; filter: blur(0); }
     }
 }
@@ -1306,15 +1306,15 @@
 
     #cursos.sectionCert .pista {
         flex: 0 0 auto;
-        height: clamp(26rem, 31vw, 38.5rem);
-        min-height: clamp(26rem, 31vw, 38.5rem);
+        height: clamp(260px, 31vw, 385px);
+        min-height: clamp(260px, 31vw, 385px);
     }
 
     #proceso .proceso > div {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 0.4rem;
+        gap: 4px;
     }
 
     #proceso .proceso > div > .numero-proceso {
@@ -1342,14 +1342,14 @@
     }
 
     #stack .stack-intro .stack-text-mobile--intro {
-        margin-bottom: 0.8rem;
+        margin-bottom: 8px;
     }
 }
 
 
 @media screen and (max-width: 768px) {
     #stack .stack-copy > h3.decor-line-2::after {
-        width: 3rem;
+        width: 30px;
     }
 }
 
@@ -1364,7 +1364,7 @@
     #stack .stack-copy > h3.decor-line-2:nth-of-type(2)::before {
         content: "En constante exploración:";
         display: inline-block;
-        font-size: clamp(2.1rem, 5.5vw, 2.6rem);
+        font-size: clamp(21px, 5.5vw, 26px);
     }
     
 }
