@@ -561,6 +561,7 @@ body {
 }
 
 .presentacion{
+    width: max-content;
 
     padding: clamp(0.8rem, 0.74vw, 1.4rem)
              clamp(1.6rem, calc(6.14 * var(--rem-unit) + 0.72vw), 2rem)
@@ -590,6 +591,10 @@ body {
         clamp(2.5rem, calc(9.59 * var(--rem-unit) + 1.13vw), 3.125rem)
         0;
      margin-left: 8%;
+}
+
+.presentacion > h1:first-child {
+    white-space: nowrap;
 }
 
 .presentacion::before {
