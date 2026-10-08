@@ -554,7 +554,7 @@ body {
 .titulo{
     font-size: clamp(50px, 5.8vw, 96px);
     margin-left: 8%;
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.652));
+    filter: drop-shadow(1px 1.5px 3px rgba(0, 0, 0, 0.32));
     padding: clamp(8px, 0.66vw, 12px);
 }
 
@@ -1529,12 +1529,12 @@ header.scrolled .animacion-activa::after {
     from {
         opacity: 0;
         transform: translateY(clamp(40px, calc(15.34px + 1.81vw), 50px));
-        filter: blur(clamp(4px, calc(1.53px + 0.18vw), 5px)) drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.652));
+        filter: blur(clamp(4px, calc(1.53px + 0.18vw), 5px)) drop-shadow(1px 1.5px 3px rgba(0, 0, 0, 0.32));
     }
     to {
         opacity: 1;
         transform: translateY(0);
-        filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.652));
+        filter: drop-shadow(1px 1.5px 3px rgba(0, 0, 0, 0.32));
     }
 }
 
