@@ -2406,7 +2406,7 @@ footer p{
 
 @keyframes stack-icon-hover-focus {
     from {
-        filter: blur(0.9px);
+        filter: blur(2.2px);
         transform: scale(1);
     }
     to {
@@ -2418,13 +2418,13 @@ footer p{
 .sectionStack .skill-item img,
 .sectionStack .skill-item-2 img {
     transition:
-        transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
-        filter 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+        transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+        filter 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .sectionStack .skill-item:hover img,
 .sectionStack .skill-item-2:hover img {
-    animation: stack-icon-hover-focus 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation: stack-icon-hover-focus 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .sectionStack [data-tooltip]::after {
