@@ -1910,13 +1910,13 @@ header.scrolled .animacion-activa::after {
     margin-top: clamp(3.83px, 0.25vw, 4.8px);
 
     transition:
-        transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-        filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+        filter 0.45s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .btn-hero:hover svg {
     margin-top: clamp(3.83px, 0.25vw, 4.8px);
-    transform: translateX(clamp(1.6px, 0.10vw, 2px));
+    transform: translateX(clamp(3.5px, 0.24vw, 4.5px));
 }
 
 .btn-seccion:hover svg {
