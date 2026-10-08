@@ -1200,14 +1200,14 @@ header.scrolled .header-cv-mobile {
         }
     }
     
-    .delay-1::before,
-    .delay-1::after{
-        animation-delay: 0.4s;
+    #inicio .highlight.delay-1::before,
+    #inicio .highlight.delay-1::after{
+        animation-delay: 1.5s;
     }
     
-    .delay-2::before,
-    .delay-2::after{
-        animation-delay: 0.9s;
+    #inicio .highlight.delay-2::before,
+    #inicio .highlight.delay-2::after{
+        animation-delay: 2s;
     }
 
 .animacion {
