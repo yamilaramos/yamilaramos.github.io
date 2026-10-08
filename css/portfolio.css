@@ -2413,19 +2413,10 @@ footer p{
     border-radius: 3px;
 }
 
-@keyframes stack-icon-hover-focus {
-    from {
-        filter: blur(0.8px);
-        transform: translateY(0) scale(1);
-    }
-    to {
-        filter: blur(0);
-        transform: translateY(-1.5px) scale(1.045);
-    }
-}
-
 .sectionStack .skill-item img,
 .sectionStack .skill-item-2 img {
+    transform: translateY(0) scale(1);
+    filter: blur(0);
     transition:
         transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
         filter 0.6s cubic-bezier(0.22, 1, 0.36, 1);
@@ -2433,7 +2424,8 @@ footer p{
 
 .sectionStack .skill-item:hover img,
 .sectionStack .skill-item-2:hover img {
-    animation: stack-icon-hover-focus 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+    filter: blur(0);
+    transform: translateY(-1.5px) scale(1.045);
 }
 
 .sectionStack [data-tooltip]::after {
