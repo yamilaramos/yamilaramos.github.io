@@ -433,7 +433,16 @@ pointer-events: none;
     width: 88%;
     height: 2px;
     opacity: 0;
-    background: var(--yellow);
+    background: linear-gradient(
+        to right,
+        transparent 0%,
+        color-mix(in srgb, var(--yellow) 18%, transparent) 10%,
+        color-mix(in srgb, var(--yellow) 48%, transparent) 25%,
+        var(--yellow) 50%,
+        color-mix(in srgb, var(--yellow) 48%, transparent) 75%,
+        color-mix(in srgb, var(--yellow) 18%, transparent) 90%,
+        transparent 100%
+    );
     border-radius: clamp(10px, 0.65vw, 12.5px);
     transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -1695,9 +1704,9 @@ header.scrolled .animacion-activa::after {
     transform: none;
 
     transition:
-        box-shadow 0.55s cubic-bezier(0.4, 0, 0.2, 1),
-        color 0.55s cubic-bezier(0.4, 0, 0.2, 1),
-        border-color 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
     box-shadow:
         0 clamp(8px, calc(3.07px + 0.36vw), 10px) clamp(32px, calc(12.27px + 1.44vw), 40px) rgba(0, 0, 0, 0.3),
@@ -1713,7 +1722,7 @@ header.scrolled .animacion-activa::after {
     content: "";
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-hero:hover {
@@ -1880,8 +1889,8 @@ header.scrolled .animacion-activa::after {
     margin-top: clamp(3.83px, 0.25vw, 4.8px);
 
     transition:
-        transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
-        filter 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-hero:hover svg {
@@ -2411,20 +2420,20 @@ footer p{
     }
     to {
         filter: blur(0);
-        transform: translateY(-2px) scale(1.055);
+        transform: translateY(-1.5px) scale(1.045);
     }
 }
 
 .sectionStack .skill-item img,
 .sectionStack .skill-item-2 img {
     transition:
-        transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1),
-        filter 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+        transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+        filter 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .sectionStack .skill-item:hover img,
 .sectionStack .skill-item-2:hover img {
-    animation: stack-icon-hover-focus 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    animation: stack-icon-hover-focus 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .sectionStack [data-tooltip]::after {
