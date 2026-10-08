@@ -576,6 +576,8 @@ body {
 }
 
 .presentacion{
+    --hero-presentacion-entry-delay: 0.5s;
+    --hero-presentacion-entry-duration: 0.9s;
     width: max-content;
 
     padding: 15px
@@ -1163,7 +1165,7 @@ header.scrolled .header-cv-mobile {
     
     filter: blur(clamp(0.3px, calc(0.12px + 0.01vw), 0.38px));
     
-    animation: highlightReveal 0.35s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation: highlightReveal 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
     
     .highlight::after{
@@ -1191,7 +1193,7 @@ header.scrolled .header-cv-mobile {
         transform: scaleX(0);
         transform-origin: left;
     
-        animation: highlightReveal 0.35s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        animation: highlightReveal 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     }
     
     @keyframes highlightReveal{
@@ -1202,12 +1204,12 @@ header.scrolled .header-cv-mobile {
     
     #inicio .highlight.delay-1::before,
     #inicio .highlight.delay-1::after{
-        animation-delay: 1.4s;
+        animation-delay: calc(var(--hero-presentacion-entry-delay) + 0.4s);
     }
     
     #inicio .highlight.delay-2::before,
     #inicio .highlight.delay-2::after{
-        animation-delay: 1.45s;
+        animation-delay: calc(var(--hero-presentacion-entry-delay) + 0.9s);
     }
 
 .animacion {
@@ -1535,7 +1537,7 @@ header.scrolled .animacion-activa::after {
     }
 
     #inicio .contenedorInicio > .presentacion {
-        animation: hero-stagger-reveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.5s both;
+        animation: hero-stagger-reveal var(--hero-presentacion-entry-duration) cubic-bezier(0.22, 1, 0.36, 1) var(--hero-presentacion-entry-delay) both;
     }
 
     #inicio .contenedorInicio > h2 {
