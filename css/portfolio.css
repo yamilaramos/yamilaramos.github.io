@@ -1703,9 +1703,10 @@ header.scrolled .animacion-activa::after {
     gap: 0;
 
     transition:
-        transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
-        box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
-        color 0.30s ease;
+        transform 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+        color 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 
     box-shadow:
         0 clamp(8px, calc(3.07px + 0.36vw), 10px) clamp(32px, calc(12.27px + 1.44vw), 40px) rgba(0, 0, 0, 0.3),
@@ -1721,7 +1722,7 @@ header.scrolled .animacion-activa::after {
     content: "";
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-hero:hover {
@@ -1887,13 +1888,13 @@ header.scrolled .animacion-activa::after {
     margin-top: clamp(3.83px, 0.25vw, 4.8px);
 
     transition:
-        transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
-        filter 0.25s ease;
+        transform 0.75s cubic-bezier(0.4, 0, 0.2, 1),
+        filter 0.75s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-hero:hover svg {
     margin-top: clamp(3.83px, 0.25vw, 4.8px);
-    transform: translateX(clamp(2.3px, 0.15vw, 2.9px));
+    transform: translateX(clamp(1.6px, 0.10vw, 2px));
 }
 
 .btn-seccion:hover svg {
@@ -2409,25 +2410,25 @@ footer p{
 
 @keyframes stack-icon-hover-focus {
     from {
-        filter: blur(2.2px);
+        filter: blur(1px);
         transform: scale(1);
     }
     to {
         filter: blur(0);
-        transform: scale(1.07);
+        transform: scale(1.045);
     }
 }
 
 .sectionStack .skill-item img,
 .sectionStack .skill-item-2 img {
     transition:
-        transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-        filter 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        transform 0.85s cubic-bezier(0.4, 0, 0.2, 1),
+        filter 0.85s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sectionStack .skill-item:hover img,
 .sectionStack .skill-item-2:hover img {
-    animation: stack-icon-hover-focus 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation: stack-icon-hover-focus 0.85s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
 .sectionStack [data-tooltip]::after {
