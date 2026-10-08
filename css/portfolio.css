@@ -1630,6 +1630,8 @@ header.scrolled .animacion-activa::after {
 }
 
 .btn-hero {
+    position: relative;
+    isolation: isolate;
     font-size: clamp(18.75px, 1.22vw, 23.4px);
     border: clamp(1px, 0.07vw, 1.25px) solid rgb(255 255 255 / 30%);
     background: linear-gradient(131deg,
@@ -1661,9 +1663,24 @@ header.scrolled .animacion-activa::after {
         inset 0 clamp(1px, calc(0.38px + 0.05vw), 1.25px) clamp(1px, calc(0.38px + 0.05vw), 1.25px) rgba(255, 255, 255, 0.2);
 }
 
-.btn-hero:hover {
+.btn-hero::before {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    border-radius: inherit;
     background: var(--white);
+    content: "";
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.btn-hero:hover {
     color: var(--yellow);
+}
+
+.btn-hero:hover::before {
+    opacity: 1;
 }
 
 .btn-hero-secundario {
