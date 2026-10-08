@@ -610,6 +610,10 @@ body {
      margin-left: 8%;
 }
 
+.presentacion.b-left {
+    border-left: clamp(3px, 0.20vw, 3.75px) solid var(--yellow);
+}
+
 .presentacion > h1:first-child {
     white-space: nowrap;
 }
