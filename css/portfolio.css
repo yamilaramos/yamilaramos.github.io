@@ -1209,7 +1209,7 @@ header.scrolled .header-cv-mobile {
     
     #inicio .highlight.delay-2::before,
     #inicio .highlight.delay-2::after{
-        animation-delay: 2s;
+        animation-delay: 1.7s;
     }
 
 .animacion {
