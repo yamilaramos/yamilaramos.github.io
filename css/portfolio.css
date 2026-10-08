@@ -1739,7 +1739,7 @@ header.scrolled .animacion-activa::after {
         inset 0 clamp(1px, calc(0.38px + 0.05vw), 1.25px) clamp(1px, calc(0.38px + 0.05vw), 1.25px) rgba(255, 255, 255, 0.2);
 }
 
-.btn-hero::before {
+/* .btn-hero::before {
     position: absolute;
     z-index: -1;
     inset: 0;
@@ -1749,12 +1749,12 @@ header.scrolled .animacion-activa::after {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.btn-hero:hover::before {
+/* .btn-hero:hover::before {
     opacity: 1;
 }
-
+ */
 .btn-hero-secundario {
     position: relative;
     display: inline-flex;
