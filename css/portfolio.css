@@ -1776,6 +1776,7 @@ header.scrolled .animacion-activa::after {
     color: white;
     background: rgba(0, 0, 0, 0.08);
     backdrop-filter: blur(clamp(14px, calc(5.37px + 0.63vw), 17.5px));
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.24));
 
     box-shadow:
         0 clamp(8px, calc(3.07px + 0.36vw), 10px) clamp(32px, calc(12.27px + 1.44vw), 40px) rgba(0, 0, 0, 0.3),
