@@ -2357,6 +2357,16 @@ footer p{
     object-fit: contain;
 }
 
+.sectionStack .skill-item img,
+.sectionStack .skill-item-2 img {
+    transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.sectionStack .skill-item:hover img,
+.sectionStack .skill-item-2:hover img {
+    transform: scale(1.07);
+}
+
 .sectionStack [data-tooltip]::after {
     position: absolute;
     z-index: 20;
@@ -2639,8 +2649,15 @@ html:has(.mapa:hover) #cursor {
     .mk-divider::before,
     .skills-tooltip-portal,
     .sectionStack [data-tooltip]::before,
-    .sectionStack [data-tooltip]::after {
+    .sectionStack [data-tooltip]::after,
+    .sectionStack .skill-item img,
+    .sectionStack .skill-item-2 img {
         transition: none;
+    }
+
+    .sectionStack .skill-item:hover img,
+    .sectionStack .skill-item-2:hover img {
+        transform: none;
     }
 
     .skills-track,
