@@ -576,6 +576,7 @@ body {
 }
 
 .presentacion{
+    position: relative;
     --hero-presentacion-entry-delay: 0.5s;
     --hero-presentacion-entry-duration: 0.9s;
     width: max-content;
@@ -610,11 +611,7 @@ body {
      margin-left: 8%;
 }
 
-.presentacion.b-left {
-    border-left: clamp(3px, 0.20vw, 3.75px) solid var(--yellow);
-}
-
-.presentacion > h1:first-child {
+.presentacion-texto > h1:first-child {
     white-space: nowrap;
 }
 
@@ -632,6 +629,15 @@ body {
 
     opacity: 0.25;
     pointer-events: none;
+}
+
+.presentacion-texto {
+    position: relative;
+    z-index: 1;
+}
+
+.presentacion-texto.b-left {
+    padding-left: clamp(8px, 0.52vw, 10px);
 }
 
 .contenedorInicio h2, .presentacion h1{
