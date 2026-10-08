@@ -1513,6 +1513,17 @@ header.scrolled .animacion-activa::after {
     }
 }
 
+@keyframes hero-stagger-reveal-without-blur {
+    from {
+        opacity: 0;
+        transform: translateY(clamp(40px, calc(15.34px + 1.81vw), 50px));
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @media (prefers-reduced-motion: no-preference) {
     #inicio .contenedorInicio > .titulo {
         animation: hero-stagger-reveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.35s both;
@@ -1526,8 +1537,12 @@ header.scrolled .animacion-activa::after {
         animation: hero-stagger-reveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.65s both;
     }
 
-    #inicio .contenedorInicio > .botones-hero {
-        animation: hero-stagger-reveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.8s both;
+    #inicio .contenedorInicio > .botones-hero > .btn-hero {
+        animation: hero-stagger-reveal-without-blur 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.8s both;
+    }
+
+    #inicio .contenedorInicio > .botones-hero > .btn-hero-secundario {
+        animation: hero-stagger-reveal-without-blur 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.95s both;
     }
 }
 
