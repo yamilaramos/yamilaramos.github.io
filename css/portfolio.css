@@ -1662,7 +1662,7 @@ header.scrolled .animacion-activa::after {
 }
 
 .btn-hero:hover {
-    background-color: var(--white) ;
+    background: var(--white);
     color: var(--yellow);
 }
 
