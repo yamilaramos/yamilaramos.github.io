@@ -1707,10 +1707,10 @@ header.scrolled .animacion-activa::after {
     gap: 0;
 
     transition:
-        transform 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-        color 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-        border-color 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+        color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 
     box-shadow:
         0 clamp(8px, calc(3.07px + 0.36vw), 10px) clamp(32px, calc(12.27px + 1.44vw), 40px) rgba(0, 0, 0, 0.3),
@@ -1726,7 +1726,7 @@ header.scrolled .animacion-activa::after {
     content: "";
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-hero:hover {
@@ -1892,8 +1892,8 @@ header.scrolled .animacion-activa::after {
     margin-top: clamp(3.83px, 0.25vw, 4.8px);
 
     transition:
-        transform 0.75s cubic-bezier(0.4, 0, 0.2, 1),
-        filter 0.75s cubic-bezier(0.4, 0, 0.2, 1);
+        transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+        filter 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-hero:hover svg {
@@ -2426,13 +2426,13 @@ footer p{
 .sectionStack .skill-item img,
 .sectionStack .skill-item-2 img {
     transition:
-        transform 0.85s cubic-bezier(0.4, 0, 0.2, 1),
-        filter 0.85s cubic-bezier(0.4, 0, 0.2, 1);
+        transform 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+        filter 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sectionStack .skill-item:hover img,
 .sectionStack .skill-item-2:hover img {
-    animation: stack-icon-hover-focus 0.85s cubic-bezier(0.4, 0, 0.2, 1) both;
+    animation: stack-icon-hover-focus 0.7s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
 .sectionStack [data-tooltip]::after {
