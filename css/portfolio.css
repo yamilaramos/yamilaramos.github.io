@@ -433,16 +433,7 @@ pointer-events: none;
     width: 88%;
     height: 2px;
     opacity: 0;
-    background: linear-gradient(
-        to right,
-        transparent 0%,
-        rgba(0, 0, 0, 0.14) 10%,
-        rgba(0, 0, 0, 0.30) 25%,
-        rgba(0, 0, 0, 0.40) 50%,
-        rgba(0, 0, 0, 0.30) 75%,
-        rgba(0, 0, 0, 0.14) 90%,
-        transparent 100%
-    );
+    background: var(--yellow);
     border-radius: clamp(10px, 0.65vw, 12.5px);
     transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1);
 }
