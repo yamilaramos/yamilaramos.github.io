@@ -181,14 +181,14 @@ button:hover { color: var(--black); transition: ease;}
     justify-content: center;
     width: 100%;
     height: clamp(260px, 31vw, 385px);
-    overflow: hidden;
+    overflow: visible;
 }
 
 .slide {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: clamp(200px, 22vw, 310px);
+    width: min(clamp(200px, 22vw, 310px), 40%);
     height: 100%;
     border-radius: 25px;
     border: solid clamp(2px, 0.15vw, 2.5px) var(--black);
@@ -197,13 +197,15 @@ button:hover { color: var(--black); transition: ease;}
 
     transition:
         transform 0.55s cubic-bezier(0.22,1,0.36,1),
+        left 0.55s cubic-bezier(0.22,1,0.36,1),
+        width 0.55s cubic-bezier(0.22,1,0.36,1),
         filter 0.55s ease,
         opacity 0.55s ease,
         z-index 0s 0.1s;
 }
 
 .slide.activo {
-    width: min(580px, 100%);
+    width: min(580px, 80%);
 
     transform:
         translate(-50%, -50%)
@@ -221,9 +223,9 @@ button:hover { color: var(--black); transition: ease;}
 }
 
 .slide.prev-1 {
+    left: 25%;
     transform:
         translate(-50%, -50%)
-        translateX(-220px)
         scale(0.88)
         rotateY(10deg);
 
@@ -238,9 +240,9 @@ button:hover { color: var(--black); transition: ease;}
 }
 
 .slide.next-1 {
+    left: 75%;
     transform:
         translate(-50%, -50%)
-        translateX(220px)
         scale(0.88)
         rotateY(-10deg);
 
