@@ -179,16 +179,14 @@ button:hover { color: var(--black); transition: ease;}
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     height: clamp(260px, 31vw, 385px);
-    overflow: visible;
 }
 
 .slide {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: min(clamp(200px, 22vw, 310px), 40%);
+    width: clamp(200px, 22vw, 310px);
     height: 100%;
     border-radius: 25px;
     border: solid clamp(2px, 0.15vw, 2.5px) var(--black);
@@ -197,15 +195,13 @@ button:hover { color: var(--black); transition: ease;}
 
     transition:
         transform 0.55s cubic-bezier(0.22,1,0.36,1),
-        left 0.55s cubic-bezier(0.22,1,0.36,1),
-        width 0.55s cubic-bezier(0.22,1,0.36,1),
         filter 0.55s ease,
         opacity 0.55s ease,
         z-index 0s 0.1s;
 }
 
 .slide.activo {
-    width: min(580px, 80%);
+    width: 580px;
 
     transform:
         translate(-50%, -50%)
@@ -223,9 +219,9 @@ button:hover { color: var(--black); transition: ease;}
 }
 
 .slide.prev-1 {
-    left: 25%;
     transform:
         translate(-50%, -50%)
+        translateX(-220px)
         scale(0.88)
         rotateY(10deg);
 
@@ -240,9 +236,9 @@ button:hover { color: var(--black); transition: ease;}
 }
 
 .slide.next-1 {
-    left: 75%;
     transform:
         translate(-50%, -50%)
+        translateX(220px)
         scale(0.88)
         rotateY(-10deg);
 
@@ -307,18 +303,16 @@ pointer-events: none;
     overflow: hidden;
 }
 
-.sectionCert .contenedorCert > article > .t-cert {
-    flex: 0 0 50%;
-    width: 50%;
-    min-width: 0;
-    margin: 0;
+.sectionCert > article > .w-40 {
+    flex: 0 0 40%;
+    min-width: 40%;
 }
 
-.sectionCert .contenedorCert > article > .carrusel {
-    flex: 0 0 50%;
-    width: 50%;
-    min-width: 0;
-    margin: 0;
+.sectionCert > article > .carrusel {
+    flex: 0 0 60%;
+    width: 60%;
+    min-width: 60%;
+    margin: auto;
 }
 
 .caption {
@@ -1169,7 +1163,7 @@ header.scrolled .header-cv-mobile {
     
     filter: blur(clamp(0.3px, calc(0.12px + 0.01vw), 0.38px));
     
-    animation: highlightReveal 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation: highlightReveal 0.35s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
     
     .highlight::after{
@@ -1197,7 +1191,7 @@ header.scrolled .header-cv-mobile {
         transform: scaleX(0);
         transform-origin: left;
     
-        animation: highlightReveal 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        animation: highlightReveal 0.35s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     }
     
     @keyframes highlightReveal{
@@ -1208,12 +1202,12 @@ header.scrolled .header-cv-mobile {
     
     #inicio .highlight.delay-1::before,
     #inicio .highlight.delay-1::after{
-        animation-delay: 1.5s;
+        animation-delay: 1.4s;
     }
     
     #inicio .highlight.delay-2::before,
     #inicio .highlight.delay-2::after{
-        animation-delay: 1.7s;
+        animation-delay: 1.45s;
     }
 
 .animacion {
