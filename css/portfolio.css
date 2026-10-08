@@ -154,7 +154,7 @@ button:hover { color: var(--black); transition: ease;}
 }
 
 #certDescripcion {
-    width: 74%;
+    width: 80%;
     height: auto;
     margin-bottom: clamp(15px, 1.23vw, 21px);
 }
