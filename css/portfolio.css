@@ -179,7 +179,9 @@ button:hover { color: var(--black); transition: ease;}
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
     height: clamp(260px, 31vw, 385px);
+    overflow: hidden;
 }
 
 .slide {
@@ -201,7 +203,7 @@ button:hover { color: var(--black); transition: ease;}
 }
 
 .slide.activo {
-    width: 580px;
+    width: min(580px, 100%);
 
     transform:
         translate(-50%, -50%)
@@ -304,15 +306,15 @@ pointer-events: none;
 }
 
 .sectionCert .contenedorCert > article > .t-cert {
-    flex: 0 0 40%;
-    width: 40%;
+    flex: 0 0 50%;
+    width: 50%;
     min-width: 0;
     margin: 0;
 }
 
 .sectionCert .contenedorCert > article > .carrusel {
-    flex: 0 0 60%;
-    width: 60%;
+    flex: 0 0 50%;
+    width: 50%;
     min-width: 0;
     margin: 0;
 }
