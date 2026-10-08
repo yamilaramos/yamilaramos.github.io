@@ -1527,8 +1527,14 @@ header.scrolled .animacion-activa::after {
 }
 
 @keyframes hero-button-fade-reveal {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+        filter: blur(clamp(4px, calc(1.53px + 0.18vw), 5px));
+    }
+    to {
+        opacity: 1;
+        filter: blur(0);
+    }
 }
 
 @media (prefers-reduced-motion: no-preference) {
