@@ -1524,6 +1524,11 @@ header.scrolled .animacion-activa::after {
     }
 }
 
+@keyframes hero-button-fade-reveal {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 @media (prefers-reduced-motion: no-preference) {
     #inicio .contenedorInicio > .titulo {
         animation: hero-stagger-reveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.35s both;
@@ -1538,7 +1543,7 @@ header.scrolled .animacion-activa::after {
     }
 
     #inicio .contenedorInicio > .botones-hero > .btn-hero {
-        animation: hero-stagger-reveal-without-blur 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.8s both;
+        animation: hero-button-fade-reveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.8s both;
     }
 
     #inicio .contenedorInicio > .botones-hero > .btn-hero-secundario {
@@ -1699,12 +1704,12 @@ header.scrolled .animacion-activa::after {
 
     align-items: center;
     gap: 0;
+    transform: none;
 
     transition:
-        transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1),
-        color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
-        border-color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow 0.55s cubic-bezier(0.4, 0, 0.2, 1),
+        color 0.55s cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 0.55s cubic-bezier(0.4, 0, 0.2, 1);
 
     box-shadow:
         0 clamp(8px, calc(3.07px + 0.36vw), 10px) clamp(32px, calc(12.27px + 1.44vw), 40px) rgba(0, 0, 0, 0.3),
@@ -1720,11 +1725,12 @@ header.scrolled .animacion-activa::after {
     content: "";
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 0.55s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-hero:hover {
     color: var(--bright-yellow);
+    transform: none;
     border: clamp(1px, 0.07vw, 1.25px) solid var(--white);
 }
 
