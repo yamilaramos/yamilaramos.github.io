@@ -436,11 +436,11 @@ pointer-events: none;
     background: linear-gradient(
         to right,
         transparent 0%,
-        rgba(0, 0, 0, 0.20) 10%,
-        rgba(0, 0, 0, 0.38) 25%,
-        rgba(0, 0, 0, 0.48) 50%,
-        rgba(0, 0, 0, 0.38) 75%,
-        rgba(0, 0, 0, 0.20) 90%,
+        rgba(0, 0, 0, 0.14) 10%,
+        rgba(0, 0, 0, 0.30) 25%,
+        rgba(0, 0, 0, 0.40) 50%,
+        rgba(0, 0, 0, 0.30) 75%,
+        rgba(0, 0, 0, 0.14) 90%,
         transparent 100%
     );
     border-radius: clamp(10px, 0.65vw, 12.5px);
