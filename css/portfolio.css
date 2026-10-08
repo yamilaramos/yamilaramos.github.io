@@ -572,7 +572,7 @@ body {
 .flechaInicio{
     width: 24px;
     height: 24px;
-    opacity: 90%;
+    opacity: 85%;
 }
 
 .presentacion{
@@ -1724,6 +1724,7 @@ header.scrolled .animacion-activa::after {
 
 .btn-hero:hover {
     color: var(--bright-yellow);
+    border: clamp(1px, 0.07vw, 1.25px) solid var(--white);
 }
 
 .btn-hero:hover::before {
