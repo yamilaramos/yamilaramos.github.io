@@ -436,11 +436,11 @@ pointer-events: none;
     background: linear-gradient(
         to right,
         transparent 0%,
-        color-mix(in srgb, var(--yellow) 18%, transparent) 10%,
-        color-mix(in srgb, var(--yellow) 48%, transparent) 25%,
-        var(--yellow) 50%,
-        color-mix(in srgb, var(--yellow) 48%, transparent) 75%,
-        color-mix(in srgb, var(--yellow) 18%, transparent) 90%,
+        color-mix(in srgb, var(--bg-yellow) 18%, transparent) 10%,
+        color-mix(in srgb, var(--bg-yellow) 48%, transparent) 25%,
+        var(--bg-yellow) 50%,
+        color-mix(in srgb, var(--bg-yellow) 48%, transparent) 75%,
+        color-mix(in srgb, var(--bg-yellow) 18%, transparent) 90%,
         transparent 100%
     );
     border-radius: clamp(10px, 0.65vw, 12.5px);
