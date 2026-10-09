@@ -2979,8 +2979,8 @@ html:has(.mapa:hover) #cursor {
 
 .servicio-card h2 {
     margin: 0;
-    padding-bottom: 16px;
-    border-bottom: 1px solid rgb(0 0 0 / 75%);
+    padding-top: 16px;
+    border-top: 1px solid rgb(0 0 0 / 75%);
     color: var(--black);
     font-size: clamp(21px, 2vw, 29px);
     font-weight: 400;
