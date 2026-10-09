@@ -490,7 +490,7 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
 }
-::selection { background-color: var(--yellow); color: var(--black); opacity: 90%; }
+::selection { background-color: rgb(235 166 37 / 70%); color: var(--black); }
 .jcontent-center { justify-content: center; }
 .jcontent-between { justify-content: space-between; }
 .jcontent-evenly { justify-content:space-evenly; }
