@@ -645,7 +645,8 @@ body {
     font-size: clamp(21.5px, 1.40vw, 26.9px);
     font-weight: 300;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.652);
-    color: rgba(255, 255, 255, 0.92);
+    color: var(--cream);
+    opacity: 50%;
 }
 
 #inicio .presentacion-texto h1,
