@@ -1587,7 +1587,7 @@ header.scrolled .animacion-activa::after {
 }
 
 .hero-ada{
-    background-image: url('../img/hero-ada-3.jpg');
+    background-image: url('../img/hero-ada.png');
     background-color: var(--cream);
     background-size: cover;
     height: 100vh;
@@ -1598,7 +1598,7 @@ header.scrolled .animacion-activa::after {
 }
 
 .hero-soplo{
-    background-image: url('../img/hero-soplo-2.png');
+    background-image: url('../img/hero-soplo.png');
     background-color: var(--cream);
     background-size: cover;
     height: 100vh;
