@@ -1162,7 +1162,7 @@ header.scrolled .header-cv-mobile {
     z-index: 1;
     margin: 0px clamp(5px, calc(1.92px + 0.23vw), 6.25px);
     padding: clamp(2px, calc(0.77px + 0.09vw), 2.5px) clamp(4px, calc(1.53px + 0.18vw), 5px);
-    text-shadow: clamp(2px, calc(0.77px + 0.09vw), 2.5px) clamp(2px, calc(0.77px + 0.09vw), 2.5px) clamp(3px, calc(1.15px + 0.14vw), 3.75px) rgb(0 0 0 / 63%);
+    text-shadow: clamp(2px, calc(0.77px + 0.09vw), 2.5px) clamp(2px, calc(0.77px + 0.09vw), 2.5px) clamp(3px, calc(1.15px + 0.14vw), 3.75px) rgb(0 0 0 / 55%);
 }
     
 .highlight::before {
