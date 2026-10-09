@@ -2928,6 +2928,7 @@ html:has(.mapa:hover) #cursor {
 }
 
 .servicio-card {
+    font-family: "Outfit", sans-serif;
     position: relative;
     display: flex;
     flex: 1 1 0;
