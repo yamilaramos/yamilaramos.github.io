@@ -554,7 +554,7 @@ body {
 .titulo{
     font-size: clamp(50px, 5.8vw, 96px);
     margin-left: 8%;
-    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.24));
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.29));
     padding: clamp(8px, 0.66vw, 12px);
 }
 
@@ -591,7 +591,7 @@ body {
     backdrop-filter: blur(
         clamp(14px, calc(5.37 * 1px + 0.63vw), 17.5px)
     );
-    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.24));
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.29));
     
     border: clamp(1px, calc(0.38 * 1px + 0.05vw), 1.25px)
             solid rgb(255 255 255 / 0%);
@@ -599,7 +599,7 @@ body {
     box-shadow:
         0 clamp(8px, calc(3.07 * 1px + 0.36vw), 10px)
           clamp(32px, calc(12.27 * 1px + 1.44vw), 40px)
-          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.36),
         inset 0 clamp(1px, calc(0.38 * 1px + 0.05vw), 1.25px)
           clamp(1px, calc(0.38 * 1px + 0.05vw), 1.25px)
           rgba(255, 255, 255, 0.2);
@@ -644,7 +644,7 @@ body {
 .contenedorInicio > h2, .presentacion h1{
     font-size: clamp(21.5px, 1.40vw, 26.9px);
     font-weight: 300;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.652);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
     color: var(--cream);
     opacity: 96%;
 }
@@ -652,7 +652,7 @@ body {
 #inicio .presentacion-texto h1,
 #inicio .presentacion-texto .highlight,
 #inicio .contenedorInicio > h2 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.652);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
 }
 
 .contenedorInicio h2 { 
@@ -664,9 +664,9 @@ body {
              clamp(18px, 1.42vw, 24px);
     background: rgba(0, 0, 0, 0.08);
     backdrop-filter: blur(clamp(14px, calc(5.37px + 0.63vw), 17.5px));
-    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.24));
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.29));
     border: clamp(1px, calc(0.38px + 0.05vw), 1.25px) solid rgb(255 255 255 / 0%);
-    box-shadow: 0 clamp(8px, calc(3.07px + 0.36vw), 10px) clamp(32px, calc(12.27px + 1.44vw), 40px) rgba(0, 0, 0, 0.3), inset 0 clamp(1px, calc(0.38px + 0.05vw), 1.25px) clamp(1px, calc(0.38px + 0.05vw), 1.25px) rgba(255, 255, 255, 0.2);
+    box-shadow: 0 clamp(8px, calc(3.07px + 0.36vw), 10px) clamp(32px, calc(12.27px + 1.44vw), 40px) rgba(0, 0, 0, 0.36), inset 0 clamp(1px, calc(0.38px + 0.05vw), 1.25px) clamp(1px, calc(0.38px + 0.05vw), 1.25px) rgba(255, 255, 255, 0.2);
     border-radius: clamp(40px, calc(15.34px + 1.13vw), 50px);
 }
 
@@ -706,10 +706,10 @@ h4 {
     border: clamp(1px, 0.07vw, 1.25px) solid rgb(255 255 255 / 30%);
     background: rgba(0, 0, 0, 0.08);
     backdrop-filter: blur(clamp(14px, calc(5.37px + 0.63vw), 17.5px));
-    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.24));
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.29));
 
     box-shadow:
-        0 clamp(8px, calc(3.07px + 0.36vw), 10px) clamp(32px, calc(12.27px + 1.44vw), 40px) rgba(0, 0, 0, 0.3),
+        0 clamp(8px, calc(3.07px + 0.36vw), 10px) clamp(32px, calc(12.27px + 1.44vw), 40px) rgba(0, 0, 0, 0.36),
         inset 0 clamp(1px, calc(0.38px + 0.05vw), 1.25px) clamp(1px, calc(0.38px + 0.05vw), 1.25px) rgba(255, 255, 255, 0.2);
 }
 
@@ -1162,7 +1162,7 @@ header.scrolled .header-cv-mobile {
     z-index: 1;
     margin: 0px clamp(5px, calc(1.92px + 0.23vw), 6.25px);
     padding: clamp(2px, calc(0.77px + 0.09vw), 2.5px) clamp(4px, calc(1.53px + 0.18vw), 5px);
-    text-shadow: clamp(2px, calc(0.77px + 0.09vw), 2.5px) clamp(2px, calc(0.77px + 0.09vw), 2.5px) clamp(3px, calc(1.15px + 0.14vw), 3.75px) rgb(0 0 0 / 55%);
+    text-shadow: clamp(2px, calc(0.77px + 0.09vw), 2.5px) clamp(2px, calc(0.77px + 0.09vw), 2.5px) clamp(3px, calc(1.15px + 0.14vw), 3.75px) rgb(0 0 0 / 63%);
 }
     
 .highlight::before {
@@ -1526,12 +1526,12 @@ header.scrolled .animacion-activa::after {
     from {
         opacity: 0;
         transform: translateY(clamp(40px, calc(15.34px + 1.81vw), 50px));
-        filter: blur(clamp(4px, calc(1.53px + 0.18vw), 5px)) drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.24));
+        filter: blur(clamp(4px, calc(1.53px + 0.18vw), 5px)) drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.29));
     }
     to {
         opacity: 1;
         transform: translateY(0);
-        filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.24));
+        filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.29));
     }
 }
 
@@ -1539,12 +1539,12 @@ header.scrolled .animacion-activa::after {
     from {
         opacity: 0;
         transform: translateY(clamp(40px, calc(15.34px + 1.81vw), 50px));
-        filter: blur(clamp(4px, calc(1.53px + 0.18vw), 5px)) drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.24));
+        filter: blur(clamp(4px, calc(1.53px + 0.18vw), 5px)) drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.29));
     }
     to {
         opacity: 1;
         transform: translateY(0);
-        filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.24));
+        filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.29));
     }
 }
 
@@ -1742,7 +1742,7 @@ header.scrolled .animacion-activa::after {
         border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
     box-shadow:
-        0 clamp(8px, calc(3.07px + 0.36vw), 10px) clamp(32px, calc(12.27px + 1.44vw), 40px) rgba(0, 0, 0, 0.3),
+        0 clamp(8px, calc(3.07px + 0.36vw), 10px) clamp(32px, calc(12.27px + 1.44vw), 40px) rgba(0, 0, 0, 0.36),
         inset 0 clamp(1px, calc(0.38px + 0.05vw), 1.25px) clamp(1px, calc(0.38px + 0.05vw), 1.25px) rgba(255, 255, 255, 0.2);
 }
 
@@ -1783,10 +1783,10 @@ header.scrolled .animacion-activa::after {
     color: white;
     background: rgba(0, 0, 0, 0.08);
     backdrop-filter: blur(clamp(14px, calc(5.37px + 0.63vw), 17.5px));
-    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.24));
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.29));
 
     box-shadow:
-        0 clamp(8px, calc(3.07px + 0.36vw), 10px) clamp(32px, calc(12.27px + 1.44vw), 40px) rgba(0, 0, 0, 0.3),
+        0 clamp(8px, calc(3.07px + 0.36vw), 10px) clamp(32px, calc(12.27px + 1.44vw), 40px) rgba(0, 0, 0, 0.36),
         inset 0 clamp(1px, calc(0.38px + 0.05vw), 1.25px) clamp(1px, calc(0.38px + 0.05vw), 1.25px) rgba(255, 255, 255, 0.2);
     transition:
         transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
