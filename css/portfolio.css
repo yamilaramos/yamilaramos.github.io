@@ -391,12 +391,12 @@ pointer-events: none;
     padding: 2% 0 0 5%;
 }
 
-.titulo-proceso { 
+.tituloProceso, .tituloReco { 
     font-size: clamp(36px, 2.35vw, 45px);
     margin: 5% 0;   
 }
-/* Separa visualmente los subrayados sin decorar el espacio entre palabras */
-.titulo-proceso .subrayado:not(:last-of-type) {
+
+.tituloProceso .subrayado:not(:last-of-type) {
     margin-right: 0.18em;
 } 
 
