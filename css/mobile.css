@@ -1482,6 +1482,11 @@
         transform: none;
     }
 
+    header.scrolled > article {
+        margin-inline: 0;
+        transform: none;
+    }
+
     header .header-brand {
         display: flex;
         flex: 0 1 auto;
