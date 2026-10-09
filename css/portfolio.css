@@ -648,6 +648,12 @@ body {
     color: rgba(255, 255, 255, 0.92);
 }
 
+#inicio .presentacion-texto h1,
+#inicio .presentacion-texto .highlight,
+#inicio .contenedorInicio > h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.652);
+}
+
 .contenedorInicio h2 { 
     font-size: 21px; 
     margin: 10px 0 20px 8%;
