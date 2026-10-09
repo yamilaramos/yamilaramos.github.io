@@ -641,12 +641,12 @@ body {
     padding-left: clamp(8px, 0.52vw, 10px);
 }
 
-.contenedorInicio h2, .presentacion h1{
+.contenedorInicio > h2, .presentacion h1{
     font-size: clamp(21.5px, 1.40vw, 26.9px);
     font-weight: 300;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.652);
     color: var(--cream);
-    opacity: 50%;
+    opacity: 96%;
 }
 
 #inicio .presentacion-texto h1,
