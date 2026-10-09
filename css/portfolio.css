@@ -1758,10 +1758,10 @@ header.scrolled .animacion-activa::after {
     transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 } */
 
-/* .btn-hero:hover::before {
-    opacity: 1;
+.btn-hero:hover{
+    color: var(--black);
 }
- */
+
 .btn-hero-secundario {
     position: relative;
     display: inline-flex;
