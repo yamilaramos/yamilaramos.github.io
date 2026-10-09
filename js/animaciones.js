@@ -6,11 +6,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // El botón de menú no existe en todas las versiones del HTML.
   if (hamburguesa && nav) {
+    const actualizarEstadoMenu = (abierto) => {
+      hamburguesa.setAttribute("aria-expanded", String(abierto));
+      hamburguesa.setAttribute("aria-label", abierto ? "Cerrar menú" : "Abrir menú");
+    };
+
     hamburguesa.addEventListener("click", () => {
-      nav.classList.toggle("active");
-      hamburguesa.classList.toggle("active");
-      document.body.classList.toggle("menu-open");
-      document.documentElement.classList.toggle("menu-open");
+      const abierto = nav.classList.toggle("active");
+      hamburguesa.classList.toggle("active", abierto);
+      document.body.classList.toggle("menu-open", abierto);
+      document.documentElement.classList.toggle("menu-open", abierto);
+      actualizarEstadoMenu(abierto);
     });
 
     links.forEach(link => {
@@ -19,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         hamburguesa.classList.remove("active");
         document.body.classList.remove("menu-open");
         document.documentElement.classList.remove("menu-open");
+        actualizarEstadoMenu(false);
       });
     });
   }
