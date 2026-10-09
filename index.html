@@ -81,7 +81,16 @@
             <section id="inicio" class="hero d-flex align-items-center jcontent-center"> 
 
                 <div class="contenedorInicio w-60 d-flex c-white flex-direction-column">
-                    <img class="titulo w-90" src="/img/titulo.png">
+                    <svg class="titulo w-90" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2152 289" role="img" aria-label="Título principal del portfolio">
+                        <title>Título principal del portfolio</title>
+                        <defs>
+                            <filter id="titulo-color-cream" color-interpolation-filters="sRGB">
+                                <feFlood flood-color="#fefaf6" result="color"/>
+                                <feComposite in="color" in2="SourceAlpha" operator="in"/>
+                            </filter>
+                        </defs>
+                        <image href="/img/titulo.png" xlink:href="/img/titulo.png" width="2152" height="289" preserveAspectRatio="none" filter="url(#titulo-color-cream)"/>
+                    </svg>
                 
                     <div class="presentacion w-fit">
                         <div class="presentacion-texto">
