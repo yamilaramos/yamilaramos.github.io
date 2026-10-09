@@ -2909,7 +2909,6 @@ html:has(.mapa:hover) #cursor {
     align-items: center;
     justify-content: center;
     padding: clamp(80px, 8vw, 120px) 4%;
-    background: var(--black);
     color: var(--black);
 }
 
