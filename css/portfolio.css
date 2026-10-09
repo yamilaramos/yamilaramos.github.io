@@ -2908,8 +2908,14 @@ html:has(.mapa:hover) #cursor {
     }
 }
 
+.seccionReco p{
+    font-family: "Outfit", sans-serif;
+    color: var(--black);
+    font-size: clamp(19.4px, 1.27vw, 24.3px);
+    line-height: clamp(27.5px, 1.80vw, 34.4px);
+}
 
-.servicios-final {
+.seccionReco {
     position: relative;
     display: flex;
     align-items: center;
