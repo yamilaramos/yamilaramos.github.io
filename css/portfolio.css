@@ -2933,11 +2933,9 @@ html:has(.mapa:hover) #cursor {
 }
 
 .recos-final__cards {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    align-items: stretch;
-    gap: clamp(18px, 2vw, 28px);
-    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: min(100%, 1400px);
     margin-inline: auto;
     padding-inline: 1%;
@@ -2947,10 +2945,10 @@ html:has(.mapa:hover) #cursor {
     font-family: "Outfit", sans-serif;
     position: relative;
     display: flex;
+    flex: 1 1 0;
     flex-direction: column;
-    box-sizing: border-box;
     min-width: 0;
-    max-width: none;
+    max-width: 360px;
     height: auto;
     padding: clamp(24px, 2.4vw, 36px);
     border: 2px solid var(--black);
@@ -2964,23 +2962,27 @@ html:has(.mapa:hover) #cursor {
         box-shadow 0.55s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
+.reco-card + .reco-card {
+    margin-left: clamp(-56px, -3.5vw, -36px);
+}
+
 .reco-card:nth-child(1) {
-    --card-angle: -1.25deg;
+    --card-angle: -6deg;
     z-index: 1;
 }
 
 .reco-card:nth-child(2) {
-    --card-angle: 1.25deg;
+    --card-angle: 4deg;
     z-index: 2;
 }
 
 .reco-card:nth-child(3) {
-    --card-angle: -1.25deg;
+    --card-angle: -4deg;
     z-index: 3;
 }
 
 .reco-card:nth-child(4) {
-    --card-angle: 1.25deg;
+    --card-angle: 5deg;
     z-index: 4;
 }
 
@@ -3031,30 +3033,23 @@ html:has(.mapa:hover) #cursor {
 
 @media screen and (max-width: 950px) {
     .recos-final__cards {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: clamp(20px, 3vw, 32px);
         max-width: 760px;
-        padding: 16px 12px 24px;
-        overflow-x: auto;
-        overscroll-behavior-x: contain;
-        scroll-snap-type: x proximity;
-        -webkit-overflow-scrolling: touch;
+        padding: 0;
     }
 
     .reco-card {
-        flex: 0 0 min(82vw, 360px);
         max-width: none;
         min-height: 360px;
         margin: 0;
-        scroll-snap-align: start;
     }
 
-    .reco-card:nth-child(1) { --card-angle: -1deg; }
-    .reco-card:nth-child(2) { --card-angle: 1deg; }
-    .reco-card:nth-child(3) { --card-angle: -1deg; }
-    .reco-card:nth-child(4) { --card-angle: 1deg; }
+    .reco-card:nth-child(1) { --card-angle: -2.5deg; }
+    .reco-card:nth-child(2) { --card-angle: 2deg; }
+    .reco-card:nth-child(3) { --card-angle: 2deg; }
+    .reco-card:nth-child(4) { --card-angle: -2.5deg; }
 }
 
 @media screen and (max-width: 560px) {
@@ -3063,22 +3058,20 @@ html:has(.mapa:hover) #cursor {
     }
 
     .recos-final__cards {
-        width: 100%;
-        max-width: none;
+        grid-template-columns: minmax(0, 1fr);
         gap: 22px;
-        padding: 16px 12px 24px;
+        max-width: 420px;
     }
 
     .reco-card {
-        flex-basis: min(82vw, 350px);
         min-height: 330px;
         padding: 28px;
     }
 
-    .reco-card:nth-child(1) { --card-angle: -0.75deg; }
-    .reco-card:nth-child(2) { --card-angle: 0.75deg; }
-    .reco-card:nth-child(3) { --card-angle: -0.75deg; }
-    .reco-card:nth-child(4) { --card-angle: 0.75deg; }
+    .reco-card:nth-child(1) { --card-angle: -1.5deg; }
+    .reco-card:nth-child(2) { --card-angle: 1.5deg; }
+    .reco-card:nth-child(3) { --card-angle: -1.5deg; }
+    .reco-card:nth-child(4) { --card-angle: 1.5deg; }
 }
 
 @media (prefers-reduced-motion: reduce) {
