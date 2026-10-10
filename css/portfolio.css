@@ -2999,6 +2999,8 @@ html:has(.mapa:hover) #cursor {
     gap: 10px;
 }
 
+.rol{font-size: clamp(15.625px, 1.02vw, 19.5px);}
+
 .reco-card__avatar {
     position: relative;
     width: fit-content;
