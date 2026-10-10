@@ -3009,7 +3009,7 @@ html:has(.mapa:hover) #cursor {
 .reco-card__avatar::before {
     content: "";
     position: absolute;
-    top: -8px;
+    top: -15px;
     left: 0;
     width: clamp(25px, calc(9.59px + 1.13vw), 31.25px);
     height: clamp(3px, calc(1.15px + 0.14vw), 3.75px);
