@@ -760,12 +760,10 @@
         padding: 8% 6%;
     }
 
-
     #proceso .proceso > div > .flex-direction-column {
         flex: 1;
         min-width: 0;
     }
-
 
     #proceso .proceso p {
         width: 100%;
@@ -775,9 +773,9 @@
         max-width: 100%;
     }
 
-
     .presentacion{
-        margin-left: 0px;
+        width: 95%;
+        margin: auto;
         font-size: 16px;
         background: rgba(0, 0, 0, 0.08);
         backdrop-filter: blur(14px);
