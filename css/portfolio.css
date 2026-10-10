@@ -2992,21 +2992,19 @@ html:has(.mapa:hover) #cursor {
 
 .servicio-card__persona {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
+    align-items: center;
+    gap: 5px;
 }
 
 .servicio-card__avatar {
     position: relative;
     width: fit-content;
-    padding-top: 16px;
 }
 
 .servicio-card__avatar::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -8px;
     left: 0;
     width: clamp(25px, calc(9.59px + 1.13vw), 31.25px);
     height: clamp(3px, calc(1.15px + 0.14vw), 3.75px);
