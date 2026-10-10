@@ -2914,14 +2914,14 @@ html:has(.mapa:hover) #cursor {
     }
 }
 
-.seccionReco p{
+.seccionReco p:not(.rol){
     font-family: "Outfit", sans-serif;
     color: var(--black);
     font-size: clamp(19.4px, 1.27vw, 24.3px);
     line-height: clamp(27.5px, 1.80vw, 34.4px);
 }
 
-.seccionReco.rol{}
+.seccionReco.rol{font-size: clamp(15.625px, 1.02vw, 19.5px);}
 
 .seccionReco {
     position: relative;
@@ -2998,8 +2998,6 @@ html:has(.mapa:hover) #cursor {
     align-items: center;
     gap: 10px;
 }
-
-.rol{font-size: clamp(15.625px, 1.02vw, 19.5px);}
 
 .reco-card__avatar {
     position: relative;
