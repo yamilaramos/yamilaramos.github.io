@@ -3009,7 +3009,7 @@ html:has(.mapa:hover) #cursor {
     font-size: clamp(16px, 1.2vw, 19px);
     line-height: 1.55;
 }
-.reco-card > p > .rol{margin: 0px;}
+.reco-card p .rol{margin: 0;}
 
 .reco-card {
     font-family: "Outfit", sans-serif;
