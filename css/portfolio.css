@@ -2219,7 +2219,7 @@ footer p{
 }
 
 .locacion-logo {
-    margin-bottom: clamp(6px, 0.39vw, 7.5px);
+    margin-bottom: clamp(4px, 0.39vw, 6.5px);
 
     height: clamp(30px, 1.97vw, 37.5px);
     width: clamp(30px, 1.97vw, 37.5px);
