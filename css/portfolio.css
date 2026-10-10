@@ -2987,6 +2987,11 @@ html:has(.mapa:hover) #cursor {
     border-radius: clamp(10px, calc(3.84px + 0.45vw), 12.5px);
 }
 
+reco-card__avatar{
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.909);
+}
+
 .seccionReco p{
     font-family: "Outfit", sans-serif;
     color: var(--black);
