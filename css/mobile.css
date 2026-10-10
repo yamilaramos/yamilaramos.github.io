@@ -1,6 +1,6 @@
 @media screen and (max-width:768px){
     #cursor {display: none !important;}
-    #inicio > a, p{font-size: 16px;}
+    #inicio .contenedorInicio > h2 > a, p{font-size: 16px;}
      
     #inicio.hero{
         box-sizing: border-box;
