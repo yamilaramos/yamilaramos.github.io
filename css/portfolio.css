@@ -3031,17 +3031,24 @@ html:has(.mapa:hover) #cursor {
 
 @media screen and (max-width: 950px) {
     .recos-final__cards {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
         gap: clamp(20px, 3vw, 32px);
         max-width: 760px;
-        padding: 0;
+        padding: 16px 12px 24px;
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
+        -webkit-overflow-scrolling: touch;
     }
 
     .reco-card {
+        flex: 0 0 min(82vw, 360px);
         max-width: none;
         min-height: 360px;
         margin: 0;
+        scroll-snap-align: start;
     }
 
     .reco-card:nth-child(1) { --card-angle: -1deg; }
@@ -3056,12 +3063,14 @@ html:has(.mapa:hover) #cursor {
     }
 
     .recos-final__cards {
-        grid-template-columns: minmax(0, 1fr);
+        width: 100%;
+        max-width: none;
         gap: 22px;
-        max-width: 420px;
+        padding: 16px 12px 24px;
     }
 
     .reco-card {
+        flex-basis: min(82vw, 350px);
         min-height: 330px;
         padding: 28px;
     }
