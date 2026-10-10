@@ -2924,6 +2924,7 @@ html:has(.mapa:hover) #cursor {
 .seccionReco.rol{font-size: clamp(16px, 1.2vw, 19px); color: rgb(0 0 0 / 62%);}
 
 .seccionReco {
+    gap: 10%;
     position: relative;
     display: flex;
     align-items: center;
