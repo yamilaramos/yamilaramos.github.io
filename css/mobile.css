@@ -9,15 +9,15 @@
         border-bottom: none;
         border: 2px solid var(--black);
         border-radius: 22px 22px 0 0;
-        background-position: center center;
-        background: url('../img/hero-mobile.png');
+        flex-direction: column;
         
-        flex-direction:column;
+        background: url('../img/hero-mobile.png');
         justify-content: flex-start;
         position: relative;
         z-index: 1;
-        background-position: center left;
+        background-position: center center;
         background-repeat: no-repeat;
+        background-size: cover;
     }
 
     #inicio.hero > div{
