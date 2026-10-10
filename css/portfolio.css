@@ -2987,7 +2987,7 @@ html:has(.mapa:hover) #cursor {
     border-radius: clamp(10px, calc(3.84px + 0.45vw), 12.5px);
 }
 
-reco-card__avatar{
+.reco-card__avatar img{
     border-radius: 50%;
     border: 2px solid rgba(255, 255, 255, 0.909);
 }
