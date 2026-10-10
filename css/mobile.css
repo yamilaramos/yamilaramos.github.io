@@ -1,12 +1,35 @@
 @media screen and (max-width:768px){
-
-     p{font-size: 16px;}
+    #cursor {display: none !important;}
+    p{font-size: 16px;}
      
-     #cursor {
-        display: none !important;
+    #inicio.hero{
+        box-sizing: border-box;
+        width: calc(100% - 20px);
+        margin: 0 auto 0;
+        border-bottom: none;
+        border: 2px solid var(--black);
+        border-radius: 22px 22px 0 0;
+        background-position: center center;
+        background: url('../img/hero-mobile.png');
+        
+        flex-direction:column;
+        justify-content: flex-start;
+        position: relative;
+        z-index: 1;
+        background-position: center left;
+        background-repeat: no-repeat;
     }
 
-     .skill-item[data-tooltip]::before,
+    #inicio.hero > div{
+        width:100%;
+    }
+     
+    #inicio.titulo{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .skill-item[data-tooltip]::before,
     .skill-item[data-tooltip]::after,
     .skill-item-2[data-tooltip]::before,
     .skill-item-2[data-tooltip]::after {
@@ -666,31 +689,10 @@
        height: 40px;
     }
 
-
-    .hero{
-        background-color: #3b2a19;
-        background: url('../img/hero-mobile.png');
-        
-        flex-direction:column;
-        padding:40px 20px;
-        justify-content: flex-start;
-        position: relative;
-        z-index: 1;
-        background-position: center left;
-        background-repeat: no-repeat;
-    }
-
-
-    .hero > div{
-        width:100%;
-    }
-
-
     .decor-line{
     position: relative;
     display: inline-block;
     }
-
 
     .decor-line::after{
         content: "";
@@ -766,27 +768,6 @@
     #proceso .proceso p {
         width: 100%;
     }
-
-
-    .titulo{
-        width: 65%;
-        margin: 0;
-        margin-bottom: 10px;
-        background: rgba(0, 0, 0, 0.08);
-        backdrop-filter: blur(14px);
-        -webkit-backdrop-filter: blur(14px);
-
-
-        border: 1px solid rgba(255, 255, 255, 0.073);
-        box-shadow: 
-            0 8px 32px rgba(0, 0, 0, 0.3),
-            inset 0 1px 1px rgba(255, 255, 255, 0.2);
-        
-       
-        border-radius: 16px 16px 16px 2px;
-        padding: 8px;
-    }
-
 
     .logo-portafolio{
         max-width: 100%;
@@ -1625,16 +1606,6 @@
         width: 22px;
         height: 22px;
         object-fit: contain;
-    }
-
-    #inicio.hero{
-        box-sizing: border-box;
-        width: calc(100% - 20px);
-        margin: 0 auto 0;
-        border-bottom: none;
-        border: 2px solid var(--black);
-        border-radius: 22px 22px 0 0;
-        background-position: center center;
     }
 }
 
