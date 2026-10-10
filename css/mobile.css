@@ -24,7 +24,7 @@
         width:100%;
     }
      
-    #inicio.titulo{
+    #inicio .contenedorInicio > .titulo{
         width: 80%;
         margin: auto;
     }
