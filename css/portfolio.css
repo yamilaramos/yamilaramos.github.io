@@ -2921,6 +2921,8 @@ html:has(.mapa:hover) #cursor {
     line-height: clamp(27.5px, 1.80vw, 34.4px);
 }
 
+.seccionReco.rol{}
+
 .seccionReco {
     position: relative;
     display: flex;
@@ -2930,7 +2932,7 @@ html:has(.mapa:hover) #cursor {
     color: var(--black);
 }
 
-.servicios-final__cards {
+.reco-final__cards {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2939,7 +2941,7 @@ html:has(.mapa:hover) #cursor {
     padding-inline: 1%;
 }
 
-.servicio-card {
+.reco-card {
     font-family: "Outfit", sans-serif;
     position: relative;
     display: flex;
@@ -2960,48 +2962,48 @@ html:has(.mapa:hover) #cursor {
         box-shadow 0.55s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.servicio-card + .servicio-card {
+.reco-card + .reco-card {
     margin-left: clamp(-56px, -3.5vw, -36px);
 }
 
-.servicio-card:nth-child(1) {
+.reco-card:nth-child(1) {
     --card-angle: -6deg;
     z-index: 1;
 }
 
-.servicio-card:nth-child(2) {
+.reco-card:nth-child(2) {
     --card-angle: 4deg;
     z-index: 2;
 }
 
-.servicio-card:nth-child(3) {
+.reco-card:nth-child(3) {
     --card-angle: -4deg;
     z-index: 3;
 }
 
-.servicio-card:nth-child(4) {
+.reco-card:nth-child(4) {
     --card-angle: 5deg;
     z-index: 4;
 }
 
-.servicio-card:hover {
+.reco-card:hover {
     z-index: 10;
     box-shadow: 0 22px 44px rgb(0 0 0 / 15%), 0 0 0 1px rgb(255 255 255 / 8%);
     transform: translateY(-8px) rotate(0deg);
 }
 
-.servicio-card__persona {
+.reco-card__persona {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.servicio-card__avatar {
+.reco-card__avatar {
     position: relative;
     width: fit-content;
 }
 
-.servicio-card__avatar::before {
+.reco-card__avatar::before {
     content: "";
     position: absolute;
     top: -8px;
@@ -3012,7 +3014,7 @@ html:has(.mapa:hover) #cursor {
     border-radius: clamp(10px, calc(3.84px + 0.45vw), 12.5px);
 }
 
-.servicio-card h2 {
+.reco-card h2 {
     margin: 0;
     color: var(--black);
     font-size: clamp(21px, 2vw, 29px);
@@ -3021,26 +3023,15 @@ html:has(.mapa:hover) #cursor {
     letter-spacing: -0.025em;
 }
 
-
-
-.servicio-card p {
+.reco-card p:not(.rol) {
     margin: 0 0 18px;
     color: rgb(0 0 0 / 62%);
     font-size: clamp(16px, 1.2vw, 19px);
     line-height: 1.55;
 }
 
-.servicio-card__cta span {
-    display: inline-block;
-    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.servicio-card:hover .servicio-card__cta span {
-    transform: translateX(4px);
-}
-
 @media screen and (max-width: 950px) {
-    .servicios-final__cards {
+    .reco-final__cards {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: clamp(20px, 3vw, 32px);
@@ -3048,43 +3039,43 @@ html:has(.mapa:hover) #cursor {
         padding: 0;
     }
 
-    .servicio-card {
+    .reco-card {
         max-width: none;
         min-height: 360px;
         margin: 0;
     }
 
-    .servicio-card:nth-child(1) { --card-angle: -2.5deg; }
-    .servicio-card:nth-child(2) { --card-angle: 2deg; }
-    .servicio-card:nth-child(3) { --card-angle: 2deg; }
-    .servicio-card:nth-child(4) { --card-angle: -2.5deg; }
+    .reco-card:nth-child(1) { --card-angle: -2.5deg; }
+    .reco-card:nth-child(2) { --card-angle: 2deg; }
+    .reco-card:nth-child(3) { --card-angle: 2deg; }
+    .reco-card:nth-child(4) { --card-angle: -2.5deg; }
 }
 
 @media screen and (max-width: 560px) {
-    .servicios-final {
+    .reco-final {
         padding: 64px 24px;
     }
 
-    .servicios-final__cards {
+    .reco-final__cards {
         grid-template-columns: minmax(0, 1fr);
         gap: 22px;
         max-width: 420px;
     }
 
-    .servicio-card {
+    .reco-card {
         min-height: 330px;
         padding: 28px;
     }
 
-    .servicio-card:nth-child(1) { --card-angle: -1.5deg; }
-    .servicio-card:nth-child(2) { --card-angle: 1.5deg; }
-    .servicio-card:nth-child(3) { --card-angle: -1.5deg; }
-    .servicio-card:nth-child(4) { --card-angle: 1.5deg; }
+    .reco-card:nth-child(1) { --card-angle: -1.5deg; }
+    .reco-card:nth-child(2) { --card-angle: 1.5deg; }
+    .reco-card:nth-child(3) { --card-angle: -1.5deg; }
+    .reco-card:nth-child(4) { --card-angle: 1.5deg; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .servicio-card,
-    .servicio-card__cta span {
+    .reco-card,
+    .reco-card__cta span {
         transition: none;
     }
 }
