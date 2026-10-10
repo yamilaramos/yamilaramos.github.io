@@ -29,6 +29,8 @@
         margin-bottom: 10px;
     }
 
+    #inicio .presentacion-texto h1{font-size: 16px;}
+
     .skill-item[data-tooltip]::before,
     .skill-item[data-tooltip]::after,
     .skill-item-2[data-tooltip]::before,
