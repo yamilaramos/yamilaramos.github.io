@@ -2991,14 +2991,19 @@ html:has(.mapa:hover) #cursor {
 }
 
 .servicio-card__persona {
-    position: relative;
     display: flex;
-    align-items: center;
-    gap: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.servicio-card__avatar {
+    position: relative;
+    width: fit-content;
     padding-top: 16px;
 }
 
-.servicio-card__persona::before {
+.servicio-card__avatar::before {
     content: "";
     position: absolute;
     top: 0;
