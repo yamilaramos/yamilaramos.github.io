@@ -30,6 +30,8 @@
     }
 
     #inicio .presentacion-texto > h1, #inicio .contenedorInicio > h2 { font-size: 16px; }
+    
+    .flechaInicio{display:none;}
 
     .skill-item[data-tooltip]::before,
     .skill-item[data-tooltip]::after,
