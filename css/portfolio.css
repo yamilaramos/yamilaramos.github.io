@@ -2990,18 +2990,15 @@ html:has(.mapa:hover) #cursor {
     transform: translateY(-8px) rotate(0deg);
 }
 
-.servicio-card h2 {
+.servicio-card__persona {
     position: relative;
-    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
     padding-top: 16px;
-    color: var(--black);
-    font-size: clamp(21px, 2vw, 29px);
-    font-weight: 500;
-    line-height: 1.12;
-    letter-spacing: -0.025em;
 }
 
-.servicio-card h2::before {
+.servicio-card__persona::before {
     content: "";
     position: absolute;
     top: 0;
@@ -3011,6 +3008,17 @@ html:has(.mapa:hover) #cursor {
     background: var(--yellow);
     border-radius: clamp(10px, calc(3.84px + 0.45vw), 12.5px);
 }
+
+.servicio-card h2 {
+    margin: 0;
+    color: var(--black);
+    font-size: clamp(21px, 2vw, 29px);
+    font-weight: 500;
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+}
+
+
 
 .servicio-card p {
     margin: 0 0 18px;
