@@ -728,11 +728,7 @@
     
         border-radius: 10px;
     }
-
-    #inicio.hero {
-        background-position: center center;
-    }
-
+     
     #stack.sectionStack {
         border-top: none;
         border-bottom: none;
@@ -1633,13 +1629,14 @@
         object-fit: contain;
     }
 
-    #inicio.hero.contenedor {
+    #inicio.hero{
         box-sizing: border-box;
         width: calc(100% - 20px);
         margin: 0 auto 0;
         border-bottom: none;
         border: 2px solid var(--black);
-        border-radius: 22px;
+        border-radius: 22px 22px 0 0;
+        background-position: center center;
     }
 }
 
