@@ -137,6 +137,34 @@ if (cursor && tieneHover) {
   let lastScrollY = window.scrollY;
   let scrollDirection = 0;
   let directionStartY = lastScrollY;
+  let directionThreshold = UMBRAL_DIRECCION;
+
+  const getHalfSectionHeight = () => {
+    const midpoint = window.innerHeight / 2;
+    const sections = [...document.querySelectorAll("main section")]
+      .filter(section => section.offsetHeight > 0);
+
+    if (!sections.length) return window.innerHeight / 2;
+
+    const activeSection = sections.find(section => {
+      const rect = section.getBoundingClientRect();
+      return rect.top <= midpoint && rect.bottom >= midpoint;
+    });
+
+    const section = activeSection || sections.reduce((nearest, candidate) => {
+      const rect = candidate.getBoundingClientRect();
+      const distance = midpoint < rect.top
+        ? rect.top - midpoint
+        : midpoint > rect.bottom
+          ? midpoint - rect.bottom
+          : 0;
+      return !nearest || distance < nearest.distance
+        ? { element: candidate, distance }
+        : nearest;
+    }, null)?.element;
+
+    return Math.max(UMBRAL_DIRECCION, (section?.offsetHeight || window.innerHeight) / 2);
+  };
 
   const onScroll = () => {
     const currentY = Math.max(0, window.scrollY);
@@ -160,10 +188,13 @@ if (cursor && tieneHover) {
     if (nextDirection !== scrollDirection) {
       scrollDirection = nextDirection;
       directionStartY = wasAtTop ? UMBRAL : currentY - delta;
+      directionThreshold = scrollDirection < 0
+        ? getHalfSectionHeight()
+        : UMBRAL_DIRECCION;
     }
 
     const crossedTopWhileScrollingDown = scrollDirection > 0 && wasAtTop;
-    if (Math.abs(currentY - directionStartY) < UMBRAL_DIRECCION && !crossedTopWhileScrollingDown) return;
+    if (Math.abs(currentY - directionStartY) < directionThreshold && !crossedTopWhileScrollingDown) return;
 
     if (crossedTopWhileScrollingDown) {
       header.classList.add("scroll-hidden", "scroll-initial-hidden");
