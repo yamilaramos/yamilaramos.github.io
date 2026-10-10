@@ -2921,7 +2921,7 @@ html:has(.mapa:hover) #cursor {
     line-height: clamp(27.5px, 1.80vw, 34.4px);
 }
 
-.seccionReco.rol{font-size: clamp(15.625px, 1.02vw, 19.5px);}
+.seccionReco.rol{font-size: clamp(16px, 1.2vw, 19px); color: rgb(0 0 0 / 62%);}
 
 .seccionReco {
     position: relative;
@@ -2996,7 +2996,7 @@ html:has(.mapa:hover) #cursor {
     margin: 5px 0;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .reco-card__avatar {
