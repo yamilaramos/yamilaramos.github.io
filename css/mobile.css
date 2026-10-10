@@ -26,8 +26,7 @@
      
     #inicio.titulo{
         width: 80%;
-        margin-bottom: 10px;
-        margin-left: 0;
+        margin: auto;
     }
 
     #inicio .presentacion-texto > h1, #inicio .contenedorInicio > h2 { font-size: 16px; }
