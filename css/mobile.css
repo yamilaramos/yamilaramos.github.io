@@ -314,9 +314,9 @@
 
     header{
         height: 8vh;
-        border-bottom: 2px solid;
         z-index: 10; 
         padding: 1% 0;
+        border: 2px solid var(--black);
     }
 
     header.scrolled {
@@ -331,8 +331,6 @@
     .fade-in-down{
         animation: none !important;
         transition: none !important;
-
-
         opacity: 1 !important;
         transform: none !important;
     }
