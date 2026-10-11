@@ -10,14 +10,15 @@
     --ticker-duration: 45s;
 }
 
-:root[data-theme="bosque"] {
-    --yellow: #809767;
+:root[data-theme="océano"] {
+    --yellow: #62A2BF;
+    --cream: #22242a;
     --bright-yellow: #B8CB91;
     --bg-yellow: #EEF2E6;
     --grad-yellow: linear-gradient(131deg, rgba(108, 133, 84, 1) 0%, rgba(145, 169, 111, 1) 50%, rgba(108, 133, 84, 1) 100%);
 }
 
-:root[data-theme="lavanda"] {
+:root[data-theme="musgo"] {
     --yellow: #987BAF;
     --bright-yellow: #C8A8DE;
     --bg-yellow: #F1EAF6;
