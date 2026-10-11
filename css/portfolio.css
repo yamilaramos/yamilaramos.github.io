@@ -399,6 +399,7 @@ pointer-events: none;
 }
 
 .tituloProceso{ 
+    color: var(--black);
     font-size: clamp(36px, 2.35vw, 45px);
     margin: 5% 0;   
 }
@@ -424,11 +425,13 @@ pointer-events: none;
 }
 
 .proceso h3 { 
+    color: var(--black);
     font-size: clamp(22.5px, 1.47vw, 28.125px);
     margin: 1.8% 0 0.9% 0;
 }
 
 .proceso p {
+    color: var(--black);
     font-size: clamp(19.4px, 1.27vw, 24.3px);
 }
 
@@ -2380,11 +2383,13 @@ footer p{
 }
 
 .stack-intro h2 {
+    color: var(--black);
     margin: 0 0 clamp(15px, 1.23vw, 21px);
     font-size: clamp(36px, 2.35vw, 45px);
 }
 
 .stack-intro p {
+    color: var(--black);
     width: min(53%, 900px);
     margin: 0;
     font-size: clamp(19.4px, 1.27vw, 24.3px);
