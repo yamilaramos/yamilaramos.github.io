@@ -2966,7 +2966,7 @@ html:has(.mapa:hover) #cursor {
 
 .reco-card__persona {
     position: relative;
-    margin: 8px 0;
+    margin: 16px 0 8px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2976,7 +2976,7 @@ html:has(.mapa:hover) #cursor {
 .reco-card__persona::before {
     content: "";
     position: absolute;
-    top: -15px;
+    top: -20px;
     left: 50%;
     width: 25%;
     height: clamp(3px, calc(1.15px + 0.14vw), 3.75px);
