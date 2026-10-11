@@ -18,7 +18,7 @@
     --inicio-cream: #ffffff;
     --bright-yellow: #B8CB91;
     --bg-yellow: #EEF2E6;
-    --grad-yellow: linear-gradient(131deg, rgba(108, 133, 84, 1) 0%, rgba(145, 169, 111, 1) 50%, rgba(108, 133, 84, 1) 100%);
+    --grad-yellow: linear-gradient(131deg, rgba(171, 219, 242, 1) 0%, rgba(200, 232, 247, 1) 50%, rgba(171, 219, 242, 1) 100%);
 }
 
 :root[data-theme="musgo"] {
