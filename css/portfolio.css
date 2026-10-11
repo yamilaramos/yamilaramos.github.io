@@ -1270,7 +1270,7 @@ header.scrolled .header-cv-mobile {
     content: "";
     position: absolute;
     left: 0;
-    bottom: clamp(-2px, calc(-0.77px + -0.09vw), -2.5px);
+    bottom: clamp(-6.25px, calc(-1.92px - 0.12vw), -4px);
 
     width: 100%;
     height: clamp(3px, calc(1.15px + 0.14vw), 3.75px);
@@ -1296,7 +1296,7 @@ header.scrolled .animacion-activa::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: clamp(-2px, calc(-0.77px + -0.09vw), -2.5px);
+    bottom: clamp(-6.25px, calc(-1.92px - 0.12vw), -4px);
 
     width: 100%;
     height: clamp(3px, calc(1.15px + 0.14vw), 3.75px);
