@@ -1770,7 +1770,7 @@ header.scrolled .animacion-activa::after {
     transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
 }
 
-.hero-theme-switcher__button[data-theme-choice="original"] { --theme-swatch: var(--yellow); }
+.hero-theme-switcher__button[data-theme-choice="original"] { --theme-swatch: #EBA625; }
 .hero-theme-switcher__button[data-theme-choice="bosque"] { --theme-swatch: #91A96F; }
 .hero-theme-switcher__button[data-theme-choice="lavanda"] { --theme-swatch: #AE92C6; }
 
