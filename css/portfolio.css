@@ -2201,7 +2201,7 @@ footer {
     background-repeat: no-repeat;
 
     border-top: clamp(2px, 0.15vw, 2.5px) solid var(--black);
-    background-color: var(--yellow);
+    background: var(--grad-yellow);
     text-align: center;
 
     border-radius:
