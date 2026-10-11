@@ -22,7 +22,8 @@
 }
 
 :root[data-theme="musgo"] {
-    --yellow: #987BAF;
+    --yellow: #4f5c22;
+    --cream: #dacb77;
     --bright-yellow: #C8A8DE;
     --bg-yellow: #F1EAF6;
     --grad-yellow: linear-gradient(131deg, rgba(129, 104, 153, 1) 0%, rgba(174, 146, 198, 1) 50%, rgba(129, 104, 153, 1) 100%);
