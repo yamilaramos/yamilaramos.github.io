@@ -3110,7 +3110,6 @@ html:has(.mapa:hover) #cursor {
     flex-direction: column;
     min-width: 0;
     max-width: 360px;
-    min-height: 380px;
     height: auto;
     padding: 45px 30px;
     border: 2px solid var(--black);
@@ -3136,7 +3135,6 @@ html:has(.mapa:hover) #cursor {
 
     .reco-card {
         max-width: none;
-        min-height: 380px;
         margin: 0;
     }
 
@@ -3155,11 +3153,6 @@ html:has(.mapa:hover) #cursor {
         grid-template-columns: minmax(0, 1fr);
         gap: 22px;
         max-width: 420px;
-    }
-
-    .reco-card {
-        min-height: 350px;
-        padding: 28px;
     }
 
     .reco-card:nth-child(1) { --card-angle: -1.5deg; }
