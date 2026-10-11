@@ -2969,7 +2969,8 @@ html:has(.mapa:hover) #cursor {
     margin: 5px 0;
     display: flex;
     align-items: center;
-    gap: 15px;
+    justify-content: center;
+    gap: 5px;
 }
 
 .reco-card__persona::before {
@@ -3014,7 +3015,10 @@ html:has(.mapa:hover) #cursor {
     font-size: clamp(16px, 1.2vw, 19px);
     line-height: 1.55;
 }
-.reco-card p .rol{margin: 0;}
+.reco-card .rol {
+    margin: 0;
+    text-align: center;
+}
 
 .reco-card {
     font-family: "Outfit", sans-serif;
