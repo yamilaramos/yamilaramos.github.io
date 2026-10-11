@@ -4,6 +4,41 @@ document.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelectorAll("nav a");
   const backToTop = document.getElementById("backToTop");
 
+  const themeButtons = [...document.querySelectorAll(".hero-theme-switcher__button")];
+  if (themeButtons.length) {
+    const availableThemes = new Set(themeButtons.map(button => button.dataset.themeChoice));
+    const storageKey = "yamila-portfolio-theme";
+    const applyTheme = (theme, persist = false) => {
+      if (!availableThemes.has(theme)) return;
+
+      document.documentElement.dataset.theme = theme;
+      themeButtons.forEach(button => {
+        button.setAttribute("aria-pressed", String(button.dataset.themeChoice === theme));
+      });
+
+      if (persist) {
+        try {
+          window.localStorage.setItem(storageKey, theme);
+        } catch {
+          // El cambio de tema sigue funcionando si el navegador bloquea el almacenamiento.
+        }
+      }
+    };
+
+    let initialTheme = "original";
+    try {
+      const savedTheme = window.localStorage.getItem(storageKey);
+      if (availableThemes.has(savedTheme)) initialTheme = savedTheme;
+    } catch {
+      // La página conserva el tema original si el almacenamiento no está disponible.
+    }
+
+    applyTheme(initialTheme);
+    themeButtons.forEach(button => {
+      button.addEventListener("click", () => applyTheme(button.dataset.themeChoice, true));
+    });
+  }
+
   // El botón de menú no existe en todas las versiones del HTML.
   if (hamburguesa && nav) {
     const actualizarEstadoMenu = (abierto) => {
