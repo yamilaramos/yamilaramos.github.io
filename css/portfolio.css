@@ -2976,8 +2976,8 @@ html:has(.mapa:hover) #cursor {
     content: "";
     position: absolute;
     top: -15px;
-    left: 50%;
-    width: 40%;
+    left: 8%;
+    width: 15%;
     height: clamp(3px, calc(1.15px + 0.14vw), 3.75px);
     background: var(--yellow);
     border-radius: clamp(10px, calc(3.84px + 0.45vw), 12.5px);
