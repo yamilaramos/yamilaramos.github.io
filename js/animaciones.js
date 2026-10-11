@@ -6,40 +6,69 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /*
    * IMÁGENES POR TEMA — EDITÁ LAS RUTAS ACÁ.
-   * Poné la ruta de cada imagen dentro de "musgo" u "océano".
-   * Dejá "" si querés conservar la imagen original en ese tema.
+   * Para cada imagen, completá "musgo" y/o "océano" con la ruta del archivo.
+   * Dejá "" para que ese tema use la imagen original.
+   * Subí primero los archivos a la carpeta img del repositorio.
    *
-   * Para sumar otra imagen:
-   * 1. Agregá una entrada con su selector CSS y su ruta original.
-   * 2. Completá las rutas "musgo" y "océano" si querés reemplazos.
-   * Las rutas empiezan desde la raíz del sitio, por ejemplo: "/img/mi-imagen.jpg".
-   *
-   * Imágenes preparadas:
-   * - titulo: imagen de título del inicio.
-   * - mockupProceso: imágenes del proceso creativo.
-   * - mockupStack: mockup principal de la sección Stack.
+   * Para imágenes <img> se cambia "src".
+   * Para imágenes de fondo (background) se cambia la imagen de fondo del elemento.
    */
   const themeImageConfig = [
     {
-      nombre: "titulo",
-      selector: "img.titulo",
-      original: "/img/titulo-3.png",
-      musgo: "", // Ejemplo: "/img/tema-musgo/titulo.png"
-      océano: "" // Ejemplo: "/img/tema-oceano/titulo.png"
+      nombre: "logoNav",
+      selector: ".header-brand .logo-portafolio img",
+      tipo: "src",
+      original: "../img/texto-portafolio.png",
+      musgo: "", // Ejemplo: "/img/tema-musgo/logo-nav.png"
+      océano: "" // Ejemplo: "/img/tema-oceano/logo-nav.png"
     },
     {
-      nombre: "mockupProceso",
-      selector: 'img[src="img/mockup-proceso.png"]',
-      original: "img/mockup-proceso.png",
-      musgo: "", // Ejemplo: "/img/tema-musgo/proceso.png"
-      océano: "" // Ejemplo: "/img/tema-oceano/proceso.png"
+      nombre: "heroPrincipal",
+      selector: "#inicio.hero",
+      tipo: "background",
+      original: "../img/hero-final.png",
+      musgo: "", // Ejemplo: "/img/tema-musgo/hero-principal.png"
+      océano: "" // Ejemplo: "/img/tema-oceano/hero-principal.png"
     },
     {
-      nombre: "mockupStack",
-      selector: "img.mk-base",
-      original: "./img/stack-mockup-after.png",
-      musgo: "", // Ejemplo: "/img/tema-musgo/stack.png"
-      océano: "" // Ejemplo: "/img/tema-oceano/stack.png"
+      nombre: "heroSobreMi",
+      selector: ".hero-sobremi",
+      tipo: "background",
+      original: "../img/hero-sobremi.png",
+      musgo: "", // Ejemplo: "/img/tema-musgo/hero-sobremi.png"
+      océano: "" // Ejemplo: "/img/tema-oceano/hero-sobremi.png"
+    },
+    {
+      nombre: "heroStack",
+      selector: ".stack-hero-panel",
+      tipo: "background",
+      original: "../img/stack-hero.png",
+      musgo: "", // Ejemplo: "/img/tema-musgo/hero-stack.png"
+      océano: "" // Ejemplo: "/img/tema-oceano/hero-stack.png"
+    },
+    {
+      nombre: "heroProyectoMateria",
+      selector: ".hero-materia",
+      tipo: "background",
+      original: "../img/hero-materia.png",
+      musgo: "", // Ejemplo: "/img/tema-musgo/hero-materia.png"
+      océano: "" // Ejemplo: "/img/tema-oceano/hero-materia.png"
+    },
+    {
+      nombre: "heroProyectoADA",
+      selector: ".hero-ada",
+      tipo: "background",
+      original: "../img/hero-ada.png",
+      musgo: "", // Ejemplo: "/img/tema-musgo/hero-ada.png"
+      océano: "" // Ejemplo: "/img/tema-oceano/hero-ada.png"
+    },
+    {
+      nombre: "heroProyectoSoplo",
+      selector: ".hero-soplo",
+      tipo: "background",
+      original: "../img/hero-soplo.png",
+      musgo: "", // Ejemplo: "/img/tema-musgo/hero-soplo.png"
+      océano: "" // Ejemplo: "/img/tema-oceano/hero-soplo.png"
     }
   ];
 
@@ -52,13 +81,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
       document.documentElement.dataset.theme = theme;
 
-      // Actualiza solo las imágenes con una ruta definida para el tema elegido.
+      // Cambia imágenes <img> o fondos CSS según la configuración de arriba.
       themeImageConfig.forEach(imageConfig => {
-        const image = document.querySelector(imageConfig.selector);
-        if (!image) return;
+        const element = document.querySelector(imageConfig.selector);
+        if (!element) return;
 
         const source = imageConfig[theme] || imageConfig.original;
-        if (source) image.setAttribute("src", source);
+        if (!source) return;
+
+        if (imageConfig.tipo === "background") {
+          element.style.backgroundImage = `url("${source}")`;
+        } else {
+          element.setAttribute("src", source);
+        }
       });
 
       themeButtons.forEach(button => {
