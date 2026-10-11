@@ -1273,8 +1273,9 @@ header.scrolled .header-cv-mobile {
     bottom: clamp(-2px, calc(-0.77px + -0.09vw), -2.5px);
 
     width: 100%;
-    height: clamp(2.5px, 0.16vw, 3.125px);
+    height: clamp(3px, calc(1.15px + 0.14vw), 3.75px);
     background-color: var(--yellow);
+    border-radius: clamp(10px, calc(3.84px + 0.45vw), 12.5px);
 
     transform: scaleX(1);
 }
@@ -1298,8 +1299,9 @@ header.scrolled .animacion-activa::after {
     bottom: clamp(-2px, calc(-0.77px + -0.09vw), -2.5px);
 
     width: 100%;
-    height: clamp(2.5px, 0.16vw, 3.125px);
+    height: clamp(3px, calc(1.15px + 0.14vw), 3.75px);
     background-color: var(--yellow);
+    border-radius: clamp(10px, calc(3.84px + 0.45vw), 12.5px);
 
     transform: scaleX(0);
     transform-origin: left;
