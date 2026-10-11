@@ -16,6 +16,7 @@
     --yellow: #86c5d6;
     --black: #ffffff;
     --cream: #0a2d33;
+    --white: #ffffff;
     --header-cream: rgba(10, 45, 51, 90%);
     --inicio-cream: #ffffff;
     --bright-yellow: #86c5d6;
@@ -26,6 +27,7 @@
 :root[data-theme="musgo"] {
     --yellow: #4f5c22;
     --cream: #fdfae6;
+    --white: #ffffff;
     --header-cream: rgba(253, 250, 230, 90%);
     --bright-yellow: #4f5c22;
     --bg-yellow: #F1EAF6;
