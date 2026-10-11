@@ -83,17 +83,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Cambia imágenes <img> o fondos CSS según la configuración de arriba.
       themeImageConfig.forEach(imageConfig => {
-        const element = document.querySelector(imageConfig.selector);
-        if (!element) return;
+        const elements = document.querySelectorAll(imageConfig.selector);
+        if (!elements.length) return;
 
         const source = imageConfig[theme] || imageConfig.original;
         if (!source) return;
 
-        if (imageConfig.tipo === "background") {
-          element.style.backgroundImage = `url("${source}")`;
-        } else {
-          element.setAttribute("src", source);
-        }
+        elements.forEach(element => {
+          if (imageConfig.tipo === "background") {
+            element.style.backgroundImage = `url("${source}")`;
+          } else {
+            element.setAttribute("src", source);
+          }
+        });
       });
 
       themeButtons.forEach(button => {
