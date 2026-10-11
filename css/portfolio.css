@@ -15,13 +15,14 @@
 :root[data-theme="océano"] {
     --yellow: #86c5d6;
     --black: #ffffff;
+    --bg-yellow: #e7f0f0;
     --cream: #0a2d33;
     --white: #ffffff;
     --header-cream: rgba(10, 45, 51, 90%);
     --inicio-cream: #ffffff;
-    --bright-yellow: #86c5d6;
+    --bright-yellow: #19464c;
     --bg-yellow: #EEF2E6;
-    --grad-yellow: #86c5d6;
+    --grad-yellow: linear-gradient(131deg, rgba(10, 45, 51, 1) 0%, rgba(25, 70, 76, 1) 50%, rgba(10, 45, 51, 1) 100%);
 }
 
 :root[data-theme="musgo"] {
