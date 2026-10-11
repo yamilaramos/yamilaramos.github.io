@@ -4,6 +4,45 @@ document.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelectorAll("nav a");
   const backToTop = document.getElementById("backToTop");
 
+  /*
+   * IMÁGENES POR TEMA — EDITÁ LAS RUTAS ACÁ.
+   * Poné la ruta de cada imagen dentro de "musgo" u "océano".
+   * Dejá "" si querés conservar la imagen original en ese tema.
+   *
+   * Para sumar otra imagen:
+   * 1. Agregá una entrada con su selector CSS y su ruta original.
+   * 2. Completá las rutas "musgo" y "océano" si querés reemplazos.
+   * Las rutas empiezan desde la raíz del sitio, por ejemplo: "/img/mi-imagen.jpg".
+   *
+   * Imágenes preparadas:
+   * - titulo: imagen de título del inicio.
+   * - mockupProceso: imágenes del proceso creativo.
+   * - mockupStack: mockup principal de la sección Stack.
+   */
+  const themeImageConfig = [
+    {
+      nombre: "titulo",
+      selector: "img.titulo",
+      original: "/img/titulo-3.png",
+      musgo: "", // Ejemplo: "/img/tema-musgo/titulo.png"
+      océano: "" // Ejemplo: "/img/tema-oceano/titulo.png"
+    },
+    {
+      nombre: "mockupProceso",
+      selector: 'img[src="img/mockup-proceso.png"]',
+      original: "img/mockup-proceso.png",
+      musgo: "", // Ejemplo: "/img/tema-musgo/proceso.png"
+      océano: "" // Ejemplo: "/img/tema-oceano/proceso.png"
+    },
+    {
+      nombre: "mockupStack",
+      selector: "img.mk-base",
+      original: "./img/stack-mockup-after.png",
+      musgo: "", // Ejemplo: "/img/tema-musgo/stack.png"
+      océano: "" // Ejemplo: "/img/tema-oceano/stack.png"
+    }
+  ];
+
   const themeButtons = [...document.querySelectorAll(".hero-theme-switcher__button")];
   if (themeButtons.length) {
     const availableThemes = new Set(themeButtons.map(button => button.dataset.themeChoice));
@@ -12,6 +51,16 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!availableThemes.has(theme)) return;
 
       document.documentElement.dataset.theme = theme;
+
+      // Actualiza solo las imágenes con una ruta definida para el tema elegido.
+      themeImageConfig.forEach(imageConfig => {
+        const image = document.querySelector(imageConfig.selector);
+        if (!image) return;
+
+        const source = imageConfig[theme] || imageConfig.original;
+        if (source) image.setAttribute("src", source);
+      });
+
       themeButtons.forEach(button => {
         button.setAttribute("aria-pressed", String(button.dataset.themeChoice === theme));
       });
