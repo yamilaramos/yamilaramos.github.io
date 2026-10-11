@@ -2970,7 +2970,7 @@ html:has(.mapa:hover) #cursor {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 10px;
 }
 
 .reco-card__persona::before {
