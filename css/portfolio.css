@@ -23,7 +23,7 @@
 
 :root[data-theme="musgo"] {
     --yellow: #4f5c22;
-    --cream: #dacb77;
+    --cream: #fdfae6;
     --bright-yellow: #4f5c22;
     --bg-yellow: #F1EAF6;
     --grad-yellow: #4f5c22;
@@ -1970,7 +1970,7 @@ header.scrolled .animacion-activa::after {
 }
 
 .btn-hero-secundario:hover {
-   color: #f6ad25;
+   color: var(--bright-yellow);
 }
 
 .btn-seccion svg {
