@@ -6,6 +6,7 @@
     --white: #fcf9f7;
     --black: #000000;
     --cream: #fefaf6;
+    --header-cream: rgba(254, 250, 246, 90%);
     --inicio-cream: #fefaf6;
     --gap: 4.5%;
     --ticker-duration: 45s;
@@ -15,6 +16,7 @@
     --yellow: #86c5d6;
     --black: #ffffff;
     --cream: #0a2d33;
+    --header-cream: rgba(10, 45, 51, 90%);
     --inicio-cream: #ffffff;
     --bright-yellow: #86c5d6;
     --bg-yellow: #EEF2E6;
@@ -24,6 +26,7 @@
 :root[data-theme="musgo"] {
     --yellow: #4f5c22;
     --cream: #fdfae6;
+    --header-cream: rgba(253, 250, 230, 90%);
     --bright-yellow: #4f5c22;
     --bg-yellow: #F1EAF6;
     --grad-yellow: #4f5c22;
@@ -926,7 +929,7 @@ header.scrolled {
     max-width: calc(100% - clamp(24px, 2.2vw, 42px));
     margin: 0 auto;
     
-    background-color: rgba(254, 250, 246, 90%);
+    background-color: var(--header-cream);
     backdrop-filter: blur(clamp(12px, 1vw, 18px));
     -webkit-backdrop-filter: blur(clamp(12px, 1vw, 18px));
     border-bottom-color: transparent;
@@ -1034,14 +1037,15 @@ header.scrolled .header-cv-mobile {
 .contenedor-proyectos{ margin-left: 5%; }
 
 .contenedor-proyectos h3{
+    color: var(--black);
     font-size: clamp(35px, 2.28vw, 43.75px);
     margin-bottom: clamp(4px, calc(1.53px + 0.18vw), 5px);
     max-width: 80%;
 }
 
 .contenedor-proyectos p{
+    color: var(--black);
     font-size: clamp(19.4px, 1.27vw, 24.3px);
-
     line-height: clamp(26.25px, 1.71vw, 32.8125px);
     margin-bottom: clamp(14px, calc(5.37px + 0.63vw), 17.5px);
     max-width: 83%;    
