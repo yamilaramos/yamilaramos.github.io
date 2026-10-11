@@ -2998,7 +2998,7 @@ html:has(.mapa:hover) #cursor {
 
 
 .seccionReco {
-    gap: 12%;
+    gap: 10%;
     position: relative;
     display: flex;
     align-items: center;
