@@ -437,6 +437,7 @@ pointer-events: none;
 .objeto-libreta {
     top: 40%;
     left: 4%;
+    width: clamp(173.76px, 20.4vw, 324.48px);
     --inclinacion: -8deg;
     --hover-inclinacion: -4deg;
     transform: rotate(var(--inclinacion));
