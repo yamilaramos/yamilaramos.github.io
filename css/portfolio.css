@@ -475,6 +475,70 @@ pointer-events: none;
     transform: rotate(var(--inclinacion));
 }
 
+/* Etiquetas estáticas de las herramientas */
+.etiqueta-objeto {
+    position: absolute;
+    z-index: 3;
+    display: block;
+    box-sizing: border-box;
+    max-width: 48%;
+    padding: 5.832px 15.1632px;
+    border: 1.6px solid var(--black);
+    border-radius: 18.6624px;
+    background: var(--cream);
+    color: var(--black);
+    font: inherit;
+    font-size: clamp(11px, 0.92vw, 14px);
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.etiqueta-objeto::after {
+    position: absolute;
+    bottom: -4.6656px;
+    width: 9.3312px;
+    height: 9.3312px;
+    box-sizing: border-box;
+    border: 1.08px solid var(--black);
+    border-radius: 1.1664px;
+    background: var(--black);
+    content: "";
+    transform: rotate(45deg);
+}
+
+.etiqueta-camara {
+    top: 8%;
+    left: 5%;
+}
+
+.etiqueta-camara::after,
+.etiqueta-libreta::after {
+    right: 12px;
+}
+
+.etiqueta-laptop {
+    top: 32%;
+    right: 5%;
+}
+
+.etiqueta-laptop::after,
+.etiqueta-tableta::after {
+    left: 12px;
+}
+
+.etiqueta-tableta {
+    right: 5%;
+    bottom: 8%;
+}
+
+.etiqueta-libreta {
+    top: 56%;
+    left: 5%;
+}
+
 .hero-pasos .objeto-proceso:hover,
 .hero-pasos .objeto-proceso:focus-visible {
     transform: translateY(-4px) rotate(var(--hover-inclinacion)) scale(1.035);
