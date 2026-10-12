@@ -380,8 +380,8 @@ pointer-events: none;
     object-fit: contain;
     transform-origin: center;
     transition:
-        transform 550ms cubic-bezier(0.22, 1, 0.36, 1),
-        filter 550ms cubic-bezier(0.22, 1, 0.36, 1);
+        transform 420ms cubic-bezier(0.22, 1, 0.36, 1),
+        filter 420ms ease;
     user-select: none;
     -webkit-user-drag: none;
     pointer-events: auto;
@@ -389,7 +389,7 @@ pointer-events: none;
 }
 
 .objeto-camara {
-    top: 2%;
+    top: 0%;
     right: 4%;
     --inclinacion: 12deg;
     --hover-inclinacion: -12deg;
@@ -397,7 +397,7 @@ pointer-events: none;
 }
 
 .objeto-laptop {
-    top: 24%;
+    top: 18%;
     left: 4%;
     --inclinacion: -9deg;
     --hover-inclinacion: 9deg;
@@ -405,7 +405,7 @@ pointer-events: none;
 }
 
 .objeto-tableta {
-    top: 46%;
+    top: 63%;
     right: 4%;
     --inclinacion: 10deg;
     --hover-inclinacion: -10deg;
@@ -413,7 +413,7 @@ pointer-events: none;
 }
 
 .objeto-libreta {
-    top: 68%;
+    top: 40%;
     left: 4%;
     --inclinacion: -8deg;
     --hover-inclinacion: 8deg;
@@ -422,8 +422,8 @@ pointer-events: none;
 
 .hero-pasos .objeto-proceso:hover,
 .hero-pasos .objeto-proceso:focus-visible {
-    transform: translateY(-9px) rotate(var(--hover-inclinacion)) scale(1.12);
-    filter: drop-shadow(0 12px 12px rgb(0 0 0 / 18%));
+    transform: translateY(-4px) rotate(var(--hover-inclinacion)) scale(1.035);
+    filter: drop-shadow(0 5px 6px rgb(0 0 0 / 12%));
     z-index: 2;
 }
 
