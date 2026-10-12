@@ -427,7 +427,7 @@ pointer-events: none;
 }
 
 .objeto-camara {
-    top: 10%;
+    top: 8%;
     right: 16%;
     width: clamp(161.5px, 18.96vw, 301.67px);
     --inclinacion: 12deg;
@@ -447,8 +447,8 @@ pointer-events: none;
 }
 
 .objeto-laptop {
-    top: 32%;
-    left: 8%;
+    top: 28%;
+    left: 6%;
     width: clamp(161.5px, 18.96vw, 301.67px);
     --inclinacion: -9deg;
     --hover-inclinacion: -5deg;
@@ -456,7 +456,7 @@ pointer-events: none;
 }
 
 .objeto-tableta {
-    top: auto;
+    top: 57%;
     bottom: 5%;
     left: 10%;
     width: clamp(171.2px, 20.101vw, 319.77px);
@@ -466,10 +466,10 @@ pointer-events: none;
 }
 
 .objeto-libreta {
-    top: 45%;
-    right: 10%;
+    top: 40%;
+    right: 4%;
     width: clamp(168.48px, 19.78vw, 314.62px);
-    --inclinacion: 8deg;
+    --inclinacion: 12deg;
     --hover-inclinacion: 12deg;
     transform: rotate(var(--inclinacion));
 }
