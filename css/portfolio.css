@@ -399,6 +399,7 @@ pointer-events: none;
 .objeto-camara {
     top: 0%;
     right: 4%;
+    width: clamp(166.5px, 19.55vw, 311px);
     --inclinacion: 12deg;
     --hover-inclinacion: -12deg;
     transform: rotate(var(--inclinacion));
@@ -407,6 +408,7 @@ pointer-events: none;
 .objeto-laptop {
     top: 18%;
     left: 4%;
+    width: clamp(166.5px, 19.55vw, 311px);
     --inclinacion: -9deg;
     --hover-inclinacion: 9deg;
     transform: rotate(var(--inclinacion));
@@ -415,6 +417,7 @@ pointer-events: none;
 .objeto-tableta {
     top: 63%;
     right: 4%;
+    width: clamp(166.5px, 19.55vw, 311px);
     --inclinacion: 10deg;
     --hover-inclinacion: -10deg;
     transform: rotate(var(--inclinacion));
