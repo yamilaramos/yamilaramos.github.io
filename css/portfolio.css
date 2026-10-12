@@ -512,10 +512,12 @@ pointer-events: none;
     text-align: center;
     white-space: nowrap;
     pointer-events: none;
+    isolation: isolate;
 }
 
 .etiqueta-objeto::after {
     position: absolute;
+    z-index: -1;
     bottom: -4.6656px;
     width: 9.3312px;
     height: 9.3312px;
@@ -529,7 +531,7 @@ pointer-events: none;
 
 .etiqueta-camara {
     top: 8%;
-    left: 5%;
+    right: 5%;
 }
 
 .etiqueta-camara::after,
@@ -538,8 +540,8 @@ pointer-events: none;
 }
 
 .etiqueta-laptop {
-    top: 32%;
-    right: 5%;
+    top: 30%;
+    left: 5%;
 }
 
 .etiqueta-laptop::after,
@@ -548,13 +550,13 @@ pointer-events: none;
 }
 
 .etiqueta-tableta {
-    right: 5%;
     bottom: 8%;
+    left: 5%;
 }
 
 .etiqueta-libreta {
-    top: 56%;
-    left: 5%;
+    top: 55%;
+    right: 5%;
 }
 
 .hero-pasos .objeto-proceso:hover,
