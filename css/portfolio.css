@@ -405,7 +405,7 @@ pointer-events: none;
     z-index: 1;
     display: block;
     width: clamp(181px, 21.25vw, 338px);
-    max-width: 64%;
+    max-width: 45%;
     height: auto;
     object-fit: contain;
     transform-origin: center;
@@ -427,9 +427,8 @@ pointer-events: none;
 }
 
 .objeto-camara {
-    top: 0%;
-    right: auto;
-    right: 4%;
+    top: 10%;
+    right: 16%;
     width: clamp(161.5px, 18.96vw, 301.67px);
     --inclinacion: 12deg;
     --hover-inclinacion: 8deg;
@@ -448,8 +447,8 @@ pointer-events: none;
 }
 
 .objeto-laptop {
-    top: 18%;
-    left: 4%;
+    top: 32%;
+    left: 8%;
     width: clamp(161.5px, 18.96vw, 301.67px);
     --inclinacion: -9deg;
     --hover-inclinacion: -5deg;
@@ -457,9 +456,9 @@ pointer-events: none;
 }
 
 .objeto-tableta {
-    top: 63%;
-    left: auto;
-    left: 4%;
+    top: auto;
+    bottom: 5%;
+    left: 10%;
     width: clamp(171.2px, 20.101vw, 319.77px);
     --inclinacion: 10deg;
     --hover-inclinacion: 6deg;
@@ -467,8 +466,8 @@ pointer-events: none;
 }
 
 .objeto-libreta {
-    top: 40%;
-    right: 4%;
+    top: 45%;
+    right: 10%;
     width: clamp(168.48px, 19.78vw, 314.62px);
     --inclinacion: 8deg;
     --hover-inclinacion: 12deg;
