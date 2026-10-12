@@ -401,7 +401,7 @@ pointer-events: none;
     right: 4%;
     width: clamp(166.5px, 19.55vw, 311px);
     --inclinacion: 12deg;
-    --hover-inclinacion: -12deg;
+    --hover-inclinacion: 8deg;
     transform: rotate(var(--inclinacion));
 }
 
@@ -421,7 +421,7 @@ pointer-events: none;
     left: 4%;
     width: clamp(166.5px, 19.55vw, 311px);
     --inclinacion: -9deg;
-    --hover-inclinacion: 9deg;
+    --hover-inclinacion: -5deg;
     transform: rotate(var(--inclinacion));
 }
 
@@ -430,7 +430,7 @@ pointer-events: none;
     right: 4%;
     width: clamp(166.5px, 19.55vw, 311px);
     --inclinacion: 10deg;
-    --hover-inclinacion: -10deg;
+    --hover-inclinacion: 6deg;
     transform: rotate(var(--inclinacion));
 }
 
@@ -438,7 +438,7 @@ pointer-events: none;
     top: 40%;
     left: 4%;
     --inclinacion: -8deg;
-    --hover-inclinacion: 8deg;
+    --hover-inclinacion: -4deg;
     transform: rotate(var(--inclinacion));
 }
 
