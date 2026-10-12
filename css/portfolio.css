@@ -470,8 +470,8 @@ pointer-events: none;
     top: 40%;
     right: 4%;
     width: clamp(168.48px, 19.78vw, 314.62px);
-    --inclinacion: -4deg;
-    --hover-inclinacion: 0deg;
+    --inclinacion: 8deg;
+    --hover-inclinacion: 12deg;
     transform: rotate(var(--inclinacion));
 }
 
