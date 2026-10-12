@@ -393,7 +393,6 @@ pointer-events: none;
     user-select: none;
     -webkit-user-drag: none;
     pointer-events: auto;
-    cursor: default;
 }
 
 .objeto-camara {
