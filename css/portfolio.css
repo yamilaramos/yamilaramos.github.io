@@ -374,8 +374,8 @@ pointer-events: none;
     position: absolute;
     z-index: 1;
     display: block;
-    width: clamp(100px, 13vw, 205px);
-    max-width: 48%;
+    width: clamp(145px, 17vw, 270px);
+    max-width: 54%;
     height: auto;
     object-fit: contain;
     transform-origin: center;
@@ -390,6 +390,7 @@ pointer-events: none;
     top: 5%;
     right: 7%;
     --inclinacion: 12deg;
+    --hover-inclinacion: -12deg;
     transform: rotate(var(--inclinacion));
 }
 
@@ -397,6 +398,7 @@ pointer-events: none;
     top: 28%;
     left: 6%;
     --inclinacion: -9deg;
+    --hover-inclinacion: 9deg;
     transform: rotate(var(--inclinacion));
 }
 
@@ -404,6 +406,7 @@ pointer-events: none;
     top: 52%;
     right: 7%;
     --inclinacion: 10deg;
+    --hover-inclinacion: -10deg;
     transform: rotate(var(--inclinacion));
 }
 
@@ -411,12 +414,14 @@ pointer-events: none;
     top: 76%;
     left: 6%;
     --inclinacion: -8deg;
+    --hover-inclinacion: 8deg;
     transform: rotate(var(--inclinacion));
 }
 
-.objeto-proceso:hover {
-    transform: translateY(-5px) rotate(calc(var(--inclinacion) * -1)) scale(1.06);
-    filter: drop-shadow(0 8px 8px rgb(0 0 0 / 12%));
+.objeto-proceso:hover,
+.objeto-proceso:focus-visible {
+    transform: translateY(-9px) rotate(var(--hover-inclinacion)) scale(1.12);
+    filter: drop-shadow(0 12px 12px rgb(0 0 0 / 18%));
     z-index: 2;
 }
 
