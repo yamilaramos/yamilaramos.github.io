@@ -3344,7 +3344,7 @@ html:has(.mapa:hover) #cursor {
     padding: 45px 30px;
     border: 2px solid var(--black);
     border-radius: clamp(22px, 2vw, 30px);
-    background: var(--cream);
+    background: var(--bg-yellow);
     box-shadow: 0 16px 36px rgb(255 255 255 / 6%);
     transform: rotate(var(--card-angle, 0deg));
     transform-origin: center;
