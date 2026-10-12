@@ -427,7 +427,7 @@ pointer-events: none;
 
 .objeto-tableta {
     top: 63%;
-    right: 4%;
+    left: 4%;
     width: clamp(166.5px, 19.55vw, 311px);
     --inclinacion: 10deg;
     --hover-inclinacion: 6deg;
@@ -436,7 +436,7 @@ pointer-events: none;
 
 .objeto-libreta {
     top: 40%;
-    left: 4%;
+    right: 4%;
     width: clamp(173.76px, 20.4vw, 324.48px);
     --inclinacion: -8deg;
     --hover-inclinacion: -4deg;
