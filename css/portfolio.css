@@ -396,8 +396,9 @@ pointer-events: none;
 }
 
 .objeto-camara {
-    top: 0%;
-    right: 4%;
+    top: 63%;
+    right: auto;
+    left: 4%;
     width: clamp(166.5px, 19.55vw, 311px);
     --inclinacion: 12deg;
     --hover-inclinacion: 8deg;
@@ -425,8 +426,9 @@ pointer-events: none;
 }
 
 .objeto-tableta {
-    top: 63%;
-    left: 4%;
+    top: 0%;
+    left: auto;
+    right: 4%;
     width: clamp(176.49px, 20.723vw, 329.66px);
     --inclinacion: 10deg;
     --hover-inclinacion: 6deg;
