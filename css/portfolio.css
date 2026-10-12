@@ -405,6 +405,17 @@ pointer-events: none;
     transform: rotate(var(--inclinacion));
 }
 
+.objeto-camara,
+.objeto-tableta {
+    filter:
+        drop-shadow(1px 0 0 var(--white))
+        drop-shadow(-1px 0 0 var(--white))
+        drop-shadow(0 1px 0 var(--white))
+        drop-shadow(0 -1px 0 var(--white))
+        drop-shadow(1.5px 1.5px 0 var(--white))
+        drop-shadow(-1.5px -1.5px 0 var(--white));
+}
+
 .objeto-laptop {
     top: 18%;
     left: 4%;
@@ -443,6 +454,19 @@ pointer-events: none;
         drop-shadow(-1.5px -1.5px 0 var(--white))
         drop-shadow(0 10px 36px rgb(0 0 0 / 45%));
     z-index: 2;
+}
+
+.hero-pasos .objeto-camara:hover,
+.hero-pasos .objeto-camara:focus-visible,
+.hero-pasos .objeto-tableta:hover,
+.hero-pasos .objeto-tableta:focus-visible {
+    filter:
+        drop-shadow(1px 0 0 var(--white))
+        drop-shadow(-1px 0 0 var(--white))
+        drop-shadow(0 1px 0 var(--white))
+        drop-shadow(0 -1px 0 var(--white))
+        drop-shadow(1.5px 1.5px 0 var(--white))
+        drop-shadow(-1.5px -1.5px 0 var(--white));
 }
 
 @media screen and (min-width: 769px) {
