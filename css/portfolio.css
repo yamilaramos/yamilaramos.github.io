@@ -411,6 +411,10 @@ pointer-events: none;
     transform-origin: center;
     animation: objetoEntrada 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
     filter:
+        saturate(.9)
+        sepia(.08)
+        brightness(1.02)
+        contrast(.98)
         drop-shadow(1px 0 0 var(--white))
         drop-shadow(-1px 0 0 var(--white))
         drop-shadow(0 1px 0 var(--white))
@@ -438,6 +442,10 @@ pointer-events: none;
 .objeto-camara,
 .objeto-tableta {
     filter:
+        saturate(.9)
+        sepia(.08)
+        brightness(1.02)
+        contrast(.98)
         drop-shadow(1px 0 0 var(--white))
         drop-shadow(-1px 0 0 var(--white))
         drop-shadow(0 1px 0 var(--white))
@@ -474,31 +482,15 @@ pointer-events: none;
     transform: rotate(var(--inclinacion));
 }
 
-/* Grano sutil para unificar la estética de los objetos */
-.objeto-proceso {
-    isolation: isolate;
-}
-
-.objeto-proceso::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    pointer-events: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-    background-size: 220px 220px;
-    mix-blend-mode: overlay;
-    opacity: .22;
-    border-radius: inherit;
-}
-
 /* Etiquetas estáticas de las herramientas */
 .etiqueta-objeto {
     position: absolute;
     z-index: 3;
     display: block;
     box-sizing: border-box;
-    max-width: 48%;
+    width: fit-content;
+    max-width: min(82%, 320px);
+    min-width: 0;
     padding: 5.832px 15.1632px;
     border: 0;
     border-radius: 18.6624px;
@@ -509,7 +501,9 @@ pointer-events: none;
     font-weight: 500;
     line-height: 1.2;
     text-align: center;
-    white-space: nowrap;
+    white-space: normal;
+    overflow-wrap: break-word;
+    text-wrap: pretty;
     pointer-events: none;
     isolation: isolate;
 }
@@ -574,6 +568,10 @@ pointer-events: none;
 .hero-pasos .objeto-proceso:focus-visible {
     transform: translateY(-4px) rotate(var(--inclinacion)) scale(1.06);
     filter:
+        saturate(.9)
+        sepia(.08)
+        brightness(1.02)
+        contrast(.98)
         drop-shadow(1px 0 0 var(--white))
         drop-shadow(-1px 0 0 var(--white))
         drop-shadow(0 1px 0 var(--white))
@@ -589,6 +587,10 @@ pointer-events: none;
 .hero-pasos .objeto-tableta:hover,
 .hero-pasos .objeto-tableta:focus-visible {
     filter:
+        saturate(.9)
+        sepia(.08)
+        brightness(1.02)
+        contrast(.98)
         drop-shadow(1px 0 0 var(--white))
         drop-shadow(-1px 0 0 var(--white))
         drop-shadow(0 1px 0 var(--white))
