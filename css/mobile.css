@@ -1674,3 +1674,12 @@
         font-size: 18px !important;
     }
 }
+
+
+/* Todos los párrafos a 18px solo en mobile. */
+@media screen and (max-width: 768px) {
+    p,
+    p span {
+        font-size: 18px !important;
+    }
+}
