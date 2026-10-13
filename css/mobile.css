@@ -803,7 +803,7 @@
 
     .jcontent-titulo{
         justify-content: start;
-        width: 90%;
+        width: 100%; /* 95% */
     }
 
     .timeline-mobile{
