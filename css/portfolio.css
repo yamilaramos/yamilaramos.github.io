@@ -559,6 +559,8 @@ pointer-events: none;
 }
 
 .etiqueta-tableta::after {
+    top: -3.5px;
+    bottom: auto;
     left: 18px;
 }
 
