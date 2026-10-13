@@ -3450,3 +3450,15 @@ html:has(.mapa:hover) #cursor {
     max-width: 100%;
     box-sizing: border-box;
 }
+
+
+/* Tamaño uniforme del texto de todos los botones. */
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+[role="button"],
+[class^="btn-"],
+[class*=" btn-"] {
+    font-size: 18px !important;
+}
