@@ -1683,3 +1683,14 @@
         font-size: 18px !important;
     }
 }
+
+
+/* Evitar que el borde del header parpadee al desplazarse en mobile. */
+@media screen and (max-width: 768px) {
+    header,
+    header.scrolled {
+        animation: none !important;
+        transition: none !important;
+        border: 2px solid var(--black) !important;
+    }
+}
