@@ -1634,7 +1634,8 @@
         font-size: 32px !important;
     }
 
-    .hero h1 {
+    .hero h1,
+    .hero h2 {
         font-size: 16px !important;
     }
 }
