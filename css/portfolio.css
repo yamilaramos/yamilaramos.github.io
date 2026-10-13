@@ -566,7 +566,7 @@ pointer-events: none;
 
 .hero-pasos .objeto-proceso:hover,
 .hero-pasos .objeto-proceso:focus-visible {
-    transform: translateY(-4px) rotate(var(--inclinacion)) scale(1.06);
+    transform: translateY(-2px) rotate(var(--inclinacion)) scale(1.015);
     filter:
         saturate(.9)
         sepia(.08)
