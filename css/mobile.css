@@ -1642,6 +1642,13 @@
     }
 }
 
+/* Tamaño de fuente uniforme para los dos títulos de Stack en mobile. */
+@media screen and (max-width: 768px) {
+    #stack .stack-copy > h3 {
+        font-size: 24px !important;
+    }
+}
+
 /* Tamaño de fecha y categoría de los proyectos en mobile. */
 @media screen and (max-width: 768px) {
     .fecha-proyecto h4,
