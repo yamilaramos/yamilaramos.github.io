@@ -3483,14 +3483,28 @@ html:has(.mapa:hover) #cursor {
     }
 
     @keyframes objeto-brillo-hover {
-        0% {
-            filter: brightness(1.02) drop-shadow(0 8px 32px rgb(0 0 0 / 40%));
+        0%, 100% {
+            filter:
+                saturate(.9) sepia(.08) brightness(1.02) contrast(.98)
+                drop-shadow(1px 0 0 var(--white))
+                drop-shadow(-1px 0 0 var(--white))
+                drop-shadow(0 1px 0 var(--white))
+                drop-shadow(0 -1px 0 var(--white))
+                drop-shadow(1.5px 1.5px 0 var(--white))
+                drop-shadow(-1.5px -1.5px 0 var(--white))
+                drop-shadow(0 8px 32px rgb(0 0 0 / 40%));
         }
         18% {
-            filter: brightness(1.22) drop-shadow(0 0 8px rgb(255 255 255 / 70%)) drop-shadow(0 8px 32px rgb(0 0 0 / 40%));
-        }
-        100% {
-            filter: brightness(1.06) drop-shadow(0 8px 32px rgb(0 0 0 / 40%));
+            filter:
+                saturate(.9) sepia(.08) brightness(1.22) contrast(.98)
+                drop-shadow(1px 0 0 var(--white))
+                drop-shadow(-1px 0 0 var(--white))
+                drop-shadow(0 1px 0 var(--white))
+                drop-shadow(0 -1px 0 var(--white))
+                drop-shadow(1.5px 1.5px 0 var(--white))
+                drop-shadow(-1.5px -1.5px 0 var(--white))
+                drop-shadow(0 0 8px rgb(255 255 255 / 70%))
+                drop-shadow(0 8px 32px rgb(0 0 0 / 40%));
         }
     }
 }
