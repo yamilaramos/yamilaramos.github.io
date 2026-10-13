@@ -1615,3 +1615,22 @@
         font-size: 16px !important;
     }
 }
+
+/* Ajustes tipográficos para mobile: párrafos, texto interno y títulos. */
+@media screen and (max-width: 768px) {
+    p,
+    p span,
+    .sectionStack p,
+    .sectionStack p span {
+        font-size: 16px !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 32px !important;
+    }
+}
