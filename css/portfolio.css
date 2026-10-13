@@ -431,7 +431,7 @@ pointer-events: none;
 }
 
 .objeto-camara {
-    top: 8%;
+    top: 5%;
     right: 16%;
     width: clamp(161.5px, 18.96vw, 301.67px);
     --inclinacion: 12deg;
@@ -455,7 +455,7 @@ pointer-events: none;
 }
 
 .objeto-laptop {
-    top: 28%;
+    top: 25%;
     left: 5%;
     width: clamp(161.5px, 18.96vw, 301.67px);
     --inclinacion: -9deg;
