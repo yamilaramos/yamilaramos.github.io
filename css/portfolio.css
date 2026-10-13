@@ -587,8 +587,8 @@ pointer-events: none;
 /* La punta mira hacia abajo, en dirección a la libreta. */
 .etiqueta-libreta::after {
     top: auto;
-    bottom: -3.5px;
-    right: 12px;
+    bottom: 0;
+    right: 0;
 }
 
 .hero-pasos .objeto-proceso:hover,
