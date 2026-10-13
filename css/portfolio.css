@@ -3451,3 +3451,11 @@ html:has(.mapa:hover) #cursor {
     box-sizing: border-box;
 }
 
+
+
+/* Mantener oculto en desktop el texto complementario del hero. */
+@media screen and (min-width: 769px) {
+    .salto-linea > .b-left {
+        display: none !important;
+    }
+}
