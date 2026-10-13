@@ -465,7 +465,6 @@ pointer-events: none;
 
 .objeto-tableta {
     top: 57%;
-    bottom: 5%;
     left: 10%;
     width: clamp(171.2px, 20.101vw, 319.77px);
     --inclinacion: 10deg;
@@ -557,7 +556,7 @@ pointer-events: none;
 
 .etiqueta-tableta {
     bottom: 16%;
-    left: 42%;
+    left: 48%;
 }
 
 .etiqueta-tableta::after {
