@@ -3301,9 +3301,9 @@ html:has(.mapa:hover) #cursor {
     position: absolute;
     top: -20px;
     left: 50%;
-    width: 40%;
+    width: 45%;
     height: clamp(3px, calc(1.15px + 0.14vw), 3.75px);
-    background: var(--bright-yellow);
+    background: var(--yellow);
     border-radius: clamp(10px, calc(3.84px + 0.45vw), 12.5px);
     transform: translateX(-50%);
 }
