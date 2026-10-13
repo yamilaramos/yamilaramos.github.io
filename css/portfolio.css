@@ -439,7 +439,6 @@ pointer-events: none;
     transform: rotate(var(--inclinacion));
 }
 
-.objeto-camara,
 .objeto-tableta {
     filter:
         saturate(.9)
@@ -479,6 +478,21 @@ pointer-events: none;
     --inclinacion: 12deg;
     --hover-inclinacion: 12deg;
     transform: rotate(var(--inclinacion));
+}
+
+/* La libreta conserva el contorno blanco, sin sombra oscura. */
+.objeto-libreta {
+    filter:
+        saturate(.9)
+        sepia(.08)
+        brightness(1.02)
+        contrast(.98)
+        drop-shadow(1px 0 0 var(--white))
+        drop-shadow(-1px 0 0 var(--white))
+        drop-shadow(0 1px 0 var(--white))
+        drop-shadow(0 -1px 0 var(--white))
+        drop-shadow(1.5px 1.5px 0 var(--white))
+        drop-shadow(-1.5px -1.5px 0 var(--white));
 }
 
 /* Etiquetas estáticas de las herramientas */
