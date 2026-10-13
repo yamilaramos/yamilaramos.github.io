@@ -535,33 +535,43 @@ pointer-events: none;
 }
 
 .etiqueta-camara {
-    top: 8%;
-    right: 5%;
+    top: 1%;
+    right: 0;
 }
 
-.etiqueta-camara::after,
-.etiqueta-libreta::after {
-    right: 12px;
-}
-
-.etiqueta-laptop {
-    top: 30%;
-    left: 5%;
-}
-
-.etiqueta-laptop::after,
-.etiqueta-tableta::after {
+/* La punta mira hacia abajo, en dirección a cada objeto. */
+.etiqueta-camara::after {
     left: 12px;
 }
 
+.etiqueta-laptop {
+    top: 24%;
+    left: 0;
+}
+
+.etiqueta-laptop::after {
+    right: 12px;
+}
+
 .etiqueta-tableta {
-    bottom: 8%;
-    left: 5%;
+    top: 59%;
+    left: 27%;
+}
+
+.etiqueta-tableta::after {
+    left: 18px;
 }
 
 .etiqueta-libreta {
-    top: 55%;
-    right: 5%;
+    bottom: 8%;
+    right: 11%;
+}
+
+/* La libreta queda por encima del globo: la punta sale por el borde superior. */
+.etiqueta-libreta::after {
+    top: -3.5px;
+    right: 22px;
+    bottom: auto;
 }
 
 .hero-pasos .objeto-proceso:hover,
