@@ -1641,3 +1641,12 @@
         text-align: left !important;
     }
 }
+
+/* Tamaño de fecha y categoría de los proyectos en mobile. */
+@media screen and (max-width: 768px) {
+    .fecha-proyecto h4,
+    .categoria-proyecto h4,
+    .categoria-proyecto-2 h4 {
+        font-size: 24px !important;
+    }
+}
