@@ -1632,3 +1632,14 @@
         font-size: 16px !important;
     }
 }
+
+/* Ajustes de las cards y del texto de Sobre mí en mobile. */
+@media screen and (max-width: 768px) {
+    .timeline-mobile .card h3.tiempo {
+        font-size: 24px !important;
+    }
+
+    #sobremi .sobre-mi p {
+        text-align: left !important;
+    }
+}
