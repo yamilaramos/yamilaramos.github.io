@@ -552,11 +552,19 @@ pointer-events: none;
     right: 46%;
 }
 
-/* La punta queda en el borde superior, hacia la cámara. */
-.etiqueta-camara::after {
-    top: -3.5px;
-    right: 22px;
+.etiqueta-camara {
+    top: 58%;
+    right: 46%;
+}
+
+/* Cámara y libreta: rombo hacia el lado derecho. */
+.etiqueta-camara::after,
+.etiqueta-libreta::after {
+    top: 50%;
+    right: -3.5px;
     bottom: auto;
+    left: auto;
+    transform: translateY(-50%) rotate(45deg);
 }
 
 .etiqueta-laptop {
@@ -564,8 +572,14 @@ pointer-events: none;
     right: 9%;
 }
 
-.etiqueta-laptop::after {
-    right: 12px;
+/* Laptop y tableta: rombo hacia el lado izquierdo. */
+.etiqueta-laptop::after,
+.etiqueta-tableta::after {
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    left: -3.5px;
+    transform: translateY(-50%) rotate(45deg);
 }
 
 .etiqueta-tableta {
@@ -573,22 +587,9 @@ pointer-events: none;
     left: 52%;
 }
 
-.etiqueta-tableta::after {
-    top: -3.5px;
-    bottom: auto;
-    left: 18px;
-}
-
 .etiqueta-libreta {
     top: 16%;
     left: 10%;
-}
-
-/* La punta mira hacia abajo, en dirección a la libreta. */
-.etiqueta-libreta::after {
-    top: auto;
-    bottom: 0;
-    right: 0;
 }
 
 .hero-pasos .objeto-proceso:hover,
