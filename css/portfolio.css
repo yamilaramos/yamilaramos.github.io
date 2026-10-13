@@ -3442,3 +3442,11 @@ html:has(.mapa:hover) #cursor {
         transition: none;
     }
 }
+
+/* El borde izquierdo debe acompañar todas las líneas del texto. */
+.salto-linea > .b-left {
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    box-sizing: border-box;
+}
