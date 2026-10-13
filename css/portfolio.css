@@ -431,7 +431,7 @@ pointer-events: none;
 }
 
 .objeto-camara {
-    top: 40%;
+    top: 45%;
     right: 4%;
     width: clamp(161.5px, 18.96vw, 301.67px);
     --inclinacion: 12deg;
@@ -454,7 +454,7 @@ pointer-events: none;
 }
 
 .objeto-laptop {
-    top: 25%;
+    top: 23%;
     left: 5%;
     width: clamp(161.5px, 18.96vw, 301.67px);
     --inclinacion: -9deg;
@@ -463,7 +463,7 @@ pointer-events: none;
 }
 
 .objeto-tableta {
-    top: 57%;
+    top: 63%;
     left: 10%;
     width: clamp(171.2px, 20.101vw, 319.77px);
     --inclinacion: 10deg;
@@ -473,7 +473,7 @@ pointer-events: none;
 
 .objeto-libreta {
     top: 5%;
-    right: 16%;
+    right: 8%;
     width: clamp(168.48px, 19.78vw, 314.62px);
     --inclinacion: 12deg;
     --hover-inclinacion: 12deg;
@@ -548,8 +548,8 @@ pointer-events: none;
 }
 
 .etiqueta-camara {
-    top: 57%;
-    right: 30%;
+    top: 58%;
+    right: 46%;
 }
 
 /* La punta queda en el borde superior, hacia la cámara. */
@@ -560,8 +560,8 @@ pointer-events: none;
 }
 
 .etiqueta-laptop {
-    top: 36%;
-    left: 35%;
+    top: 44%;
+    right: 9%;
 }
 
 .etiqueta-laptop::after {
@@ -569,8 +569,8 @@ pointer-events: none;
 }
 
 .etiqueta-tableta {
-    bottom: 16%;
-    left: 48%;
+    bottom: 12%;
+    left: 52%;
 }
 
 .etiqueta-tableta::after {
@@ -580,8 +580,8 @@ pointer-events: none;
 }
 
 .etiqueta-libreta {
-    top: 8%;
-    right: 2%;
+    top: 16%;
+    left: 10%;
 }
 
 /* La punta mira hacia abajo, en dirección a la libreta. */
