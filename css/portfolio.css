@@ -535,8 +535,8 @@ pointer-events: none;
 }
 
 .etiqueta-camara {
-    top: 1%;
-    right: 0;
+    top: 8%;
+    right: 2%;
 }
 
 /* La punta mira hacia abajo, en dirección a cada objeto. */
@@ -545,8 +545,8 @@ pointer-events: none;
 }
 
 .etiqueta-laptop {
-    top: 24%;
-    left: 0;
+    top: 36%;
+    left: 35%;
 }
 
 .etiqueta-laptop::after {
