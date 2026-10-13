@@ -250,10 +250,6 @@
     margin-right: auto !important;
     text-align: left !important;
     }
-
-    .contenedor-proyectos p, .texto-seccion{
-    font-size: 20px;
-    }
     
      p:not(.mensaje, .t-footer-final, .decor-line-2), .stack-intro p, #cursos.sectionCert #certDescripcion, .proyLogos{
         width: 100%;
@@ -1046,7 +1042,9 @@
         text-align: left;
         hyphens: auto;
         overflow-wrap: break-word;  
-        margin: 2.5% 5%;
+        margin: 2.5% 0;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
     
     .texto2-seccion{
