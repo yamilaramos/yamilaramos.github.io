@@ -247,7 +247,7 @@
     }
 
     .contenedor-proyectos p:not(.texto-seccion){
-    max-width: 90% !important;
+    max-width: 95% !important;
     margin-left: auto !important;
     margin-right: auto !important;
     text-align: left !important;
@@ -258,11 +258,7 @@
     }
     
      p:not(.mensaje, .t-footer-final, .decor-line-2), .stack-intro p, #cursos.sectionCert #certDescripcion, .proyLogos{
-        width: 90%;
-        max-width: 90% !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        text-align: left !important;
+        width: 100%;
      }
 
     .destacados.division-2 .track > .mensaje {
