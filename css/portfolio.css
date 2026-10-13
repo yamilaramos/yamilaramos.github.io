@@ -554,8 +554,8 @@ pointer-events: none;
 }
 
 .etiqueta-tableta {
-    top: 59%;
-    left: 27%;
+    bottom: 16%;
+    left: 42%;
 }
 
 .etiqueta-tableta::after {
@@ -563,8 +563,8 @@ pointer-events: none;
 }
 
 .etiqueta-libreta {
-    bottom: 8%;
-    right: 11%;
+    top: 57%;
+    right: 30%;
 }
 
 /* La libreta queda por encima del globo: la punta sale por el borde superior. */
