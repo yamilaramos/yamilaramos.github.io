@@ -518,7 +518,7 @@ pointer-events: none;
     box-sizing: border-box;
     border: 1.08px solid var(--yellow);
     border-radius: 1.1664px;
-    background: var(--bg-yellow);
+    background: var(--yellow);
     transform: rotate(45deg);
 }
 
