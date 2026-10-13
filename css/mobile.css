@@ -1660,3 +1660,17 @@
         font-size: 22px !important;
     }
 }
+
+
+/* Tamaño uniforme del texto de todos los botones en mobile. */
+@media screen and (max-width: 768px) {
+    button,
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"],
+    [role="button"],
+    [class^="btn-"],
+    [class*=" btn-"] {
+        font-size: 18px !important;
+    }
+}
