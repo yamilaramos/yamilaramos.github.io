@@ -626,6 +626,22 @@ pointer-events: none;
         drop-shadow(-1.5px -1.5px 0 var(--white));
 }
 
+/* La libreta no agrega sombra al pasar el cursor. */
+.hero-pasos .objeto-libreta:hover,
+.hero-pasos .objeto-libreta:focus-visible {
+    filter:
+        saturate(.9)
+        sepia(.08)
+        brightness(1.02)
+        contrast(.98)
+        drop-shadow(1px 0 0 var(--white))
+        drop-shadow(-1px 0 0 var(--white))
+        drop-shadow(0 1px 0 var(--white))
+        drop-shadow(0 -1px 0 var(--white))
+        drop-shadow(1.5px 1.5px 0 var(--white))
+        drop-shadow(-1.5px -1.5px 0 var(--white));
+}
+
 @media screen and (min-width: 769px) {
     .hero-pasos {
         overflow: hidden;
