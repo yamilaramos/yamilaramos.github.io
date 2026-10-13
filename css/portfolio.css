@@ -448,7 +448,7 @@ pointer-events: none;
 
 .objeto-laptop {
     top: 28%;
-    left: 6%;
+    left: 5%;
     width: clamp(161.5px, 18.96vw, 301.67px);
     --inclinacion: -9deg;
     --hover-inclinacion: -5deg;
