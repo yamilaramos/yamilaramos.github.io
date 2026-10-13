@@ -3460,7 +3460,8 @@ html:has(.mapa:hover) #cursor {
     }
 }
 
-/* Igualar la sombra de la laptop a la de la cámara en desktop y sumar un brillo al hover de los cuatro objetos. */
+
+/* La laptop iguala la sombra de la cámara; los cuatro objetos usan el mismo barrido de luz que el botón Contáctame. */
 @media screen and (min-width: 769px) {
     .hero-pasos .objeto-laptop {
         filter:
@@ -3477,42 +3478,46 @@ html:has(.mapa:hover) #cursor {
             drop-shadow(0 8px 32px rgb(0 0 0 / 40%));
     }
 
-    .hero-pasos .objeto-proceso:hover,
-    .hero-pasos .objeto-proceso:focus-visible {
-        animation: objeto-brillo-hover 2.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+    .hero-pasos .objeto-shine-wrap {
+        overflow: hidden;
+        isolation: isolate;
     }
 
-    @keyframes objeto-brillo-hover {
-        0%, 100% {
-            filter:
-                saturate(.9) sepia(.08) brightness(1.02) contrast(.98)
-                drop-shadow(1px 0 0 var(--white))
-                drop-shadow(-1px 0 0 var(--white))
-                drop-shadow(0 1px 0 var(--white))
-                drop-shadow(0 -1px 0 var(--white))
-                drop-shadow(1.5px 1.5px 0 var(--white))
-                drop-shadow(-1.5px -1.5px 0 var(--white))
-                drop-shadow(0 8px 32px rgb(0 0 0 / 40%));
-        }
-        18% {
-            filter:
-                saturate(.9) sepia(.08) brightness(1.22) contrast(.98)
-                drop-shadow(1px 0 0 var(--white))
-                drop-shadow(-1px 0 0 var(--white))
-                drop-shadow(0 1px 0 var(--white))
-                drop-shadow(0 -1px 0 var(--white))
-                drop-shadow(1.5px 1.5px 0 var(--white))
-                drop-shadow(-1.5px -1.5px 0 var(--white))
-                drop-shadow(0 0 8px rgb(255 255 255 / 70%))
-                drop-shadow(0 8px 32px rgb(0 0 0 / 40%));
-        }
+    .hero-pasos .objeto-shine-wrap > img {
+        display: block;
+        width: 100%;
+        height: auto;
+        pointer-events: none;
+    }
+
+    .hero-pasos .objeto-shine-wrap::before {
+        position: absolute;
+        z-index: 3;
+        top: -35%;
+        bottom: -35%;
+        left: 0;
+        width: 42%;
+        background: linear-gradient(
+            105deg,
+            transparent 0%,
+            rgb(255 255 255 / 12%) 32%,
+            rgb(255 255 255 / 58%) 50%,
+            rgb(255 255 255 / 12%) 68%,
+            transparent 100%
+        );
+        content: "";
+        pointer-events: none;
+        transform: translateX(-150%) skewX(-18deg);
+    }
+
+    .hero-pasos .objeto-shine-wrap:hover::before,
+    .hero-pasos .objeto-shine-wrap:focus-visible::before {
+        animation: contact-button-shine 2.3s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .hero-pasos .objeto-proceso:hover,
-    .hero-pasos .objeto-proceso:focus-visible {
-        animation: none;
+    .hero-pasos .objeto-shine-wrap::before {
+        animation: none !important;
     }
 }
-
