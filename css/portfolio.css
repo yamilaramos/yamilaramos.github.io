@@ -495,7 +495,7 @@ pointer-events: none;
     border: 0;
     border-radius: 18.6624px;
     background: transparent;
-    color: var(--black);
+    color: var(--bright-yellow);
     font: inherit;
     font-size: clamp(11px, 0.92vw, 14px);
     font-weight: 500;
@@ -518,7 +518,7 @@ pointer-events: none;
     box-sizing: border-box;
     border: 1.08px solid var(--black);
     border-radius: 1.1664px;
-    background: var(--black);
+    background: var(--bg-yellow);
     transform: rotate(45deg);
 }
 
@@ -530,7 +530,7 @@ pointer-events: none;
     box-sizing: border-box;
     border: 1.6px solid var(--black);
     border-radius: inherit;
-    background: var(--cream);
+    background: var(--bg-yellow);
     pointer-events: none;
 }
 
