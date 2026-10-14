@@ -1713,3 +1713,10 @@
         border: 2px solid var(--black) !important;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    #inicio .hero-sin-salto {
+        display: inline;
+    }
+}
