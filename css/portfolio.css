@@ -572,12 +572,12 @@ pointer-events: none;
     right: 9%;
 }
 
-/* Laptop y tableta: rombo en la esquina inferior izquierda. */
+/* Laptop y tableta: rombo en la esquina superior izquierda. */
 .etiqueta-laptop::after,
 .etiqueta-tableta::after {
-    top: auto;
+    top: 5px;
     right: auto;
-    bottom: 5px;
+    bottom: auto;
     left: -3.5px;
     transform: rotate(45deg);
 }
