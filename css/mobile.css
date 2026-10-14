@@ -5,7 +5,9 @@
     #inicio.hero{
         box-sizing: border-box;
         width: calc(100% - 20px);
+        min-height: calc(100svh - 10px);
         margin: 0 auto 0;
+        padding: 24px 0;
         border-radius: 22px 22px 0 0;
         flex-direction: column;
         border: 2px solid var(--black);
@@ -27,6 +29,8 @@
         align-items: center;
         justify-content: center;
         gap: 16px;
+        margin-top: auto;
+        margin-bottom: auto;
     }
      
     #inicio .contenedorInicio > .titulo{
