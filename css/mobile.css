@@ -1600,15 +1600,13 @@
     }
 }
 
-/* Tamaño de fuente uniforme para todos los párrafos en mobile. */
+/* Ajustes finales unificados para mobile. */
 @media screen and (max-width: 768px) {
+    /* Tipografía general: se conserva el orden original de la cascada. */
     p {
         font-size: 16px !important;
     }
-}
 
-/* Ajustes tipográficos para mobile: párrafos, texto interno y títulos. */
-@media screen and (max-width: 768px) {
     p,
     p span,
     .sectionStack p,
@@ -1629,10 +1627,7 @@
     .hero h2 {
         font-size: 16px !important;
     }
-}
 
-/* Ajustes de las cards y del texto de Sobre mí en mobile. */
-@media screen and (max-width: 768px) {
     .timeline-mobile .card h3.tiempo {
         font-size: 24px !important;
     }
@@ -1640,17 +1635,11 @@
     #sobremi .sobre-mi p {
         text-align: left !important;
     }
-}
 
-/* Tamaño de fuente uniforme para los dos títulos de Stack en mobile. */
-@media screen and (max-width: 768px) {
     #stack .stack-copy > h3 {
         font-size: 24px !important;
     }
-}
 
-/* Tamaño de fecha y categoría de los proyectos en mobile. */
-@media screen and (max-width: 768px) {
     .fecha-proyecto h4 {
         font-size: 24px !important;
     }
@@ -1659,11 +1648,7 @@
     .categoria-proyecto-2 h4 {
         font-size: 22px !important;
     }
-}
 
-
-/* Tamaño uniforme del texto de todos los botones en mobile. */
-@media screen and (max-width: 768px) {
     button,
     input[type="button"],
     input[type="submit"],
@@ -1673,31 +1658,13 @@
     [class*=" btn-"] {
         font-size: 18px !important;
     }
-}
 
-
-/* Todos los párrafos a 18px solo en mobile. */
-@media screen and (max-width: 768px) {
     p,
     p span {
         font-size: 18px !important;
     }
-}
 
-
-/* Evitar que el borde del header parpadee al desplazarse en mobile. */
-@media screen and (max-width: 768px) {
-    header,
-    header.scrolled {
-        animation: none !important;
-        transition: none !important;
-        border: 2px solid var(--black) !important;
-    }
-}
-
-
-/* En mobile, mantener el header visible y sin animaciones de ocultamiento al hacer scroll. */
-@media screen and (max-width: 768px) {
+    /* Evitar que el borde del header parpadee y mantenerlo visible al hacer scroll. */
     header,
     header.scrolled,
     header.scrolled.scroll-hidden,
