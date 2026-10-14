@@ -564,7 +564,7 @@ pointer-events: none;
     right: 5px;
     bottom: 0;
     left: auto;
-    transform: translateY(48%) rotate(45deg);
+    transform: translateY(48%) rotate(80deg);
 }
 
 .etiqueta-laptop {
@@ -578,7 +578,7 @@ pointer-events: none;
     right: auto;
     bottom: auto;
     left: 5px;
-    transform: translateY(-48%) rotate(45deg);
+    transform: translateY(-48%) rotate(80deg);
 }
 
 .etiqueta-tableta {
