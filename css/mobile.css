@@ -71,8 +71,13 @@
     h4 { font-size: 22px; }
 
     .sectionStack .skill-item-2 img, .sectionStack .skill-item img {
-        width: 40px;
-        height: 40px;
+        width: 37.6px;
+        height: 37.6px;
+    }
+
+    .contenedor-proyectos .proyLogos .logo {
+        width: 94%;
+        height: auto;
     }
 
     
