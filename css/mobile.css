@@ -334,15 +334,13 @@
     .contenedor-proyectos h3{
         max-width: 100%;
     }
-
     
-
     .contacto > div { margin-bottom: 3%; }
     
-    .btn-hero-secundario, .social-gap{
+    .social-gap{
         display: none;
     }
-
+    
     .botones-hero{
         margin-left: 0px;
     }
