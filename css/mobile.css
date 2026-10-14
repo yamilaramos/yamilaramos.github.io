@@ -65,9 +65,7 @@
         height: 40px;
     }
 
-    .titulo-proceso .subrayado:not(:last-of-type){
-        margin-right: 0.1em;
-    }
+    
     
     .stack-copy {
         flex: none;
@@ -319,9 +317,7 @@
         max-width: 100%;
     }
 
-    .contenedor-inicio{
-        margin-top: 3%;
-    }
+    
 
     .contacto > div { margin-bottom: 3%; }
     
