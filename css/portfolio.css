@@ -557,14 +557,14 @@ pointer-events: none;
     right: 46%;
 }
 
-/* Cámara y libreta: rombo hacia el lado derecho. */
+/* Cámara y libreta: rombo en la esquina inferior derecha. */
 .etiqueta-camara::after,
 .etiqueta-libreta::after {
-    top: 50%;
+    top: auto;
     right: -3.5px;
-    bottom: auto;
+    bottom: 5px;
     left: auto;
-    transform: translateY(-50%) rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .etiqueta-laptop {
@@ -572,14 +572,14 @@ pointer-events: none;
     right: 9%;
 }
 
-/* Laptop y tableta: rombo hacia el lado izquierdo. */
+/* Laptop y tableta: rombo en la esquina inferior izquierda. */
 .etiqueta-laptop::after,
 .etiqueta-tableta::after {
-    top: 50%;
+    top: auto;
     right: auto;
-    bottom: auto;
+    bottom: 5px;
     left: -3.5px;
-    transform: translateY(-50%) rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .etiqueta-tableta {
