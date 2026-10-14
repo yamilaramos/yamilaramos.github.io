@@ -1493,7 +1493,7 @@
     }
 
     header .logo-portafolio img {
-        width: clamp(82px, 27vw, 112px);
+        width: clamp(90.2px, 29.7vw, 123.2px);
         max-width: 100%;
         height: auto;
     }
