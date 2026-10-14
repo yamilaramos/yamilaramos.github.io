@@ -611,6 +611,8 @@ pointer-events: none;
 
 .hero-pasos .objeto-camara:hover,
 .hero-pasos .objeto-camara:focus-visible,
+.hero-pasos .objeto-laptop:hover,
+.hero-pasos .objeto-laptop:focus-visible,
 .hero-pasos .objeto-tableta:hover,
 .hero-pasos .objeto-tableta:focus-visible {
     filter:
