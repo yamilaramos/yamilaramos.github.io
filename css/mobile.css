@@ -1720,3 +1720,7 @@
         display: inline;
     }
 }
+
+
+/* Todos los párrafos mantienen el tamaño base solicitado. */
+p { font-size: 16px !important; }
