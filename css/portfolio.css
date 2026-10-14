@@ -525,13 +525,13 @@ pointer-events: none;
     content: "";
     position: absolute;
     z-index: -2;
-    bottom: -3.5px;
-    width: 9.3312px;
-    height: 9.3312px;
+    width: 10px;
+    height: 10px;
     box-sizing: border-box;
-    border: 1.08px solid var(--yellow);
-    border-radius: 1.1664px;
-    background: var(--yellow);
+    border: 1.6px solid var(--yellow);
+    border-radius: 1px;
+    background: var(--bg-yellow);
+    pointer-events: none;
     transform: rotate(45deg);
 }
 
@@ -557,14 +557,14 @@ pointer-events: none;
     right: 46%;
 }
 
-/* Cámara y libreta: rombo en la esquina inferior derecha. */
+/* Rombos integrados al globo: mismo relleno y borde, solapados con el contorno. */
 .etiqueta-camara::after,
 .etiqueta-libreta::after {
     top: auto;
-    right: -1px;
-    bottom: 2px;
+    right: 5px;
+    bottom: 0;
     left: auto;
-    transform: rotate(80deg);
+    transform: translateY(48%) rotate(45deg);
 }
 
 .etiqueta-laptop {
@@ -574,11 +574,11 @@ pointer-events: none;
 
 .etiqueta-laptop::after,
 .etiqueta-tableta::after {
-    top: 2px;
+    top: 0;
     right: auto;
     bottom: auto;
-    left: -1px;
-    transform: rotate(80deg);
+    left: 5px;
+    transform: translateY(-48%) rotate(45deg);
 }
 
 .etiqueta-tableta {
