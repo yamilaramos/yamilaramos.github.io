@@ -3476,3 +3476,9 @@ html:has(.mapa:hover) #cursor {
 
 /* Todos los párrafos mantienen el tamaño base solicitado. */
 p { font-size: 16px !important; }
+
+/* Padding uniforme para los dos botones del hero: punto medio entre ambos estilos. */
+.btn-hero,
+.btn-hero-secundario {
+    padding: clamp(6.5px, 0.425vw, 8.125px) clamp(21px, 1.38vw, 26.25px);
+}
