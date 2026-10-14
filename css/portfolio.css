@@ -3472,3 +3472,7 @@ html:has(.mapa:hover) #cursor {
         display: none !important;
     }
 }
+
+
+/* Todos los párrafos mantienen el tamaño base solicitado. */
+p { font-size: 16px !important; }
