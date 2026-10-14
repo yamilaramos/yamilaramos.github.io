@@ -560,8 +560,8 @@ pointer-events: none;
 .etiqueta-camara::after,
 .etiqueta-libreta::after {
     top: auto;
-    right: 0px;
-    bottom: 3px;
+    right: 1px;
+    bottom: 4px;
     left: auto;
     transform: translateY(48%) rotate(95deg);
 }
