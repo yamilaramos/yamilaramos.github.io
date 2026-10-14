@@ -3482,3 +3482,9 @@ p { font-size: 16px !important; }
 .btn-hero-secundario {
     padding: clamp(6.5px, 0.425vw, 8.125px) clamp(21px, 1.38vw, 26.25px);
 }
+
+/* Igualar de forma explícita el padding de ambos botones del hero. */
+#inicio .contenedorInicio > .botones-hero > .btn-hero,
+#inicio .contenedorInicio > .botones-hero > .btn-hero-secundario {
+    padding: 7px 24px !important;
+}
