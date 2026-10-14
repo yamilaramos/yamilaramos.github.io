@@ -1408,7 +1408,18 @@
         touch-action: auto !important;
     }
 
-     .flechas{margin: auto;}
+    #cursos.sectionCert .flechas {
+        grid-column: 1;
+        grid-row: 5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin: 12px auto 0;
+        position: relative;
+        z-index: 2;
+    }
 
     .flecha-dinamica-proyectos { display: none }
 }
