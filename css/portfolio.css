@@ -454,7 +454,7 @@ pointer-events: none;
 }
 
 .objeto-laptop {
-    top: 23%;
+    top: 22%;
     left: 5%;
     width: clamp(161.5px, 18.96vw, 301.67px);
     --inclinacion: -9deg;
@@ -568,7 +568,7 @@ pointer-events: none;
 }
 
 .etiqueta-laptop {
-    top: 44%;
+    top: 43%;
     right: 9%;
 }
 
