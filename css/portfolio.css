@@ -573,7 +573,7 @@ pointer-events: none;
 
 .etiqueta-laptop::after,
 .etiqueta-tableta::after {
-    top: 2px;
+    top: 3px;
     bottom: auto;
     left: 2px;
     transform: translateY(-47%) rotate(103deg);
