@@ -36,6 +36,7 @@
     #inicio .contenedorInicio > .titulo{
         width: 95%;
         margin: auto;
+        padding: 0;
     }
 
     #inicio .presentacion-texto > h1, #inicio .contenedorInicio > h2 { font-size: 16px; }
