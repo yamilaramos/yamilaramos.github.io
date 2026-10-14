@@ -561,10 +561,10 @@ pointer-events: none;
 .etiqueta-camara::after,
 .etiqueta-libreta::after {
     top: auto;
-    right: -3.5px;
-    bottom: 5px;
+    right: -1px;
+    bottom: 2px;
     left: auto;
-    transform: rotate(45deg);
+    transform: rotate(80deg);
 }
 
 .etiqueta-laptop {
