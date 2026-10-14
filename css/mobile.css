@@ -76,8 +76,8 @@
     }
 
     .contenedor-proyectos .proyLogos .logo {
-        width: 94%;
-        height: auto;
+        transform: scale(0.94);
+        transform-origin: center;
     }
 
     
