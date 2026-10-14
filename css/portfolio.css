@@ -3369,6 +3369,7 @@ html:has(.mapa:hover) #cursor {
 }
 
 .reco-card p{
+    text-align: center;
     margin: 0 0 25px;
     font-size: clamp(16px, 1.2vw, 19px);
     line-height: 1.55;
