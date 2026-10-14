@@ -557,14 +557,13 @@ pointer-events: none;
     right: 46%;
 }
 
-/* Rombos integrados al globo: mismo relleno y borde, solapados con el contorno. */
 .etiqueta-camara::after,
 .etiqueta-libreta::after {
     top: auto;
-    right: 5px;
-    bottom: 0;
+    right: 0px;
+    bottom: 3px;
     left: auto;
-    transform: translateY(48%) rotate(80deg);
+    transform: translateY(48%) rotate(95deg);
 }
 
 .etiqueta-laptop {
