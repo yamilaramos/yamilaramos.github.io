@@ -1721,3 +1721,11 @@
 
 /* Todos los párrafos mantienen el tamaño base solicitado. */
 p { font-size: 16px !important; }
+
+@media screen and (max-width: 768px) {
+    /* Mantener exactamente el mismo padding en ambos botones del hero en mobile. */
+    #inicio .contenedorInicio > .botones-hero > .btn-hero,
+    #inicio .contenedorInicio > .botones-hero > .btn-hero-secundario {
+        padding: 7px 24px !important;
+    }
+}
