@@ -46,7 +46,7 @@
         white-space: normal;
     }
 
-    .hero > .giro { width: 100%; min-height: 40vh; } 
+    .hero > .giro { width: 100%; min-height: 30vh; } 
     
     .flechaInicio{display:none;}
 
