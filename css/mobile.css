@@ -1729,3 +1729,9 @@ p { font-size: 16px !important; }
         padding: 7px 24px !important;
     }
 }
+
+@media screen and (max-width: 768px) {
+    #inicio .salto-solo-desktop {
+        display: none;
+    }
+}
