@@ -1661,6 +1661,26 @@
     }
 
     /* Tamaños específicos solicitados para las tarjetas de Sobre mí y el texto de Stack. */
+    .timeline-mobile .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .timeline-mobile .card h3,
+    .timeline-mobile .card p,
+    .timeline-mobile .card .logos {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .timeline-mobile .card h3,
+    .timeline-mobile .card p {
+        text-align: center !important;
+    }
+
     .timeline-mobile .card p {
         font-size: 16px !important;
     }
