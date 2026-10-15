@@ -1868,3 +1868,28 @@
         transform: none !important;
     }
 }
+
+/* Corregir alineación del título y descripción de Recomendaciones en mobile. */
+@media screen and (max-width: 768px) {
+    .seccionReco > div.w-58.m-auto.t-align-center {
+        box-sizing: border-box !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 2.5% !important;
+        padding-right: 2.5% !important;
+        text-align: left !important;
+    }
+
+    .seccionReco > div.w-58.m-auto.t-align-center > .tituloReco,
+    .seccionReco > div.w-58.m-auto.t-align-center > p {
+        display: block !important;
+        box-sizing: border-box !important;
+        width: 95% !important;
+        max-width: 95% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        text-align: left !important;
+    }
+}
