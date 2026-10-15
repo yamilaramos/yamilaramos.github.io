@@ -1,6 +1,7 @@
 @media screen and (max-width:768px){
     #cursor {display: none !important;}
-     
+
+    .seccionReco {border-top: none;}
     #inicio.hero{
         box-sizing: border-box;
         width: calc(100% - 20px);
