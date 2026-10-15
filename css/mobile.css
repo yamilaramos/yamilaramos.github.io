@@ -178,9 +178,8 @@
     }
 
     #cursos.sectionCert #certLogos {
-        width: 90%;
         min-height: 0;
-        margin: 2.5px auto 0;
+        margin: auto;
         gap: 5px;
     }
 
