@@ -1829,7 +1829,7 @@
         height: auto !important;
         margin: 0 !important;
         padding: 36px 24px !important;
-        transform: rotate(0deg) !important;
+        transform: rotate(var(--card-angle, 0deg)) !important;
     }
 
     .recos-final__cards .reco-card > p:not(.rol) {
