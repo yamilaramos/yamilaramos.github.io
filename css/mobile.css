@@ -1780,3 +1780,17 @@
         text-align: left !important;
     }
 }
+
+/* Igualar título y descripción de Recomendaciones al estilo de las demás secciones en mobile. */
+@media screen and (max-width: 768px) {
+    .seccionReco > div:first-child > .tituloReco,
+    .seccionReco > div:first-child > p {
+        display: block !important;
+        box-sizing: border-box !important;
+        width: 95% !important;
+        max-width: 95% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: left !important;
+    }
+}
