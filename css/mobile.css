@@ -1768,3 +1768,17 @@
         text-align: left !important;
     }
 }
+
+/* Ajuste específico: el rótulo de tecnologías debe compartir el borde izquierdo de los párrafos. */
+@media screen and (max-width: 768px) {
+    .contenedor-proyectos p.texto-seccion.decor-line-2 {
+        display: block !important;
+        box-sizing: border-box !important;
+        width: 95% !important;
+        max-width: 95% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding-left: 0 !important;
+        text-align: left !important;
+    }
+}
