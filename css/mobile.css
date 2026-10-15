@@ -1851,3 +1851,20 @@
         text-align: center !important;
     }
 }
+
+/* Forzar que el rótulo de tecnologías use exactamente la misma caja que los párrafos del proyecto. */
+@media screen and (max-width: 768px) {
+    article.contenedor-proyectos > p.texto-seccion.decor-line-2 {
+        display: block !important;
+        box-sizing: border-box !important;
+        width: 95% !important;
+        max-width: 95% !important;
+        margin: 2.5% auto !important;
+        padding: 0 !important;
+        text-align: left !important;
+        align-self: auto !important;
+        position: relative !important;
+        left: 0 !important;
+        transform: none !important;
+    }
+}
