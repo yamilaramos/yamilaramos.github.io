@@ -1793,4 +1793,13 @@
         margin-right: auto !important;
         text-align: left !important;
     }
+
+    .seccionReco > div:first-child > .tituloReco {
+        margin-bottom: 8% !important;
+    }
+
+    .seccionReco > div:first-child > p {
+        margin-top: 6% !important;
+        margin-bottom: 6% !important;
+    }
 }
