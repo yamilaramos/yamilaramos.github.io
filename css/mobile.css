@@ -1733,3 +1733,20 @@
         font-size: 18px !important;
     }
 }
+
+/* Unificar ancho y alineación de títulos, tecnologías e iconos de proyectos en mobile. */
+@media screen and (max-width: 768px) {
+    .contenedor-proyectos h3,
+    .contenedor-proyectos .texto-seccion,
+    .contenedor-proyectos .info-proyecto,
+    .contenedor-proyectos .proyLogos {
+        max-width: 95% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .contenedor-proyectos h3,
+    .contenedor-proyectos .texto-seccion {
+        text-align: left !important;
+    }
+}
