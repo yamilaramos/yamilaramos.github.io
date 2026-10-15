@@ -1745,6 +1745,7 @@
     .contenedor-proyectos .texto-seccion,
     .contenedor-proyectos .info-proyecto,
     .contenedor-proyectos .proyLogos {
+        width: 95% !important;
         max-width: 95% !important;
         margin-left: auto !important;
         margin-right: auto !important;
