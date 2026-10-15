@@ -654,7 +654,7 @@ pointer-events: none;
     .hero-pasos:has(.objeto-laptop:hover, .objeto-laptop:focus-visible) .etiqueta-laptop,
     .hero-pasos:has(.objeto-tableta:hover, .objeto-tableta:focus-visible) .etiqueta-tableta,
     .hero-pasos:has(.objeto-libreta:hover, .objeto-libreta:focus-visible) .etiqueta-libreta {
-        transform: scale(1.08);
+        transform: scale(1);
     }
 }
 
