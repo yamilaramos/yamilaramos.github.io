@@ -1629,6 +1629,13 @@
 
 /* Ajustes finales unificados para mobile. */
 @media screen and (max-width: 768px) {
+    p {
+        max-width: 95% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: left !important;
+    }
+
     p,
     p span,
     .sectionStack p,
