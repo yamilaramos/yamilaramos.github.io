@@ -643,10 +643,6 @@ pointer-events: none;
 }
 
 @media screen and (min-width: 769px) {
-    .hero-pasos {
-        overflow: hidden;
-    }
-
     .hero-pasos .etiqueta-objeto {
         transition: transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
         transform: scale(1);
@@ -658,7 +654,7 @@ pointer-events: none;
     .hero-pasos:has(.objeto-laptop:hover, .objeto-laptop:focus-visible) .etiqueta-laptop,
     .hero-pasos:has(.objeto-tableta:hover, .objeto-tableta:focus-visible) .etiqueta-tableta,
     .hero-pasos:has(.objeto-libreta:hover, .objeto-libreta:focus-visible) .etiqueta-libreta {
-        transform: scale(1.15);
+        transform: scale(1.08);
     }
 }
 
