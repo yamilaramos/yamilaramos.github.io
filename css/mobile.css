@@ -47,6 +47,7 @@
     }
 
     .hero > .giro { width: 100%; min-height: 30vh; } 
+    .btn-hero svg { height: 22px; width: 22px;}
     
     .flechaInicio{display:none;}
 
