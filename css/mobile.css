@@ -1719,3 +1719,9 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .caption {
+        font-size: 18px !important;
+    }
+}
