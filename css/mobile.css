@@ -1803,3 +1803,51 @@
         margin-bottom: 6% !important;
     }
 }
+
+/* Unificar las cuatro tarjetas de recomendaciones en mobile y centrar las reseñas. */
+@media screen and (max-width: 768px) {
+    .recos-final__cards {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) !important;
+        align-items: stretch !important;
+        justify-items: stretch !important;
+        gap: 22px !important;
+        width: 100% !important;
+        max-width: 420px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding: 0 !important;
+    }
+
+    .recos-final__cards .reco-card {
+        box-sizing: border-box !important;
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        max-width: none !important;
+        min-width: 0 !important;
+        height: auto !important;
+        margin: 0 !important;
+        padding: 36px 24px !important;
+        transform: rotate(0deg) !important;
+    }
+
+    .recos-final__cards .reco-card > p:not(.rol) {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 0 25px !important;
+        text-align: center !important;
+    }
+
+    .recos-final__cards .reco-card .reco-card__persona {
+        justify-content: center !important;
+        margin-top: 16px !important;
+    }
+
+    .recos-final__cards .reco-card .rol {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        text-align: center !important;
+    }
+}
