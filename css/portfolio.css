@@ -530,7 +530,7 @@ pointer-events: none;
     box-sizing: border-box;
     border: 1.6px solid var(--yellow);
     border-radius: 1px;
-    background: var(--yellow);
+    background: var(--bg-yellow);
     pointer-events: none;
     transform: rotate(45deg);
 }
