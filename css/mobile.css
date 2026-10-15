@@ -729,11 +729,9 @@
         content: "";
         position: absolute;
         left: 0;
-        bottom: -10px;
-    
-        width: 20%;
+        bottom: -4px;
+        width: 8%;
         height: 3px;
-    
         background: var(--yellow);
     
         border-radius: 10px;
