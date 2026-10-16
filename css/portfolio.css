@@ -3261,6 +3261,19 @@ html:has(.mapa:hover) #cursor {
         border-radius: calc(1.1664px * var(--large-monitor-scale));
     }
 
+    /* Tipografías fijas: acompañan el crecimiento del 25% en monitores grandes. */
+    .contenedorInicio h2 {
+        font-size: calc(21px * var(--large-monitor-scale));
+    }
+
+    .hero-theme-switcher {
+        font-size: calc(13px * var(--large-monitor-scale));
+    }
+
+    .hero-theme-switcher__button {
+        font-size: calc(12px * var(--large-monitor-scale));
+    }
+
     .skills-tooltip-portal[data-placement="top"] .skills-tooltip-tail {
         bottom: calc(-4.6656px * var(--large-monitor-scale));
     }
