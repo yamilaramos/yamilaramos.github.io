@@ -1308,7 +1308,7 @@
     }
 
     #proceso .proceso::before {
-        height: 1px;
+        height: 2px;
         border-radius: 1px;
     }
 }
