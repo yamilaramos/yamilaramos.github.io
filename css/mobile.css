@@ -1698,17 +1698,6 @@
     #stack .stack-intro p span {
         font-size: 16px !important;
     }
-
-    /* Mantener el header visible sin sobrescribir los estilos de la pastilla. */
-    header,
-    header.scrolled,
-    header.scrolled.scroll-hidden,
-    header.scrolled.scroll-revealing,
-    header.scrolled.scroll-initial-hidden {
-        translate: 0 0 !important;
-        visibility: visible !important;
-        opacity: 1 !important;
-    }
 }
 
 @media screen and (max-width: 768px) {
