@@ -59,7 +59,7 @@ const items = [
     titulo: "Análisis de Datos",
     institucion: "IBM",
     alt: "Certificado de Análisis de Datos de IBM",
-    descripcion: 'Desarrollé conocimientos en <strong class="subrayado">Python</strong> y <strong class="subrayado">SQL</strong> aplicándolos a proyectos de universidad. Fortalecí la lógica de programación y mi capacidad para resolver problemas de forma estructurada. Además, aprendí a trabajar con funciones, formato condicional y gráficos en <strong class="subrayado">Excel</strong>.',
+    descripcion: 'Desarrollé conocimientos en <strong class="subrayado">Python</strong> y <strong class="subrayado">SQL</strong> aplicándolos a proyectos de universidad. Fortalecí la lógica de programación y mi capacidad para resolver problemas de forma estructurada. Además, aprendí a trabajar con funciones y formato condicional en <strong class="subrayado">Excel</strong>.',
     logos: [
       { src: "/img/python.png", alt: "Logo de Python", class: "logos-ai b-radius" },
       { src: "/img/sql.png", alt: "Logo de SQL", class: "b-radius" },
