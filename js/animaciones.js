@@ -249,93 +249,23 @@ if (cursor && tieneHover) {
     });
 }
 
-/* COMPORTAMIENTO DEL HEADER AL HACER SCROLL DESACTIVADO TEMPORALMENTE.
-   Se conserva el código para poder reactivarlo más adelante.
+/* Header: activa el diseño de pastilla al desplazarse y vuelve al diseño original al llegar arriba.
+   Se mantienen las transiciones CSS de entrada y salida; ya no se oculta según la dirección del scroll. */
+(() => {
+  const header = document.querySelector("header");
+  if (!header) return;
 
-   (() => {
-     const header = document.querySelector("header");
-     if (!header) return;
-   
-     const UMBRAL = 40;
-     const UMBRAL_DIRECCION = 4;
-     let lastScrollY = window.scrollY;
-     let scrollDirection = 0;
-     let directionStartY = lastScrollY;
-     let directionThreshold = UMBRAL_DIRECCION;
-   
-     const getHalfSectionHeight = () => {
-       const midpoint = window.innerHeight / 2;
-       const sections = [...document.querySelectorAll("main section")]
-         .filter(section => section.offsetHeight > 0);
-   
-       if (!sections.length) return window.innerHeight / 2;
-   
-       const activeSection = sections.find(section => {
-         const rect = section.getBoundingClientRect();
-         return rect.top <= midpoint && rect.bottom >= midpoint;
-       });
-   
-       const section = activeSection || sections.reduce((nearest, candidate) => {
-         const rect = candidate.getBoundingClientRect();
-         const distance = midpoint < rect.top
-           ? rect.top - midpoint
-           : midpoint > rect.bottom
-             ? midpoint - rect.bottom
-             : 0;
-         return !nearest || distance < nearest.distance
-           ? { element: candidate, distance }
-           : nearest;
-       }, null)?.element;
-   
-       return Math.max(UMBRAL_DIRECCION, (section?.offsetHeight || window.innerHeight) / 2);
-     };
-   
-     const onScroll = () => {
-       const currentY = Math.max(0, window.scrollY);
-       const delta = currentY - lastScrollY;
-       const wasAtTop = lastScrollY <= UMBRAL;
-       lastScrollY = currentY;
-   
-       const isScrolled = currentY > UMBRAL;
-       header.classList.toggle("scrolled", isScrolled);
-   
-       if (!isScrolled) {
-         header.classList.remove("scroll-hidden", "scroll-revealing", "scroll-initial-hidden");
-         scrollDirection = 0;
-         directionStartY = currentY;
-         return;
-       }
-   
-       if (delta === 0) return;
-   
-       const nextDirection = Math.sign(delta);
-       if (nextDirection !== scrollDirection) {
-         scrollDirection = nextDirection;
-         directionStartY = wasAtTop ? UMBRAL : currentY - delta;
-         directionThreshold = scrollDirection < 0
-           ? getHalfSectionHeight()
-           : UMBRAL_DIRECCION;
-       }
-   
-       const crossedTopWhileScrollingDown = scrollDirection > 0 && wasAtTop;
-       if (Math.abs(currentY - directionStartY) < directionThreshold && !crossedTopWhileScrollingDown) return;
-   
-       if (crossedTopWhileScrollingDown) {
-         header.classList.add("scroll-hidden", "scroll-initial-hidden");
-         header.classList.remove("scroll-revealing");
-       } else {
-         const isScrollingUp = scrollDirection < 0;
-         header.classList.toggle("scroll-hidden", !isScrollingUp);
-         header.classList.toggle("scroll-revealing", isScrollingUp);
-         header.classList.remove("scroll-initial-hidden");
-       }
-       directionStartY = currentY;
-     };
-   
-     onScroll();
-     window.addEventListener("scroll", onScroll, { passive: true });
-   })();
-*/
+  const UMBRAL = 40;
+
+  const updateHeader = () => {
+    const isScrolled = window.scrollY > UMBRAL;
+    header.classList.toggle("scrolled", isScrolled);
+    header.classList.remove("scroll-hidden", "scroll-revealing", "scroll-initial-hidden");
+  };
+
+  updateHeader();
+  window.addEventListener("scroll", updateHeader, { passive: true });
+})();
 
 (() => {
   const section = document.querySelector("#proceso");
