@@ -249,21 +249,47 @@ if (cursor && tieneHover) {
     });
 }
 
-/* Header: mantiene la pastilla activa mientras la página está desplazada. */
+/* Header: pastilla al desplazarse, se oculta suavemente al bajar y reaparece al subir. */
 (() => {
   const initHeaderPill = () => {
     const header = document.querySelector("header");
     if (!header) return;
 
+    let lastScrollY = window.scrollY;
+    let ticking = false;
+
     const updateHeader = () => {
-      const isScrolled = window.scrollY > 40;
+      const currentScrollY = window.scrollY;
+      const isScrolled = currentScrollY > 40;
       header.classList.toggle("scrolled", isScrolled);
-      header.classList.remove("scroll-hidden", "scroll-revealing", "scroll-initial-hidden");
+
+      if (!isScrolled) {
+        header.classList.remove("scroll-hidden", "scroll-revealing", "scroll-initial-hidden");
+      } else if (currentScrollY > lastScrollY + 3) {
+        header.classList.remove("scroll-revealing", "scroll-initial-hidden");
+        header.classList.add("scroll-hidden");
+      } else if (currentScrollY < lastScrollY - 3) {
+        header.classList.remove("scroll-hidden", "scroll-initial-hidden");
+        header.classList.add("scroll-revealing");
+      }
+
+      lastScrollY = currentScrollY;
+      ticking = false;
+    };
+
+    const onScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateHeader);
+        ticking = true;
+      }
     };
 
     updateHeader();
-    window.addEventListener("scroll", updateHeader, { passive: true });
-    window.addEventListener("pageshow", updateHeader);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("pageshow", () => {
+      lastScrollY = window.scrollY;
+      updateHeader();
+    });
   };
 
   if (document.readyState === "loading") {
@@ -271,7 +297,7 @@ if (cursor && tieneHover) {
   } else {
     initHeaderPill();
   }
-})();
+})();;
 
 (() => {
   const section = document.querySelector("#proceso");
