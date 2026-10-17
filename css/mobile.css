@@ -1699,19 +1699,15 @@
         font-size: 16px !important;
     }
 
-    /* Evitar que el borde del header parpadee y mantenerlo visible al hacer scroll. */
+    /* Mantener el header visible sin sobrescribir los estilos de la pastilla. */
     header,
     header.scrolled,
     header.scrolled.scroll-hidden,
     header.scrolled.scroll-revealing,
     header.scrolled.scroll-initial-hidden {
-        animation: none !important;
-        transition: none !important;
         translate: 0 0 !important;
-        transform: none !important;
         visibility: visible !important;
         opacity: 1 !important;
-        border: 2px solid var(--black) !important;
     }
 }
 
