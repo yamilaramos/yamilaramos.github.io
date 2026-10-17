@@ -1255,10 +1255,8 @@ header.scrolled > article {
 
 @media screen and (min-width: 769px) {
   header.scrolled {
-    box-sizing: border-box;
-    width: max-content;
-    max-width: calc(100% - clamp(24px, 2.2vw, 42px));
-    padding-inline: clamp(24px, 4vw, 64px);
+    width: fit-content;
+    padding-inline: 4%;
   }
 
   header.scrolled > article {
