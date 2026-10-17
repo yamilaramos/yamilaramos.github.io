@@ -249,22 +249,28 @@ if (cursor && tieneHover) {
     });
 }
 
-/* Header: activa el diseño de pastilla al desplazarse y vuelve al diseño original al llegar arriba.
-   Se mantienen las transiciones CSS de entrada y salida; ya no se oculta según la dirección del scroll. */
+/* Header: mantiene la pastilla activa mientras la página está desplazada. */
 (() => {
-  const header = document.querySelector("header");
-  if (!header) return;
+  const initHeaderPill = () => {
+    const header = document.querySelector("header");
+    if (!header) return;
 
-  const UMBRAL = 40;
+    const updateHeader = () => {
+      const isScrolled = window.scrollY > 40;
+      header.classList.toggle("scrolled", isScrolled);
+      header.classList.remove("scroll-hidden", "scroll-revealing", "scroll-initial-hidden");
+    };
 
-  const updateHeader = () => {
-    const isScrolled = window.scrollY > UMBRAL;
-    header.classList.toggle("scrolled", isScrolled);
-    header.classList.remove("scroll-hidden", "scroll-revealing", "scroll-initial-hidden");
+    updateHeader();
+    window.addEventListener("scroll", updateHeader, { passive: true });
+    window.addEventListener("pageshow", updateHeader);
   };
 
-  updateHeader();
-  window.addEventListener("scroll", updateHeader, { passive: true });
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initHeaderPill, { once: true });
+  } else {
+    initHeaderPill();
+  }
 })();
 
 (() => {
