@@ -1076,8 +1076,10 @@ header {
         -webkit-backdrop-filter var(--header-return-duration) ease-out,
         backdrop-filter var(--header-return-duration) ease-out;
 
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 50;
     transform: scale(1);
 }
