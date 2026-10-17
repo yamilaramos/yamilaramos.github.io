@@ -713,7 +713,7 @@ pointer-events: none;
     left: 0;
     top: var(--proceso-divider-offset, 0px);
     width: 88%;
-    height: 1px;
+    height: 1.5px;
     min-height: 1px;
     box-sizing: border-box;
     transform: none;
