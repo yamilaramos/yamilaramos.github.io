@@ -1444,8 +1444,7 @@
 @media screen and (max-width: 768px) {
     header {
         box-sizing: border-box;
-        position: sticky;
-        top: 8px;
+        position: static;
         width: calc(100% - 20px);
         max-width: 560px;
         height: 58px;
