@@ -714,6 +714,9 @@ pointer-events: none;
     top: var(--proceso-divider-offset, 0px);
     width: 88%;
     height: 2px;
+    min-height: 2px;
+    box-sizing: border-box;
+    transform: none;
     opacity: 0;
     background: linear-gradient(
         to right,
