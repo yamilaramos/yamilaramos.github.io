@@ -249,6 +249,11 @@ if (cursor && tieneHover) {
     });
 }
 
+/* HEADER AL HACER SCROLL — DESACTIVADO TEMPORALMENTE
+   Se conserva el código para volver a activar la pastilla y su animación en el futuro.
+   Para reactivarlo, quitar el if (false) que lo envuelve.
+*/
+if (false) {
 /* Header: pastilla al desplazarse, se oculta suavemente al bajar y reaparece al subir. */
 (() => {
   const initHeaderPill = () => {
@@ -297,7 +302,8 @@ if (cursor && tieneHover) {
   } else {
     initHeaderPill();
   }
-})();;
+})()
+};;
 
 (() => {
   const section = document.querySelector("#proceso");
