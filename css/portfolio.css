@@ -3456,7 +3456,6 @@ html:has(.mapa:hover) #cursor {
     }
 }
 
-/* El borde izquierdo debe acompañar todas las líneas del texto. */
 .salto-linea > .b-left {
     display: block;
     width: fit-content;
@@ -3464,18 +3463,8 @@ html:has(.mapa:hover) #cursor {
     box-sizing: border-box;
 }
 
-
-
-/* Mantener oculto en desktop el texto complementario del hero. */
 @media screen and (min-width: 769px) {
     .salto-linea > .b-left {
         display: none !important;
     }
-}
-
-
-/* Padding uniforme para los dos botones del hero: punto medio entre ambos estilos. */
-.btn-hero,
-.btn-hero-secundario {
-    padding: clamp(6.5px, 0.425vw, 8.125px) clamp(21px, 1.38vw, 26.25px);
 }
