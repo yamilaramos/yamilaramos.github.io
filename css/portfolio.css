@@ -439,20 +439,6 @@ pointer-events: none;
     transform: rotate(var(--inclinacion));
 }
 
-.objeto-tableta {
-    filter:
-        saturate(.9)
-        sepia(.08)
-        brightness(1.02)
-        contrast(.98)
-        drop-shadow(1px 0 0 var(--white))
-        drop-shadow(-1px 0 0 var(--white))
-        drop-shadow(0 1px 0 var(--white))
-        drop-shadow(0 -1px 0 var(--white))
-        drop-shadow(1.5px 1.5px 0 var(--white))
-        drop-shadow(-1.5px -1.5px 0 var(--white));
-}
-
 .objeto-laptop {
     top: 22%;
     left: 8%;
@@ -606,40 +592,6 @@ pointer-events: none;
     z-index: 2;
 }
 
-.hero-pasos .objeto-camara:hover,
-.hero-pasos .objeto-camara:focus-visible,
-.hero-pasos .objeto-laptop:hover,
-.hero-pasos .objeto-laptop:focus-visible,
-.hero-pasos .objeto-tableta:hover,
-.hero-pasos .objeto-tableta:focus-visible {
-    filter:
-        saturate(.9)
-        sepia(.08)
-        brightness(1.02)
-        contrast(.98)
-        drop-shadow(1px 0 0 var(--white))
-        drop-shadow(-1px 0 0 var(--white))
-        drop-shadow(0 1px 0 var(--white))
-        drop-shadow(0 -1px 0 var(--white))
-        drop-shadow(1.5px 1.5px 0 var(--white))
-        drop-shadow(-1.5px -1.5px 0 var(--white));
-}
-
-/* La libreta no agrega sombra al pasar el cursor. */
-.hero-pasos .objeto-libreta:hover,
-.hero-pasos .objeto-libreta:focus-visible {
-    filter:
-        saturate(.9)
-        sepia(.08)
-        brightness(1.02)
-        contrast(.98)
-        drop-shadow(1px 0 0 var(--white))
-        drop-shadow(-1px 0 0 var(--white))
-        drop-shadow(0 1px 0 var(--white))
-        drop-shadow(0 -1px 0 var(--white))
-        drop-shadow(1.5px 1.5px 0 var(--white))
-        drop-shadow(-1.5px -1.5px 0 var(--white));
-}
 
 @media screen and (min-width: 769px) {
     .hero-pasos .etiqueta-objeto {
