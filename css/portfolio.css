@@ -384,16 +384,13 @@ pointer-events: none;
   -webkit-text-fill-color: transparent;
 }
 
-
-
-
 .texto {
     padding: clamp(30px, 1.95vw, 37.5px);
 }
 
 .hero-pasos {
     position: relative;
-    background-image: url(/img/hero-pasos.png);
+    background-image: url(/img/hero-pasos-3.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
