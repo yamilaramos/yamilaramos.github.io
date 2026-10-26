@@ -393,7 +393,7 @@ pointer-events: none;
 
 .hero-pasos {
     position: relative;
-    background-image: url(/img/hero-pasos-3.png);
+    background-image: url(/img/hero-pasos.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
