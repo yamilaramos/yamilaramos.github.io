@@ -2678,6 +2678,11 @@ footer p{
     animation: none;
 }
 
+.skills-marquee--full .skills-track:not([data-repeat]) {
+    justify-content: center;
+    width: 100%;
+}
+
 .skills-track-2 {
     animation: skills-scroll-quarter 30s linear infinite;
 }
