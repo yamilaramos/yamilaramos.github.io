@@ -2679,8 +2679,8 @@ footer p{
 }
 
 .skills-marquee--full .skills-track:not([data-repeat]) {
-    justify-content: center;
-    width: 100%;
+    justify-content: flex-start;
+    width: max-content;
 }
 
 .skills-track-2 {
