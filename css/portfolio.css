@@ -505,7 +505,7 @@ pointer-events: none;
     box-sizing: border-box;
     border: 1.6px solid var(--yellow);
     border-radius: inherit;
-    background: var(--bg-yellow);
+    background: var(--cream);
     pointer-events: none;
 }
 
@@ -3238,7 +3238,7 @@ html:has(.mapa:hover) #cursor {
     height: clamp(300px, 32vw, 420px);
     overflow: visible;
     pointer-events: none;
-    color: var(--yellow);
+    color: var(--bg-yellow);
     opacity: 0.34;
 }
 
