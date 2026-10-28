@@ -3235,11 +3235,11 @@ html:has(.mapa:hover) #cursor {
     top: 39%;
     left: 0;
     width: 100%;
-    height: clamp(330px, 34vw, 500px);
+    height: clamp(300px, 32vw, 420px);
     overflow: visible;
     pointer-events: none;
     color: var(--yellow);
-    opacity: 0.36;
+    opacity: 0.34;
 }
 
 .recos-line-art path {
@@ -3394,8 +3394,8 @@ html:has(.mapa:hover) #cursor {
 @media screen and (max-width: 560px) {
     .recos-line-art {
         top: 48%;
-        height: 320px;
-        opacity: 0.24;
+        height: 280px;
+        opacity: 0.22;
     }
 
     .recos-line-art path {
