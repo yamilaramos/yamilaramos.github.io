@@ -3218,6 +3218,8 @@ html:has(.mapa:hover) #cursor {
 
 
 .seccionReco {
+    overflow: hidden;
+    isolation: isolate;
     gap: 12%;
     position: relative;
     display: flex;
@@ -3225,6 +3227,28 @@ html:has(.mapa:hover) #cursor {
     justify-content: center;
     padding: clamp(80px, 8vw, 120px) 4%;
     color: var(--black);
+}
+
+.recos-line-art {
+    position: absolute;
+    z-index: 0;
+    top: 43%;
+    left: 0;
+    width: 100%;
+    height: clamp(250px, 29vw, 430px);
+    overflow: visible;
+    pointer-events: none;
+    color: var(--yellow);
+    opacity: 0.42;
+}
+
+.recos-line-art path {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 3.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vector-effect: non-scaling-stroke;
 }
 
 .recos-final__cards {
@@ -3368,6 +3392,16 @@ html:has(.mapa:hover) #cursor {
 }
 
 @media screen and (max-width: 560px) {
+    .recos-line-art {
+        top: 48%;
+        height: 260px;
+        opacity: 0.25;
+    }
+
+    .recos-line-art path {
+        stroke-width: 2.5;
+    }
+
     .seccionReco {
         padding: 64px 24px;
     }
