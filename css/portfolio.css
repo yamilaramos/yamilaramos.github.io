@@ -3329,9 +3329,10 @@ html:has(.mapa:hover) #cursor {
     display: flex;
     flex: 1 1 0;
     flex-direction: column;
+    justify-content: center;
     min-width: 0;
     max-width: 360px;
-    min-height: 410px;
+    min-height: 330px;
     height: auto;
     padding: 45px 30px;
     border: 2px solid var(--black);
