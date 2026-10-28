@@ -3268,7 +3268,7 @@ html:has(.mapa:hover) #cursor {
 
 .reco-card__persona {
     position: relative;
-    margin: 0;
+    margin: 16px 0 8px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3314,7 +3314,7 @@ html:has(.mapa:hover) #cursor {
 
 .reco-card p{
     text-align: center;
-    margin: 0;
+    margin: 0 0 25px;
     font-size: clamp(16px, 1.2vw, 19px);
     line-height: 1.55;
 }
@@ -3330,12 +3330,11 @@ html:has(.mapa:hover) #cursor {
     flex: 1 1 0;
     flex-direction: column;
     justify-content: center;
-    gap: 18px;
     min-width: 0;
     max-width: 360px;
     min-height: 320px;
     height: auto;
-    padding: 32px 30px;
+    padding: 45px 30px;
     border: 2px solid var(--black);
     border-radius: clamp(22px, 2vw, 30px);
     background: var(--bg-yellow);
