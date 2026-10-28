@@ -3239,7 +3239,7 @@ html:has(.mapa:hover) #cursor {
     overflow: visible;
     pointer-events: none;
     color: var(--bg-yellow);
-    opacity: 0.34;
+    opacity: 1;
 }
 
 .recos-line-art path {
@@ -3395,7 +3395,7 @@ html:has(.mapa:hover) #cursor {
     .recos-line-art {
         top: 48%;
         height: 280px;
-        opacity: 0.22;
+        opacity: 1;
     }
 
     .recos-line-art path {
