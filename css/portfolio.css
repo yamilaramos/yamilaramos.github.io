@@ -16,7 +16,7 @@
     --yellow: #86c5d6;
     --black: #fefaf6;
     --bg-yellow: #e7f0f0;
-    --cream: #02070e;
+    --cream: #7f8380;
     --white: #ffffff;
     --header-cream: rgba(10, 45, 51, 90%);
     --inicio-cream: #fefaf6;
@@ -735,7 +735,7 @@ html, body {
     overflow-x: clip;
     cursor: none;
 }
-strong { font-weight: 600; }
+strong { font-weight: 600; color: var(--black);}
 body {
     font-size: clamp(12.5px, calc(4.79px + 0.56vw), 15.62px);
     background-color: var(--cream);
@@ -1390,9 +1390,6 @@ header.scrolled .header-cv-mobile {
 
     background: #80808099;
 }
-
-
-
 .salto-linea{ display: block; margin-top: clamp(10px, calc(3.84px + 0.45vw), 12.5px); }
 .salto-mobile-desactivado, .salto-mobile { display: inline; }
 .punto-mobile { color: var(--yellow); margin-left: clamp(2px, calc(0.77px + 0.09vw), 2.5px); }
@@ -1623,8 +1620,6 @@ header.scrolled .animacion-activa::after {
     width: clamp(22px, calc(8.44px + 0.99vw), 27.5px);
     margin-right: clamp(20px, calc(7.67px + 0.9vw), 25px);
 }
-
-
 
 .sobre-mi > div h2, .t-cert h2,  .tituloReco {
     color: var(--black);
