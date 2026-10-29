@@ -1590,7 +1590,7 @@ header.scrolled .animacion-activa::after {
  .division-2{
     border-bottom: clamp(2px, 0.15vw, 2.5px) solid var(--black);
     background: var(--cream);
-    color: var(--black);
+    color: var(--black-important);
     width: 100%;
     overflow: hidden;
  }
