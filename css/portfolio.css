@@ -763,7 +763,7 @@ body {
 .d-none{ display: none; }
 .t-align-center { text-align: center; }
 .t-align-left { text-align: left; }
-.c-white { color: var(--cream); }
+.c-white { color: var(--inicio-cream); }
 
 
 .flex-direction-column{ flex-direction: column; align-items: flex-start;}
