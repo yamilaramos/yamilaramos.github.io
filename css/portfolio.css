@@ -1854,7 +1854,7 @@ header.scrolled .animacion-activa::after {
     
     background-position: center;
     background-repeat: no-repeat;
-    border-right: clamp(2px, 0.15vw, 2.5px) solid var(--black);
+    border-right: clamp(2px, 0.15vw, 2.5px) solid var(--black-borde);
 
 }
 
@@ -1866,7 +1866,7 @@ header.scrolled .animacion-activa::after {
     
     background-position: center;
     background-repeat: no-repeat;
-    border-right: clamp(2px, 0.15vw, 2.5px) solid var(--black);
+    border-right: clamp(2px, 0.15vw, 2.5px) solid var(--black-borde);
 }
 
 .hero-soplo{
@@ -1877,7 +1877,7 @@ header.scrolled .animacion-activa::after {
     
     background-position: center;
     background-repeat: no-repeat;
-    border-left: clamp(2px, 0.15vw, 2.5px) solid var(--black);
+    border-left: clamp(2px, 0.15vw, 2.5px) solid var(--black-borde);
 }
 
 .flecha{
@@ -2453,7 +2453,7 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
 
-    border-top: clamp(2px, 0.15vw, 2.5px) solid var(--black);
+    border-top: clamp(2px, 0.15vw, 2.5px) solid var(--black-borde);
     background: var(--grad-yellow);
     text-align: center;
 
@@ -2620,7 +2620,7 @@ footer p{
     box-sizing: border-box;
     width: 100%;
     padding: 5% 0;
-    border-top: clamp(2px, 0.15vw, 2.5px) solid var(--black);
+    border-top: clamp(2px, 0.15vw, 2.5px) solid var(--black-borde);
 }
 
 .stack-intro {
@@ -2649,8 +2649,8 @@ footer p{
     justify-content: space-between;
     box-sizing: border-box;
     width: 100%;
-    border-top: clamp(2px, 0.15vw, 2.5px) solid var(--black);
-    border-bottom: clamp(2px, 0.15vw, 2.5px) solid var(--black);
+    border-top: clamp(2px, 0.15vw, 2.5px) solid var(--black-borde);
+    border-bottom: clamp(2px, 0.15vw, 2.5px) solid var(--black-borde);
     min-height: 0;
     height: 50vh;
     height: 50dvh;
