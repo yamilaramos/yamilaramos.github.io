@@ -73,8 +73,12 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
 
   const themeButtons = [...document.querySelectorAll(".hero-theme-switcher__button")];
-  if (themeButtons.length) {
-    const availableThemes = new Set(themeButtons.map(button => button.dataset.themeChoice));
+  const themeToggle = document.querySelector(".hero-theme-toggle");
+  if (themeButtons.length || themeToggle) {
+    const availableThemes = new Set([
+      ...themeButtons.map(button => button.dataset.themeChoice),
+      ...(themeToggle ? ["original", "océano"] : [])
+    ]);
     const storageKey = "yamila-portfolio-theme";
     const applyTheme = (theme, persist = false) => {
       if (!availableThemes.has(theme)) return;
@@ -102,6 +106,13 @@ document.addEventListener("DOMContentLoaded", () => {
         button.setAttribute("aria-pressed", String(button.dataset.themeChoice === theme));
       });
 
+      if (themeToggle) {
+        const oceanActive = theme === "océano";
+        themeToggle.setAttribute("aria-pressed", String(oceanActive));
+        themeToggle.setAttribute("aria-label", oceanActive ? "Cambiar al tema original" : "Cambiar al tema océano");
+        themeToggle.setAttribute("title", oceanActive ? "Cambiar al tema original" : "Cambiar al tema océano");
+      }
+
       if (persist) {
         try {
           window.localStorage.setItem(storageKey, theme);
@@ -123,6 +134,13 @@ document.addEventListener("DOMContentLoaded", () => {
     themeButtons.forEach(button => {
       button.addEventListener("click", () => applyTheme(button.dataset.themeChoice, true));
     });
+
+    if (themeToggle) {
+      themeToggle.addEventListener("click", () => {
+        const currentTheme = document.documentElement.dataset.theme || "original";
+        applyTheme(currentTheme === "océano" ? "original" : "océano", true);
+      });
+    }
   }
 
   // El botón de menú no existe en todas las versiones del HTML.
