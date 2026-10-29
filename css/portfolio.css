@@ -731,7 +731,7 @@ pointer-events: none;
 iframe { width: 100%; }
 nav, ul { list-style: none; }
 img { max-width: 100%; height: auto; display: block; -webkit-user-drag: none; user-select: none; pointer-events: none; }
-a { text-decoration: none; color: var(--black); font-weight: 500;}
+a { text-decoration: none; color: inherit; font-weight: 500;}
 a:hover { color: var(--black); }
 
 html { font-size: 10px; } 
