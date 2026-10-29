@@ -737,7 +737,7 @@ html, body {
     overflow-x: clip;
     cursor: none;
 }
-strong { font-weight: 600; color: var(--black);}
+strong { font-weight: 600; color: var(--black-important);}
 body {
     font-size: clamp(12.5px, calc(4.79px + 0.56vw), 15.62px);
     background-color: var(--cream);
