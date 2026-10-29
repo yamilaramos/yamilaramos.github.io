@@ -3238,8 +3238,7 @@ html:has(.mapa:hover) #cursor {
     height: clamp(300px, 32vw, 420px);
     overflow: visible;
     pointer-events: none;
-    color: var(--yellow);
-    opacity: 0.34;
+    color: var(--bg-yellow);
 }
 
 .recos-line-art path {
