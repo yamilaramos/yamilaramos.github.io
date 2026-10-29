@@ -1030,7 +1030,7 @@ a, button, [data-cursor-hover] {
 
 header {
     background-color: var(--cream);
-    border-bottom: clamp(2px, 0.15vw, 2.5px) solid var(--black);
+    border-bottom: clamp(2px, 0.15vw, 2.5px) solid var(--black-borde);
     border-radius: clamp(18px, 1.5vw, 29px)
                    clamp(18px, 1.5vw, 29px)
                     0 0;
@@ -1549,8 +1549,8 @@ header.scrolled .animacion-activa::after {
 }
 
 .division{
-    border-top: clamp(2px, 0.15vw, 2.5px) solid var(--black);
-    border-bottom: clamp(2px, 0.15vw, 2.5px) solid var(--black);
+    border-top: clamp(2px, 0.15vw, 2.5px) solid var(--black-borde);
+    border-bottom: clamp(2px, 0.15vw, 2.5px) solid var(--black-borde);
     background: var(--grad-yellow);
     color: var(--cream);
     width: 100%;
