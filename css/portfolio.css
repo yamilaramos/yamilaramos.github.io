@@ -144,6 +144,51 @@
  
 .hero .social-gap { z-index: 5; }
 
+.hero-theme-toggle {
+    position: absolute;
+    z-index: 6;
+    top: clamp(18px, 3.2%, 32px);
+    right: 5%;
+    display: grid;
+    place-items: center;
+    width: clamp(42px, calc(16.1px + 1.93vw), 52px);
+    height: clamp(42px, calc(16.1px + 1.93vw), 52px);
+    padding: clamp(10px, 0.75vw, 12px);
+    border: 1px solid rgb(255 255 255 / 30%);
+    border-radius: 50%;
+    color: var(--yellow);
+    background: rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(14px);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.18);
+    transition: transform 220ms ease, background-color 220ms ease, color 220ms ease;
+}
+
+.hero-theme-toggle:hover,
+.hero-theme-toggle:focus-visible {
+    color: var(--bright-yellow);
+    transform: translateY(-2px);
+}
+
+.hero-theme-toggle .theme-icon {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-theme-toggle .theme-icon-moon,
+:root[data-theme="océano"] .hero-theme-toggle .theme-icon-sun {
+    display: none;
+}
+
+:root[data-theme="océano"] .hero-theme-toggle .theme-icon-moon {
+    display: block;
+}
+
+.hero-theme-toggle:focus-visible {
+    outline: 2px solid var(--yellow);
+    outline-offset: 4px;
+}
+
+
 @media (max-width: 768px) {
   .hero > .giro { width: 100%; min-height: 60vh; }
 }
