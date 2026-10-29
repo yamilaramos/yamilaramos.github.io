@@ -1276,7 +1276,7 @@ header.scrolled .header-cv-mobile {
 .contenedor-proyectos{ margin-left: 5%; }
 
 .contenedor-proyectos h3{
-    color: var(--black);
+    color: var(--black-important);
     font-size: clamp(35px, 2.28vw, 43.75px);
     margin-bottom: clamp(4px, calc(1.53px + 0.18vw), 5px);
     max-width: 80%;
@@ -1625,7 +1625,7 @@ header.scrolled .animacion-activa::after {
 }
 
 .sobre-mi > div h2, .t-cert h2,  .tituloReco {
-    color: var(--black);
+    color: var(--black-important);
     font-size: clamp(36px, 2.35vw, 45px);
     margin-bottom: clamp(15px, 1.23vw, 21px);
 }
