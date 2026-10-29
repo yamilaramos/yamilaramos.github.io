@@ -5,6 +5,7 @@
     --grad-yellow: linear-gradient(131deg,rgba(235, 166, 37, 1) 0%, rgba(255, 178, 36, 1) 50%, rgba(235, 166, 37, 1) 100%);
     --white: #fcf9f7;
     --black: #000000;
+    --black-borde: #000000;
     --black-important: #000000;
     --cream: #fefaf6;
     --header-cream: rgba(254, 250, 246, 90%);
@@ -15,7 +16,8 @@
 
 :root[data-theme="océano"] {
     --yellow: #86c5d6;
-    --black: #fefaf6;
+    --black: #7f8380;
+    --black-borde: #fefaf6;
     --black-important: #fefaf6;
     --bg-yellow: #e7f0f0;
     --cream: #02070e;
@@ -792,7 +794,7 @@ body {
 .t-padding{ padding-top: clamp(2px, calc(0.77px + 0.09vw), 2.5px); }
 
 .contenedor{
-    border: clamp(2px, 0.15vw, 2.5px) solid var(--black);
+    border: clamp(2px, 0.15vw, 2.5px) solid var(--black-borde);
     margin: clamp(12px, 1.1vw, 21px)
             clamp(12px, 1.1vw, 21px)
             clamp(5px, 0.4vw, 8px)
@@ -1654,7 +1656,7 @@ header.scrolled .animacion-activa::after {
 
     height: 50vh;
     border-radius: clamp(29px, 2.62vw, 40px);
-    border: clamp(2px, 0.15vw, 2.5px) solid var(--black);
+    border: clamp(2px, 0.15vw, 2.5px) solid var(--black-borde);
     margin-top: 2%;
 }
 
@@ -2188,7 +2190,7 @@ header.scrolled .animacion-activa::after {
 
     background: var(--grad-yellow);
 
-    border: clamp(2px, 0.15vw, 2.5px) solid var(--black);
+    border: clamp(2px, 0.15vw, 2.5px) solid var(--black-borde);
     border-radius: clamp(25px, 1.64vw, 31.25px);
 
     padding:
@@ -2227,7 +2229,7 @@ header.scrolled .animacion-activa::after {
 
     background: var(--grad-yellow);
 
-    border: clamp(2px, 0.15vw, 2.5px) solid var(--black);
+    border: clamp(2px, 0.15vw, 2.5px) solid var(--black-borde);
     border-radius: clamp(25px, 1.64vw, 31.25px);
     padding:
         clamp(8px, 0.52vw, 10px)
@@ -2815,7 +2817,7 @@ footer p{
     box-sizing: border-box;
     min-width: 112px;
     padding: 8px 20.8px;
-    border: 0.8px solid var(--black);
+    border: 0.8px solid var(--black-borde);
     border-radius: 25.6px;
     background: var(--cream);
     color: var(--black);
@@ -2841,7 +2843,7 @@ footer p{
     box-sizing: border-box;
     width: 12.8px;
     height: 12.8px;
-    border: 1px solid var(--black);
+    border: 1px solid var(--black-borde);
     border-radius: 1.6px;
     background: var(--black);
     content: "";
@@ -2940,7 +2942,7 @@ footer p{
     width: max-content;
     min-width: 112px;
     padding: 8px 20.8px;
-    border: 1.6px solid var(--black);
+    border: 1.6px solid var(--black-borde);
     border-radius: 25.6px;
     background: var(--cream);
     color: var(--black);
@@ -2959,7 +2961,7 @@ footer p{
     width: 12.8px;
     height: 12.8px;
     box-sizing: border-box;
-    border: 1.2px solid var(--black);
+    border: 1.2px solid var(--black-borde);
     border-radius: 1.6px;
     background: var(--black);
     transform: translateX(-50%) rotate(45deg);
@@ -3154,7 +3156,7 @@ html:has(.mapa:hover) #cursor {
 .skills-tooltip-bubble {
     min-width: 81.648px;
     padding: 5.832px 15.1632px;
-    border: 1.6px solid var(--black);
+    border: 1.6px solid var(--black-borde);
     border-radius: 18.6624px;
     font-size: 13.9968px;
 }
