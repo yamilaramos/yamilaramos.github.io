@@ -3244,7 +3244,7 @@ html:has(.mapa:hover) #cursor {
 .recos-line-art path {
     fill: none;
     stroke: currentColor;
-    stroke-width: 3.5;
+    stroke-width: 3.675;
     stroke-linecap: round;
     stroke-linejoin: round;
     vector-effect: non-scaling-stroke;
@@ -3398,7 +3398,7 @@ html:has(.mapa:hover) #cursor {
     }
 
     .recos-line-art path {
-        stroke-width: 2.5;
+        stroke-width: 2.625;
     }
 
     .seccionReco {
