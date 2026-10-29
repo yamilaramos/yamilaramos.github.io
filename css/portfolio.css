@@ -1571,7 +1571,7 @@ header.scrolled .animacion-activa::after {
     flex: 0 0 auto;
     font-size: inherit;
     letter-spacing: -0.045em;
-    color: var(--cream);
+    color: var(--inicio-cream);
 }
 
 .division-logo {
