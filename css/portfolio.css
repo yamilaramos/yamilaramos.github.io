@@ -1096,6 +1096,7 @@ header {
     header nav a {
         font-size: clamp(21.5px, 1.40vw, 26.9px);
         white-space: nowrap;
+        color: var(--black-important);
     }
     
     header .btn-cv {
