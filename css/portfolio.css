@@ -3362,7 +3362,8 @@ html:has(.mapa:hover) #cursor {
 
 .reco-card__avatar img{
     border-radius: 50%;
-    outline: 2px solid var(--cream); 
+    outline: 2px solid var(--cream);
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.16);
 }
 
 .seccionReco p{
