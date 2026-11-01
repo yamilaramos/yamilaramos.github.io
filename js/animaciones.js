@@ -267,61 +267,30 @@ if (cursor && tieneHover) {
     });
 }
 
-/* Header: activa la pastilla al desplazarse y la mantiene visible. */
+/* Header: la pastilla solo aparece mientras se desplaza hacia arriba. */
 (() => {
   const initHeaderPill = () => {
     const header = document.querySelector("header");
     if (!header) return;
 
-    const updateHeader = () => {
-      const isScrolled = window.scrollY > 40;
-      header.classList.toggle("scrolled", isScrolled);
-      header.classList.remove("scroll-hidden", "scroll-revealing", "scroll-initial-hidden");
-    };
-
-    let ticking = false;
-    const onScroll = () => {
-      if (ticking) return;
-      ticking = true;
-      window.requestAnimationFrame(() => {
-        updateHeader();
-        ticking = false;
-      });
-    };
-
-    updateHeader();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("pageshow", updateHeader);
-  };
-
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initHeaderPill, { once: true });
-  } else {
-    initHeaderPill();
-  }
-})();
-
-(() => {
-  const initHeaderPill = () => {
-    const header = document.querySelector("header");
-    if (!header) return;
-
+    const threshold = 40;
     let lastScrollY = window.scrollY;
     let ticking = false;
 
     const updateHeader = () => {
       const currentScrollY = window.scrollY;
-      const isScrolled = currentScrollY > 40;
-      header.classList.toggle("scrolled", isScrolled);
+      const outsideHeroHeader = currentScrollY > threshold;
 
-      if (!isScrolled) {
+      header.classList.toggle("scrolled", outsideHeroHeader);
+
+      if (!outsideHeroHeader) {
         header.classList.remove("scroll-hidden", "scroll-revealing", "scroll-initial-hidden");
-      } else if (currentScrollY > lastScrollY + 3) {
-        header.classList.remove("scroll-revealing", "scroll-initial-hidden");
-        header.classList.add("scroll-hidden");
-      } else if (currentScrollY < lastScrollY - 3) {
+      } else if (currentScrollY < lastScrollY - 2) {
         header.classList.remove("scroll-hidden", "scroll-initial-hidden");
         header.classList.add("scroll-revealing");
+      } else if (currentScrollY > lastScrollY + 2) {
+        header.classList.remove("scroll-revealing", "scroll-initial-hidden");
+        header.classList.add("scroll-hidden");
       }
 
       lastScrollY = currentScrollY;
@@ -329,17 +298,24 @@ if (cursor && tieneHover) {
     };
 
     const onScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(updateHeader);
-        ticking = true;
-      }
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(updateHeader);
     };
 
-    updateHeader();
+    if (window.scrollY > threshold) {
+      header.classList.add("scrolled", "scroll-hidden");
+    }
+
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("pageshow", () => {
       lastScrollY = window.scrollY;
-      updateHeader();
+      if (window.scrollY <= threshold) {
+        header.classList.remove("scrolled", "scroll-hidden", "scroll-revealing", "scroll-initial-hidden");
+      } else {
+        header.classList.add("scrolled", "scroll-hidden");
+        header.classList.remove("scroll-revealing", "scroll-initial-hidden");
+      }
     });
   };
 
