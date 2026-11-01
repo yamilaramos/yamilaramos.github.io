@@ -267,7 +267,40 @@ if (cursor && tieneHover) {
     });
 }
 
-/* Header: pastilla al desplazarse, se oculta suavemente al bajar y reaparece al subir. */
+/* Header: activa la pastilla al desplazarse y la mantiene visible. */
+(() => {
+  const initHeaderPill = () => {
+    const header = document.querySelector("header");
+    if (!header) return;
+
+    const updateHeader = () => {
+      const isScrolled = window.scrollY > 40;
+      header.classList.toggle("scrolled", isScrolled);
+      header.classList.remove("scroll-hidden", "scroll-revealing", "scroll-initial-hidden");
+    };
+
+    let ticking = false;
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(() => {
+        updateHeader();
+        ticking = false;
+      });
+    };
+
+    updateHeader();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("pageshow", updateHeader);
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initHeaderPill, { once: true });
+  } else {
+    initHeaderPill();
+  }
+})();
+
 (() => {
   const initHeaderPill = () => {
     const header = document.querySelector("header");
