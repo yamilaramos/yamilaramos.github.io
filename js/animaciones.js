@@ -274,23 +274,44 @@ if (cursor && tieneHover) {
     if (!header) return;
 
     const threshold = 40;
+    const directionThreshold = 8;
     let lastScrollY = window.scrollY;
+    let pendingDirection = 0;
+    let pendingDistance = 0;
     let ticking = false;
 
     const updateHeader = () => {
       const currentScrollY = window.scrollY;
       const outsideHeroHeader = currentScrollY > threshold;
+      const scrollDelta = currentScrollY - lastScrollY;
 
       header.classList.toggle("scrolled", outsideHeroHeader);
 
       if (!outsideHeroHeader) {
         header.classList.remove("scroll-hidden", "scroll-revealing", "scroll-initial-hidden");
-      } else if (currentScrollY < lastScrollY - 2) {
-        header.classList.remove("scroll-hidden", "scroll-initial-hidden");
-        header.classList.add("scroll-revealing");
-      } else if (currentScrollY > lastScrollY + 2) {
-        header.classList.remove("scroll-revealing", "scroll-initial-hidden");
-        header.classList.add("scroll-hidden");
+        pendingDirection = 0;
+        pendingDistance = 0;
+      } else if (scrollDelta !== 0) {
+        const direction = Math.sign(scrollDelta);
+
+        if (direction !== pendingDirection) {
+          pendingDirection = direction;
+          pendingDistance = 0;
+        }
+
+        pendingDistance += Math.abs(scrollDelta);
+
+        if (pendingDistance >= directionThreshold) {
+          if (direction < 0) {
+            header.classList.remove("scroll-hidden", "scroll-initial-hidden");
+            header.classList.add("scroll-revealing");
+          } else {
+            header.classList.remove("scroll-revealing", "scroll-initial-hidden");
+            header.classList.add("scroll-hidden");
+          }
+
+          pendingDistance = 0;
+        }
       }
 
       lastScrollY = currentScrollY;
@@ -310,6 +331,9 @@ if (cursor && tieneHover) {
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("pageshow", () => {
       lastScrollY = window.scrollY;
+      pendingDirection = 0;
+      pendingDistance = 0;
+
       if (window.scrollY <= threshold) {
         header.classList.remove("scrolled", "scroll-hidden", "scroll-revealing", "scroll-initial-hidden");
       } else {
