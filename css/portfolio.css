@@ -1053,7 +1053,7 @@ header {
         backdrop-filter var(--header-return-duration) ease-out;
 
     position: sticky;
-    top: 0;
+    top: calc(clamp(12px, 1.1vw, 21px) + clamp(2px, 0.15vw, 2.5px));
     z-index: 1000;
     transform: scale(1);
 }
