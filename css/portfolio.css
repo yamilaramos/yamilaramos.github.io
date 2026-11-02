@@ -1293,12 +1293,16 @@ header.scrolled .header-cv-mobile {
 @media screen and (min-width: 769px) {
     header,
     header.scrolled {
+        --header-frame-gap: clamp(12px, 1.1vw, 21px);
+        --header-frame-border: clamp(2px, 0.15vw, 2.5px);
+        --header-frame-inset: calc(var(--header-frame-gap) + var(--header-frame-border));
+
         position: fixed;
-        top: calc(clamp(12px, 1.1vw, 21px) + clamp(2px, 0.15vw, 2.5px));
+        top: var(--header-frame-inset);
         left: 0;
         right: 0;
-        width: calc(100% - 2 * (clamp(12px, 1.1vw, 21px) + clamp(2px, 0.15vw, 2.5px)));
-        max-width: calc(1920px - 2 * clamp(2px, 0.15vw, 2.5px));
+        width: calc(100% - var(--header-frame-inset) - var(--header-frame-inset));
+        max-width: calc(1920px - var(--header-frame-border) - var(--header-frame-border));
         margin-inline: auto;
     }
 
