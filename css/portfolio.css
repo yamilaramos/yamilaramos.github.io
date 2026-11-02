@@ -1150,7 +1150,7 @@ header.scrolled {
   top: var(--header-pill-top);
   z-index: 1000;
   --header-border-transition-duration: 0s;
-  --header-morph-duration: 0.6s;
+  --header-morph-duration: 0s;
 
   transition:
     border-bottom-color var(--header-border-transition-duration) ease-out,
