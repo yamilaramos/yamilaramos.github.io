@@ -1290,6 +1290,29 @@ header.scrolled .header-cv-mobile {
     display: none;
 }
 
+@media screen and (min-width: 769px) {
+    header,
+    header.scrolled {
+        position: fixed;
+        top: calc(clamp(12px, 1.1vw, 21px) + clamp(2px, 0.15vw, 2.5px));
+        left: 0;
+        right: 0;
+        width: calc(100% - 2 * (clamp(12px, 1.1vw, 21px) + clamp(2px, 0.15vw, 2.5px)));
+        max-width: calc(1920px - 2 * clamp(2px, 0.15vw, 2.5px));
+        margin-inline: auto;
+    }
+
+    header.scrolled {
+        top: var(--header-pill-top);
+        width: fit-content;
+        max-width: calc(100% - clamp(24px, 2.2vw, 42px));
+    }
+
+    main {
+        padding-top: clamp(68px, 4.55vw + 6px, 93px);
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
   header,
   header.scrolled { transition: none; animation: none; }
