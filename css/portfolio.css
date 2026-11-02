@@ -2796,6 +2796,16 @@ footer p{
     backdrop-filter: blur(14.4px);
 }
 
+.sectionStack .stack-skill-divider {
+    display: block;
+    flex: 0 0 2px;
+    width: 2px;
+    height: 72px;
+    align-self: center;
+    box-sizing: border-box;
+    border-left: 2px dotted #fff;
+}
+
 .sectionStack .skill-item-2 {
     margin: 24px 48px 24px 0;
     padding: 12.8px 28.8px;
