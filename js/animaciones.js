@@ -286,8 +286,8 @@ if (cursor && tieneHover) {
     };
 
     const revealHeader = () => {
-      header.classList.remove("scrolled", "scroll-hidden", "scroll-initial-hidden");
-      header.classList.add("scroll-revealing");
+      header.classList.remove("scroll-hidden", "scroll-initial-hidden");
+      header.classList.add("scrolled", "scroll-revealing");
     };
 
     const resetHeader = () => {
