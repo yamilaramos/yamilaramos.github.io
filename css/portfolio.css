@@ -2825,12 +2825,13 @@ footer p{
 
 .sectionStack .stack-skill-divider {
     display: block;
-    flex: 0 0 2px;
-    width: 2px;
+    flex: 0 0 3px;
+    width: 3px;
     height: 72px;
     align-self: center;
     box-sizing: border-box;
-    border-left: 2px dotted #fff;
+    border-left: 3px solid var(--yellow);
+    border-radius: 5px;
 }
 
 .sectionStack .skill-item-2 {
