@@ -284,16 +284,6 @@ if (cursor && tieneHover) {
     let pendingReveal = false;
     let pillReadyAt = 0;
 
-    const durationMs = property => {
-      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return 0;
-
-      const value = getComputedStyle(header).getPropertyValue(property).trim();
-      const numericValue = Number.parseFloat(value);
-      if (!Number.isFinite(numericValue)) return 0;
-
-      return value.endsWith("ms") ? numericValue : value.endsWith("s") ? numericValue * 1000 : 0;
-    };
-
     const clearRevealTimer = () => {
       if (revealTimer !== null) {
         window.clearTimeout(revealTimer);
@@ -336,10 +326,10 @@ if (cursor && tieneHover) {
         if (window.scrollY <= threshold || !header.classList.contains("scroll-hidden")) return;
 
         header.classList.add("scrolled");
-        pillReadyAt = performance.now() + durationMs("--header-morph-duration");
+        pillReadyAt = performance.now();
 
         if (pendingReveal) showPillWhenReady();
-      }, durationMs("--header-hide-duration") + 20);
+      }, 20);
     };
 
     const resetHeader = () => {
