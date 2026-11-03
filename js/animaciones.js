@@ -286,8 +286,18 @@ if (cursor && tieneHover) {
     };
 
     const revealHeader = () => {
-      header.classList.remove("scroll-hidden", "scroll-initial-hidden");
-      header.classList.add("scrolled", "scroll-revealing");
+      header.classList.remove("scroll-hidden", "scroll-revealing", "scroll-initial-hidden");
+      header.classList.add("scrolled", "scroll-initial-hidden");
+
+      window.requestAnimationFrame(() => {
+        if (!header.classList.contains("scroll-initial-hidden")) return;
+
+        window.requestAnimationFrame(() => {
+          if (!header.classList.contains("scroll-initial-hidden")) return;
+          header.classList.remove("scroll-initial-hidden");
+          header.classList.add("scroll-revealing");
+        });
+      });
     };
 
     const resetHeader = () => {
