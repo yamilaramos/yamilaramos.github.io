@@ -351,7 +351,7 @@ if (cursor && tieneHover) {
   } else {
     initHeaderOnScroll();
   }
-})();;
+})();
 (() => {
   const section = document.querySelector("#proceso");
   if (!section) return;
