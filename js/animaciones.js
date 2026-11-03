@@ -267,9 +267,9 @@ if (cursor && tieneHover) {
     });
 }
 
-/* Header: se convierte en pastilla mientras está oculto al bajar. */
+/* Header: se oculta al bajar y reaparece al subir, sin cambiar su estilo. */
 (() => {
-  const initHeaderPill = () => {
+  const initHeaderOnScroll = () => {
     const header = document.querySelector("header");
     if (!header) return;
 
@@ -279,76 +279,26 @@ if (cursor && tieneHover) {
     let pendingDirection = 0;
     let pendingDistance = 0;
     let ticking = false;
-    let morphTimer = null;
-    let revealTimer = null;
-    let pendingReveal = false;
-    let pillReadyAt = 0;
 
-    const clearRevealTimer = () => {
-      if (revealTimer !== null) {
-        window.clearTimeout(revealTimer);
-        revealTimer = null;
-      }
-
-      pendingReveal = false;
+    const hideHeader = () => {
+      header.classList.remove("scrolled", "scroll-revealing", "scroll-initial-hidden");
+      header.classList.add("scroll-hidden");
     };
 
-    const showPillWhenReady = () => {
-      if (!header.classList.contains("scrolled")) {
-        pendingReveal = true;
-        return;
-      }
-
-      const remaining = pillReadyAt - performance.now();
-      if (remaining > 0) {
-        pendingReveal = true;
-        if (revealTimer === null) {
-          revealTimer = window.setTimeout(() => {
-            revealTimer = null;
-            if (pendingReveal && window.scrollY > threshold) {
-              showPillWhenReady();
-            }
-          }, remaining + 20);
-        }
-        return;
-      }
-
-      clearRevealTimer();
-      header.classList.remove("scroll-hidden", "scroll-initial-hidden");
+    const revealHeader = () => {
+      header.classList.remove("scrolled", "scroll-hidden", "scroll-initial-hidden");
       header.classList.add("scroll-revealing");
     };
 
-    const morphPillWhileHidden = () => {
-      if (header.classList.contains("scrolled") || morphTimer !== null) return;
-
-      morphTimer = window.setTimeout(() => {
-        morphTimer = null;
-        if (window.scrollY <= threshold || !header.classList.contains("scroll-hidden")) return;
-
-        header.classList.add("scrolled");
-        pillReadyAt = performance.now();
-
-        if (pendingReveal) showPillWhenReady();
-      }, 20);
-    };
-
     const resetHeader = () => {
-      if (morphTimer !== null) {
-        window.clearTimeout(morphTimer);
-        morphTimer = null;
-      }
-
-      clearRevealTimer();
-      pillReadyAt = 0;
       header.classList.remove("scrolled", "scroll-hidden", "scroll-revealing", "scroll-initial-hidden");
     };
 
     const updateHeader = () => {
       const currentScrollY = window.scrollY;
-      const outsideHeroHeader = currentScrollY > threshold;
       const scrollDelta = currentScrollY - lastScrollY;
 
-      if (!outsideHeroHeader) {
+      if (currentScrollY <= threshold) {
         resetHeader();
         pendingDirection = 0;
         pendingDistance = 0;
@@ -358,25 +308,15 @@ if (cursor && tieneHover) {
         if (direction !== pendingDirection) {
           pendingDirection = direction;
           pendingDistance = 0;
-          if (direction > 0 && pendingReveal) clearRevealTimer();
         }
 
         pendingDistance += Math.abs(scrollDelta);
 
         if (pendingDistance >= directionThreshold) {
           if (direction < 0) {
-            if (header.classList.contains("scroll-hidden") || header.classList.contains("scrolled")) {
-              showPillWhenReady();
-            }
-          } else {
-            clearRevealTimer();
-            header.classList.remove("scroll-revealing", "scroll-initial-hidden");
-
-            if (!header.classList.contains("scroll-hidden")) {
-              header.classList.add("scroll-hidden");
-            }
-
-            morphPillWhileHidden();
+            if (header.classList.contains("scroll-hidden")) revealHeader();
+          } else if (!header.classList.contains("scroll-hidden")) {
+            hideHeader();
           }
 
           pendingDistance = 0;
@@ -393,10 +333,7 @@ if (cursor && tieneHover) {
       window.requestAnimationFrame(updateHeader);
     };
 
-    if (window.scrollY > threshold) {
-      header.classList.add("scrolled", "scroll-hidden", "scroll-initial-hidden");
-      pillReadyAt = performance.now();
-    }
+    if (window.scrollY > threshold) hideHeader();
 
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("pageshow", () => {
@@ -404,29 +341,17 @@ if (cursor && tieneHover) {
       pendingDirection = 0;
       pendingDistance = 0;
 
-      if (morphTimer !== null) {
-        window.clearTimeout(morphTimer);
-        morphTimer = null;
-      }
-      clearRevealTimer();
-
-      if (window.scrollY <= threshold) {
-        pillReadyAt = 0;
-        header.classList.remove("scrolled", "scroll-hidden", "scroll-revealing", "scroll-initial-hidden");
-      } else {
-        pillReadyAt = performance.now();
-        header.classList.add("scrolled", "scroll-hidden", "scroll-initial-hidden");
-        header.classList.remove("scroll-revealing");
-      }
+      if (window.scrollY <= threshold) resetHeader();
+      else hideHeader();
     });
   };
 
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initHeaderPill, { once: true });
+    document.addEventListener("DOMContentLoaded", initHeaderOnScroll, { once: true });
   } else {
-    initHeaderPill();
+    initHeaderOnScroll();
   }
-})();
+})();;
 (() => {
   const section = document.querySelector("#proceso");
   if (!section) return;
