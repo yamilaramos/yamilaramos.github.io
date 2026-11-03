@@ -3564,22 +3564,22 @@ header.scrolled.scroll-revealing {
         translate var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
         opacity 0.24s ease-out,
         visibility 0s linear 0s,
-        border-bottom-color var(--header-border-transition-duration) ease-out,
-        max-width var(--header-morph-duration) var(--header-morph-easing),
-        width var(--header-morph-duration) var(--header-morph-easing),
-        padding-inline var(--header-morph-duration) var(--header-morph-easing),
-        top var(--header-morph-duration) var(--header-morph-easing),
-        height var(--header-morph-duration) var(--header-morph-easing),
-        border-radius var(--header-morph-duration) var(--header-morph-easing),
-        box-shadow var(--header-morph-duration) var(--header-morph-easing),
-        background-color var(--header-morph-duration) var(--header-morph-easing),
-        backdrop-filter var(--header-morph-duration) var(--header-morph-easing),
-        -webkit-backdrop-filter var(--header-morph-duration) var(--header-morph-easing),
-        transform var(--header-morph-duration) var(--header-morph-easing) !important;
+        border-bottom-color var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        max-width var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        width var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        padding-inline var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        top var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        height var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        border-radius var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        background-color var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        backdrop-filter var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        -webkit-backdrop-filter var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        transform var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1) !important;
 }
 
 header.scrolled.scroll-revealing nav ul {
-    transition: gap var(--header-morph-duration) var(--header-morph-easing) !important;
+    transition: gap var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1) !important;
 }
 
 @media (prefers-reduced-motion: reduce) {
