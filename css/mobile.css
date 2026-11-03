@@ -1442,14 +1442,20 @@
 
 }
 @media screen and (max-width: 768px) {
+    header,
+    header.scrolled {
+        position: fixed;
+        left: 0;
+        right: 0;
+    }
+
     header {
         box-sizing: border-box;
-        position: sticky;
         top: 10px;
         width: calc(100% - 20px);
         max-width: 560px;
         height: 58px;
-        margin: 10px auto 18px;
+        margin: 0 auto;
         padding: 0 10px;
         background: rgb(254 250 246 / 94%);
         border: 2px solid var(--black);
@@ -1460,12 +1466,16 @@
         transform: none;
     }
 
+    main {
+        padding-top: 86px;
+    }
+
     header.scrolled {
         top: 8px;
         width: calc(100% - 20px);
         max-width: 560px;
         height: 58px;
-        margin: 8px auto 18px;
+        margin: 0 auto;
         padding-inline: 10px;
         border: 1px solid rgb(0 0 0 / 14%);
         border-radius: 999px;
