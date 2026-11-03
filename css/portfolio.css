@@ -3547,3 +3547,27 @@ html:has(.mapa:hover) #cursor {
         display: none !important;
     }
 }
+
+/* Keep only the header reveal animation used while scrolling upward. */
+header,
+header *,
+header::before,
+header::after,
+header *::before,
+header *::after {
+    animation: none !important;
+    transition: none !important;
+}
+
+header.scrolled.scroll-revealing {
+    transition:
+        translate var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        opacity 0.24s ease-out,
+        visibility 0s linear 0s !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    header.scrolled.scroll-revealing {
+        transition: none !important;
+    }
+}
