@@ -1188,7 +1188,7 @@ header.scrolled {
 header.scroll-hidden {
   opacity: 0;
   visibility: hidden;
-  translate: 0 calc(-100% - 10px);
+  translate: 0 0;
   transition:
     translate var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
     opacity 0.24s ease-out,
@@ -1198,7 +1198,7 @@ header.scroll-hidden {
 header.scrolled.scroll-hidden {
   opacity: 0;
   visibility: hidden;
-  translate: 0 calc(-100% - var(--header-pill-top));
+  translate: 0 0;
   transition:
     translate var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
     opacity 0.24s ease-out,
