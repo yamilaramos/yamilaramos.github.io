@@ -1216,7 +1216,7 @@ header.scrolled.scroll-hidden {
     transform var(--header-morph-duration) var(--header-morph-easing);
 }
 
-header.scrolled.scroll-revealing {
+header.scroll-revealing {
   visibility: visible;
   translate: 0 0;
   transition:
@@ -1321,7 +1321,7 @@ header.scrolled .header-cv-mobile {
   header,
   header.scrolled { transition: none; animation: none; }
   header.scrolled.scroll-hidden,
-  header.scrolled.scroll-revealing { transition: none; }
+  header.scroll-revealing { transition: none; }
   header > article { transition: none; }
   header nav ul,
   header.scrolled nav ul { transition: none; }
@@ -3559,7 +3559,7 @@ header *::after {
     transition: none !important;
 }
 
-header.scrolled.scroll-revealing {
+header.scroll-revealing {
     transition:
         translate var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
         opacity 0.24s ease-out,
@@ -3567,7 +3567,7 @@ header.scrolled.scroll-revealing {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    header.scrolled.scroll-revealing {
+    header.scroll-revealing {
         transition: none !important;
     }
 }
