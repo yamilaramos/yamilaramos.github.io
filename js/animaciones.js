@@ -267,9 +267,9 @@ if (cursor && tieneHover) {
     });
 }
 
-/* Header: se oculta al bajar y reaparece al subir, sin cambiar su estilo. */
+/* Header: permanece fijo y la pastilla se activa al subir. */
 (() => {
-  const initHeaderOnScroll = () => {
+  const initHeaderScroll = () => {
     const header = document.querySelector("header");
     if (!header) return;
 
@@ -280,28 +280,13 @@ if (cursor && tieneHover) {
     let pendingDistance = 0;
     let ticking = false;
 
-    const hideHeader = () => {
-      header.classList.remove("scrolled", "scroll-revealing", "scroll-initial-hidden");
-      header.classList.add("scroll-hidden");
-    };
-
-    const revealHeader = () => {
-      header.classList.remove("scroll-hidden", "scroll-revealing", "scroll-initial-hidden");
-      header.classList.add("scrolled", "scroll-initial-hidden");
-
-      window.requestAnimationFrame(() => {
-        if (!header.classList.contains("scroll-initial-hidden")) return;
-
-        window.requestAnimationFrame(() => {
-          if (!header.classList.contains("scroll-initial-hidden")) return;
-          header.classList.remove("scroll-initial-hidden");
-          header.classList.add("scroll-revealing");
-        });
-      });
-    };
-
     const resetHeader = () => {
       header.classList.remove("scrolled", "scroll-hidden", "scroll-revealing", "scroll-initial-hidden");
+    };
+
+    const showPill = () => {
+      if (header.classList.contains("scrolled")) return;
+      header.classList.add("scrolled", "scroll-revealing");
     };
 
     const updateHeader = () => {
@@ -323,12 +308,7 @@ if (cursor && tieneHover) {
         pendingDistance += Math.abs(scrollDelta);
 
         if (pendingDistance >= directionThreshold) {
-          if (direction < 0) {
-            if (header.classList.contains("scroll-hidden")) revealHeader();
-          } else if (!header.classList.contains("scroll-hidden")) {
-            hideHeader();
-          }
-
+          if (direction < 0) showPill();
           pendingDistance = 0;
         }
       }
@@ -343,23 +323,19 @@ if (cursor && tieneHover) {
       window.requestAnimationFrame(updateHeader);
     };
 
-    if (window.scrollY > threshold) hideHeader();
-
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("pageshow", () => {
       lastScrollY = window.scrollY;
       pendingDirection = 0;
       pendingDistance = 0;
-
-      if (window.scrollY <= threshold) resetHeader();
-      else hideHeader();
+      resetHeader();
     });
   };
 
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initHeaderOnScroll, { once: true });
+    document.addEventListener("DOMContentLoaded", initHeaderScroll, { once: true });
   } else {
-    initHeaderOnScroll();
+    initHeaderScroll();
   }
 })();
 (() => {
