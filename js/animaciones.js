@@ -309,8 +309,14 @@ if (cursor && tieneHover) {
       if (topHoldTimer) window.clearTimeout(topHoldTimer);
       integrationTimer = null;
       topHoldTimer = null;
-      header.classList.remove("scroll-integrating");
-      header.classList.add("scrolled", "scroll-revealing");
+      header.classList.remove("scroll-integrating", "scroll-revealing");
+      header.classList.add("scrolled", "scroll-initial-hidden");
+
+      window.requestAnimationFrame(() => {
+        if (!header.classList.contains("scrolled")) return;
+        header.classList.remove("scroll-initial-hidden");
+        header.classList.add("scroll-revealing");
+      });
     };
 
     const updateHeader = () => {
@@ -348,7 +354,11 @@ if (cursor && tieneHover) {
         pendingDistance += Math.abs(scrollDelta);
 
         if (pendingDistance >= directionThreshold) {
-          if (direction < 0) showPill();
+          if (direction < 0) {
+            showPill();
+          } else {
+            resetHeader(false);
+          }
           pendingDistance = 0;
         }
       }
