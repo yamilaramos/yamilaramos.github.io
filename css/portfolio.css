@@ -2821,8 +2821,8 @@ footer p{
     height: 72px;
     align-self: center;
     box-sizing: border-box;
-    border-left: 3px solid var(--yellow);
-    border-radius: 5px;
+    border-left: 3px dotted var(--cream);
+    border-radius: 15px;
 }
 
 .sectionStack .skill-item-2 {
