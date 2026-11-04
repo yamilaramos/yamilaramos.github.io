@@ -2819,10 +2819,10 @@ footer p{
     display: block;
     flex: 0 0 3px;
     width: 3px;
-    height: 72px;
+    height: 68px;
     align-self: center;
     box-sizing: border-box;
-    border-left: 3px dotted var(--cream);
+    border-left: 3px dotted var(--bright-yellow);
     border-radius: 15px;
 }
 
