@@ -281,6 +281,7 @@ if (cursor && tieneHover) {
     let ticking = false;
 
     let integrationTimer = null;
+    let topHoldTimer = null;
 
     const resetHeader = (integrate = false) => {
       const wasPill = header.classList.contains("scrolled");
@@ -295,7 +296,9 @@ if (cursor && tieneHover) {
         }, 420);
       } else if (!integrate) {
         if (integrationTimer) window.clearTimeout(integrationTimer);
+        if (topHoldTimer) window.clearTimeout(topHoldTimer);
         integrationTimer = null;
+        topHoldTimer = null;
         header.classList.remove("scroll-integrating");
       }
     };
@@ -303,7 +306,9 @@ if (cursor && tieneHover) {
     const showPill = () => {
       if (header.classList.contains("scrolled")) return;
       if (integrationTimer) window.clearTimeout(integrationTimer);
+      if (topHoldTimer) window.clearTimeout(topHoldTimer);
       integrationTimer = null;
+      topHoldTimer = null;
       header.classList.remove("scroll-integrating");
       header.classList.add("scrolled", "scroll-revealing");
     };
@@ -313,10 +318,26 @@ if (cursor && tieneHover) {
       const scrollDelta = currentScrollY - lastScrollY;
 
       if (currentScrollY <= threshold) {
-        resetHeader(true);
+        if (scrollDelta < 0 && !header.classList.contains("scrolled")) {
+          showPill();
+          if (!topHoldTimer) {
+            topHoldTimer = window.setTimeout(() => {
+              topHoldTimer = null;
+              resetHeader(true);
+            }, 480);
+          }
+        } else if (!topHoldTimer) {
+          resetHeader(true);
+        }
+
         pendingDirection = 0;
         pendingDistance = 0;
       } else if (scrollDelta !== 0) {
+        if (topHoldTimer) {
+          window.clearTimeout(topHoldTimer);
+          topHoldTimer = null;
+        }
+
         const direction = Math.sign(scrollDelta);
 
         if (direction !== pendingDirection) {
