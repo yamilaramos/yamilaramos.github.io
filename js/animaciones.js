@@ -284,22 +284,45 @@ if (cursor && tieneHover) {
     let topHoldTimer = null;
 
     const resetHeader = (integrate = false) => {
+      const isMerging = header.classList.contains("scroll-merging");
+      const isIntegrating = header.classList.contains("scroll-integrating");
+      if (integrate && (isMerging || isIntegrating)) return;
+
       const wasPill = header.classList.contains("scrolled");
-      header.classList.remove("scrolled", "scroll-hidden", "scroll-revealing", "scroll-initial-hidden");
+
+      if (integrationTimer) window.clearTimeout(integrationTimer);
+      if (topHoldTimer) window.clearTimeout(topHoldTimer);
+      integrationTimer = null;
+      topHoldTimer = null;
 
       if (integrate && wasPill) {
-        if (integrationTimer) window.clearTimeout(integrationTimer);
-        header.classList.add("scroll-integrating");
+        header.classList.remove("scroll-initial-hidden");
+        header.classList.add("scroll-merging");
+
         integrationTimer = window.setTimeout(() => {
-          header.classList.remove("scroll-integrating");
-          integrationTimer = null;
-        }, 700);
+          header.classList.remove("scrolled", "scroll-hidden", "scroll-revealing", "scroll-initial-hidden", "scroll-merging");
+          header.classList.add("scroll-integrating", "scroll-integrating-initial");
+
+          window.requestAnimationFrame(() => {
+            if (!header.classList.contains("scroll-integrating")) return;
+            header.classList.remove("scroll-integrating-initial");
+          });
+
+          integrationTimer = window.setTimeout(() => {
+            header.classList.remove("scroll-integrating", "scroll-integrating-initial");
+            integrationTimer = null;
+          }, 320);
+        }, 300);
       } else if (!integrate) {
-        if (integrationTimer) window.clearTimeout(integrationTimer);
-        if (topHoldTimer) window.clearTimeout(topHoldTimer);
-        integrationTimer = null;
-        topHoldTimer = null;
-        header.classList.remove("scroll-integrating");
+        header.classList.remove(
+          "scrolled",
+          "scroll-hidden",
+          "scroll-revealing",
+          "scroll-initial-hidden",
+          "scroll-merging",
+          "scroll-integrating",
+          "scroll-integrating-initial"
+        );
       }
     };
 
@@ -309,7 +332,7 @@ if (cursor && tieneHover) {
       if (topHoldTimer) window.clearTimeout(topHoldTimer);
       integrationTimer = null;
       topHoldTimer = null;
-      header.classList.remove("scroll-integrating", "scroll-revealing");
+      header.classList.remove("scroll-merging", "scroll-integrating", "scroll-integrating-initial", "scroll-revealing");
       header.classList.add("scrolled", "scroll-initial-hidden");
 
       window.requestAnimationFrame(() => {
