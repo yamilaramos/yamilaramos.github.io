@@ -1444,14 +1444,12 @@
 @media screen and (max-width: 768px) {
     header,
     header.scrolled {
-        position: fixed;
-        left: 0;
-        right: 0;
+        position: static;
     }
 
     header {
         box-sizing: border-box;
-        top: 10px;
+
         width: calc(100% - 20px);
         max-width: 560px;
         height: 58px;
@@ -1466,12 +1464,9 @@
         transform: none;
     }
 
-    main {
-        padding-top: 86px;
-    }
 
     header.scrolled {
-        top: 8px;
+
         width: calc(100% - 20px);
         max-width: 560px;
         height: 58px;
