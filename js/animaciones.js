@@ -293,7 +293,7 @@ if (cursor && tieneHover) {
         integrationTimer = window.setTimeout(() => {
           header.classList.remove("scroll-integrating");
           integrationTimer = null;
-        }, 420);
+        }, 700);
       } else if (!integrate) {
         if (integrationTimer) window.clearTimeout(integrationTimer);
         if (topHoldTimer) window.clearTimeout(topHoldTimer);
