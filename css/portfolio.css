@@ -1052,8 +1052,8 @@ header {
         -webkit-backdrop-filter var(--header-return-duration) ease-out,
         backdrop-filter var(--header-return-duration) ease-out;
 
-    position: sticky;
-    top: calc(clamp(12px, 1.1vw, 21px) + clamp(2px, 0.15vw, 2.5px));
+    position: static;
+    top: auto;
     z-index: 1000;
     transform: scale(1);
 }
@@ -1147,8 +1147,8 @@ header {
     }
 
 header.scrolled {
-  position: sticky;
-  top: var(--header-pill-top);
+  position: static;
+  top: auto;
   z-index: 1000;
   --header-border-transition-duration: 0s;
   --header-morph-duration: 0.6s;
@@ -1293,27 +1293,18 @@ header.scrolled .header-cv-mobile {
 @media screen and (min-width: 769px) {
     header,
     header.scrolled {
-        --header-frame-gap: clamp(12px, 1.1vw, 21px);
-        --header-frame-border: clamp(2px, 0.15vw, 2.5px);
-        --header-frame-inset: calc(var(--header-frame-gap) + var(--header-frame-border));
-
-        position: fixed;
-        top: var(--header-frame-inset);
-        left: 0;
-        right: 0;
-        width: calc(100% - var(--header-frame-inset) - var(--header-frame-inset));
-        max-width: calc(1920px - var(--header-frame-border) - var(--header-frame-border));
-        margin-inline: auto;
+        position: static;
+        top: auto;
+        left: auto;
+        right: auto;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
     }
 
     header.scrolled {
-        top: var(--header-pill-top);
         width: fit-content;
         max-width: calc(100% - clamp(24px, 2.2vw, 42px));
-    }
-
-    main {
-        padding-top: clamp(68px, 4.55vw + 6px, 93px);
     }
 }
 
@@ -3548,7 +3539,7 @@ html:has(.mapa:hover) #cursor {
     }
 }
 
-/* Keep header motion disabled except when the pill appears on upward scroll. */
+/* Keep header transitions limited to the pill morph on upward re-entry. */
 header,
 header *,
 header::before,
@@ -3561,14 +3552,10 @@ header *::after {
 
 header.scrolled.scroll-revealing {
     transition:
-        translate var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        opacity 0.24s ease-out,
-        visibility 0s linear 0s,
         border-bottom-color var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
         max-width var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
         width var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
         padding-inline var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        top var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
         height var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
         border-radius var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
         box-shadow var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
