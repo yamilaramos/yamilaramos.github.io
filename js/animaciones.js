@@ -280,12 +280,31 @@ if (cursor && tieneHover) {
     let pendingDistance = 0;
     let ticking = false;
 
-    const resetHeader = () => {
+    let integrationTimer = null;
+
+    const resetHeader = (integrate = false) => {
+      const wasPill = header.classList.contains("scrolled");
       header.classList.remove("scrolled", "scroll-hidden", "scroll-revealing", "scroll-initial-hidden");
+
+      if (integrate && wasPill) {
+        if (integrationTimer) window.clearTimeout(integrationTimer);
+        header.classList.add("scroll-integrating");
+        integrationTimer = window.setTimeout(() => {
+          header.classList.remove("scroll-integrating");
+          integrationTimer = null;
+        }, 420);
+      } else if (!integrate) {
+        if (integrationTimer) window.clearTimeout(integrationTimer);
+        integrationTimer = null;
+        header.classList.remove("scroll-integrating");
+      }
     };
 
     const showPill = () => {
       if (header.classList.contains("scrolled")) return;
+      if (integrationTimer) window.clearTimeout(integrationTimer);
+      integrationTimer = null;
+      header.classList.remove("scroll-integrating");
       header.classList.add("scrolled", "scroll-revealing");
     };
 
@@ -294,7 +313,7 @@ if (cursor && tieneHover) {
       const scrollDelta = currentScrollY - lastScrollY;
 
       if (currentScrollY <= threshold) {
-        resetHeader();
+        resetHeader(true);
         pendingDirection = 0;
         pendingDistance = 0;
       } else if (scrollDelta !== 0) {
