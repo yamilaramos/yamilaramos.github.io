@@ -1170,7 +1170,7 @@ header.scrolled {
     transform: scale(0.9);
     --header-pill-top: clamp(6px, 0.6vw, 10px);
 
-    height: calc(clamp(62px, 4.55vw, 87px) - 5px);
+    height: clamp(68px, 4.55vw + 6px, 93px);
     
     max-width: calc(100% - clamp(24px, 2.2vw, 42px));
     margin: 0 auto;
