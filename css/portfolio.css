@@ -1158,7 +1158,7 @@ header.scrolled {
     max-width var(--header-morph-duration) var(--header-morph-easing),
     width var(--header-morph-duration) var(--header-morph-easing),
     padding-inline var(--header-morph-duration) var(--header-morph-easing),
-    top var(--header-morph-duration) var(--header-morph-easing),
+
     height var(--header-morph-duration) var(--header-morph-easing),
     border-radius var(--header-morph-duration) var(--header-morph-easing),
     box-shadow var(--header-morph-duration) var(--header-morph-easing),
@@ -1169,7 +1169,7 @@ header.scrolled {
     
     transform: scale(0.9);
     --header-pill-top: clamp(6px, 0.6vw, 10px);
-    top: var(--header-pill-top);
+
     height: calc(clamp(62px, 4.55vw, 87px) - 5px);
     
     max-width: calc(100% - clamp(24px, 2.2vw, 42px));
