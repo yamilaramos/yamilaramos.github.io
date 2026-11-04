@@ -3568,8 +3568,8 @@ header.scrolled.scroll-merging {
     opacity: 0;
     translate: 0 calc(0px - var(--header-pill-top));
     transition:
-        opacity var(--header-return-duration) ease-out,
-        translate var(--header-return-duration) var(--header-morph-easing) !important;
+        opacity 150ms ease-out,
+        translate 150ms var(--header-morph-easing) !important;
 }
 
 header.scroll-integrating {
@@ -3579,8 +3579,8 @@ header.scroll-integrating {
     opacity: 1;
     translate: 0 0;
     transition:
-        opacity var(--header-return-duration) ease-out,
-        translate var(--header-return-duration) var(--header-morph-easing) !important;
+        opacity 180ms ease-out,
+        translate 180ms var(--header-morph-easing) !important;
 }
 
 header.scroll-integrating-initial {
