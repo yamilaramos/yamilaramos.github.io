@@ -3569,9 +3569,67 @@ header.scrolled.scroll-revealing nav ul {
     transition: gap var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1) !important;
 }
 
+header.scroll-integrating {
+    transition:
+        border-bottom-color var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        max-width var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        width var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        padding-inline var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        height var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        border-radius var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        background-color var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        backdrop-filter var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        -webkit-backdrop-filter var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        transform var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+header.scroll-integrating > article {
+    transition:
+        margin-left var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        margin-right var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        width var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        max-width var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+header.scroll-integrating > article > .w-50,
+header.scroll-integrating nav {
+    transition:
+        width var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        max-width var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        margin var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+header.scroll-integrating nav ul {
+    transition: gap var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+@media screen and (min-width: 769px) {
+    header.scrolled .header-brand,
+    header.scrolled .header-cv {
+        opacity: 0;
+    }
+
+    header.scrolled.scroll-revealing .header-brand,
+    header.scrolled.scroll-revealing .header-cv,
+    header.scroll-integrating .header-brand,
+    header.scroll-integrating .header-cv {
+        transition:
+            opacity var(--header-hide-duration) ease-out,
+            display var(--header-hide-duration) allow-discrete !important;
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
     header.scrolled.scroll-revealing,
-    header.scrolled.scroll-revealing nav ul {
+    header.scrolled.scroll-revealing nav ul,
+    header.scroll-integrating,
+    header.scroll-integrating > article,
+    header.scroll-integrating > article > .w-50,
+    header.scroll-integrating nav,
+    header.scroll-integrating nav ul,
+    header.scroll-integrating .header-brand,
+    header.scroll-integrating .header-cv {
         transition: none !important;
     }
 }
