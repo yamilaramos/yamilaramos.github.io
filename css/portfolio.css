@@ -1147,8 +1147,8 @@ header {
     }
 
 header.scrolled {
-  position: static;
-  top: auto;
+  position: sticky;
+  top: 0;
   z-index: 1000;
   --header-border-transition-duration: 0s;
   --header-morph-duration: 0.6s;
@@ -1291,8 +1291,7 @@ header.scrolled .header-cv-mobile {
 }
 
 @media screen and (min-width: 769px) {
-    header,
-    header.scrolled {
+    header {
         position: static;
         top: auto;
         left: auto;
@@ -1303,6 +1302,8 @@ header.scrolled .header-cv-mobile {
     }
 
     header.scrolled {
+        position: sticky;
+        top: 0;
         width: fit-content;
         max-width: calc(100% - clamp(24px, 2.2vw, 42px));
     }
@@ -3562,7 +3563,10 @@ header.scrolled.scroll-revealing {
         background-color var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
         backdrop-filter var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
         -webkit-backdrop-filter var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        transform var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1) !important;
+        translate var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        transform var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        opacity var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        visibility 0s linear 0s !important;
 }
 
 header.scrolled.scroll-revealing nav ul {
@@ -3571,6 +3575,9 @@ header.scrolled.scroll-revealing nav ul {
 
 header.scroll-integrating {
     transition:
+        translate var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        opacity var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        visibility 0s linear 0s,
         border-bottom-color var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
         max-width var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
         width var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
@@ -3622,6 +3629,7 @@ header.scroll-integrating nav ul {
 
 @media (prefers-reduced-motion: reduce) {
     header.scrolled.scroll-revealing,
+    header.scrolled.scroll-initial-hidden,
     header.scrolled.scroll-revealing nav ul,
     header.scroll-integrating,
     header.scroll-integrating > article,
