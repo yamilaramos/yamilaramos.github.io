@@ -311,8 +311,8 @@ if (cursor && tieneHover) {
           integrationTimer = window.setTimeout(() => {
             header.classList.remove("scroll-integrating", "scroll-integrating-initial");
             integrationTimer = null;
-          }, 320);
-        }, 300);
+          }, 200);
+        }, 150);
       } else if (!integrate) {
         header.classList.remove(
           "scrolled",
