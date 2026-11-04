@@ -267,7 +267,7 @@ if (cursor && tieneHover) {
     });
 }
 
-/* Header: permanece fijo y la pastilla se activa al subir. */
+/* Header en el flujo normal del contenedor; la pastilla se activa al subir. */
 (() => {
   const initHeaderScroll = () => {
     const header = document.querySelector("header");
