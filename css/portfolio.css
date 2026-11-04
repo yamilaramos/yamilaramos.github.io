@@ -1148,7 +1148,7 @@ header {
 
 header.scrolled {
   position: sticky;
-  top: 0;
+  top: var(--header-pill-top);
   z-index: 1000;
   --header-border-transition-duration: 0s;
   --header-morph-duration: 0.6s;
@@ -1303,7 +1303,7 @@ header.scrolled .header-cv-mobile {
 
     header.scrolled {
         position: sticky;
-        top: 0;
+        top: var(--header-pill-top);
         width: fit-content;
         max-width: calc(100% - clamp(24px, 2.2vw, 42px));
     }
@@ -3540,7 +3540,7 @@ html:has(.mapa:hover) #cursor {
     }
 }
 
-/* Keep header transitions limited to the pill morph on upward re-entry. */
+/* Header motion is limited to the upward pill reveal and its return into the original header. */
 header,
 header *,
 header::before,
@@ -3551,64 +3551,28 @@ header *::after {
     transition: none !important;
 }
 
-header.scrolled.scroll-revealing {
+header.scrolled.scroll-revealing,
+header.scroll-integrating {
     transition:
-        border-bottom-color var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        max-width var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        width var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        padding-inline var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        height var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        border-radius var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        box-shadow var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        background-color var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        backdrop-filter var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        -webkit-backdrop-filter var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        translate var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        transform var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        opacity var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
+        all var(--header-morph-duration) var(--header-morph-easing),
         visibility 0s linear 0s !important;
 }
 
-header.scrolled.scroll-revealing nav ul {
-    transition: gap var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1) !important;
-}
-
 header.scroll-integrating {
-    transition:
-        translate var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        opacity var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        visibility 0s linear 0s,
-        border-bottom-color var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        max-width var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        width var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        padding-inline var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        height var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        border-radius var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        box-shadow var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        background-color var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        backdrop-filter var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        -webkit-backdrop-filter var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        transform var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1) !important;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-header.scroll-integrating > article {
-    transition:
-        margin-left var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        margin-right var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        width var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        max-width var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1) !important;
-}
-
+header.scrolled.scroll-revealing > article,
+header.scroll-integrating > article,
+header.scrolled.scroll-revealing > article > .w-50,
 header.scroll-integrating > article > .w-50,
-header.scroll-integrating nav {
-    transition:
-        width var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        max-width var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1),
-        margin var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1) !important;
-}
-
+header.scrolled.scroll-revealing nav,
+header.scroll-integrating nav,
+header.scrolled.scroll-revealing nav ul,
 header.scroll-integrating nav ul {
-    transition: gap var(--header-hide-duration) cubic-bezier(0.22, 1, 0.36, 1) !important;
+    transition: all var(--header-morph-duration) var(--header-morph-easing) !important;
 }
 
 @media screen and (min-width: 769px) {
@@ -3622,19 +3586,22 @@ header.scroll-integrating nav ul {
     header.scroll-integrating .header-brand,
     header.scroll-integrating .header-cv {
         transition:
-            opacity var(--header-hide-duration) ease-out,
-            display var(--header-hide-duration) allow-discrete !important;
+            opacity var(--header-morph-duration) var(--header-morph-easing),
+            display var(--header-morph-duration) allow-discrete !important;
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    header.scrolled.scroll-revealing,
     header.scrolled.scroll-initial-hidden,
-    header.scrolled.scroll-revealing nav ul,
+    header.scrolled.scroll-revealing,
     header.scroll-integrating,
+    header.scrolled.scroll-revealing > article,
     header.scroll-integrating > article,
+    header.scrolled.scroll-revealing > article > .w-50,
     header.scroll-integrating > article > .w-50,
+    header.scrolled.scroll-revealing nav,
     header.scroll-integrating nav,
+    header.scrolled.scroll-revealing nav ul,
     header.scroll-integrating nav ul,
     header.scroll-integrating .header-brand,
     header.scroll-integrating .header-cv {
