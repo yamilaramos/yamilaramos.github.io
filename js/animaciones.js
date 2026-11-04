@@ -273,7 +273,7 @@ if (cursor && tieneHover) {
     const header = document.querySelector("header");
     if (!header) return;
 
-    const threshold = 40;
+    const threshold = 0;
     const directionThreshold = 8;
     let lastScrollY = window.scrollY;
     let pendingDirection = 0;
