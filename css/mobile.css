@@ -1442,9 +1442,14 @@
 
 }
 @media screen and (max-width: 768px) {
-    header,
-    header.scrolled {
+    header {
         position: static;
+    }
+
+    header.scrolled {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
     }
 
     header {
