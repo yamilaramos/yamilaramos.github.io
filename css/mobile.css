@@ -1448,7 +1448,7 @@
 
     header.scrolled {
         position: sticky;
-        top: 0;
+        top: var(--header-pill-top);
         z-index: 1000;
     }
 
