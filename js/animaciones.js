@@ -276,12 +276,26 @@ if (cursor && tieneHover) {
     const threshold = 0;
     const directionThreshold = 8;
 
+    const inicioSection = document.querySelector("#inicio");
+    const inicioBottomOnLoad = inicioSection
+      ? inicioSection.getBoundingClientRect().bottom + window.scrollY
+      : 0;
+    let inicioHasBeenTraversed = Boolean(inicioSection && window.scrollY >= inicioBottomOnLoad);
+
     const isInInicio = () => {
-      const inicio = document.querySelector("#inicio");
-      if (!inicio) return false;
-      const bounds = inicio.getBoundingClientRect();
+      if (!inicioSection) return false;
+      const bounds = inicioSection.getBoundingClientRect();
       return bounds.top < window.innerHeight && bounds.bottom > 0;
     };
+
+    const markInicioTraversed = () => {
+      if (inicioHasBeenTraversed || !inicioSection) return;
+      if (inicioSection.getBoundingClientRect().bottom <= 0) {
+        inicioHasBeenTraversed = true;
+      }
+    };
+
+    const shouldSuppressPillInInicio = () => !inicioHasBeenTraversed && isInInicio();
     let lastScrollY = window.scrollY;
     let pendingDirection = 0;
     let pendingDistance = 0;
@@ -353,8 +367,10 @@ if (cursor && tieneHover) {
       const currentScrollY = window.scrollY;
       const scrollDelta = currentScrollY - lastScrollY;
 
+      if (scrollDelta > 0) markInicioTraversed();
+
       if (currentScrollY <= threshold) {
-        if (isInInicio()) {
+        if (shouldSuppressPillInInicio()) {
           resetHeader(false);
         } else if (scrollDelta < 0 && !header.classList.contains("scrolled")) {
           showPill();
@@ -387,7 +403,7 @@ if (cursor && tieneHover) {
 
         if (pendingDistance >= directionThreshold) {
           if (direction < 0) {
-            if (isInInicio()) {
+            if (shouldSuppressPillInInicio()) {
               resetHeader(false);
             } else {
               showPill();
