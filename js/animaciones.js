@@ -270,6 +270,9 @@ if (cursor && tieneHover) {
 /* Header en el flujo normal del contenedor; la pastilla se activa al subir. */
 (() => {
   const initHeaderScroll = () => {
+    const path = window.location.pathname.replace(/\/+$/, "") || "/";
+    if (path !== "/" && path !== "/index.html") return;
+
     const header = document.querySelector("header");
     if (!header) return;
 
