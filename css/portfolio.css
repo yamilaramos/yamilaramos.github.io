@@ -2822,7 +2822,7 @@ footer p{
     height: 68px;
     align-self: center;
     box-sizing: border-box;
-    border-left: 3px dotted var(--bright-yellow);
+    border-left: 3px dotted var(--cream);
     border-radius: 15px;
 }
 
