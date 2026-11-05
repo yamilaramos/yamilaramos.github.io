@@ -3551,6 +3551,10 @@ header *::after {
     transition: none !important;
 }
 
+header nav a.animacion::after {
+    transition: transform 0.3s ease !important;
+}
+
 header.scrolled.scroll-revealing {
     transition:
         all var(--header-morph-duration) var(--header-morph-easing),
@@ -3612,7 +3616,8 @@ header.scroll-integrating-initial {
     header.scrolled.scroll-revealing > article,
     header.scrolled.scroll-revealing > article > .w-50,
     header.scrolled.scroll-revealing nav,
-    header.scrolled.scroll-revealing nav ul {
+    header.scrolled.scroll-revealing nav ul,
+    header nav a.animacion::after {
         transition: none !important;
     }
 }
