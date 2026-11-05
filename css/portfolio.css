@@ -3552,6 +3552,7 @@ header *::after {
 }
 
 header nav a.animacion::after {
+    height: 2px;
     transition: transform 0.3s ease !important;
 }
 
