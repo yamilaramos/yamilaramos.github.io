@@ -249,6 +249,20 @@ hr{
     color: #eba625;
 }
 
+.categoria-proyecto-inicial{
+  width: fit-content;
+  font-size: clamp(19.375px, 1.27vw, 24.2px);
+  font-weight: 500;
+  color: var(--yellow);
+  background-color: var(--bg-yellow);
+
+  padding:
+    clamp(6px, 0.39vw, 7.5px)
+    clamp(18px, 1.18vw, 22.5px);
+
+  border-radius: clamp(999px, calc(383.19px + 45.08vw), 1248.75px);
+}
+
 footer > article > div{
     gap: 15px;
 }
