@@ -1,11 +1,5 @@
 /* Clases aisladas de la página Light Studio para evitar choques con estilos compartidos. */
 
-.light-studio-page .light-studio-shell {
-  border: 2px solid #000;
-  margin: 20px 20px 5px;
-  border-radius: 25px;
-}
-
 .light-studio-page .light-studio-gallery {
   padding: 4% 0;
   height: auto;
@@ -13,66 +7,6 @@
 
 .light-studio-page .light-studio-gap {
   gap: 1%;
-}
-
-.light-studio-page .light-studio-cv-button {
-  background: linear-gradient(
-    131deg,
-    rgba(235, 166, 37, 1) 0%,
-    rgba(255, 178, 36, 1) 50%,
-    rgba(235, 166, 37, 1) 100%
-  );
-  border: 1px solid #eba625;
-  border-radius: 28px;
-  padding: 10px 24px;
-  font-weight: 500;
-  font-size: 1.28rem;
-  color: #fcf9f7;
-  transition:
-    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
-    box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
-    color 0.3s ease;
-}
-
-.light-studio-page .light-studio-cv-button:hover {
-  text-decoration: none;
-  color: antiquewhite;
-}
-
-.light-studio-page header nav .light-studio-nav-link,
-.light-studio-page header nav .light-studio-nav-active {
-  position: relative;
-  text-decoration: none;
-}
-
-.light-studio-page header nav .light-studio-nav-link::after,
-.light-studio-page header nav .light-studio-nav-active::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 100%;
-  height: 3px;
-  background-color: #eba625;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease !important;
-}
-
-.light-studio-page header nav .light-studio-nav-link:hover::after,
-.light-studio-page header nav .light-studio-nav-active::after {
-  transform: scaleX(1);
-}
-
-.light-studio-page header.scrolled nav .light-studio-nav-active {
-  padding: clamp(3px, 0.35vw, 5.5px) clamp(12px, 1vw, 16px);
-  border-radius: 999px;
-  background-color: var(--yellow);
-  color: white;
-}
-
-.light-studio-page header.scrolled nav .light-studio-nav-active::after {
-  content: none;
 }
 
 .light-studio-page .light-studio-gallery-cta {
