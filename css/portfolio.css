@@ -1176,13 +1176,17 @@ header.scrolled {
     margin: 0 auto;
     
     background-color: var(--header-cream);
-    backdrop-filter: blur(clamp(12px, 1vw, 18px));
-    -webkit-backdrop-filter: blur(clamp(12px, 1vw, 18px));
-    border-bottom-color: transparent;
+    background-color: color-mix(in srgb, var(--header-cream) 84%, transparent);
+    backdrop-filter: blur(clamp(16px, 1.3vw, 22px)) saturate(145%);
+    -webkit-backdrop-filter: blur(clamp(16px, 1.3vw, 22px)) saturate(145%);
+    border: 1px solid rgb(255 255 255 / 48%);
+    border-bottom-color: rgb(255 255 255 / 30%);
     border-radius: 999px;
     
     box-shadow:
-    0 clamp(8px, 0.6vw, 14px) clamp(24px, 2vw, 40px) rgba(0, 0, 0, 0.15);
+    0 clamp(8px, 0.6vw, 14px) clamp(24px, 2vw, 40px) rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgb(255 255 255 / 62%),
+    inset 0 -1px 0 rgb(255 255 255 / 18%);
 }
 
 header.scroll-hidden {
