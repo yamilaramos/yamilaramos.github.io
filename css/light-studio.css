@@ -191,3 +191,14 @@
   font-weight: 500;
   font-size: 1.45rem;
 }
+
+.light-studio-page .light-studio-gallery > .light-studio-marquee:not(.light-studio-marquee--reverse) {
+  padding-bottom: 0;
+  margin-bottom: 2.5%;
+}
+
+.light-studio-page .light-studio-external-icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
