@@ -3566,10 +3566,10 @@ header.scrolled.scroll-revealing nav ul {
 
 header.scrolled.scroll-merging {
     opacity: 0;
-    translate: 0 -4px;
+    translate: 0 -2px;
     transition:
-        opacity 220ms cubic-bezier(0.22, 1, 0.36, 1),
-        translate 220ms var(--header-morph-easing) !important;
+        opacity 260ms cubic-bezier(0.4, 0, 0.2, 1),
+        translate 260ms cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
 header.scroll-integrating {
@@ -3579,13 +3579,13 @@ header.scroll-integrating {
     opacity: 1;
     translate: 0 0;
     transition:
-        opacity 220ms cubic-bezier(0.22, 1, 0.36, 1),
-        translate 220ms var(--header-morph-easing) !important;
+        opacity 260ms cubic-bezier(0.4, 0, 0.2, 1),
+        translate 260ms cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
 header.scroll-integrating-initial {
     opacity: 0;
-    translate: 0 -4px;
+    translate: 0 -2px;
     transition: none !important;
 }
 
