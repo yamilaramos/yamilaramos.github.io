@@ -275,6 +275,13 @@ if (cursor && tieneHover) {
 
     const threshold = 0;
     const directionThreshold = 8;
+
+    const isInInicio = () => {
+      const inicio = document.querySelector("#inicio");
+      if (!inicio) return false;
+      const bounds = inicio.getBoundingClientRect();
+      return bounds.top < window.innerHeight && bounds.bottom > 0;
+    };
     let lastScrollY = window.scrollY;
     let pendingDirection = 0;
     let pendingDistance = 0;
@@ -347,7 +354,9 @@ if (cursor && tieneHover) {
       const scrollDelta = currentScrollY - lastScrollY;
 
       if (currentScrollY <= threshold) {
-        if (scrollDelta < 0 && !header.classList.contains("scrolled")) {
+        if (isInInicio()) {
+          resetHeader(false);
+        } else if (scrollDelta < 0 && !header.classList.contains("scrolled")) {
           showPill();
           if (!topHoldTimer) {
             topHoldTimer = window.setTimeout(() => {
@@ -378,7 +387,11 @@ if (cursor && tieneHover) {
 
         if (pendingDistance >= directionThreshold) {
           if (direction < 0) {
-            showPill();
+            if (isInInicio()) {
+              resetHeader(false);
+            } else {
+              showPill();
+            }
           } else {
             resetHeader(false);
           }
