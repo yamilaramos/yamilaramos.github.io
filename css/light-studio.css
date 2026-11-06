@@ -296,3 +296,13 @@
 .light-studio-page a.btn-volver-inicio svg {
   color: var(--black);
 }
+
+/* Mantiene negras las flechas de ambos enlaces inferiores. */
+.light-studio-page .btn-siguiente svg {
+  color: var(--black);
+}
+
+/* Recupera la separación original entre las tres tarjetas. */
+.light-studio-page .descripcionProy {
+  gap: 60px;
+}
