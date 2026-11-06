@@ -219,3 +219,43 @@
   object-position: center top;
   transition: object-position 1.2s cubic-bezier(0.22, 1, 0.36, 1);
 }
+
+/* Entrada escalonada de las tarjetas, con el mismo gesto del hero en index. */
+.light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorImg,
+.light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorImg-2,
+.light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorTexto,
+.light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorTexto-2 {
+  opacity: 0;
+  transform: translateY(-40px) scale(0.98);
+  filter: blur(4px);
+  transition:
+    opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.light-studio-page .descripcionProy > article.light-studio-card-reveal.show > .contenedorImg,
+.light-studio-page .descripcionProy > article.light-studio-card-reveal.show > .contenedorImg-2,
+.light-studio-page .descripcionProy > article.light-studio-card-reveal.show > .contenedorTexto,
+.light-studio-page .descripcionProy > article.light-studio-card-reveal.show > .contenedorTexto-2 {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+.light-studio-page .descripcionProy > article.light-studio-card-reveal.show > .contenedorTexto,
+.light-studio-page .descripcionProy > article.light-studio-card-reveal.show > .contenedorTexto-2 {
+  transition-delay: 0.22s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorImg,
+  .light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorImg-2,
+  .light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorTexto,
+  .light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorTexto-2 {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+}
