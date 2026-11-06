@@ -235,6 +235,11 @@
   color: var(--black);
 }
 
+/* Énfasis de lectura en las descripciones de las cards. */
+.light-studio-page .descripcionProy > article p strong.light-studio-card-emphasis {
+  font-weight: 500;
+}
+
 /* Mantiene negras las flechas de ambos enlaces inferiores. */
 .light-studio-page .btn-siguiente svg {
   color: var(--black);
