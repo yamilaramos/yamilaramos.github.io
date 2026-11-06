@@ -2515,7 +2515,7 @@ footer {
     color: var(--cream);
 }
 
-.footer-contenido{ margin: 3%; }
+.footer-contenido{ padding: 3%; }
 
 footer p{
     color: var(--cream);
