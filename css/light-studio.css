@@ -140,3 +140,8 @@
   height: 30px;
   margin-left: 10px;
 }
+
+/* Evita que la tipografía nativa del botón altere los enlaces del pie. */
+.light-studio-page footer a.btn-footer-2 {
+  font-family: "Outfit", sans-serif;
+}
