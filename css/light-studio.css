@@ -289,7 +289,10 @@
 
 .light-studio-page a.btn-volver-inicio:hover,
 .light-studio-page a.btn-volver-inicio:hover h1,
-.light-studio-page a.btn-volver-inicio:hover h1 span,
-.light-studio-page a.btn-volver-inicio:hover svg {
+.light-studio-page a.btn-volver-inicio:hover h1 span {
   color: var(--bright-yellow);
+}
+
+.light-studio-page a.btn-volver-inicio svg {
+  color: var(--black);
 }
