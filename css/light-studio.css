@@ -152,3 +152,8 @@
   font-family: "Outfit", sans-serif;
   font-weight: 700;
 }
+
+/* Mantiene el bucle continuo mientras el cursor está sobre la galería. */
+.light-studio-page .light-studio-marquee:hover .light-studio-marquee__track {
+  animation-play-state: running;
+}
