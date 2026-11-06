@@ -220,68 +220,6 @@
   transition: object-position 1.2s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* Revelado escalonado inspirado en las cards de la referencia. */
-.light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorImg,
-.light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorImg-2,
-.light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorTexto,
-.light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorTexto-2 {
-  opacity: 0;
-  translate: 0 28px;
-  transition:
-    opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
-    translate 0.8s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.light-studio-page .descripcionProy > article.light-studio-card-reveal.show > .contenedorImg,
-.light-studio-page .descripcionProy > article.light-studio-card-reveal.show > .contenedorImg-2,
-.light-studio-page .descripcionProy > article.light-studio-card-reveal.show > .contenedorTexto,
-.light-studio-page .descripcionProy > article.light-studio-card-reveal.show > .contenedorTexto-2 {
-  opacity: 1;
-  translate: 0 0;
-}
-
-.light-studio-page .descripcionProy > article.light-studio-card-reveal.show > .contenedorTexto,
-.light-studio-page .descripcionProy > article.light-studio-card-reveal.show > .contenedorTexto-2 {
-  transition-delay: 0.15s;
-}
-
-@supports (animation-timeline: view()) {
-  @media (prefers-reduced-motion: no-preference) {
-    .light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorImg,
-    .light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorImg-2,
-    .light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorTexto,
-    .light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorTexto-2 {
-      transform-origin: 50% 100%;
-      animation: light-studio-card-enter auto linear both;
-      animation-timeline: view();
-      animation-range: entry cover 60%;
-    }
-
-    @keyframes light-studio-card-enter {
-      0% {
-        transform: perspective(1100px) rotateX(28deg) translateY(72px) scale(0.92);
-      }
-
-      100% {
-        transform: none;
-      }
-    }
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorImg,
-  .light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorImg-2,
-  .light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorTexto,
-  .light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorTexto-2 {
-    opacity: 1;
-    translate: none;
-    transform: none;
-    animation: none;
-    transition: none;
-  }
-}
-
 /* Mantiene el aspecto del botón como enlace y resalta su hover en amarillo. */
 .light-studio-page a.btn-volver-inicio {
   color: var(--black);
