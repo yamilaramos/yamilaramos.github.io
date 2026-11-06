@@ -521,3 +521,24 @@ if (cursor && tieneHover) {
     document.fonts.ready.then(alignDividersToPixels);
   }
 })();
+
+(() => {
+  const previews = document.querySelectorAll(".light-studio-marquee__item--landing-preview");
+
+  previews.forEach(preview => {
+    const link = preview.querySelector("a");
+    if (!link) return;
+
+    const clearReset = () => {
+      if (preview.matches(":hover, :focus-within")) return;
+      preview.classList.remove("is-resetting");
+    };
+
+    link.addEventListener("click", () => {
+      preview.classList.add("is-resetting");
+    });
+
+    link.addEventListener("blur", clearReset);
+    preview.addEventListener("pointerleave", clearReset);
+  });
+})();
