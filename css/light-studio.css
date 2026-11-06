@@ -226,10 +226,10 @@
 .light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorTexto,
 .light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorTexto-2 {
   opacity: 0;
-  translate: 0 40px;
+  translate: 0 28px;
   transition:
-    opacity 0.7s cubic-bezier(0, 0, 0.2, 1),
-    translate 0.7s cubic-bezier(0, 0, 0.2, 1);
+    opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    translate 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .light-studio-page .descripcionProy > article.light-studio-card-reveal.show > .contenedorImg,
@@ -254,12 +254,12 @@
       transform-origin: 50% 100%;
       animation: light-studio-card-enter auto linear both;
       animation-timeline: view();
-      animation-range: entry cover 42%;
+      animation-range: entry cover 60%;
     }
 
     @keyframes light-studio-card-enter {
       0% {
-        transform: perspective(900px) rotateX(55deg) translateY(120px) scale(0.82);
+        transform: perspective(1100px) rotateX(28deg) translateY(72px) scale(0.92);
       }
 
       100% {
