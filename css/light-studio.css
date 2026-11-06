@@ -160,7 +160,7 @@
 
 /* Alinea el copyright con el ancho completo del pie, como en el index. */
 .light-studio-page footer {
-  border-top: none;
+  border-top: clamp(2px, 0.15vw, 2.5px) solid var(--black-borde);
   border-radius: 0 0 clamp(24px, 1.25vw, 30px) clamp(24px, 1.25vw, 30px);
 }
 
