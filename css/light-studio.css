@@ -157,3 +157,26 @@
 .light-studio-page .light-studio-marquee:hover .light-studio-marquee__track {
   animation-play-state: running;
 }
+
+/* Alinea el copyright con el ancho completo del pie, como en el index. */
+.light-studio-page footer {
+  border-top: clamp(2px, 0.15vw, 2.5px) solid var(--black-borde);
+  border-radius: 0 0 clamp(24px, 1.25vw, 30px) clamp(24px, 1.25vw, 30px);
+}
+
+.light-studio-page footer > div {
+  width: 100%;
+}
+
+.light-studio-page footer .t-footer-final {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 2% 0 4%;
+  border-top: none;
+  text-align: center;
+}
+
+.light-studio-page footer .t-footer-final::before {
+  content: none;
+}
