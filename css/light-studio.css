@@ -211,3 +211,11 @@
 .light-studio-page footer .t-footer-final::before {
   content: none;
 }
+
+/* Al abrir la landing, fija la vista previa arriba hasta salir de la tarjeta. */
+.light-studio-page .light-studio-marquee__item--landing-preview.is-resetting > a > img,
+.light-studio-page .light-studio-marquee__item--landing-preview.is-resetting:hover > a > img,
+.light-studio-page .light-studio-marquee__item--landing-preview.is-resetting:focus-within > a > img {
+  object-position: center top;
+  transition: object-position 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
