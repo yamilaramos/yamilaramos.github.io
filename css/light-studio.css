@@ -146,9 +146,9 @@
   font-family: "Outfit", sans-serif;
 }
 
-.light-studio-page button.btn-siguiente,
-.light-studio-page button.btn-siguiente h1,
-.light-studio-page button.btn-siguiente h1 span {
+.light-studio-page .btn-siguiente,
+.light-studio-page .btn-siguiente h1,
+.light-studio-page .btn-siguiente h1 span {
   font-family: "Outfit", sans-serif;
   font-weight: 700;
 }
@@ -280,4 +280,16 @@
     animation: none;
     transition: none;
   }
+}
+
+/* Mantiene el aspecto del botón como enlace y resalta su hover en amarillo. */
+.light-studio-page a.btn-volver-inicio {
+  color: var(--black);
+}
+
+.light-studio-page a.btn-volver-inicio:hover,
+.light-studio-page a.btn-volver-inicio:hover h1,
+.light-studio-page a.btn-volver-inicio:hover h1 span,
+.light-studio-page a.btn-volver-inicio:hover svg {
+  color: var(--bright-yellow);
 }
