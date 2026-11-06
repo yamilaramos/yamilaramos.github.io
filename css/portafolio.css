@@ -747,7 +747,7 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
 }
-::selection { background-color: color-mix(in srgb, var(--yellow) 90%, transparent); color: var(--black); }
+::selection { background-color: color-mix(in srgb, var(--bright-yellow) 90%, transparent); color: var(--black); }
 .jcontent-center { justify-content: center; }
 .jcontent-between { justify-content: space-between; }
 .jcontent-evenly { justify-content:space-evenly; }
