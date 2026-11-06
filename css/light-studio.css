@@ -145,3 +145,8 @@
 .light-studio-page footer a.btn-footer-2 {
   font-family: "Outfit", sans-serif;
 }
+
+.light-studio-page button.btn-siguiente,
+.light-studio-page button.btn-siguiente h1 {
+  font-family: "Outfit", sans-serif;
+}
