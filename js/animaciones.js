@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Revelar elementos al entrar en el viewport.
   const elements = document.querySelectorAll(
-    '.scroll-fade-down, .scroll-fade-modern, .scroll-fade-modern-2'
+    '.scroll-fade-down, .scroll-fade-modern, .scroll-fade-modern-2, .light-studio-card-reveal'
   );
 
   if ("IntersectionObserver" in window) {
