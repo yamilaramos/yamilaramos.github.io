@@ -3630,3 +3630,17 @@ header.scroll-integrating-initial {
         transition: none !important;
     }
 }
+
+/* La pastilla sale con la transición inversa a la de entrada. */
+header.scrolled.scroll-hidden {
+  translate: 0 calc(-100% - var(--header-pill-top));
+  transition:
+    all var(--header-morph-duration) var(--header-morph-easing),
+    visibility 0s linear var(--header-morph-duration) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  header.scrolled.scroll-hidden {
+    transition: none !important;
+  }
+}
