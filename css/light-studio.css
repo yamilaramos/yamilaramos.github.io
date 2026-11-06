@@ -220,18 +220,16 @@
   transition: object-position 1.2s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* Entrada escalonada de las tarjetas, con el mismo gesto del hero en index. */
+/* Revelado escalonado inspirado en las cards de la referencia. */
 .light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorImg,
 .light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorImg-2,
 .light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorTexto,
 .light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorTexto-2 {
   opacity: 0;
-  transform: translateY(-40px) scale(0.98);
-  filter: blur(4px);
+  translate: 0 40px;
   transition:
-    opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
-    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
-    filter 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+    opacity 0.7s cubic-bezier(0, 0, 0.2, 1),
+    translate 0.7s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .light-studio-page .descripcionProy > article.light-studio-card-reveal.show > .contenedorImg,
@@ -239,13 +237,36 @@
 .light-studio-page .descripcionProy > article.light-studio-card-reveal.show > .contenedorTexto,
 .light-studio-page .descripcionProy > article.light-studio-card-reveal.show > .contenedorTexto-2 {
   opacity: 1;
-  transform: translateY(0) scale(1);
-  filter: blur(0);
+  translate: 0 0;
 }
 
 .light-studio-page .descripcionProy > article.light-studio-card-reveal.show > .contenedorTexto,
 .light-studio-page .descripcionProy > article.light-studio-card-reveal.show > .contenedorTexto-2 {
-  transition-delay: 0.22s;
+  transition-delay: 0.15s;
+}
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorImg,
+    .light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorImg-2,
+    .light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorTexto,
+    .light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorTexto-2 {
+      transform-origin: 50% 100%;
+      animation: light-studio-card-enter auto linear both;
+      animation-timeline: view();
+      animation-range: entry cover 42%;
+    }
+
+    @keyframes light-studio-card-enter {
+      0% {
+        transform: perspective(900px) rotateX(55deg) translateY(120px) scale(0.82);
+      }
+
+      100% {
+        transform: none;
+      }
+    }
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -254,8 +275,9 @@
   .light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorTexto,
   .light-studio-page .descripcionProy > article.light-studio-card-reveal > .contenedorTexto-2 {
     opacity: 1;
+    translate: none;
     transform: none;
-    filter: none;
+    animation: none;
     transition: none;
   }
 }
