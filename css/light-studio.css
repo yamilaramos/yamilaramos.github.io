@@ -147,6 +147,8 @@
 }
 
 .light-studio-page button.btn-siguiente,
-.light-studio-page button.btn-siguiente h1 {
+.light-studio-page button.btn-siguiente h1,
+.light-studio-page button.btn-siguiente h1 span {
   font-family: "Outfit", sans-serif;
+  font-weight: 700;
 }
