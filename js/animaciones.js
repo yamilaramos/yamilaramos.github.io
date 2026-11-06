@@ -306,11 +306,16 @@ if (cursor && tieneHover) {
 
     let integrationTimer = null;
     let topHoldTimer = null;
+    let hideTimer = null;
+    const pillTransitionDuration = 600;
 
     const resetHeader = (integrate = false) => {
       const isMerging = header.classList.contains("scroll-merging");
       const isIntegrating = header.classList.contains("scroll-integrating");
       if (integrate && (isMerging || isIntegrating)) return;
+
+      if (hideTimer) window.clearTimeout(hideTimer);
+      hideTimer = null;
 
       const wasPill = header.classList.contains("scrolled");
 
@@ -351,9 +356,19 @@ if (cursor && tieneHover) {
     };
 
     const showPill = () => {
-      if (header.classList.contains("scrolled")) return;
+      if (header.classList.contains("scrolled")) {
+        if (!header.classList.contains("scroll-hidden")) return;
+        if (hideTimer) window.clearTimeout(hideTimer);
+        hideTimer = null;
+        header.classList.remove("scroll-hidden");
+        header.classList.add("scroll-revealing");
+        return;
+      }
+
+      if (hideTimer) window.clearTimeout(hideTimer);
       if (integrationTimer) window.clearTimeout(integrationTimer);
       if (topHoldTimer) window.clearTimeout(topHoldTimer);
+      hideTimer = null;
       integrationTimer = null;
       topHoldTimer = null;
       header.classList.remove("scroll-merging", "scroll-integrating", "scroll-integrating-initial", "scroll-revealing");
@@ -366,6 +381,36 @@ if (cursor && tieneHover) {
       });
     };
 
+    const hidePill = () => {
+      if (!header.classList.contains("scrolled") || header.classList.contains("scroll-hidden")) return;
+
+      if (integrationTimer) window.clearTimeout(integrationTimer);
+      if (topHoldTimer) window.clearTimeout(topHoldTimer);
+      if (hideTimer) window.clearTimeout(hideTimer);
+      integrationTimer = null;
+      topHoldTimer = null;
+      header.classList.remove(
+        "scroll-revealing",
+        "scroll-initial-hidden",
+        "scroll-merging",
+        "scroll-integrating",
+        "scroll-integrating-initial"
+      );
+      header.classList.add("scroll-hidden");
+
+      hideTimer = window.setTimeout(() => {
+        hideTimer = null;
+        if (!header.classList.contains("scroll-hidden")) return;
+        header.classList.remove(
+          "scrolled",
+          "scroll-hidden",
+          "scroll-revealing",
+          "scroll-initial-hidden",
+          "scroll-merging"
+        );
+      }, pillTransitionDuration);
+    };
+
     const updateHeader = () => {
       const currentScrollY = window.scrollY;
       const scrollDelta = currentScrollY - lastScrollY;
@@ -375,7 +420,7 @@ if (cursor && tieneHover) {
       if (currentScrollY <= threshold) {
         if (shouldSuppressPillInInicio()) {
           resetHeader(false);
-        } else if (scrollDelta < 0 && !header.classList.contains("scrolled")) {
+        } else if (scrollDelta < 0 && (!header.classList.contains("scrolled") || header.classList.contains("scroll-hidden"))) {
           showPill();
           if (!topHoldTimer) {
             topHoldTimer = window.setTimeout(() => {
@@ -412,7 +457,7 @@ if (cursor && tieneHover) {
               showPill();
             }
           } else {
-            resetHeader(false);
+            hidePill();
           }
           pendingDistance = 0;
         }
