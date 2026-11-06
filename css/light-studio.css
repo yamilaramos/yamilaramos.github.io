@@ -153,9 +153,42 @@
   font-weight: 700;
 }
 
-/* Mantiene el bucle continuo mientras el cursor está sobre la galería. */
+/* Pausa la cinta para que el enlace permanezca estable mientras se usa. */
 .light-studio-page .light-studio-marquee:hover .light-studio-marquee__track {
-  animation-play-state: running;
+  animation-play-state: paused;
+}
+
+/* La captura funciona como una vista previa vertical de la landing completa. */
+.light-studio-page .light-studio-marquee__item--landing-preview::before {
+  content: none;
+}
+
+.light-studio-page .light-studio-marquee__item--landing-preview > a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: inherit;
+  cursor: pointer;
+}
+
+.light-studio-page .light-studio-marquee__item--landing-preview > a > img {
+  object-fit: cover;
+  object-position: center top;
+  transform: none;
+  transition: object-position 8s linear;
+}
+
+.light-studio-page .light-studio-marquee__item--landing-preview:hover > a > img,
+.light-studio-page .light-studio-marquee__item--landing-preview:focus-within > a > img {
+  object-position: center bottom;
+  transform: none;
+}
+
+.light-studio-page .light-studio-marquee__item--landing-preview:hover figcaption,
+.light-studio-page .light-studio-marquee__item--landing-preview:focus-within figcaption {
+  opacity: 0;
 }
 
 /* Alinea el copyright con el ancho completo del pie, como en el index. */
