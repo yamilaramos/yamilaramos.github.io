@@ -272,8 +272,12 @@
   transform: translateY(8px);
 }
 
-/* Unifica el fondo de los paneles de texto de las tres cards. */
-.light-studio-page .descripcionProy > article > .contenedorTexto,
-.light-studio-page .descripcionProy > article > .contenedorTexto-2 {
-  background: var(--bg-yellow);
+/* Aplica el amarillo de fondo a los elementos de la galería. */
+.light-studio-page .light-studio-marquee__item {
+  background-color: var(--bg-yellow);
+}
+
+.light-studio-page .light-studio-marquee__item img,
+.light-studio-page .light-studio-marquee__item video {
+  background-color: var(--bg-yellow);
 }
