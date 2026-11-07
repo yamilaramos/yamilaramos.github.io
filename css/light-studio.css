@@ -288,3 +288,8 @@
   width: 80%;
   transform: scaleX(1);
 }
+
+/* Reduce el margen alrededor del folleto tríptico en esta galería. */
+.light-studio-page .light-studio-marquee__item--flyer img {
+  padding: clamp(8px, 1vw, 14px);
+}
