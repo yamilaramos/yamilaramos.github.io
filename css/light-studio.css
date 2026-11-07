@@ -249,3 +249,25 @@
 .light-studio-page .descripcionProy {
   gap: 60px;
 }
+
+/* El carrusel muestra su capa y título antes del hover. */
+.light-studio-page .light-studio-marquee__item::before {
+  opacity: 1;
+}
+
+.light-studio-page .light-studio-marquee__item figcaption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Al hover, despeja la imagen para el acercamiento y la vista del Club. */
+.light-studio-page .light-studio-marquee__item:hover::before,
+.light-studio-page .light-studio-marquee__item:focus-within::before {
+  opacity: 0;
+}
+
+.light-studio-page .light-studio-marquee__item:hover figcaption,
+.light-studio-page .light-studio-marquee__item:focus-within figcaption {
+  opacity: 0;
+  transform: translateY(8px);
+}
