@@ -281,3 +281,11 @@
 .light-studio-page .light-studio-marquee__item video {
   background-color: var(--bright-yellow);
 }
+
+/* Centra el subrayado del enlace activo de Proyectos y limita su ancho. */
+.light-studio-page header nav a.animacion-activa::after {
+  left: 50%;
+  width: 70%;
+  transform: translateX(-50%) scaleX(1);
+  transform-origin: center;
+}
