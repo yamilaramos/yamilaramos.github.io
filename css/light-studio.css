@@ -271,3 +271,9 @@
   opacity: 0;
   transform: translateY(8px);
 }
+
+/* Unifica el fondo de los paneles de texto de las tres cards. */
+.light-studio-page .descripcionProy > article > .contenedorTexto,
+.light-studio-page .descripcionProy > article > .contenedorTexto-2 {
+  background: var(--bg-yellow);
+}
