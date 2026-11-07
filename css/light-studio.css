@@ -274,10 +274,10 @@
 
 /* Aplica el amarillo de fondo a los elementos de la galería. */
 .light-studio-page .light-studio-marquee__item {
-  background-color: var(--yellow);
+  background-color: var(--bright-yellow);
 }
 
 .light-studio-page .light-studio-marquee__item img,
 .light-studio-page .light-studio-marquee__item video {
-  background-color: var(--yellow);
+  background-color: var(--bright-yellow);
 }
