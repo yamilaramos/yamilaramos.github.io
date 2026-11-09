@@ -284,9 +284,10 @@
 
 /* Alinea el subrayado con el borde original del enlace y ajusta su ancho. */
 .light-studio-page header nav a.animacion-activa::after {
-  left: 0;
-  width: 80%;
-  transform: scaleX(1);
+  left: 50%;
+  width: 95%;
+  transform: translateX(-50%) scaleX(1);
+  transform-origin: center;
 }
 
 /* Reduce el margen alrededor del folleto tríptico en esta galería. */
