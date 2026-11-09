@@ -295,14 +295,9 @@
   padding: clamp(6px, 0.7vw, 10px);
 }
 
-/* Acerca un poco la primera imagen del folleto tríptico. */
+/* Conserva el zoom base en la primera imagen; comparte el hover de la galería. */
 .light-studio-page .light-studio-marquee__item--flyer-first img {
-  transform: scale(1.08);
-}
-
-.light-studio-page .light-studio-marquee__item--flyer-first:hover img,
-.light-studio-page .light-studio-marquee__item--flyer-first:focus-within img {
-  transform: scale(1.12);
+  scale: 1.08;
 }
 
 /* Miniatura del proyecto entre las etiquetas y su título. */
@@ -327,12 +322,7 @@
   background-color: var(--bg-yellow);
 }
 
-/* Acerca también la segunda imagen del folleto tríptico. */
+/* Conserva el zoom base en la segunda imagen; comparte el hover de la galería. */
 .light-studio-page .light-studio-marquee__item--flyer img {
-  transform: scale(1.08);
-}
-
-.light-studio-page .light-studio-marquee__item--flyer:hover img,
-.light-studio-page .light-studio-marquee__item--flyer:focus-within img {
-  transform: scale(1.12);
+  scale: 1.08;
 }
