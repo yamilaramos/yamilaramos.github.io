@@ -301,3 +301,13 @@
 .light-studio-page .light-studio-marquee__item--bg-yellow video {
   background-color: var(--bg-yellow);
 }
+
+/* Acerca un poco la primera imagen del folleto tríptico. */
+.light-studio-page .light-studio-marquee__item--flyer-first img {
+  transform: scale(1.08);
+}
+
+.light-studio-page .light-studio-marquee__item--flyer-first:hover img,
+.light-studio-page .light-studio-marquee__item--flyer-first:focus-within img {
+  transform: scale(1.12);
+}
