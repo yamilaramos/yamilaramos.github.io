@@ -342,3 +342,10 @@
 .light-studio-page .herramientas-proyecto img {
   flex: 0 0 25px;
 }
+
+/* Da ancho completo al encabezado para repartir título y botón. */
+.light-studio-page #galeria > div > article {
+  align-self: stretch;
+  width: 100%;
+  box-sizing: border-box;
+}
