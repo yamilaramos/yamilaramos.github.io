@@ -326,3 +326,13 @@
   object-fit: cover;
   background-color: var(--bg-yellow);
 }
+
+/* Acerca también la segunda imagen del folleto tríptico. */
+.light-studio-page .light-studio-marquee__item--flyer img {
+  transform: scale(1.08);
+}
+
+.light-studio-page .light-studio-marquee__item--flyer:hover img,
+.light-studio-page .light-studio-marquee__item--flyer:focus-within img {
+  transform: scale(1.12);
+}
