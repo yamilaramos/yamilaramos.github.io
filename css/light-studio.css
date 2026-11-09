@@ -349,3 +349,13 @@
   width: 100%;
   box-sizing: border-box;
 }
+
+/* Separa la descripción del encabezado de la galería. */
+.light-studio-page #galeria > div > p {
+  margin-top: clamp(16px, 1.8vw, 28px);
+}
+
+/* Mantiene la velocidad al duplicar cada secuencia para el loop continuo. */
+.light-studio-page .light-studio-marquee__track {
+  animation-duration: 84s;
+}
