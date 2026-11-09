@@ -297,7 +297,7 @@
 
 /* Conserva el zoom base en la primera imagen; comparte el hover de la galería. */
 .light-studio-page .light-studio-marquee__item--flyer-first img {
-  scale: 1.08;
+  scale: 1.13;
 }
 
 /* Miniatura del proyecto entre las etiquetas y su título. */
@@ -313,7 +313,7 @@
 
 /* Conserva el zoom base en la segunda imagen; comparte el hover de la galería. */
 .light-studio-page .light-studio-marquee__item--flyer img {
-  scale: 1.08;
+  scale: 1.03;
 }
 
 /* Evita que Flexbox comprima los chips y desbalancee su padding lateral. */
