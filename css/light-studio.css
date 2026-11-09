@@ -294,3 +294,10 @@
 .light-studio-page .light-studio-marquee__item--flyer img {
   padding: clamp(6px, 0.7vw, 10px);
 }
+
+/* Alterna los fondos de las piezas seleccionadas de la galería. */
+.light-studio-page .light-studio-marquee__item--bg-yellow,
+.light-studio-page .light-studio-marquee__item--bg-yellow img,
+.light-studio-page .light-studio-marquee__item--bg-yellow video {
+  background-color: var(--bg-yellow);
+}
