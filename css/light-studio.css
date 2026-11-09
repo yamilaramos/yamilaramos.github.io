@@ -318,15 +318,14 @@
 
 /* Evita que Flexbox comprima los chips y desbalancee su padding lateral. */
 .light-studio-page .herramientas-franja > hr {
+  flex: 1 1 0;
   min-width: 0;
 }
 
 .light-studio-page .herramientas-lista {
   flex: 0 0 auto;
   min-width: 0;
-  max-width: calc(100% - 24px);
   flex-wrap: nowrap;
-  overflow-x: auto;
 }
 
 .light-studio-page .herramientas-proyecto {
