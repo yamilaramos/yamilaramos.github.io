@@ -359,3 +359,40 @@
 .light-studio-page .light-studio-marquee__track {
   animation-duration: 84s;
 }
+
+
+/* Revela las cards de Light Studio en secuencia: imagen y luego texto. */
+.light-studio-page .descripcionProy > article:nth-of-type(1) > .contenedorImg.scroll-fade-modern.show {
+  transition-delay: 0s;
+}
+
+.light-studio-page .descripcionProy > article:nth-of-type(1) > .contenedorTexto.scroll-fade-modern.show {
+  transition-delay: 0.2s;
+}
+
+.light-studio-page .descripcionProy > article:nth-of-type(2) > .contenedorImg-2.scroll-fade-modern.show {
+  transition-delay: 0.4s;
+}
+
+.light-studio-page .descripcionProy > article:nth-of-type(2) > .contenedorTexto-2.scroll-fade-modern.show {
+  transition-delay: 0.6s;
+}
+
+.light-studio-page .descripcionProy > article:nth-of-type(3) > .contenedorImg.scroll-fade-modern.show {
+  transition-delay: 0.8s;
+}
+
+.light-studio-page .descripcionProy > article:nth-of-type(3) > .contenedorTexto.scroll-fade-modern.show {
+  transition-delay: 1s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .light-studio-page .descripcionProy .scroll-fade-modern,
+  .light-studio-page .descripcionProy .scroll-fade-modern.show {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+    transition-delay: 0s;
+  }
+}
