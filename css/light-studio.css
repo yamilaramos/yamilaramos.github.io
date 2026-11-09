@@ -155,7 +155,7 @@
 
 /* Pausa la cinta para que el enlace permanezca estable mientras se usa. */
 .light-studio-page .light-studio-marquee:hover .light-studio-marquee__track {
-  animation-play-state: paused;
+  animation-play-state: running;
 }
 
 /* La captura recorre la landing y conserva las señales visuales del hover. */
