@@ -2826,7 +2826,7 @@ footer p{
     height: 68px;
     align-self: center;
     box-sizing: border-box;
-    border-left: 3px dotted var(--cream);
+    border-left: 3px solid var(--cream);
     border-radius: 15px;
 }
 
