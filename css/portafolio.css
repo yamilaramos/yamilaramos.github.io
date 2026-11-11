@@ -3644,3 +3644,11 @@ header.scrolled.scroll-hidden {
     transition: none !important;
   }
 }
+
+
+/* Suaviza el hover del botón Descargar CV en escritorio. */
+@media screen and (min-width: 769px) and (prefers-reduced-motion: no-preference) {
+    header .btn-cv {
+        transition: all 0.3s ease !important;
+    }
+}
