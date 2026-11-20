@@ -112,13 +112,15 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 40%;
+  width: 46%;
   height: 47%;
   margin: 0;
   overflow: hidden;
   background-size: cover;
   background-position: center;
   border-radius: clamp(24px, 2.1vw, 32px);
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.32));
+  box-shadow: 0 clamp(8px, calc(3.07px + 0.36vw), 10px) clamp(32px, calc(12.27px + 1.44vw), 40px) rgba(0, 0, 0, 0.40);
 }
 
 /* Posiciones estáticas equivalentes al estado inicial del giro. */
@@ -967,11 +969,6 @@ h4 {
     border: clamp(1px, 0.07vw, 1.25px) solid rgb(255 255 255 / 30%);
     background: rgba(0, 0, 0, 0.08);
     backdrop-filter: blur(clamp(14px, calc(5.37px + 0.63vw), 17.5px));
-    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.32));
-
-    box-shadow:
-        0 clamp(8px, calc(3.07px + 0.36vw), 10px) clamp(32px, calc(12.27px + 1.44vw), 40px) rgba(0, 0, 0, 0.40),
-        inset 0 clamp(1px, calc(0.38px + 0.05vw), 1.25px) clamp(1px, calc(0.38px + 0.05vw), 1.25px) rgba(255, 255, 255, 0.2);
 }
 
 .social-btn:hover{
