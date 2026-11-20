@@ -2190,35 +2190,38 @@ header.scrolled .animacion-activa::after {
     z-index: 2;
     top: -35%;
     bottom: -35%;
-    left: 0;
-    width: 42%;
+    left: -2%;
+    width: 48%;
     background: linear-gradient(
         105deg,
         transparent 0%,
-        rgb(255 255 255 / 12%) 32%,
-        rgb(255 255 255 / 58%) 50%,
-        rgb(255 255 255 / 12%) 68%,
+        rgb(255 255 255 / 7%) 32%,
+        rgb(255 255 255 / 32%) 50%,
+        rgb(255 255 255 / 7%) 68%,
         transparent 100%
     );
+    filter: blur(clamp(3px, 0.42vw, 6px));
     content: "";
     pointer-events: none;
-    transform: translateX(-150%) skewX(-18deg);
+    transform: translateX(-150%) skewX(-12deg);
     animation: none;
 }
 
 .btn-hero-secundario:hover::before {
-    animation: contact-button-shine 2.3s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
+    animation: contact-button-shine 2.8s cubic-bezier(0.45, 0, 0.55, 1) 0.15s both;
 }
 
 @keyframes contact-button-shine {
     0% {
         opacity: 0;
-        transform: translateX(-150%) skewX(-18deg);
+        transform: translateX(-150%) skewX(-12deg);
     }
-    16% { opacity: 1; }
+    18% { opacity: 0.22; }
+    48% { opacity: 0.42; }
+    78% { opacity: 0.16; }
     100% {
         opacity: 0;
-        transform: translateX(350%) skewX(-18deg);
+        transform: translateX(350%) skewX(-12deg);
     }
 }
 
