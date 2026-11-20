@@ -3682,3 +3682,9 @@ header.scroll-integrating,
 header.scroll-integrating-initial {
     display: none !important;
 }
+
+
+/* Header temporalmente oculto mientras se pausa la pastilla. */
+body.header-pastilla-temporalmente-oculto > .contenedor > header {
+    display: none !important;
+}
