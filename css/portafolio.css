@@ -3670,3 +3670,15 @@ header.scrolled.scroll-hidden {
 .timeline-mobile .card strong {
     color: var(--cream);
 }
+
+
+/* Oculta cualquier estado flotante de la pastilla mientras está desactivada. */
+header.scrolled,
+header.scroll-hidden,
+header.scroll-revealing,
+header.scroll-initial-hidden,
+header.scroll-merging,
+header.scroll-integrating,
+header.scroll-integrating-initial {
+    display: none !important;
+}
