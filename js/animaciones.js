@@ -485,7 +485,8 @@ if (cursor && tieneHover) {
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", initHeaderScroll, { once: true });
   } else {
-    initHeaderScroll();
+    // Header pastilla desactivado temporalmente; conservar el encabezado estático.
+  // initHeaderScroll();
   }
 })();
 (() => {
