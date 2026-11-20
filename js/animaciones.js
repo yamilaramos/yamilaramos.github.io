@@ -482,12 +482,12 @@ if (cursor && tieneHover) {
     });
   };
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initHeaderScroll, { once: true });
-  } else {
-    // Header pastilla desactivado temporalmente; conservar el encabezado estático.
-  // initHeaderScroll();
-  }
+  // Header pastilla pausado temporalmente; se conserva el header estático.
+  // if (document.readyState === "loading") {
+  //   document.addEventListener("DOMContentLoaded", initHeaderScroll, { once: true });
+  // } else {
+  //   initHeaderScroll();
+  // }
 })();
 (() => {
   const section = document.querySelector("#proceso");
