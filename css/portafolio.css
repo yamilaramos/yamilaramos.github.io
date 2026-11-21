@@ -4100,6 +4100,12 @@ header.scrolled.scroll-hidden {
     gap: clamp(14px, 1.5vw, 22px);
 }
 
+#reconocimiento .creative-feature__intro-media,
+#reconocimiento .creative-feature__item-media {
+    width: 90%;
+    margin-inline: auto;
+}
+
 #reconocimiento .creative-feature__item {
     min-height: 0;
     padding: 0;
