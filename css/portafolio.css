@@ -3809,10 +3809,6 @@ header.scrolled.scroll-hidden {
     background: var(--grad-yellow);
 }
 
-#reconocimiento .punto-mobile {
-    color: var(--bright-yellow);
-}
-
 #reconocimiento .creative-feature__item h3 {
     font-size: clamp(24px, 1.65vw, 30px);
 }
@@ -3906,9 +3902,6 @@ header.scrolled.scroll-hidden {
 }
 
 
-#reconocimiento .creative-feature__item h3,
-
-
 @media screen and (max-width: 600px) {
     #reconocimiento .creative-feature__grid {
         width: 100%;
@@ -3939,9 +3932,6 @@ header.scrolled.scroll-hidden {
 #reconocimiento .creative-feature__item h3 {
     font-size: clamp(24px, 1.65vw, 30px);
 }
-
-#reconocimiento .creative-feature__intro > p:not(.creative-feature__kicker),
-
 
 @media screen and (max-width: 600px) {
     #reconocimiento .creative-feature__item {
