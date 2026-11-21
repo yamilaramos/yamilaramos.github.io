@@ -3790,7 +3790,7 @@ header.scrolled.scroll-hidden {
 
 #reconocimiento .creative-feature__intro-overlay h2,
 #reconocimiento .creative-feature__intro-overlay h3,
-#reconocimiento .creative-feature__editorial-copy h3 {
+#reconocimiento .descripcionReconocimientos h3 {
     max-width: none;
     margin: 0;
     font-size: clamp(24px, 1.65vw, 30px);
@@ -3801,17 +3801,21 @@ header.scrolled.scroll-hidden {
     line-height: 1.15;
 }
 
-#reconocimiento .creative-feature__editorial-copy {
+#reconocimiento .descripcionReconocimientos {
     display: flex;
     flex-direction: column;
     gap: clamp(12px, 1.2vw, 18px);
 }
 
-#reconocimiento .creative-feature__editorial-copy h3 {
+#reconocimiento .descripcionReconocimientos {
+    background-color: var(--cream);
+}
+
+#reconocimiento .descripcionReconocimientos h3 {
     line-height: 1.2;
 }
 
-#reconocimiento .creative-feature__editorial-copy p {
+#reconocimiento .descripcionReconocimientos p {
     margin: 0;
     font-size: clamp(19.4px, 1.27vw, 24.3px);
     line-height: 1.55;
