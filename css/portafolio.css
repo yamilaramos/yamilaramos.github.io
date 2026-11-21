@@ -3896,6 +3896,12 @@ header.scrolled.scroll-hidden {
     }
 }
 
+@media screen and (min-width: 901px) {
+    #reconocimiento .creative-feature__editorial-side {
+        gap: clamp(10px, 0.8vw, 12px);
+    }
+}
+
 @media screen and (max-width: 900px) {
     #reconocimiento .creative-feature__inner {
         width: 90%;
