@@ -3842,7 +3842,6 @@ header.scrolled.scroll-hidden {
     border: 1px solid rgb(255 255 255 / 30%);
     border-radius: clamp(22px, 2vw, 30px);
     background: rgb(0 0 0 / 8%);
-    box-shadow: 0 8px 32px rgb(0 0 0 / 30%), inset 0 1.6px 1.6px rgb(255 255 255 / 20%);
     -webkit-backdrop-filter: blur(14.4px);
     backdrop-filter: blur(14.4px);
 }
