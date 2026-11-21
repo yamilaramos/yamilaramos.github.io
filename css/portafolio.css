@@ -3809,7 +3809,7 @@ header.scrolled.scroll-hidden {
 }
 
 #reconocimiento .creative-feature__kicker {
-    margin: 0 0 0.5em;
+    margin: 0.5em 0 0;
     color: var(--bright-yellow);
     font-size: clamp(12px, 1vw, 15px);
     font-weight: 600;
