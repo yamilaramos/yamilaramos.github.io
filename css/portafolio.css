@@ -3900,6 +3900,14 @@ header.scrolled.scroll-hidden {
     color: var(--bright-yellow);
 }
 
+#reconocimiento .creative-feature__item h3 {
+    font-size: clamp(24px, 1.65vw, 30px);
+}
+
+#reconocimiento .creative-feature__item p {
+    font-size: clamp(19.4px, 1.27vw, 24.3px);
+}
+
 #reconocimiento .recos-line-art {
     color: var(--bright-yellow);
 }
