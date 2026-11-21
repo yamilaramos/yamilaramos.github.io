@@ -3837,6 +3837,10 @@ header.scrolled.scroll-hidden {
     gap: clamp(8px, 0.8vw, 12px);
 }
 
+#reconocimiento .descripcionReconocimientos > .btn-seccion {
+    margin-top: 0;
+}
+
 #reconocimiento .descripcionReconocimientos .copy {
     padding: clamp(18px, 2.2vw, 26px) 2.5%;
     border: 1px solid rgb(255 255 255 / 30%);
