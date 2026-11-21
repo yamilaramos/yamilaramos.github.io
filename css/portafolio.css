@@ -3789,17 +3789,16 @@ header.scrolled.scroll-hidden {
 }
 
 #reconocimiento .creative-feature__editorial-images .creative-feature__intro-overlay {
-    left: 8px;
-    right: 8px;
-    padding: 8px;
+    padding: 12px 8px;
 }
 
 #reconocimiento .creative-feature__intro-overlay {
     position: absolute;
     z-index: 1;
-    top: clamp(14px, 1.8vw, 26px);
-    left: clamp(14px, 1.8vw, 26px);
-    right: clamp(14px, 1.8vw, 26px);
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     box-sizing: border-box;
     padding: clamp(14px, 1.4vw, 20px);
     border-radius: 8px;
@@ -3821,6 +3820,7 @@ header.scrolled.scroll-hidden {
 #reconocimiento .descripcionReconocimientos h3 {
     max-width: none;
     margin: 0;
+    color: var(--cream);
     font-size: clamp(24px, 1.65vw, 30px);
 }
 
