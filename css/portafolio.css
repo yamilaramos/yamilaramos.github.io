@@ -3701,7 +3701,7 @@ header.scrolled.scroll-hidden {
 }
 
 #reconocimiento .recos-line-art {
-    color: var(--bright-yellow);
+    color: var(--bg-yellow);
 }
 
 #reconocimiento .recos-line-art path {
