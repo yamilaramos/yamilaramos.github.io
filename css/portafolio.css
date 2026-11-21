@@ -3698,7 +3698,6 @@ header.scrolled.scroll-hidden {
     margin-left: clamp(8px, 0.65vw, 12px);
     object-fit: contain;
     vertical-align: middle;
-    opacity: 0.5;
 }
 
 #reconocimiento .recos-line-art {
