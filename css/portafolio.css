@@ -3897,8 +3897,8 @@ header.scrolled.scroll-hidden {
     z-index: 1;
     top: clamp(14px, 1.8vw, 26px);
     left: clamp(14px, 1.8vw, 26px);
+    right: clamp(14px, 1.8vw, 26px);
     box-sizing: border-box;
-    max-width: calc(100% - 2 * clamp(14px, 1.8vw, 26px));
     padding: clamp(14px, 1.4vw, 20px);
     border-radius: 8px;
     background: color-mix(in srgb, var(--cream) 90%, transparent);
@@ -3992,14 +3992,17 @@ header.scrolled.scroll-hidden {
     #reconocimiento .creative-feature__intro-overlay {
         top: 12px;
         left: 12px;
-        max-width: calc(100% - 24px);
+        right: 12px;
         padding: 12px;
     }
 }
 
 @media screen and (max-width: 560px) {
-    #reconocimiento .recos-line-art path,
-    .seccionReco .recos-line-art path {
+    #reconocimiento .recos-line-art path {
         stroke-width: 5;
+    }
+
+    .seccionReco .recos-line-art path {
+        stroke-width: 4;
     }
 }
