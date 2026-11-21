@@ -3766,6 +3766,10 @@ header.scrolled.scroll-hidden {
     margin-top: clamp(18px, 2.6vw, 36px);
 }
 
+#reconocimiento .creative-feature__editorial-images .creative-feature__kicker {
+    font-size: clamp(11px, 0.85vw, 13px);
+}
+
 #reconocimiento .creative-feature__intro-overlay {
     position: absolute;
     z-index: 1;
