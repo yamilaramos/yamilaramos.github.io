@@ -4182,3 +4182,99 @@ header.scrolled.scroll-hidden {
         grid-template-columns: minmax(0, 1fr);
     }
 }
+
+/* Composición editorial para las imágenes y el texto de Reconocimientos. */
+#reconocimiento .creative-feature__grid {
+    width: 90%;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    align-items: start;
+    gap: clamp(28px, 3.4vw, 52px);
+}
+
+#reconocimiento .creative-feature__intro {
+    min-height: 0;
+    background: transparent;
+    border-radius: 12px;
+}
+
+#reconocimiento .creative-feature__intro-media {
+    aspect-ratio: 1 / 1;
+}
+
+#reconocimiento .creative-feature__editorial-side {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: clamp(20px, 2.2vw, 32px);
+}
+
+#reconocimiento .creative-feature__editorial-images {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(14px, 1.5vw, 22px);
+}
+
+#reconocimiento .creative-feature__item {
+    min-height: 0;
+    padding: 0;
+    overflow: visible;
+    border-radius: 0;
+    background: transparent;
+}
+
+#reconocimiento .creative-feature__item-media {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+#reconocimiento .creative-feature__item-media > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    object-fit: cover;
+}
+
+#reconocimiento .creative-feature__editorial-copy {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(12px, 1.2vw, 18px);
+}
+
+#reconocimiento .creative-feature__editorial-copy > p {
+    margin: 0;
+    font-size: clamp(19.4px, 1.27vw, 24.3px);
+    line-height: 1.55;
+}
+
+@media screen and (max-width: 900px) {
+    #reconocimiento .creative-feature__grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    #reconocimiento .creative-feature__intro-media {
+        aspect-ratio: 1.2 / 1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #reconocimiento .creative-feature__grid {
+        width: 100%;
+    }
+
+    #reconocimiento .creative-feature__intro-media {
+        aspect-ratio: 1.05 / 1;
+    }
+
+    #reconocimiento .creative-feature__editorial-images {
+        gap: 12px;
+    }
+
+    #reconocimiento .creative-feature__editorial-images .creative-feature__intro-overlay {
+        top: 10px;
+        left: 10px;
+        max-width: calc(100% - 20px);
+        padding: 10px;
+    }
+}
