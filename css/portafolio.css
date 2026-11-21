@@ -4165,7 +4165,7 @@ header.scrolled.scroll-hidden {
 #reconocimiento .creative-feature__item-media > img {
     box-sizing: border-box;
     border: 2px solid var(--black);
-    border-radius: 45px;
+    border-radius: 25px;
 }
 
 /* Todo el contenido de Reconocimientos comparte un ancho del 90%. */
