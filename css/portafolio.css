@@ -1700,7 +1700,7 @@ header.scrolled .animacion-activa::after {
     margin-right: clamp(20px, calc(7.67px + 0.9vw), 25px);
 }
 
-.sobre-mi > div h2, .t-cert h2,  .tituloReco {
+.tituloSobremi > h2, .tituloCertificaciones > h2,  .tituloRecomendaciones > h2, .tituloReconocimientos > h2 {
     color: var(--black-important);
     font-size: clamp(36px, 2.35vw, 45px);
     margin-bottom: clamp(15px, 1.23vw, 21px);
