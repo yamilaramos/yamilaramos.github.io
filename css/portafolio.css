@@ -1693,7 +1693,7 @@ header.scrolled .animacion-activa::after {
 }
 
 .tituloSobremi, .tituloCertificaciones,  .tituloRecomendaciones, .tituloReconocimientos, .tituloStack {
-    color: var(--black-important);
+    color: var(--cream);
     font-size: clamp(36px, 2.35vw, 45px);
     margin-bottom: clamp(15px, 1.23vw, 21px);
 }
