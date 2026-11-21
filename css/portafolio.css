@@ -3835,12 +3835,9 @@ header.scrolled.scroll-hidden {
 
 #reconocimiento .descripcionReconocimientos .copy {
     padding: clamp(18px, 2.2vw, 26px) 2.5%;
-    border: 1px solid rgb(255 255 255 / 30%);
-    border-radius: clamp(22px, 2vw, 30px);
-    background: rgb(0 0 0 / 8%);
-    box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
-    -webkit-backdrop-filter: blur(14.4px);
-    backdrop-filter: blur(14.4px);
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: var(--cream);
 }
 
 #reconocimiento .descripcionReconocimientos h3 {
