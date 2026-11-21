@@ -4190,3 +4190,28 @@ header.scrolled.scroll-hidden {
     object-fit: contain;
     vertical-align: middle;
 }
+
+/* Ajusta la composición de imágenes al diseño editorial de referencia. */
+#reconocimiento .creative-feature__grid {
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1fr);
+}
+
+@media screen and (min-width: 901px) {
+    #reconocimiento .creative-feature__intro-media {
+        margin-top: clamp(28px, 4vw, 56px);
+    }
+
+    #reconocimiento .creative-feature__editorial-images {
+        align-items: start;
+    }
+
+    #reconocimiento .creative-feature__editorial-images .creative-feature__item:first-child {
+        margin-top: clamp(18px, 2.6vw, 36px);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #reconocimiento .creative-feature__grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
