@@ -2372,8 +2372,6 @@ header.scrolled .animacion-activa::after {
     position: relative;
     display: inline-flex;
     align-items: center;
-    overflow: hidden;
-    isolation: isolate;
     font-size: clamp(20px, 1.31vw, 25px);
 
     padding:
@@ -2398,49 +2396,6 @@ header.scrolled .animacion-activa::after {
         transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
         box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
         color 0.30s ease;
-}
-
-.btn-hero-secundario::before {
-    position: absolute;
-    z-index: 2;
-    top: -35%;
-    bottom: -35%;
-    left: 0;
-    width: 42%;
-    background: linear-gradient(
-        105deg,
-        transparent 0%,
-        rgb(255 255 255 / 12%) 32%,
-        rgb(255 255 255 / 58%) 50%,
-        rgb(255 255 255 / 12%) 68%,
-        transparent 100%
-    );
-    content: "";
-    pointer-events: none;
-    transform: translateX(-150%) skewX(-18deg);
-    animation: none;
-}
-
-.btn-hero-secundario:hover::before {
-    animation: contact-button-shine 2.3s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
-}
-
-@keyframes contact-button-shine {
-    0% {
-        opacity: 0;
-        transform: translateX(-150%) skewX(-18deg);
-    }
-    16% { opacity: 1; }
-    100% {
-        opacity: 0;
-        transform: translateX(350%) skewX(-18deg);
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .btn-hero-secundario::before {
-        animation: none;
-    }
 }
 
 .btn-seccion {
@@ -3031,13 +2986,15 @@ footer p{
 
 .sectionStack .stack-skill-divider {
     display: block;
-    flex: 0 0 3px;
-    width: 3px;
-    height: 68px;
+    flex: 0 0 2px;
+    width: 2px;
+    height: 48px;
     align-self: center;
     box-sizing: border-box;
-    border-left: 3px dotted var(--cream);
-    border-radius: 15px;
+    border: 0;
+    border-radius: 0;
+    background: var(--cream);
+    opacity: 0.78;
 }
 
 .sectionStack .skill-item-2 {
