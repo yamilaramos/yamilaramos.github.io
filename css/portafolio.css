@@ -3736,6 +3736,8 @@ header.scrolled.scroll-hidden {
 }
 
 #reconocimiento .creative-feature__editorial-images {
+    position: relative;
+    top: clamp(-18px, -1.2vw, -12px);
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: clamp(14px, 1.5vw, 22px);
@@ -3827,6 +3829,10 @@ header.scrolled.scroll-hidden {
 
     #reconocimiento .creative-feature__intro-media {
         margin-top: 0;
+    }
+
+    #reconocimiento .creative-feature__editorial-images {
+        top: 0;
     }
 
     #reconocimiento .creative-feature__editorial-images .creative-feature__item:first-child {
