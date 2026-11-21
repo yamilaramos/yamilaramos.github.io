@@ -3828,11 +3828,6 @@ header.scrolled.scroll-hidden {
     color: var(--bright-yellow);
 }
 
-#reconocimiento .creative-feature__grid {
-    width: 90%;
-    margin-inline: auto;
-    --recognition-card-padding: clamp(26px, 3.2vw, 48px);
-}
 
 #reconocimiento .creative-feature__intro {
     align-items: stretch;
@@ -3951,10 +3946,7 @@ header.scrolled.scroll-hidden {
     }
 }
 
-/* Unifica la presentación de las tres cards de participación. */
 #reconocimiento .creative-feature__grid {
-    width: 90%;
-    margin-inline: auto;
     --recognition-card-padding: clamp(26px, 3.2vw, 48px);
 }
 
@@ -4059,13 +4051,6 @@ header.scrolled.scroll-hidden {
     }
 }
 
-/* Composición editorial para las imágenes y el texto de Reconocimientos. */
-#reconocimiento .creative-feature__grid {
-    width: 90%;
-    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
-    align-items: start;
-    gap: clamp(28px, 3.4vw, 52px);
-}
 
 #reconocimiento .creative-feature__intro {
     min-height: 0;
@@ -4168,9 +4153,8 @@ header.scrolled.scroll-hidden {
     border-radius: 25px;
 }
 
-/* Todo el contenido de Reconocimientos comparte un ancho del 90%. */
 #reconocimiento .creative-feature__inner {
-    width: 90%;
+    width: 80%;
     max-width: none;
 }
 
@@ -4178,8 +4162,7 @@ header.scrolled.scroll-hidden {
     width: 100%;
 }
 
-/* Ícono junto al título de Reconocimientos. */
-.tituloReconocimientos__logo {
+.tituloReconocimientos-logo {
     display: inline-block;
     width: clamp(24px, 2vw, 34px);
     height: clamp(24px, 2vw, 34px);
@@ -4212,23 +4195,6 @@ header.scrolled.scroll-hidden {
     #reconocimiento .creative-feature__grid {
         grid-template-columns: minmax(0, 1fr);
     }
-}
-
-/* Mantiene el ancho completo y reduce la altura de las imágenes. */
-#reconocimiento .creative-feature__intro-media,
-#reconocimiento .creative-feature__item-media {
-    width: 100%;
-    aspect-ratio: 1.2 / 1;
-    margin-inline: 0;
-}
-
-/* Reduce proporcionalmente las imágenes dentro de sus contenedores completos. */
-#reconocimiento .creative-feature__intro-media > img,
-#reconocimiento .creative-feature__item-media > img {
-    position: absolute;
-    inset: 5%;
-    width: 90%;
-    height: 90%;
 }
 
 /* Ajustes de escala y posición para la imagen principal. */
