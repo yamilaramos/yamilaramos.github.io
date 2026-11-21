@@ -3450,7 +3450,7 @@ html:has(.mapa:hover) #cursor {
     top: clamp(12px, 1.2vw, 18px);
     margin-top: clamp(4px, 0.4vw, 6px);
     right: clamp(16px, 1.6vw, 24px);
-    color: var(--bg-yellow);
+    color: var(--yellow);
     font-family: Georgia, serif;
     font-size: clamp(42px, 4vw, 58px);
     font-weight: 700;
