@@ -4223,3 +4223,10 @@ header.scrolled.scroll-hidden {
         grid-template-columns: minmax(0, 1fr);
     }
 }
+
+/* Reduce uniformemente las tres imágenes de Reconocimientos. */
+#reconocimiento .creative-feature__intro-media,
+#reconocimiento .creative-feature__item-media {
+    width: 90%;
+    margin-inline: auto;
+}
