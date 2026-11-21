@@ -4056,3 +4056,10 @@ header.scrolled.scroll-hidden {
     }
 }
 
+.seccionReco .reco-card__draft-line {
+    display: block;
+    margin-top: 0.35em;
+    font-size: 0.9em;
+    font-style: italic;
+    opacity: 0.72;
+}
