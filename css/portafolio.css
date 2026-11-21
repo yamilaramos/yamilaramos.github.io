@@ -4048,16 +4048,7 @@ header.scrolled.scroll-hidden {
     }
 }
 
-.seccionReco .reco-card__reflection {
-    margin: 12px 0 0;
-    font-size: 0.9em;
-    line-height: 1.45;
-    color: rgb(0 0 0 / 68%);
-}
 
-.seccionReco .reco-card__reflection strong {
-    font-weight: 600;
-}
 
 .seccionReco .recos-line-art path {
     stroke-width: 6;
