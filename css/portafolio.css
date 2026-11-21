@@ -2670,7 +2670,7 @@ footer p{
 
 .stack-intro p {
     color: var(--black);
-    width: min(53%, 900px);
+    width: min(52%, 900px);
     margin: 0;
     font-size: clamp(19.4px, 1.27vw, 24.3px);
     line-height: clamp(27.5px, 1.80vw, 34.4px);
