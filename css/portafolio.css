@@ -3762,7 +3762,7 @@ header.scrolled.scroll-hidden {
 
 #reconocimiento .creative-feature__kicker {
     margin: 0 0 0.5em;
-    color: var(--black);
+    color: var(--bright-yellow);
     font-size: clamp(0.7rem, 0.8vw, 0.8rem);
     font-weight: 600;
     letter-spacing: 0.12em;
