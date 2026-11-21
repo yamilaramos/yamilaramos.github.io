@@ -3447,7 +3447,8 @@ html:has(.mapa:hover) #cursor {
 .reco-card::before {
     content: "”";
     position: absolute;
-    top: clamp(8px, 0.8vw, 12px);
+    top: clamp(12px, 1.2vw, 18px);
+    margin-top: clamp(4px, 0.4vw, 6px);
     right: clamp(16px, 1.6vw, 24px);
     color: var(--bg-yellow);
     font-family: Georgia, serif;
