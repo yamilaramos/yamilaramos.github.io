@@ -3858,8 +3858,7 @@ header.scrolled.scroll-hidden {
     max-width: calc(100% - var(--recognition-card-padding) - var(--recognition-card-padding));
     padding: clamp(14px, 1.4vw, 20px);
     border-radius: 8px;
-    background: color-mix(in srgb, var(--cream) 90%, transparent);
-    color: var(--black);
+    color: var(--cream);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 }
@@ -3972,21 +3971,6 @@ header.scrolled.scroll-hidden {
     height: 100%;
     border-radius: 0;
     object-fit: cover;
-}
-
-#reconocimiento .creative-feature__intro-overlay {
-    position: absolute;
-    z-index: 1;
-    top: var(--recognition-card-padding);
-    left: var(--recognition-card-padding);
-    box-sizing: border-box;
-    max-width: calc(100% - var(--recognition-card-padding) - var(--recognition-card-padding));
-    padding: clamp(14px, 1.4vw, 20px);
-    border-radius: 8px;
-    background: color-mix(in srgb, var(--cream) 90%, transparent);
-    color: var(--black);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
 }
 
 #reconocimiento .creative-feature__intro-label {
