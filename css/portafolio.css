@@ -4230,3 +4230,16 @@ header.scrolled.scroll-hidden {
     width: 90%;
     height: 90%;
 }
+
+/* Ajustes de escala y posición para la imagen principal. */
+@media screen and (min-width: 901px) {
+    #reconocimiento .creative-feature__intro-media {
+        margin-top: clamp(16px, 2.5vw, 36px);
+    }
+
+    #reconocimiento .creative-feature__intro-media > img {
+        inset: 7.5%;
+        width: 85%;
+        height: 85%;
+    }
+}
