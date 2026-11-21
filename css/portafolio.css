@@ -3944,6 +3944,7 @@ header.scrolled.scroll-hidden {
 }
 
 #reconocimiento .btnReconocimientos {
+    font-size: clamp(24px, 1.65vw, 30px);
     width: fit-content;
     align-items: center;
     gap: 10px;
