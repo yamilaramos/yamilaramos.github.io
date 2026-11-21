@@ -2992,8 +2992,8 @@ footer p{
     align-self: center;
     box-sizing: border-box;
     border: 0;
-    border-left: 2px dotted var(--cream);
     border-radius: 0;
+    background: var(--cream);
 }
 
 .sectionStack .skill-item-2 {
