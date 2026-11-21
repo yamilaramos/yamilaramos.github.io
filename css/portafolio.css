@@ -3826,6 +3826,7 @@ header.scrolled.scroll-hidden {
 
 #reconocimiento .descripcionReconocimientos .copy {
     background-color: var(--cream);
+    padding: 5% 2.5%;
 }
 
 #reconocimiento .descripcionReconocimientos h3 {
