@@ -3797,7 +3797,7 @@ header.scrolled.scroll-hidden {
     z-index: 1;
     top: auto;
     right: clamp(14px, 1.8vw, 26px);
-    bottom: clamp(14px, 1.8vw, 26px);
+    bottom: clamp(8px, 1vw, 16px);
     left: clamp(14px, 1.8vw, 26px);
     display: flex;
     flex-direction: column;
@@ -3945,7 +3945,7 @@ header.scrolled.scroll-hidden {
     #reconocimiento .creative-feature__intro-overlay {
         top: auto;
         right: 12px;
-        bottom: 12px;
+        bottom: 8px;
         left: 12px;
         padding: 12px;
     }
