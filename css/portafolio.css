@@ -3800,11 +3800,12 @@ header.scrolled.scroll-hidden {
 }
 
 #reconocimiento .btnReconocimientos {
-    font-size: clamp(24px, 1.65vw, 30px);
+    display: inline-flex;
     width: fit-content;
     align-items: center;
     gap: 10px;
     margin-top: clamp(8px, 1vw, 14px);
+    color: var(--black);
 }
 
 #reconocimiento .btnReconocimientos img {
