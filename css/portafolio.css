@@ -4169,3 +4169,25 @@ header.scrolled.scroll-hidden {
         aspect-ratio: 1.25 / 1;
     }
 }
+
+/* Mantiene las tres cards de Reconocimientos con columnas iguales. */
+#reconocimiento .creative-feature__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media screen and (max-width: 900px) {
+    #reconocimiento .creative-feature__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #reconocimiento .creative-feature__intro {
+        grid-column: auto;
+        min-height: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #reconocimiento .creative-feature__grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
