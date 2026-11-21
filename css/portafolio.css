@@ -3952,6 +3952,7 @@ header.scrolled.scroll-hidden {
 #reconocimiento .creative-feature__intro-overlay {
     position: absolute;
     z-index: 1;
+    box-sizing: border-box;
     top: var(--recognition-card-padding);
     left: var(--recognition-card-padding);
     max-width: calc(100% - var(--recognition-card-padding) - var(--recognition-card-padding));
@@ -3997,6 +3998,8 @@ header.scrolled.scroll-hidden {
 }
 
 #reconocimiento .creative-feature__item {
+    justify-content: flex-start;
+    align-items: stretch;
     padding: 0 0 var(--recognition-card-padding);
     overflow: visible;
 }
