@@ -3857,6 +3857,27 @@ header.scrolled.scroll-hidden {
     stroke-width: 6;
 }
 
+#reconocimiento .recognition-reveal--left.show {
+    transition-delay: 0s;
+}
+
+#reconocimiento .recognition-reveal--middle.show {
+    transition-delay: 0.15s;
+}
+
+#reconocimiento .recognition-reveal--right.show {
+    transition-delay: 0.3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #reconocimiento .recognition-reveal {
+        opacity: 1;
+        transform: none;
+        filter: none;
+        transition: none;
+    }
+}
+
 @media screen and (max-width: 900px) {
     #reconocimiento .creative-feature__inner {
         width: 90%;
