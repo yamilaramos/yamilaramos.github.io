@@ -4224,9 +4224,10 @@ header.scrolled.scroll-hidden {
     }
 }
 
-/* Reduce uniformemente las tres imágenes de Reconocimientos. */
+/* Mantiene el ancho completo y reduce la altura de las imágenes. */
 #reconocimiento .creative-feature__intro-media,
 #reconocimiento .creative-feature__item-media {
-    width: 90%;
-    margin-inline: auto;
+    width: 100%;
+    aspect-ratio: 1.2 / 1;
+    margin-inline: 0;
 }
