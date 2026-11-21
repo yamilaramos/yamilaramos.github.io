@@ -3922,6 +3922,107 @@ header.scrolled.scroll-hidden {
     color: var(--bright-yellow);
 }
 
+#reconocimiento .creative-feature__grid {
+    width: 80%;
+    margin-inline: auto;
+    --recognition-card-padding: clamp(26px, 3.2vw, 48px);
+}
+
+#reconocimiento .creative-feature__intro {
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+}
+
+#reconocimiento .creative-feature__intro-media {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1.18 / 1;
+}
+
+#reconocimiento .creative-feature__intro-media > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    object-fit: cover;
+}
+
+#reconocimiento .creative-feature__intro-overlay {
+    position: absolute;
+    z-index: 1;
+    top: var(--recognition-card-padding);
+    left: var(--recognition-card-padding);
+    max-width: calc(100% - var(--recognition-card-padding) - var(--recognition-card-padding));
+    padding: clamp(14px, 1.4vw, 20px);
+    border-radius: 8px;
+    background: color-mix(in srgb, var(--cream) 90%, transparent);
+    color: var(--black);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+#reconocimiento .creative-feature__intro-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-bottom: 0.6em;
+}
+
+#reconocimiento .creative-feature__intro-label .creative-feature__ornament {
+    flex: 0 0 auto;
+    margin: 0;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+#reconocimiento .creative-feature__intro-label .creative-feature__kicker {
+    margin: 0;
+    font-size: clamp(0.7rem, 0.8vw, 0.8rem);
+}
+
+#reconocimiento .creative-feature__intro-overlay h2 {
+    max-width: 12ch;
+    margin: 0;
+}
+
+#reconocimiento .creative-feature__intro-body {
+    padding: var(--recognition-card-padding);
+}
+
+#reconocimiento .creative-feature__intro-body > p {
+    margin: 0 0 1.7rem;
+    font-size: clamp(19.4px, 1.27vw, 24.3px);
+    line-height: 1.55;
+}
+
+#reconocimiento .creative-feature__item {
+    padding: 0 0 var(--recognition-card-padding);
+    overflow: visible;
+}
+
+#reconocimiento .creative-feature__item img {
+    width: 100%;
+    border-radius: 0;
+}
+
+#reconocimiento .creative-feature__item h3,
+#reconocimiento .creative-feature__item p {
+    padding-inline: var(--recognition-card-padding);
+}
+
+@media screen and (max-width: 600px) {
+    #reconocimiento .creative-feature__grid {
+        width: 100%;
+        --recognition-card-padding: 28px;
+    }
+
+    #reconocimiento .creative-feature__intro-media {
+        aspect-ratio: 1.25 / 1;
+    }
+}
+
+
 #reconocimiento .creative-feature__item {
     position: relative;
     display: flex;
