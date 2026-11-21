@@ -3892,4 +3892,6 @@ header.scrolled.scroll-hidden {
     color: var(--cream);
 }
 
-
+#reconocimiento.creative-feature {
+    background: var(--grad-yellow);
+}
