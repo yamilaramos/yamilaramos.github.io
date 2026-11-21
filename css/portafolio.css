@@ -3434,7 +3434,7 @@ html:has(.mapa:hover) #cursor {
 }
 
 .reco-card::before {
-    content: "“";
+    content: "”";
     position: absolute;
     top: clamp(12px, 1.2vw, 18px);
     right: clamp(16px, 1.6vw, 24px);
