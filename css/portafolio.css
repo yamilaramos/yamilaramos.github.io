@@ -1692,14 +1692,8 @@ header.scrolled .animacion-activa::after {
     margin-right: clamp(20px, calc(7.67px + 0.9vw), 25px);
 }
 
-.tituloSobremi, .tituloCertificaciones,  .tituloRecomendaciones, .tituloStack {
+.tituloSobremi, .tituloCertificaciones,  .tituloRecomendaciones, .tituloStack, .tituloReconocimientos {
     color: var(--black-important);
-    font-size: clamp(36px, 2.35vw, 45px);
-    margin-bottom: clamp(15px, 1.23vw, 21px);
-}
-
-.tituloReconocimientos{
-    color: var(--cream);
     font-size: clamp(36px, 2.35vw, 45px);
     margin-bottom: clamp(15px, 1.23vw, 21px);
 }
@@ -3685,7 +3679,6 @@ header.scrolled.scroll-hidden {
     min-height: 100vh;
     height: auto;
     padding: clamp(56px, 7vw, 104px) 0;
-    background: var(--grad-yellow);
     color: var(--black);
     font-family: "Outfit", sans-serif;
 }
