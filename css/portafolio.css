@@ -3777,7 +3777,6 @@ header.scrolled.scroll-hidden {
 
 #reconocimiento .creative-feature__intro-overlay h2,
 #reconocimiento .creative-feature__intro-overlay h3 {
-    max-width: 16ch;
     line-height: 1.15;
 }
 
