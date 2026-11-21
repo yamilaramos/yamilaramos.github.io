@@ -4238,8 +4238,12 @@ header.scrolled.scroll-hidden {
     }
 
     #reconocimiento .creative-feature__intro-media > img {
-        inset: 7.5%;
+        top: 50%;
+        right: auto;
+        bottom: auto;
+        left: 50%;
         width: 85%;
         height: 85%;
+        transform: translate(-50%, -50%);
     }
 }
