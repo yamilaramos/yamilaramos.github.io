@@ -3342,6 +3342,7 @@ html:has(.mapa:hover) #cursor {
     justify-content: center;
     width: min(100%, 1400px);
     margin-inline: auto;
+    margin-bottom: clamp(16px, 2vw, 24px);
     padding-inline: 1%;
 }
 
@@ -3438,7 +3439,7 @@ html:has(.mapa:hover) #cursor {
     position: absolute;
     top: clamp(12px, 1.2vw, 18px);
     right: clamp(16px, 1.6vw, 24px);
-    color: var(--yellow);
+    color: var(--bg-yellow);
     font-family: Georgia, serif;
     font-size: clamp(42px, 4vw, 58px);
     font-weight: 700;
