@@ -3743,6 +3743,10 @@ header.scrolled.scroll-hidden {
     background-size: cover;
 }
 
+#reconocimiento .creative-feature__editorial-images .creative-feature__item-media {
+    aspect-ratio: 1.15 / 1;
+}
+
 #reconocimiento .creative-feature__intro-media {
     margin-top: clamp(16px, 2.5vw, 36px);
 }
