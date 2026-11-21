@@ -3429,6 +3429,10 @@ html:has(.mapa:hover) #cursor {
     font-size: clamp(16px, 1.2vw, 19px);
     line-height: 1.55;
 }
+
+.reco-card > p:first-child {
+    margin-top: clamp(14px, 1.1vw, 18px);
+}
 .reco-card .rol {
     margin: 0;
     text-align: center;
