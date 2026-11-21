@@ -3857,12 +3857,12 @@ header.scrolled.scroll-hidden {
 }
 
 #reconocimiento .recos-line-art path {
-    stroke-width: 5;
+    stroke-width: 6;
 }
 
 @media screen and (max-width: 560px) {
     #reconocimiento .recos-line-art path {
-        stroke-width: 4;
+        stroke-width: 5;
     }
 }
 
@@ -4233,4 +4233,11 @@ header.scrolled.scroll-hidden {
         max-width: calc(100% - 20px);
         padding: 10px;
     }
+}
+
+#reconocimiento .creative-feature__intro-media > img,
+#reconocimiento .creative-feature__item-media > img {
+    box-sizing: border-box;
+    border: 2px solid var(--black);
+    border-radius: clamp(29px, 2.62vw, 40px);
 }
