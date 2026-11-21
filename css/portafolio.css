@@ -1694,7 +1694,7 @@ header.scrolled .animacion-activa::after {
 /* Franja editorial de inspiración */
 .creative-feature {
     padding: clamp(56px, 7vw, 104px) 0;
-    background-color: var(--bg-yellow);
+    background-color: var(--yellow);
     color: var(--black);
     font-family: "Outfit", sans-serif;
 }
