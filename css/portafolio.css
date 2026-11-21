@@ -1731,16 +1731,6 @@ header.scrolled .animacion-activa::after {
     margin-inline: auto;
 }
 
-.creative-feature__eyebrow {
-    margin: 0 0 clamp(28px, 3.5vw, 48px);
-    color: var(--black);
-    font-size: clamp(0.72rem, 0.9vw, 0.86rem);
-    font-weight: 600;
-    letter-spacing: 0.16em;
-    line-height: 1.4;
-    text-align: center;
-    text-transform: uppercase;
-}
 
 .creative-feature__grid {
     display: grid;
@@ -1788,11 +1778,6 @@ header.scrolled .animacion-activa::after {
     line-height: 1.08;
 }
 
-.creative-feature__intro > p:not(.creative-feature__kicker) {
-    margin: 0 0 1.7rem;
-    font-size: clamp(0.95rem, 1.1vw, 1.08rem);
-    line-height: 1.55;
-}
 
 .creative-feature__link {
     display: inline-flex;
@@ -1832,13 +1817,6 @@ header.scrolled .animacion-activa::after {
     min-width: 0;
 }
 
-.creative-feature__item img {
-    display: block;
-    width: 100%;
-    aspect-ratio: 1.18 / 1;
-    border-radius: 8px;
-    object-fit: cover;
-}
 
 .creative-feature__item h3 {
     margin: 1rem 0 0.35rem;
@@ -1848,11 +1826,6 @@ header.scrolled .animacion-activa::after {
     line-height: 1.2;
 }
 
-.creative-feature__item p {
-    margin: 0;
-    font-size: clamp(0.92rem, 1vw, 1rem);
-    line-height: 1.5;
-}
 
 @media (max-width: 900px) {
     .creative-feature__grid {
@@ -1874,11 +1847,6 @@ header.scrolled .animacion-activa::after {
         width: calc(100% - 36px);
     }
 
-    .creative-feature__eyebrow {
-        max-width: 32ch;
-        margin: 0 auto 26px;
-        font-size: 0.7rem;
-    }
 
     .creative-feature__grid {
         grid-template-columns: minmax(0, 1fr);
@@ -1894,9 +1862,6 @@ header.scrolled .animacion-activa::after {
         font-size: 1.85rem;
     }
 
-    .creative-feature__item img {
-        aspect-ratio: 1.25 / 1;
-    }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -3852,9 +3817,6 @@ header.scrolled.scroll-hidden {
     font-size: clamp(24px, 1.65vw, 30px);
 }
 
-#reconocimiento .creative-feature__item p {
-    font-size: clamp(19.4px, 1.27vw, 24.3px);
-}
 
 #reconocimiento .recos-line-art path {
     stroke-width: 6;
@@ -3935,15 +3897,6 @@ header.scrolled.scroll-hidden {
     margin: 0;
 }
 
-#reconocimiento .creative-feature__intro-body {
-    padding: var(--recognition-card-padding);
-}
-
-#reconocimiento .creative-feature__intro-body > p {
-    margin: 0 0 1.7rem;
-    font-size: clamp(19.4px, 1.27vw, 24.3px);
-    line-height: 1.55;
-}
 
 #reconocimiento .creative-feature__item {
     justify-content: flex-start;
@@ -3952,15 +3905,9 @@ header.scrolled.scroll-hidden {
     overflow: visible;
 }
 
-#reconocimiento .creative-feature__item img {
-    width: 100%;
-    border-radius: 0;
-}
 
 #reconocimiento .creative-feature__item h3,
-#reconocimiento .creative-feature__item p {
-    padding-inline: var(--recognition-card-padding);
-}
+
 
 @media screen and (max-width: 600px) {
     #reconocimiento .creative-feature__grid {
@@ -3994,9 +3941,7 @@ header.scrolled.scroll-hidden {
 }
 
 #reconocimiento .creative-feature__intro > p:not(.creative-feature__kicker),
-#reconocimiento .creative-feature__item p {
-    font-size: clamp(19.4px, 1.27vw, 24.3px);
-}
+
 
 @media screen and (max-width: 600px) {
     #reconocimiento .creative-feature__item {
@@ -4088,22 +4033,7 @@ header.scrolled.scroll-hidden {
     font-size: clamp(24px, 1.65vw, 30px);
 }
 
-#reconocimiento .creative-feature__intro-body,
-#reconocimiento .creative-feature__item-body {
-    padding: var(--recognition-card-padding);
-}
 
-#reconocimiento .creative-feature__intro-body > p,
-#reconocimiento .creative-feature__item-body > p {
-    margin: 0;
-    padding: 0;
-    font-size: clamp(19.4px, 1.27vw, 24.3px);
-    line-height: 1.55;
-}
-
-#reconocimiento .creative-feature__intro-body > p {
-    margin-bottom: 1.7rem;
-}
 
 @media screen and (max-width: 600px) {
     #reconocimiento .creative-feature__grid {
@@ -4240,4 +4170,14 @@ header.scrolled.scroll-hidden {
     box-sizing: border-box;
     border: 2px solid var(--black);
     border-radius: clamp(29px, 2.62vw, 40px);
+}
+
+/* Todo el contenido de Reconocimientos comparte un ancho del 90%. */
+#reconocimiento .creative-feature__inner {
+    width: 90%;
+    max-width: none;
+}
+
+#reconocimiento .creative-feature__grid {
+    width: 100%;
 }
