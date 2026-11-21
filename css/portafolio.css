@@ -1731,8 +1731,7 @@ header.scrolled .animacion-activa::after {
     margin-inline: auto;
 }
 
-
-.creative-feature__grid {
+.gridReconocimientos {
     display: grid;
     grid-template-columns: minmax(240px, 0.92fr) repeat(2, minmax(0, 1fr));
     gap: clamp(18px, 2.6vw, 38px);
