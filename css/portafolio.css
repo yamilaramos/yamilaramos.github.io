@@ -4063,3 +4063,13 @@ header.scrolled.scroll-hidden {
     font-style: italic;
     opacity: 0.72;
 }
+
+.seccionReco .recos-line-art path {
+    stroke-width: 6;
+}
+
+@media screen and (max-width: 560px) {
+    .seccionReco .recos-line-art path {
+        stroke-width: 4;
+    }
+}
