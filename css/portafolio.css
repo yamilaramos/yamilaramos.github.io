@@ -4221,3 +4221,12 @@ header.scrolled.scroll-hidden {
     aspect-ratio: 1.2 / 1;
     margin-inline: 0;
 }
+
+/* Reduce proporcionalmente las imágenes dentro de sus contenedores completos. */
+#reconocimiento .creative-feature__intro-media > img,
+#reconocimiento .creative-feature__item-media > img {
+    position: absolute;
+    inset: 5%;
+    width: 90%;
+    height: 90%;
+}
