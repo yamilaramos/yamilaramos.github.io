@@ -1733,9 +1733,9 @@ header.scrolled .animacion-activa::after {
 
 .gridReconocimientos {
     display: grid;
-    grid-template-columns: minmax(240px, 0.92fr) repeat(2, minmax(0, 1fr));
-    gap: clamp(18px, 2.6vw, 38px);
-    align-items: stretch;
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1fr);
+    gap: clamp(24px, 3vw, 44px);
+    align-items: start;
 }
 
 .creative-feature__intro {
@@ -3805,244 +3805,73 @@ header.scrolled.scroll-hidden {
 }
 
 #reconocimiento.creative-feature {
+    min-height: 100vh;
+    height: auto;
     background: var(--grad-yellow);
 }
 
-#reconocimiento .creative-feature__item h3 {
-    font-size: clamp(24px, 1.65vw, 30px);
+#reconocimiento .creative-feature__inner {
+    width: 80%;
+    max-width: none;
 }
 
-
-#reconocimiento .recos-line-art path {
-    stroke-width: 6;
-}
-
-@media screen and (max-width: 560px) {
-    #reconocimiento .recos-line-art path {
-        stroke-width: 5;
-    }
+#reconocimiento .tituloReconocimientos-logo {
+    display: inline-block;
+    width: clamp(24px, 2vw, 34px);
+    height: clamp(24px, 2vw, 34px);
+    margin-left: clamp(8px, 0.65vw, 12px);
+    object-fit: contain;
+    vertical-align: middle;
+    opacity: 0.5;
 }
 
 #reconocimiento .recos-line-art {
     color: var(--bright-yellow);
 }
 
-
-#reconocimiento .creative-feature__intro {
-    align-items: stretch;
-    justify-content: flex-start;
-    padding: 0;
-    overflow: visible;
-}
-
-#reconocimiento .creative-feature__intro-media {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 1.18 / 1;
-}
-
-#reconocimiento .creative-feature__intro-media > img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
-    object-fit: cover;
-}
-
-#reconocimiento .creative-feature__intro-overlay {
-    position: absolute;
-    z-index: 1;
-    box-sizing: border-box;
-    top: var(--recognition-card-padding);
-    left: var(--recognition-card-padding);
-    max-width: calc(100% - var(--recognition-card-padding) - var(--recognition-card-padding));
-    padding: clamp(14px, 1.4vw, 20px);
-    border-radius: 8px;
-    color: var(--cream);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-}
-
-#reconocimiento .creative-feature__intro-label {
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-    margin-bottom: 0.6em;
-}
-
-#reconocimiento .creative-feature__intro-label .creative-feature__ornament {
-    flex: 0 0 auto;
-    margin: 0;
-    font-size: clamp(1.5rem, 2vw, 2rem);
-}
-
-#reconocimiento .creative-feature__intro-label .creative-feature__kicker {
-    margin: 0;
-    font-size: clamp(0.7rem, 0.8vw, 0.8rem);
-}
-
-#reconocimiento .creative-feature__intro-overlay h2 {
-    max-width: 12ch;
-    margin: 0;
-}
-
-
-#reconocimiento .creative-feature__item {
-    justify-content: flex-start;
-    align-items: stretch;
-    padding: 0 0 var(--recognition-card-padding);
-    overflow: visible;
-}
-
-
-@media screen and (max-width: 600px) {
-    #reconocimiento .creative-feature__grid {
-        width: 100%;
-        --recognition-card-padding: 28px;
-    }
-
-    #reconocimiento .creative-feature__intro-media {
-        aspect-ratio: 1.25 / 1;
-    }
-}
-
-
-#reconocimiento .creative-feature__item {
-    position: relative;
-    display: flex;
-    min-width: 0;
-    min-height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: clamp(26px, 3.2vw, 48px);
-    overflow: hidden;
-    border-radius: 12px;
-    background: var(--cream);
-}
-
-#reconocimiento .creative-feature__intro h2,
-#reconocimiento .creative-feature__item h3 {
-    font-size: clamp(24px, 1.65vw, 30px);
-}
-
-@media screen and (max-width: 600px) {
-    #reconocimiento .creative-feature__item {
-        padding: 28px;
-    }
-}
-
-
-
-.seccionReco .recos-line-art path {
+#reconocimiento .recos-line-art path {
     stroke-width: 6;
 }
 
-@media screen and (max-width: 560px) {
-    .seccionReco .recos-line-art path {
-        stroke-width: 4;
-    }
-}
-
-#reconocimiento .creative-feature__grid {
-    --recognition-card-padding: clamp(26px, 3.2vw, 48px);
+#reconocimiento .gridReconocimientos {
+    display: grid;
+    width: 100%;
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1fr);
+    gap: clamp(24px, 3vw, 44px);
+    align-items: start;
 }
 
 #reconocimiento .creative-feature__intro,
 #reconocimiento .creative-feature__item {
-    align-items: stretch;
-    justify-content: flex-start;
+    position: relative;
+    display: block;
+    min-width: 0;
+    min-height: 0;
+    margin: 0;
     padding: 0;
     overflow: visible;
-    background: var(--cream);
+    border: 0;
+    border-radius: 0;
+    background: transparent;
 }
 
 #reconocimiento .creative-feature__intro-media,
 #reconocimiento .creative-feature__item-media {
     position: relative;
     width: 100%;
-    aspect-ratio: 1.18 / 1;
-}
-
-#reconocimiento .creative-feature__intro-media > img,
-#reconocimiento .creative-feature__item-media > img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
-    object-fit: cover;
-}
-
-#reconocimiento .creative-feature__intro-label {
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-    margin-bottom: 0.6em;
-}
-
-#reconocimiento .creative-feature__intro-label .creative-feature__ornament {
-    flex: 0 0 auto;
-    margin: 0;
-    font-size: clamp(1.5rem, 2vw, 2rem);
-}
-
-#reconocimiento .creative-feature__intro-label .creative-feature__kicker {
-    margin: 0;
-    font-size: clamp(0.7rem, 0.8vw, 0.8rem);
-}
-
-#reconocimiento .creative-feature__intro-overlay h2,
-#reconocimiento .creative-feature__intro-overlay h3 {
-    max-width: 12ch;
-    margin: 0;
-    font-size: clamp(24px, 1.65vw, 30px);
-}
-
-
-
-@media screen and (max-width: 600px) {
-    #reconocimiento .creative-feature__grid {
-        width: 100%;
-        --recognition-card-padding: 28px;
-    }
-
-    #reconocimiento .creative-feature__intro-media,
-    #reconocimiento .creative-feature__item-media {
-        aspect-ratio: 1.25 / 1;
-    }
-}
-
-/* Mantiene las tres cards de Reconocimientos con columnas iguales. */
-#reconocimiento .creative-feature__grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-@media screen and (max-width: 900px) {
-    #reconocimiento .creative-feature__grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    #reconocimiento .creative-feature__intro {
-        grid-column: auto;
-        min-height: 0;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    #reconocimiento .creative-feature__grid {
-        grid-template-columns: minmax(0, 1fr);
-    }
-}
-
-
-#reconocimiento .creative-feature__intro {
-    min-height: 0;
-    background: transparent;
-    border-radius: 12px;
+    aspect-ratio: 1.2 / 1;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 2px solid var(--black);
+    border-radius: 25px;
+    background-color: var(--bg-yellow);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #reconocimiento .creative-feature__intro-media {
-    aspect-ratio: 1 / 1;
+    margin-top: clamp(16px, 2.5vw, 36px);
 }
 
 #reconocimiento .creative-feature__editorial-side {
@@ -4056,34 +3885,44 @@ header.scrolled.scroll-hidden {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: clamp(14px, 1.5vw, 22px);
+    align-items: start;
 }
 
-#reconocimiento .creative-feature__intro-media,
-#reconocimiento .creative-feature__item-media {
-    width: 90%;
-    margin-inline: auto;
+#reconocimiento .creative-feature__editorial-images .creative-feature__item:first-child {
+    margin-top: clamp(18px, 2.6vw, 36px);
 }
 
-#reconocimiento .creative-feature__item {
-    min-height: 0;
-    padding: 0;
-    overflow: visible;
-    border-radius: 0;
-    background: transparent;
+#reconocimiento .creative-feature__intro-overlay {
+    position: absolute;
+    z-index: 1;
+    top: clamp(14px, 1.8vw, 26px);
+    left: clamp(14px, 1.8vw, 26px);
+    box-sizing: border-box;
+    max-width: calc(100% - 2 * clamp(14px, 1.8vw, 26px));
+    padding: clamp(14px, 1.4vw, 20px);
+    border-radius: 8px;
+    background: color-mix(in srgb, var(--cream) 90%, transparent);
+    color: var(--black);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
-#reconocimiento .creative-feature__item-media {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 1 / 1;
+#reconocimiento .creative-feature__kicker {
+    margin: 0 0 0.5em;
+    color: var(--black);
+    font-size: clamp(0.7rem, 0.8vw, 0.8rem);
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    line-height: 1.4;
+    text-transform: uppercase;
 }
 
-#reconocimiento .creative-feature__item-media > img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
-    object-fit: cover;
+#reconocimiento .creative-feature__intro-overlay h2,
+#reconocimiento .creative-feature__intro-overlay h3 {
+    max-width: 16ch;
+    margin: 0;
+    font-size: clamp(24px, 1.65vw, 30px);
+    line-height: 1.15;
 }
 
 #reconocimiento .creative-feature__editorial-copy {
@@ -4092,107 +3931,75 @@ header.scrolled.scroll-hidden {
     gap: clamp(12px, 1.2vw, 18px);
 }
 
-#reconocimiento .creative-feature__editorial-copy > p {
+#reconocimiento .creative-feature__editorial-copy h3 {
+    margin: 0;
+    font-size: clamp(24px, 1.65vw, 30px);
+    line-height: 1.2;
+}
+
+#reconocimiento .creative-feature__editorial-copy p {
     margin: 0;
     font-size: clamp(19.4px, 1.27vw, 24.3px);
     line-height: 1.55;
 }
 
+#reconocimiento .btnReconocimientos {
+    width: fit-content;
+    align-items: center;
+    gap: 10px;
+    margin-top: clamp(8px, 1vw, 14px);
+}
+
+#reconocimiento .btnReconocimientos img {
+    width: clamp(22px, 1.7vw, 28px);
+    height: clamp(22px, 1.7vw, 28px);
+    object-fit: contain;
+}
+
+.seccionReco .recos-line-art path {
+    stroke-width: 6;
+}
+
 @media screen and (max-width: 900px) {
-    #reconocimiento .creative-feature__grid {
+    #reconocimiento .creative-feature__inner {
+        width: 90%;
+    }
+
+    #reconocimiento .gridReconocimientos {
         grid-template-columns: minmax(0, 1fr);
+        gap: clamp(24px, 4vw, 36px);
     }
 
     #reconocimiento .creative-feature__intro-media {
-        aspect-ratio: 1.2 / 1;
+        margin-top: 0;
+    }
+
+    #reconocimiento .creative-feature__editorial-images .creative-feature__item:first-child {
+        margin-top: 0;
     }
 }
 
 @media screen and (max-width: 600px) {
-    #reconocimiento .creative-feature__grid {
-        width: 100%;
-    }
-
-    #reconocimiento .creative-feature__intro-media {
-        aspect-ratio: 1.05 / 1;
+    #reconocimiento .creative-feature__inner {
+        width: calc(100% - 36px);
     }
 
     #reconocimiento .creative-feature__editorial-images {
-        gap: 12px;
-    }
-
-    #reconocimiento .creative-feature__editorial-images .creative-feature__intro-overlay {
-        top: 10px;
-        left: 10px;
-        max-width: calc(100% - 20px);
-        padding: 10px;
-    }
-}
-
-#reconocimiento .creative-feature__intro-media > img,
-#reconocimiento .creative-feature__item-media > img {
-    box-sizing: border-box;
-    border: 2px solid var(--black);
-    border-radius: 25px;
-}
-
-#reconocimiento .creative-feature__inner {
-    width: 80%;
-    max-width: none;
-}
-
-#reconocimiento .creative-feature__grid {
-    width: 100%;
-}
-
-.tituloReconocimientos-logo {
-    display: inline-block;
-    width: clamp(24px, 2vw, 34px);
-    height: clamp(24px, 2vw, 34px);
-    margin-left: clamp(8px, 0.65vw, 12px);
-    object-fit: contain;
-    vertical-align: middle;
-    opacity: 0.5;
-}
-
-/* Ajusta la composición de imágenes al diseño editorial de referencia. */
-#reconocimiento .creative-feature__grid {
-    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1fr);
-}
-
-@media screen and (min-width: 901px) {
-    #reconocimiento .creative-feature__intro-media {
-        margin-top: clamp(28px, 4vw, 56px);
-    }
-
-    #reconocimiento .creative-feature__editorial-images {
-        align-items: start;
-    }
-
-    #reconocimiento .creative-feature__editorial-images .creative-feature__item:first-child {
-        margin-top: clamp(18px, 2.6vw, 36px);
-    }
-}
-
-@media screen and (max-width: 900px) {
-    #reconocimiento .creative-feature__grid {
         grid-template-columns: minmax(0, 1fr);
+        gap: 16px;
+    }
+
+    #reconocimiento .creative-feature__intro-overlay {
+        top: 12px;
+        left: 12px;
+        max-width: calc(100% - 24px);
+        padding: 12px;
     }
 }
 
-/* Ajustes de escala y posición para la imagen principal. */
-@media screen and (min-width: 901px) {
-    #reconocimiento .creative-feature__intro-media {
-        margin-top: clamp(16px, 2.5vw, 36px);
-    }
-
-    #reconocimiento .creative-feature__intro-media > img {
-        top: 50%;
-        right: auto;
-        bottom: auto;
-        left: 50%;
-        width: 85%;
-        height: 85%;
-        transform: translate(-50%, -50%);
+@media screen and (max-width: 560px) {
+    #reconocimiento .recos-line-art path,
+    .seccionReco .recos-line-art path {
+        stroke-width: 5;
     }
 }
