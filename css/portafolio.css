@@ -3892,11 +3892,14 @@ header.scrolled.scroll-hidden {
 
 @media screen and (min-width: 901px) {
     #reconocimiento .gridReconocimientos {
-        align-items: stretch;
+        position: relative;
+        align-items: start;
     }
 
     #reconocimiento .creative-feature__editorial-side {
-        height: 100%;
+        position: absolute;
+        grid-area: 1 / 2 / 2 / 3;
+        inset: 0;
         gap: clamp(10px, 0.8vw, 12px);
     }
 
