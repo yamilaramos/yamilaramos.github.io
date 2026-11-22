@@ -140,11 +140,13 @@
 #giro .foto h1 {
   position: absolute;
   z-index: 2;
+  top: clamp(12px, 1.5vw, 22px);
   right: clamp(12px, 1.5vw, 22px);
-  bottom: clamp(12px, 1.5vw, 22px);
+  bottom: auto;
   left: clamp(12px, 1.5vw, 22px);
   margin: 0;
   color: var(--cream);
+  text-align: right;
 }
 
 /* Posiciones estáticas equivalentes al estado inicial del giro. */
