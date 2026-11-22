@@ -3906,10 +3906,6 @@ header.scrolled.scroll-hidden {
 }
 
 @media screen and (max-width: 900px) {
-    #reconocimiento .recognition-accent-curve {
-        display: none;
-    }
-
     #reconocimiento .creative-feature__inner {
         width: 90%;
     }
