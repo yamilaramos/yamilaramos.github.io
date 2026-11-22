@@ -3920,12 +3920,17 @@ header.scrolled.scroll-hidden {
     }
 
     #reconocimiento .descripcionReconocimientos {
-        flex: 1 1 auto;
-        margin-top: 0;
+        flex: 0 0 auto;
+        gap: clamp(4px, 0.4vw, 7px);
+        margin-top: auto;
+    }
+
+    #reconocimiento .descripcionReconocimientos .copy {
+        padding-bottom: clamp(10px, 1.2vw, 16px);
     }
 
     #reconocimiento .descripcionReconocimientos > .btn-seccion {
-        margin-top: auto;
+        margin-top: 0;
     }
 }
 
