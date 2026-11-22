@@ -3691,6 +3691,10 @@ header.scrolled.scroll-hidden {
     margin-inline: auto;
 }
 
+#reconocimiento .tituloReconocimientos {
+    margin-bottom: 0;
+}
+
 #reconocimiento .tituloReconocimientos-logo {
     display: inline-block;
     width: clamp(24px, 2vw, 34px);
