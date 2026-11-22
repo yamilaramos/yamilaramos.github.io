@@ -3891,16 +3891,16 @@ header.scrolled.scroll-hidden {
 }
 
 @media screen and (min-width: 901px) {
+    #reconocimiento .gridReconocimientos {
+        align-items: stretch;
+    }
+
     #reconocimiento .creative-feature__editorial-side {
         gap: clamp(10px, 0.8vw, 12px);
     }
 
     #reconocimiento .descripcionReconocimientos {
-        margin-top: calc(
-            clamp(-28px, -2vw, -18px)
-            + clamp(20px, 1.31vw, 25px)
-            - clamp(8px, 0.8vw, 12px)
-        );
+        margin-top: auto;
     }
 }
 
