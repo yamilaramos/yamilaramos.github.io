@@ -137,6 +137,10 @@
       rgba(255, 255, 255, 0.2);
 }
 
+#giro .foto h1 {
+  color: var(--cream);
+}
+
 /* Posiciones estáticas equivalentes al estado inicial del giro. */
 .foto:nth-child(1) { top: 1%; left: 63.5%; z-index: 2; }
 .foto:nth-child(2) { top: 18%; left: 30.5%; z-index: 3; }
