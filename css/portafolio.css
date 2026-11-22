@@ -3896,10 +3896,16 @@ header.scrolled.scroll-hidden {
     }
 
     #reconocimiento .creative-feature__editorial-side {
+        height: 100%;
         gap: clamp(10px, 0.8vw, 12px);
     }
 
     #reconocimiento .descripcionReconocimientos {
+        flex: 1 1 auto;
+        margin-top: 0;
+    }
+
+    #reconocimiento .descripcionReconocimientos > .btn-seccion {
         margin-top: auto;
     }
 }
