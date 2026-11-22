@@ -3834,7 +3834,7 @@ header.scrolled.scroll-hidden {
 }
 
 #reconocimiento .descripcionReconocimientos .copy {
-    padding: clamp(18px, 2.2vw, 26px) 2.5%;
+    padding: 0 2%;
     border-radius: 5px;
     background-color: var(--cream);
 }
