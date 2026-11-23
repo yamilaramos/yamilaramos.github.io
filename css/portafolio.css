@@ -131,47 +131,47 @@
 }
 
 .hero-collage__card--main {
-    top: 8.28%;
-    left: 30.3%;
+    top: 9.541125%;
+    left: 32.01%;
     z-index: 3;
-    width: 68.4%;
-    height: 50.445%;
+    width: 64.98%;
+    height: 47.92275%;
     transform: rotate(2.8deg);
     transform-origin: center;
 }
 
 .hero-collage__card--left {
-    top: 45.18%;
-    left: 25.4%;
+    top: 45.82125%;
+    left: 26.255%;
     z-index: 4;
-    width: 34.2%;
-    height: 25.65%;
+    width: 32.49%;
+    height: 24.3675%;
     transform: rotate(-3deg);
     transform-origin: center;
 }
 
 .hero-collage__card--bottom {
     right: auto;
-    bottom: 9.80075%;
-    left: 50.6325%;
+    bottom: 8.59455875%;
+    left: 51.850875%;
     z-index: 2;
-    width: 48.735%;
-    height: 26.80425%;
+    width: 46.29825%;
+    height: 28.01044125%;
     transform: rotate(-0.3deg);
     transform-origin: center;
 }
 
 @media screen and (min-width: 769px) {
     .hero-collage__card--main {
-        left: 20.8%;
+        left: 22.51%;
     }
 
     .hero-collage__card--left {
-        left: 15.9%;
+        left: 16.755%;
     }
 
     .hero-collage__card--bottom {
-        left: 41.1325%;
+        left: 42.350875%;
     }
 }
 
