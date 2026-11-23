@@ -161,6 +161,20 @@
     transform-origin: center;
 }
 
+@media screen and (min-width: 769px) {
+    .hero-collage__card--main {
+        left: 20.8%;
+    }
+
+    .hero-collage__card--left {
+        left: 15.9%;
+    }
+
+    .hero-collage__card--bottom {
+        left: 41.1325%;
+    }
+}
+
 .hero-collage__card img {
     position: relative;
     z-index: 0;
