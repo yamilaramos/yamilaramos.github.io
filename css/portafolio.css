@@ -136,6 +136,8 @@
     z-index: 3;
     width: 80%;
     height: 59%;
+    transform: rotate(2.8deg);
+    transform-origin: center;
 }
 
 .hero-collage__card--left {
@@ -144,6 +146,8 @@
     z-index: 4;
     width: 40%;
     height: 30%;
+    transform: rotate(-3deg);
+    transform-origin: center;
 }
 
 .hero-collage__card--bottom {
@@ -153,6 +157,8 @@
     z-index: 2;
     width: 57%;
     height: 33%;
+    transform: rotate(-0.3deg);
+    transform-origin: center;
 }
 
 .hero-collage__card img {
@@ -196,18 +202,24 @@
     top: clamp(-24px, -1.5vw, -14px);
     right: 5%;
 }
+    transform: rotate(-2.8deg);
+    transform-origin: center;
 
 .hero-collage__caption--left {
     bottom: clamp(-24px, -1.5vw, -14px);
     left: 10%;
     text-align: left;
 }
+    transform: rotate(3deg);
+    transform-origin: center;
 
 .hero-collage__caption--bottom {
     right: 4%;
     bottom: clamp(-24px, -1.5vw, -14px);
     text-align: right;
 }
+    transform: rotate(0.3deg);
+    transform-origin: center;
 
 
  
