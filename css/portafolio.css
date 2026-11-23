@@ -153,10 +153,10 @@
 .hero-collage__card--bottom {
     right: auto;
     bottom: 10.09455875%;
-    left: 53.350875%;
+    left: 51.850875%;
     z-index: 2;
     width: 46.29825%;
-    height: 30.811485375%;
+    height: 33.8926339125%;
     transform: rotate(-0.3deg);
     transform-origin: center;
 }
@@ -171,7 +171,7 @@
     }
 
     .hero-collage__card--bottom {
-        left: 43.850875%;
+        left: 42.350875%;
     }
 }
 
