@@ -20,11 +20,13 @@
   // Las 4 posiciones (espejadas) como fracciones del escenario: cx, cy = centro · w, h = tamaño
   // Tres posiciones: imagen principal, tarjeta superpuesta a la izquierda y tarjeta inferior derecha.
   // cx/cy son el centro en fracciones del escenario; w es el ancho; ratio es ancho/alto.
+  // Proporciones del collage de referencia: principal arriba, superpuesta a la izquierda e inferior derecha.
   const SLOTS = [
-    { cx:0.52, cy:0.32, w:0.82, ratio:1.45 }, // 0 · principal, arriba
-    { cx:0.30, cy:0.57, w:0.43, ratio:1.40 }, // 1 · superpuesta, izquierda
-    { cx:0.63, cy:0.79, w:0.60, ratio:1.65 }  // 2 · inferior, derecha
+    { left:0.12, top:0.04, w:0.80, ratio:1.50 }, // principal
+    { left:0.10, top:0.43, w:0.40, ratio:1.50 }, // superpuesta izquierda
+    { left:0.34, bottom:0.06, w:0.57, ratio:1.90 } // inferior derecha
   ];
+  const Z_INDEX = [3, 4, 2];
   const Z_INDEX = [3, 4, 2];
   const OFFSET  = 0;                          // cada imagen inicia en su posición visible
   const suave   = f => f * f * (3 - 2 * f);   // easing entre posiciones
@@ -38,8 +40,9 @@
       const a = SLOTS[k], b = SLOTS[(k + 1) % N];
       const w = mezclar(a.w, b.w, f) * W;
       const h = mezclar(a.w * W / a.ratio, b.w * W / b.ratio, f);
-      const x = mezclar(a.cx, b.cx, f) * W - w / 2;
-      const y = mezclar(a.cy, b.cy, f) * H - h / 2;
+      const x = mezclar(a.left, b.left, f) * W;
+      const topOf = slot => slot.top !== undefined ? slot.top * H : H - slot.bottom * H - slot.w * W / slot.ratio;
+      const y = mezclar(topOf(a), topOf(b), f);
       el.style.width  = w + 'px';
       el.style.height = h + 'px';
       el.style.transform = `translate(${x}px, ${y}px)`;
