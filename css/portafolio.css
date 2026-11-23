@@ -132,20 +132,20 @@
 
 .hero-collage__card--main {
     top: 8.28%;
-    left: 19.51%;
+    left: 30.3%;
     z-index: 3;
-    width: 64.98%;
-    height: 47.92275%;
+    width: 68.4%;
+    height: 50.445%;
     transform: rotate(2.8deg);
     transform-origin: center;
 }
 
 .hero-collage__card--left {
     top: 45.18%;
-    left: 13.755%;
+    left: 25.4%;
     z-index: 4;
-    width: 32.49%;
-    height: 24.3675%;
+    width: 34.2%;
+    height: 25.65%;
     transform: rotate(-3deg);
     transform-origin: center;
 }
@@ -153,22 +153,12 @@
 .hero-collage__card--bottom {
     right: auto;
     bottom: 8.39%;
-    left: 39.350875%;
+    left: 50.6325%;
     z-index: 2;
-    width: 46.29825%;
-    height: 26.80425%;
+    width: 48.735%;
+    height: 28.215%;
     transform: rotate(-0.3deg);
     transform-origin: center;
-}
-
-@media screen and (min-width: 769px) {
-    .hero-collage__card--main {
-        top: 1.7%;
-    }
-
-    .hero-collage__card--left {
-        top: 41%;
-    }
 }
 
 .hero-collage__card img {
