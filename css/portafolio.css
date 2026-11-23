@@ -3774,7 +3774,7 @@ header.scrolled.scroll-hidden {
 #reconocimiento .creative-feature__inner {
     position: relative;
     z-index: 1;
-    width: 90%;
+    width: 85%;
     max-width: none;
     margin-inline: auto;
 }
@@ -4044,7 +4044,7 @@ header.scrolled.scroll-hidden {
 
 @media screen and (max-width: 900px) {
     #reconocimiento .creative-feature__inner {
-        width: 90%;
+        width: 85%;
     }
 
     #reconocimiento .gridReconocimientos {
@@ -4067,7 +4067,7 @@ header.scrolled.scroll-hidden {
 
 @media screen and (max-width: 600px) {
     #reconocimiento .creative-feature__inner {
-        width: 90%;
+        width: 85%;
     }
 
     #reconocimiento .creative-feature__editorial-images {
