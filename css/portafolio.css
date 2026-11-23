@@ -200,19 +200,19 @@
 }
 
 .hero-collage__caption--main {
-    top: clamp(-24px, -1.5vw, -14px);
+    top: clamp(12px, 1.25vw, 18px);
     right: 5%;
 }
 
 .hero-collage__caption--left {
-    bottom: clamp(-24px, -1.5vw, -14px);
+    bottom: clamp(12px, 1.25vw, 18px);
     left: 10%;
     text-align: left;
 }
 
 .hero-collage__caption--bottom {
     right: 4%;
-    bottom: clamp(-24px, -1.5vw, -14px);
+    bottom: clamp(12px, 1.25vw, 18px);
     text-align: right;
 }
 
