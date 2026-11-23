@@ -814,6 +814,23 @@ pointer-events: none;
 }
 
 * { padding: 0; margin: 0; scroll-behavior: smooth; box-sizing: border-box;}
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+html.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+html.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+html.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
 iframe { width: 100%; }
 nav, ul { list-style: none; }
 img { max-width: 100%; height: auto; display: block; -webkit-user-drag: none; user-select: none; pointer-events: none; }

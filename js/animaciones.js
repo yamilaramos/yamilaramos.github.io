@@ -198,7 +198,11 @@ document.addEventListener("DOMContentLoaded", () => {
     updateBackToTop();
     window.addEventListener("scroll", updateBackToTop, { passive: true });
     backToTop.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      if (window.lenis) {
+        window.lenis.scrollTo(0);
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
     });
   }
 
