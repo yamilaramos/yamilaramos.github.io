@@ -3839,8 +3839,6 @@ header.scrolled.scroll-hidden {
 
 #reconocimiento .recognition-background {
     isolation: isolate;
-    translate: 0 var(--parallax-y, 0px);
-    will-change: translate;
 }
 
 #reconocimiento .recognition-background::before {
@@ -4001,11 +3999,6 @@ header.scrolled.scroll-hidden {
     .hero-collage__card img,
     #reconocimiento .recognition-background::before {
         transform: none;
-        will-change: auto;
-    }
-
-    #reconocimiento .recognition-background {
-        translate: none;
         will-change: auto;
     }
 
