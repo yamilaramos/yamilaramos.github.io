@@ -7,8 +7,8 @@
     <meta name="author" content="Yamila Ramos">
     
     <title>Yamila Ramos | Portafolio de Desarrollo Web y UX/UI</title>
-    <link rel="stylesheet" href="./css/portafolio.css?v=giro-reference-layout-20261123">
-    <link rel="stylesheet" href="./css/mobile.css?v=giro-reference-layout-20261123">
+    <link rel="stylesheet" href="./css/portafolio.css?v=hero-static-collage-20261123">
+    <link rel="stylesheet" href="./css/mobile.css?v=hero-static-collage-20261123">
     <link rel="icon" type="image/svg+xml" sizes="any" href="img/favicon.svg">
 
     <!-- Open Graph -->
@@ -135,22 +135,22 @@
                     </div>-->
                 </div> 
                 
-                <div class="w-50 giro" id="giro">
-                      <div class="escenario">                         
-                            <figure class="foto">
-                                <h1>Desarrollo<span class="punto-mobile">.</span></h1>
-                                <img src="/img/hero-sobremi2.png" alt="Flores y plantas junto a una ventana" loading="lazy">
-                            </figure>
-                            <figure class="foto">
-                                <h1>Dirección Creativa<span class="punto-mobile">.</span></h1>
-                                <img src="/img/hero-sobremi2.png" alt="Flores y plantas junto a una ventana" loading="lazy">
-                            </figure>
-                            <figure class="foto">
-                                <h1>Diseño Web<span class="punto-mobile">.</span></h1>
-                                <img src="/img/hero-sobremi2.png" alt="Flores y plantas junto a una ventana" loading="lazy">
-                            </figure>
-                          </div>      
+                <div class="w-50 hero-collage">
+                    <div class="hero-collage__stage" aria-label="Imágenes que representan mi trabajo">
+                        <figure class="hero-collage__card hero-collage__card--main">
+                            <img src="/img/hero-sobremi2.png" alt="Flores y plantas junto a una ventana" loading="lazy">
+                            <h1 class="hero-collage__caption hero-collage__caption--main">Desarrollo<span class="punto-mobile">.</span></h1>
+                        </figure>
+                        <figure class="hero-collage__card hero-collage__card--left">
+                            <img src="/img/hero-sobremi2.png" alt="Flores y plantas junto a una ventana" loading="lazy">
+                            <h1 class="hero-collage__caption hero-collage__caption--left">Dirección Creativa<span class="punto-mobile">.</span></h1>
+                        </figure>
+                        <figure class="hero-collage__card hero-collage__card--bottom">
+                            <img src="/img/hero-sobremi2.png" alt="Flores y plantas junto a una ventana" loading="lazy">
+                            <h1 class="hero-collage__caption hero-collage__caption--bottom">Diseño Web<span class="punto-mobile">.</span></h1>
+                        </figure>
                     </div>
+                </div>
 
                <!--  <button class="hero-theme-toggle" type="button" aria-label="Cambiar al tema océano" aria-pressed="false" title="Cambiar tema">
                     <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -943,7 +943,6 @@
 <script src="./js/stack.js" defer></script>
 <script src="/js/certificaciones.js"></script>
 <!-- Giro del hero desactivado
-<script src="/js/giro.js?v=giro-reference-layout-fix-20261123"></script>
 -->
 
 </body>

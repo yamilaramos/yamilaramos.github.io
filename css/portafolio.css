@@ -102,86 +102,111 @@
     .status-light { animation: none; }
 }
 
-/* HERO CARRUSEL */
+/* HERO COLLAGE ESTÁTICO */
 
  html { scrollbar-gutter: stable; }
-.hero > .giro { position: relative; align-self: stretch; }
-.escenario { position: absolute; inset: 0; overflow: hidden; } 
- 
-.foto {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 46%;
-  height: 47%;
-  margin: 0;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  border-radius: clamp(24px, 2.1vw, 32px);
-  background: rgba(0, 0, 0, 0.08);
-  -webkit-backdrop-filter: blur(
-    clamp(14px, calc(5.37 * 1px + 0.63vw), 17.5px)
-  );
-  backdrop-filter: blur(
-    clamp(14px, calc(5.37 * 1px + 0.63vw), 17.5px)
-  );
-  border: clamp(1px, calc(0.38 * 1px + 0.05vw), 1.25px) solid rgb(255 255 255 / 0%);
+.hero > .hero-collage {
+    position: relative;
+    align-self: stretch;
+    flex: 0 0 50%;
+    min-width: 0;
 }
 
-#giro .foto {
-  overflow: visible;
+.hero-collage__stage {
+    position: absolute;
+    inset: 0;
+    overflow: visible;
 }
 
-#giro .foto h1 {
-  position: absolute;
-  z-index: 2;
-  top: clamp(-24px, -1.5vw, -14px);
-  right: 5%;
-  bottom: auto;
-  left: auto;
-  width: max-content;
-  max-width: calc(100% - 24px);
-  margin: 0;
-  color: var(--cream);
-  font-size: clamp(14px, 1.25vw, 18px);
-  text-align: right;
+.hero-collage__card {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    overflow: visible;
+    border: clamp(1px, calc(0.38px + 0.05vw), 1.25px) solid rgb(255 255 255 / 0%);
+    border-radius: clamp(24px, 2.1vw, 32px);
+    background: rgba(0, 0, 0, 0.08);
+    -webkit-backdrop-filter: blur(clamp(14px, calc(5.37px + 0.63vw), 17.5px));
+    backdrop-filter: blur(clamp(14px, calc(5.37px + 0.63vw), 17.5px));
 }
 
-#giro .foto:nth-child(2) h1 {
-  top: auto;
-  right: auto;
-  bottom: clamp(-24px, -1.5vw, -14px);
-  left: 10%;
-  text-align: left;
+.hero-collage__card--main {
+    top: 4%;
+    left: 12%;
+    z-index: 3;
+    width: 80%;
+    height: 59%;
 }
 
-#giro .foto:nth-child(3) h1 {
-  top: auto;
-  right: 4%;
-  bottom: clamp(-24px, -1.5vw, -14px);
+.hero-collage__card--left {
+    top: 43%;
+    left: 10%;
+    z-index: 4;
+    width: 40%;
+    height: 30%;
 }
 
-.foto img {
-  width: 100%; height: 100%; object-fit: cover; display: block;
-  border-radius: inherit;
-  filter: contrast(1.06) saturate(1.1) sepia(.12) brightness(.98);
+.hero-collage__card--bottom {
+    right: auto;
+    bottom: 6%;
+    left: 34%;
+    z-index: 2;
+    width: 57%;
+    height: 33%;
 }
 
-.foto::before {
-  content: "";
-  border-radius: inherit;
-  position: absolute;
-  z-index: 1;
-  inset: 0;
-  pointer-events: none;
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0.25) 0%,
-    rgba(255, 255, 255, 0.08) 30%,
-    transparent 60%
-  );
-  opacity: 0.25;
+.hero-collage__card img {
+    position: relative;
+    z-index: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+    filter: contrast(1.06) saturate(1.1) sepia(.12) brightness(.98);
+}
+
+.hero-collage__card::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.25) 0%,
+        rgba(255, 255, 255, 0.08) 30%,
+        transparent 60%
+    );
+    opacity: 0.25;
+}
+
+.hero-collage__caption {
+    position: absolute;
+    z-index: 2;
+    width: max-content;
+    max-width: calc(100% - 24px);
+    margin: 0;
+    color: var(--cream);
+    font-size: clamp(14px, 1.25vw, 18px);
+}
+
+.hero-collage__caption--main {
+    top: clamp(-24px, -1.5vw, -14px);
+    right: 5%;
+}
+
+.hero-collage__caption--left {
+    bottom: clamp(-24px, -1.5vw, -14px);
+    left: 10%;
+    text-align: left;
+}
+
+.hero-collage__caption--bottom {
+    right: 4%;
+    bottom: clamp(-24px, -1.5vw, -14px);
+    text-align: right;
 }
 
 
@@ -237,11 +262,7 @@
 }
 
 
-@media (max-width: 768px) {
-  .hero > .giro { width: 100%; min-height: 60vh; }
-}
- 
-@media (prefers-reduced-motion: reduce) { .foto { will-change: auto; } }
+
  
 /* CERTIFICACIONES*/
 
