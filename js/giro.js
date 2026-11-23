@@ -27,7 +27,6 @@
     { left:0.34, bottom:0.06, w:0.57, ratio:1.90 } // inferior derecha
   ];
   const Z_INDEX = [3, 4, 2];
-  const Z_INDEX = [3, 4, 2];
   const OFFSET  = 0;                          // cada imagen inicia en su posición visible
   const suave   = f => f * f * (3 - 2 * f);   // easing entre posiciones
   const mezclar = (a, b, f) => a + (b - a) * f;
