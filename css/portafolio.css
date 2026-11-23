@@ -124,54 +124,54 @@
     margin: 0;
     overflow: hidden;
     border: clamp(1px, calc(0.38px + 0.05vw), 1.25px) solid rgb(255 255 255 / 0%);
-    border-radius: 25px;
+    border-radius: 15px;
     background: rgba(0, 0, 0, 0.08);
     -webkit-backdrop-filter: blur(clamp(14px, calc(5.37px + 0.63vw), 17.5px));
     backdrop-filter: blur(clamp(14px, calc(5.37px + 0.63vw), 17.5px));
 }
 
 .hero-collage__card--main {
-    top: 10.73919375%;
+    top: 10.73%;
     left: 39.6345%;
     z-index: 3;
     width: 61.731%;
-    height: 45.5266125%;
+    height: 45.52%;
     transform: rotate(2.8deg);
     transform-origin: center;
 }
 
 .hero-collage__card--left {
-    top: 46.4304375%;
-    left: 33.06725%;
+    top: 46.43%;
+    left: 33.06%;
     z-index: 4;
-    width: 30.8655%;
-    height: 23.149125%;
+    width: 30.86%;
+    height: 23.14%;
     transform: rotate(-3deg);
     transform-origin: center;
 }
 
 .hero-collage__card--bottom {
     right: auto;
-    bottom: 11.345027478201%;
-    left: 57.50833125%;
+    bottom: 11.34%;
+    left: 57.50%;
     z-index: 2;
-    width: 43.9833375%;
-    height: 29.798510497667%;
+    width: 43.98%;
+    height: 29.8%;
     transform: rotate(-0.3deg);
     transform-origin: center;
 }
 
 @media screen and (min-width: 769px) {
     .hero-collage__card--main {
-        left: 30.1345%;
+        left: 30.1%;
     }
 
     .hero-collage__card--left {
-        left: 23.56725%;
+        left: 23.5%;
     }
 
     .hero-collage__card--bottom {
-        left: 48.00833125%;
+        left: 48%;
     }
 }
 
