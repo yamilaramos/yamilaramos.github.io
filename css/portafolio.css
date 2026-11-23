@@ -3919,6 +3919,10 @@ header.scrolled.scroll-hidden {
         gap: clamp(10px, 0.8vw, 12px);
     }
 
+    #reconocimiento .creative-feature__editorial-images {
+        margin-bottom: clamp(-28px, -1.8vw, -20px);
+    }
+
     #reconocimiento .descripcionReconocimientos {
         flex: 0 0 auto;
         gap: clamp(7px, 0.55vw, 9px);
