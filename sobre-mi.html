@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conocé la trayectoria, la formación y el proceso creativo de Yamila Ramos.">
+    <meta name="description" content="Conocé la historia, la inspiración y el proceso creativo de Yamila Ramos, junto con una galería de momentos fuera de la pantalla.">
     <meta name="author" content="Yamila Ramos">
     <title>Sobre mí | Yamila Ramos</title>
     <link rel="canonical" href="https://yamilaramos.github.io/sobre-mi.html">
     <meta property="og:title" content="Sobre mí | Yamila Ramos">
-    <meta property="og:description" content="Trayectoria, formación y proceso creativo de Yamila Ramos.">
+    <meta property="og:description" content="La historia, la inspiración y el proceso creativo de Yamila Ramos.">
     <meta property="og:url" content="https://yamilaramos.github.io/sobre-mi.html">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="./css/portafolio.css?v=sobre-mi-process-page-20261120">
     <link rel="stylesheet" href="./css/mobile.css?v=sobre-mi-process-page-20261120">
+    <link rel="stylesheet" href="./css/sobre-mi.css?v=about-gallery-20261123">
     <link rel="icon" href="./img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,6 +72,22 @@
 
         </header>
         <main class="sobre-mi-main">
+            <section class="sobre-mi-presentacion" id="sobre-mi" aria-labelledby="sobre-mi-titulo">
+                <article class="sobre-mi-presentacion__panel">
+                    <div class="sobre-mi-presentacion__copy">
+                        <p class="sobre-mi-presentacion__kicker">Sobre mí</p>
+                        <h1 id="sobre-mi-titulo">Hoy, también lo hago a través del código.</h1>
+                        <div class="sobre-mi-presentacion__texto">
+                            <p>La fotografía, la pintura y la naturaleza siempre fueron parte de mi manera de mirar el mundo. Me gusta observar los detalles, combinar ideas y encontrar formas de expresar lo que imagino. Con el tiempo, esa curiosidad me llevó a explorar el diseño de interfaces y descubrir en el desarrollo web una nueva forma de transformar mis ideas en experiencias reales.</p>
+                            <p>Quise construir mi portafolio desde cero para involucrarme en cada etapa del proceso, desde las primeras decisiones visuales hasta la implementación en código. Fue una oportunidad para experimentar, enfrentar desafíos y comprender realmente las herramientas con las que trabajo.</p>
+                            <p>Hoy combino mi formación en UX/UI con el desarrollo Frontend, buscando que cada interfaz tenga una intención detrás de su diseño y funcione tan bien como se ve. Disfruto investigar, probar distintas soluciones y encontrar maneras de mejorar cada detalle.</p>
+                            <p>Me considero una persona curiosa, autodidacta y con muchas ganas de seguir aprendiendo. Busco una oportunidad donde pueda aportar mi mirada creativa, asumir nuevos desafíos y crecer junto a un equipo, transformando ideas en proyectos que generen valor real.</p>
+                        </div>
+                    </div>
+                    <div class="sobre-mi-presentacion__visual" role="img" aria-label="Flores iluminadas junto a una ventana"></div>
+                </article>
+            </section>
+
 <section id="proceso" class="sectionProceso d-flex h-100vh b-black">
 
             <article class="w-40 hero-pasos" aria-label="Herramientas del proceso creativo">
@@ -132,7 +149,39 @@
             </article>
 
         </section>
-        </main>
+        
+            <section class="sobre-mi-galeria" id="galeria" aria-labelledby="galeria-titulo">
+                <header class="sobre-mi-galeria__encabezado">
+                    <p class="sobre-mi-galeria__kicker">Inspiración cotidiana</p>
+                    <h2 id="galeria-titulo">Fuera de la pantalla<span>.</span></h2>
+                    <p>Te presento mi galería personal. Cuando no estoy diseñando, me vas a encontrar sacando fotos, pintando o buscando inspiración en algún rincón de la naturaleza. Muchas de las ideas que terminan en mis proyectos empiezan ahí.</p>
+                </header>
+
+                <div class="sobre-mi-galeria__wrap">
+                    <div class="sobre-mi-galeria__marco">
+                        <div class="sobre-mi-galeria__track" id="galeriaTrack" tabindex="0" aria-label="Galería personal de fotografías">
+                            <figure class="sobre-mi-galeria__slide" data-w="medium"><img src="https://picsum.photos/seed/pine1/700/800" alt="Pinos en un paisaje natural" loading="lazy"></figure>
+                            <figure class="sobre-mi-galeria__slide" data-w="medium"><img src="https://picsum.photos/seed/pathway2/700/800" alt="Sendero rodeado de vegetación" loading="lazy"></figure>
+                            <figure class="sobre-mi-galeria__slide" data-w="wide"><img src="https://picsum.photos/seed/flower3/1200/800" alt="Flor de trompeta naranja" loading="lazy"></figure>
+                            <figure class="sobre-mi-galeria__slide" data-w="medium"><img src="https://picsum.photos/seed/garden4/700/800" alt="Rincón verde del jardín" loading="lazy"></figure>
+                            <figure class="sobre-mi-galeria__slide" data-w="narrow"><img src="https://picsum.photos/seed/leaf5/300/800" alt="Detalle de hojas" loading="lazy"></figure>
+                            <figure class="sobre-mi-galeria__slide" data-w="wide"><img src="https://picsum.photos/seed/bench6/1200/800" alt="Banco en un jardín" loading="lazy"></figure>
+                            <figure class="sobre-mi-galeria__slide" data-w="medium"><img src="https://picsum.photos/seed/tree7/700/800" alt="Árbol frondoso" loading="lazy"></figure>
+                        </div>
+
+                        <div class="sobre-mi-galeria__controles" aria-label="Controles de la galería">
+                            <button class="sobre-mi-galeria__flecha" id="galeriaAnterior" type="button" aria-label="Imagen anterior">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+                            </button>
+                            <button class="sobre-mi-galeria__flecha" id="galeriaSiguiente" type="button" aria-label="Imagen siguiente">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="sobre-mi-galeria__puntos" id="galeriaPuntos" role="group" aria-label="Elegir fotografía"></div>
+                </div>
+            </section>
+</main>
          <div class="areas division" style="border-bottom: none;">
                 <div class="track">
                     <h2 class="mensaje">
@@ -220,5 +269,6 @@
         <img src="/img/up.png" alt="">
     </button>
     <script src="/js/animaciones.js?v=sobre-mi-process-page-20261120" defer></script>
+    <script src="/js/sobre-mi-galeria.js?v=about-gallery-20261123" defer></script>
 </body>
 </html>
