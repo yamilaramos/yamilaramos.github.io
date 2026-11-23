@@ -248,9 +248,9 @@
   gap: 60px;
 }
 
-/* El carrusel muestra su capa y título antes del hover. */
+/* El carrusel muestra su capa y título antes del hover, con menos oscuridad. */
 .light-studio-page .light-studio-marquee__item::before {
-  opacity: 1;
+  opacity: 0.6;
 }
 
 .light-studio-page .light-studio-marquee__item figcaption {
