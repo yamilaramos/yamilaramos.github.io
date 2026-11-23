@@ -201,25 +201,25 @@
 .hero-collage__caption--main {
     top: clamp(-24px, -1.5vw, -14px);
     right: 5%;
-}
     transform: rotate(-2.8deg);
     transform-origin: center;
+}
 
 .hero-collage__caption--left {
     bottom: clamp(-24px, -1.5vw, -14px);
     left: 10%;
     text-align: left;
-}
     transform: rotate(3deg);
     transform-origin: center;
+}
 
 .hero-collage__caption--bottom {
     right: 4%;
     bottom: clamp(-24px, -1.5vw, -14px);
     text-align: right;
-}
     transform: rotate(0.3deg);
     transform-origin: center;
+}
 
 
  
