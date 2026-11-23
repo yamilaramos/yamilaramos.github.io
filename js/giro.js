@@ -5,8 +5,8 @@
 
   const stage = giro.querySelector('.escenario');
   const fotos = [...giro.querySelectorAll('.foto')];
-  const N     = fotos.length;                 // 4 fotos
-  const PASOS = 3;                            // 3 scrolls = 3 rotaciones → se ven las 4 fotos
+  const N     = fotos.length;                 // 3 fotos
+  const PASOS = 3;                            // 3 desplazamientos completan una vuelta
   const html  = document.documentElement;
 
   const reducir    = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -18,13 +18,15 @@
   let W, H, paso = 0, actual = 0, anim = 0, ocupadoHasta = 0, estabaArriba = true;
 
   // Las 4 posiciones (espejadas) como fracciones del escenario: cx, cy = centro · w, h = tamaño
+  // Tres posiciones: imagen principal, tarjeta superpuesta a la izquierda y tarjeta inferior derecha.
+  // cx/cy son el centro en fracciones del escenario; w es el ancho; ratio es ancho/alto.
   const SLOTS = [
-    { cx:1.07,  cy:0.44,  w:0.46, h:0.20 },  // 0 · pedacito asomando en el margen derecho
-    { cx:0.865, cy:0.245, w:0.46, h:0.47 },  // 1 · arriba, pegada al borde
-    { cx:0.535, cy:0.415, w:0.46, h:0.47 },  // 2 · medio, más a la izquierda
-    { cx:0.805, cy:0.74,  w:0.46, h:0.47 }   // 3 · abajo, grande y pegada al borde
+    { cx:0.52, cy:0.32, w:0.82, ratio:1.45 }, // 0 · principal, arriba
+    { cx:0.30, cy:0.57, w:0.43, ratio:1.40 }, // 1 · superpuesta, izquierda
+    { cx:0.63, cy:0.79, w:0.60, ratio:1.65 }  // 2 · inferior, derecha
   ];
-  const OFFSET  = 1;                          // foto 0 arriba, foto 1 medio, foto 2 abajo, foto 3 escondida
+  const Z_INDEX = [3, 4, 2];
+  const OFFSET  = 0;                          // cada imagen inicia en su posición visible
   const suave   = f => f * f * (3 - 2 * f);   // easing entre posiciones
   const mezclar = (a, b, f) => a + (b - a) * f;
 
@@ -34,13 +36,14 @@
       const u = (((i + t + OFFSET) % N) + N) % N;
       const k = Math.floor(u), f = suave(u - k);
       const a = SLOTS[k], b = SLOTS[(k + 1) % N];
-      const w = mezclar(a.w, b.w, f) * W, h = mezclar(a.h, b.h, f) * H;
+      const w = mezclar(a.w, b.w, f) * W;
+      const h = mezclar(a.w * W / a.ratio, b.w * W / b.ratio, f);
       const x = mezclar(a.cx, b.cx, f) * W - w / 2;
       const y = mezclar(a.cy, b.cy, f) * H - h / 2;
       el.style.width  = w + 'px';
       el.style.height = h + 'px';
       el.style.transform = `translate(${x}px, ${y}px)`;
-      el.style.zIndex = Math.round(u) % N + 1;   // medio sobre la de arriba, la de abajo sobre el medio
+      el.style.zIndex = Z_INDEX[((Math.round(u) % N) + N) % N];
     });
   }
 
