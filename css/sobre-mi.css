@@ -435,8 +435,16 @@
     .sobre-mi-inspiracion__encabezado,
     .sobre-mi-inspiracion__nota,
     .sobre-mi-inspiracion__recursos {
+        position: relative;
+        inset: auto;
+        width: auto;
+        margin: 0;
+    }
+
+    .sobre-mi-inspiracion__recursos {
         grid-area: recursos;
-        padding: 18px;
+        align-self: stretch;
+        padding: clamp(16px, 4vw, 22px);
     }
 
     .sobre-mi-inspiracion__recursos h3 {
@@ -447,7 +455,7 @@
         font-size: 15px;
     }
 
-.sobre-mi-inspiracion__imagen--principal {
+    .sobre-mi-inspiracion__imagen--principal {
         grid-area: principal;
         height: clamp(360px, 68vw, 560px);
     }
@@ -481,17 +489,11 @@
         padding: clamp(18px, 4vw, 28px);
     }
 
-.sobre-mi-inspiracion__imagen--detalle {
+    .sobre-mi-inspiracion__imagen--detalle {
         grid-area: detalle;
         height: clamp(180px, 35vw, 270px);
     }
 
-    .sobre-mi-inspiracion__cita {
-        grid-area: cita;
-        padding: 8px 5% 0;
-        font-size: clamp(19px, 4.6vw, 25px);
-        text-align: center;
-    }
 
 .sobre-mi-galeria {
         padding-top: 54px;
@@ -563,9 +565,6 @@
         justify-self: center;
     }
 
-    .sobre-mi-inspiracion__cita {
-        padding: 4px 4% 0;
-    }
 }
 
 @media (prefers-reduced-motion: reduce) {
