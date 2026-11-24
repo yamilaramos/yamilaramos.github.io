@@ -228,9 +228,11 @@
 }
 
 .hero-collage__caption--left {
-    bottom: clamp(12px, 1.25vw, 18px);
-    left: 10%;
-    text-align: left;
+    top: clamp(12px, 1.25vw, 18px);
+    right: 4%;
+    bottom: auto;
+    left: auto;
+    text-align: right;
 }
 
 .hero-collage__caption--bottom {
