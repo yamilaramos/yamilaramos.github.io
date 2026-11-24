@@ -319,7 +319,7 @@
 
 .hero-collage__card--left .hero-collage__lab-button:is(:hover, :focus-visible) {
     width: min(166px, calc(100% - 12px));
-    height: clamp(36px, 3.2vw, 48px);
+    height: clamp(32px, 2.8vw, 42px);
     padding-left: 0;
     padding-right: 0;
     gap: clamp(4px, 0.5vw, 8px);
