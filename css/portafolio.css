@@ -297,10 +297,12 @@
 
 .hero-collage__caption--main {
     top: calc(0px - clamp(31px, 2vw, 36px));
-    right: 5%;
+    right: auto;
+    left: 5%;
     bottom: auto;
     color: var(--white);
     font-weight: 600;
+    text-align: left;
 }
 
 .hero-collage__card--left .hero-collage__lab-button {
