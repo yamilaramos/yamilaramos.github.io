@@ -59,15 +59,28 @@
     background: url("../img/hero-sobremi2.png") center / cover no-repeat;
 }
 
+.sobre-mi-main {
+    padding-top: clamp(78px, 5.4vw, 100px);
+}
+
 .sobre-mi-pestanas {
-    position: sticky;
+    position: fixed;
     top: calc(clamp(68px, 4.55vw + 6px, 93px) + 16px);
     z-index: 900;
     display: flex;
     align-items: center;
     gap: clamp(2px, 0.5vw, 8px);
-    width: min(90%, 1600px);
-    margin: clamp(20px, 2.4vw, 34px) auto clamp(22px, 2.2vw, 32px);
+    left: max(5vw, calc(50vw - 800px));
+    width: max-content;
+    max-width: 90vw;
+    margin: 0;
+    padding: 4px;
+    border: 1px solid rgb(255 255 255 / 58%);
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--cream) 88%, transparent);
+    box-shadow: 0 6px 20px rgb(0 0 0 / 10%);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    backdrop-filter: blur(14px) saturate(140%);
 }
 
 .sobre-mi-pestanas__boton {
@@ -455,7 +468,7 @@
 @media (max-width: 768px) {
     .sobre-mi-pestanas {
         top: calc(clamp(68px, 4.55vw + 6px, 93px) + 12px);
-        margin: 18px auto 24px;
+        margin: 0;
         gap: 3px;
     }
 
@@ -622,7 +635,7 @@
 @media (max-width: 560px) {
     .sobre-mi-pestanas {
         gap: 1px;
-        margin: 16px auto 20px;
+        margin: 0;
     }
 
     .sobre-mi-pestanas__boton {
