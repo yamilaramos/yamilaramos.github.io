@@ -3963,10 +3963,6 @@ header.scrolled.scroll-hidden {
     isolation: isolate;
 }
 
-#reconocimiento .recognition-background--pumm {
-    background-image: url("../img/jpmorgan.png");
-}
-
 #reconocimiento .recognition-background::before {
     content: "";
     position: absolute;
