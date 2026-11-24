@@ -148,11 +148,11 @@
 
 .sobre-mi-inspiracion__nota {
     position: absolute;
-    top: 46%;
-    left: 23%;
+    top: 37%;
+    left: 21%;
     z-index: 3;
-    width: 28%;
-    padding: clamp(22px, 3vw, 46px);
+    width: 34%;
+    padding: clamp(18px, 2vw, 28px);
     border: 1.5px solid var(--black);
     border-radius: clamp(18px, 2vw, 30px);
     background: var(--bg-yellow);
@@ -162,14 +162,11 @@
 .sobre-mi-inspiracion__nota p {
     margin: 0;
     color: var(--black);
-    font: 400 clamp(16px, 1.25vw, 20px)/1.45 "Outfit", sans-serif;
+    font-family: "Outfit", sans-serif;
+    font-size: clamp(19.4px, 1.27vw, 24.3px);
+    line-height: clamp(27.5px, 1.80vw, 34.4px);
 }
-
-.sobre-mi-inspiracion__nota p + p {
-    margin-top: 1em;
-}
-
-.sobre-mi-inspiracion__imagen--detalle {
+.sobre-mi-inspiracion__imagen--detalle {
     top: 53%;
     left: 48%;
     z-index: 4;
@@ -178,27 +175,54 @@
     transform: rotate(2deg);
 }
 
-.sobre-mi-inspiracion__cita {
+.sobre-mi-inspiracion__recursos {
     position: absolute;
     right: 3%;
-    bottom: 7%;
+    bottom: 5%;
     z-index: 2;
     width: 27%;
-    margin: 0;
-    color: var(--black);
-    font: italic 500 clamp(19px, 1.8vw, 27px)/1.25 "Playfair Display", serif;
+    padding: clamp(16px, 1.45vw, 22px);
+    border: 1.5px solid var(--black);
+    border-radius: 15px;
+    background: var(--bg-yellow);
+    box-sizing: border-box;
 }
 
-.sobre-mi-inspiracion__acento {
-    position: absolute;
-    right: 31%;
-    bottom: 7%;
-    width: clamp(42px, 5vw, 74px);
-    aspect-ratio: 1;
-    border: 2px solid var(--yellow);
-    border-radius: 50% 50% 48% 8%;
-    opacity: 0.7;
-    transform: rotate(35deg);
+.sobre-mi-inspiracion__recursos h3 {
+    margin: 0 0 12px;
+    color: var(--black);
+    font: 600 clamp(16px, 1.2vw, 19px)/1.25 "Outfit", sans-serif;
+}
+
+.sobre-mi-inspiracion__recursos ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sobre-mi-inspiracion__recursos li a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border: 1px solid var(--black);
+    border-radius: 999px;
+    color: var(--black);
+    background: var(--cream);
+    font: 500 clamp(14px, 1vw, 16px)/1 "Outfit", sans-serif;
+    text-decoration: none;
+}
+
+.sobre-mi-inspiracion__recursos .outgoing-link {
+    display: block;
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    border-radius: 0;
+    transform: none;
 }
 
 .sobre-mi-galeria {
@@ -400,7 +424,7 @@
             "principal encabezado"
             "principal retrato"
             "nota detalle"
-            "cita cita";
+            "recursos recursos";
         align-items: start;
         gap: 18px;
         width: 90%;
@@ -410,14 +434,20 @@
     .sobre-mi-inspiracion__imagen,
     .sobre-mi-inspiracion__encabezado,
     .sobre-mi-inspiracion__nota,
-    .sobre-mi-inspiracion__cita {
-        position: relative;
-        inset: auto;
-        width: auto;
-        transform: none;
+    .sobre-mi-inspiracion__recursos {
+        grid-area: recursos;
+        padding: 18px;
     }
 
-    .sobre-mi-inspiracion__imagen--principal {
+    .sobre-mi-inspiracion__recursos h3 {
+        font-size: clamp(16px, 4vw, 19px);
+    }
+
+    .sobre-mi-inspiracion__recursos li a {
+        font-size: 15px;
+    }
+
+.sobre-mi-inspiracion__imagen--principal {
         grid-area: principal;
         height: clamp(360px, 68vw, 560px);
     }
@@ -451,11 +481,7 @@
         padding: clamp(18px, 4vw, 28px);
     }
 
-    .sobre-mi-inspiracion__nota p {
-        font-size: clamp(15px, 3.5vw, 17px);
-    }
-
-    .sobre-mi-inspiracion__imagen--detalle {
+.sobre-mi-inspiracion__imagen--detalle {
         grid-area: detalle;
         height: clamp(180px, 35vw, 270px);
     }
@@ -467,11 +493,7 @@
         text-align: center;
     }
 
-    .sobre-mi-inspiracion__acento {
-        display: none;
-    }
-
-    .sobre-mi-galeria {
+.sobre-mi-galeria {
         padding-top: 54px;
         padding-bottom: 48px;
     }
@@ -518,7 +540,7 @@
             "nota"
             "retrato"
             "detalle"
-            "cita";
+            "recursos";
         gap: 16px;
     }
 
