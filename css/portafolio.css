@@ -123,7 +123,7 @@
     box-sizing: border-box;
     margin: 0;
     overflow: hidden;
-    border: clamp(1px, calc(0.38px + 0.05vw), 1.25px) solid rgba(255, 255, 255, 0.073);
+    border: 0;
     border-radius: 15px;
     background: #3b2a19;
     -webkit-backdrop-filter: blur(clamp(14px, calc(5.37px + 0.63vw), 17.5px));
@@ -186,6 +186,8 @@
     width: 100%;
     max-width: none;
     height: 112%;
+    box-sizing: border-box;
+    border: clamp(1px, calc(0.38px + 0.05vw), 1.25px) solid rgba(255, 255, 255, 0.073);
     border-radius: inherit;
     object-fit: cover;
     background-color: #3b2a19;
@@ -195,7 +197,7 @@
 
 .hero-collage__card--main {
     overflow: visible;
-    border: clamp(1px, calc(0.38px + 0.05vw), 1.25px) solid rgba(255, 255, 255, 0.073);
+    border: 0;
     border-radius: 15px;
     background: transparent;
     -webkit-backdrop-filter: none;
@@ -264,7 +266,7 @@
 
 .hero-collage__card--bottom {
     overflow: visible;
-    border: clamp(1px, calc(0.38px + 0.05vw), 1.25px) solid rgba(255, 255, 255, 0.073);
+    border: 0;
     border-radius: 15px;
     background: transparent;
     -webkit-backdrop-filter: none;
