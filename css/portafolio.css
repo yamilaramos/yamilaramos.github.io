@@ -133,7 +133,7 @@
 }
 
 .hero-collage__card--main {
-    top: 9%;
+    top: 10.5%;
     left: 39.6345%;
     z-index: 3;
     width: 61.731%;
@@ -143,7 +143,7 @@
 }
 
 .hero-collage__card--left {
-    top: 46.43%;
+    top: 47.93%;
     left: 33.06%;
     z-index: 4;
     width: 36%;
@@ -154,7 +154,7 @@
 
 .hero-collage__card--bottom {
     right: auto;
-    bottom: 12%;
+    bottom: 10.5%;
     left: 57.50%;
     z-index: 2;
     width: 44%;
@@ -294,7 +294,7 @@
 }
 
 .hero-collage__caption--main {
-    top: calc(0px - clamp(22px, 1.5vw, 26px));
+    top: calc(0px - clamp(24px, 1.6vw, 28px));
     right: 5%;
     bottom: auto;
     color: var(--white);
