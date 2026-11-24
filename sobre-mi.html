@@ -13,7 +13,7 @@
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="./css/portafolio.css?v=footer-playfair-italic-20261124">
     <link rel="stylesheet" href="./css/mobile.css?v=sobre-mi-process-page-20261120">
-    <link rel="stylesheet" href="./css/sobre-mi.css?v=about-recursos-card-copy-fit-20261124">
+    <link rel="stylesheet" href="./css/sobre-mi.css?v=about-tabs-20261124">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-v4-16x16.png?v=yr-favicon-v5-20261123">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-v4-32x32.png?v=yr-favicon-v5-20261123">
     <link rel="icon" type="image/png" sizes="48x48" href="/img/favicon-v4-48x48.png?v=yr-favicon-v5-20261123">
@@ -80,8 +80,14 @@
         </header>
         
         <main class="sobre-mi-main">
-                    
-            <section class="sobre-mi-inspiracion h-100vh" id="inspiracion" aria-labelledby="sobre-mi-inspiracion-titulo">
+            <div class="sobre-mi-pestanas" role="tablist" aria-label="Secciones de Sobre mí">
+                <button class="sobre-mi-pestanas__boton is-active" id="pestana-sobre-mi" type="button" role="tab" aria-selected="true" aria-controls="panel-sobre-mi" tabindex="0">Sobre mí</button>
+                <button class="sobre-mi-pestanas__boton" id="pestana-proceso" type="button" role="tab" aria-selected="false" aria-controls="panel-proceso" tabindex="-1">Proceso creativo</button>
+                <button class="sobre-mi-pestanas__boton" id="pestana-lab" type="button" role="tab" aria-selected="false" aria-controls="panel-lab" tabindex="-1">Lab</button>
+            </div>
+
+            <div class="sobre-mi-vista is-active" id="panel-sobre-mi" role="tabpanel" aria-labelledby="pestana-sobre-mi" tabindex="0">
+                <section class="sobre-mi-inspiracion h-100vh" id="inspiracion" aria-labelledby="sobre-mi-inspiracion-titulo">
                 <div class="sobre-mi-inspiracion__composicion">
                     <figure class="sobre-mi-inspiracion__imagen sobre-mi-inspiracion__imagen--principal">
                         <img src="/img/fondo-2.png" alt="Objetos y texturas que inspiran nuevas ideas" loading="eager" data-parallax-depth="12">
@@ -127,8 +133,10 @@
                     <div class="sobre-mi-presentacion__visual" role="img" aria-label="Flores iluminadas junto a una ventana"></div>
                 </article>
             </section>
+            </div>
 
-<section id="proceso" class="sectionProceso d-flex h-100vh b-black">
+            <div class="sobre-mi-vista" id="panel-proceso" role="tabpanel" aria-labelledby="pestana-proceso" tabindex="0" hidden>
+                <section id="proceso" class="sectionProceso d-flex h-100vh b-black">
 
             <article class="w-40 hero-pasos" aria-label="Herramientas del proceso creativo">
                 <span class="objeto-proceso objeto-camara objeto-shine-wrap"><img src="img/camara.png" alt="Cámara" draggable="false"></span>
@@ -189,8 +197,10 @@
             </article>
 
         </section>
+            </div>
 
-            <section class="sobre-mi-galeria" id="galeria" aria-labelledby="galeria-titulo">
+            <div class="sobre-mi-vista" id="panel-lab" role="tabpanel" aria-labelledby="pestana-lab" tabindex="0" hidden>
+                <section class="sobre-mi-galeria" id="galeria" aria-labelledby="galeria-titulo">
                 <header class="sobre-mi-galeria__encabezado">
                     <p class="sobre-mi-galeria__kicker">Inspiración cotidiana</p>
                     <h2 id="galeria-titulo">Fuera de la pantalla<span>.</span></h2>
@@ -221,7 +231,8 @@
                     <div class="sobre-mi-galeria__puntos" id="galeriaPuntos" role="group" aria-label="Elegir fotografía"></div>
                 </div>
             </section>
-</main>
+            </div>
+        </main>
          <div class="areas division" style="border-bottom: none;">
                 <div class="track">
                     <h2 class="mensaje">
@@ -311,8 +322,8 @@
     <script src="https://unpkg.com/lenis@1.3.27/dist/lenis.min.js" defer></script>
     <script src="/js/lenis-init.js?v=lenis-smooth-scroll-20261123" defer></script>
     <script src="/js/animaciones.js?v=sobre-mi-process-page-20261120" defer></script>
-    <script src="/js/sobre-mi-galeria.js?v=about-gallery-20261123" defer></script>
-    <script src="/js/parallax.js?v=about-inspiracion-parallax-20261124" defer></script>
+        <script src="/js/parallax.js?v=about-inspiracion-parallax-20261124" defer></script>
+    <script src="/js/sobre-mi-tabs.js?v=about-tabs-20261124" defer></script>
 </body>
 </html>
 
