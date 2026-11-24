@@ -279,6 +279,12 @@
     background-color: #3b2a19;
 }
 
+.hero-collage__card--main img,
+.hero-collage__card--bottom img {
+    box-sizing: border-box;
+    border: clamp(1px, calc(0.38px + 0.05vw), 1.25px) solid rgba(255, 255, 255, 0.073);
+}
+
 .hero-collage__card--bottom::before {
     display: none;
 }
