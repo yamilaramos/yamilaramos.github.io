@@ -248,8 +248,8 @@
     right: clamp(8px, 1vw, 14px);
     bottom: clamp(8px, 1vw, 14px);
     display: flex;
-    width: clamp(36px, 3.2vw, 48px);
-    height: clamp(36px, 3.2vw, 48px);
+    width: clamp(32px, 2.8vw, 42px);
+    height: clamp(32px, 2.8vw, 42px);
     align-items: center;
     justify-content: center;
     gap: 0;
@@ -259,6 +259,7 @@
     white-space: nowrap;
     transition:
         width 0.42s cubic-bezier(0.22, 1, 0.36, 1),
+        height 0.36s cubic-bezier(0.22, 1, 0.36, 1),
         padding 0.36s cubic-bezier(0.22, 1, 0.36, 1),
         gap 0.32s cubic-bezier(0.22, 1, 0.36, 1),
         border-radius 0.36s cubic-bezier(0.22, 1, 0.36, 1),
@@ -269,8 +270,8 @@
 
 .hero-collage__card--left .hero-collage__lab-button img {
     position: static;
-    width: 44%;
-    height: 44%;
+    width: 50%;
+    height: 50%;
     max-width: 100%;
     flex: 0 0 auto;
     border-radius: 0;
@@ -318,6 +319,7 @@
 
 .hero-collage__card--left .hero-collage__lab-button:is(:hover, :focus-visible) {
     width: min(166px, calc(100% - 12px));
+    height: clamp(36px, 3.2vw, 48px);
     padding-left: 0;
     padding-right: 0;
     gap: clamp(4px, 0.5vw, 8px);
