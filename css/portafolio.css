@@ -242,6 +242,28 @@
     text-align: right;
 }
 
+.hero-collage__card--bottom {
+    background: var(--cream);
+}
+
+.hero-collage__card--bottom img {
+    top: 0;
+    height: calc(100% - clamp(30px, 2.6vw, 38px));
+    border-radius: 15px;
+}
+
+.hero-collage__card--bottom::before {
+    inset: 0 0 clamp(30px, 2.6vw, 38px);
+}
+
+.hero-collage__caption--bottom {
+    top: auto;
+    right: 4%;
+    bottom: clamp(5px, 0.65vw, 10px);
+    color: var(--black);
+    font-weight: 600;
+}
+
 .hero-collage__card--left .hero-collage__lab-button {
     position: absolute;
     z-index: 3;
