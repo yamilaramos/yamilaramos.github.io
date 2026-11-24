@@ -283,7 +283,7 @@
 /* Alinea el subrayado con el borde original del enlace y ajusta su ancho. */
 .light-studio-page header nav a.animacion-activa::after {
   left: 50%;
-  width: 90%;
+  width: 100%;
   transform: translateX(-50%) scaleX(1);
   transform-origin: center;
 }
