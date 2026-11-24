@@ -120,9 +120,13 @@
     bottom: clamp(18px, 2.5vw, 36px);
     left: clamp(16px, 2vw, 28px);
     z-index: 1;
+}
+
+.sobre-mi-inspiracion__imagen--retrato figcaption p {
+    margin: 0;
     color: var(--cream);
-    font: 600 clamp(20px, 2.1vw, 32px)/1.08 "Playfair Display", serif;
-    letter-spacing: -0.025em;
+    font: 400 clamp(19.4px, 1.27vw, 24.3px)/clamp(27.5px, 1.80vw, 34.4px) "Outfit", sans-serif;
+    letter-spacing: normal;
 }
 
 .sobre-mi-inspiracion__encabezado {
@@ -144,27 +148,6 @@
 .sobre-mi-inspiracion__encabezado h2 span {
     color: var(--yellow);
     font-style: italic;
-}
-
-.sobre-mi-inspiracion__nota {
-    position: absolute;
-    top: 37%;
-    left: 21%;
-    z-index: 3;
-    width: 34%;
-    padding: clamp(18px, 2vw, 28px);
-    border: 1.5px solid var(--black);
-    border-radius: clamp(18px, 2vw, 30px);
-    background: var(--bg-yellow);
-    box-sizing: border-box;
-}
-
-.sobre-mi-inspiracion__nota p {
-    margin: 0;
-    color: var(--black);
-    font-family: "Outfit", sans-serif;
-    font-size: clamp(19.4px, 1.27vw, 24.3px);
-    line-height: clamp(27.5px, 1.80vw, 34.4px);
 }
 
 .sobre-mi-inspiracion__imagen--detalle {
@@ -421,7 +404,7 @@
         grid-template-areas:
             "principal encabezado"
             "principal retrato"
-            "nota detalle"
+            "detalle detalle"
             "recursos recursos";
         align-items: start;
         gap: 18px;
@@ -431,7 +414,6 @@
 
     .sobre-mi-inspiracion__imagen,
     .sobre-mi-inspiracion__encabezado,
-    .sobre-mi-inspiracion__nota,
     .sobre-mi-inspiracion__recursos {
         position: relative;
         inset: auto;
@@ -471,21 +453,15 @@
 
     .sobre-mi-inspiracion__imagen--retrato {
         grid-area: retrato;
-        height: clamp(220px, 44vw, 340px);
+        height: clamp(360px, 58vw, 460px);
     }
 
     .sobre-mi-inspiracion__imagen--retrato figcaption {
         right: 16px;
         bottom: 18px;
         left: 16px;
-        font-size: clamp(18px, 4.5vw, 25px);
     }
 
-    .sobre-mi-inspiracion__nota {
-        grid-area: nota;
-        align-self: center;
-        padding: clamp(18px, 4vw, 28px);
-    }
 
     .sobre-mi-inspiracion__imagen--detalle {
         grid-area: detalle;
@@ -537,7 +513,6 @@
         grid-template-areas:
             "encabezado"
             "principal"
-            "nota"
             "retrato"
             "detalle"
             "recursos";
@@ -554,7 +529,7 @@
     }
 
     .sobre-mi-inspiracion__imagen--retrato {
-        height: min(92vw, 390px);
+        height: clamp(380px, 100vw, 520px);
     }
 
     .sobre-mi-inspiracion__imagen--detalle {
