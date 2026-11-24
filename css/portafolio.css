@@ -204,10 +204,10 @@
 }
 
 .hero-collage__card--main img {
-    top: clamp(30px, 2.6vw, 38px);
+    top: 0;
     left: 0;
     width: 100%;
-    height: calc(100% - clamp(30px, 2.6vw, 38px));
+    height: 100%;
     border-radius: 15px;
     background-color: var(--bg-yellow);
     object-position: center top;
@@ -291,7 +291,7 @@
 }
 
 .hero-collage__caption--main {
-    top: clamp(5px, 0.65vw, 10px);
+    top: calc(0px - clamp(30px, 2.6vw, 38px));
     right: 5%;
     bottom: auto;
     color: var(--white);
