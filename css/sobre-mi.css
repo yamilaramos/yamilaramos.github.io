@@ -80,7 +80,7 @@
     overflow: hidden;
     margin: 0;
     border: 1.5px solid var(--black);
-    border-radius: clamp(18px, 2vw, 30px);
+    border-radius: 15px;
     background: var(--bg-yellow);
 }
 
@@ -89,6 +89,9 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+border-radius: inherit;
+    transform: translate3d(0, var(--parallax-y, 0px), 0) scale(1.08);
+    will-change: transform;
 }
 
 .sobre-mi-inspiracion__imagen--principal {
