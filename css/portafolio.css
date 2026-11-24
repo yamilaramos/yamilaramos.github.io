@@ -217,13 +217,7 @@
     display: none;
 }
 
-.hero-collage__caption--main {
-    top: auto;
-    right: 5%;
-    bottom: clamp(5px, 0.65vw, 10px);
-    color: var(--white);
-    font-weight: 600;
-}
+
 
 .hero-collage__card::before {
     content: "";
@@ -291,6 +285,14 @@
 .hero-collage__caption--bottom {
     top: auto;
     right: 4%;
+    bottom: clamp(5px, 0.65vw, 10px);
+    color: var(--white);
+    font-weight: 600;
+}
+
+.hero-collage__caption--main {
+    top: auto;
+    right: 5%;
     bottom: clamp(5px, 0.65vw, 10px);
     color: var(--white);
     font-weight: 600;
