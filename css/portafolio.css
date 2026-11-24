@@ -256,7 +256,7 @@
     top: 0;
     height: calc(100% - clamp(30px, 2.6vw, 38px));
     border-radius: 15px;
-    background-color: var(--cream);
+    background-color: var(--bg-yellow);
 }
 
 .hero-collage__card--bottom::before {
@@ -267,7 +267,7 @@
     top: auto;
     right: 4%;
     bottom: clamp(5px, 0.65vw, 10px);
-    color: var(--black);
+    color: var(--white);
     font-weight: 600;
 }
 
