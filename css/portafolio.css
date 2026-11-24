@@ -193,6 +193,13 @@
     will-change: transform;
 }
 
+.hero-collage__card--main img {
+    top: -4.6%;
+    left: 1.25%;
+    width: 97.5%;
+    height: 109.2%;
+}
+
 .hero-collage__card::before {
     content: "";
     position: absolute;
