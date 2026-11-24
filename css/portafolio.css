@@ -242,6 +242,41 @@
     text-align: right;
 }
 
+.hero-collage__card--left .hero-collage__lab-button {
+    position: absolute;
+    z-index: 3;
+    right: clamp(8px, 1vw, 14px);
+    bottom: clamp(8px, 1vw, 14px);
+    display: flex;
+    width: clamp(36px, 3.2vw, 48px);
+    height: clamp(36px, 3.2vw, 48px);
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.hero-collage__card--left .hero-collage__lab-button img {
+    position: static;
+    width: 54%;
+    height: 54%;
+    max-width: 100%;
+    border-radius: 0;
+    object-fit: contain;
+    background: transparent;
+    transform: none;
+    will-change: auto;
+}
+
+.hero-collage__lab-button:focus-visible {
+    outline: 2px solid var(--cream);
+    outline-offset: 3px;
+}
+
+.hero-collage__lab-button:hover img {
+    filter: brightness(0);
+}
+
 
  
 
