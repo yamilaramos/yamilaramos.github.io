@@ -294,7 +294,7 @@
 }
 
 .hero-collage__caption--main {
-    top: calc(0px - clamp(26px, 1.7vw, 30px));
+    top: calc(0px - clamp(31px, 2vw, 36px));
     right: 5%;
     bottom: auto;
     color: var(--white);
