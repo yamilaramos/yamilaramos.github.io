@@ -99,8 +99,9 @@
 }
 
 .sobre-mi-pestanas__boton.is-active {
-    border-color: color-mix(in srgb, var(--black) 14%, transparent);
-    background: var(--bg-yellow);
+    background: var(--yellow);
+    color: var(--cream);
+    font-weight: 500;
     opacity: 1;
 }
 
