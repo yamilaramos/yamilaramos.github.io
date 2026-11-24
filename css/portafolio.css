@@ -321,7 +321,7 @@
     padding: 0 clamp(7px, 0.8vw, 12px);
     gap: clamp(4px, 0.5vw, 8px);
     border-radius: 999px;
-    color: var(--white);
+    color: var(--bright-yellow);
 }
 
 .hero-collage__card--left .hero-collage__lab-button:is(:hover, :focus-visible) img {
@@ -356,7 +356,7 @@
 }
 
 .hero-collage__card--left .hero-collage__lab-button:hover {
-    color: var(--white);
+    color: var(--bright-yellow);
 }
 
  
