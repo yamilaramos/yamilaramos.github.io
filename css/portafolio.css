@@ -2734,6 +2734,10 @@ footer p{
     height: clamp(34px, 1.77vw, 42.5px);
 }
 
+.playfair {
+    font-family: "Playfair Display", serif;
+}
+
 .t-footer-final {
     border-top: clamp(2px, 0.13vw, 2.5px) solid var(--cream);
     padding: 2% 0 4% 0;
