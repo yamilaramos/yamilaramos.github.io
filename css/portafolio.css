@@ -234,8 +234,9 @@
 }
 
 .hero-collage__caption--bottom {
+    top: clamp(12px, 1.25vw, 18px);
     right: 4%;
-    bottom: clamp(12px, 1.25vw, 18px);
+    bottom: auto;
     text-align: right;
 }
 
