@@ -293,7 +293,7 @@
     overflow: hidden;
     opacity: 0;
     transform: translateX(-5px);
-    font-size: clamp(11px, 1.05vw, 15px);
+    font-size: clamp(13px, 1.15vw, 16px);
     font-weight: 500;
     white-space: nowrap;
     transition:
@@ -318,10 +318,10 @@
 
 .hero-collage__card--left .hero-collage__lab-button:is(:hover, :focus-visible) {
     width: min(166px, calc(100% - 12px));
-    padding: 0 clamp(7px, 0.8vw, 12px);
+    padding: 0 clamp(5px, 0.6vw, 9px);
     gap: clamp(4px, 0.5vw, 8px);
     border-radius: 999px;
-    color: var(--bright-yellow);
+    color: var(--white);
 }
 
 .hero-collage__card--left .hero-collage__lab-button:is(:hover, :focus-visible) img {
@@ -338,7 +338,7 @@
 }
 
 .hero-collage__card--left .hero-collage__lab-button:is(:hover, :focus-visible) .hero-collage__lab-label {
-    max-width: 78px;
+    max-width: 86px;
     opacity: 1;
     transform: translateX(0);
 }
@@ -356,7 +356,7 @@
 }
 
 .hero-collage__card--left .hero-collage__lab-button:hover {
-    color: var(--bright-yellow);
+    color: var(--white);
 }
 
  
