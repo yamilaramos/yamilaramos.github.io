@@ -281,6 +281,7 @@
     transition:
         width 0.36s cubic-bezier(0.22, 1, 0.36, 1),
         height 0.36s cubic-bezier(0.22, 1, 0.36, 1),
+        margin-right 0.32s cubic-bezier(0.22, 1, 0.36, 1),
         opacity 0.22s ease,
         transform 0.36s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -326,6 +327,14 @@
 .hero-collage__card--left .hero-collage__lab-button:is(:hover, :focus-visible) img {
     width: clamp(18px, 1.45vw, 22px);
     height: clamp(18px, 1.45vw, 22px);
+}
+
+.hero-collage__card--left .hero-collage__lab-button:is(:hover, :focus-visible) .hero-collage__lab-icon {
+    width: 0;
+    height: 0;
+    margin-right: clamp(-8px, -0.5vw, -4px);
+    opacity: 0;
+    transform: scale(0.72);
 }
 
 .hero-collage__card--left .hero-collage__lab-button:is(:hover, :focus-visible) .hero-collage__lab-label {
