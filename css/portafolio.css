@@ -193,12 +193,36 @@
     will-change: transform;
 }
 
+.hero-collage__card--main {
+    overflow: visible;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    box-shadow: none;
+}
+
 .hero-collage__card--main img {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: calc(100% - clamp(30px, 2.6vw, 38px));
+    border-radius: 15px;
+    background-color: var(--bg-yellow);
     object-position: center top;
+}
+
+.hero-collage__card--main::before {
+    display: none;
+}
+
+.hero-collage__caption--main {
+    top: auto;
+    right: 5%;
+    bottom: clamp(5px, 0.65vw, 10px);
+    color: var(--white);
+    font-weight: 600;
 }
 
 .hero-collage__card::before {
