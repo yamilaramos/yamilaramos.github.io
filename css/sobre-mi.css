@@ -261,8 +261,8 @@
     width: max-content;
     max-width: 100%;
     margin: 0 0 clamp(10px, 1vw, 16px) auto;
-    color: var(--black);
-    font: 500 clamp(13px, 1vw, 16px)/1.16 "Outfit", sans-serif;
+    color: white;
+    font: 500 clamp(13px, 1vw, 16px)/1.16 "Playfair Display", sans-serif;
 }
 
 
