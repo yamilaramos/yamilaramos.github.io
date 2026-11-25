@@ -132,6 +132,7 @@
 }
 
 .hero-collage__card--main {
+    overflow: visible;
     top: 12%;
     left: 39.6345%;
     z-index: 3;
