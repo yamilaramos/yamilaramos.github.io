@@ -337,7 +337,6 @@
 .sobre-mi-galeria {
     padding: clamp(58px, 7vw, 108px) 0 clamp(48px, 6vw, 90px);
     overflow: hidden;
-    border-top: 2px solid var(--black);
     background: var(--cream);
 }
 
