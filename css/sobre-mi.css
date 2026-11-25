@@ -352,7 +352,7 @@
 .sobre-mi-galeria__encabezado h2 {
     margin: 0 0 clamp(14px, 1.6vw, 24px);
     color: var(--black);
-    font: 700 clamp(36px, 4.8vw, 72px)/1.02 "Outfit", sans-serif;
+    font-size: clamp(36px, 2.35vw, 45px);
     letter-spacing: -0.035em;
 }
 
