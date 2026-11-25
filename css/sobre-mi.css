@@ -267,6 +267,8 @@
     margin: 0 0 clamp(10px, 1vw, 16px) auto;
     color: white;
     font: 500 clamp(13px, 1vw, 16px)/1.16 "Playfair Display", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.82);
+    font-weight: bold;    
 }
 
 
@@ -275,6 +277,7 @@
     color: var(--cream);
     font: 700 clamp(36px, 2.35vw, 45px)/0.96 "Playfair Display", serif;
     letter-spacing: -0.045em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.82);
 }
 
 .sobre-mi-inspiracion__encabezado h2 span {
