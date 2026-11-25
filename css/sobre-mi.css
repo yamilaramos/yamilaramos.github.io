@@ -89,14 +89,9 @@
     max-width: 100%;
     margin: 0;
     padding: clamp(4px, 0.35vw, 6px);
-    border: 1px solid rgb(255 255 255 / 30%);
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.12);
-    -webkit-backdrop-filter: blur(clamp(14px, 0.9vw, 17.5px));
-    backdrop-filter: blur(clamp(14px, 0.9vw, 17.5px));
-    box-shadow:
-        0 8px 32px rgba(0, 0, 0, 0.18),
-        inset 0 1px 1px rgba(255, 255, 255, 0.35);
+    background: var(--cream);
+    border: 1px solid rgb(255 255 255 / 30%);
 }
 
 .sobre-mi-pestanas__boton {
