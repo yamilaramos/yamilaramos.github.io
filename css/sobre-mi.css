@@ -1,4 +1,3 @@
-/* Presentación y galería personal de sobre-mi.html */
 .sobre-mi-presentacion {
     min-height: 90vh;
     padding: clamp(42px, 6vw, 92px) 5%;
@@ -104,14 +103,8 @@
     background: transparent;
     font: 500 clamp(14px, 1vw, 16px)/1 "Outfit", sans-serif;
     white-space: nowrap;
-    cursor: pointer;
     opacity: 0.68;
     transition: color 220ms ease, background-color 220ms ease, opacity 220ms ease, transform 220ms ease;
-}
-
-.sobre-mi-pestanas__boton:hover:not(.is-active) {
-    background: color-mix(in srgb, var(--bg-yellow) 60%, transparent);
-    opacity: 1;
 }
 
 .sobre-mi-pestanas__boton.is-active {
