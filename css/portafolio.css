@@ -186,7 +186,6 @@
     max-width: none;
     height: 112%;
     box-sizing: border-box;
-    border: clamp(1px, 0.07vw, 1.25px) solid rgb(255 255 255 / 30%);
     border-radius: inherit;
     object-fit: cover;
     background-color: #3b2a19;
