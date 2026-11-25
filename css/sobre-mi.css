@@ -303,7 +303,7 @@
 
 .sobre-mi-inspiracion__recursos h3 {
     margin: 0 0 12px;
-    color: var(--black);
+    color: var(--cream);
     font: 600 clamp(16px, 1.2vw, 19px)/1.25 "Outfit", sans-serif;
 }
 
