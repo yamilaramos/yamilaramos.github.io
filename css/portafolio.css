@@ -209,24 +209,6 @@
     border: clamp(1px, calc(0.38 * 1px + 0.05vw), 1.25px) solid rgb(255 255 255 / 0%);
 }
 
-.hero-collage__card--main::before {
-    display: none;
-}
-
-
-
-.hero-collage__card::before {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    inset: 0;
-    border-radius: inherit;
-    box-shadow:
-        inset 0 1px 1px rgba(255, 255, 255, 0.2),
-        inset 0 0 clamp(12px, 1.5vw, 20px) rgba(0, 0, 0, 0.35);
-    pointer-events: none;
-}
-
 .hero-collage__caption {
     position: absolute;
     z-index: 2;
