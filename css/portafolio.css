@@ -205,8 +205,8 @@
     width: 100%;
     height: 100%;
     border-radius: 15px;
-    background-color: var(--bg-yellow);
     object-position: center top;
+    border: clamp(1px, calc(0.38 * 1px + 0.05vw), 1.25px) solid rgb(255 255 255 / 0%);
 }
 
 .hero-collage__card--main::before {
