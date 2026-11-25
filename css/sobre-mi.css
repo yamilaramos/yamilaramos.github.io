@@ -107,6 +107,11 @@
     transition: color 220ms ease, background-color 220ms ease, opacity 220ms ease, transform 220ms ease;
 }
 
+.sobre-mi-pestanas__boton:hover{
+    color: var(--black);
+    opacity: 1;
+}
+
 .sobre-mi-pestanas__boton.is-active {
     background: var(--yellow);
     color: var(--cream);
