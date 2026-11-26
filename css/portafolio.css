@@ -1208,7 +1208,7 @@ h4 {
     gap: clamp(12px, calc(4.6px + 0.54vw), 15px);
     position: absolute;
     bottom: clamp(80px, calc(30.69px + 3.61vw), 100px);
-    right: 5%;
+    left: 5%;
 }
 
 .social-btn {
