@@ -117,6 +117,7 @@
     color: var(--cream);
     font-weight: 500;
     opacity: 1;
+    border: clamp(1px, 0.07vw, 1.25px) solid rgb(255 255 255 / 30%);
 }
 
 .sobre-mi-pestanas__boton:active {
