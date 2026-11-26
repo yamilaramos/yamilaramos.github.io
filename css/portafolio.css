@@ -1233,9 +1233,9 @@ h4 {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
 }
 
-/* Íconos sociales del hero: reducción proporcional del 15%. */
+/* Íconos sociales del hero: reducción proporcional del 10%. */
 #inicio > .social-gap > .social-btn {
-    zoom: 0.85;
+    zoom: 0.9;
 }
 
 .social-btn:hover{
@@ -3545,7 +3545,7 @@ html:has(.mapa:hover) #cursor {
     }
 
     #inicio .social-btn {
-        zoom: calc(var(--large-monitor-scale) * 0.85);
+        zoom: calc(var(--large-monitor-scale) * 0.9);
     }
 }
 
