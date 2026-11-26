@@ -356,9 +356,10 @@
 
 .sobre-mi-galeria__encabezado h2 {
     margin: 0 0 clamp(14px, 1.6vw, 24px);
-    color: var(--black);
+    color: var(--cream);
     font-size: clamp(36px, 2.35vw, 45px);
     letter-spacing: -0.035em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.82);
 }
 
 .sobre-mi-galeria__encabezado h2 span {
@@ -368,8 +369,9 @@
 .sobre-mi-galeria__encabezado > p:last-child {
     max-width: 880px;
     margin: 0;
-    color: var(--black);
+    color: var(--cream);
     font: 400 clamp(17px, 1.3vw, 21px)/1.55 "Outfit", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.82);
 }
 
 .sobre-mi-galeria__wrap {
