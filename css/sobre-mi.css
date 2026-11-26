@@ -93,6 +93,10 @@
     border: 1px solid rgb(255 255 255 / 30%);
 }
 
+sobre-mi-pestanas .gap{
+    gap: 5%;
+}
+
 .sobre-mi-pestanas__boton {
     appearance: none;
     flex: 0 0 auto;
