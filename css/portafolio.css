@@ -123,8 +123,6 @@
     box-sizing: border-box;
     margin: 0;
     border-radius: 15px;
-    box-shadow: 0 clamp(8px, calc(3.07px + 0.36vw), 10px)
-        clamp(32px, calc(12.27px + 1.44vw), 40px) rgba(0, 0, 0, 0.3);
 }
 
 .hero-collage__card--main {
@@ -135,6 +133,9 @@
     width: 61.731%;
     height: 45.52%;
     transform-origin: center;
+    border-radius: 15px;
+    box-shadow: 0 clamp(8px, calc(3.07px + 0.36vw), 10px)
+        clamp(32px, calc(12.27px + 1.44vw), 40px) rgba(0, 0, 0, 0.3);
 }
 
 .hero-collage__card--left {
@@ -185,10 +186,7 @@
     background-color: #3b2a19;
     transform: translate3d(0, var(--parallax-y, 0px), 0);
     will-change: transform;
-}
-
-.hero-collage__card--main {
-    border-radius: 15px;
+    border: clamp(1px, calc(0.38 * 1px + 0.05vw), 1.25px) solid rgb(255 255 255 / 0%);
 }
 
 .hero-collage__card--main img {
@@ -198,7 +196,6 @@
     height: 100%;
     border-radius: 15px;
     object-position: center top;
-    border: clamp(1px, calc(0.38 * 1px + 0.05vw), 1.25px) solid rgb(255 255 255 / 0%);
 }
 
 .hero-collage__caption {
@@ -237,9 +234,6 @@
     border: 0;
     border-radius: 15px;
     background: transparent;
-    -webkit-backdrop-filter: none;
-    backdrop-filter: none;
-    box-shadow: none;
 }
 
 .hero-collage__card--bottom img {
@@ -247,9 +241,8 @@
     height: calc(100% - clamp(30px, 2.6vw, 38px));
     border-radius: 15px;
     background-color: #3b2a19;
+    box-shadow: 0 clamp(8px, calc(3.07px + 0.36vw), 10px) clamp(32px, calc(12.27px + 1.44vw), 40px) rgba(0, 0, 0, 0.3);
 }
-
-
 
 .hero-collage__card--bottom::before {
     display: none;
