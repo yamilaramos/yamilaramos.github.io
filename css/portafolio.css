@@ -3048,7 +3048,7 @@ footer p{
 
 .sectionStack .stack-skill-divider {
     display: block;
-    flex: 0 0 2px;
+    flex: 0 0 2.5px;
     width: 2px;
     height: 52px;
     align-self: center;
@@ -3056,7 +3056,7 @@ footer p{
     border: 0;
     border-radius: 999px;
     background: var(--cream);
-    opacity: 90%;
+    opacity: 85%;
 }
 
 .sectionStack .skill-item-2 {
