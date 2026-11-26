@@ -246,7 +246,7 @@
     z-index: 1;
 }
 
-.sobre-mi-inspiracion__imagen--retrato figcaption p {
+.sobre-mi-inspiracion__imagen--retrato figcaption p, .sobre-mi-inspiracion__cuadrado p{
     margin: 0;
     color: var(--cream);
     font: 400 clamp(19.4px, 1.27vw, 24.3px)/clamp(27.5px, 1.80vw, 34.4px) "Outfit", sans-serif;
