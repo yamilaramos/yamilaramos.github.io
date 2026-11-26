@@ -122,11 +122,7 @@
     position: absolute;
     box-sizing: border-box;
     margin: 0;
-    overflow: hidden;
-    border: 0;
     border-radius: 15px;
-    -webkit-backdrop-filter: blur(clamp(14px, calc(5.37px + 0.63vw), 17.5px));
-    backdrop-filter: blur(clamp(14px, calc(5.37px + 0.63vw), 17.5px));
     box-shadow: 0 clamp(8px, calc(3.07px + 0.36vw), 10px)
         clamp(32px, calc(12.27px + 1.44vw), 40px) rgba(0, 0, 0, 0.3);
 }
@@ -154,12 +150,10 @@
 .hero-collage__card--bottom {
     right: auto;
     bottom: 9%;
-    left: 57.50%;
+    left: 58%;
     z-index: 2;
     width: 44%;
     height: 30%;
-    transform: rotate(-0.3deg);
-    transform-origin: center;
 }
 
 @media screen and (min-width: 769px) {
