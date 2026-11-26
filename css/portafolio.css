@@ -1235,8 +1235,8 @@ h4 {
 
 /* Íconos sociales del hero: ancho y alto reducidos un 10%. */
 #inicio > .social-gap > .social-btn {
-    width: calc(clamp(48px, calc(18.41px + 2.17vw), 60px) * 0.9);
-    height: calc(clamp(48px, calc(18.41px + 2.17vw), 60px) * 0.9);
+    width: calc(clamp(48px, calc(18.41px + 2.17vw), 60px) * 0.945);
+    height: calc(clamp(48px, calc(18.41px + 2.17vw), 60px) * 0.945);
 }
 
 .social-btn:hover{
@@ -3546,8 +3546,8 @@ html:has(.mapa:hover) #cursor {
     }
 
     #inicio .social-btn {
-        width: calc(clamp(48px, calc(18.41px + 2.17vw), 60px) * var(--large-monitor-scale) * 0.9);
-        height: calc(clamp(48px, calc(18.41px + 2.17vw), 60px) * var(--large-monitor-scale) * 0.9);
+        width: calc(clamp(48px, calc(18.41px + 2.17vw), 60px) * var(--large-monitor-scale) * 0.945);
+        height: calc(clamp(48px, calc(18.41px + 2.17vw), 60px) * var(--large-monitor-scale) * 0.945);
     }
 }
 
