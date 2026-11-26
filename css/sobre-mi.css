@@ -332,7 +332,8 @@ sobre-mi-pestanas .gap{
     gap: 8px;
     padding: 8px 12px;
     border-radius: 999px;
-    color: var(--black);
+    color: var(--cream);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.82);
     font: 500 clamp(14px, 1vw, 16px)/1 "Outfit", sans-serif;
     text-decoration: none;
     background: rgba(0, 0, 0, 0.08);
