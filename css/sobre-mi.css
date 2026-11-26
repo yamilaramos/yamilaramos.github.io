@@ -308,6 +308,7 @@
     margin: 0 0 12px;
     color: var(--cream);
     font: 600 clamp(16px, 1.2vw, 19px)/1.25 "Outfit", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.82);
 }
 
 .sobre-mi-inspiracion__recursos ul {
