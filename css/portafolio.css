@@ -157,6 +157,12 @@
     height: 30%;
 }
 
+/* La última tarjeta del hero debe permanecer recta. */
+.hero-collage__card--bottom {
+    transform: none;
+    rotate: none;
+}
+
 @media screen and (min-width: 769px) {
     .hero-collage__card--main {
         left: 30%;
