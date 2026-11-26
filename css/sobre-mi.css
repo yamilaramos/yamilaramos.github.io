@@ -213,13 +213,13 @@
     top: 65%;
     left: 29%;
     z-index: 2;
-    width: clamp(100px, 10vw, 156px);
-    aspect-ratio: 1;
+    width: 42%;
     border-radius: 15px;
     background: rgba(0, 0, 0, 0.08);
     backdrop-filter: blur( clamp(14px, calc(5.37 * 1px + 0.63vw), 17.5px) );
     filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.32));
     border: clamp(1px, calc(0.38 * 1px + 0.05vw), 1.25px) solid rgb(255 255 255 / 0%);
+    padding: 15px clamp(16px, calc(6.14 * 1px + 0.72vw), 20px) 15px clamp(18px, 1.42vw, 24px);
     box-shadow: 0 clamp(8px, calc(3.07 * 1px + 0.36vw), 10px) clamp(32px, calc(12.27 * 1px + 1.44vw), 40px) rgba(0, 0, 0, 0.40), inset 0 clamp(1px, calc(0.38 * 1px + 0.05vw), 1.25px) clamp(1px, calc(0.38 * 1px + 0.05vw), 1.25px) rgba(255, 255, 255, 0.2);
     border-radius: clamp(13px, 1.4vw, 24px) clamp(25px, calc(9.59 * 1px + 1.13vw), 31.25px) clamp(25px, calc(9.59 * 1px + 1.13vw), 31.25px) 0;
 }
