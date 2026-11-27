@@ -305,7 +305,7 @@ sobre-mi-pestanas .gap{
     right: 0;
     bottom: 5%;
     z-index: 2;
-    width: 30%;
+    width: 35%;
     padding: clamp(16px, 1.45vw, 22px);
     box-sizing: border-box;
 }
