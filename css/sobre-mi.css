@@ -302,10 +302,10 @@ sobre-mi-pestanas .gap{
 
 .sobre-mi-inspiracion__recursos {
     position: absolute;
-    right: 3%;
+    right: 0;
     bottom: 5%;
     z-index: 2;
-    width: 27%;
+    width: 30%;
     padding: clamp(16px, 1.45vw, 22px);
     box-sizing: border-box;
 }
@@ -341,7 +341,6 @@ sobre-mi-pestanas .gap{
     filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.32));
     border: clamp(1px, calc(0.38 * 1px + 0.05vw), 1.25px) solid rgb(255 255 255 / 0%);
     box-shadow: 0 clamp(8px, calc(3.07 * 1px + 0.36vw), 10px) clamp(32px, calc(12.27 * 1px + 1.44vw), 40px) rgba(0, 0, 0, 0.40), inset 0 clamp(1px, calc(0.38 * 1px + 0.05vw), 1.25px) clamp(1px, calc(0.38 * 1px + 0.05vw), 1.25px) rgba(255, 255, 255, 0.2);
-    border-radius: clamp(13px, 1.4vw, 24px) clamp(25px, calc(9.59 * 1px + 1.13vw), 31.25px) clamp(25px, calc(9.59 * 1px + 1.13vw), 31.25px) 0;
 }
 
 .sobre-mi-inspiracion__recursos .outgoing-link {
